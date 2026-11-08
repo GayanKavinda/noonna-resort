@@ -5,13 +5,10 @@ export const HomeHighlights: React.FC = () => {
     <section className="w-full bg-white py-20 px-8 border-b border-[#D9EAF3]/40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-xl mx-auto mb-16">
-          <span
-            className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
-            style={{ fontSize: "1.75rem" }}
-          >
+          <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block leading-none select-none">
             Tailored comforts...
           </span>
-          <h2 className="font-heading text-[40px] leading-tight text-[#173F56] font-normal">
+          <h2 className="font-heading text-[36px] md:text-[40px] leading-tight text-[#173F56] font-normal">
             Stay Highlights
           </h2>
           <p className="text-[15px] text-slate-600 mt-3 font-light font-sans">

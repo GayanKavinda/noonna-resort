@@ -10,13 +10,10 @@ export const HomeLocation: React.FC = () => {
           {/* Left Column (5 Cols) matching Stitch Reference Lines 634-681 */}
           <div className="lg:col-span-5">
             <div className="mb-8">
-              <span
-                className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
-                style={{ fontSize: "1.75rem" }}
-              >
+              <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block leading-none select-none">
                 The path to tranquility...
               </span>
-              <h2 className="font-heading text-[40px] md:text-[44px] leading-tight text-[#173F56] font-normal mb-4 tracking-tight">
+              <h2 className="font-heading text-[36px] md:text-[44px] leading-tight text-[#173F56] font-normal mb-4 tracking-tight">
                 Find Your Way to the Coast
               </h2>
               <p className="text-[15px] text-slate-600 leading-relaxed font-light font-sans">

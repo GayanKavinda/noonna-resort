@@ -122,10 +122,7 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
       <div className="mx-auto py-20 md:py-24 px-8 bg-white border-t border-[#D9EAF3] text-center shadow-[0_8px_32px_-6px_rgba(23,63,86,0.05)] relative overflow-hidden w-full">
         <div className="relative z-10 max-w-2xl mx-auto">
           {/* Cursive Eyebrow matching Master Asset */}
-          <span
-            className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide block mb-2 select-none"
-            style={{ fontSize: "1.75rem" }}
-          >
+          <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide block mb-2 leading-none select-none">
             {content.eyebrow}
           </span>
 
