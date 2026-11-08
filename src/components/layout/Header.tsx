@@ -6,46 +6,50 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS, HOTEL_INFO } from "@/lib/constants";
 import { HeaderIcons } from "./HeaderIcons";
-import { Button } from "@/components/ui/Button";
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md transition-all">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-100" data-purpose="site-header">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        
         {/* Left Side: Brand Lockup */}
-        <div className="flex shrink-0 items-center gap-3.5">
+        <div className="flex items-center gap-3.5 shrink-0" data-purpose="brand-lockup">
           <Link
             href="/"
-            className="block rounded focus:outline-none focus:ring-2 focus:ring-[#397FA8] focus:ring-offset-2"
+            className="block focus:outline-none focus:ring-2 focus:ring-[#173F56] focus:ring-offset-2 rounded"
             aria-label="Noonna Beach Hotel Home"
           >
             <Image
               src="/images/branding/logo.png"
-              alt="Noonna Beach Hotel Emblem"
+              alt="Noonna Beach Hotel Logo"
               width={48}
               height={48}
               priority
-              className="h-11 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </Link>
 
-          <Link href="/" className="flex flex-col justify-center leading-tight">
-            <span className="font-heading text-[23px] font-semibold tracking-tight text-[#397FA8] leading-none hover:opacity-95">
+          <div className="flex flex-col justify-center">
+            <Link
+              href="/"
+              className="font-heading font-semibold text-[23px] tracking-tight text-[#397FA8] leading-tight hover:opacity-95"
+            >
               Noonna
-            </span>
-            <span className="font-body text-[9.5px] font-semibold tracking-widest text-[#64748B] uppercase mt-0.5">
+            </Link>
+            <span className="font-body uppercase text-[9.5px] font-semibold tracking-widest text-[#64748B] -mt-0.5">
               Beach Hotel
             </span>
-          </Link>
+          </div>
         </div>
 
-        {/* Center: Desktop Navigation Links */}
+        {/* Center: Navigation Links */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden md:flex items-center gap-7 lg:gap-10"
+          className="hidden md:flex items-center gap-8 lg:gap-10"
+          data-purpose="primary-nav"
         >
           {NAV_ITEMS.map((item) => {
             const isActive =
@@ -57,9 +61,9 @@ export const Header: React.FC = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-body text-sm py-1 transition-colors duration-150 ${
+                className={`font-body text-sm transition-colors py-1 ${
                   isActive
-                    ? "font-semibold text-[#397FA8] border-b-2 border-[#397FA8]"
+                    ? "font-semibold text-[#397FA8] hover:text-[#2E698D]"
                     : "font-medium text-[#334155] hover:text-[#397FA8]"
                 }`}
               >
@@ -70,34 +74,33 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Right Side: Social Media Icons + Primary CTA Button */}
-        <div className="flex shrink-0 items-center gap-3 sm:gap-5">
-          {/* Social Icons (Master Specification Cluster) */}
+        <div className="flex items-center gap-4 sm:gap-6 shrink-0" data-purpose="header-actions">
+          {/* Social Icons Group (Exact 4-channel order: Instagram, YouTube, WhatsApp, Facebook) */}
           <HeaderIcons className="hidden lg:flex" />
 
-          {/* Primary CTA: "Book Your Stay" */}
-          <Button
+          {/* Primary Action Button: "Book Your Stay" */}
+          <a
             href={HOTEL_INFO.bookingUrl}
-            isExternal
-            variant="primary"
-            size="md"
-            icon={
-              <svg
-                className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            }
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#397FA8] hover:bg-[#2E698D] text-white text-xs md:text-sm font-medium px-5 py-2.5 rounded-lg shadow-xs transition-all duration-200 hover:shadow-md group"
+            data-purpose="cta-booking-button"
           >
-            Book Your Stay
-          </Button>
+            <span className="font-body tracking-wide">Book Your Stay</span>
+            <svg
+              className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
 
           {/* Mobile hamburger toggle (functional access only) */}
           <button
@@ -131,6 +134,7 @@ export const Header: React.FC = () => {
             </svg>
           </button>
         </div>
+
       </div>
 
       {/* Functional Mobile Menu Fallback */}
@@ -156,4 +160,3 @@ export const Header: React.FC = () => {
     </header>
   );
 };
-
