@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Noonna Beach Hotel - Master Header Asset</title>
+<!-- Google Fonts: Cormorant Garamond & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'coastal-primary': '#173F56',
+            'coastal-hover': '#0f2d3f',
+            'canvas-bg': '#F8FAFC',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Typography & Layout Overrides -->
+<style data-purpose="typography">
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<style data-purpose="component-detail">
+    /* Subtle custom ring and focus states */
+    .nav-link-transition {
+      transition: color 0.15s ease-in-out;
+    }
+    .badge-pill {
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    }
+  </style>
+</head>
+<body class="bg-canvas-bg text-slate-800 font-sans antialiased min-h-screen pb-20">
+<!-- BEGIN: PageToolbar -->
+<!-- Top Asset Management Toolbar / Metadata Ribbon -->
+<header class="w-full bg-white border-b border-slate-200 px-6 py-3.5 flex items-center justify-between sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-50"></div>
+<div>
+<h1 class="text-xs font-semibold uppercase tracking-wider text-slate-900">Component Spec Canvas</h1>
+<p class="text-[11px] text-slate-400">Desktop Master Header • Production Ready</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-100 text-slate-700 font-mono">v1.2.0 • Active</span>
+<span class="text-xs text-slate-400">|</span>
+<span class="text-xs font-medium text-coastal-primary">Noonna Design System</span>
+</div>
+</header>
+<!-- END: PageToolbar -->
+<!-- BEGIN: MainContentCanvas -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+<!-- Section Heading -->
+<div class="mb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+<div>
+<span class="text-[11px] font-bold uppercase tracking-widest text-coastal-primary">Live Component Preview</span>
+<h2 class="text-2xl font-serif font-semibold text-slate-900">Master Navigation Header</h2>
+</div>
+<p class="text-xs text-slate-500 font-mono">Container: max-w-7xl / Full Width Flex Grid</p>
+</div>
+<!-- BEGIN: MasterHeaderComponent -->
+<!-- Live Header Render Container with Border Card Simulation -->
+<div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-12" data-purpose="live-header-preview">
+<header class="w-full bg-white border-b border-gray-100" data-purpose="site-header">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+<!-- Left Side: Brand Lockup -->
+<div class="flex items-center gap-3.5 flex-shrink-0" data-purpose="brand-lockup">
+<!-- Brand Logo Graphic -->
+<a aria-label="Noonna Beach Hotel Home" class="block focus:outline-none focus:ring-2 focus:ring-coastal-primary focus:ring-offset-2 rounded" href="#">
+<img alt="Noonna Beach Hotel Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANrAfTRImU7oPtOVRCNhyO7F2lL2IpPohJa0VWusnRbd_yk-u0e47xgGIbkM0JGJW7nHCbGyAm86fxJa-tHcGRVinXZ-gcggUOUAcpHxGHfHWwYwKSSMOcD0mQCaoa_KpW8jtT84ZLynQgGxMVQprnK_hEidMcGPfJKhGQG7lGAnahMKuzw_tXNGoVWZMSCZiysaBzrD1TM0STTHk5Un0WWUNFuMnV3gO0Lr7PL4GyA4h0Ra3lbkeoRExUZQo9luC3aAo">
+</a>
+<!-- Brand Typography Lockup -->
+<div class="flex flex-col justify-center"><a href="#" class="font-cormorant font-semibold text-[23px] tracking-tight text-[#397FA8] leading-tight hover:opacity-95">Noonna</a><span class="font-inter uppercase text-[9.5px] font-semibold tracking-widest text-[#64748B] -mt-0.5">Beach Hotel</span></div>
+</div>
+<!-- Center: Navigation Links -->
+<nav aria-label="Primary Navigation" class="flex items-center gap-8 lg:gap-10" data-purpose="primary-nav"><a href="#" class="font-inter text-sm font-semibold text-[#397FA8] hover:text-[#2e698d] nav-link-transition py-1">Home</a><a href="#" class="font-inter text-sm font-medium text-[#334155] hover:text-[#397FA8] nav-link-transition py-1">The Stay</a><a href="#" class="font-inter text-sm font-medium text-[#334155] hover:text-[#397FA8] nav-link-transition py-1">Experiences</a><a href="#" class="font-inter text-sm font-medium text-[#334155] hover:text-[#397FA8] nav-link-transition py-1">Gallery</a><a href="#" class="font-inter text-sm font-medium text-[#334155] hover:text-[#397FA8] nav-link-transition py-1">Contact</a></nav>
+<!-- Right Side: Social Media Icons + Primary CTA Button -->
+<div class="flex items-center gap-4 sm:gap-6 flex-shrink-0" data-purpose="header-actions">
+<!-- Social Icons Group -->
+<div class="flex items-center gap-2.5" data-purpose="social-links"><a href="https://instagram.com/noonnabeach" target="_blank" rel="noopener noreferrer" aria-label="Official Instagram: @noonnabeach" title="Instagram (@noonnabeach)" class="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-xs"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a><a href="https://youtube.com/@noonnabeachhotel" target="_blank" rel="noopener noreferrer" aria-label="Official YouTube: Noonna Beach Hotel Films" title="YouTube (Noonna Beach Hotel Films)" class="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-xs"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a><a href="https://wa.me/noonnabeachhotel" target="_blank" rel="noopener noreferrer" aria-label="Official WhatsApp Concierge: Direct Booking &amp; Guest Inquiries" title="WhatsApp Concierge (+94 Concierge)" class="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-xs"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg></a><a href="https://facebook.com/noonnabeachhotel" target="_blank" rel="noopener noreferrer" aria-label="Official Facebook: /noonnabeachhotel" title="Facebook (/noonnabeachhotel)" class="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-xs"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a></div>
+<!-- Primary Action Button: "Book Your Stay" -->
+<a class="inline-flex items-center gap-2 bg-[#397FA8] hover:bg-[#2e698d] text-white text-xs md:text-sm font-medium px-5 py-2.5 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md group" data-purpose="cta-booking-button" href="#book"><span class="font-inter tracking-wide">Book Your Stay</span><svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+</div>
+</div>
+</header>
+</div>
+<!-- END: MasterHeaderComponent -->
+<!-- BEGIN: DesignSpecificationSection -->
+<!-- Design & Developer Handoff Documentation Sheet -->
+<section class="border-t border-slate-200 pt-8" data-purpose="design-specifications">
+<div class="mb-6">
+<h3 class="text-sm font-bold uppercase tracking-wider text-slate-900">Design Specification &amp; Token Handoff</h3>
+<p class="text-xs text-slate-500">Pixel-level rules and responsive contract for engineering implementation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6"><article class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-xs"><div class="flex items-center gap-2 mb-3"><span class="w-2 h-2 rounded-full bg-[#397FA8]"></span><h4 class="text-xs font-bold uppercase tracking-wider text-slate-700">Typography System</h4></div><ul class="space-y-3 text-xs"><li class="border-b border-slate-100 pb-2"><span class="block text-slate-400 text-[10px] uppercase font-mono">Brand Title</span><span class="font-cormorant font-semibold text-base text-[#397FA8]">Cormorant Garamond 600</span><p class="text-[11px] text-slate-500 mt-0.5">Size: 23px • Color: #397FA8 • Tracking: tight</p></li><li class="border-b border-slate-100 pb-2"><span class="block text-slate-400 text-[10px] uppercase font-mono">Brand Sub-text</span><span class="font-inter font-semibold text-xs tracking-widest uppercase text-[#64748B]">Inter 600 Uppercase</span><p class="text-[11px] text-slate-500 mt-0.5">Size: 9.5px • Color: #64748B • Spacing: widest</p></li><li class=""><span class="block text-slate-400 text-[10px] uppercase font-mono">Nav Links</span><span class="font-inter font-medium text-xs text-[#334155]">Inter 500 Medium (No Underlines)</span><p class="text-[11px] text-slate-500 mt-0.5">Size: 14px • Default: #334155 • Active: #397FA8 • Clean text state</p></li></ul></article><article class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-xs"><div class="flex items-center gap-2 mb-3"><span class="w-2 h-2 rounded-full bg-[#397FA8]"></span><h4 class="text-xs font-bold uppercase tracking-wider text-slate-700">Color Palette &amp; Tokens</h4></div><div class="space-y-3 text-xs"><div class="flex items-center justify-between border-b border-slate-100 pb-2"><div class="flex items-center gap-2.5"><span class="w-5 h-5 rounded bg-[#397FA8] border border-black/10 inline-block shadow-xs"></span><div><p class="font-medium text-slate-800">Ocean Blue</p><p class="text-[10px] text-slate-400">Brand Title &amp; CTA Button</p></div></div><code class="font-mono text-[11px] text-slate-600 bg-slate-50 px-2 py-0.5 rounded">#397FA8</code></div><div class="flex items-center justify-between border-b border-slate-100 pb-2"><div class="flex items-center gap-2.5"><span class="w-5 h-5 rounded bg-[#2e698d] border border-black/10 inline-block shadow-xs"></span><div><p class="font-medium text-slate-800">Ocean Dark / Hover</p><p class="text-[10px] text-slate-400">Button Hover State</p></div></div><code class="font-mono text-[11px] text-slate-600 bg-slate-50 px-2 py-0.5 rounded">#2e698d</code></div><div class="flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="w-5 h-5 rounded bg-[#64748B] border border-black/10 inline-block shadow-xs"></span><div><p class="font-medium text-slate-800">Slate Subtitle &amp; Links</p><p class="text-[10px] text-slate-400">#64748B / #334155</p></div></div><code class="font-mono text-[11px] text-slate-600 bg-slate-50 px-2 py-0.5 rounded">#334155</code></div></div></article><article class="bg-white p-5 rounded-lg border border-slate-200/80 shadow-xs"><div class="flex items-center justify-between mb-3"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#397FA8]"></span><h4 class="text-xs font-bold uppercase tracking-wider text-slate-700">Official Social Brand &amp; Icons Spec</h4></div><span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 text-[#397FA8] font-semibold">4 Channels</span></div><div class="space-y-2.5 text-xs text-slate-600"><div class="flex justify-between py-1 border-b border-slate-100"><span class="text-slate-500 font-sans">Vector Format:</span><span class="text-slate-800 font-semibold font-mono text-[11px]">Authentic Official SVG (No Fallbacks)</span></div><div class="flex justify-between py-1 border-b border-slate-100"><span class="text-slate-500 font-sans">Primary Stroke / Fill:</span><span class="text-[#397FA8] font-semibold font-mono text-[11px]">#397FA8 (Ocean Blue)</span></div><div class="flex justify-between py-1 border-b border-slate-100"><span class="text-slate-500 font-sans">Hover Interaction:</span><span class="text-slate-700 font-semibold font-mono text-[11px]">Solid #397FA8 bg + White Glyphs</span></div><div class="flex justify-between py-1 border-b border-slate-100"><span class="text-slate-500 font-sans">Geometry &amp; Stroke:</span><span class="text-slate-800 font-mono text-[11px]">32x32px circle • 16x16px icon • 30% border</span></div><div class="pt-1"><span class="block text-slate-400 text-[10px] uppercase font-mono mb-1.5">Official Channels &amp; Destinations</span><div class="space-y-1.5 font-mono text-[11px]"><div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded"><span class="text-slate-700 font-medium">Instagram</span><span class="text-[#397FA8]">@noonnabeach</span></div><div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded"><span class="text-slate-700 font-medium">YouTube</span><span class="text-[#397FA8]">Noonna Beach Hotel Films</span></div><div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded"><span class="text-slate-700 font-medium">WhatsApp</span><span class="text-[#397FA8]">+94 Concierge Direct</span></div><div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded"><span class="text-slate-700 font-medium">Facebook</span><span class="text-[#397FA8]">/noonnabeachhotel</span></div></div></div></div></article></div>
+</section>
+<!-- END: DesignSpecificationSection -->
+</main>
+<!-- END: MainContentCanvas -->
+
+
+
+
+
+
+
+
+</body></html>
