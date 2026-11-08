@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noonna Beach Hotel - Experiences | Southern Heritage &amp; Coastal Expeditions</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Moon+Dance&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          primary: "#0d628a",
+          "primary-hover": "#094d6e",
+          "noonna-blue": "#397FA8",
+          "coastal-dark": "#173F56",
+          "surface-container-low": "#f6f6f7",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#475569",
+          "secondary-container": "#e2edf5",
+          "on-secondary-container": "#244b62",
+          tertiary: "#397FA8",
+          "surface-container-lowest": "#ffffff",
+          "surface-container": "#eeeeee",
+          "surface-container-high": "#e8e8e8",
+          "outline-subtle": "#e5e7eb"
+        },
+        fontFamily: {
+          cormorant: ["Cormorant Garamond", "EB Garamond", "serif"],
+          headline: ["Cormorant Garamond", "EB Garamond", "serif"],
+          body: ["Inter", "sans-serif"],
+          script: ["Moon Dance", "cursive"]
+        }
+      }
+    }
+  };
+</script>
+<style>
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+</head>
+<body class="bg-white text-[#1a1c1c] antialiased selection:bg-[#e2edf5] selection:text-[#244b62] font-body">
+<!-- ========================================================================= -->
+<!-- 1. MASTER HEADER ASSET                                                    -->
+<!-- ========================================================================= -->
+<header class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+<div class="h-20 max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between gap-8">
+<a class="flex items-center gap-3.5 group" data-path="home" href="#">
+<img alt="Noonna Beach Hotel Logo" class="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt8yh7ZmgKzKtikTBrdS_8cUCTGolBdjreLdz7__jxcKDPMurkOGzMHOzK9U7efWq48DUfCiA_TuHRTXmhnAvzF6fsWPPAzlzhfd7UMdUybOql_JqSLr-sGgw4V6KDDHrZvSGKnibXKiPZU_-T9pNQrLnOanmH7z4uxkrFxvUJDjZhz_KhQxZctG-Fxm4A9JY645JtUOIBz1LffPnhs-uHUb5zjeqnhjGuR1q5PAu9MMSci9CYzXHitg"/>
+<div class="flex flex-col text-left">
+<span class="font-cormorant text-2xl font-medium tracking-[0.04em] text-neutral-900 leading-none">NOONNA</span>
+<span class="text-[10px] tracking-[0.24em] uppercase text-neutral-500 font-medium mt-1">BEACH HOTEL • SRI LANKA</span>
+</div>
+</a>
+<nav class="hidden lg:flex items-center gap-10">
+<a class="text-[14px] font-medium tracking-wide text-neutral-600 hover:text-[#397FA8] transition-colors" data-path="home" href="#">Home</a>
+<a class="text-[14px] font-medium tracking-wide text-neutral-600 hover:text-[#397FA8] transition-colors" data-path="the-stay" href="#">The Stay</a>
+<a class="text-[14px] font-medium tracking-wide text-[#397FA8] transition-colors" data-path="experiences" href="#">Experiences</a>
+<a class="text-[14px] font-medium tracking-wide text-neutral-600 hover:text-[#397FA8] transition-colors" data-path="gallery" href="#">Gallery</a>
+<a class="text-[14px] font-medium tracking-wide text-neutral-600 hover:text-[#397FA8] transition-colors" data-path="contact" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden xl:flex items-center gap-2.5 text-neutral-600">
+<a aria-label="Instagram" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a aria-label="Facebook" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.7 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"></path></svg>
+</a>
+<a aria-label="YouTube" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+<a aria-label="WhatsApp" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+</a>
+</div>
+<a class="inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-[#397FA8] hover:bg-[#2c6687] text-white font-medium text-[13px] tracking-wider uppercase shadow-sm transition-all duration-200" data-path="book-your-stay" href="#">Book Your Stay</a>
+</div>
+</div>
+</header>
+<!-- ========================================================================= -->
+<!-- MAIN CONTENT CONTAINER                                                    -->
+<!-- ========================================================================= -->
+<main class="w-full pt-20 bg-white">
+<!-- BREADCRUMBS & CONTEXT BAR -->
+<section class="w-full bg-white border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs text-[#475569]">
+<a class="hover:text-[#397FA8] transition-colors" data-path="home" href="#">Home</a>
+<span class="text-slate-300">/</span>
+<a class="hover:text-[#397FA8] transition-colors" data-path="experiences" href="#">Experiences</a>
+<span class="text-slate-300">/</span>
+<span class="text-[#173F56] font-semibold">Historical &amp; Cultural Gems</span>
+</nav>
+<div class="inline-flex items-center gap-2 self-start md:self-auto px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-[#0d628a] text-xs font-medium">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span>9 Curated Chapters • 0.4 km – 24 km from Kumbalgama</span>
+</div>
+</div>
+</section>
+<!-- CATEGORY HERO (Curved Coastal Panoramic Card) -->
+<section class="w-full px-6 lg:px-8 py-8 bg-white">
+<div class="max-w-7xl mx-auto relative rounded-3xl overflow-hidden shadow-xl bg-neutral-900 min-h-[380px] lg:min-h-[440px] flex flex-col justify-end">
+<img alt="Cinematic aerial panoramic view of Sri Lanka southern coast near Weligama and Kumbalgama at golden hour" class="absolute inset-0 w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1WNQfHmCY8QTNI-i0hvMVJYjUwx4W8dCd1cY9Jhsc_vXDgYSBjGpA5tUgIK6iy7rRKSj16MiRsMO38OBY8Hdq79l-VbND39XlVEMQXYyUDopkurZEVo0-FYVDL8RA65IJlqvFiv2xEI82rnaYb9cXkitQzR0JeW0YZl-KJvf7LEE9nGE2ixSNrYK-2d6zAHe6S9QI_SIGN_dfTn5794BV6Xx5_RQeu1ndLF1a6dtNLxTw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20"></div>
+<div class="relative z-10 p-8 md:p-12 lg:p-14 max-w-3xl space-y-3.5">
+<p class="font-script text-2xl md:text-3xl text-white/95 leading-none drop-shadow-sm">sacred lore &amp; coastal rhythm...</p>
+<h1 class="font-cormorant text-3xl md:text-4xl lg:text-5xl font-normal text-white leading-[1.15] tracking-tight">Southern Heritage &amp; Coastal Expeditions</h1>
+<p class="font-body text-sm md:text-base text-slate-100/90 font-light leading-relaxed max-w-2xl">An unhurried journey through ancient living stone, fortified colonial ramparts, mangrove waterways, and ocean giants — nine handpicked southern Sri Lankan sanctuaries curated by Noonna Beach Hotel.</p>
+<div class="pt-2 flex flex-wrap items-center gap-2 text-xs font-body text-white/90">
+<span class="px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-sm">9 Curated Chapters</span>
+<span class="px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-sm">5 Heritage Sanctuaries</span>
+<span class="px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-sm">4 Wildlife Expeditions</span>
+<span class="px-3 py-1 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-sm">0.4 km – 24 km Range</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CURATOR'S NARRATIVE FIELD NOTE -->
+<section class="w-full py-8 lg:py-12 bg-white">
+<div class="max-w-3xl mx-auto px-6 text-center space-y-2.5">
+<p class="font-script text-2xl md:text-3xl text-[#397FA8] leading-none">ancient chronicles &amp; living craft...</p>
+<h2 class="font-cormorant text-2xl md:text-3xl lg:text-[34px] font-normal text-[#173F56] leading-snug tracking-tight">Division 1 • Sacred Granite, Fortified Ramparts &amp; Ancestral Clay</h2>
+<p class="font-body text-sm text-[#475569] font-light max-w-xl mx-auto leading-relaxed">Kumbalgama and Weligama sit at the crossroads of ancient maritime spice routes and revered Buddhist heritage. Journey through our five self-guided cultural chapters before exploring the untamed waterways beyond.</p>
+<div class="pt-2 flex items-center justify-center gap-3">
+<span class="w-10 h-px bg-slate-200"></span>
+<span class="material-symbols-outlined text-[#397FA8] text-[16px]">temple_buddhist</span>
+<span class="w-10 h-px bg-slate-200"></span>
+</div>
+</div>
+</section>
+<!-- THE EDITORIAL BENTO CHAPTERS -->
+<div class="w-full space-y-16 lg:space-y-24 pb-16">
+<!-- CHAPTER 01: Galle Dutch Fort -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px]">
+<img alt="Galle Dutch Fort Bastions and Lighthouse" class="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1UtK8mJavqZbPObk3TFYZ0RafQFxrYcYVL2Y27tRjBf9Eag2C5zzp6jtvxJhjNXXM_ry1GInRyEE7f47-A8i_gXWOHGro87TSBBQ2zd9AIfaYWZdnrG7ot9v4geATzimDielFpmZEiPuPyyOfxAlicOChMUDVHinMx7A2gDTVpxpE2Wv4yqUd9KD34qJUZkO-cea0owkNzlB6GzovBXRmgmRyouWHvSGL426dsMLxbz_g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-wider font-medium">Historic Citadel</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Point Utrecht Bastion &amp; 1939 White Lighthouse</p>
+</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px]">
+<img alt="Colonial stone masonry and quiet laneways of Galle Fort" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVzR8hqG49kv28REnfEczosw-4kd-QxiEMGmKyRYyEW5RUvmZ2aDa_TOGTFVLo74LVY2rkL2fTtBD4bNBdU9mpj88Q5FWoY2yfIdxjsNJaZ9kEdyGO45Ah3p7f9twoulRgh1Cy0AE7K-kTpF647gGPXA2ueqKrR5h9d2yXcEn_NzO1ELrj4QGGr486kEIltXrIQsX5LXAZnOx7ntbGoJdlI8z0EyoBsQskKGb417st7ZqhbUHq_5eXug"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Dutch Colonial Archways &amp; Historic Citadel Walkways</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#397FA8]/20 text-[10px] tracking-wider uppercase font-semibold"><span class="text-[#397FA8]">★</span> Curator's Top Pick</span>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium tracking-wide uppercase">UNESCO WORLD HERITAGE • 17TH CENTURY</span>
+</div>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">The Living Coral-Stone Citadel</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Galle Dutch Fort • 24 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">Stroll 300-year-old bastions overlooking crashing Indian Ocean swells, discover quiet Dutch Reformed archways, and watch golden twilight settle over the ramparts. A vibrant urban fortress continuously inhabited by multi-generational merchant families.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">30 mins</span><span class="text-[10px] text-neutral-500 font-light block">Scenic train</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Timing</span><span class="text-xs font-semibold text-[#173F56] block">4:30 PM</span><span class="text-[10px] text-neutral-500 font-light block">Sunset walk</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Entry</span><span class="text-xs font-semibold text-[#173F56] block">Free Access</span><span class="text-[10px] text-neutral-500 font-light block">Public citadel</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Galle+Fort+Sri+Lanka" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20I%20would%20like%20to%20arrange%20a%20private%20driver%20to%20Galle%20Fort." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 02: Kushtarajagala Rock Relief -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 space-y-4">
+<div class="space-y-1.5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium tracking-wide uppercase mb-1">SACRED GRANITE RELIEF • 8TH–9TH C.</span>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">The Colossal Granite Bodhisattva</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Kushtarajagala • Weligama • 2.7 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">An enigmatic 8th-century Mahayana Bodhisattva Avalokiteshvara chiseled directly into a soaring natural granite boulder, sheltered by whispering sacred Bo tree canopies. Revered locally as the healed King of Leprosy and a guardian of coastal mariners.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">7 mins</span><span class="text-[10px] text-neutral-500 font-light block">Hotel tuk-tuk</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Duration</span><span class="text-xs font-semibold text-[#173F56] block">40 mins</span><span class="text-[10px] text-neutral-500 font-light block">Contemplation</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Etiquette</span><span class="text-xs font-semibold text-[#173F56] block">Modest Dress</span><span class="text-[10px] text-neutral-500 font-light block">Cover knees</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Kushtarajagala+Rock+Relief+Weligama" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20can%20you%20reserve%20a%20cruiser%20bike%20for%20a%20morning%20ride%20to%20Kushtarajagala?" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-1 sm:grid-cols-12 gap-4">
+<div class="sm:col-span-7 relative rounded-2xl overflow-hidden shadow-sm min-h-[260px] sm:min-h-[320px] border border-slate-100">
+<img alt="Detailed full view of ancient Kushtarajagala carved rock relief monolith" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1VoMJE4VT-FoSrFVUtmZDR4WG38mR3T-vjHNbR6sRZT405AheTFqEBydOthHD2cZDcMGc18oYLtTcnSQIyiajGCUVKQTTbOI_HeUKbzyWJoEPeiAdoevlIqSYfqcJQggdv6_-QLWcugIqy2TXi0ZGrwt0aM3ooXy6rrGpO47i2lzwhwwGuZs_HLd-_A_JtViapkKCZCv76ALbeiHDBt0MGXXvvyeTgKseTBg2I_kRXobg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-wider font-medium">Sacred Monolith • 8th C.</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Mahayana Avalokiteshvara in Granite</p>
+</div>
+</div>
+<div class="sm:col-span-5 relative rounded-2xl overflow-hidden shadow-sm min-h-[200px] sm:min-h-[320px] border border-slate-100">
+<img alt="Coastal ambiance and sacred grounds near Weligama" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUEVgUdd-Gv4czhRMPe7ggkZMA_SqwRQS2BBAYBgpy9Ev3GBe0arS3ZGuP2IOoj0DH4ri7l0DW__Jwsgy0qUQpZit2BK4CDQiMnQYiOeFa2hmRa8i095EwDcr27aGkrINMihoTllHZhHMdZA_DKi4nX3e4oHcYDNVTWIWxLMaqhLNEAHc331kmC3Fmo1EPp9U7Is9tsJEuetV8RILbG-Iwrg9KvKxN9Y6pkKobbCEhN6vapkkdqbm4Dw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 text-white text-xs font-medium">Sacred Bo Tree Canopies</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 03: Kumbalgama Potters' Village -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px] border border-slate-100">
+<img alt="Master Sri Lankan artisan shaping earthenware clay vessel on wheel" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGqW2CVlifz9zcMxk5StNwMaL-jSRuvrQ5s3slvda-yEqge57-tIFeVt7OdXwCk100dG8vU6d9_ca5hYMmuPLhryuqXtyv0kL08TKGDoDy51VRy3cWUeSzeM79PFuFPCQVOzVN1XVcjlJBOP_lfRxdOnjv2lSvVvz1fT8tYVH5zVsZ1U1isYGqS_Tpg3avwH5l3Y9f0RYgVLeqYZdpYNJsjGotKGCRK1XM14vYf2LjFEJ3WU03mk7t4Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-wider font-medium">Traditional Wheel Craft</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Generational Master Shaping Terracotta Clay</p>
+</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px] border border-slate-100">
+<img alt="Tropical sun-curing yards and red clay patios in Kumbalgama" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCf1pqqO1ErthGzZHgWBGd0YFo5ldOA5seoZ34t1XtChu9fQiJ2cinJe7e0dgiRgsXDJccQf8ddLc7vDIDo5zEHEPOaRJM7kS0wWg_9pob3qMcC_SseTB-XwCZAMbHRdc8U4H137sQTu0qe1mmGRm72LmhZpGVS7DytMZnoTam38RnshjRW8D64PcqZwTONlr1YwDBBkkCR3Il7QrTlczVDvAP8N9xUZxL-DbrTYzhO5gXW5yigocVcw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Continuous wheel craft sustained across five ancestral village generations</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#397FA8]/20 text-[10px] tracking-wider uppercase font-semibold"><span class="text-[#397FA8]">★</span> Guest Favorite</span>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium tracking-wide uppercase">LIVING HERITAGE &amp; ARTISAN CRAFT</span>
+</div>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">Centuries of Clay on the Wheel</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Kumbalgama Potters' Village • 0.4 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">Steps from Noonna's gate lies Kumbalgama's ancestral potting settlement, where local families have spun earthenware cooking vessels from river silt for over five generations. An authentic glimpse into unhurried village craftsmanship.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">4 mins</span><span class="text-[10px] text-neutral-500 font-light block">Gentle walk</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Timing</span><span class="text-xs font-semibold text-[#173F56] block">9:00 AM</span><span class="text-[10px] text-neutral-500 font-light block">Morning wheels</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Access</span><span class="text-xs font-semibold text-[#173F56] block">Welcome</span><span class="text-[10px] text-neutral-500 font-light block">Direct pottery</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Kumbalgama+Pottery+Village+Sri+Lanka" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20could%20a%20guide%20walk%20with%20us%20to%20the%20Kumbalgama%20pottery%20hamlet%20tomorrow%20morning?" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 04: Martin Wickramasinghe Folk Museum -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 space-y-4">
+<div class="space-y-1.5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium tracking-wide uppercase mb-1">SOUTHERN FOLKLORE &amp; CULTURAL ESTATE • KOGGALA</span>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">The Guardian of Coastal Folk Lore</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Martin Wickramasinghe Museum • 7.8 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">Nestled across seven tranquil acres of botanical gardens, this historic ancestral estate showcases antique outrigger canoes, traditional string puppetry, dance masks, and early agricultural implements that shaped southern Sri Lankan life.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">12 mins</span><span class="text-[10px] text-neutral-500 font-light block">Coastal road</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Hours</span><span class="text-xs font-semibold text-[#173F56] block">9am – 5pm</span><span class="text-[10px] text-neutral-500 font-light block">Open daily</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Entry</span><span class="text-xs font-semibold text-[#173F56] block">~500 LKR</span><span class="text-[10px] text-neutral-500 font-light block">Trust ticket</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Martin+Wickramasinghe+Folk+Museum+Complex+Koggala" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20we%20would%20love%20to%20visit%20the%20Martin%20Wickramasinghe%20Museum%20this%20afternoon." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px] border border-slate-100">
+<img alt="Martin Wickramasinghe Museum Folk Heritage Estate in Koggala" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1VWiDzZRAXUZSTZ3Xxhcsgvtuqlln6qbbEJ70PJjkp6OOn5vfpSFZKbEq-jNsQg6nji6y-GIUMixLhwos4ypvkER13cae9I4_e3E7nQc_wlMK0-zVaRE9u0jkp07it0KRtrOWYMiJw3Kq8R8M8Gm25iXaf2SmKMDjDegZ1QBwP1h10OcxNkvLXSNxjaBCZYWv84y9w3fYsBW0wPJWCaye2zXCD_JtycK6LlpKodDH5OFVfjHahxfBXvGqyR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-wider font-medium">Ancestral Folk Estate</div>
+<div class="absolute bottom-3 left-3 text-white text-xs sm:text-sm font-medium">Botanical Gardens &amp; Traditional Southern Artifacts</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px] border border-slate-100">
+<img alt="Quiet scenic coastal atmosphere near Koggala and Weligama" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkcFacoI_QAbYe4EE6-YwoDQ0_w14kNq-8x8cPvcD2STr1S9cft9iCo2BT-GYqUsHAECWbz6qFzK03Ydi3OiVWQUecQWaiofIqkoqgBTXqkf-LzdMKUE3Rjtxb0NuIcOXf8ObkJJYSUvyynomuIobiAnx31T7ICL89_506jcKSe44M68ICNDDP21dtGL1EK4AxoYxMgrotONVxMLdvhU3OQ31u2CvyO1XvucFxY_NxMm1j0qDnBESP4w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Rich Literary and Folk Traditions of Southern Sri Lanka</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 05: Taprobane Island -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[240px] border border-slate-100">
+<img alt="Aerial perspective of Taprobane Island showing colonial villa surrounded by azure waters" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQwZTDqejCCOHdAhOAKy3XLF1bO43gBdyqDVP9nDg94bnb7Px83Z0KFs6HWRYuN0qWIrk9A3mNGdvyMnndHm0grkAC-5AUi-XGnTAuC1Uy5rIStYCThxPUkuCt_0MdlRz_LuJ3Rgd_J8yys2DSn7683ywMbK9qyJYtV1sk54-caRiJxpTEVE76YH-PXvbJbvIJNK_bZb314c592SyXgey5KSJrWBe7lWM8etEWCUiQo-qJ-mQJ0Sbg5A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white text-[10px] uppercase tracking-wider font-medium">Aerial Island &amp; Villa</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Private Islet in Weligama Bay</p>
+<p class="text-[11px] text-white/80 font-light">Count de Mauny's romantic retreat anchored off the beach</p>
+</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px] border border-slate-100">
+<img alt="Scenic Weligama Bay turquoise tidal waters and headlands" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVzR8hqG49kv28REnfEczosw-4kd-QxiEMGmKyRYyEW5RUvmZ2aDa_TOGTFVLo74LVY2rkL2fTtBD4bNBdU9mpj88Q5FWoY2yfIdxjsNJaZ9kEdyGO45Ah3p7f9twoulRgh1Cy0AE7K-kTpF647gGPXA2ueqKrR5h9d2yXcEn_NzO1ELrj4QGGr486kEIltXrIQsX5LXAZnOx7ntbGoJdlI8z0EyoBsQskKGb417st7ZqhbUHq_5eXug"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Turquoise Reef Basin &amp; Wadeable Sand Spit at Low Tide</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium tracking-wide uppercase mb-1">MARITIME ARCHITECTURE &amp; COASTAL LEGEND • WELIGAMA BAY</span>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">The Count's Floating Rock Sanctuary</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Taprobane Island • 2.2 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">A romantic 2.5-acre rocky promontory jutting from Weligama Bay, transformed in the 1920s by the eccentric Count de Mauny as his personal ocean fantasy retreat. Visited by luminaries from Paul Bowles to kings and poets, it remains a spellbinding sight.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">6 mins</span><span class="text-[10px] text-neutral-500 font-light block">Tuk-tuk</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Timing</span><span class="text-xs font-semibold text-[#173F56] block">Golden Hour</span><span class="text-[10px] text-neutral-500 font-light block">Sunset vista</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Access</span><span class="text-xs font-semibold text-[#173F56] block">Shoreline</span><span class="text-[10px] text-neutral-500 font-light block">Bay view</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Taprobane+Island+Weligama" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20what%20is%20the%20best%20vantage%20spot%20to%20view%20Taprobane%20Island%20at%20sunset?" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- DIVISION 2 DIVIDER -->
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="w-full py-10 bg-slate-50 border border-slate-200/80 text-center rounded-2xl">
+<div class="max-w-3xl mx-auto px-6 space-y-2.5">
+<p class="font-script text-2xl md:text-3xl text-[#397FA8] leading-none">untamed waterways &amp; coastal wild...</p>
+<h2 class="font-cormorant text-2xl md:text-3xl lg:text-[34px] font-normal text-[#173F56] leading-snug tracking-tight">Division 2 • Mangrove Lagoons, Stilt Reefs &amp; Ocean Giants</h2>
+<p class="font-body text-sm text-[#475569] font-light max-w-xl mx-auto leading-relaxed">Venture beyond the shore into brackish cinnamon waterways, living stilt fishing traditions, ocean abysses where blue whales surface, and local Ayurvedic reptile sanctuaries.</p>
+<div class="pt-2 flex items-center justify-center gap-3">
+<span class="w-10 h-px bg-slate-200"></span>
+<span class="material-symbols-outlined text-[#397FA8] text-[16px]">kayaking</span>
+<span class="w-10 h-px bg-slate-200"></span>
+</div>
+</div>
+</div>
+</div>
+<!-- CHAPTER 06: Koggala Lake & Cinnamon Mangroves -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 space-y-4">
+<div class="space-y-1.5">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#397FA8]/20 text-[10px] tracking-wider uppercase font-semibold"><span class="text-[#397FA8]">★</span> Curator's Top Pick</span>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium uppercase">LAGOON BIOSPHERE • BIRDS &amp; SPICE ISLANDS</span>
+</div>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">Koggala Lake &amp; Cinnamon Mangroves</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Koggala Lagoon • 7.5 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">Board a private wooden lagoon boat gliding past lush mangrove tunnels and remote cinnamon-peeling islets. Watch sea eagles dive while tasting freshly scraped warm cinnamon bark prepared by island families.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">12 mins</span><span class="text-[10px] text-neutral-500 font-light block">Tuk-tuk to jetty</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Timing</span><span class="text-xs font-semibold text-[#173F56] block">2.5 Hours</span><span class="text-[10px] text-neutral-500 font-light block">Morning / 4 PM</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Access</span><span class="text-xs font-semibold text-[#173F56] block">Private Boat</span><span class="text-[10px] text-neutral-500 font-light block">Concierge booking</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Koggala+Lake+Sri+Lanka" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20please%20reserve%20a%20private%20cinnamon%20mangrove%20boat%20safari." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px] border border-slate-100">
+<img alt="Serene misty lagoon waterways of Koggala Lake" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1V0IcFLWz4OIUDOkUbRQE8Oeo_YfMBPpbiQuKC9qtsmnqL7YVaGLeUyoeJgUkuwKi64LS_sVYNAQ4unp2R2iJ4PQ0otYfd3tko4dD38lpnEqeTkXXjp_BjcH-YfagJb7y1Q8XZfEzo-Mk971W0O2OA_RIlzswHIcbIdnMQpsnbq3xrWTUB33rzUOyilqmmBb82lMhqVji36efy_5HnLLKGLuKoxopTUoUQ-Wcfm_bEe9Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 text-white text-xs sm:text-sm font-medium">Cinnamon Island &amp; Mangrove Lagoons</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px] border border-slate-100">
+<img alt="Fresh cinnamon peeling on islet in Koggala lake" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1WhX_ToUtyJFbBr4UhlHYUU4d0tl2KNbKW-pD5gDW8_KOj0xdFj_SUy9t1HVN-NzGZsMFBpJ2MxVFPzRuyg1DxZUCYfnIz2jkF6sbYz13bIkinb1-1xJid4NZVQm6gDQzvvUSbFuixH5uPAcTjawRS6rjrAmtVbv28oCS9cMKE9VHnbfM-a8M7jdTagz71Da5trtbMHAaHE4G74KKx4_LAJBpUqaTq3Q9zn59Dx2phGPA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Artisanal Cinnamon Bark Processing &amp; Spice Gardens</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 07: Koggala Stilt Fishermen Coast -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px] border border-slate-100">
+<img alt="Traditional stilt fishermen practicing Ritipanna perched on poles above morning coastal waves" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsNVe7GEvKSz1gcdo-QCOAFr-oNHesB66lnTv2ftQdhGG0AG7psNPeq8efL8f-xZXPCjw-ZIr5PKqS09H4RcNVb8lmUyLSLvqT9ZUYjpbh5j8LApJpgO8gpKzbCFormig9FkKDmnii71qa3Z-i3woOwFP0zQ5WKCU8virUjeAAwQLqlJt9AJZW0J38vGDlm9OtWpvFQ4TPyaHFxbr170YZl7slRzqKNO7deZCWSbNWxWxmzJQPkFRiJA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-[10px] uppercase tracking-wider font-medium flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-[#8ccefb]">schedule</span><span>Dawn Patrol • 06:00 AM</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Ritipanna • Ancient Stilt Fishing (Ahangama &amp; Koggala Reefs)</p>
+</div>
+</div>
+<div class="sm:col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] min-h-[140px] border border-slate-100">
+<img alt="Reef surge and calm waters around Ahangama fishing perches" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRHrgPe8OWcKZ1epLvuJFPud2klZ868Mb6vudofXeGJC9sknTBgzOWel4uBdm1e8QeGJbVcEjoE97JcdwFSoh6ULPZch5DHUT0UJlb-zT_Ef5OBz9DkE_eZQhwuHF5IuQn87ILzdrA5PKKx_yPtfG4xWRJmHrhTFE5jt-cKZlVV1K_ElKTnf8vbNXpFv-5RBHzft4Hpisvm6AUr1XFNWUNvIyUDlrod2GC8-8aLbk_BTk2IPH3aBEA0g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-3 text-white text-xs font-medium">Handmade Wooden Petta &amp; Shallow Coral Shelves</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#397FA8]/20 text-[10px] tracking-wider uppercase font-semibold"><span class="text-[#397FA8]">★</span> Guest Favorite</span>
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium uppercase">ICONIC MARITIME HERITAGE • REEF LIVING</span>
+</div>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">Koggala Stilt Fishermen Coast</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Ahangama &amp; Koggala Reefs • 6 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">A centuries-old fishing tradition known as 'Ritipanna', practiced exclusively along this stretch of southern reef. Fishermen balance precariously on slender wooden poles anchored into coral fissures to catch spotted herrings without casting shadows.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">8 mins</span><span class="text-[10px] text-neutral-500 font-light block">Coastal scooter</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Best Hour</span><span class="text-xs font-semibold text-[#173F56] block">6:30 AM</span><span class="text-[10px] text-neutral-500 font-light block">First dawn</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Etiquette</span><span class="text-xs font-semibold text-[#173F56] block">Respectful</span><span class="text-[10px] text-neutral-500 font-light block">Support families</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Stilt+Fishermen+Koggala" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20we%20want%20to%20view%20stilt%20fishermen%20at%20dawn." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 08: Whale Watching in Mirissa -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 space-y-4">
+<div class="space-y-1.5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium uppercase mb-1">INDIAN OCEAN EXPEDITION • OCEAN GIANTS</span>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">Whale Watching in Mirissa</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Mirissa Fishery Harbour • 11 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">The deep continental shelf drops off just a few nautical miles off Mirissa, creating one of the world's most reliable corridors to encounter majestic Blue Whales, Bryde's whales, and playful spinner dolphin pods in the open Indian Ocean.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">18 mins</span><span class="text-[10px] text-neutral-500 font-light block">Hotel vehicle</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Departure</span><span class="text-xs font-semibold text-[#173F56] block">6:00 AM</span><span class="text-[10px] text-neutral-500 font-light block">Harbour launch</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Season</span><span class="text-xs font-semibold text-[#173F56] block">Nov – Apr</span><span class="text-[10px] text-neutral-500 font-light block">Calm waters</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Mirissa+Harbour+Sri+Lanka" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20please%20arrange%20a%20private%20charter%20whale%20watching%20cruise%20from%20Mirissa." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 grid grid-cols-2 gap-3.5">
+<div class="relative rounded-2xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Blue Whale fluke diving into Indian Ocean" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIzWXPcuJnU5kFoWz0IV9_O0XJGf5Sy1c15AIHSzX4WA4cwzKmPQTgaYUwcmjdcNDso3CfYn30Gvzvrm-A1xh1-2-YO4Z0LXQgJmqS3-sSqGH1ahUUJEk5nUW8MlgmqmMyMXx3HW41_I36jo6kKak7W3C7xHt_Nzl7n30KxZKRLAKHOWbT7hw_BwVBjAffJiTK4DQ45B8i47cXlymDlBaIYJ9WurMMRN3tuBr1hzrHxup6ewVrVoLRdg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 text-white text-xs font-medium truncate">Blue Whale Fluke Diving • Mirissa Trench</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Whale pod surfacing alongside safari boat" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrD0cFi9TFfOLn_4g5TCserpDekr67XNr3FwLRmvZ070B8vsAdH5nJtaG9Hy2thPNI9Kx5XIbTnbqChq1QM8S0GkbcXEf4pKkhMq2aInvvRedethRYL1ecgac_DMoKbAwiUjIf0xka3gAaVqCLu_FvtMg-FOIvQhnfC6FN6iJusWWiFhPpWuiyi2KGdVvO0blr9v9jiI1kvbAfvAUECw0Zv2mdnekV4H9dpro2OuiNGLSo7YH2X2k2dg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 text-white text-xs font-medium truncate">Whale Pod Surfacing Alongside Safari Boat</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Double-decker vessel tracking Indian Ocean giants" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKxKWUe3xpwS1DNG8juPFysGa0XE93v9kepk_1oWX_UhPAkCEPOEnyJO87npc2pjYNOeFEg-ntXwqR-o61ykcktPViITTJh2BbKMWBqQJm9lL64Z82WMMy-MaYBnhWbWFW6otf_oIGtTM0Nyh1HnEwaNG6m0O2AS0K17YMWi-gpmT--0x9IZO2IgK12zxKoE3MqKZ4MAuwoNSWQRNo79K4DVM_dPtyNYG0ykGKMXXN55OFQnvMiuNCuQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 text-white text-xs font-medium truncate">Double-Decker Expedition Vessel</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Coastal whale watching vessel Gindara" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxcR1yncm8uthY5KlxOuFl4RkFmI7OyxA-a_cD1NVY6W-nhzclaBkfq_aU7wilNWSygWob34QSA7ca5RHqxQrERSK6j0gFZpN9kzJN3dqejX7rqlPodwlmcFuTSwelBLspolVaExqOg8wHVkyBjVXLGRW9x3PL_TISCPBntYGlLLbkzVNF4FGzFY4yykuX43RY5Wi6guUG6sAqxPrxHMr5PJNe9JZCG6YCXLUX-6EWFRK99q51YbeErQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 text-white text-xs font-medium truncate">Coastal Whale Vessel 'Gindara'</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CHAPTER 09: Snake Farm Weligama -->
+<article class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-2 gap-3.5">
+<div class="col-span-2 relative rounded-2xl overflow-hidden shadow-sm aspect-[16/9] min-h-[220px] border border-slate-100">
+<img alt="Photographer alongside Ayurvedic handler safely observing spectacled cobra" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMPjs8BhPfezR5Q7vBWTxBBK7-ZkuUuSnTeGsASwXDCud9DqGk1KYuHntIbTfGfixOwfiZQ8vfDEIhYvSB9IYBmhUl_ZQfqstDkNZAb7tLiUf4fQ7ghn7JqoXzpd6IWuICCFk2mN4Li5lAo3KUS3MTINJHTOFWjIxosH_Y23tOxB30Iw9_e3ioyrxpJCTDbLE3deLoxMUVoGR3RTq6acbJ5JzhtHNUufmSOvAtpGf-7mhHAaD8jbK89A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white text-[10px] uppercase tracking-wider font-medium flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-[#8ccefb]">photo_camera</span><span>Guided Photography &amp; Safe Handling</span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<p class="text-xs sm:text-sm font-medium tracking-wide drop-shadow-sm">Ayurvedic Conservation &amp; Educational Encounters</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Spectacled Cobra in sanctuary courtyard" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy-wChpwougzoef77O-n1V7JkJFBG5fAl-EyJQw1WbQshivWJy5gbdUlIyB8xHG_0Xmrd1_nNxMlKRK4zk8y_VJT4m8bvfoWzsEAkG7Tv-i6RgC6-uOMMh53qsn6evy8srawt8AzQ3STJO38xFKpEWtsi3XIGy50JorbXYiqurSwhB6MHd1VqJPmp_Iv5TLEE3G1EZlxCH00xVY7vg5TkFUus2erbwmVLQBu_1shLI--98VC0KVWLigA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-white text-[11px] font-medium">Spectacled Cobra</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm aspect-[16/10] border border-slate-100">
+<img alt="Ayurvedic handler calmly holding snake in sanctuary grounds" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX6rmsmSFkuVAun05Cy9uEti4xq9nJPZQqkJOaNHLOv3ZIsa_UmWONFYhaYVfW7IGNVpyzf8ClZqNh9IGwT8b-rjjQnx17C8Mz9IztIYATZUG0zmYI6Ujez1LBk1j_z0w-WrVruC-wMpGvt4PVzJaWRrMbIoOL8aFSZ3ZVfMpiOvpbrwWpaix8iZjMQJrAAd8rzaYzprYD_yjrrZGg1ty_zZ-yD_xtufvdyAdpGjEdV37NjeFCirEXnA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 text-white text-[11px] font-medium">Ayurvedic Coexistence</div>
+</div>
+<div class="col-span-2 relative rounded-xl overflow-hidden shadow-sm aspect-[21/9] border border-slate-100">
+<img alt="Guest holding gentle rescued Indian rock python" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4CLhwBOerdXUYoVBUledfR7FR9iOUWqG9jrMkEzxcllplB3WUeopZnQSVn3d1HxFTCbHw1C3A29reGvQsiErZrJXfYcfNnCbdb9GHxifco5u7pYZj24DatU-ui7LsHSlF2hYDLzCqletYWvCP5gTsiMcOyJ1nC8Vvwyb9epbA2hvIeT5lj91oJQpDmTxRBus-7DF-kWYJPaIT0jHu_JOztBhUTEkG3WJW1tnf4P9YB4eXgXKgqpk2tQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-3 text-white text-xs font-medium">Gentle Python Interaction &amp; Wildlife Rehabilitation</div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium uppercase mb-1">AYURVEDIC MEDICINE &amp; WILDLIFE RESCUE</span>
+<h3 class="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">Snake Farm Weligama</h3>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Udukawa, Weligama • 6.2 km from Noonna</p>
+</div>
+<p class="text-sm text-[#475569] font-light leading-relaxed">Run by multi-generational Ayurvedic doctors practicing traditional antivenom therapies, this renowned sanctuary rescues and rehabilitates local pythons, vipers, and cobras while educating visitors on ethical wildlife coexistence.</p>
+<div class="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+<div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Transit</span><span class="text-xs font-semibold text-[#173F56] block">10 mins</span><span class="text-[10px] text-neutral-500 font-light block">Tuk-tuk</span></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Hours</span><span class="text-xs font-semibold text-[#173F56] block">9am – 5pm</span><span class="text-[10px] text-neutral-500 font-light block">Open daily</span></div></div>
+<div class="pl-2.5 border-l border-slate-200"><div><span class="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">Entry</span><span class="text-xs font-semibold text-[#173F56] block">~1,500 LKR</span><span class="text-[10px] text-neutral-500 font-light block">Rescue fund</span></div></div>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="https://maps.google.com/?q=Snake+Farm+Weligama" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">map</span><span>Open in Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20we%20would%20like%20to%20visit%20the%20Weligama%20Snake%20Farm." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Concierge on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- VIDEO FIELD NOTES PREVIEW BANNER -->
+<section class="w-full px-6 lg:px-8 py-8 bg-white">
+<div class="max-w-7xl mx-auto relative rounded-3xl overflow-hidden shadow-lg bg-neutral-900 min-h-[300px] flex items-center justify-center p-8 text-center">
+<img alt="Coastal scenery banner" class="absolute inset-0 w-full h-full object-cover block opacity-60" src="https://lh3.googleusercontent.com/aida/AEtjO1WNQfHmCY8QTNI-i0hvMVJYjUwx4W8dCd1cY9Jhsc_vXDgYSBjGpA5tUgIK6iy7rRKSj16MiRsMO38OBY8Hdq79l-VbND39XlVEMQXYyUDopkurZEVo0-FYVDL8RA65IJlqvFiv2xEI82rnaYb9cXkitQzR0JeW0YZl-KJvf7LEE9nGE2ixSNrYK-2d6zAHe6S9QI_SIGN_dfTn5794BV6Xx5_RQeu1ndLF1a6dtNLxTw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80"></div>
+<div class="relative z-10 max-w-xl space-y-4">
+<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center mx-auto text-white cursor-pointer hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+<p class="font-script text-2xl text-white/95">untold stories in motion...</p>
+<h3 class="font-cormorant text-3xl font-medium text-white">Visual Field Notes: 9 Southern Sanctuaries</h3>
+<p class="text-xs sm:text-sm text-slate-200 font-light">Experience motion captures of golden hour reef breaks, ancient Bo tree grounds, and hidden lagoon tributaries prior to venturing out.</p>
+<div class="pt-1">
+<span class="inline-block px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-medium tracking-wide">Full 4K Aerial Perspective Available at Concierge</span>
+</div>
+</div>
+</div>
+</section>
+<!-- NEARBY BEACHES & SECRET SWIMS SECTION -->
+<section class="w-full py-16 lg:py-20 bg-white border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 space-y-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="max-w-xl space-y-2">
+<p class="font-script text-2xl md:text-3xl text-[#397FA8] leading-none">turquoise tides &amp; golden sands...</p>
+<h2 class="font-cormorant text-2xl md:text-3xl lg:text-[34px] font-normal text-[#173F56] leading-snug tracking-tight">Nearby Beaches &amp; Secret Swims</h2>
+<p class="font-body text-sm text-[#475569] font-light leading-relaxed">From sheltered turquoise tidal coves and calm turtle lagoons to world-class beginner surf points, explore idyllic neighborhood coastlines within minutes of Noonna Beach Hotel.</p>
+</div>
+<div class="flex items-center gap-2.5 self-start md:self-end">
+<div class="hidden sm:flex items-center gap-1.5 text-[11px] font-medium text-neutral-400 mr-2">
+<span class="material-symbols-outlined text-[15px]">swipe</span><span>Scroll or swipe</span>
+</div>
+<button aria-label="Previous beaches" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#397FA8] hover:text-[#397FA8] transition-all duration-200 shadow-sm bg-white" onclick="document.getElementById('beach-carousel-track').scrollBy({left: -380, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button aria-label="Next beaches" class="w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#397FA8] hover:text-[#397FA8] transition-all duration-200 shadow-sm bg-white" onclick="document.getElementById('beach-carousel-track').scrollBy({left: 380, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Carousel Cards Grid / Track -->
+<div class="flex gap-6 overflow-x-auto pb-4 pt-2 snap-x snap-mandatory scroll-smooth no-scrollbar" id="beach-carousel-track">
+<!-- Card 1: Midigama Beach -->
+<div class="min-w-[280px] sm:min-w-[320px] md:min-w-[340px] max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0">
+<div class="relative h-52 overflow-hidden">
+<img alt="Midigama Beach &amp; Coves" class="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZthfZFXq22XSp4Wnz8N48yVMFLjefaUZ_DytZOWbSPeRFRpkZVTXmz6zMn-RvHqAmQ0VA_l9IXlg9cKdfuMekcf_kIrg6jd9S6gb6P5MdHAsGiCajKe_R7E9__NaXnVGQekpvzj5a45tcEMY8qzlisyK765OpoJVGi6ZRNo97B5sp-O9CipVgBLf4AyeAcD5HrGGN53RPDI6hPcweQWhEUpEr4_haD_Tz8tYgnDNP1wNBE1qYQrsD7w"/>
+<div class="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">0.8 km • 3 mins</div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm text-[#173F56] text-[10px] font-semibold uppercase tracking-wider">Surf &amp; Snorkel</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-[#397FA8]">Surf &amp; Snorkel Coves</span>
+<h3 class="font-cormorant text-2xl font-medium text-[#173F56] leading-snug">Midigama Beach &amp; Coves</h3>
+<p class="text-[13px] text-[#475569] font-light leading-relaxed">Protected quiet sandy pockets alongside legendary surf breaks like Lazy Left and Rams, perfect for uncrowded coastal strolls and reef snorkeling.</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Tide Pools</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Reef Snorkel</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Quiet Sands</span>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[12px] text-neutral-500 font-medium">
+<span class="flex items-center gap-1 text-[#173F56]"><span class="material-symbols-outlined text-[15px] text-[#397FA8]">surfing</span> Shallow Reefs</span>
+<a class="text-[#397FA8] hover:text-[#2c6687] group-hover:translate-x-0.5 transition-transform flex items-center gap-1 font-semibold" href="https://maps.google.com/?q=Midigama+Beach+Sri+Lanka" rel="noopener noreferrer" target="_blank">Explore Maps →</a>
+</div>
+</div>
+</div>
+<!-- Card 2: Weligama Bay Surf Arc -->
+<div class="min-w-[280px] sm:min-w-[320px] md:min-w-[340px] max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0">
+<div class="relative h-52 overflow-hidden">
+<img alt="Weligama Bay Surf Arc" class="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsNVe7GEvKSz1gcdo-QCOAFr-oNHesB66lnTv2ftQdhGG0AG7psNPeq8efL8f-xZXPCjw-ZIr5PKqS09H4RcNVb8lmUyLSLvqT9ZUYjpbh5j8LApJpgO8gpKzbCFormig9FkKDmnii71qa3Z-i3woOwFP0zQ5WKCU8virUjeAAwQLqlJt9AJZW0J38vGDlm9OtWpvFQ4TPyaHFxbr170YZl7slRzqKNO7deZCWSbNWxWxmzJQPkFRiJA"/>
+<div class="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">2.0 km • 5 mins</div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm text-[#173F56] text-[10px] font-semibold uppercase tracking-wider">Beginner Waves</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-[#397FA8]">Gentle Sands &amp; Learn to Surf</span>
+<h3 class="font-cormorant text-2xl font-medium text-[#173F56] leading-snug">Weligama Bay Surf Arc</h3>
+<p class="text-[13px] text-[#475569] font-light leading-relaxed">A sprawling, sheltered sandy crescent bay renowned worldwide for forgiving rolling waves, barefoot surf schools, and vibrant beach cafes.</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Beginner Surf</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Sandy Bottom</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Beach Cafes</span>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[12px] text-neutral-500 font-medium">
+<span class="flex items-center gap-1 text-[#173F56]"><span class="material-symbols-outlined text-[15px] text-[#397FA8]">waves</span> Sandy Bottom</span>
+<a class="text-[#397FA8] hover:text-[#2c6687] group-hover:translate-x-0.5 transition-transform flex items-center gap-1 font-semibold" href="https://maps.google.com/?q=Weligama+Beach+Sri+Lanka" rel="noopener noreferrer" target="_blank">Explore Maps →</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Coconut Tree Hill -->
+<div class="min-w-[280px] sm:min-w-[320px] md:min-w-[340px] max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0">
+<div class="relative h-52 overflow-hidden">
+<img alt="Coconut Tree Hill &amp; Secret Cove" class="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1Vj0sB6yb70vOZWoVF56VykqAjXtaKplR4Fv0s4_x89TB-Fq_Ert0JVI5fxJlFS_qXWwU0moDhkOK7HWqKtybfYmO2tvsqqrK0d39R9jbwgHSxqmseYgHL48LDv8KCeLT3Bd5xIfhwIqA95413n9QRK3A-gcQnYM_7YpBV1SsELI1mKZLd2BP27Gv-xDItSmiz0eyaNPtZ79684vAzttK4h1KIyfHgq__WqqMBJH0TA"/>
+<div class="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">6.5 km • 14 mins</div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm text-[#173F56] text-[10px] font-semibold uppercase tracking-wider">Scenic Vista</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-[#397FA8]">Panoramic Promontory &amp; Snorkeling</span>
+<h3 class="font-cormorant text-2xl font-medium text-[#173F56] leading-snug">Coconut Tree Hill</h3>
+<p class="text-[13px] text-[#475569] font-light leading-relaxed">An iconic red-earth coastal cliff crowned by swaying palms overlooking breaking azure waves, with a hidden crescent cove below for snorkeling.</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Sunset Vista</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Snorkel Cove</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Palm Groves</span>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[12px] text-neutral-500 font-medium">
+<span class="flex items-center gap-1 text-[#173F56]"><span class="material-symbols-outlined text-[15px] text-[#397FA8]">photo_camera</span> Sunset View</span>
+<a class="text-[#397FA8] hover:text-[#2c6687] group-hover:translate-x-0.5 transition-transform flex items-center gap-1 font-semibold" href="https://maps.google.com/?q=Coconut+Tree+Hill+Mirissa" rel="noopener noreferrer" target="_blank">Explore Maps →</a>
+</div>
+</div>
+</div>
+<!-- Card 4: Secret Beach Mirissa -->
+<div class="min-w-[280px] sm:min-w-[320px] md:min-w-[340px] max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0">
+<div class="relative h-52 overflow-hidden">
+<img alt="Secret Beach Mirissa" class="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAfg1OqiJH82d97MoqnKQUjU66OhFj3IDK38VL26pUbCsDrlPLYJ5Ai1bmIQodDB3HJnZ88kvje_wv63Mt4xc9fiWP_rgOJYjuHVgiTaKq1HHDirh3P2nt5YtQ5FgVwDFSsaujk30skURs-uKOcg4E5IFu-tOyHgZz9qVsSz5aFYTiEOk6htvZ7dT3LcA0ukiTyPPnqKt825cfFFNgulex7fAW5I9YZAT6nuMgl3IxfoFbGqHstAZKhQ"/>
+<div class="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">7.2 km • 16 mins</div>
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm text-[#173F56] text-[10px] font-semibold uppercase tracking-wider">Tide Pools</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-[#397FA8]">Secluded Tidal Cove &amp; Pools</span>
+<h3 class="font-cormorant text-2xl font-medium text-[#173F56] leading-snug">Secret Beach Mirissa</h3>
+<p class="text-[13px] text-[#475569] font-light leading-relaxed">Tucked behind headlands via a scenic jungle trail, featuring natural granite tide pools and calm turquoise bathing spots sheltered from open ocean swell.</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Tide Pools</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Secluded Cove</span>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 text-[#475569] text-[10px] font-medium">Snorkel Waters</span>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between text-[12px] text-neutral-500 font-medium">
+<span class="flex items-center gap-1 text-[#173F56]"><span class="material-symbols-outlined text-[15px] text-[#397FA8]">pool</span> Tidal Lagoons</span>
+<a class="text-[#397FA8] hover:text-[#2c6687] group-hover:translate-x-0.5 transition-transform flex items-center gap-1 font-semibold" href="https://maps.google.com/?q=Secret+Beach+Mirissa" rel="noopener noreferrer" target="_blank">Explore Maps →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- GASTRONOMY FEATURE BANNER (A Taste of the Southern Coast) -->
+<section class="w-full py-16 lg:py-20 bg-white border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100">
+<img alt="Artisanal Sri Lankan cafe and fresh coastal breakfast in Mirissa" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1XYXGUj4fR1t6umXu400F9Ui-9qrH64mlbOlnFlxzkyxP9IKS0SHBzDpgaTECD2Qm3pfg1N8vmVVuZIaE0b0RSZG6JlMdg25FbA4gNhnW-VHmyFbbztPXQw-n1iXQuRn-sv6vIK1uhwrAmpEnFItZzAI8Kq4Lr2z7ICunhuBfxAKJVx76FsP66qtnhqqR5xPYaXsAsgEqCsY5wcPrbpl5QpfG6IKzpseTKUQGj_4wuM_g"/>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100">
+<img alt="Fresh seafood catch grilling over open charcoal fire on Sri Lankan beach" class="w-full h-full object-cover block" src="https://lh3.googleusercontent.com/aida/AEtjO1VlMD33wAOCE__jYSQHAlTsTVPPowi_gIfbPO0copWfna4JTwy0wJBxaDvpFurVVFhjrx6uvmnhZR7aDVyjlF-JeWe9Oe4bLxtMEoD4EppXuXz6-Tk_daikAbIoDmmORpmFD7PsPis8C5xxJ92IpmOCt6Wxim-YRKIEtaQyxhiOcH1R1pO8aRrOZSYy-ogfLpcm33U97n1eGbh8hnZkPFkWKJMJG4iM4K125mIIIzoXew"/>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-4">
+<div class="space-y-1.5">
+<p class="font-script text-2xl md:text-3xl text-[#397FA8] leading-none">flavor &amp; heritage...</p>
+<h2 class="font-cormorant text-2xl lg:text-3xl font-normal text-[#173F56] leading-snug tracking-tight">A Taste of the Southern Coast</h2>
+<p class="text-xs font-medium text-[#397FA8] tracking-wide">Fresh Ocean Catch, Clay-Pot Curries &amp; Coastal Cafes</p>
+</div>
+<p class="font-body text-sm text-[#475569] font-light leading-relaxed">From slow-simmered village curries infused with roasted curry leaves and fresh coconut milk to morning catches grilled over open coconut husks and breezy specialty coffee spots in nearby surf hamlets.</p>
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-xs font-medium">Village curries</span>
+<span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-xs font-medium">Fresh catch</span>
+<span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-[#475569] text-xs font-medium">Artisan cafes</span>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1.5">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px] text-[#397FA8]">restaurant_menu</span><span>View Dining Directory</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm" href="https://wa.me/94912283490?text=Hello%20Concierge,%20could%20you%20share%20your%20favorite%20local%20curry%20and%20cafe%20recommendations%20near%20Noonna?" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span><span>Ask Host for Food Recommendations</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRE-FOOTER CTA: Make Room for a Slower Stay -->
+<section class="py-16 lg:py-20 bg-slate-50 border-t border-slate-200/80 text-center">
+<div class="max-w-2xl mx-auto px-6 space-y-3">
+<span class="block font-script text-[28px] md:text-[34px] text-[#397FA8] leading-none">rest &amp; unwind...</span>
+<h2 class="font-cormorant text-3xl md:text-4xl text-[#173F56] font-normal leading-snug tracking-tight">Make Room for a Slower Stay</h2>
+<p class="font-body text-sm md:text-[15px] text-[#475569] font-light max-w-lg mx-auto leading-relaxed">From ancient 300-year-old granite sanctuaries to fortified colonial ramparts, return to barefoot sanctuary comfort and quiet tides on the secluded shores of Kumbalgama.</p>
+<div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3">
+<a class="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#397FA8] hover:bg-[#2c6687] text-white font-body text-xs font-medium tracking-wide uppercase transition-all shadow-sm gap-2" href="https://www.booking.com/hotel/lk/noonna-beach.html" rel="noopener noreferrer" target="_blank">
+<span>Reserve Your Room on Booking.com</span>
+<svg class="w-3.5 h-3.5 stroke-current" fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</a>
+</div>
+<div class="pt-2 flex items-center justify-center gap-1.5 text-xs text-slate-500 font-body">
+<svg class="w-3.5 h-3.5 text-[#397FA8]" fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>Secured through Booking.com • Verified Private Coastal Listing</span>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- MASTER FOOTER ASSET (Pure White, 4 Columns, Clean Grid)                   -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-white border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+<!-- Col 1: Brand Info -->
+<div class="space-y-3.5">
+<div class="flex items-center gap-3">
+<img alt="Noonna Beach Hotel Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt8yh7ZmgKzKtikTBrdS_8cUCTGolBdjreLdz7__jxcKDPMurkOGzMHOzK9U7efWq48DUfCiA_TuHRTXmhnAvzF6fsWPPAzlzhfd7UMdUybOql_JqSLr-sGgw4V6KDDHrZvSGKnibXKiPZU_-T9pNQrLnOanmH7z4uxkrFxvUJDjZhz_KhQxZctG-Fxm4A9JY645JtUOIBz1LffPnhs-uHUb5zjeqnhjGuR1q5PAu9MMSci9CYzXHitg"/>
+<span class="font-cormorant text-2xl font-medium tracking-wide text-neutral-900">Noonna</span>
+</div>
+<p class="font-script text-2xl text-[#397FA8] leading-none">barefoot luxury by the ocean</p>
+<p class="text-[13px] text-neutral-500 font-light leading-relaxed">An architectural sanctuary nested along the pristine southern coast of Sri Lanka. Crafted for slow living, quiet tides, and restorative horizons.</p>
+</div>
+<!-- Col 2: Navigation -->
+<div class="space-y-4">
+<h3 class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-900">Navigation</h3>
+<ul class="space-y-2.5 text-[13px] text-neutral-600 font-light">
+<li><a class="hover:text-[#397FA8] transition-colors" data-path="home" href="#">The Sanctuary Home</a></li>
+<li><a class="hover:text-[#397FA8] transition-colors" data-path="the-stay" href="#">Suites &amp; Ocean Villas</a></li>
+<li><a class="hover:text-[#397FA8] transition-colors" data-path="experiences" href="#">Curated Coastal Experiences</a></li>
+<li><a class="hover:text-[#397FA8] transition-colors" data-path="gallery" href="#">Atmosphere &amp; Visual Gallery</a></li>
+<li><a class="hover:text-[#397FA8] transition-colors" data-path="book-your-stay" href="#">Direct Reservations</a></li>
+</ul>
+</div>
+<!-- Col 3: Contact & Location -->
+<div class="space-y-4">
+<h3 class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-900">Contact &amp; Location</h3>
+<div class="space-y-3 text-[13px] text-neutral-600 font-light">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[17px] text-[#397FA8] mt-0.5">pin_drop</span>
+<span>Galle Coastal Road, Thalpe, Southern Province, Sri Lanka</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[17px] text-[#397FA8]">call</span>
+<span>+94 91 228 3490</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[17px] text-[#397FA8]">mail</span>
+<span>concierge@noonnabeach.com</span>
+</div>
+</div>
+</div>
+<!-- Col 4: Connect -->
+<div class="space-y-4">
+<h3 class="text-[11px] font-semibold uppercase tracking-[0.2em] text-neutral-900">Connect</h3>
+<p class="text-[13px] text-neutral-500 font-light">Follow our journals of tides, sunrise sessions, and coastal retreat living.</p>
+<div class="flex items-center gap-2.5 text-neutral-600 pt-1">
+<a aria-label="Instagram" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a aria-label="Facebook" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.7 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"></path></svg>
+</a>
+<a aria-label="YouTube" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+<a aria-label="WhatsApp" class="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-[#397FA8] hover:text-[#397FA8] transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Payment Badges & Copyright -->
+<div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center flex-wrap gap-2 text-[10px] font-semibold tracking-wider text-neutral-600">
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">VISA</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">MASTERCARD</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">AMEX</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">PAYPAL</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">APPLE PAY</span>
+<span class="px-2.5 py-1 bg-white border border-slate-200 rounded">GOOGLE PAY</span>
+</div>
+<div class="flex items-center gap-4 text-xs text-neutral-500 font-light">
+<a class="hover:text-[#397FA8] transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a>
+<span>•</span>
+<a class="hover:text-[#397FA8] transition-colors" data-path="terms-of-stay" href="#">Terms of Stay</a>
+</div>
+</div>
+<div class="mt-8 text-center text-xs text-neutral-400 font-light">
+      © 2026 Noonna Beach Hotel. All rights reserved. Rates and availability subject to seasonal confirmation.
+    </div>
+</div>
+</footer>
+</body></html>

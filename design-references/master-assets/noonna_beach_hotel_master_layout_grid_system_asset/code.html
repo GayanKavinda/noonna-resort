@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noonna Beach Hotel - Master Layout & Grid System Asset</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Moon+Dance&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ocean: {
+              DEFAULT: '#397FA8',
+              hover: '#2E698D',
+              light: '#EBF4F9',
+              subtle: '#D9EAF3',
+              deep: '#173F56',
+            },
+            slate: {
+              900: '#0F172A',
+              700: '#334155',
+              600: '#475569',
+              500: '#64748B',
+              200: '#E2E8F0',
+              100: '#F1F5F9',
+              50: '#F8FAFC',
+            },
+            sand: {
+              50: '#FBFBFA',
+              100: '#F5F5F0',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+            script: ['"Moon Dance"', 'cursive'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .grid-column-bg {
+      background: repeating-linear-gradient(
+        to right,
+        rgba(57, 127, 168, 0.04) 0px,
+        rgba(57, 127, 168, 0.04) calc((100% - 11 * 24px) / 12),
+        transparent calc((100% - 11 * 24px) / 12),
+        transparent calc((100% - 11 * 24px) / 12 + 24px)
+      );
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-ocean-subtle selection:text-ocean-deep">
+
+  <!-- Top Spec Status Header -->
+  <header class="w-full bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Master Spec Canvas • v1.0 Active
+        </span>
+        <h1 class="text-sm md:text-base font-semibold text-slate-900">Master Layout, Breakpoint & Spacing Architecture</h1>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-mono text-slate-500">
+        <span class="hidden sm:inline bg-slate-100 px-2.5 py-1 rounded border border-slate-200">System: Modern Coastal Sanctuary</span>
+        <span class="bg-ocean-light text-ocean px-2.5 py-1 rounded font-semibold border border-ocean-subtle">Primary Width: 1280px / 1440px Canvas</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Blueprint Container -->
+  <main class="max-w-7xl mx-auto px-6 lg:px-8 py-10 space-y-16">
+
+    <!-- Section 1: Hero Overview & Philosophy -->
+    <section class="bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-xs">
+      <div class="max-w-3xl space-y-3">
+        <span class="font-script text-[32px] text-ocean leading-none block">the architectural rhythm...</span>
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-[42px] font-normal text-slate-900 tracking-tight leading-tight">
+          Master Page Geometry & Spacing Blueprint
+        </h2>
+        <p class="text-slate-600 font-light text-base lg:text-lg leading-relaxed">
+          The mathematical cadence that unites every screen of Noonna Beach Hotel. Built on clean 4px/8px baseline multiples, unhurried vertical breathing room (<span class="font-mono text-xs font-medium text-ocean bg-ocean-light px-1.5 py-0.5 rounded">py-16 to py-24</span>), strict container boundaries, and fluid grid ratios.
+        </p>
+      </div>
+
+      <!-- Quick KPI Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-slate-100 font-mono text-xs">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+          <span class="text-slate-400 block mb-1">Max Page Container</span>
+          <span class="text-slate-900 font-semibold text-sm">max-w-7xl (1280px)</span>
+          <span class="text-slate-500 text-[11px] block mt-1">Header, Nav & Content</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+          <span class="text-slate-400 block mb-1">Text Readability Max</span>
+          <span class="text-slate-900 font-semibold text-sm">max-w-3xl / max-w-4xl</span>
+          <span class="text-slate-500 text-[11px] block mt-1">65–75 chars optimal</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+          <span class="text-slate-400 block mb-1">Standard Gutter</span>
+          <span class="text-slate-900 font-semibold text-sm">px-6 lg:px-8 (24/32px)</span>
+          <span class="text-slate-500 text-[11px] block mt-1">Fluid outer margins</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/60">
+          <span class="text-slate-400 block mb-1">Section Spacing</span>
+          <span class="text-slate-900 font-semibold text-sm">py-16 to py-24 (64–96px)</span>
+          <span class="text-slate-500 text-[11px] block mt-1">Unhurried breathing room</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Visual 12-Column Responsive Grid System -->
+    <section class="bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-xs space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-100">
+        <div>
+          <span class="font-script text-[28px] text-ocean block leading-none">structural alignment...</span>
+          <h3 class="font-serif text-2xl lg:text-3xl font-medium text-slate-900">12-Column Desktop Grid Demonstration</h3>
+          <p class="text-slate-600 text-sm mt-1">12 equal columns, 24px (1.5rem) column gap, nested in max-w-7xl container with 32px side margins.</p>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-mono">
+          <span class="px-2.5 py-1 bg-ocean-light text-ocean rounded font-medium border border-ocean-subtle">desktop: 12 cols</span>
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded border border-slate-200">tablet: 8 cols</span>
+          <span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded border border-slate-200">mobile: 4 cols</span>
+        </div>
+      </div>
+
+      <!-- Live Column Visualizer -->
+      <div class="border border-ocean-subtle/80 bg-ocean-light/20 p-6 rounded-xl space-y-6">
+        <div class="text-xs font-mono text-ocean-deep font-medium flex items-center justify-between">
+          <span>CONTAINER BOUNDARY: max-w-7xl (1280px)</span>
+          <span>GAP: gap-6 (24px)</span>
+        </div>
+
+        <!-- 12 micro column indicators -->
+        <div class="grid grid-cols-12 gap-2 sm:gap-6">
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">1</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">2</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">3</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">4</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">5</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">6</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">7</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">8</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">9</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">10</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">11</div>
+          <div class="h-14 rounded-lg bg-ocean/15 border border-ocean/30 flex items-center justify-center font-mono text-xs text-ocean font-semibold">12</div>
+        </div>
+
+        <!-- Practical Archetypes within Grid -->
+        <div class="space-y-3 pt-2">
+          <div class="text-xs font-mono text-slate-500 uppercase tracking-wider">Common Page Column Splits</div>
+          
+          <!-- Split 1: Half & Half (Editorial narrative & media) -->
+          <div class="grid grid-cols-12 gap-2 sm:gap-6">
+            <div class="col-span-6 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-6 (50%)</span>
+              <span class="font-mono text-slate-400">Editorial Narrative Copy</span>
+            </div>
+            <div class="col-span-6 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-6 (50%)</span>
+              <span class="font-mono text-slate-400">Hero Media / Photography</span>
+            </div>
+          </div>
+
+          <!-- Split 2: 7/5 Asymmetric (The Stay suite details) -->
+          <div class="grid grid-cols-12 gap-2 sm:gap-6">
+            <div class="col-span-7 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-7 (~58%)</span>
+              <span class="font-mono text-slate-400">Main Suite Gallery & Blueprint</span>
+            </div>
+            <div class="col-span-5 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-5 (~42%)</span>
+              <span class="font-mono text-slate-400">Sticky Booking Summary & Intel</span>
+            </div>
+          </div>
+
+          <!-- Split 3: 4/4/4 Tri-Card (Highlights & Surf Breakers) -->
+          <div class="grid grid-cols-12 gap-2 sm:gap-6">
+            <div class="col-span-4 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-4 (33.3%)</span>
+              <span class="font-mono text-slate-400">Card 1</span>
+            </div>
+            <div class="col-span-4 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-4 (33.3%)</span>
+              <span class="font-mono text-slate-400">Card 2</span>
+            </div>
+            <div class="col-span-4 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-4 (33.3%)</span>
+              <span class="font-mono text-slate-400">Card 3</span>
+            </div>
+          </div>
+
+          <!-- Split 4: 3/3/3/3 Quad-Card (Amenities & Transport) -->
+          <div class="grid grid-cols-12 gap-2 sm:gap-6">
+            <div class="col-span-3 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-3</span>
+              <span class="font-mono text-slate-400">Tuk-Tuk</span>
+            </div>
+            <div class="col-span-3 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-3</span>
+              <span class="font-mono text-slate-400">Cruisers</span>
+            </div>
+            <div class="col-span-3 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-3</span>
+              <span class="font-mono text-slate-400">Stroll</span>
+            </div>
+            <div class="col-span-3 h-12 bg-white rounded-lg border border-slate-300 p-3 flex items-center justify-between text-xs">
+              <span class="font-medium text-slate-800">col-span-3</span>
+              <span class="font-mono text-slate-400">Train</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Standard Page Container Widths & Archetypes -->
+    <section class="bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-xs space-y-8">
+      <div>
+        <span class="font-script text-[28px] text-ocean block leading-none">disciplined hierarchy...</span>
+        <h3 class="font-serif text-2xl lg:text-3xl font-medium text-slate-900">Standard Container Width Archetypes</h3>
+        <p class="text-slate-600 text-sm mt-1">Every element on Noonna Beach Hotel is mapped to one of five strict horizontal container scales.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Scale 1: Full-Bleed 100vw -->
+        <div class="border border-slate-200 rounded-xl p-5 bg-slate-50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-slate-200 text-slate-800">w-full (100%)</span>
+              <span class="text-sm font-semibold text-slate-900">Full-Bleed Panoramic Shell</span>
+            </div>
+            <p class="text-xs text-slate-600">Top Header navbar backdrop, global footer background, full-bleed hero photography banners, subtle section surface tint bars.</p>
+          </div>
+          <span class="font-mono text-xs text-ocean bg-white px-3 py-1.5 rounded-lg border border-slate-200 shrink-0">w-full px-0</span>
+        </div>
+
+        <!-- Scale 2: Max 7XL (1280px) -->
+        <div class="border border-ocean-subtle rounded-xl p-5 bg-ocean-light/30 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-ocean text-white">max-w-7xl (1280px)</span>
+              <span class="text-sm font-semibold text-slate-900">Global Primary Content Frame</span>
+            </div>
+            <p class="text-xs text-slate-600">The master parent container for all major sections: header nav contents, 28 destinations carousels, photo galleries, and 4-column master footer.</p>
+          </div>
+          <span class="font-mono text-xs text-ocean-deep bg-white px-3 py-1.5 rounded-lg border border-ocean-subtle shrink-0">max-w-7xl mx-auto px-6 lg:px-8</span>
+        </div>
+
+        <!-- Scale 3: Max 6XL (1152px) -->
+        <div class="border border-slate-200 rounded-xl p-5 bg-slate-50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-slate-200 text-slate-800">max-w-6xl (1152px)</span>
+              <span class="text-sm font-semibold text-slate-900">Curated Feature Grid Container</span>
+            </div>
+            <p class="text-xs text-slate-600">Used for Getting Here transit card quad, Surf Intel dashboard, and culinary cards where tighter cohesion increases elegance.</p>
+          </div>
+          <span class="font-mono text-xs text-ocean bg-white px-3 py-1.5 rounded-lg border border-slate-200 shrink-0">max-w-6xl mx-auto px-6</span>
+        </div>
+
+        <!-- Scale 4: Max 4XL (896px) -->
+        <div class="border border-slate-200 rounded-xl p-5 bg-slate-50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-slate-200 text-slate-800">max-w-4xl (896px)</span>
+              <span class="text-sm font-semibold text-slate-900">Pre-Footer Master CTA & Accordion Accord</span>
+            </div>
+            <p class="text-xs text-slate-600">Master Pre-Footer "Make Room for a Slower Stay" booking container and verified booking inquiry forms. Ensures high visual density.</p>
+          </div>
+          <span class="font-mono text-xs text-ocean bg-white px-3 py-1.5 rounded-lg border border-slate-200 shrink-0">max-w-4xl mx-auto px-6</span>
+        </div>
+
+        <!-- Scale 5: Max 3XL (768px) -->
+        <div class="border border-slate-200 rounded-xl p-5 bg-slate-50 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-semibold bg-slate-200 text-slate-800">max-w-3xl (768px)</span>
+              <span class="text-sm font-semibold text-slate-900">Editorial Text & FAQ Narrow Container</span>
+            </div>
+            <p class="text-xs text-slate-600">Master FAQ accordion list, editorial storytelling blocks ("A Golden Crescent Carved for Solitude"), ensuring comfortable line length.</p>
+          </div>
+          <span class="font-mono text-xs text-ocean bg-white px-3 py-1.5 rounded-lg border border-slate-200 shrink-0">max-w-3xl mx-auto px-6</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Vertical Spacing & Section Rhythm Matrix -->
+    <section class="bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-xs space-y-8">
+      <div>
+        <span class="font-script text-[28px] text-ocean block leading-none">rhythm & pauses...</span>
+        <h3 class="font-serif text-2xl lg:text-3xl font-medium text-slate-900">Vertical Spacing Rhythm & Elevation Tokens</h3>
+        <p class="text-slate-600 text-sm mt-1">Consistent vertical padding values that create the relaxed, uncrowded atmosphere of a seaside retreat.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Spacing 1 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">py-24 (96px)</span>
+            <span class="text-xs text-slate-400 font-mono">Large / Major</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Primary Section Rhythm</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Main page sections on desktop: Experiences Carousel, Gallery Showcase, Pre-Footer Booking CTA, and Hotel Accommodations overview.
+          </p>
+          <div class="h-8 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ↕ 96px Vertical Breathing Room
+          </div>
+        </div>
+
+        <!-- Spacing 2 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">py-16 (64px)</span>
+            <span class="text-xs text-slate-400 font-mono">Medium / Standard</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Feature & Utility Blocks</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Transit Quad Cards, Surf Intelligence Dashboard, FAQ Accordion section, and Mobile major section boundaries (<span class="font-mono text-[11px]">py-12 md:py-16</span>).
+          </p>
+          <div class="h-6 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ↕ 64px Standard Height
+          </div>
+        </div>
+
+        <!-- Spacing 3 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">mb-10 / mb-12 (40–48px)</span>
+            <span class="text-xs text-slate-400 font-mono">Header Gap</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Section Header to Grid Gap</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            The precise clearance separating the 3-Tier Section Header (Eyebrow + H2 + Deck) from the grid of cards or visual components below.
+          </p>
+          <div class="h-5 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ↕ 40–48px Header Offset
+          </div>
+        </div>
+
+        <!-- Spacing 4 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">h-20 (80px)</span>
+            <span class="text-xs text-slate-400 font-mono">Chrome / Shell</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Sticky Top Navigation Height</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Master desktop navigation bar height with 44px logo mark, 5 link routes, 4 social glyph pills, and Book Your Stay button.
+          </p>
+          <div class="h-7 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ↕ 80px Master Header
+          </div>
+        </div>
+
+        <!-- Spacing 5 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">gap-6 to gap-8</span>
+            <span class="text-xs text-slate-400 font-mono">Component Gap</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Card & Bento Grid Gutters</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Standard horizontal and vertical gutters between cards (Dining venues, Surf breaks, Amenities, and Visual Gallery).
+          </p>
+          <div class="h-5 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ↔ 24px–32px Gutters
+          </div>
+        </div>
+
+        <!-- Spacing 6 -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-sand-50 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-semibold text-ocean bg-ocean-light px-2 py-0.5 rounded">rounded-xl (12px)</span>
+            <span class="text-xs text-slate-400 font-mono">Geometry</span>
+          </div>
+          <h4 class="font-serif text-lg font-medium text-slate-900">Border Radius Standard</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Buttons: <span class="font-mono text-[11px]">rounded-lg (8px)</span>. Cards & Modals: <span class="font-mono text-[11px]">rounded-xl/2xl (12–16px)</span>. Socials & Pills: <span class="font-mono text-[11px]">rounded-full</span>.
+          </p>
+          <div class="h-5 bg-ocean/10 rounded flex items-center justify-center font-mono text-[11px] text-ocean">
+            ◖ 8px–16px Curvature
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Responsive Breakpoint Strategy -->
+    <section class="bg-white rounded-2xl border border-slate-200 p-8 lg:p-12 shadow-xs space-y-8">
+      <div>
+        <span class="font-script text-[28px] text-ocean block leading-none">fluid translation...</span>
+        <h3 class="font-serif text-2xl lg:text-3xl font-medium text-slate-900">Responsive Breakpoints & Layout Adaptations</h3>
+        <p class="text-slate-600 text-sm mt-1">How layouts gracefully reflow across standard devices without layout shift.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-slate-200 bg-slate-50 font-mono text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-4">Device Tier</th>
+              <th class="py-3 px-4">Breakpoint</th>
+              <th class="py-3 px-4">Container Behavior</th>
+              <th class="py-3 px-4">Grid Columns</th>
+              <th class="py-3 px-4">Section Padding</th>
+              <th class="py-3 px-4">Key Nav Mode</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 text-slate-700">
+            <tr>
+              <td class="py-4 px-4 font-semibold text-slate-900 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-400"></span> Mobile
+              </td>
+              <td class="py-4 px-4 font-mono text-ocean font-medium">&lt; 640px</td>
+              <td class="py-4 px-4 font-mono">w-full px-5 (20px)</td>
+              <td class="py-4 px-4 font-mono">1 col stacked</td>
+              <td class="py-4 px-4 font-mono">py-12 (48px)</td>
+              <td class="py-4 px-4">Logo + Book Button (Compact)</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-4 font-semibold text-slate-900 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-400"></span> Tablet Portrait
+              </td>
+              <td class="py-4 px-4 font-mono text-ocean font-medium">sm: 640px</td>
+              <td class="py-4 px-4 font-mono">max-w-xl mx-auto px-6</td>
+              <td class="py-4 px-4 font-mono">2 cols</td>
+              <td class="py-4 px-4 font-mono">py-14 (56px)</td>
+              <td class="py-4 px-4">Logo + Drawer Toggle</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-4 font-semibold text-slate-900 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-slate-400"></span> Tablet Landscape
+              </td>
+              <td class="py-4 px-4 font-mono text-ocean font-medium">md: 768px</td>
+              <td class="py-4 px-4 font-mono">max-w-3xl mx-auto px-6</td>
+              <td class="py-4 px-4 font-mono">2 to 3 cols</td>
+              <td class="py-4 px-4 font-mono">py-16 (64px)</td>
+              <td class="py-4 px-4">Compact links appear</td>
+            </tr>
+            <tr>
+              <td class="py-4 px-4 font-semibold text-slate-900 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-ocean"></span> Desktop Standard
+              </td>
+              <td class="py-4 px-4 font-mono text-ocean font-medium">lg: 1024px</td>
+              <td class="py-4 px-4 font-mono">max-w-5xl mx-auto px-8</td>
+              <td class="py-4 px-4 font-mono">3 to 4 cols</td>
+              <td class="py-4 px-4 font-mono">py-20 (80px)</td>
+              <td class="py-4 px-4">Full 5 Links + 4 Socials + CTA</td>
+            </tr>
+            <tr class="bg-ocean-light/20">
+              <td class="py-4 px-4 font-semibold text-ocean-deep flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Master Wide Screen
+              </td>
+              <td class="py-4 px-4 font-mono text-ocean font-bold">xl: 1280px+</td>
+              <td class="py-4 px-4 font-mono font-medium text-slate-900">max-w-7xl mx-auto px-8</td>
+              <td class="py-4 px-4 font-mono font-medium text-slate-900">Full 12 cols (4-col cards)</td>
+              <td class="py-4 px-4 font-mono font-medium text-slate-900">py-24 (96px)</td>
+              <td class="py-4 px-4 font-medium text-slate-900">Master Sticky Header (h-20)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 6: Copy-Paste Code Contract For Engineering & Design -->
+    <section class="bg-slate-900 text-slate-100 rounded-2xl p-8 lg:p-12 shadow-md space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <div>
+          <span class="font-script text-[28px] text-ocean-subtle block leading-none">code contract...</span>
+          <h3 class="font-serif text-2xl font-medium text-white">Reusable Page Shell HTML Boilerplate</h3>
+          <p class="text-slate-400 text-xs mt-1">Copy and paste this invariant shell to guarantee 100% layout consistency on any new page.</p>
+        </div>
+        <span class="text-xs font-mono bg-slate-800 text-ocean-subtle px-3 py-1.5 rounded-lg border border-slate-700">HTML + Tailwind Standard</span>
+      </div>
+
+      <pre class="bg-slate-950 p-6 rounded-xl border border-slate-800 text-xs font-mono text-slate-300 overflow-x-auto leading-relaxed"><code>&lt;!-- 1. GLOBAL WRAPPER: Full width with pure white background --&gt;
+&lt;div class="w-full min-h-screen bg-white text-slate-900 antialiased"&gt;
+
+  &lt;!-- 2. MASTER TOP NAV: Height 80px (h-20), border-b, container max-w-7xl --&gt;
+  &lt;header class="w-full bg-white border-b border-slate-200 sticky top-0 z-50"&gt;
+    &lt;div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between"&gt;
+      &lt;!-- Logo Lockup, 5 Nav Links, 4 Social Icons, 'Book Your Stay' Button --&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;!-- 3. PRIMARY CONTENT SECTIONS: Unhurried vertical padding rhythm (py-20 / py-24) --&gt;
+  &lt;main class="w-full"&gt;
+    &lt;section class="w-full py-16 lg:py-24"&gt;
+      &lt;div class="max-w-7xl mx-auto px-6 lg:px-8"&gt;
+        &lt;!-- 3-Tier Section Header: Moon Dance + Cormorant Garamond + Inter --&gt;
+        &lt;div class="max-w-3xl mb-12 text-left space-y-1"&gt;
+          &lt;span class="font-['Moon_Dance',cursive] text-[30px] text-[#397FA8] leading-none"&gt;unhurried coastal journeys...&lt;/span&gt;
+          &lt;h2 class="font-['Cormorant_Garamond',serif] text-3xl lg:text-4xl text-[#173F56] font-normal"&gt;Section Title&lt;/h2&gt;
+          &lt;p class="font-['Inter',sans-serif] text-sm md:text-base text-[#475569] font-light leading-relaxed"&gt;Supporting deck description.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- 12-Column Responsive Card Grid (e.g. 4 cards across) --&gt;
+        &lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"&gt;
+          &lt;!-- Uniform Card Components with rounded-xl and slate-200 hairlines --&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;!-- 4. PRE-FOOTER BOOKING CTA: max-w-4xl container --&gt;
+  &lt;section class="w-full bg-white py-20 lg:py-24 border-t border-slate-100"&gt;
+    &lt;div class="max-w-4xl mx-auto px-6 text-center"&gt;
+      &lt;!-- Contextual Route Copy + Booking.com Action Button --&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- 5. MASTER FOOTER: max-w-7xl 4-Column Layout + Verified Payment Badges --&gt;
+  &lt;footer class="w-full bg-white border-t border-slate-200 pt-16 pb-12"&gt;
+    &lt;div class="max-w-7xl mx-auto px-6 lg:px-8"&gt;
+      &lt;!-- 4 Columns & Single-line legal disclaimer --&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+  </main>
+
+  <!-- Spec Footer -->
+  <footer class="w-full bg-white border-t border-slate-200 py-6 mt-16 text-center text-xs text-slate-500 font-mono">
+    © 2026 Noonna Beach Hotel • Master Layout & Grid System Specification Asset • Design System Sync: {{DATA:DESIGN_SYSTEM:DESIGN_SYSTEM_1}}
+  </footer>
+
+</body>
+</html>
