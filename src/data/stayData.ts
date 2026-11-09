@@ -205,24 +205,33 @@ export const STAY_DATA = {
     },
   ] as AmenityCategory[],
 
-  // Section 6: Dining Preview highlights
+  // Section 6: Food & Your Stay (Culinary Preview)
+  diningTitle: "Food & Your Stay",
+  diningDeck:
+    "Wake up to nourishing seaside dining and artisanal flavors prepared with seasonal southern Sri Lankan ingredients and versatile international dishes.",
+  diningBadge: "Dining & Breakfast",
+  diningCursive: "a taste of the coast...",
+  diningImageBadge: "Oceanfront Dining & Breakfast Spread",
+  diningHostNote:
+    "Dining arrangements, daily breakfast inclusions, and seasonal menu selections to be confirmed directly with host upon check-in.",
+
   diningFeatures: [
     {
-      title: "Morning Refreshments",
+      title: "Breakfast on the Go",
       description:
-        "Start coastal mornings with Ceylon tea, tropical coffee, and local fruit options upon arrangement with the host.",
+        "Convenient takeaway packages tailored for early morning surf dawn patrols or train departures to Galle and Matara.",
       iconName: "takeout_dining",
     },
     {
-      title: "Southern Sri Lankan Flavours",
+      title: "Italian, Asian & American Selections",
       description:
-        "Discover traditional regional curries, fresh seafood, and tropical specialties prepared locally along the coastal strip.",
+        "Versatile cuisine repertoire prepared freshly on-site, spanning authentic Sri Lankan curries, Asian noodles, hearty American breakfasts, and light pasta.",
       iconName: "restaurant",
     },
     {
-      title: "Garden & Veranda Moments",
+      title: "Evening Bar & Garden Lounge",
       description:
-        "Enjoy fresh king coconuts and chilled drinks in the peaceful garden surroundings under coastal palm trees.",
+        "Unwind with king coconut refreshments, chilled beers, and tropical mocktails under the swaying palms.",
       iconName: "local_bar",
     },
   ],
@@ -289,27 +298,27 @@ export const STAY_DATA = {
     distances: [
       {
         place: "Kumbalgama Train Station",
-        distance: "Local access",
+        distance: "~1.2 km",
         iconName: "train",
       },
       {
-        place: "Midigama Surf Beaches",
-        distance: "Short coastal drive",
+        place: "Midigama Beach",
+        distance: "~1.4 km",
         iconName: "surfing",
       },
       {
-        place: "Abimanagama Shoreline",
-        distance: "Nearby beach access",
+        place: "Abimanagama Beach",
+        distance: "~1.7 km",
         iconName: "beach_access",
       },
       {
-        place: "Weligama Bay",
-        distance: "Neighbouring coastal hub",
+        place: "Weligama Beach",
+        distance: "~3.0 km",
         iconName: "waves",
       },
       {
-        place: "Ahangama Village",
-        distance: "Southern coastal stretch",
+        place: "Ahangama Beach",
+        distance: "~3.0 km",
         iconName: "explore",
       },
     ] as TransitDistance[],

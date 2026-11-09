@@ -8,6 +8,7 @@ import { NAV_ITEMS, HOTEL_INFO } from "@/lib/constants";
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -26,11 +27,15 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // For interior pages with light backgrounds (like /stay), header is solid white with dark text from the start.
+  // On homepage (dark full-bleed hero), header starts transparent with white text, transitioning to white on scroll.
+  const isSolid = !isHomePage || scrolled;
+
   return (
     <header
       id="main-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
-        scrolled
+        isSolid
           ? "bg-white/95 backdrop-blur-md border-b border-[#D9EAF3] shadow-[0_1px_12px_rgba(23,63,86,0.05)]"
           : "bg-transparent border-b border-transparent shadow-none"
       }`}
@@ -51,7 +56,7 @@ export const Header: React.FC = () => {
               height={44}
               priority
               className={`h-11 w-auto object-contain transition-all duration-300 ${
-                scrolled
+                isSolid
                   ? "filter-none"
                   : "brightness-0 invert drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]"
               }`}
@@ -61,7 +66,7 @@ export const Header: React.FC = () => {
             <Link
               href="/"
               className={`font-heading font-semibold text-[23px] tracking-tight leading-none transition-colors duration-300 ${
-                scrolled
+                isSolid
                   ? "text-[#173F56]"
                   : "text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.45)]"
               }`}
@@ -70,7 +75,7 @@ export const Header: React.FC = () => {
             </Link>
             <span
               className={`font-sans uppercase text-[9.5px] font-semibold tracking-widest leading-none mt-1 transition-colors duration-300 ${
-                scrolled
+                isSolid
                   ? "text-[#397FA8]"
                   : "text-white/85 drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]"
               }`}
@@ -97,7 +102,7 @@ export const Header: React.FC = () => {
                 key={item.href}
                 href={item.href}
                 className={`font-sans text-sm font-medium transition-colors py-1 ${
-                  scrolled
+                  isSolid
                     ? isActive
                       ? "text-[#397FA8] font-semibold"
                       : "text-slate-700 hover:text-[#397FA8]"
@@ -124,7 +129,7 @@ export const Header: React.FC = () => {
               aria-label="Official Instagram: @noonnabeach"
               title="Instagram (@noonnabeach)"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
-                scrolled
+                isSolid
                   ? "border-[#D9EAF3] bg-white text-[#397FA8] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] shadow-xs"
                   : "border-white/35 bg-white/10 text-white backdrop-blur-xs hover:bg-[#397FA8] hover:border-[#397FA8] hover:text-white shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
               }`}
@@ -142,7 +147,7 @@ export const Header: React.FC = () => {
               aria-label="Official YouTube: Noonna Beach Hotel Films"
               title="YouTube (Noonna Beach Hotel Films)"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
-                scrolled
+                isSolid
                   ? "border-[#D9EAF3] bg-white text-[#397FA8] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] shadow-xs"
                   : "border-white/35 bg-white/10 text-white backdrop-blur-xs hover:bg-[#397FA8] hover:border-[#397FA8] hover:text-white shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
               }`}
@@ -160,7 +165,7 @@ export const Header: React.FC = () => {
               aria-label="Official WhatsApp Concierge"
               title="WhatsApp Concierge"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
-                scrolled
+                isSolid
                   ? "border-[#D9EAF3] bg-white text-[#397FA8] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] shadow-xs"
                   : "border-white/35 bg-white/10 text-white backdrop-blur-xs hover:bg-[#397FA8] hover:border-[#397FA8] hover:text-white shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
               }`}
@@ -178,7 +183,7 @@ export const Header: React.FC = () => {
               aria-label="Official Facebook: /noonnabeachhotel"
               title="Facebook (/noonnabeachhotel)"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 ${
-                scrolled
+                isSolid
                   ? "border-[#D9EAF3] bg-white text-[#397FA8] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] shadow-xs"
                   : "border-white/35 bg-white/10 text-white backdrop-blur-xs hover:bg-[#397FA8] hover:border-[#397FA8] hover:text-white shadow-[0_1px_3px_rgba(0,0,0,0.2)]"
               }`}
@@ -211,7 +216,7 @@ export const Header: React.FC = () => {
           <button
             type="button"
             className={`md:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? "text-[#173F56] hover:bg-gray-100" : "text-white hover:bg-white/10"
+              isSolid ? "text-[#173F56] hover:bg-gray-100" : "text-white hover:bg-white/10"
             }`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
