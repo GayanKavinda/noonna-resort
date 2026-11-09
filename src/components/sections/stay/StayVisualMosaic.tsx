@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { STAY_DATA } from "@/data/stayData";
+import { ArrowRight } from "lucide-react";
 
 interface StayVisualMosaicProps {
   className?: string;
@@ -30,19 +31,7 @@ export const StayVisualMosaic: React.FC<StayVisualMosaicProps> = ({
             className="inline-flex items-center gap-2 text-sm font-medium text-[#397FA8] hover:text-[#173F56] transition-colors focus:outline-none focus:ring-1 focus:ring-[#397FA8]"
           >
             <span>View Full Gallery</span>
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
+            <ArrowRight className="w-[18px] h-[18px]" />
           </Link>
         </div>
 

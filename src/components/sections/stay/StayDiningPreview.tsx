@@ -1,10 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { STAY_DATA } from "@/data/stayData";
+import { ShoppingBag, Utensils, GlassWater, Lightbulb, Coffee } from "lucide-react";
 
 interface StayDiningPreviewProps {
   className?: string;
 }
+
+const DINING_ICONS: Record<string, React.ElementType> = {
+  takeout_dining: ShoppingBag,
+  restaurant: Utensils,
+  local_bar: GlassWater,
+};
 
 export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
   className = "",
@@ -39,35 +46,34 @@ export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
               {STAY_DATA.diningDeck}
             </p>
 
-            {/* 3 Dining Highlight Cards with Material Symbols */}
+            {/* 3 Dining Highlight Cards */}
             <div className="space-y-3 w-full mb-6">
-              {STAY_DATA.diningFeatures.map((feature, idx) => (
-                <div
-                  key={idx}
-                  className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] flex items-start gap-3.5 shadow-sm"
-                >
-                  <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] text-[#397FA8] flex items-center justify-center shrink-0 mt-0.5">
-                    <span className="material-symbols-outlined text-[20px]">
-                      {feature.iconName}
-                    </span>
+              {STAY_DATA.diningFeatures.map((feature, idx) => {
+                const FeatureIcon = DINING_ICONS[feature.iconName] ?? ShoppingBag;
+                return (
+                  <div
+                    key={idx}
+                    className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] flex items-start gap-3.5 shadow-sm"
+                  >
+                    <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] text-[#397FA8] flex items-center justify-center shrink-0 mt-0.5">
+                      <FeatureIcon className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-semibold text-[#173F56]">
+                        {feature.title}
+                      </h4>
+                      <p className="text-[11px] text-slate-500 font-light leading-relaxed mt-0.5">
+                        {feature.description}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-xs font-semibold text-[#173F56]">
-                      {feature.title}
-                    </h4>
-                    <p className="text-[11px] text-slate-500 font-light leading-relaxed mt-0.5">
-                      {feature.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Host Note Card */}
             <div className="p-3.5 rounded-2xl bg-[#EBF5FB]/60 border border-[#D9EAF3] text-xs text-[#173F56] font-light flex items-start gap-2.5 w-full">
-              <span className="material-symbols-outlined text-[#397FA8] text-[18px] shrink-0 mt-0.5">
-                tips_and_updates
-              </span>
+              <Lightbulb className="w-[18px] h-[18px] text-[#397FA8] shrink-0 mt-0.5" />
               <span>
                 <strong>Host Note:</strong> {STAY_DATA.diningHostNote}
               </span>
@@ -88,9 +94,7 @@ export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
                 <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/50 via-transparent to-transparent pointer-events-none" />
 
                 <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-full border border-[#D9EAF3] shadow-sm flex items-center gap-2">
-                  <span className="material-symbols-outlined text-[#397FA8] text-[18px]">
-                    local_cafe
-                  </span>
+                  <Coffee className="w-[18px] h-[18px] text-[#397FA8]" />
                   <span className="text-xs uppercase tracking-wider text-[#173F56] font-medium">
                     {STAY_DATA.diningImageBadge}
                   </span>
@@ -103,4 +107,3 @@ export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
     </section>
   );
 };
-

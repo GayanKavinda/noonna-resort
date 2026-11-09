@@ -2,10 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { STAY_DATA } from "@/data/stayData";
+import { MapPin, Train, Waves, Umbrella, Compass, ArrowRight } from "lucide-react";
 
 interface StayLocationMapProps {
   className?: string;
 }
+
+const LOCATION_ICONS: Record<string, React.ElementType> = {
+  train: Train,
+  surfing: Waves,
+  beach_access: Umbrella,
+  waves: Waves,
+  explore: Compass,
+};
 
 export const StayLocationMap: React.FC<StayLocationMapProps> = ({
   className = "",
@@ -34,9 +43,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
 
               {/* Official Address Card */}
               <div className="p-3.5 rounded-2xl bg-[#EBF5FB]/60 border border-[#D9EAF3] flex items-center gap-3">
-                <span className="material-symbols-outlined text-[#397FA8] text-[20px] shrink-0">
-                  pin_drop
-                </span>
+                <MapPin className="w-5 h-5 text-[#397FA8] shrink-0" />
                 <p className="text-xs text-[#173F56] font-medium">
                   <strong>Official Address:</strong> Noonna Beach Hotel, 81170 Kumbalgama, Sri Lanka
                 </p>
@@ -45,22 +52,23 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
 
             {/* Regional Points Highlight List */}
             <div className="space-y-2.5 mb-8">
-              {STAY_DATA.location.distances.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="p-3 rounded-2xl bg-white border border-[#D9EAF3] flex items-center justify-between shadow-sm"
-                >
-                  <span className="text-xs font-medium text-[#173F56] flex items-center gap-2">
-                    <span className="material-symbols-outlined text-[18px] text-[#397FA8]">
-                      {item.iconName}
+              {STAY_DATA.location.distances.map((item, idx) => {
+                const LocIcon = LOCATION_ICONS[item.iconName] ?? MapPin;
+                return (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-2xl bg-white border border-[#D9EAF3] flex items-center justify-between shadow-sm"
+                  >
+                    <span className="text-xs font-medium text-[#173F56] flex items-center gap-2">
+                      <LocIcon className="w-[18px] h-[18px] text-[#397FA8]" />
+                      <span>{item.place}</span>
                     </span>
-                    <span>{item.place}</span>
-                  </span>
-                  <span className="text-xs font-semibold text-[#397FA8]">
-                    {item.distance}
-                  </span>
-                </div>
-              ))}
+                    <span className="text-xs font-semibold text-[#397FA8]">
+                      {item.distance}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
 
             <div className="flex items-center gap-4">
@@ -69,9 +77,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
                 className="inline-flex items-center gap-2 text-sm font-medium text-[#397FA8] hover:text-[#173F56] transition-colors focus:outline-none focus:ring-1 focus:ring-[#397FA8]"
               >
                 <span>Explore Coastal Experiences</span>
-                <span className="material-symbols-outlined text-[18px]">
-                  arrow_forward
-                </span>
+                <ArrowRight className="w-[18px] h-[18px]" />
               </Link>
             </div>
           </div>
@@ -94,9 +100,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
                   <div className="relative flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full bg-[#397FA8]/20 animate-ping absolute" />
                     <div className="px-4 py-2.5 rounded-full bg-white/95 backdrop-blur-md shadow-lg flex items-center gap-2 border border-[#D9EAF3]">
-                      <span className="material-symbols-outlined text-[#397FA8] text-[20px]">
-                        location_on
-                      </span>
+                      <MapPin className="w-5 h-5 text-[#397FA8]" />
                       <span className="text-xs text-[#173F56] font-semibold tracking-wide">
                         Noonna Beach Hotel
                       </span>

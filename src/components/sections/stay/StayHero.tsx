@@ -2,10 +2,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { STAY_DATA } from "@/data/stayData";
+import { Bed, Users, ShowerHead, Waves, ArrowUpRight, ArrowDown, BadgeCheck } from "lucide-react";
 
 interface StayHeroProps {
   className?: string;
 }
+
+const HERO_BADGE_ICONS: Record<string, React.ElementType> = {
+  bed: Bed,
+  group: Users,
+  shower: ShowerHead,
+  waves: Waves,
+};
 
 export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
   return (
@@ -51,26 +59,27 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
 
             {/* Core Specifications 4-Chip Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full mb-8">
-              {STAY_DATA.heroBadges.map((badge, index) => (
-                <div
-                  key={index}
-                  className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] shadow-sm flex items-start gap-3 hover:border-[#397FA8]/40 transition-colors"
-                >
-                  <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] flex items-center justify-center text-[#397FA8] shrink-0 mt-0.5">
-                    <span className="material-symbols-outlined text-[20px]">
-                      {badge.icon}
-                    </span>
+              {STAY_DATA.heroBadges.map((badge, index) => {
+                const BadgeIcon = HERO_BADGE_ICONS[badge.icon] ?? Bed;
+                return (
+                  <div
+                    key={index}
+                    className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] shadow-sm flex items-start gap-3 hover:border-[#397FA8]/40 transition-colors"
+                  >
+                    <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] flex items-center justify-center text-[#397FA8] shrink-0 mt-0.5">
+                      <BadgeIcon className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-[#173F56]">
+                        {badge.label}
+                      </p>
+                      <p className="text-[11px] text-slate-500 font-light">
+                        {badge.detail}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs font-semibold text-[#173F56]">
-                      {badge.label}
-                    </p>
-                    <p className="text-[11px] text-slate-500 font-light">
-                      {badge.detail}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* CTAs & Official Booking Link */}
@@ -82,9 +91,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
                 className="h-12 px-7 rounded-xl bg-[#397FA8] hover:bg-[#2e698c] text-white text-[14px] font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-[0_8px_24px_-4px_rgba(23,63,86,0.2)] hover:-translate-y-0.5"
               >
                 <span>Check Availability on Booking.com</span>
-                <span className="material-symbols-outlined text-[18px]">
-                  arrow_outward
-                </span>
+                <ArrowUpRight className="w-[18px] h-[18px]" />
               </a>
 
               <a
@@ -92,17 +99,13 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
                 className="h-12 px-5 rounded-xl bg-white hover:bg-[#EBF5FB]/60 text-[#173F56] text-[14px] font-medium border border-[#D9EAF3] transition-colors inline-flex items-center gap-1.5"
               >
                 <span>Explore Room Details</span>
-                <span className="material-symbols-outlined text-[18px] text-[#397FA8]">
-                  south
-                </span>
+                <ArrowDown className="w-[18px] h-[18px] text-[#397FA8]" />
               </a>
             </div>
 
             {/* Trust Indicator */}
             <div className="flex items-center gap-2 text-xs text-slate-500 font-light">
-              <span className="material-symbols-outlined text-[#397FA8] text-[16px]">
-                verified
-              </span>
+              <BadgeCheck className="w-4 h-4 text-[#397FA8]" />
               <span>Official Booking.com Listing · Verified Accommodation</span>
             </div>
           </div>
@@ -132,9 +135,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
                     </p>
                   </div>
                   <span className="px-3 py-1.5 rounded-full bg-[#EBF5FB] text-[#397FA8] text-xs font-semibold border border-[#D9EAF3] flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[14px]">
-                      verified
-                    </span>{" "}
+                    <BadgeCheck className="w-3.5 h-3.5" />{" "}
                     Verified Unit
                   </span>
                 </div>
@@ -146,4 +147,3 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
     </section>
   );
 };
-
