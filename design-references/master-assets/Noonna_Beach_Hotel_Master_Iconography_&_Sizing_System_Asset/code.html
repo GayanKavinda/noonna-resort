@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noonna Beach Hotel — Master Iconography & Sizing Design System Asset</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Moon+Dance&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .font-moondance {
+      font-family: 'Moon Dance', cursive;
+    }
+    .grid-bg {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="p-6 md:p-12 min-h-screen">
+
+  <div class="max-w-7xl mx-auto space-y-12">
+
+    <!-- Header & Component Spec Meta Bar -->
+    <header class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-100">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EBF4F9] text-[#397FA8] text-xs font-semibold tracking-wider uppercase">
+              <span class="w-2 h-2 rounded-full bg-[#397FA8] animate-pulse"></span>
+              Core Design Token Spec
+            </span>
+            <span class="text-xs font-medium text-slate-400">DS-ICON-V2.0</span>
+            <span class="text-xs font-medium text-slate-400">·</span>
+            <span class="text-xs font-medium text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">Production Approved</span>
+          </div>
+          <h1 class="font-cormorant text-4xl lg:text-5xl text-[#173F56] font-medium tracking-tight mt-3">
+            Master Iconography & Optical Sizing System
+          </h1>
+          <p class="font-moondance text-2xl lg:text-3xl text-[#397FA8] mt-1">
+            clarity, tactile cadence & barefoot coastal elegance...
+          </p>
+          <p class="text-slate-600 text-sm max-w-3xl mt-2 leading-relaxed font-light">
+            Comprehensive sizing matrix, optical weight pairing standards, touch-target bounding boxes, and SVG stroke geometries calibrated specifically for the Noonna Beach Hotel web & mobile ecosystem.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap lg:flex-col gap-2.5 text-xs text-slate-500 bg-slate-50 p-4 rounded-xl border border-slate-200/60 min-w-[280px]">
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-slate-700">Primary Brand Ocean:</span>
+            <span class="font-mono text-[#397FA8] font-bold">#397FA8</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-slate-700">Deep Coastal Navy:</span>
+            <span class="font-mono text-[#173F56] font-bold">#173F56</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-slate-700">Stroke Scale:</span>
+            <span class="font-mono text-slate-900 font-semibold">1.5px / 1.75px / 2.0px</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-medium text-slate-700">Standard Corner Radii:</span>
+            <span class="font-mono text-slate-900 font-semibold">Round / Smooth Join</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Index Badges -->
+      <div class="pt-6 flex flex-wrap items-center gap-2 text-xs">
+        <span class="text-slate-400 font-medium">Quick Anchor Specs:</span>
+        <a href="#size-scale" class="px-3 py-1 rounded-lg bg-slate-100 hover:bg-[#EBF4F9] text-slate-700 hover:text-[#397FA8] transition-colors font-medium">1. Absolute Size Scale (12px to 48px)</a>
+        <a href="#content-pairing" class="px-3 py-1 rounded-lg bg-slate-100 hover:bg-[#EBF4F9] text-slate-700 hover:text-[#397FA8] transition-colors font-medium">2. Content & Text Pairing Rules</a>
+        <a href="#functional-libraries" class="px-3 py-1 rounded-lg bg-slate-100 hover:bg-[#EBF4F9] text-slate-700 hover:text-[#397FA8] transition-colors font-medium">3. Functional Icon Directory</a>
+        <a href="#button-integration" class="px-3 py-1 rounded-lg bg-slate-100 hover:bg-[#EBF4F9] text-slate-700 hover:text-[#397FA8] transition-colors font-medium">4. Button & Pill Enclosures</a>
+        <a href="#code-specs" class="px-3 py-1 rounded-lg bg-slate-100 hover:bg-[#EBF4F9] text-slate-700 hover:text-[#397FA8] transition-colors font-medium">5. SVG Code Templates</a>
+      </div>
+    </header>
+
+    <!-- SECTION 1: MASTER SIZING SCALE & OPTICAL HIERARCHY -->
+    <section id="size-scale" class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+      <div class="flex flex-col md:flex-row md:items-end justify-between pb-6 border-b border-slate-100 gap-4">
+        <div>
+          <span class="font-moondance text-2xl text-[#397FA8] block">proportion & precision...</span>
+          <h2 class="font-cormorant text-3xl text-[#173F56] font-semibold tracking-tight">
+            1. Universal Icon Size Scale (6 Primary Tiers)
+          </h2>
+          <p class="text-slate-500 text-sm font-light mt-1">
+            Every icon in the UI maps strictly to one of these 6 standardized geometric bounds to maintain visual harmony.
+          </p>
+        </div>
+        <div class="text-xs text-slate-400 font-mono">
+          Base Grid: 4px / 8px Increments
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mt-8">
+        
+        <!-- Size Card: 12px Micro -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Micro (XS)</span>
+              <span class="font-mono text-[#397FA8] font-bold">12px / 0.75rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-3 h-3 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Verification checkmarks</li>
+                <li>• External link arrows</li>
+                <li>• In-badge status dots</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 2.2px</span>
+            <span>Box: w-3 h-3</span>
+          </div>
+        </div>
+
+        <!-- Size Card: 16px Small -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Small (SM)</span>
+              <span class="font-mono text-[#397FA8] font-bold">16px / 1.0rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-4 h-4 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Inline with body copy (14px)</li>
+                <li>• Primary CTA button prefixes</li>
+                <li>• Distance & timing tags</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 2.0px</span>
+            <span>Box: w-4 h-4</span>
+          </div>
+        </div>
+
+        <!-- Size Card: 20px Regular -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Regular (MD)</span>
+              <span class="font-mono text-[#397FA8] font-bold">20px / 1.25rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-5 h-5 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Form field inputs</li>
+                <li>• FAQ accordion carets</li>
+                <li>• Social circular pills (32px)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 1.8px</span>
+            <span>Box: w-5 h-5</span>
+          </div>
+        </div>
+
+        <!-- Size Card: 24px Standard -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Standard (LG)</span>
+              <span class="font-mono text-[#397FA8] font-bold">24px / 1.5rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-6 h-6 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Amenity specification lists</li>
+                <li>• Blueprint feature tiles</li>
+                <li>• Card header icons</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 1.75px</span>
+            <span>Box: w-6 h-6</span>
+          </div>
+        </div>
+
+        <!-- Size Card: 32px Display -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Display (XL)</span>
+              <span class="font-mono text-[#397FA8] font-bold">32px / 2.0rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-8 h-8 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Section highlight cards</li>
+                <li>• Transit vehicle badges</li>
+                <li>• Interactive feature anchors</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 1.6px</span>
+            <span>Box: w-8 h-8</span>
+          </div>
+        </div>
+
+        <!-- Size Card: 48px Hero / Feature -->
+        <div class="bg-slate-50/70 border border-slate-200/60 rounded-xl p-5 flex flex-col justify-between hover:border-[#397FA8]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between text-xs mb-3">
+              <span class="font-semibold text-slate-700">Hero (2XL)</span>
+              <span class="font-mono text-[#397FA8] font-bold">48px / 3.0rem</span>
+            </div>
+            <!-- Visual Sandbox -->
+            <div class="h-24 bg-white rounded-lg border border-slate-200/60 flex items-center justify-center grid-bg mb-4">
+              <div class="w-12 h-12 flex items-center justify-center text-[#397FA8]">
+                <svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+            </div>
+            <div class="space-y-1 text-xs">
+              <p class="text-slate-800 font-medium">Usage & Context:</p>
+              <ul class="text-slate-500 space-y-0.5 leading-snug">
+                <li>• Video play triggers</li>
+                <li>• Standalone empty states</li>
+                <li>• Hero feature highlights</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/50 text-[11px] font-mono text-slate-400 flex justify-between">
+            <span>Stroke: 1.4px</span>
+            <span>Box: w-12 h-12</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTENT & TEXT PROPORTION COMPARISON TABLE -->
+    <section id="content-pairing" class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+      <div class="pb-6 border-b border-slate-100">
+        <span class="font-moondance text-2xl text-[#397FA8] block">visual equilibrium...</span>
+        <h2 class="font-cormorant text-3xl text-[#173F56] font-semibold tracking-tight">
+          2. Icon-to-Typography Optical Pairing Matrix
+        </h2>
+        <p class="text-slate-500 text-sm font-light mt-1">
+          Exact matching rules between text font-size, line-height, icon geometry, and horizontal gap spacing across both desktop and mobile contexts.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto mt-6">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="bg-slate-50/80 text-xs font-semibold text-slate-700 uppercase tracking-wider border-b border-slate-200/80">
+              <th class="py-4 px-4">Typography Role & Font</th>
+              <th class="py-4 px-4">Text Size / Line-Height</th>
+              <th class="py-4 px-4">Optimal Icon Size</th>
+              <th class="py-4 px-4">Horizontal Gap</th>
+              <th class="py-4 px-4">Optical Alignment</th>
+              <th class="py-4 px-4">Live Preview Example</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-normal">
+            
+            <!-- Row 1: Legal / Metadata Caption -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Micro Footnote / Badge</div>
+                <div class="text-xs font-mono text-slate-400">Inter Regular (400)</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                11px - 12px <span class="text-slate-400">/ 16px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                12px × 12px (w-3 h-3)
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-1.5 (6px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Center baseline with lowercase cap-height
+              </td>
+              <td class="py-4 px-4">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 text-xs">
+                  <svg class="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Verified Private Host
+                </span>
+              </td>
+            </tr>
+
+            <!-- Row 2: Standard Body Copy & In-Line Links -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Standard Body Copy</div>
+                <div class="text-xs font-mono text-slate-400">Inter Light / Reg (300/400)</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                14px - 15px <span class="text-slate-400">/ 22px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                16px × 16px (w-4 h-4)
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-2 (8px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Align to line-height center (`items-center`)
+              </td>
+              <td class="py-4 px-4">
+                <div class="flex items-center gap-2 text-slate-600 text-sm">
+                  <svg class="w-4 h-4 text-[#397FA8] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>1.4 km from Kumbalgama</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3: Action Buttons & Nav Links -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Button Action Labels</div>
+                <div class="text-xs font-mono text-slate-400">Inter Medium (500)</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                14px <span class="text-slate-400">/ 20px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                16px × 16px (w-4 h-4)
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-2 (8px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Exact vertical centering inside px-5 py-2.5
+              </td>
+              <td class="py-4 px-4">
+                <button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#397FA8] text-white text-sm font-medium shadow-xs">
+                  <span>Book Your Stay</span>
+                  <svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </button>
+              </td>
+            </tr>
+
+            <!-- Row 4: Card & Bento Subtitles -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Card Titles / Blueprint Headings</div>
+                <div class="text-xs font-mono text-slate-400">Cormorant Garamond (500)</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                18px - 22px <span class="text-slate-400">/ 26px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                20px × 20px (w-5 h-5)
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-3 (12px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Cap-height aligned with serif glyph ascender
+              </td>
+              <td class="py-4 px-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-lg bg-[#EBF4F9] flex items-center justify-center text-[#397FA8]">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  </div>
+                  <span class="font-cormorant text-lg text-[#173F56] font-medium">En-Suite Open Bath</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 5: Feature & Section Lead Titles -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Section Headings (H2)</div>
+                <div class="text-xs font-mono text-slate-400">Cormorant Garamond (500/600)</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                32px - 38px <span class="text-slate-400">/ 42px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                28px × 28px (w-7 h-7)
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-3.5 (14px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Top-aligned with header baseline offset
+              </td>
+              <td class="py-4 px-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-full bg-[#EBF4F9] flex items-center justify-center text-[#397FA8]">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </div>
+                  <span class="font-cormorant text-2xl text-[#173F56] font-medium">Surf Intelligence</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 6: Hero Title (H1) Accent Indicators -->
+            <tr class="hover:bg-slate-50/50 transition-colors">
+              <td class="py-4 px-4 font-medium text-slate-900">
+                <div>Hero Section Accents</div>
+                <div class="text-xs font-mono text-slate-400">Moon Dance Script Accent</div>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                30px - 36px <span class="text-slate-400">/ 36px</span>
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-[#397FA8] font-semibold">
+                18px × 18px (w-[18px])
+              </td>
+              <td class="py-4 px-4 font-mono text-xs text-slate-600">
+                gap-2.5 (10px)
+              </td>
+              <td class="py-4 px-4 text-xs text-slate-500">
+                Subtle floating vertical alignment alongside cursive
+              </td>
+              <td class="py-4 px-4">
+                <div class="flex items-center gap-2">
+                  <span class="font-moondance text-2xl text-[#397FA8]">gentle tides & unhurried surf...</span>
+                  <svg class="w-4 h-4 text-[#397FA8] animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FUNCTIONAL DIRECTORY & CONTEXTUAL CATEGORIES -->
+    <section id="functional-libraries" class="space-y-8">
+      
+      <!-- Category 1: Room Blueprint & Thoughtful Essentials (Stay Page) -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-slate-100 gap-2">
+          <div>
+            <span class="font-moondance text-2xl text-[#397FA8] block">accommodations & sanctuaries...</span>
+            <h3 class="font-cormorant text-2xl text-[#173F56] font-semibold tracking-tight">
+              3A. Suite Specifications & Hospitality Essentials (The Stay & Accommodations)
+            </h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Standard Size: 20px / Container: 40px Pill</span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 mt-6">
+          
+          <!-- King Bed -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-8 0h16a1 1 0 001-1V7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1z"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">King Suite Bed</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Private Bathroom -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">Rain Shower</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Sea View Horizon -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">Sea Horizon</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Climate Control -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">AC & Breeze</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Wi-Fi -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">High-Speed Wi-Fi</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Ceylon Tea Station -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">Tea & Coffee</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Work & Dining Desk -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">Nomad Workspace</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+          <!-- Direct Beach Path -->
+          <div class="flex flex-col items-center text-center p-3 rounded-xl bg-slate-50/60 border border-slate-200/40">
+            <div class="w-10 h-10 rounded-lg bg-white border border-slate-200/80 flex items-center justify-center text-[#397FA8] shadow-2xs mb-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            </div>
+            <span class="text-xs font-medium text-slate-700">Beach Footpath</span>
+            <span class="text-[10px] text-slate-400 font-mono mt-0.5">w-5 h-5</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 2: Regional Transit & Mobility (Getting Here & Around) -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-slate-100 gap-2">
+          <div>
+            <span class="font-moondance text-2xl text-[#397FA8] block">unhurried coastal transit...</span>
+            <h3 class="font-cormorant text-2xl text-[#173F56] font-semibold tracking-tight">
+              3B. Transit, Mobility & Wayfinding Vectors (Experiences & Getting Here)
+            </h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Standard Size: 22px / Pill: 48px Square</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
+          
+          <!-- Tuk-Tuk Safari -->
+          <div class="p-5 rounded-xl border border-slate-200/80 bg-slate-50/40 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#EBF4F9] text-[#397FA8] flex items-center justify-center shrink-0 border border-[#397FA8]/20">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h8m-8 4h8m-9 5h10a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2zm1-8V5a1 1 0 011-1h6a1 1 0 011 1v2M6 18a2 2 0 100-4 2 2 0 000 4zm12 0a2 2 0 100-4 2 2 0 000 4z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-semibold text-slate-800">Local Tuk-Tuk</span>
+                <span class="text-[11px] font-mono text-[#397FA8] bg-white px-2 py-0.5 rounded border border-slate-200">~4 mins</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">On-demand 3-wheelers hailed at hotel gate for regional surf hops.</p>
+            </div>
+          </div>
+
+          <!-- Coastal Cruisers (Bikes) -->
+          <div class="p-5 rounded-xl border border-slate-200/80 bg-slate-50/40 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#EBF4F9] text-[#397FA8] flex items-center justify-center shrink-0 border border-[#397FA8]/20">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-semibold text-slate-800">Coastal Cruisers</span>
+                <span class="text-[11px] font-mono text-emerald-600 bg-white px-2 py-0.5 rounded border border-slate-200">Complimentary</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">Custom vintage bikes with front baskets and side surf carriers.</p>
+            </div>
+          </div>
+
+          <!-- Low-Tide Stroll -->
+          <div class="p-5 rounded-xl border border-slate-200/80 bg-slate-50/40 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#EBF4F9] text-[#397FA8] flex items-center justify-center shrink-0 border border-[#397FA8]/20">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-semibold text-slate-800">Shoreline Footpath</span>
+                <span class="text-[11px] font-mono text-[#397FA8] bg-white px-2 py-0.5 rounded border border-slate-200">~15 mins</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">Direct beach walks along volcanic tidepools and stilt fishermen perches.</p>
+            </div>
+          </div>
+
+          <!-- Coastal Scenic Rail -->
+          <div class="p-5 rounded-xl border border-slate-200/80 bg-slate-50/40 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#EBF4F9] text-[#397FA8] flex items-center justify-center shrink-0 border border-[#397FA8]/20">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-sm font-semibold text-slate-800">Coastal Rail</span>
+                <span class="text-[11px] font-mono text-[#397FA8] bg-white px-2 py-0.5 rounded border border-slate-200">1.2 km station</span>
+              </div>
+              <p class="text-xs text-slate-500 mt-1">Open-door train along the surf to Galle Fort or Matara terminal.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Category 3: Social & Global Communication Vectors -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-slate-100 gap-2">
+          <div>
+            <span class="font-moondance text-2xl text-[#397FA8] block">connection & conversation...</span>
+            <h3 class="font-cormorant text-2xl text-[#173F56] font-semibold tracking-tight">
+              3C. Social Media & Direct Concierge Channels
+            </h3>
+          </div>
+          <span class="text-xs font-mono text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Enclosure: 32px Circular Pill / Stroke or Fill: #397FA8</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+          
+          <!-- Instagram -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#397FA8] shadow-2xs hover:bg-[#397FA8] hover:text-white transition-all cursor-pointer">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-800">Instagram</div>
+              <div class="text-[11px] font-mono text-slate-400">@noonnabeach</div>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#25D366] shadow-2xs hover:bg-[#25D366] hover:text-white transition-all cursor-pointer">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.276-.101-.476-.15-.677.15-.2.301-.777.98-.953 1.18-.175.2-.351.226-.652.075-.3-.15-1.268-.468-2.416-1.492-.894-.797-1.498-1.782-1.674-2.083-.175-.301-.019-.464.132-.614.135-.134.301-.351.451-.527.151-.175.2-.301.301-.501.101-.2.05-.376-.025-.526-.076-.15-.677-1.63-.928-2.232-.244-.587-.492-.507-.677-.517-.175-.009-.376-.01-.577-.01-.2 0-.527.075-.803.376-.276.301-1.053 1.028-1.053 2.508 0 1.48 1.078 2.909 1.229 3.109.15.2 2.122 3.24 5.141 4.544.718.31 1.279.495 1.716.634.721.23 1.377.198 1.896.12.578-.087 1.78-.727 2.031-1.429.25-.702.25-1.304.175-1.43-.075-.125-.276-.2-.577-.35zM12.04 21.78c-1.75 0-3.467-.47-4.97-1.36l-.356-.21-3.694.97.986-3.6-.232-.37c-.98-1.56-1.5-3.37-1.5-5.23 0-5.36 4.36-9.72 9.72-9.72 2.6 0 5.04 1.01 6.87 2.85 1.84 1.84 2.85 4.28 2.85 6.88 0 5.36-4.36 9.72-9.72 9.72z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-800">WhatsApp Host</div>
+              <div class="text-[11px] font-mono text-slate-400">+94 77 920 6951</div>
+            </div>
+          </div>
+
+          <!-- Facebook -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#1877F2] shadow-2xs hover:bg-[#1877F2] hover:text-white transition-all cursor-pointer">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-800">Facebook Page</div>
+              <div class="text-[11px] font-mono text-slate-400">/noonnabeach</div>
+            </div>
+          </div>
+
+          <!-- YouTube -->
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[#FF0000] shadow-2xs hover:bg-[#FF0000] hover:text-white transition-all cursor-pointer">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-800">Atmospheric Films</div>
+              <div class="text-[11px] font-mono text-slate-400">@noonnabeach</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 4: BUTTON & INTERACTION CONTAINERS -->
+    <section id="button-integration" class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+      <div class="pb-6 border-b border-slate-100">
+        <span class="font-moondance text-2xl text-[#397FA8] block">touch targets & tactile containers...</span>
+        <h2 class="font-cormorant text-3xl text-[#173F56] font-semibold tracking-tight">
+          4. Bounding Box & Touch Target Geometry
+        </h2>
+        <p class="text-slate-500 text-sm font-light mt-1">
+          To comply with WCAG 2.1 touch accessibility requirements, small icons must always be enclosed in sufficient clickable hit areas (minimum 44px on mobile, 32px on desktop).
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        
+        <!-- Desktop Header Pill Container (32x32) -->
+        <div class="p-6 rounded-xl border border-slate-200/80 bg-slate-50/50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-slate-700 uppercase tracking-wider block mb-2">Desktop Header Social Pill</span>
+            <div class="h-28 bg-white rounded-lg border border-slate-200 flex items-center justify-center gap-3 grid-bg mb-4">
+              <div class="w-8 h-8 rounded-full border border-slate-200 bg-white flex items-center justify-center text-[#397FA8] shadow-2xs">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <span class="text-xs font-mono text-slate-500">Pill: 32px | Icon: 16px</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Provides clean whitespace separation in the desktop header action cluster without clashing with the primary CTA.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 font-mono text-[11px] text-[#397FA8]">
+            class="w-8 h-8 rounded-full border"
+          </div>
+        </div>
+
+        <!-- Accommodation Blueprint Pill (40x40) -->
+        <div class="p-6 rounded-xl border border-slate-200/80 bg-slate-50/50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-slate-700 uppercase tracking-wider block mb-2">Card Feature Badge Box</span>
+            <div class="h-28 bg-white rounded-lg border border-slate-200 flex items-center justify-center gap-3 grid-bg mb-4">
+              <div class="w-10 h-10 rounded-xl bg-[#EBF4F9] flex items-center justify-center text-[#397FA8] border border-[#397FA8]/20">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <span class="text-xs font-mono text-slate-500">Box: 40px | Icon: 20px</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Used in "Inside the Stay" accommodation blueprints and "Thoughtful Essentials" for strong visual anchoring.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 font-mono text-[11px] text-[#397FA8]">
+            class="w-10 h-10 rounded-xl bg-[#EBF4F9]"
+          </div>
+        </div>
+
+        <!-- Video & Hero Action Hitbox (48x48) -->
+        <div class="p-6 rounded-xl border border-slate-200/80 bg-slate-50/50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-slate-700 uppercase tracking-wider block mb-2">Video & Hero Play Trigger</span>
+            <div class="h-28 bg-white rounded-lg border border-slate-200 flex items-center justify-center gap-3 grid-bg mb-4">
+              <div class="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 flex items-center justify-center text-[#397FA8] shadow-md">
+                <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="text-xs font-mono text-slate-500">Disc: 48px | Glyph: 20px</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Touch-optimized circular disc with optical center correction (+1px X-axis for triangular play glyphs).
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 font-mono text-[11px] text-[#397FA8]">
+            class="w-12 h-12 rounded-full shadow-md"
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: SVG CODE & DEVELOPER SPECIFICATION -->
+    <section id="code-specs" class="bg-white rounded-2xl border border-slate-200/80 p-8 shadow-xs">
+      <div class="pb-6 border-b border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <span class="font-moondance text-2xl text-[#397FA8] block">developer ready...</span>
+          <h2 class="font-cormorant text-3xl text-[#173F56] font-semibold tracking-tight">
+            5. Master Icon Implementation Guidelines
+          </h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs px-2.5 py-1 rounded bg-slate-100 font-mono text-slate-600">Tailwind CSS 3+</span>
+          <span class="text-xs px-2.5 py-1 rounded bg-slate-100 font-mono text-slate-600">Zero React Icon Bloat</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        
+        <div class="bg-slate-900 rounded-xl p-5 text-slate-200 font-mono text-xs overflow-x-auto">
+          <div class="text-slate-400 mb-2">// 1. Standard Button Icon Pairing</div>
+          <div class="text-emerald-400">&lt;a href="https://booking.com/..." target="_blank" rel="noopener noreferrer"</div>
+          <div class="text-slate-300 pl-4">class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#397FA8] hover:bg-[#2E698D] text-white font-medium text-sm transition-all"&gt;</div>
+          <div class="text-slate-100 pl-8">&lt;span&gt;Book Your Stay&lt;/span&gt;</div>
+          <div class="text-sky-300 pl-8">&lt;svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"&gt;</div>
+          <div class="text-sky-300 pl-12">&lt;path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/&gt;</div>
+          <div class="text-sky-300 pl-8">&lt;/svg&gt;</div>
+          <div class="text-emerald-400">&lt;/a&gt;</div>
+        </div>
+
+        <div class="bg-slate-900 rounded-xl p-5 text-slate-200 font-mono text-xs overflow-x-auto">
+          <div class="text-slate-400 mb-2">// 2. Social Action Pill Container</div>
+          <div class="text-emerald-400">&lt;a href="https://wa.me/94779206951" target="_blank" aria-label="WhatsApp Concierge"</div>
+          <div class="text-slate-300 pl-4">class="w-8 h-8 rounded-full border border-slate-200 bg-white flex items-center justify-center text-[#397FA8] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all shadow-2xs"&gt;</div>
+          <div class="text-sky-300 pl-8">&lt;svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"&gt;</div>
+          <div class="text-sky-300 pl-12">&lt;path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98..."/&gt;</div>
+          <div class="text-sky-300 pl-8">&lt;/svg&gt;</div>
+          <div class="text-emerald-400">&lt;/a&gt;</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Global Footer for the Spec Screen -->
+    <footer class="text-center py-6 text-xs text-slate-400 font-light border-t border-slate-200">
+      © 2026 Noonna Beach Hotel • Digital Art Direction Master Specification • Modern Coastal Sanctuary Design System
+    </footer>
+
+  </div>
+
+</body>
+</html>

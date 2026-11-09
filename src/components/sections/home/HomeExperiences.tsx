@@ -8,13 +8,10 @@ export const HomeExperiences: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div>
-            <span
-              className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
-              style={{ fontSize: "1.75rem" }}
-            >
+            <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block leading-none select-none">
               Southern coastline...
             </span>
-            <h2 className="font-heading text-[40px] md:text-[44px] leading-tight text-[#173F56] font-normal">
+            <h2 className="font-heading text-[36px] md:text-[44px] leading-tight text-[#173F56] font-normal">
               Explore Beyond Your Stay
             </h2>
           </div>

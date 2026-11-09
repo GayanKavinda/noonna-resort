@@ -22,7 +22,7 @@ export const HomeHero: React.FC = () => {
       </div>
 
       {/* Hero Content Container - Full Height Layout with Header Clearance */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-8 flex flex-col justify-between h-full pt-28 pb-8">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col justify-between h-full pt-28 pb-8">
         <div className="w-full" />
 
         {/* Headline & CTAs (Left Aligned matching Stitch reference) */}

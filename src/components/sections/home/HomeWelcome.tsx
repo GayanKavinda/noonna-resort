@@ -14,10 +14,7 @@ export const HomeWelcome: React.FC = () => {
             </span>
           </div>
 
-          <span
-            className="font-script text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
-            style={{ fontSize: "1.75rem" }}
-          >
+          <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block leading-none select-none">
             Where the ocean sets the rhythm...
           </span>
 
