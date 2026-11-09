@@ -1,0 +1,138 @@
+{
+  "s1Parsed": [
+    {
+      "title": "Midigama Beach",
+      "distance": "~1.7 km",
+      "category": "Secluded Cove",
+      "description": "Famed for its legendary peeling reef breaks including Lazy Left, Rams, and Plantations. Midigama retains an unhurried, laid-back coastal charm with authentic roadside coconut shacks, quiet stretches of sand, and golden afternoon light."
+    },
+    {
+      "title": "Abimanagama Beach",
+      "distance": "~1.7 km",
+      "category": "Secluded Cove",
+      "description": "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading."
+    },
+    {
+      "title": "Weligama Beach",
+      "distance": "~3.5 km",
+      "category": "Broad Sandy Bay",
+      "description": "Sweeping 2 km crescent bay offering gentle rolling waves, vibrant surf schools, and breezy beachfront seafood grills under leaning palms."
+    },
+    {
+      "title": "Ahangama Beach",
+      "distance": "~3.8 km",
+      "category": "Heritage & Cafés",
+      "description": "Home of the famous stilt fishing tradition, artisan sourdough bakeries, and coastal rock pools glowing in late-afternoon southern sun."
+    },
+    {
+      "title": "Lazy Left Surf Break",
+      "distance": "~1.5 km",
+      "category": "Classic Point Break",
+      "description": "Long, ultra-smooth, and gentle reef wave heavily popular for longboarders and intermediate surfers peeling across deep coral."
+    },
+    {
+      "title": "Rams Right Surf Break",
+      "distance": "~1.6 km",
+      "category": "Hollow Reef Barrel",
+      "description": "Fast, powerful, and sharp A-frame reef break that creates heavy hollow barrels for advanced surfers seeking technical hollow waves."
+    },
+    {
+      "title": "Awee Coco Secret Pool",
+      "distance": "~2.8 km",
+      "category": "Natural Tide Pool",
+      "description": "Spectacular natural saltwater rock pool carved into granite, forming a calm protected ocean bathtub at low tide away from outer currents."
+    },
+    {
+      "title": "Secret Jungle Beach",
+      "distance": "~3.4 km",
+      "category": "Tucked Jungle Cove",
+      "description": "Hidden, quiet rocky cove sheltered by ancient banyan trees and lush tropical foliage, offering calm crystalline waters for tranquil morning dips."
+    },
+    {
+      "title": "Polhena Beach & Coral Reef",
+      "distance": "~12 km",
+      "category": "Lagoon & Marine Sanctuary",
+      "description": "Protected offshore calm reef lagoon celebrated across Sri Lanka as the premier sanctuary for swimming peacefully alongside wild green sea turtles."
+    },
+    {
+      "title": "Secret Beach Mirissa",
+      "distance": "~6.5 km",
+      "category": "Hidden Cove Trio",
+      "description": "Tucked-away paradise comprising three secluded rocky bays (Blue Lagoon, Shelley Beach, and Main Beach) with crystalline waters and palm shade."
+    },
+    {
+      "title": "Coconut Tree Hill",
+      "distance": "~6.2 km",
+      "category": "Iconic Promontory",
+      "description": "An iconic palm-crested red earth dome extending out into the Indian Ocean. Unmatched panoramic vantage point for golden hour sunsets and ocean breezes."
+    },
+    {
+      "title": "Parrot Rock",
+      "distance": "~5.8 km",
+      "category": "Tidal Red Rock Islet",
+      "description": "A solitary red-rock formation accessible via a natural sandbar at low tide, rewarding climbers with 360-degree views of the entire Mirissa sweep."
+    },
+    {
+      "title": "Mirissa Coastal Promontory",
+      "distance": "~6.0 km",
+      "category": "Eastern Bay Headland",
+      "description": "Vibrant, scenic headland marking the eastern edge of Mirissa's main bay, providing breezy ocean panoramas and tranquil rocky vantage points."
+    }
+  ],
+  "s2Parsed": [
+    {
+      "title": "Galle Dutch Fort",
+      "distance": "~24 km",
+      "category": "UNESCO World Heritage",
+      "description": "Living 17th-century fortified citadel with cobblestone alleys, Dutch colonial architecture, ocean ramparts, and artisan jewellery boutiques."
+    },
+    {
+      "title": "Martin Wickramasinghe Museum",
+      "distance": "~7.8 km",
+      "category": "Literary & Folk History",
+      "description": "The preserved ancestral estate of Sri Lanka's greatest author, exhibiting indigenous southern artifacts, craft tools, and tropical gardens."
+    },
+    {
+      "title": "Kushtarajagala Rock Relief",
+      "distance": "~2.7 km",
+      "category": "Ancient Sacred Monolith",
+      "description": "An 8th-century Mahayana Bodhisattva Avalokiteshvara relief carved directly into solid granite, surrounded by tranquil village temple grounds."
+    },
+    {
+      "title": "Kumbalgama Potters' Village",
+      "distance": "~0.4 km",
+      "category": "Artisan Craft Heritage",
+      "description": "Steps from Noonna, skilled generational artisans shape authentic terracotta cooking vessels, water pots, and roof tiles on traditional hand wheels."
+    },
+    {
+      "title": "Taprobane Island",
+      "distance": "~3.1 km",
+      "category": "Private Islet Villa",
+      "description": "Sri Lanka's only private island, built in the 1920s by the eccentric Count de Mauny, rising like a romantic tropical dream in Weligama Bay."
+    },
+    {
+      "title": "Koggala Lake & Mangroves",
+      "distance": "~7.0 km",
+      "category": "Coastal Lagoon Ecology",
+      "description": "An expansive brackish lagoon dotted with cinnamon-growing islands, ancient Buddhist hermitages, and birdwatching boat safaris under tropical foliage."
+    },
+    {
+      "title": "Koggala Stilt Fishermen Coast",
+      "distance": "~6.8 km",
+      "category": "Living Artisanal Custom",
+      "description": "The iconic Sri Lankan fishing spectacle where anglers balance delicately on wooden crossbars planted in the surf to cast for spotted herrings."
+    },
+    {
+      "title": "Whale Watching Cruises",
+      "distance": "~8.0 km",
+      "category": "Marine Expedition",
+      "description": "Board eco-conscious morning boats from Mirissa Harbour to witness magnificent blue whales, fin whales, and acrobat spinner dolphins in deep ocean waters."
+    },
+    {
+      "title": "Snake Farm Weligama",
+      "distance": "~5.1 km",
+      "category": "Ayurvedic Herbal Sanctuary",
+      "description": "A renowned family of traditional Ayurvedic doctors who rescue and protect indigenous reptiles while providing natural snakebite cures and educational talks."
+    }
+  ]
+}

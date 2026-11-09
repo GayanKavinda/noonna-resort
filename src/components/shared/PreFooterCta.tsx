@@ -125,10 +125,10 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
   const content = CTA_CONTENT[context];
 
   return (
-    <section className={`w-full bg-white py-16 sm:py-20 md:py-24 border-t border-[#D9EAF3]/70 ${className}`}>
+    <section className={`w-full bg-white py-8 sm:py-12 border-t border-[#D9EAF3]/70 ${className}`}>
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Philosophy Script Eyebrow */}
-        <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 tracking-wide select-none">
+        <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 tracking-wide select-none lowercase">
           {content.eyebrow}
         </p>
 

@@ -15,6 +15,24 @@
   --color-slate-charcoal: #0f172a;
   --color-slate-body: #475569;
   --color-slate-muted: #64748b;
+
+  /* Stitch Design System Theme Tokens */
+  --color-primary: #0d628a;
+  --color-primary-container: #347ba4;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fcfcff;
+  --color-secondary: #3e627b;
+  --color-secondary-container: #bce2fe;
+  --color-on-secondary-container: #40657d;
+  --color-secondary-fixed: #c8e7ff;
+  --color-surface: #f9f9f9;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #40484e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f4;
+  --color-surface-container: #eeeeee;
+  --color-outline: #70787f;
+  --color-outline-variant: #c0c7cf;
 }
 
 @theme inline {
@@ -32,6 +50,23 @@
   --color-slate-charcoal: #0f172a;
   --color-slate-body: #475569;
   --color-slate-muted: #64748b;
+
+  --color-primary: #0d628a;
+  --color-primary-container: #347ba4;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fcfcff;
+  --color-secondary: #3e627b;
+  --color-secondary-container: #bce2fe;
+  --color-on-secondary-container: #40657d;
+  --color-secondary-fixed: #c8e7ff;
+  --color-surface: #f9f9f9;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #40484e;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f4;
+  --color-surface-container: #eeeeee;
+  --color-outline: #70787f;
+  --color-outline-variant: #c0c7cf;
 }
 
 * {
