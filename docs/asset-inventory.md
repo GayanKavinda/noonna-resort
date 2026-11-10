@@ -17,6 +17,7 @@
 | **AST-07** | `Photos-.../Photos/IMG_2842.JPG` | `/images/gallery/veranda-seating.jpg` | Genuine Hotel Photography | Veranda lounge & outdoor teak furniture | **Verified Asset (Staged)** | Gallery Grid & Story Bento |
 | **AST-08** | Experiences Destination Photos | Pending Client Assets | Third-Party Landmarks & Beaches | External beaches, surf breaks, cultural monuments (13 beaches, 9 heritage sites) | **Needs Client Photos / Graceful Editorial Placeholders** | Experiences Landing & Detail Pages |
 | **AST-09** | Dining Venue Photos | Pending Client Assets | Third-Party Restaurants | 10 independent dining establishments (Lucky Fort, Shirani, Kumbala, Mettha's, etc.) | **Needs Client Photos / Editorial Styling** | Dining Section & Guide |
+| **AST-11** | Southern Heritage & Coastal Expeditions destination photos | Pending Client / Licensed Assets | Third-Party Landmarks & Wildlife | Galle Dutch Fort, Kushtarajagala Rock Relief, Kumbalgama Potters' Village, Martin Wickramasinghe Museum, Taprobane Island, Koggala Lake & Mangroves, Koggala Stilt Fishermen Coast, Whale Watching Cruises (Mirissa), Snake Farm Weligama, plus Southern Heritage page hero/field-notes/beach/gastronomy imagery | **Needs Client Photos / Restrained Editorial Placeholders in use** | `/experiences/southern-heritage-coastal-expeditions` (Phase 7.3) |
 | **AST-10** | Stitch AI Prompts (e.g., Imagen Generative Renders) | *None* | Google Stitch AI-Generated Placeholder | Synthetic visual concepts for mockup styling | **EXCLUDED FROM PRODUCTION** | Visual reference only |
 
 ---

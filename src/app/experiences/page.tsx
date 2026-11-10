@@ -53,12 +53,14 @@ export const metadata: Metadata = {
 export default function ExperiencesPage() {
   return (
     <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface">
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Experiences" },
-        ]}
-      />
+      <div className="max-w-7xl mx-auto w-full px-6 lg:px-12 pt-8 pb-4">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Experiences" },
+          ]}
+        />
+      </div>
 
       <ExperiencesHero />
       <NearbyBeachesSection />

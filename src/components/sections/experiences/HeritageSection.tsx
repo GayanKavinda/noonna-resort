@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, Compass, Info } from "lucide-react";
 
 export default function HeritageSection() {
@@ -217,15 +218,14 @@ export default function HeritageSection() {
         </div>
       </div>
       <div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-        <a
-          href="#"
-          data-path="heritage-wildlife"
+        <Link
+          href="/experiences/southern-heritage-coastal-expeditions"
           className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#397FA8] hover:bg-[#2E698D] text-white font-label-md text-label-md font-semibold tracking-wide shadow-sm hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] transition-all duration-200"
         >
           <Compass className="text-[18px]" size={18} />
           <span>Explore Southern Heritage &amp; Coastal Expeditions</span>
           <ArrowRight className="text-[16px]" size={16} />
-        </a>
+        </Link>
       </div>
       <div className="mt-8 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light">
         <Info className="text-outline text-[16px]" size={16} />

@@ -12,7 +12,8 @@ export type CtaRouteContext =
   | "beaches"
   | "swim"
   | "wildlife"
-  | "taste";
+  | "taste"
+  | "southern-heritage";
 
 interface PreFooterCtaProps {
   context?: CtaRouteContext;
@@ -112,6 +113,14 @@ const CTA_CONTENT: Record<
     eyebrow: "artisanal flavors & clay pot feasts...",
     title: "A Peaceful Base for Coastal Gastronomy",
     deck: "Explore authentic wood-fired curries, ocean-caught catches, and artisan beach cafes, with Noonna Beach Hotel as your serene retreat.",
+    buttonText: "Reserve Your Room on Booking.com",
+    href: HOTEL_INFO.bookingUrl,
+    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
+  },
+  "southern-heritage": {
+    eyebrow: "rest & unwind...",
+    title: "Make Room for a Slower Stay",
+    deck: "From ancient 300-year-old granite sanctuaries to fortified colonial ramparts, return to barefoot sanctuary comfort and quiet tides on the secluded shores of Kumbalgama.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
     trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
