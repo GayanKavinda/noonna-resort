@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ExperiencesHero } from "@/components/sections/experiences/ExperiencesHero";
 import { NearbyBeachesSection } from "@/components/sections/experiences/NearbyBeachesSection";
 import { HeritageSection } from "@/components/sections/experiences/HeritageSection";
@@ -7,6 +6,7 @@ import { CulinarySpotlights } from "@/components/sections/experiences/CulinarySp
 import { HotelSurroundings } from "@/components/sections/experiences/HotelSurroundings";
 import { CoastalMotion } from "@/components/sections/experiences/CoastalMotion";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
+import { Breadcrumb } from "@/components/shared/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Experiences & Coastal Journeys | Noonna Beach Hotel",
@@ -52,29 +52,13 @@ export const metadata: Metadata = {
 
 export default function ExperiencesPage() {
   return (
-    <div className="w-full bg-white min-h-screen">
-      {/* Section 1: Breadcrumb Navigation Bar */}
-      <section className="w-full bg-white pt-24 pb-2 md:pt-28 md:pb-3 border-b border-[#D9EAF3]/60">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <nav
-            aria-label="Breadcrumb"
-            className="flex items-center gap-2 text-xs text-slate-500 font-light"
-          >
-            <Link
-              href="/"
-              className="hover:text-[#397FA8] transition-colors focus:outline-none focus:ring-1 focus:ring-[#397FA8]"
-            >
-              Home
-            </Link>
-            <span className="text-slate-300" aria-hidden="true">
-              /
-            </span>
-            <span className="text-[#173F56] font-medium" aria-current="page">
-              Experiences
-            </span>
-          </nav>
-        </div>
-      </section>
+    <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface">
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Experiences" },
+        ]}
+      />
 
       <ExperiencesHero />
       <NearbyBeachesSection />
