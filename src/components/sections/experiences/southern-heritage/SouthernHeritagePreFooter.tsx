@@ -8,10 +8,10 @@ export function SouthernHeritagePreFooter() {
         <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 lowercase tracking-wide select-none">
           stories, culture &amp; coastal discoveries...
         </p>
-        <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl text-slate-900 font-normal tracking-tight mb-4 leading-tight">
+        <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl text-[#0F172A] font-normal tracking-tight mb-4 leading-tight">
           Anchor Your Days in Southern Heritage
         </h2>
-        <p className="font-body text-slate-600 font-light text-base sm:text-lg max-w-2xl mx-auto mb-9 leading-relaxed">
+        <p className="font-body text-[#475569] font-light text-base sm:text-lg max-w-2xl mx-auto mb-9 leading-relaxed">
           From ancient rock-carved heritage and historic colonial landmarks to
           the natural beauty of Sri Lanka&apos;s southern coast, discover the
           stories and landscapes surrounding your stay in Kumbalgama.

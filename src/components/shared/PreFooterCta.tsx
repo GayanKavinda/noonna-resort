@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import { HOTEL_INFO } from "@/lib/constants";
-import { ArrowUpRight, ShieldCheck, MessageCircle } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export type CtaRouteContext =
   | "home"
@@ -27,36 +27,29 @@ const CTA_CONTENT: Record<
     title: string;
     deck: string;
     buttonText: string;
-    href?: string;
-    trustBadge: string;
-    showSecondary?: boolean;
-    secondaryText?: string;
-    secondaryHref?: string;
+    href: string;
   }
 > = {
   home: {
     eyebrow: "rest & unwind...",
     title: "Make Room for a Slower Stay",
-    deck: "Explore the property and check your preferred dates for an intimate beach stay on Sri Lanka's southern coast.",
-    buttonText: "Book Your Stay on Booking.com",
+    deck: "Discover Noonna Beach Hotel and find a peaceful place to enjoy Sri Lanka's southern coast.",
+    buttonText: "Explore Noonna on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   stay: {
     eyebrow: "your quiet sanctuary...",
-    title: "Reserve Your Oceanfront Hideaway",
-    deck: "Wake to unhurried tides, private verandas, and ocean breezes. Secure your preferred dates directly.",
-    buttonText: "Check Suite Availability on Booking.com",
+    title: "Your Coastal Stay Awaits",
+    deck: "Discover the Double Room and explore the details of your stay in Kumbalgama.",
+    buttonText: "Explore the Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   experiences: {
     eyebrow: "begin your coastal journey...",
     title: "Anchor Your Days by the Ocean",
-    deck: "From sunrise surf at Midigama to twilight stilt fishermen, make Noonna your peaceful home base on the southern coast.",
-    buttonText: "Plan Your Stay on Booking.com",
+    deck: "Discover southern beaches, cultural landmarks and local experiences surrounding Kumbalgama.",
+    buttonText: "Explore Noonna on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   gallery: {
     eyebrow: "experience stillness firsthand...",
@@ -64,18 +57,13 @@ const CTA_CONTENT: Record<
     deck: "Turn captured coastal moments into your reality. Reserve your intimate stay along Sri Lanka's golden shoreline.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   contact: {
     eyebrow: "we are here to welcome you...",
     title: "Let Us Prepare Your Stay",
-    deck: "Have questions before booking? Speak with our host or book directly for guaranteed rates and peaceful arrival.",
+    deck: "Have questions before booking? Speak with our host or explore availability for a peaceful arrival.",
     buttonText: "Book Your Stay on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
-    showSecondary: Boolean(HOTEL_INFO.socials.whatsapp),
-    secondaryText: "Chat with Concierge on WhatsApp",
-    secondaryHref: HOTEL_INFO.socials.whatsapp,
   },
   heritage: {
     eyebrow: "sacred chronicles & timeless heritage...",
@@ -83,7 +71,6 @@ const CTA_CONTENT: Record<
     deck: "From ancient 8th-century granite sanctuaries to fortified colonial ramparts, return to unhurried coastal living on the sands of Thalpe.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   beaches: {
     eyebrow: "surf, coves & unhurried tides...",
@@ -91,7 +78,6 @@ const CTA_CONTENT: Record<
     deck: "Spend unhurried mornings catching point breaks and reef coves, and your afternoons resting on private verandas immersed in ocean breeze.",
     buttonText: "Book Your Stay on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   swim: {
     eyebrow: "secret lagoons & golden horizons...",
@@ -99,7 +85,6 @@ const CTA_CONTENT: Record<
     deck: "From protected coral tide pools to iconic palm-crested promontories, retreat to barefoot sanctuary comfort after your coastal wanderings.",
     buttonText: "Book Your Stay on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   wildlife: {
     eyebrow: "coastal wild & gentle waterways...",
@@ -107,7 +92,6 @@ const CTA_CONTENT: Record<
     deck: "Gliding through mangrove estuaries and witnessing ocean giants at sunrise, then retreating to quiet luxury and soothing sea breezes.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   taste: {
     eyebrow: "artisanal flavors & clay pot feasts...",
@@ -115,7 +99,6 @@ const CTA_CONTENT: Record<
     deck: "Explore authentic wood-fired curries, ocean-caught catches, and artisan beach cafes, with Noonna Beach Hotel as your serene retreat.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
   "southern-heritage": {
     eyebrow: "rest & unwind...",
@@ -123,7 +106,6 @@ const CTA_CONTENT: Record<
     deck: "From ancient 300-year-old granite sanctuaries to fortified colonial ramparts, return to barefoot sanctuary comfort and quiet tides on the secluded shores of Kumbalgama.",
     buttonText: "Reserve Your Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
-    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
 };
 
@@ -142,18 +124,17 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
         </p>
 
         {/* Main Garamond Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading text-slate-900 font-normal tracking-tight mb-4 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading text-[#0F172A] font-normal tracking-tight mb-4 leading-tight">
           {content.title}
         </h2>
 
         {/* Descriptive Subtitle Deck */}
-        <p className="text-slate-600 font-light text-base sm:text-lg max-w-2xl mx-auto mb-9 leading-relaxed font-sans">
+        <p className="text-[#475569] font-light text-base sm:text-lg max-w-2xl mx-auto mb-9 leading-relaxed font-sans">
           {content.deck}
         </p>
 
-        {/* Action Button Group */}
+        {/* Action Button */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-7">
-          {/* Primary Booking Button */}
           <a
             href={content.href}
             target="_blank"
@@ -163,26 +144,17 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
             <span>{content.buttonText}</span>
             <ArrowUpRight className="w-[18px] h-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
           </a>
-
-          {/* Optional Secondary Concierge CTA for Contact page */}
-          {content.showSecondary && content.secondaryHref && (
-            <a
-              href={content.secondaryHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-sm rounded-lg border border-slate-200 transition-colors duration-200 gap-2 font-sans"
-            >
-              <MessageCircle className="w-[18px] h-[18px] text-[#397FA8]" />
-              <span>{content.secondaryText}</span>
-            </a>
-          )}
         </div>
 
-        {/* Trust & Verification Badge */}
-        <div className="inline-flex items-center justify-center gap-2 text-xs text-slate-500 font-light font-sans">
-          <ShieldCheck className="w-[17px] h-[17px] text-[#397FA8]" />
-          <span>{content.trustBadge}</span>
-        </div>
+        {/* Booking.com Badge */}
+        <a
+          href={content.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-3 py-1 rounded-full border border-slate-200 bg-slate-50 text-xs text-slate-500 font-light font-sans hover:text-[#397FA8] hover:border-[#397FA8]/30 transition-colors"
+        >
+          Listed on Booking.com
+        </a>
       </div>
     </section>
   );
