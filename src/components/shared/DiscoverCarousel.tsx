@@ -12,6 +12,7 @@ interface DiscoverCarouselProps {
   title?: string;
   deck?: string;
   className?: string;
+  id?: string;
 }
 
 export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
@@ -20,6 +21,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
   title = "Curated Southern Discoveries",
   deck = "Handpicked coves, heritage landmarks, and serene coastal encounters surrounding Noonna Beach Hotel.",
   className = "",
+  id,
 }) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -41,7 +43,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
   };
 
   return (
-    <section className={`w-full bg-white py-16 md:py-24 overflow-hidden ${className}`}>
+    <section id={id} className={`w-full bg-white py-16 md:py-24 overflow-hidden ${className}`}>
       <Container>
         {/* Carousel Header trio & Directional Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-4 border-b border-[#D9EAF3]/60">

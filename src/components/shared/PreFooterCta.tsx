@@ -12,7 +12,8 @@ export type CtaRouteContext =
   | "beaches"
   | "swim"
   | "wildlife"
-  | "taste";
+  | "taste"
+  | "southern-heritage";
 
 interface PreFooterCtaProps {
   context?: CtaRouteContext;
@@ -116,6 +117,14 @@ const CTA_CONTENT: Record<
     href: HOTEL_INFO.bookingUrl,
     trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
   },
+  "southern-heritage": {
+    eyebrow: "rest & unwind...",
+    title: "Make Room for a Slower Stay",
+    deck: "From ancient 300-year-old granite sanctuaries to fortified colonial ramparts, return to barefoot sanctuary comfort and quiet tides on the secluded shores of Kumbalgama.",
+    buttonText: "Reserve Your Room on Booking.com",
+    href: HOTEL_INFO.bookingUrl,
+    trustBadge: "Secured through Booking.com • Verified Private Coastal Listing",
+  },
 };
 
 export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
@@ -125,10 +134,10 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
   const content = CTA_CONTENT[context];
 
   return (
-    <section className={`w-full bg-white py-16 sm:py-20 md:py-24 border-t border-[#D9EAF3]/70 ${className}`}>
+    <section className={`w-full bg-white py-8 sm:py-12 border-t border-[#D9EAF3]/70 ${className}`}>
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Philosophy Script Eyebrow */}
-        <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 tracking-wide select-none">
+        <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 tracking-wide select-none lowercase">
           {content.eyebrow}
         </p>
 

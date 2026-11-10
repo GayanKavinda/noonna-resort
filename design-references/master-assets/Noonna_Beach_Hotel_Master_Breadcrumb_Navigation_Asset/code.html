@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noonna Beach Hotel - Master Breadcrumb Navigation Asset</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Moon+Dance&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #F8FAFC;
+      color: #1E293B;
+    }
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .font-script-accent {
+      font-family: 'Moon Dance', cursive;
+    }
+  </style>
+</head>
+<body class="min-h-screen p-6 md:p-12 lg:p-16 bg-[#F8FAFC]">
+
+  <div class="max-w-[1360px] mx-auto space-y-12">
+
+    <!-- 0. SPEC HEADER -->
+    <header class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#EBF4F9] text-[#397FA8] border border-[#397FA8]/20">
+            CORE DESIGN TOKEN SPEC
+          </span>
+          <span class="text-xs font-mono text-slate-400">DS-CRUMB-V1.0</span>
+          <span class="inline-flex items-center gap-1.5 text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200/60">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Production Verified
+          </span>
+        </div>
+        <h1 class="font-serif-luxury text-3xl md:text-4xl lg:text-[42px] font-normal text-[#173F56] tracking-tight leading-tight">
+          Master Breadcrumb Navigation & Wayfinding System
+        </h1>
+        <p class="font-script-accent text-2xl text-[#397FA8] mt-1 leading-none">
+          unhurried coastal paths & intuitive orientation...
+        </p>
+        <p class="text-sm text-slate-500 mt-2 max-w-2xl font-light">
+          Complete spatial geometry, delimiter variants, typographic pairing, responsive overflow behavior, and schema metadata calibrated for the Noonna Beach Hotel web & mobile ecosystem.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 bg-slate-50/80 p-4 rounded-xl border border-slate-200/70 text-xs">
+        <div>
+          <span class="text-slate-400 block uppercase tracking-wider font-semibold text-[10px]">Brand Ocean</span>
+          <span class="font-mono font-medium text-[#397FA8]">#397FA8</span>
+        </div>
+        <div class="border-t sm:border-t-0 sm:border-l border-slate-200 pt-2 sm:pt-0 sm:pl-4">
+          <span class="text-slate-400 block uppercase tracking-wider font-semibold text-[10px]">Deep Navy</span>
+          <span class="font-mono font-medium text-[#173F56]">#173F56</span>
+        </div>
+        <div class="border-t sm:border-t-0 sm:border-l border-slate-200 pt-2 sm:pt-0 sm:pl-4">
+          <span class="text-slate-400 block uppercase tracking-wider font-semibold text-[10px]">Font Scale</span>
+          <span class="font-mono font-medium text-slate-700">12px - 14px</span>
+        </div>
+        <div class="border-t sm:border-t-0 sm:border-l border-slate-200 pt-2 sm:pt-0 sm:pl-4">
+          <span class="text-slate-400 block uppercase tracking-wider font-semibold text-[10px]">Standard Top Margin</span>
+          <span class="font-mono font-medium text-slate-700">pt-6 / pt-8</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: LIVE COMPONENT PREVIEW & ARCHETYPES -->
+    <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-8">
+      <div>
+        <span class="font-script-accent text-2xl text-[#397FA8] block">visual harmony & context...</span>
+        <h2 class="font-serif-luxury text-2xl md:text-3xl text-[#173F56] font-normal tracking-tight">
+          1. Live Breadcrumb Component Archetypes
+        </h2>
+        <p class="text-sm text-slate-500 font-light mt-1">
+          Standardized navigation trails across 2-tier, 3-tier, and 4-tier routing depths used on Noonna Beach Hotel screens.
+        </p>
+      </div>
+
+      <!-- Live Previews Grid -->
+      <div class="space-y-6">
+
+        <!-- Archetype 1: Level 2 Depth (The Stay / Gallery / Contact) -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50/40 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Archetype A • 2-Tier Route (Primary Pillar Landing)
+            </span>
+            <span class="text-[11px] font-mono text-slate-400">Used on: /stay, /gallery, /contact</span>
+          </div>
+
+          <!-- Live Component -->
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs md:text-sm text-slate-500 font-light">
+              <a href="/" class="hover:text-[#397FA8] transition-colors flex items-center gap-1.5 text-slate-600">
+                <svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+                <span>Home</span>
+              </a>
+              <span class="text-slate-300 select-none">/</span>
+              <span class="text-[#173F56] font-medium" aria-current="page">The Stay</span>
+            </nav>
+          </div>
+
+          <div class="text-[11px] text-slate-500 font-mono flex items-center gap-4">
+            <span>Root: <span class="text-slate-700">Home (Active Link)</span></span>
+            <span>Delimiter: <span class="text-slate-700">Slash (Slate-300)</span></span>
+            <span>Current: <span class="text-[#173F56] font-bold">The Stay (#173F56 Font-Medium)</span></span>
+          </div>
+        </div>
+
+        <!-- Archetype 2: Level 3 Depth (Curated Hubs / Categorized Guides) -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50/40 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Archetype B • 3-Tier Route (Regional Category / Destination Hub)
+            </span>
+            <span class="text-[11px] font-mono text-slate-400">Used on: /experiences/beaches, /experiences/heritage</span>
+          </div>
+
+          <!-- Live Component -->
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs">
+            <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs md:text-sm text-slate-500 font-light">
+              <a href="/" class="hover:text-[#397FA8] transition-colors text-slate-600">Home</a>
+              <span class="text-slate-300 select-none">/</span>
+              <a href="/experiences" class="hover:text-[#397FA8] transition-colors text-slate-600">Experiences</a>
+              <span class="text-slate-300 select-none">/</span>
+              <span class="text-[#173F56] font-medium" aria-current="page">Beaches &amp; Surf</span>
+            </nav>
+          </div>
+
+          <div class="text-[11px] text-slate-500 font-mono flex items-center gap-4">
+            <span>Parent Anchor: <span class="text-slate-700">Experiences (Hover: #397FA8)</span></span>
+            <span>Current Node: <span class="text-[#173F56] font-bold">Beaches &amp; Surf (aria-current="page")</span></span>
+          </div>
+        </div>
+
+        <!-- Archetype 3: Level 4 Depth (Single Destination Detail Page) -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50/40 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+              Archetype C • 4-Tier Deep Detail Route with Pill Indicator
+            </span>
+            <span class="text-[11px] font-mono text-slate-400">Used on: Midigama Beach Detail, Shirani Rice &amp; Curry Detail</span>
+          </div>
+
+          <!-- Live Component with Pill Accents -->
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-2xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <nav aria-label="Breadcrumb" class="flex flex-wrap items-center gap-2 text-xs md:text-sm text-slate-500 font-light">
+              <a href="/" class="hover:text-[#397FA8] transition-colors text-slate-600">Home</a>
+              <span class="text-slate-300 select-none">/</span>
+              <a href="/experiences" class="hover:text-[#397FA8] transition-colors text-slate-600">Experiences</a>
+              <span class="text-slate-300 select-none">/</span>
+              <a href="/experiences#beaches" class="hover:text-[#397FA8] transition-colors text-slate-600">Beaches &amp; Surf</a>
+              <span class="text-slate-300 select-none">/</span>
+              <span class="text-[#173F56] font-medium" aria-current="page">Midigama Beach &amp; Coastal Coves</span>
+            </nav>
+
+            <!-- Complementary Metadata Pill Cluster -->
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-[#EBF4F9] text-[#397FA8] border border-[#397FA8]/20">
+                Coastal Shoreline
+              </span>
+              <span class="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-slate-100 text-slate-600 border border-slate-200">
+                Surfing &amp; Tidepools
+              </span>
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-amber-50 text-amber-800 border border-amber-200/60">
+                <svg class="w-3 h-3 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                1.4 km from Noonna
+              </span>
+            </div>
+          </div>
+
+          <div class="text-[11px] text-slate-500 font-mono flex items-center gap-4">
+            <span>Depth: <span class="text-slate-700">4 Segments</span></span>
+            <span>Auxiliary: <span class="text-slate-700">Right-aligned Category &amp; Distance Badges</span></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: DELIMITER VARIATIONS & INTERACTIVE STATES -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Column A: Delimiter Geometries -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-6">
+        <div>
+          <span class="font-script-accent text-2xl text-[#397FA8] block">rhythm & punctuation...</span>
+          <h2 class="font-serif-luxury text-2xl text-[#173F56] font-normal tracking-tight">
+            2A. Delimiter Vector & Glyph Standards
+          </h2>
+          <p class="text-xs text-slate-500 font-light mt-1">
+            Three approved separator geometries with exact Tailwind CSS token specifications.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Delimiter 1: Slanted Slash (Standard Master) -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center font-mono text-slate-400 font-semibold text-sm">
+                /
+              </div>
+              <div>
+                <span class="font-medium text-xs text-slate-800 block">Slanted Slash (Master Standard)</span>
+                <span class="text-[11px] text-slate-500 font-mono">class="text-slate-300 select-none"</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
+              Default Standard
+            </span>
+          </div>
+
+          <!-- Delimiter 2: Chevron Vector -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-400">
+                <svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <div>
+                <span class="font-medium text-xs text-slate-800 block">Chevron Vector (Editorial Alt)</span>
+                <span class="text-[11px] text-slate-500 font-mono">svg.w-3.h-3.text-slate-300</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-600">
+              Alternative
+            </span>
+          </div>
+
+          <!-- Delimiter 3: Middle Dot (Bullet) -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center font-mono text-slate-400 font-bold text-sm">
+                •
+              </div>
+              <div>
+                <span class="font-medium text-xs text-slate-800 block">Centred Dot Bullet (Minimal Compact)</span>
+                <span class="text-[11px] text-slate-500 font-mono">class="text-slate-300 select-none"</span>
+              </div>
+            </div>
+            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-600">
+              Compact View
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column B: Interactive States & Tokens -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-6">
+        <div>
+          <span class="font-script-accent text-2xl text-[#397FA8] block">states & tactile feedback...</span>
+          <h2 class="font-serif-luxury text-2xl text-[#173F56] font-normal tracking-tight">
+            2B. Interactive State Matrix
+          </h2>
+          <p class="text-xs text-slate-500 font-light mt-1">
+            Exact interaction tokens for cursor states, keyboard accessibility, and active endpoints.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border border-slate-200 rounded-lg overflow-hidden">
+            <thead class="bg-slate-50 text-slate-600 border-b border-slate-200 font-semibold uppercase text-[10px]">
+              <tr>
+                <th class="p-3">State</th>
+                <th class="p-3">Color Token</th>
+                <th class="p-3">Font Weight</th>
+                <th class="p-3">Visual Indicator</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 font-light text-slate-600">
+              <tr>
+                <td class="p-3 font-medium text-slate-800">Default (Parent Link)</td>
+                <td class="p-3 font-mono text-slate-600">#475569 (Slate-600)</td>
+                <td class="p-3">300 (Light) / 400 (Regular)</td>
+                <td class="p-3"><span class="text-slate-600">Home</span></td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium text-slate-800">Hover / Active</td>
+                <td class="p-3 font-mono text-[#397FA8]">#397FA8 (Ocean Blue)</td>
+                <td class="p-3">400 (Regular)</td>
+                <td class="p-3"><span class="text-[#397FA8] underline underline-offset-4 decoration-[#397FA8]/40">Home</span></td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium text-slate-800">Focus-Visible (Keyboard)</td>
+                <td class="p-3 font-mono text-[#397FA8]">#397FA8</td>
+                <td class="p-3">400</td>
+                <td class="p-3"><span class="outline outline-2 outline-[#397FA8] outline-offset-2 rounded px-1">Home</span></td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium text-slate-800">Current Page (Endpoint)</td>
+                <td class="p-3 font-mono text-[#173F56]">#173F56 (Deep Navy)</td>
+                <td class="p-3 font-semibold text-slate-900">500 (Medium)</td>
+                <td class="p-3"><span class="text-[#173F56] font-medium">Midigama Beach</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 3: SPATIAL LAYOUT & VERTICAL RHYTHM INTEGRATION -->
+    <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-6">
+      <div>
+        <span class="font-script-accent text-2xl text-[#397FA8] block">cadence & whitespace...</span>
+        <h2 class="font-serif-luxury text-2xl md:text-3xl text-[#173F56] font-normal tracking-tight">
+          3. Vertical Spacing Rhythm & Container Specs
+        </h2>
+        <p class="text-sm text-slate-500 font-light mt-1">
+          Exact pixel measurements for embedding breadcrumbs between sticky desktop header navigation and below-the-fold content or hero banners.
+        </p>
+      </div>
+
+      <!-- Visual Blueprint Diagram -->
+      <div class="border border-slate-200 rounded-xl p-6 bg-slate-50 space-y-6">
+        <div class="relative border border-dashed border-slate-300 rounded-lg p-6 bg-white space-y-4">
+          
+          <!-- Mock Nav Header -->
+          <div class="h-10 bg-slate-100 rounded-md border border-slate-200 flex items-center justify-between px-4 text-xs text-slate-400 font-mono">
+            <span>[Sticky Header Navigation: h-20 (80px)]</span>
+            <span>border-b border-[#E2E8F0]</span>
+          </div>
+
+          <!-- Spacing Indicator 1 -->
+          <div class="flex items-center justify-center gap-2 py-1 text-[11px] font-mono text-[#397FA8] bg-[#EBF4F9] rounded border border-[#397FA8]/20">
+            <span>↑ Gap A: pt-6 (24px) / pt-8 (32px) Standard Desktop Padding</span>
+          </div>
+
+          <!-- Live Breadcrumb Row -->
+          <div class="p-3 bg-white rounded border border-[#397FA8]/40 shadow-xs flex items-center justify-between">
+            <div class="flex items-center gap-2 text-xs font-mono">
+              <span class="text-slate-400">Home</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-slate-400">Experiences</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-[#173F56] font-bold">Midigama Beach</span>
+            </div>
+            <span class="text-[10px] font-mono bg-slate-100 px-2 py-0.5 rounded text-slate-500">Container: max-w-7xl px-6 lg:px-8</span>
+          </div>
+
+          <!-- Spacing Indicator 2 -->
+          <div class="flex items-center justify-center gap-2 py-1 text-[11px] font-mono text-[#397FA8] bg-[#EBF4F9] rounded border border-[#397FA8]/20">
+            <span>↓ Gap B: pb-6 (24px) to pb-10 (40px) Before Main Page Hero / Content</span>
+          </div>
+
+          <!-- Mock Hero Section -->
+          <div class="h-20 bg-slate-100 rounded-md border border-slate-200 flex items-center justify-center text-xs text-slate-400 font-mono">
+            <span>[Hero Section / H1 Main Heading: Deluxe Double Room or Midigama Beach]</span>
+          </div>
+
+        </div>
+
+        <!-- Metric Table -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-light">
+          <div class="p-4 bg-white rounded-lg border border-slate-200 space-y-1">
+            <span class="font-semibold text-slate-800 block text-xs">Container Bounds</span>
+            <p class="text-slate-500">Aligned with master layout: <code class="text-slate-700 font-mono">max-w-7xl mx-auto px-6 lg:px-8</code>. Never full bleed without padding.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg border border-slate-200 space-y-1">
+            <span class="font-semibold text-slate-800 block text-xs">Vertical Rhythm</span>
+            <p class="text-slate-500">Standard top spacing is <code class="text-slate-700 font-mono">pt-6</code> to <code class="text-slate-700 font-mono">pt-8</code> (24-32px). Bottom gap before hero is <code class="text-slate-700 font-mono">mb-6</code> to <code class="text-slate-700 font-mono">mb-8</code>.</p>
+          </div>
+          <div class="p-4 bg-white rounded-lg border border-slate-200 space-y-1">
+            <span class="font-semibold text-slate-800 block text-xs">Z-Index &amp; Stacking</span>
+            <p class="text-slate-500">Static flow below sticky header (<code class="text-slate-700 font-mono">z-10</code>). In dark hero overlays, breadcrumb floats above backdrop (<code class="text-slate-700 font-mono">z-20 text-white/80</code>).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: RESPONSIVE COLLAPSE & MOBILE STRATEGY -->
+    <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-6">
+      <div>
+        <span class="font-script-accent text-2xl text-[#397FA8] block">adaptive simplicity...</span>
+        <h2 class="font-serif-luxury text-2xl md:text-3xl text-[#173F56] font-normal tracking-tight">
+          4. Responsive Viewport Strategy (Mobile vs Desktop)
+        </h2>
+        <p class="text-sm text-slate-500 font-light mt-1">
+          Tactile handling for small screens (390px) to prevent multi-line wrapping and layout disruption.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Mobile Strategy 1: Back-Step Micro Breadcrumb -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50/50 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-700">
+              Mobile Standard: Back-Step Micro Anchor
+            </span>
+            <span class="text-[10px] font-mono bg-blue-100 text-blue-800 px-2 py-0.5 rounded">Mobile Default</span>
+          </div>
+          <p class="text-xs text-slate-500 font-light">
+            On narrow portrait screens (< 640px), collapse deep 4-tier hierarchies into a single high-touch "Back to Parent" vector to maximize vertical screen space.
+          </p>
+          
+          <div class="bg-white p-4 rounded-lg border border-slate-200 max-w-[340px]">
+            <a href="/experiences" class="inline-flex items-center gap-1.5 text-xs text-[#397FA8] font-medium hover:text-[#2E698D]">
+              <svg class="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+              </svg>
+              <span>Back to Experiences</span>
+            </a>
+          </div>
+          <span class="text-[11px] font-mono text-slate-400 block">Class: inline-flex items-center gap-1.5 text-xs text-[#397FA8] font-medium</span>
+        </div>
+
+        <!-- Mobile Strategy 2: Horizontal Scrolling Track -->
+        <div class="border border-slate-200 rounded-xl p-6 bg-slate-50/50 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-700">
+              Alternative: Smooth Swipe-Scroll Ribbon
+            </span>
+            <span class="text-[10px] font-mono bg-slate-200 text-slate-700 px-2 py-0.5 rounded">Multi-Stop Trail</span>
+          </div>
+          <p class="text-xs text-slate-500 font-light">
+            Keeps all parent nodes accessible without line breaking via a single horizontal scroll track with hidden scrollbars.
+          </p>
+
+          <div class="bg-white p-4 rounded-lg border border-slate-200 max-w-[340px] overflow-x-auto whitespace-nowrap scrollbar-none">
+            <div class="inline-flex items-center gap-2 text-xs text-slate-500 font-light">
+              <span class="text-slate-600">Home</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-slate-600">Experiences</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-slate-600">Beaches</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-[#173F56] font-medium">Midigama</span>
+            </div>
+          </div>
+          <span class="text-[11px] font-mono text-slate-400 block">Class: overflow-x-auto whitespace-nowrap scrollbar-none</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: ACCESSIBILITY, ARIA & SCHEMA METADATA -->
+    <section class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs space-y-6">
+      <div>
+        <span class="font-script-accent text-2xl text-[#397FA8] block">universal access & seo...</span>
+        <h2 class="font-serif-luxury text-2xl md:text-3xl text-[#173F56] font-normal tracking-tight">
+          5. Accessibility (WCAG 2.1 AA) &amp; Schema.org Structured Data
+        </h2>
+        <p class="text-sm text-slate-500 font-light mt-1">
+          Machine-readable and assistive technology standards ensuring full compliance and Google Search Rich Breadcrumb cards.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Code Block 1: HTML + ARIA -->
+        <div class="p-6 bg-slate-900 rounded-xl text-slate-200 space-y-3 font-mono text-xs">
+          <div class="flex items-center justify-between text-slate-400 text-[11px] border-b border-slate-800 pb-2">
+            <span>HTML &amp; Semantic ARIA Implementation</span>
+            <span class="text-emerald-400">WCAG 2.1 AA Compliant</span>
+          </div>
+          <pre class="overflow-x-auto text-[11px] leading-relaxed text-slate-300"><code>&lt;!-- 1. Landmark container with explicit label --&gt;
+&lt;nav aria-label="Breadcrumb" class="py-4"&gt;
+  &lt;ol class="flex items-center gap-2 text-sm text-slate-500 font-light"&gt;
+    
+    &lt;li class="inline-flex items-center"&gt;
+      &lt;a href="/" class="hover:text-[#397FA8] transition-colors"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;!-- Delimiter hidden from assistive tech --&gt;
+    &lt;li aria-hidden="true" class="text-slate-300 select-none"&gt;/&lt;/li&gt;
+
+    &lt;li class="inline-flex items-center"&gt;
+      &lt;a href="/experiences" class="hover:text-[#397FA8]"&gt;Experiences&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li aria-hidden="true" class="text-slate-300 select-none"&gt;/&lt;/li&gt;
+
+    &lt;!-- Current endpoint marked with aria-current --&gt;
+    &lt;li class="inline-flex items-center text-[#173F56] font-medium" 
+        aria-current="page"&gt;
+      Midigama Beach &amp; Coastal Coves
+    &lt;/li&gt;
+
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+        </div>
+
+        <!-- Code Block 2: JSON-LD Schema.org -->
+        <div class="p-6 bg-slate-900 rounded-xl text-slate-200 space-y-3 font-mono text-xs">
+          <div class="flex items-center justify-between text-slate-400 text-[11px] border-b border-slate-800 pb-2">
+            <span>Schema.org JSON-LD (Search Rich Snippets)</span>
+            <span class="text-blue-400">Google Search Index</span>
+          </div>
+          <pre class="overflow-x-auto text-[11px] leading-relaxed text-slate-300"><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://noonnabeach.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Experiences",
+      "item": "https://noonnabeach.com/experiences"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Midigama Beach & Coastal Coves",
+      "item": "https://noonnabeach.com/experiences/midigama-beach"
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: MASTER TOKEN MATRIX & SPEC SUMMARY -->
+    <footer class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+      <div class="flex items-center gap-4">
+        <span class="font-serif-luxury text-lg font-semibold text-[#173F56]">Noonna Beach Hotel</span>
+        <span class="text-slate-300">|</span>
+        <span>Digital Art Direction Master Specification</span>
+        <span class="text-slate-300">|</span>
+        <span class="font-mono text-[#397FA8]">Token Ref: CRUMB-DS-V1</span>
+      </div>
+      <div>
+        <span>&copy; 2026 Noonna Beach Hotel &bull; Modern Coastal Sanctuary Design System</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
