@@ -1,14 +1,237 @@
-import React from "react";
-import Link from "next/link";
-import { Landmark, Compass, ArrowRight, ArrowUpRight, Info, ExternalLink } from "lucide-react";
+import { ArrowRight, Compass, Info } from "lucide-react";
 
 export default function HeritageSection() {
   return (
-    <>
-      
-<section className="max-w-7xl mx-auto w-full px-6 lg:px-12 py-16 scroll-mt-24" id="heritage-wildlife"><div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12"><div className="space-y-2"><span className="font-script text-2xl md:text-3xl text-[#397FA8] font-normal tracking-wide block" style={{"fontFamily":"Moon Dance, cursive","color":"rgb(57, 127, 168)","fontSize":"1.85rem","fontWeight":"400","lineHeight":"1.2"}}>ancient kingdoms &amp; living ecosystems...</span><h2 className="font-serif text-[38px] md:text-[44px] text-on-surface tracking-tight font-normal leading-tight" style={{"fontFamily":"Cormorant Garamond, Georgia, serif","fontWeight":"400","color":"rgb(23, 63, 86)","letterSpacing":"-0.01em","fontSize":"2.5rem","lineHeight":"1.15"}}>Discover the Local Area</h2><p className="font-body-md text-body-md text-on-surface-variant max-w-xl font-light leading-relaxed">Explore nine revered heritage treasures, ancient monasteries, serene coastal lagoons, and vibrant wildlife sanctuaries situated near Kumbalgama.</p></div><div className="flex flex-wrap items-center gap-3 self-start md:self-auto"><span className="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider bg-surface-container-low px-4 py-2 rounded-full">09 Heritage &amp; Wildlife Gems</span></div></div><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~24 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">UNESCO World Heritage</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Galle Dutch Fort</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Living 17th-century fortified citadel with cobblestone alleys, Dutch colonial architecture, ocean ramparts, and artisan jewellery boutiques.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Colonial Bastions &amp; Sunset Walk</span><span className="text-xs text-on-surface-variant font-light">Heritage Site</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.8 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Literary &amp; Folk History</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Martin Wickramasinghe Museum</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">The preserved ancestral estate of Sri Lanka&apos;s greatest author, exhibiting indigenous southern artifacts, craft tools, and tropical gardens.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Indigenous Southern Artifacts</span><span className="text-xs text-on-surface-variant font-light">Folk Museum</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~2.7 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ancient Sacred Monolith</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Kushtarajagala Rock Relief</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">An 8th-century Mahayana Bodhisattva Avalokiteshvara relief carved directly into solid granite, surrounded by tranquil village temple grounds.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">8th-Century Mahayana Carving</span><span className="text-xs text-on-surface-variant font-light">Ancient Shrine</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5mfmgEsrNgKfAjHQHMcOfMMaXXtvMblIuI5w1wFzrDIAtFzG2IgHQvYlGgDPSlGpvPZJulmrBGdGrbpVDBEx0il2pk5LuzSBSj7uDULf3v7KnI8pPclWBr232AGAuXS6fk3i2Lg49vAAxGaC83KGRf7OKJGID1jlmlPQdB5jUm_l1JUTemYA9LTPRaXgJi9Wm3ac78dO3faehyQ027lCbOw_iPSSHvT5jULBlDKr_YdZy5nYCW2uG7Q" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~0.4 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Artisan Craft Heritage</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Kumbalgama Potters&apos; Village</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Steps from Noonna, skilled generational artisans shape authentic terracotta cooking vessels, water pots, and roof tiles on traditional hand wheels.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Terracotta Wheel Crafting</span><span className="text-xs text-on-surface-variant font-light">Local Artisans</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~3.1 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Private Islet Villa</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Taprobane Island</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Sri Lanka&apos;s only private island, built in the 1920s by the eccentric Count de Mauny, rising like a romantic tropical dream in Weligama Bay.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Iconic Weligama Offshore Islet</span><span className="text-xs text-on-surface-variant font-light">Coastal Landmark</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.0 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Coastal Lagoon Ecology</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Koggala Lake &amp; Mangroves</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">An expansive brackish lagoon dotted with cinnamon-growing islands, ancient Buddhist hermitages, and birdwatching boat safaris under tropical foliage.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Island Safaris &amp; Cinnamon Isles</span><span className="text-xs text-on-surface-variant font-light">Lagoon Sanctuary</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~6.8 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Living Artisanal Custom</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Koggala Stilt Fishermen Coast</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">The iconic Sri Lankan fishing spectacle where anglers balance delicately on wooden crossbars planted in the surf to cast for spotted herrings.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Timeless Riti Panna Fishing</span><span className="text-xs text-on-surface-variant font-light">Living Tradition</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~8.0 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Marine Expedition</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Whale Watching Cruises</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Board eco-conscious morning boats from Mirissa Harbour to witness magnificent blue whales, fin whales, and acrobat spinner dolphins in deep ocean waters.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Blue Whale &amp; Dolphin Safaris</span><span className="text-xs text-on-surface-variant font-light">Marine Wildlife</span></div></div></div><div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group"><div className="space-y-4"><div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container"><img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGr-KFMClnJb2SWeatY1wj6YG9S9Y8JFjWmwtLZzVyFR5UB7u3cb7hfCLf_CAJ_cGJ5WcT6M_PoxHbnIloBFRtUA1edf5h0_KOX_mv4gnFgfzZdX1pJgMMxANOD2EpIg_3jLsYOLzXnaeI07oz4Umu_tE1Iu5_b0Tua-I-ByVcDdfnT6hT7VXIguEMgVm-7Pla2Vzk1VUjewLqzgA83-NqrI4MEY3cSwgxqB6RYO5kCEx5i6zrSIMmQ" /><span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~5.1 km</span></div><div className="space-y-2"><div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ayurvedic Herbal Sanctuary</div><h3 className="font-serif text-2xl text-on-surface font-normal" style={{"fontFamily":"Cormorant Garamond, Georgia, serif"}}>Snake Farm Weligama</h3><p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">A renowned family of traditional Ayurvedic doctors who rescue and protect indigenous reptiles while providing natural snakebite cures and educational talks.</p></div></div><div className="pt-4 border-t border-surface-container mt-4 space-y-3"><div className="flex items-center justify-between"><span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Indigenous Reptile Conservation</span><span className="text-xs text-on-surface-variant font-light">Ayurvedic Centre</span></div></div></div></div><div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-center"><a href="#" data-path="heritage-wildlife" className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#397FA8] hover:bg-[#2E698D] text-white font-label-md text-label-md font-semibold tracking-wide shadow-sm hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] transition-all duration-200"><Compass className="text-[18px]" size={18}  /><span className="">Explore Southern Heritage &amp; Coastal Expeditions</span><ArrowRight className="text-[16px]" size={16}  /></a></div><div className="mt-8 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light"><Info className="text-outline text-[16px]" size={16}  /><span className="">Day excursions and English-speaking guided tours arranged daily by the concierge desk.</span></div></section>
-
-    </>
+    <section
+      className="max-w-7xl mx-auto w-full px-6 lg:px-12 py-16 scroll-mt-24"
+      id="heritage-wildlife"
+    >
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+        <div className="space-y-2">
+          <span
+            className="font-script text-2xl md:text-3xl text-[#397FA8] font-normal tracking-wide block"
+            style={{
+              fontFamily: "Moon Dance, cursive",
+              color: "rgb(57, 127, 168)",
+              fontSize: "1.85rem",
+              fontWeight: "400",
+              lineHeight: "1.2",
+            }}
+          >
+            ancient kingdoms &amp; living ecosystems...
+          </span>
+          <h2
+            className="font-serif text-[38px] md:text-[44px] text-on-surface tracking-tight font-normal leading-tight"
+            style={{
+              fontFamily: "Cormorant Garamond, Georgia, serif",
+              fontWeight: "400",
+              color: "rgb(23, 63, 86)",
+              letterSpacing: "-0.01em",
+              fontSize: "2.5rem",
+              lineHeight: "1.15",
+            }}
+          >
+            Discover the Local Area
+          </h2>
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-xl font-light leading-relaxed">
+            Explore nine revered heritage treasures, ancient monasteries, serene coastal lagoons, and vibrant wildlife sanctuaries situated near Kumbalgama.
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+          <span className="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider bg-surface-container-low px-4 py-2 rounded-full">
+            09 Heritage &amp; Wildlife Gems
+          </span>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~24 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">UNESCO World Heritage</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Galle Dutch Fort</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Living 17th-century fortified citadel with cobblestone alleys, Dutch colonial architecture, ocean ramparts, and artisan jewellery boutiques.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Colonial Bastions &amp; Sunset Walk</span>
+              <span className="text-xs text-on-surface-variant font-light">Heritage Site</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.8 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Literary &amp; Folk History</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Martin Wickramasinghe Museum</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">The preserved ancestral estate of Sri Lanka&apos;s greatest author, exhibiting indigenous southern artifacts, craft tools, and tropical gardens.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Indigenous Southern Artifacts</span>
+              <span className="text-xs text-on-surface-variant font-light">Folk Museum</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~2.7 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ancient Sacred Monolith</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Kushtarajagala Rock Relief</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">An 8th-century Mahayana Bodhisattva Avalokiteshvara relief carved directly into solid granite, surrounded by tranquil village temple grounds.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">8th-Century Mahayana Carving</span>
+              <span className="text-xs text-on-surface-variant font-light">Ancient Shrine</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5mfmgEsrNgKfAjHQHMcOfMMaXXtvMblIuI5w1wFzrDIAtFzG2IgHQvYlGgDPSlGpvPZJulmrBGdGrbpVDBEx0il2pk5LuzSBSj7uDULf3v7KnI8pPclWBr232AGAuXS6fk3i2Lg49vAAxGaC83KGRf7OKJGID1jlmlPQdB5jUm_l1JUTemYA9LTPRaXgJi9Wm3ac78dO3faehyQ027lCbOw_iPSSHvT5jULBlDKr_YdZy5nYCW2uG7Q" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~0.4 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Artisan Craft Heritage</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Kumbalgama Potters&apos; Village</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Steps from Noonna, skilled generational artisans shape authentic terracotta cooking vessels, water pots, and roof tiles on traditional hand wheels.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Terracotta Wheel Crafting</span>
+              <span className="text-xs text-on-surface-variant font-light">Local Artisans</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~3.1 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Private Islet Villa</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Taprobane Island</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Sri Lanka&apos;s only private island, built in the 1920s by the eccentric Count de Mauny, rising like a romantic tropical dream in Weligama Bay.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Iconic Weligama Offshore Islet</span>
+              <span className="text-xs text-on-surface-variant font-light">Coastal Landmark</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.0 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Coastal Lagoon Ecology</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Koggala Lake &amp; Mangroves</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">An expansive brackish lagoon dotted with cinnamon-growing islands, ancient Buddhist hermitages, and birdwatching boat safaris under tropical foliage.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Island Safaris &amp; Cinnamon Isles</span>
+              <span className="text-xs text-on-surface-variant font-light">Lagoon Sanctuary</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~6.8 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Living Artisanal Custom</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Koggala Stilt Fishermen Coast</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">The iconic Sri Lankan fishing spectacle where anglers balance delicately on wooden crossbars planted in the surf to cast for spotted herrings.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Timeless Riti Panna Fishing</span>
+              <span className="text-xs text-on-surface-variant font-light">Living Tradition</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~8.0 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Marine Expedition</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Whale Watching Cruises</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">Board eco-conscious morning boats from Mirissa Harbour to witness magnificent blue whales, fin whales, and acrobat spinner dolphins in deep ocean waters.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Blue Whale &amp; Dolphin Safaris</span>
+              <span className="text-xs text-on-surface-variant font-light">Marine Wildlife</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+          <div className="space-y-4">
+            <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
+              <img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGr-KFMClnJb2SWeatY1wj6YG9S9Y8JFjWmwtLZzVyFR5UB7u3cb7hfCLf_CAJ_cGJ5WcT6M_PoxHbnIloBFRtUA1edf5h0_KOX_mv4gnFgfzZdX1pJgMMxANOD2EpIg_3jLsYOLzXnaeI07oz4Umu_tE1Iu5_b0Tua-I-ByVcDdfnT6hT7VXIguEMgVm-7Pla2Vzk1VUjewLqzgA83-NqrI4MEY3cSwgxqB6RYO5kCEx5i6zrSIMmQ" />
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~5.1 km</span>
+            </div>
+            <div className="space-y-2">
+              <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ayurvedic Herbal Sanctuary</div>
+              <h3 className="font-serif text-2xl text-on-surface font-normal" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Snake Farm Weligama</h3>
+              <p className="font-body-sm text-body-sm text-on-surface-variant font-light leading-relaxed">A renowned family of traditional Ayurvedic doctors who rescue and protect indigenous reptiles while providing natural snakebite cures and educational talks.</p>
+            </div>
+          </div>
+          <div className="pt-4 border-t border-surface-container mt-4 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-primary font-medium bg-surface-container-low px-3 py-1 rounded-full">Indigenous Reptile Conservation</span>
+              <span className="text-xs text-on-surface-variant font-light">Ayurvedic Centre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+        <a
+          href="#"
+          data-path="heritage-wildlife"
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#397FA8] hover:bg-[#2E698D] text-white font-label-md text-label-md font-semibold tracking-wide shadow-sm hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] transition-all duration-200"
+        >
+          <Compass className="text-[18px]" size={18} />
+          <span>Explore Southern Heritage &amp; Coastal Expeditions</span>
+          <ArrowRight className="text-[16px]" size={16} />
+        </a>
+      </div>
+      <div className="mt-8 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light">
+        <Info className="text-outline text-[16px]" size={16} />
+        <span>Day excursions and English-speaking guided tours arranged daily by the concierge desk.</span>
+      </div>
+    </section>
   );
 }
 
