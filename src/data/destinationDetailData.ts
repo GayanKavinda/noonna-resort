@@ -29,7 +29,7 @@ export interface DestinationVitalsShowcase {
 }
 
 export interface DestinationVitalsCard {
-  icon: "schedule" | "surfing";
+  icon: "schedule" | "surfing" | "pool";
   eyebrow: string;
   title: string;
   pill: string;
@@ -1948,6 +1948,277 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
   },
 };
 
+const aweeCocoBase = BEACH_DESTINATIONS.find((d) => d.slug === "awee-coco-secret-pool");
+
+export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
+  slug: "awee-coco-secret-pool",
+  name: aweeCocoBase?.name ?? "Awee Coco Secret Pool",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Secluded Tidal Pools", "Natural Saltwater Bath"],
+  distanceLabel: aweeCocoBase?.distance ? `${aweeCocoBase.distance} from Noonna` : "~2.8 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Calm turquoise natural rock pool sheltered by volcanic granite ledges at Awee Coco",
+    script: "hidden tidal basins & serene palm shade...",
+    title: "Awee Coco Secret Pool",
+    deck: "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Midigama East" },
+      { icon: "pool", label: "Natural Volcanic Granite Tide Pools" },
+      { icon: "wb_sunny", label: "Best at Morning Low Tide" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & tide intelligence...",
+    sectionTitle: "Awee Coco At A Glance: Tidepools, Swell & Terrain",
+    sectionDeck:
+      "Essential field notes and coastal conditions for unhurried morning soak sessions, reef navigation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Sheltered shallow turquoise water in natural rock basin at Awee Coco Secret Pool",
+      topBadge: "Low-Tide Granite Soak Basins",
+      distanceBadge: "2.8 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
+      title: "Sheltered Saltwater Dipping Baths",
+      description:
+        "Naturally formed rock basins etched into ancient volcanic ledges. Outer reef barriers block ocean swells, creating crystal-clear calm water for peaceful morning immersion.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Footwear Loaned at Portico" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Tidal Rhythm",
+        title: "Prime Tide & Light Window",
+        pill: "Dawn & Morning Low Tide",
+        description:
+          "Glassy morning soak sessions between 06:30 – 10:00 AM during low tide provide maximum water clarity and protection from surf swells.",
+        left: { icon: "air", label: "Light offshore morning breezes" },
+        right: "Crystalline pool clarity",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Pool Character",
+        title: "Immersion & Sanctuary Character",
+        pill: "Peaceful & Secluded",
+        description:
+          "Calm, shallow saltwater pools ideal for gentle stretching, mindful breathing, and quiet relaxation sheltered beneath swaying coconut palms.",
+        left: { icon: "waves", label: "Outer reef wave buffer" },
+        right: "Shaded rock ledges",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°57'55\"N 80°23'50\"E",
+      title: "Door-to-Pool Access",
+      description:
+        "Positioned 2.8 km along the southern coastal route. Easily reached via a 4-minute tuk-tuk safari or a 10-minute scenic coastal bicycle ride.",
+      mapsHref: "https://maps.google.com/?q=5.9653,80.3972",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Awee%20Coco%20tide%20and%20access%20updates.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Awee Coco Secret Pool",
+    sectionDeck:
+      "Positioned 2.8 kilometers along Sri Lanka's southern shoreline, reaching this hidden tide pool sanctuary is a short, scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "2.8 km along Matara Coastal Road (A2)",
+        durationBadge: "~4 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road near secret pool location",
+        description:
+          "Our front desk connects you directly with trusted drivers for a quick, breezy ride past palm canopies straight to the coastal footpath.",
+        leftNote: "Estimated fare: 350–450 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Scenic village interior path",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Guest Quiver Bike",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Vintage coastal cruiser bicycle parked near quiet shore path",
+        description:
+          "Pedal along tranquil inland lanes through quiet coconut groves, bypassing highway bustle with our curated cruiser bikes.",
+        leftNote: "Complimentary for guests (subject to availability)",
+        rightNote: "Locks provided",
+        featured: true,
+      },
+      {
+        title: "Low-Tide Shoreline Stroll",
+        subtitle: "Barefoot beach walk along coves",
+        durationBadge: "~20 mins",
+        icon: "footprint",
+        iconLabel: "Tideline Walk",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Couple walking along golden sand shoreline near coastal tide pools",
+        description:
+          "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide. Pass serene shallow rock pools and coastal flora.",
+        leftNote: "Best at low tide (06:30–09:00 AM)",
+        rightNote: "Reef shoes handy",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Awee Coco",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Calm turquoise tidepools and shallow volcanic granite reef shelf at low tide",
+        topBadge: "07:00 AM • Low Tide",
+        topBadgeRight: "2.8 km from hotel",
+        script: "morning calm...",
+        title: "Glassy Granite Soak Basins",
+        description: "Crystal-clear saltwater dipping baths sheltered by ancient volcanic granite ledges.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Sunlight filtering through palm canopy over coastal rock pools",
+        topBadge: "Canopy Shade",
+        topBadgeRight: "Palm Ledge",
+        script: "shade & breeze...",
+        title: "Sheltered Palm Ledge",
+        description: "Natural shade and tranquil seating spots nestled among coastal palm trees.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Coconut Grove palm canopies along the southern coastal shoreline",
+        topBadge: "Inland Approach",
+        topBadgeRight: "Grove Path",
+        script: "grove trail...",
+        title: "Coconut Grove Pathway",
+        description: "Quiet shaded trails winding past swaying palms and coastal greenery.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour twilight reflecting on coastal tide pools",
+        topBadge: "18:00 PM • Twilight",
+        topBadgeRight: "Sunset Glow",
+        script: "evening calm...",
+        title: "Amber Twilight Pool",
+        description: "Quiet evening tide pools bathed in warm amber Indian Ocean twilight glow.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Awee Coco. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "lazy-left-surf-break",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Lazy Left surf break peeling wave in Midigama",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Lazy Left Surf Break",
+        description: "Sri Lanka's legendary longboard left-hand wave, offering smooth peeling walls and easy paddle channels.",
+        footerLeft: "Ideal for dawn patrol & longboard sessions",
+        href: "/experiences/lazy-left-surf-break",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "rams-right-surf-break",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Rams Right surf break barrel in Midigama",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.6 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Rams Right Surf Break",
+        description: "Midigama's heavy, short, and hollow right-hand reef barrel for experienced surfers seeking technical tubes.",
+        footerLeft: "Ideal for morning barrel sessions",
+        href: "/experiences/rams-right-surf-break",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Awee Coco Outing?",
+    deck: "Our team will arrange a trusted local driver, provide custom reef booties, pack chilled king coconuts in cooler packs, and ensure towels are ready for your morning soak.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Awee%20Coco%20pool%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -1955,6 +2226,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   AHANGAMA_BEACH_DETAIL,
   LAZY_LEFT_SURF_BREAK_DETAIL,
   RAMS_RIGHT_SURF_BREAK_DETAIL,
+  AWEE_COCO_SECRET_POOL_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

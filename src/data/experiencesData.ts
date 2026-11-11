@@ -138,13 +138,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "awee-coco-secret-pool",
     name: "Awee Coco Secret Pool",
     category: "beach",
-    badge: "Natural Tide Pool",
+    badge: "Secluded Tidal Pools",
     distance: "~2.8 km",
-    subtitle: "Secluded Ocean Bathing",
+    subtitle: "Natural Saltwater Bath",
     description:
-      "A protected natural granite saltwater basin carved into the coastal shelf where ocean waves gently spill over smooth volcanic rock, creating an idyllic tidal bath.",
-    features: ["Calm Saltwater Basin", "Natural Granite Rim", "Low-Tide Soak"],
-    ctaLabel: "View Bathing Hours",
+      "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.",
+    features: ["Granite Tide Pools", "Natural Saltwater Bath", "Palm Shade"],
+    ctaLabel: "View Pool Guide",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Calm turquoise natural rock pool sheltered by volcanic granite ledges at Awee Coco",
   },
   {
     id: "secret-jungle-beach",

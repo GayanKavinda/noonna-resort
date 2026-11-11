@@ -17,6 +17,7 @@ export async function generateStaticParams() {
     { slug: "ahangama-beach" },
     { slug: "lazy-left-surf-break" },
     { slug: "rams-right-surf-break" },
+    { slug: "awee-coco-secret-pool" },
   ];
 }
 
