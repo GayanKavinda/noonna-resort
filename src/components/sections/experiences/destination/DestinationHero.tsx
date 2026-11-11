@@ -7,6 +7,7 @@ const metaIcons = {
   wb_sunny: Sun,
   near_me: Navigation,
   pool: Droplets,
+  surfing: Waves,
 } as const;
 
 export function DestinationHero({ hero }: { hero: DestinationHeroData }) {

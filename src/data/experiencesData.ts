@@ -75,13 +75,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "weligama-beach",
     name: "Weligama Beach",
     category: "beach",
-    badge: "Broad Sandy Bay",
+    badge: "Sandy Bay Break",
     distance: "~3.5 km",
-    subtitle: "Beginner Waves & Cafés",
+    subtitle: "Beginner Surf Haven",
     description:
-      "Sweeping 2 km crescent bay offering gentle rolling waves, vibrant surf schools, and breezy beachfront seafood grills under leaning palms.",
-    features: ["Beginner Waves & Cafés", "Surf Schools", "Sandy Shallows"],
+      "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
+    features: ["Beginner Surf Haven", "Sandy Bay Break", "Taprobane Views"],
     ctaLabel: "View Bay Guide",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Wide sandy crescent cove of Weligama Bay with gentle ocean surf",
   },
   {
     id: "ahangama-beach",

@@ -3,7 +3,7 @@ import { BEACH_DESTINATIONS } from "./experiencesData";
 export type DestinationBreadcrumbCategory = "Beaches & Surf";
 
 export interface DestinationMetaItem {
-  icon: "location_on" | "waves" | "wb_sunny" | "near_me" | "pool";
+  icon: "location_on" | "waves" | "wb_sunny" | "near_me" | "pool" | "surfing";
   label: string;
 }
 
@@ -25,7 +25,7 @@ export interface DestinationVitalsShowcase {
   panelBadgeText: string;
   title: string;
   description: string;
-  facts: { icon: "thermostat" | "footprint"; label: string }[];
+  facts: { icon: "thermostat" | "footprint" | "surfing"; label: string }[];
 }
 
 export interface DestinationVitalsCard {
@@ -485,14 +485,14 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
         topBadge: "Dedicated Page",
         topBadgeVariant: "primary",
-        distance: "2.8 km",
+        distance: "3.5 km",
         categoryIcon: "waves",
         category: "The Beaches & Surf Breaks",
         title: "Weligama Bay",
         description:
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
-        footerLeft: "Calm morning shoreline",
-        href: "/experiences",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
         linkLabel: "View Dedicated Page →",
       },
       {
@@ -749,14 +749,14 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
         topBadge: "Dedicated Page",
         topBadgeVariant: "primary",
-        distance: "2.8 km",
+        distance: "3.5 km",
         categoryIcon: "waves",
         category: "The Beaches & Surf Breaks",
         title: "Weligama Bay",
         description:
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
-        footerLeft: "Calm morning shoreline",
-        href: "/experiences",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
         linkLabel: "View Dedicated Page →",
       },
       {
@@ -809,7 +809,282 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
-export const DESTINATION_DETAILS: DestinationDetail[] = [MIDIGAMA_BEACH_DETAIL, ABIMANAGAMA_BEACH_DETAIL];
+const weligamaBase = BEACH_DESTINATIONS.find((d) => d.slug === "weligama-beach");
+
+export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
+  slug: "weligama-beach",
+  name: weligamaBase?.name ?? "Weligama Beach",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Sandy Bay Break", "Beginner Surf Haven"],
+  distanceLabel: weligamaBase?.distance ? `${weligamaBase.distance} from Noonna` : "~3.5 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Wide sandy crescent cove of Weligama Bay with gentle ocean surf",
+    script: "broad golden bay & forgiving waves...",
+    title: "Weligama Bay & Sandy Crescent",
+    deck: "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Weligama Bay" },
+      { icon: "surfing", label: "Sand-Bottom Beach Break & Gentle Inside Rollers" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & bay intelligence...",
+    sectionTitle: "Weligama At A Glance: Sandbars, Swell & Shoreline",
+    sectionDeck:
+      "Field notes and coastal conditions for morning surf lessons, unhurried beach walks, and effortless excursions from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Broad golden sand beach and soft rolling waves at Weligama Bay",
+      topBadge: "Sand-Bottom Beginner Haven",
+      distanceBadge: "3.5 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Waves: 06:00 – 10:00 AM & 16:30 – 18:30 PM",
+      title: "Expansive Golden Sand Crescent & Taprobane View",
+      description:
+        "A sweeping 3 km crescent bay protected from heavy ocean swell, offering safe sand-bottom wave entries and iconic views of forested Taprobane Island.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "surfing", label: "Softboard & Rashguard Recommended" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Surf Window",
+        title: "Prime Surf & Water Window",
+        pill: "Dawn & Golden Hour",
+        description:
+          "Glassy dawn sessions between 06:00 – 09:30 AM yield light offshore sea breezes. Late afternoon sessions offer soft amber twilight lighting and consistent sandbar peelers.",
+        left: { icon: "air", label: "Gentle offshore winds" },
+        right: "Sandbar clarity",
+      },
+      {
+        icon: "surfing",
+        eyebrow: "Bay Character",
+        title: "The Bay Breaks & Taprobane",
+        pill: "All Levels / Beginner Friendly",
+        description:
+          "Gentle whitewash inside for beginner practice, while steady A-frame sandbar peaks near central bay provide long, smooth rides for longboards.",
+        left: { icon: "waves", label: "Sand beach break" },
+        right: "Easy sandy entry",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°58'25\"N 80°25'45\"E",
+      title: "Door-to-Bay Access",
+      description:
+        "Located ~3.5 km east along the Matara Coastal Road (A2). Reached in a 6-minute open-air tuk-tuk ride or a 14-minute coastal bicycle ride along village lanes.",
+      mapsHref: "https://maps.google.com/?q=5.97371,80.42935",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20a%20surf%20instructor%20or%20transfer%20to%20Weligama%20Bay.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Weligama Bay",
+    sectionDeck:
+      "Positioned 3.5 km east of Noonna Beach Hotel along the southern coastal road, reaching Weligama's expansive bay and surf line is a quick, scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "3.5 km along Matara Coastal Road (A2)",
+        durationBadge: "~6 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Tuk-tuk ride along Sri Lankan coastal road near Weligama",
+        description:
+          "Hop in an open-air tuk-tuk equipped with surfboard racks for a quick ride past coastal views and fruit stalls directly to the beach front.",
+        leftNote: "Estimated fare: 400–600 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Inland village & coastal paths",
+        durationBadge: "~14 mins",
+        icon: "pedal_bike",
+        iconLabel: "Guest Quiver Bike",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Cruiser bicycles parked along Weligama coastal strip",
+        description:
+          "Pedal along peaceful backstreets and cinnamon-scented lanes into Weligama Bay, avoiding main highway busyness with front-racked bikes.",
+        leftNote: "Bikes subject to hotel availability",
+        rightNote: "Racks & locks provided",
+        featured: true,
+      },
+      {
+        title: "Coastal Train Connection",
+        subtitle: "Kumbalgama Station to Weligama Station",
+        durationBadge: "~4 mins",
+        icon: "train",
+        iconLabel: "Southern Railway",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Scenic coastal train traveling toward Weligama Railway Station",
+        description:
+          "Board at nearby Kumbalgama Halt for a quick, scenic 1-stop coastal train ride into Weligama town center, steps from the bay.",
+        leftNote: "Tickets at station (~80–120 LKR)",
+        rightNote: "Ocean view tracks",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Weligama Bay",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Panoramic morning light over Weligama Bay and surf lineup",
+        topBadge: "06:30 AM • Morning Dawn",
+        topBadgeRight: "3.5 km from hotel",
+        script: "morning swell...",
+        title: "Dawn Lineup across the Bay",
+        description: "Soft glass waves breaking evenly along golden sandbars in early light.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Surfer heading into soft rolling surf at Weligama Bay",
+        topBadge: "Beginner Sessions",
+        topBadgeRight: "Softboard Haven",
+        script: "learn & glide...",
+        title: "First Wave Immersion",
+        description: "Forgiving sand-bottom swells ideal for initial stand-up rides and longboard glides.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Forested Taprobane Island silhouette in Weligama Bay",
+        topBadge: "Coastal Landmark",
+        topBadgeRight: "Taprobane Islet",
+        script: "island view...",
+        title: "Taprobane Island Silhouette",
+        description: "The famous private island villa framed by swaying palms and ocean horizons.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Golden sunset over Weligama Bay with surfboards on the sand",
+        topBadge: "17:45 PM • Golden Hour",
+        topBadgeRight: "Sunset Glow",
+        script: "evening calm...",
+        title: "Golden Hour Glow",
+        description: "Warm amber twilight washing over relaxed beachfront cafes and sandy shores.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Weligama. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "abimanagama-beach",
+        filter: "beaches",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Calm turquoise waters and golden sand cove at Abimanagama Beach",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "2.9 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Abimanagama Beach",
+        description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
+        footerLeft: "Ideal for unhurried morning swims",
+        href: "/experiences/abimanagama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "kushtarajagala-rock-relief",
+        filter: "heritage",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
+        imageAlt: "Ancient Kushtarajagala Bodhisattva rock relief carved into massive granite boulder",
+        topBadge: "Single Page Hub",
+        topBadgeVariant: "glass",
+        distance: "3.3 km",
+        categoryIcon: "landmark",
+        category: "Historical & Cultural",
+        title: "Kushtarajagala Rock Relief",
+        description:
+          "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
+        footerLeft: "10-12 min cruiser bicycle ride",
+        href: "/experiences/southern-heritage-coastal-expeditions",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
+      },
+      {
+        id: "galle-dutch-fort",
+        filter: "heritage",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
+        imageAlt: "Galle Dutch Fort ocean ramparts and historic stone lighthouse bastion",
+        topBadge: "Single Page Hub",
+        topBadgeVariant: "glass",
+        distance: "22 km",
+        categoryIcon: "landmark",
+        category: "Historical & Cultural",
+        title: "Galle Dutch Fort Ramparts",
+        description:
+          "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
+        footerLeft: "Late afternoon sunset walk",
+        href: "/experiences/southern-heritage-coastal-expeditions",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Weligama Surf & Beach Outing?",
+    deck: "Our team can arrange a local driver, connect you with certified surf instructors, pack chilled king coconuts, and advise on wave timing.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Weligama%20surf%20and%20beach%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+export const DESTINATION_DETAILS: DestinationDetail[] = [
+  MIDIGAMA_BEACH_DETAIL,
+  ABIMANAGAMA_BEACH_DETAIL,
+  WELIGAMA_BEACH_DETAIL,
+];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {
   return DESTINATION_DETAILS.find((d) => d.slug === slug);

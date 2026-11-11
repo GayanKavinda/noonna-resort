@@ -70,7 +70,7 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
               <p className="text-[12px] sm:text-[13px] text-white/90 font-light leading-relaxed max-w-xl mb-2.5">{showcase.description}</p>
               <div className="pt-2.5 border-t border-white/20 flex flex-wrap items-center justify-between gap-2.5 text-[10px] sm:text-[11px] text-tertiary-fixed">
                 {showcase.facts.map((fact) => {
-                  const Icon = fact.icon === "thermostat" ? Thermometer : Footprints;
+                  const Icon = fact.icon === "thermostat" ? Thermometer : fact.icon === "surfing" ? Waves : Footprints;
                   return (
                     <div key={fact.label} className="flex items-center gap-1.5">
                       <Icon className="w-3.5 h-3.5" aria-hidden="true" />

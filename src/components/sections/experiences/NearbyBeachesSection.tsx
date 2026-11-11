@@ -84,11 +84,13 @@ export function NearbyBeachesSection() {
             },
             {
               title: "Weligama Beach",
-              tag: "Broad Sandy Bay",
+              tag: "Sandy Bay Break",
               dist: "~3.5 km",
-              desc: "Sweeping 2 km crescent bay offering gentle rolling waves, vibrant surf schools, and breezy beachfront seafood grills under leaning palms.",
-              footer: "Beginner Waves & Cafés",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCaaAyC5-Lqe3vInV5SCeDP_1NYWY5s3z313mA21OOxVqX-AZ5nEy7kmoo9ajRPYYyWkfpP9Py-4ibfkdDgpSwYyiUon697umTz0Dj58DdOpqshpNR20eVoJxrfnvwZnpikjjqBmhZJIpShPBe3_5DVkebfW_Mm9W9i_Ej3-TxOQ9YyZ1orTE34H_SRxZxhC42m3YkSZkOVsORhrpArqL4lTN5tSxtBrKBqefGHcuXoUKNSunnuyc4JoDADdddDQvbZsu7WEjPffa4cvAs",
+              desc: "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
+              footer: "Beginner Surf Haven",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+              href: "/experiences/weligama-beach",
+              cta: "View Bay Guide",
             },
             {
               title: "Ahangama Beach",
