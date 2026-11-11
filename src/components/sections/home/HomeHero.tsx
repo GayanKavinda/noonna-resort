@@ -6,16 +6,26 @@ import { HOTEL_INFO } from "@/lib/constants";
 export const HomeHero: React.FC = () => {
   return (
     <section className="w-full relative overflow-hidden flex items-center min-h-screen h-screen bg-[#173F56]">
-      {/* Background Image & Duotone Bleed */}
+      {/* Background Video & Duotone Bleed */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hotel/hero-beach.jpg"
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src="/videos/home-hero.mp4" type="video/mp4" />
+        </video>
         <Image
           src="/images/hotel/hero-beach.jpg"
           alt="Sri Lanka Southern Coast Ocean View at Golden Hour"
           fill
           priority
           sizes="100vw"
-          className="w-full h-full object-cover scale-100 object-center"
-          style={{ objectFit: "cover", objectPosition: "center 42%" }}
+          className="h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#001e2e]/85 via-[#001e2e]/45 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/80 via-transparent to-black/30" />
