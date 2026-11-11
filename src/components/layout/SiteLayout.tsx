@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/shared/ScrollToTop";
 
 interface SiteLayoutProps {
   children: React.ReactNode;
@@ -12,6 +13,7 @@ export const SiteLayout: React.FC<SiteLayoutProps> = ({ children }) => {
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

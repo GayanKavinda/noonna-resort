@@ -163,7 +163,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Coastal Shoreline", "Surfing & Tidepools"],
-  distanceLabel: midigamaBase?.distance ? `${midigamaBase.distance} from Noonna` : "1.4 km from Noonna",
+  distanceLabel: "~1.4 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -224,11 +224,11 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Concierge",
-      coordinates: "5°58'12\"N 80°23'31\"E",
+      coordinates: "~1.4 km from Noonna",
       title: "Door-to-Shore Navigation",
       description:
         "Just 1.4 km west along Matara Coastal Road (A2). 4 minutes by open-air tuk-tuk safari or 15 minutes barefoot stroll at low tide.",
-      mapsHref: "https://maps.google.com/?q=Midigama+Beach+Sri+Lanka",
+      mapsHref: "https://maps.app.goo.gl/Y83T4vS2S1H9Rp888",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Midigama%20tide%20and%20surf%20updates.",
@@ -571,7 +571,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Secluded Cove", "Coastal Lagoon"],
-  distanceLabel: abimanagamaBase?.distance ? `${abimanagamaBase.distance} from Noonna` : "~2.9 km from Noonna",
+  distanceLabel: "~1.7 km from Noonna",
   hero: {
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
     imageAlt: "Tranquil sandy cove and turquoise waters at Abimanagama Beach",
@@ -594,7 +594,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
       image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
       imageAlt: "Shallow turquoise sea shelf and golden sand at Abimanagama Beach",
       topBadge: "Secluded Shoreline Dip",
-      distanceBadge: "2.9 km from Noonna",
+      distanceBadge: "1.7 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
       title: "Sheltered Sand Basin & Fringing Reef",
@@ -629,11 +629,11 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°57'30\"N 80°24'30\"E",
+      coordinates: "~1.7 km from Noonna",
       title: "Door-to-Shore Access",
       description:
         "Positioned 2.9 km east along the Matara Coastal Road (A2) towards Weligama. Easily reached via a short 5-minute tuk-tuk ride or a scenic 11-minute coastal bicycle cruise.",
-      mapsHref: "https://maps.google.com/?q=5.958333,80.408333",
+      mapsHref: "https://maps.app.goo.gl/Z3RjtBKLbiCVjrhw5",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20beach%20and%20tide%20updates%20for%20Abimanagama.",
@@ -924,7 +924,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Sandy Bay Break", "Beginner Surf Haven"],
-  distanceLabel: weligamaBase?.distance ? `${weligamaBase.distance} from Noonna` : "~3.5 km from Noonna",
+  distanceLabel: "~3.5 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -984,11 +984,11 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°58'25\"N 80°25'45\"E",
+      coordinates: "~3.5 km from Noonna",
       title: "Door-to-Bay Access",
       description:
         "Located ~3.5 km east along the Matara Coastal Road (A2). Reached in a 6-minute open-air tuk-tuk ride or a 14-minute coastal bicycle ride along village lanes.",
-      mapsHref: "https://maps.google.com/?q=5.97371,80.42935",
+      mapsHref: "https://maps.app.goo.gl/91KL6xZupDuBhVmC9",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20a%20surf%20instructor%20or%20transfer%20to%20Weligama%20Bay.",
@@ -1284,7 +1284,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Reef Point Breaks", "Boho Coastal Town"],
-  distanceLabel: ahangamaBase?.distance ? `${ahangamaBase.distance} from Noonna` : "~3.8 km from Noonna",
+  distanceLabel: "~3.8 km from Noonna",
   hero: {
     image:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
@@ -1344,11 +1344,11 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°58'40\"N 80°22'28\"E",
+      coordinates: "~3.8 km from Noonna",
       title: "Door-to-Shore Access",
       description:
         "Positioned ~3.8 km west along the Matara Coastal Road (A2). Reached in a 7-minute tuk-tuk ride or a 15-minute coastal bicycle ride through quiet back lanes.",
-      mapsHref: "https://maps.google.com/?q=5.9777,80.3744",
+      mapsHref: "https://maps.app.goo.gl/pYS4unMoPH9ci2jb9",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20surf%20updates%20and%20cafe%20recommendations%20for%20Ahangama.",
@@ -1644,7 +1644,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Iconic Reef Break", "Longboard Haven"],
-  distanceLabel: lazyLeftBase?.distance ? `${lazyLeftBase.distance} from Noonna` : "~1.5 km from Noonna",
+  distanceLabel: "~1.5 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -1704,11 +1704,11 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°57'45\"N 80°23'20\"E",
+      coordinates: "~1.5 km from Noonna",
       title: "Door-to-Lineup Access",
       description:
         "Just 1.5 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 5-minute coastal bicycle cruise.",
-      mapsHref: "https://maps.google.com/?q=5.9625,80.3880",
+      mapsHref: "https://maps.app.goo.gl/ZfkQg3LNtndf4dzSA",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Lazy%20Left%20swell%20and%20tide%20updates.",
@@ -2022,7 +2022,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Shallow Reef Barrel", "Advanced Surf Spot"],
-  distanceLabel: ramsRightBase?.distance ? `${ramsRightBase.distance} from Noonna` : "~1.6 km from Noonna",
+  distanceLabel: "~1.6 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -2082,11 +2082,11 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°57'48\"N 80°23'24\"E",
+      coordinates: "~1.6 km from Noonna",
       title: "Door-to-Lineup Access",
       description:
         "Just 1.6 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 6-minute coastal bicycle cruise.",
-      mapsHref: "https://maps.google.com/?q=5.9633,80.3900",
+      mapsHref: "https://www.google.com/maps/search/?api=1&query=Rams+Right+Surf+Break+Midigama+Sri+Lanka",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Rams%20Right%20swell%20and%20tide%20updates.",
@@ -2401,7 +2401,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Secluded Tidal Pools", "Natural Saltwater Bath"],
-  distanceLabel: aweeCocoBase?.distance ? `${aweeCocoBase.distance} from Noonna` : "~2.8 km from Noonna",
+  distanceLabel: "~2.8 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -2461,11 +2461,11 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°57'55\"N 80°23'50\"E",
+      coordinates: "~2.8 km from Noonna",
       title: "Door-to-Pool Access",
       description:
         "Positioned 2.8 km along the southern coastal route. Easily reached via a 4-minute tuk-tuk safari or a 10-minute scenic coastal bicycle ride.",
-      mapsHref: "https://maps.google.com/?q=5.9653,80.3972",
+      mapsHref: "https://maps.app.goo.gl/sFpuvsoxbCosjjD28",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Awee%20Coco%20tide%20and%20access%20updates.",
@@ -2779,7 +2779,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Hidden Cove", "Jungle Canopy Shore"],
-  distanceLabel: secretJungleBase?.distance ? `${secretJungleBase.distance} from Noonna` : "~3.4 km from Noonna",
+  distanceLabel: "~3.4 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -2839,11 +2839,11 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°58'10\"N 80°23'45\"E",
+      coordinates: "~3.4 km from Noonna",
       title: "Door-to-Cove Access",
       description:
         "Located 3.4 km along the southern coast via coastal road and a short shaded path. Reachable in 5 minutes by tuk-tuk or 12 minutes by cruiser bicycle.",
-      mapsHref: "https://maps.google.com/?q=5.9694,80.3958",
+      mapsHref: "https://maps.app.goo.gl/Sia7jYXj8ciBx1zM6",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Secret%20Jungle%20Beach%20access%20details.",
@@ -3141,7 +3141,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Coral Lagoon", "Snorkeling & Sea Turtles"],
-  distanceLabel: polhenaBase?.distance ? `${polhenaBase.distance} from Noonna` : "~14 km from Noonna",
+  distanceLabel: "~12 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -3166,7 +3166,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
       imageAlt: "Shallow turquoise protected swimming pool inside Polhena coral reef",
       topBadge: "Reef-Protected Sanctuary",
-      distanceBadge: "14 km from Noonna",
+      distanceBadge: "12 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Snorkeling: 07:00 – 11:00 AM",
       title: "Calm Coral Lagoon & Sea Turtle Habitat",
@@ -3201,11 +3201,11 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°56'20\"N 80°31'50\"E",
+      coordinates: "~12 km from Noonna",
       title: "Door-to-Reef Access",
       description:
         "Located ~14 km east along the Matara Coastal Road (A2). Reached in 20–25 minutes by comfortable taxi or tuk-tuk safari.",
-      mapsHref: "https://maps.google.com/?q=5.9389,80.5306",
+      mapsHref: "https://maps.app.goo.gl/eXBqiQKEKQjswRHV7",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Polhena%20Beach.",
@@ -3470,7 +3470,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Hidden Cove", "Cliffside Snorkeling"],
-  distanceLabel: secretBeachBase?.distance ? `${secretBeachBase.distance} from Noonna` : "~6.5 km from Noonna",
+  distanceLabel: "~6.5 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
@@ -3530,11 +3530,11 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°56'45\"N 80°26'55\"E",
+      coordinates: "~6.5 km from Noonna",
       title: "Door-to-Cove Access",
       description:
         "Located ~6.5 km east along the Matara Coastal Road (A2) followed by a short hilltop lane. Reached in 10–12 minutes by open-air tuk-tuk.",
-      mapsHref: "https://maps.google.com/?q=5.9458,80.4486",
+      mapsHref: "https://maps.app.goo.gl/9gw6BEGuaiyfi9i47",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Secret%20Beach%20Mirissa.",
@@ -3816,7 +3816,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Iconic Viewpoint", "Red Cliff Promontory"],
-  distanceLabel: coconutTreeHillBase?.distance ? `${coconutTreeHillBase.distance} from Noonna` : "~6.2 km from Noonna",
+  distanceLabel: "~6.2 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
@@ -3876,11 +3876,11 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°56'52\"N 80°27'42\"E",
+      coordinates: "~6.2 km from Noonna",
       title: "Door-to-Viewpoint Access",
       description:
         "Located ~6.2 km east along the Matara Coastal Road (A2) followed by a short coastal path. Reached in 10 minutes by open-air tuk-tuk.",
-      mapsHref: "https://maps.google.com/?q=5.9478,80.4617",
+      mapsHref: "https://maps.app.goo.gl/ztMZfXYoWpuQwikU7",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Coconut%20Tree%20Hill.",
@@ -4162,7 +4162,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Offshore Islet", "Panoramic Viewpoint"],
-  distanceLabel: parrotRockBase?.distance ? `${parrotRockBase.distance} from Noonna` : "~5.8 km from Noonna",
+  distanceLabel: "~5.8 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
@@ -4222,11 +4222,11 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°56'40\"N 80°27'30\"E",
+      coordinates: "~5.8 km from Noonna",
       title: "Door-to-Islet Access",
       description:
         "Located ~5.8 km east along the Matara Coastal Road (A2) to Mirissa Beach. Reached in 10 minutes by open-air tuk-tuk.",
-      mapsHref: "https://maps.google.com/?q=5.9444,80.4583",
+      mapsHref: "https://maps.app.goo.gl/Y83T4vS2S1H9Rp888",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Parrot%20Rock%20Mirissa.",
@@ -4508,7 +4508,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
   tags: ["Coastal Ridge", "Elevated Panorama"],
-  distanceLabel: mirissaPromontoryBase?.distance ? `${mirissaPromontoryBase.distance} from Noonna` : "~6.0 km from Noonna",
+  distanceLabel: "~6.0 km from Noonna",
   hero: {
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
@@ -4568,11 +4568,11 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
     ],
     intel: {
       eyebrow: "Direct Access & Navigation",
-      coordinates: "5°56'48\"N 80°27'15\"E",
+      coordinates: "~6.0 km from Noonna",
       title: "Door-to-Ridge Access",
       description:
         "Located ~6.0 km east along the Matara Coastal Road (A2) to the Mirissa headland approach. Reached in 10 minutes by open-air tuk-tuk.",
-      mapsHref: "https://maps.google.com/?q=5.9467,80.4542",
+      mapsHref: "https://maps.app.goo.gl/CvCU5Qtfehe5rzFU7",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Mirissa%20Coastal%20Promontory.",

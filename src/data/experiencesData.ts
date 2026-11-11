@@ -61,7 +61,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Abimanagama Beach",
     category: "beach",
     badge: "Secluded Cove",
-    distance: "~2.9 km",
+    distance: "~1.7 km",
     subtitle: "Quiet Coastal Solitude",
     description:
       "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",

@@ -1,4 +1,5 @@
 import { Umbrella, Landmark, Utensils, Waves, ArrowRight, Compass } from "lucide-react";
+import Link from "next/link";
 
 export function ExperiencesHero() {
   return (
@@ -66,56 +67,14 @@ export function ExperiencesHero() {
         <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
-            alt="Midigama and Mirissa surf point breaks and turquoise ocean waters"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_xdzZP3YJockyGu4FNNlUqEOhIm9HXbrfnV7be8AIaYUwn58s2cqzFN17YaDaIVaXAnIenjOJdTesY6e8y9YTQcpftT5cQO0mFVRS3MSxGdXoKR_cnfH9ZoBBWJsBlB6-XtoOuQftKFJHDu4lHMRFvvqmOSu3jqhPG5xacookYTJAxlnwOJYuWGVg-9tDMdQtjjPpg6fFs2Se19GKdl8I3uBumGReTQbpX1Pv3zYMDHyntuRer4is3pbj5KcN9vLfTmPDfZjGGuGCt84"
+            alt="Turquoise surf and golden shoreline along Sri Lanka's southern coast near Midigama"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD21pthuzDtjw1SpdnKurfMKvU0N8IptkHHFTLgw26UdlLFxrjTGhosj5nya-18dARMMQF9o4JnMBTI_Q6mkAfRcO98IW_1kth9AkPhZBXueiU4mD0Iqz5dydDqlUHuMlcwXGMEE3hvGbFzvh8DJo7ulUtPUtAOYfmQZmBdGTRbcm0b1uB0QYkxP3piJ9jpfnQrCE6Gzn8J-LbZ0-MYHsuXQ4eRcKgzd7B0YIbW2N3djmkYDfAxJc-BbTcKitPhKqBQzswlsUs8k7q010g"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
           <div className="relative z-10 p-6 flex items-center justify-between">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#173F56] shadow-sm font-label-sm text-label-sm font-semibold">
               <Waves size={16} className="text-primary" />
-              <span>World-Class Breaks • 1.4 km</span>
-            </div>
-            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
-              <Waves size={18} />
-            </span>
-          </div>
-          <div className="relative z-10 p-6 mt-auto space-y-4">
-            <div className="space-y-1.5">
-              <span className="font-script text-2xl text-secondary-fixed block" style={{ fontFamily: '"Moon Dance", cursive' }}>
-                peeling point breaks &amp; morning swell...
-              </span>
-              <h3 className="font-serif text-2xl md:text-3xl text-white font-normal leading-snug tracking-tight" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>
-                Lazy Left, Rams &amp; Secluded Reefs
-              </h3>
-              <p className="font-body-sm text-body-sm text-slate-200/90 font-light leading-relaxed">
-                Peeling left-hand point breaks, calm inner lagoons, and morning tide pools carved into ancient volcanic granite shelf.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2 pt-1">
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Surf: Intermediate to Pro</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Tides: 06:00 – 09:30 AM</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Water: 28°C</span>
-            </div>
-            <div className="pt-2 border-t border-white/15">
-              <a href="#nearby-beaches" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
-                <span>Explore Surf Breaks</span>
-                <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_16px_48px_-8px_rgba(23,63,86,0.18)] group hover:scale-[1.015] hover:shadow-[0_24px_56px_-10px_rgba(23,63,86,0.25)] transition-all duration-500 relative min-h-[480px] lg:min-h-[500px] border border-primary/30 ring-1 ring-white/20">
-          <img
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
-            alt="Barefoot oceanfront stroll during golden hour sunset near Kumbalgama"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuwerReLJklD7OMCbBS2WA1GWBtqVg19-sg27s5pXPp-daCJKrDsGG4YfAs57uPiDy-kVOc5d8UjedAmhE3avPwtjaSUIBz6W2OWyzsOCKsamUpq-Uy_CDmIdvPV7LJxv2ePHs2mT49D0cp8aYOhSTS2rKpfDvQuRGuqqjkWs-kXMJnRLwHa7-q0mYbfjV0zP2PmTr80XTdoe0Xmdxf74I3rCENZUFhQZau9XuVBU7Joo2MJXAvD6_wQ"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a1b28]/95 via-[#0a1b28]/40 to-black/20" />
-          <div className="relative z-10 p-6 flex items-center justify-between">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#173F56] shadow-sm font-label-sm text-label-sm font-semibold">
-              <span className="w-2 h-2 rounded-full bg-primary" />
-              <span>Barefoot Sanctuary • Direct Shoreline</span>
+              <span>10 Coastal Shores &amp; Breaks</span>
             </div>
             <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
               <Umbrella size={18} />
@@ -124,23 +83,23 @@ export function ExperiencesHero() {
           <div className="relative z-10 p-6 mt-auto space-y-4">
             <div className="space-y-1.5">
               <span className="font-script text-2xl text-secondary-fixed block" style={{ fontFamily: '"Moon Dance", cursive' }}>
-                where stillness meets the sunset tides...
+                barefoot sands &amp; rolling swell...
               </span>
               <h3 className="font-serif text-2xl md:text-3xl text-white font-normal leading-snug tracking-tight" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>
-                Kumbalgama &amp; Unbroken Shorelines
+                Southern Coast Beaches &amp; Surf Breaks
               </h3>
               <p className="font-body-sm text-body-sm text-slate-200/90 font-light leading-relaxed">
-                The peaceful sanctuary crescent nestled between vibrant Weligama Bay and laid-back Midigama coves. Where unhurried days follow ocean tides.
+                Quiet coves, tidal pools, and world-class reef breaks stretching from Midigama to Mirissa—each shore with its own coastal rhythm.
               </p>
             </div>
             <div className="flex flex-wrap gap-2 pt-1">
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Golden Hour Strolls</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Natural Tide Pools</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Zero Tourist Crowds</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Secluded Coves</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Surf &amp; Tide Pools</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Golden Hour Shores</span>
             </div>
             <div className="pt-2 border-t border-white/15">
               <a href="#nearby-beaches" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
-                <span>Discover Our Shoreline</span>
+                <span>Explore Beaches</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -150,14 +109,14 @@ export function ExperiencesHero() {
         <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
-            alt="Coastal Buddhist temple stupa island and turquoise ocean waters"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQvu1MDvOISw-WHTlWYwzSLXhP3DyqO7t6n2Svh9beEHWWWbzQRBBNEvVWExP1Ozs-rMV5HrY6PphjGX0jYXOuauK1Y5QzYkIstmaPxtHU9HZ4NLhGd_Em18e5y0sERnDzhH02TsW8MO45NKYw4hbUcTm_a1vw3U-kpzdWKJcmY6C5KPO3zRV06hbENBPaJTe-nEUGcl6f1SwfkD9wziexKYhPPSx9AI-Z8sUKC42xbp8z8uWGofempA"
+            alt="Historic ramparts and ocean views at Galle Dutch Fort on Sri Lanka's southern coast"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
           <div className="relative z-10 p-6 flex items-center justify-between">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#173F56] shadow-sm font-label-sm text-label-sm font-semibold">
               <Landmark size={16} className="text-primary" />
-              <span>Southern Heritage • 10–25 Mins</span>
+              <span>9 Heritage &amp; Wildlife Gems</span>
             </div>
             <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
               <Compass size={18} />
@@ -169,22 +128,64 @@ export function ExperiencesHero() {
                 living history, cinnamon &amp; lagoons...
               </span>
               <h3 className="font-serif text-2xl md:text-3xl text-white font-normal leading-snug tracking-tight" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>
-                Ancient Rock Reliefs &amp; Mangrove Safaris
+                Southern Heritage &amp; Coastal Expeditions
               </h3>
               <p className="font-body-sm text-body-sm text-slate-200/90 font-light leading-relaxed">
-                8th-century Kushtarajagala Bodhisattva rock carving, serene Koggala lagoon boat safaris through cinnamon islands, and colonial Dutch bastions.
+                UNESCO fort ramparts, ancient rock reliefs, mangrove lagoons, and wildlife encounters—timeless stories woven along the southern coast.
               </p>
             </div>
             <div className="flex flex-wrap gap-2 pt-1">
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">History &amp; Living Culture</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Mangrove Wildlife</span>
-              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Tea &amp; Spice Trails</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Historic Forts &amp; Temples</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Mangrove &amp; Wildlife</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Cultural Trails</span>
             </div>
             <div className="pt-2 border-t border-white/15">
-              <a href="#heritage-wildlife" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
-                <span>Explore Heritage Trails</span>
+              <Link href="/experiences/southern-heritage-coastal-expeditions" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+                <span>Explore Heritage</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
-              </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
+          <img
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
+            alt="Traditional Sri Lankan rice and curry spread at a coastal dining table"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-PDGX8yJQXxmnEWLqaxJsn-qkR6vHC3GYWU-hZesskSeUhlYL1dNEgMx670Pj3riWYEP7Fqk2_LixTXaS-bvSrzT5zfL26q_S9R9_ZKSjcHrHfDq_c2Ljkbr8MidTkvGJ28pdv6IyHuVBBMAG94IKVz0RWC5imuDgaxg3nhnncra81h9_j47Ye3ospRaNXekrqILhVCD1j7sLdFD_4SOzUPiD_qWKDWuMzM4eKyCqNtAHudxc5NE9Q"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
+          <div className="relative z-10 p-6 flex items-center justify-between">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#173F56] shadow-sm font-label-sm text-label-sm font-semibold">
+              <Utensils size={16} className="text-primary" />
+              <span>10 Coastal Dining Discoveries</span>
+            </div>
+            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
+              <Compass size={18} />
+            </span>
+          </div>
+          <div className="relative z-10 p-6 mt-auto space-y-4">
+            <div className="space-y-1.5">
+              <span className="font-script text-2xl text-secondary-fixed block" style={{ fontFamily: '"Moon Dance", cursive' }}>
+                fresh catch &amp; island spice...
+              </span>
+              <h3 className="font-serif text-2xl md:text-3xl text-white font-normal leading-snug tracking-tight" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>
+                A Taste of Sri Lanka&apos;s Southern Coast
+              </h3>
+              <p className="font-body-sm text-body-sm text-slate-200/90 font-light leading-relaxed">
+                From clay-pot rice &amp; curry and oceanfront seafood to café breakfasts and sunset bites—authentic coastal flavours near Noonna.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2 pt-1">
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Local Rice &amp; Curry</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Fresh Seafood</span>
+              <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Cafés &amp; Sunset Dining</span>
+            </div>
+            <div className="pt-2 border-t border-white/15">
+              <Link href="/experiences/dining" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+                <span>Explore Dining</span>
+                <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </div>
