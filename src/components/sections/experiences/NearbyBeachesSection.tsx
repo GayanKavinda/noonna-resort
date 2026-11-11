@@ -134,8 +134,8 @@ export function NearbyBeachesSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
         {[
-          { name: "Lazy Left Surf Break", tag: "Classic Point Break", dist: "~1.5 km", desc: "Long, ultra-smooth, and gentle reef wave heavily popular for longboarders and intermediate surfers peeling across deep coral.", footer: "Longboard & Intermediate Haven", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" },
-          { name: "Rams Right Surf Break", tag: "Hollow Reef Barrel", dist: "~1.6 km", desc: "Fast, powerful, and sharp A-frame reef break that creates heavy hollow barrels for advanced surfers seeking technical hollow waves.", footer: "Shortboard Reef Challenge", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" },
+          { name: "Lazy Left Surf Break", tag: "Classic Point Break", dist: "~1.5 km", desc: "Long, ultra-smooth, and gentle reef wave heavily popular for longboarders and intermediate surfers peeling across deep coral.", footer: "Longboard & Intermediate Haven", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w", href: "/experiences/lazy-left-surf-break", cta: "View Surf Intel" },
+          { name: "Rams Right Surf Break", tag: "Hollow Reef Barrel", dist: "~1.6 km", desc: "Fast, powerful, and sharp A-frame reef break that creates heavy hollow barrels for advanced surfers seeking technical hollow waves.", footer: "Shortboard Reef Challenge", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA", href: "/experiences/rams-right-surf-break", cta: "View Reef Guide" },
           { name: "Awee Coco Secret Pool", tag: "Secluded Tidal Pools", dist: "~2.8 km", desc: "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.", footer: "Natural Saltwater Bath", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/awee-coco-secret-pool", cta: "View Pool Guide" },
           { name: "Secret Jungle Beach", tag: "Hidden Cove", dist: "~3.4 km", desc: "A hidden coastal cove sheltered by overhanging tropical foliage, ancient granite boulders, and unhurried southern solitude.", footer: "Jungle Canopy Shore", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/secret-jungle-beach", cta: "Access Guide" },
           { name: "Polhena Beach & Coral Reef", tag: "Coral Lagoon", dist: "~14 km", desc: "A reef-sheltered natural swimming lagoon in Matara featuring crystal-clear turquoise shallows, vibrant coral gardens, and resident green sea turtles.", footer: "Snorkeling & Sea Turtles", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/polhena-beach-coral-reef", cta: "Explore Map" },
@@ -158,7 +158,14 @@ export function NearbyBeachesSection() {
             </div>
             <div className="pt-4 border-t border-surface-container mt-3 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
               <span>{c.footer}</span>
-              <ArrowUpRight size={16} />
+              {c.href ? (
+                <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                  <span>{c.cta ?? "Explore"}</span>
+                  <ArrowUpRight size={16} />
+                </Link>
+              ) : (
+                <ArrowUpRight size={16} />
+              )}
             </div>
           </div>
         ))}

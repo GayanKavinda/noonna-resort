@@ -59,7 +59,7 @@ function SlideCard({ slide }: { slide: DestinationDiscoverSlide }) {
         loading="eager"
         src={slide.image}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-on-primary-fixed/95 via-on-primary-fixed/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 via-[45%] to-black/5 to-[75%]" />
       <div className="relative p-4 flex items-start justify-between gap-2 z-10">
         <span
           className={`px-2.5 py-0.5 rounded-full backdrop-blur-md text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase border border-white/25 shadow-sm ${
