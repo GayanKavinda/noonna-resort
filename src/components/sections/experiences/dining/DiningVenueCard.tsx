@@ -11,7 +11,6 @@ import {
   MessageCircle,
   Navigation,
   Phone,
-  Star,
   UtensilsCrossed,
 } from "lucide-react";
 import type { DiningAction, DiningVenue } from "@/data/diningData";
@@ -77,21 +76,23 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
           onClick={() => onOpenModal(venue)}
           className="dining-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-shadow group flex flex-col md:flex-row cursor-pointer transition-all duration-300 hover:shadow-xl hover:border-slate-300"
         >
-          <div className="relative h-64 md:h-auto md:w-5/12 shrink-0 overflow-hidden min-h-[260px]">
-            <Image
-              src={mainSrc}
-              alt={mainAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, 420px"
-              className="w-full h-full object-cover group-hover:scale-105 duration-300 card-main-img transition-all"
-            />
-            <span className="absolute top-3.5 left-3.5 px-2.5 py-1 rounded bg-slate-900/80 text-white text-[11px] font-medium backdrop-blur-xs">
-              {venue.locationBadge}
-            </span>
-            <span className="absolute top-3.5 right-3.5 px-2 py-0.5 rounded bg-[#e5f1f8] text-[#244b62] text-[10px] font-semibold uppercase">
-              {venue.categoryBadge}
-            </span>
-            <div className="absolute bottom-2 left-2 right-2 grid grid-cols-3 gap-1.5 p-1 bg-slate-900/70 backdrop-blur-md rounded-xl z-10">
+          <div className="md:w-5/12 shrink-0 flex flex-col">
+            <div className="relative h-64 md:h-auto md:min-h-[260px] md:flex-1 overflow-hidden">
+              <Image
+                src={mainSrc}
+                alt={mainAlt}
+                fill
+                sizes="(max-width: 768px) 100vw, 420px"
+                className="w-full h-full object-cover group-hover:scale-105 duration-300 card-main-img transition-all"
+              />
+              <span className="absolute top-3.5 left-3.5 px-2.5 py-1 rounded bg-slate-900/80 text-white text-[11px] font-medium backdrop-blur-xs">
+                {venue.locationBadge}
+              </span>
+              <span className="absolute top-3.5 right-3.5 px-2 py-0.5 rounded bg-[#e5f1f8] text-[#244b62] text-[10px] font-semibold uppercase">
+                {venue.categoryBadge}
+              </span>
+            </div>
+            <div className="grid grid-cols-3 gap-2 p-2.5 bg-slate-50 border-t border-slate-100">
               {venue.thumbs.slice(0, 3).map((t, i) => {
                 const idx = i + 1;
                 const active = activeIndex === idx;
@@ -103,7 +104,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                       e.stopPropagation();
                       setActiveIndex(idx);
                     }}
-                    className={`thumb-btn cursor-pointer relative h-10 rounded-lg overflow-hidden group/img transition-all duration-200 p-0 border-0 text-left w-full ${
+                    className={`thumb-btn cursor-pointer relative h-16 rounded overflow-hidden group/img transition-all duration-200 p-0 border-0 text-left w-full ${
                       active ? "ring-2 ring-[#397FA8] opacity-100" : "opacity-80"
                     }`}
                     data-img-src={t.src}
@@ -115,7 +116,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                       sizes="120px"
                       className="w-full h-full object-cover group-hover/img:scale-110 duration-200"
                     />
-                    <span className="absolute inset-0 bg-slate-900/30 flex items-end p-0.5 text-[8px] text-white font-medium">
+                    <span className="absolute inset-0 bg-slate-900/30 flex items-end p-1 text-[8px] text-white font-medium">
                       {t.label ?? ""}
                     </span>
                   </button>
@@ -125,73 +126,78 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
           </div>
 
           <div className="p-6 md:p-8 flex flex-col flex-1 justify-between gap-6">
-            <div>
-              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <div className="flex items-center gap-1.5">
-                  <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200/60 text-[11px] font-bold flex items-center gap-0.5">
-                    ★ {venue.rating}
-                  </span>
-                  <span className="text-[11px] text-slate-500 font-light">{venue.reviews}</span>
-                </div>
-                {venue.priceNote ? (
-                  <span className="text-[11px] font-semibold text-slate-700">{venue.priceNote}</span>
-                ) : null}
-              </div>
-              <h3 className="font-cormorant text-2xl md:text-3xl text-slate-900 font-medium group-hover:text-[#397FA8] transition-colors leading-snug">
-                {venue.number}. {venue.name}
-              </h3>
-              <p className="text-[11px] text-[#397FA8] font-medium mt-1 mb-3">{venue.subtitle}</p>
-
-              <div className="mt-4 pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-500">
-                {venue.meta.map((m, idx) => (
-                  <div key={`${m.text}-${idx}`} className="flex items-center gap-1.5 text-[11px]">
-                    <MetaIcon icon={m.icon} />
-                    <span className={m.truncate ? "truncate" : ""}>
-                      {m.href ? (
-                        <a
-                          href={m.href}
-                          className="hover:text-[#397FA8] text-slate-600 font-medium"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          {m.text}
-                        </a>
-                      ) : (
-                        <span>
-                          {m.text}
-                          {m.emphasis ? (
-                            <span className="text-emerald-600 font-medium ml-1">
-                              • {m.emphasis}
-                            </span>
-                          ) : null}
-                        </span>
-                      )}
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <div className="flex items-center gap-1.5">
+                    <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200/60 text-[11px] font-bold flex items-center gap-0.5">
+                      ★ {venue.rating}
                     </span>
+                    <span className="text-[11px] text-slate-500 font-light">{venue.reviews}</span>
                   </div>
-                ))}
-              </div>
-            </div>
+                  {venue.priceNote ? (
+                    <span className="text-[11px] font-semibold text-slate-700">{venue.priceNote}</span>
+                  ) : null}
+                </div>
+                <h3 className="font-cormorant text-2xl md:text-3xl text-slate-900 font-medium group-hover:text-[#397FA8] transition-colors leading-snug">
+                  {venue.number}. {venue.name}
+                </h3>
+                <p className="text-[11px] text-[#397FA8] font-medium mt-1 mb-3">{venue.subtitle}</p>
+                {venue.description ? (
+                  <p className="text-sm text-slate-600 font-light leading-relaxed">
+                    {venue.description}
+                  </p>
+                ) : null}
 
-            <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
-              <span className="text-[11px] font-medium text-slate-600 flex items-center gap-1.5">
-                <Coffee className="w-[14px] h-[14px] text-[#397FA8]" aria-hidden="true" />
-                {venue.featuredFooterLeft ?? "Beachside Specialty Roastery"}
-              </span>
-              <div className="flex items-center gap-2">
-                {venue.actions.map((a) => (
-                  <a
-                    key={`${a.label}-${a.href}`}
-                    href={a.href}
-                    target={a.external ? "_blank" : undefined}
-                    rel={a.external ? "noopener noreferrer" : undefined}
-                    className={actionClass(a.variant)}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ActionIcon icon={a.icon} />
-                    {a.label}
-                  </a>
-                ))}
+                <div className="mt-4 pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-start justify-between gap-3 text-xs text-slate-500">
+                  {venue.meta.map((m, idx) => (
+                    <div key={`${m.text}-${idx}`} className="flex items-start gap-1.5 text-[11px]">
+                      <MetaIcon icon={m.icon} />
+                      <span className={m.truncate ? "truncate" : ""}>
+                        {m.href ? (
+                          <a
+                            href={m.href}
+                            className="hover:text-[#397FA8] text-slate-600 font-medium"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            {m.text}
+                          </a>
+                        ) : (
+                          <span>
+                            {m.text}
+                            {m.emphasis ? (
+                              <span className="text-emerald-600 font-medium ml-1">
+                                • {m.emphasis}
+                              </span>
+                            ) : null}
+                          </span>
+                        )}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+
+              <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
+                <span className="text-[11px] font-medium text-slate-600 flex items-center gap-1.5">
+                  <Coffee className="w-[14px] h-[14px] text-[#397FA8]" aria-hidden="true" />
+                  {venue.featuredFooterLeft ?? "Beachside Specialty Roastery"}
+                </span>
+                <div className="flex flex-wrap items-center gap-2">
+                  {venue.actions.map((a) => (
+                    <a
+                      key={`${a.label}-${a.href}`}
+                      href={a.href}
+                      target={a.external ? "_blank" : undefined}
+                      rel={a.external ? "noopener noreferrer" : undefined}
+                      className={actionClass(a.variant)}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ActionIcon icon={a.icon} />
+                      {a.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
           </div>
         </div>
       </div>

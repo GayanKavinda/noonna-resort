@@ -41,10 +41,13 @@ export interface DiningVenueModal {
   dietary: string;
 }
 
+export type DiningCategory = "clay-pot" | "beach-grill" | "rooftop" | "cafe";
+
 export interface DiningVenue {
   id: string;
   number: number;
   featured?: boolean;
+  categories: DiningCategory[];
   name: string;
   subtitle: string;
   description: string;
@@ -65,6 +68,14 @@ export interface DiningVenue {
   actions: DiningAction[];
   modal: DiningVenueModal;
 }
+
+export const DINING_FILTERS: { id: DiningCategory | "all"; label: string }[] = [
+  { id: "all", label: "All" },
+  { id: "clay-pot", label: "Clay Pot Feasts" },
+  { id: "beach-grill", label: "Beach Grills" },
+  { id: "rooftop", label: "Rooftop Vistas" },
+  { id: "cafe", label: "Artisan Cafes" },
+];
 
 export const DINING_HERO = {
   eyebrow: "wood-fired clay pots & coastal feasts...",
@@ -107,6 +118,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "lucky-fort",
     "number": 1,
     "featured": false,
+    "categories": ["clay-pot"],
     "name": "Lucky Fort Restaurant",
     "subtitle": "Mama Lucky's Family Kitchen since 1999 • No 7 Parawa St, Galle Fort",
     "description": "Mama Lucky's celebrated 10-curry terracotta feast in an intimate Dutch Fort garden courtyard. All curries prepared fresh with hand-pressed coconut milk & traditional spices.",
@@ -132,7 +144,7 @@ export const DINING_VENUES: DiningVenue[] = [
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAuyJ-FoAloLi1cvh_GuCl4viaqZvwDYLo1yUakc0avnfaUBJUTBVdJMnOZ_qyKSyVBFiDBcKgShQ7wfyqwhsaZ7Ri4tm011wqeS77wLHzPDKlwS8bd0i2Nz0htk9Dn37smCCNsZMFKRQIZEyb_VkDC-1fZlQuT6kXDQcKfGJPjR6WQtmTJdyeRqfyFT4B9i80OLwTP-NTxOFkpYP9xHXYuhQai3X5-KphmJdxfyU2W8z0drzZ1QwF4TA",
-        "alt": "Curry Dishes &amp; Papadams",
+        "alt": "Curry Dishes & Papadams",
         "label": "Clay Pots"
       },
       {
@@ -202,6 +214,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "shirani",
     "number": 2,
     "featured": false,
+    "categories": ["clay-pot"],
     "name": "Shirani Home Made Rice & Curry",
     "subtitle": "Shirani & Lala's Family Kitchen • No. 36 Kadabaddagama, Gurubebila",
     "description": "Simmered slowly over coconut husk fire in hand-crafted clay pots on a breezy village veranda 3 minutes from our gate. Renowned for rotating daily 6-curry feasts, mango curry, and personal cooking lessons.",
@@ -217,22 +230,22 @@ export const DINING_VENUES: DiningVenue[] = [
     "thumbs": [
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCdHN8SegYSnRhuARly7hgHtY2dJHP533x7bK5nuEgKx8d5hkPF0b2WzdRs9of6A7-pGzCCOrT0F1AMby6d64lNic6EXN9zyNcZazMgogY-ktXxQI8ZWcmW2COCGyECl_aXTi791oLYCMIj4of9QirJSPRmDySsAoH1vUCVLO0KaWMhY3u0adkAuxRryEUozoaloJ-LPKo3UXZdk6n7On30vBu3BDC7d7v04JcgmI0f1Rf8bpt7IzlHBw",
-        "alt": "The Feast &amp; Daily Spread",
+        "alt": "The Feast & Daily Spread",
         "label": "Feast"
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDbr9M3Ol3uIPwKGwCVn7xF2Jyf6GMUa_evdJY7Nf6k2RR5baEBJLLRfz7R-sDWaAh5mGtxEg_n5NvbB8Jgi8SE3Acee_sI197G6K28DH0L0c6OMkhQJwKIZu-CT2zJsZWn3xTITLTmR13Vi5Tks1iSFUHIg_9eiQiPXbJvEHC9NVbZDHBNbSjQKIZ543UDHai9Dz0rDpS0evFJD6HJlwTLF04g5bfM8SgK1j9nJ5swHHSJXYRUm312Tg",
-        "alt": "Nourishing Thali &amp; Curries",
+        "alt": "Nourishing Thali & Curries",
         "label": "Curries"
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkiR1eXVyxaxpKBFFbjGigbPWQM52BWdPvrTSBr5EtaG_6b5F3yZAaYidSqYvUlwgYNZegKrYb1E66IfCO9Wl86kvVLFMIAbPYX_2bSCo8Q4LknzskU-Ief3_jaZiO3evsGtz0o_0Np6Hs6Ax4mNXX0Gng3e_cxyxK-l0Iq5--2sh4OTMIuOHdvm_jGL1Zjz_YauzXNZfI45yFJ38gp8fZYmF473JYkpN37w4nQWKlT_Ij4cyjRGB9-g",
-        "alt": "Family &amp; Host Hospitality",
+        "alt": "Family & Host Hospitality",
         "label": "Hospitality"
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCdHN8SegYSnRhuARly7hgHtY2dJHP533x7bK5nuEgKx8d5hkPF0b2WzdRs9of6A7-pGzCCOrT0F1AMby6d64lNic6EXN9zyNcZazMgogY-ktXxQI8ZWcmW2COCGyECl_aXTi791oLYCMIj4of9QirJSPRmDySsAoH1vUCVLO0KaWMhY3u0adkAuxRryEUozoaloJ-LPKo3UXZdk6n7On30vBu3BDC7d7v04JcgmI0f1Rf8bpt7IzlHBw",
-        "alt": "Evening Courtyard &amp; Lanterns",
+        "alt": "Evening Courtyard & Lanterns",
         "label": "Courtyard"
       }
     ],
@@ -297,6 +310,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "kumbala",
     "number": 3,
     "featured": false,
+    "categories": ["clay-pot"],
     "name": "Kumbala Restaurant & Cafe",
     "subtitle": "Community Gathering Hub • 32/A Kadabeddagama Rd, Weligama",
     "description": "Casual, cozy surfer & traveler hub celebrated for authentic Sri Lankan rice & curry buffet evenings, healthy fresh juices, and western comforts like chicken schnitzel. Free parking available.",
@@ -312,8 +326,8 @@ export const DINING_VENUES: DiningVenue[] = [
     "thumbs": [
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA_AuRF044jWzWjWCF8kbTblez9QQLMsOYXnKC5N4gt1Ornofh_aiU6Lfh92hKezW4Q-cxr7Z0E7LsxpprWXw9ZVB7iJrodRqD9Mz6wZpQs9nwAhPFTsEDSMXyxYOizXI4h5bEWjSEgXwB3Kp6tMcMns6lDQwYW4wp7nkd3UlkXIwDN3q1AVLFWFB7tazeQI378qwoHCKRh4o9XFhyZixe91K8Chh6Qsl4P9vv1nOORGe-B1x2p8LJEfg",
-        "alt": "Fresh Catch &amp; Chips",
-        "label": "Fish &amp; Chips"
+        "alt": "Fresh Catch & Chips",
+        "label": "Fish & Chips"
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDU84TkX6bxmW7WNdGPAokGJw5RWLgOZfa9jclCN5PDz2smDn4yZcEKUs_QiZHLOF3Ocs99Uoa69mr1pr-IwU2PWS3MrxPZ4xKN4YDVVA5btCyULot4NbD_PDnEwc-ZQM1yL_AearQQoeCythrV8JLg4Tlz_-2ssVoFl9mMBom0pD_XCyBos8RkQ2-J4-RRw7GF7pDHlEFfyNTXIPC0xwXKw8DxyfiAqQB8rAGQ_ppxFTw11_UG0B7Njg",
@@ -380,6 +394,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "mettha",
     "number": 4,
     "featured": false,
+    "categories": ["clay-pot"],
     "name": "Mettha's Home Cooked Meals",
     "subtitle": "Mettha's Family Veranda Kitchen • Yaddehimulla Road, Unawatuna",
     "description": "Authentic family-run traditional eatery in Unawatuna known for fresh rotating curries (jackfruit, beetroot, aubergine, mushroom, dhal, chicken & ocean prawns) cooked upon order by Mettha with custom spice levels.",
@@ -405,7 +420,7 @@ export const DINING_VENUES: DiningVenue[] = [
       },
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC8mkE84rRjC-P0QNBrCXu3Ebs2Mvz7E41NPK0dCSNm_MpKpd8ZGomSGiyKg0LHGq-LMQ5oCnPBiWgu8XSgpifOuKYYuLv09DpdBWyLEo-fUm1rTSLnf7Jk0-C_0LFWQ2hX9QhpP0hkypM9c4U0h3aMGKDR5laKignHBq5-QzQvujhdFlrvMabpn86s4NVbd7cECAhS3v1g9_VtjFfIC0YTzq_pD0MO8v8L-4aQq7_AWG2HV3hv7nROQQ",
-        "alt": "Curry Plate &amp; Fresh Juice",
+        "alt": "Curry Plate & Fresh Juice",
         "label": "Curry Plate"
       }
     ],
@@ -464,6 +479,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "le-fish",
     "number": 5,
     "featured": false,
+    "categories": ["beach-grill"],
     "name": "Le' Fish Weligama",
     "subtitle": "Beachfront Fresh Catch & Charcoal Embers • Weligama Bypass Road",
     "description": "Feet-in-the-sand seafood feast. Pick fresh whole reef fish, king prawns, and calamari grilled over hot charcoal embers.",
@@ -541,6 +557,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "sithum",
     "number": 6,
     "featured": false,
+    "categories": ["beach-grill"],
     "name": "Sithum Fish Point",
     "subtitle": "Casual Beachfront Grill • Bypass Beach Road, Weligama",
     "description": "Casual seaside tables on the sand renowned for generous portions of freshly caught red snapper, tuna, and garlic prawns.",
@@ -618,6 +635,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "after-surf",
     "number": 7,
     "featured": false,
+    "categories": ["rooftop", "cafe"],
     "name": "After Surf Rooftop Cafe",
     "subtitle": "Top floor above Surf Camp • Palabandara Watta, Weligama",
     "description": "Relaxed breezy rooftop above Weligama surf break serving poke bowls, grilled tacos, smoothie jars, and sunset mocktails.",
@@ -644,7 +662,7 @@ export const DINING_VENUES: DiningVenue[] = [
       {
         "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCwooPTptX4J4OHsFwopDqjOSL6T6ojHSOXpI1QaloSvcWV0zG9u838xaicq4vpz9CN9xSivu3Nd3xtAf7EgW0BbEJoJzCmtxHc8Dnc0zdIz1RgAHvnuIesUBLRwOr1iWTg71hqniMZL-bEgdJDzAh_vQkrxj7SuomqMna7BVHs-vn2Evni8VF082qhTIn0zTCEn4w--qhcyjyO5ThwrsaLjNPXUikTprzbI3j4t3VbA3wR36dGmkIZ9Q",
         "alt": "Artisan poke and grain bowl held in hand",
-        "label": "Poke &amp; Bowls"
+        "label": "Poke & Bowls"
       }
     ],
     "highlights": [],
@@ -695,6 +713,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "kerabujen",
     "number": 8,
     "featured": false,
+    "categories": ["rooftop"],
     "name": "Kerabujen Restaurant",
     "subtitle": "Coastal Rooftop Dining • 4th Floor, 631A Matara Rd, Weligama",
     "description": "Elevated coastal dining with elevator access, sweeping bay panoramas, cold drinks, and tender grilled catch of the day.",
@@ -772,6 +791,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "aloha",
     "number": 9,
     "featured": false,
+    "categories": ["cafe"],
     "name": "Aloha Coffee Gallery",
     "subtitle": "Specialty Coffee & Brunch Hideaway • 7 Sunanda Road, Weligama",
     "description": "Specialty espresso and brunch hideaway. Seasonal tip: Shady Lane Mirissa serves breakfast favorites 8:00 AM – 4:00 PM.",
@@ -849,13 +869,14 @@ export const DINING_VENUES: DiningVenue[] = [
     "id": "salty-swamis",
     "number": 10,
     "featured": true,
+    "categories": ["cafe"],
     "name": "Salty Swamis Cafe & Surf Shop",
-    "subtitle": "Legendary beachfront surf hangout pouring single-origin pour-overs alongside artisanal sourdough wraps, smoothie bowls, and curated coastal aesthetics.",
-    "description": "",
+    "subtitle": "Specialty Roasters & Surf Shop • 543 Matara Road, Narigama",
+    "description": "Legendary beachfront surf hangout pouring single-origin pour-overs alongside artisanal sourdough wraps, smoothie bowls, and curated coastal aesthetics.",
     "locationBadge": "Narigama Beach • ~3.1 km",
     "categoryBadge": "Surf Lounge",
     "rating": "4.9",
-    "reviews": "(520 Reviews • 4.8 TripAdvisor 670 reviews)",
+    "reviews": "(520 Google • 4.8★ TripAdvisor)",
     "priceNote": "Rs 2,000–5,000",
     "featuredFooterLeft": "Beachside Specialty Roastery",
     "mainImage": {
@@ -883,7 +904,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "Hours: 8:00 AM – 4:00 PM",
+        "text": "8:00 AM – 4:00 PM",
         "emphasis": "Daytime Roast"
       },
       {
@@ -894,31 +915,17 @@ export const DINING_VENUES: DiningVenue[] = [
     ],
     "actions": [
       {
-        "label": "WhatsApp Concierge",
-        "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge%2C%20I%20am%20staying%20at%20the%20hotel%20and%20would%20like%20to%20reserve%20a%20table%20or%20cooking%20class%20at%20Shirani%20Home%20Made%20Rice%20%26%20Curry.%20Could%20you%20please%20assist%3F",
-        "variant": "primary",
-        "external": true
-      },
-      {
-        "label": "+94 77 920 6951",
-        "icon": "call",
-        "href": "tel:+94779206951",
-        "variant": "outline",
-        "external": false
-      },
-      {
         "label": "Get Directions",
         "icon": "directions",
-        "href": "https://www.google.com/maps/search/?api=1&query=Shirani+Home+Made+Rice+Curry+Weligama",
-        "variant": "default",
+        "href": "https://www.google.com/maps/search/?api=1&query=Salty+Swamis+Cafe+%26+Surf+Shop+Weligama",
+        "variant": "primary",
         "external": true
       },
       {
-        "label": "<svg class=\"w-4 h-4 fill-none stroke-current\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M14 5l7 7m0 0l-7 7m7-7H3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+        "label": "Concierge",
         "icon": "chat",
-        "href": "https://www.booking.com/hotel/lk/noonna-beach.html",
-        "variant": "primary",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge%2C%20please%20assist%20with%20visiting%20or%20reserving%20at%20Salty%20Swamis%20Cafe%20%26%20Surf%20Shop%20in%20Weligama.",
+        "variant": "outline",
         "external": true
       }
     ],
@@ -926,8 +933,8 @@ export const DINING_VENUES: DiningVenue[] = [
       "title": "Salty Swamis Cafe & Surf Shop",
       "tag": "Surf Lounge",
       "dist": "Narigama Beach • ~3.1 km",
-      "rating": "4.7",
-      "reviews": "(1.1K reviews)",
+      "rating": "4.9",
+      "reviews": "(520 reviews)",
       "price": "Rs 2,000–5,000",
       "hours": "8:00 AM – 4:00 PM • Daytime Roast",
       "address": "543 Matara Road, Weligama Beach",

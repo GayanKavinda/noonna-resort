@@ -94,10 +94,10 @@ const CTA_CONTENT: Record<
     href: HOTEL_INFO.bookingUrl,
   },
   taste: {
-    eyebrow: "artisanal flavors & clay pot feasts...",
-    title: "A Peaceful Base for Coastal Gastronomy",
-    deck: "Explore authentic wood-fired curries, ocean-caught catches, and artisan beach cafes, with Noonna Beach Hotel as your serene retreat.",
-    buttonText: "Reserve Your Room on Booking.com",
+    eyebrow: "artisanal flavours & local traditions...",
+    title: "A Taste of the Southern Coast",
+    deck: "Discover local dining spots and regional flavours to explore during your stay in southern Sri Lanka.",
+    buttonText: "Explore Noonna on Booking.com",
     href: HOTEL_INFO.bookingUrl,
   },
   "southern-heritage": {
@@ -147,21 +147,16 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
         </div>
 
         {/* Trust / Booking badge */}
-        {context === "taste" ? (
-          <div className="flex items-center justify-center gap-1.5 pt-0 text-xs text-[#64748B] font-sans">
-            <svg className="w-4 h-4 text-[#397FA8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
-            <span>Secured through Booking.com • Verified Private Coastal Listing</span>
-          </div>
-        ) : (
-          <a
-            href={content.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-3 py-1 rounded-full border border-slate-200 bg-slate-50 text-xs text-slate-500 font-light font-sans hover:text-[#397FA8] hover:border-[#397FA8]/30 transition-colors"
-          >
-            Listed on Booking.com
-          </a>
-        )}
+        <a
+          href={content.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-1.5 text-xs text-slate-600 font-normal bg-slate-50 border border-slate-200/80 px-3 py-1 rounded-full hover:bg-slate-100 transition-colors duration-150 font-sans"
+        >
+          <ArrowUpRight className="hidden" aria-hidden="true" />
+          <svg className="w-[15px] h-[15px] text-[#397FA8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
+          <span>Listed on Booking.com</span>
+        </a>
       </div>
     </section>
   );

@@ -11,14 +11,10 @@ interface Props {
 }
 
 export function DiningModal({ venue, onClose }: Props) {
-  const [selectedImg, setSelectedImg] = useState<string | null>(null);
+  const [selected, setSelected] = useState<{ id: string; img: string } | null>(null);
 
   useEffect(() => {
-    if (!venue) {
-      setSelectedImg(null);
-      return;
-    }
-    setSelectedImg(venue.modal.img);
+    if (!venue) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
@@ -32,13 +28,9 @@ export function DiningModal({ venue, onClose }: Props) {
 
   if (!venue) return null;
   const m = venue.modal;
-  const currentHeroImg = selectedImg || m.img;
+  const currentHeroImg = selected?.id === venue.id ? selected.img : m.img;
 
-  // Build 4-thumb gallery from venue thumbs + main image
-  const gallery: { src: string; alt: string; label?: string }[] = [
-    { src: venue.mainImage.src, alt: venue.mainImage.alt, label: "Main" },
-    ...venue.thumbs,
-  ].slice(0, 4);
+  const gallery = venue.thumbs.slice(0, 3);
 
   const whatsappMsg = encodeURIComponent(
     `Hello Noonna Concierge, I am staying at the hotel and would like to arrange dining / reservations for ${m.title}. Could you please assist?`
@@ -106,19 +98,19 @@ export function DiningModal({ venue, onClose }: Props) {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <h5 className="text-xs font-semibold uppercase tracking-wider text-slate-500 font-sans">
-                Photo Gallery Strip (Click to View)
+                Photo Gallery Strip
               </h5>
               <span className="text-[11px] text-[#397FA8] font-medium">{m.dist}</span>
             </div>
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {gallery.map((t, i) => {
                 const isActive = currentHeroImg === t.src;
                 return (
                   <button
                     key={`${t.src}-${i}`}
                     type="button"
-                    onClick={() => setSelectedImg(t.src)}
-                    className={`group relative rounded-xl overflow-hidden h-20 border border-slate-200 cursor-pointer p-0 text-left w-full transition-all ${
+                    onClick={() => setSelected({ id: venue.id, img: t.src })}
+                    className={`group relative rounded-xl overflow-hidden h-24 border border-slate-200 cursor-pointer p-0 text-left w-full transition-all ${
                       isActive ? "ring-2 ring-[#397FA8]" : ""
                     }`}
                   >
@@ -159,7 +151,7 @@ export function DiningModal({ venue, onClose }: Props) {
 
           <div className="space-y-1">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 font-sans">
-              Overview &amp; Village Heritage
+              Overview &amp; Heritage
             </h4>
             <p className="text-slate-700 text-sm leading-relaxed font-light">{m.desc}</p>
             {m.dietary ? (
@@ -200,7 +192,7 @@ export function DiningModal({ venue, onClose }: Props) {
             <div className="flex items-center gap-1.5 mb-2.5">
               <Star className="w-4 h-4 text-[#397FA8]" aria-hidden="true" />
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-800">
-                Verified Traveler Experience
+                Verified Traveler Reviews
               </span>
               <span className="text-[11px] text-slate-400">({m.rating} • {m.reviews})</span>
             </div>
@@ -224,7 +216,7 @@ export function DiningModal({ venue, onClose }: Props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle className="w-4 h-4" aria-hidden="true" /> WhatsApp Concierge
+              <MessageCircle className="w-4 h-4" aria-hidden="true" /> Ask Concierge via WhatsApp
             </a>
             {callMeta ? (
               <a
