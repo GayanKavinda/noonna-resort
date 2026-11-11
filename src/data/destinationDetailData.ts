@@ -2219,6 +2219,278 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
   },
 };
 
+const secretJungleBase = BEACH_DESTINATIONS.find((d) => d.slug === "secret-jungle-beach");
+
+export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
+  slug: "secret-jungle-beach",
+  name: secretJungleBase?.name ?? "Secret Jungle Beach",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Hidden Cove", "Jungle Canopy Shore"],
+  distanceLabel: secretJungleBase?.distance ? `${secretJungleBase.distance} from Noonna` : "~3.4 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Secluded sandy cove framed by lush tropical jungle canopy at Secret Jungle Beach",
+    script: "shaded jungle canopy & untamed shoreline...",
+    title: "Secret Jungle Beach",
+    deck: "A hidden coastal cove sheltered by overhanging tropical foliage, ancient granite boulders, and unhurried southern solitude.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Midigama Coast" },
+      { icon: "pool", label: "Jungle-Framed Sandy Cove & Tide Pools" },
+      { icon: "wb_sunny", label: "Best at Morning Low Tide" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & coastal intelligence...",
+    sectionTitle: "Secret Jungle Beach At A Glance: Canopy & Cove",
+    sectionDeck:
+      "Essential field notes and coastal conditions for shaded morning shoreline strolls, secluded tidal exploration, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Shallow turquoise sea shelf and jungle-fringed sand at Secret Jungle Beach",
+      topBadge: "Untamed Coastal Cove",
+      distanceBadge: "3.4 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Exploration: 06:30 – 10:00 AM",
+      title: "Canopy-Sheltered Sandy Sanctuary",
+      description:
+        "A quiet, private beach enclave where tropical jungle greenery meets golden sand. Protected by natural rock formations, it offers absolute peace away from the main highway.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Sturdy Footwear Recommended for Trail Path" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Shade Window",
+        title: "Prime Shade & Light Window",
+        pill: "Morning Canopy Light",
+        description:
+          "Early morning hours between 06:30 – 10:00 AM provide cool shade under the tropical foliage and pristine, glassy water conditions in the cove.",
+        left: { icon: "air", label: "Cool jungle breeze" },
+        right: "Natural canopy shade",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Cove Character",
+        title: "Sanctuary & Seclusion Character",
+        pill: "Private & Untamed",
+        description:
+          "An intimate stretch of sand flanked by greenery, ideal for quiet reading, reflective morning walks, and peaceful saltwater wading.",
+        left: { icon: "waves", label: "Calm sheltered waters" },
+        right: "Natural rock buffers",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°58'10\"N 80°23'45\"E",
+      title: "Door-to-Cove Access",
+      description:
+        "Located 3.4 km along the southern coast via coastal road and a short shaded path. Reachable in 5 minutes by tuk-tuk or 12 minutes by cruiser bicycle.",
+      mapsHref: "https://maps.google.com/?q=5.9694,80.3958",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Secret%20Jungle%20Beach%20access%20details.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Secret Jungle Beach",
+    sectionDeck:
+      "Positioned 3.4 kilometers along Sri Lanka's southern coastline, reaching this hidden jungle haven is a short, scenic journey:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "3.4 km along Matara Coastal Road (A2)",
+        durationBadge: "~5 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road near Secret Jungle Beach",
+        description:
+          "Our front desk connects you directly with trusted drivers for a quick, breezy ride past palm canopies straight to the shaded jungle trail entry.",
+        leftNote: "Estimated fare: 400–500 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Scenic village interior path",
+        durationBadge: "~12 mins",
+        icon: "pedal_bike",
+        iconLabel: "Guest Quiver Bike",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Vintage coastal cruiser bicycle parked near quiet shaded path",
+        description:
+          "Pedal along tranquil inland lanes through quiet coconut groves, bypassing highway bustle with our curated cruiser bikes.",
+        leftNote: "Complimentary for guests (subject to availability)",
+        rightNote: "Locks provided",
+        featured: true,
+      },
+      {
+        title: "Low-Tide Shoreline Stroll",
+        subtitle: "Barefoot beach walk along coves",
+        durationBadge: "~25 mins",
+        icon: "footprint",
+        iconLabel: "Tideline Walk",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Shoreline walking view along southern coastal coves",
+        description:
+          "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide, passing serene rock formations.",
+        leftNote: "Best at low tide (06:30–09:00 AM)",
+        rightNote: "Sturdy footwear handy",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Secret Jungle Beach",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secluded sandy cove framed by lush tropical jungle canopy",
+        topBadge: "07:00 AM • Morning Shade",
+        topBadgeRight: "3.4 km from hotel",
+        script: "jungle calm...",
+        title: "Canopy-Framed Shoreline",
+        description: "Golden sand cove sheltered entirely by overhanging tropical foliage and coastal trees.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Sunlight filtering through tropical foliage onto hidden sand beach",
+        topBadge: "Tropical Greenery",
+        topBadgeRight: "Shaded Trail",
+        script: "green light...",
+        title: "Sunlit Foliage Path",
+        description: "Dappled morning sunlight filtering through the coastal jungle canopy onto the sand.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Granite boulders and coastal green belt along Secret Jungle Beach",
+        topBadge: "Granite Boulders",
+        topBadgeRight: "Rock Buffer",
+        script: "stone & sea...",
+        title: "Granite Boulder Outcrops",
+        description: "Ancient stone formations buffering the cove from open ocean swells.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber twilight reflecting on jungle-bordered coastal waters",
+        topBadge: "18:00 PM • Twilight",
+        topBadgeRight: "Sunset Calm",
+        script: "evening glow...",
+        title: "Jungle Twilight Calm",
+        description: "Peaceful evening shadows and warm amber light resting over the secluded cove.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Secret Jungle Beach. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Secret Jungle Beach Outing?",
+    deck: "Our team will arrange trusted transport, provide trail guidance, pack chilled king coconuts in cooler packs, and ensure towels are ready.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Jungle%20Beach%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -2227,6 +2499,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   LAZY_LEFT_SURF_BREAK_DETAIL,
   RAMS_RIGHT_SURF_BREAK_DETAIL,
   AWEE_COCO_SECRET_POOL_DETAIL,
+  SECRET_JUNGLE_BEACH_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

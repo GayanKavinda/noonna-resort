@@ -154,13 +154,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "secret-jungle-beach",
     name: "Secret Jungle Beach",
     category: "beach",
-    badge: "Tucked Jungle Cove",
+    badge: "Hidden Cove",
     distance: "~3.4 km",
-    subtitle: "Hidden Coastal Footpath",
+    subtitle: "Jungle Canopy Shore",
     description:
-      "A sheltered bay nestled between lush rainforest headlands and turquoise shallows. Reached via a shaded dirt footpath, offering peaceful seclusion and calm swimming.",
-    features: ["Lush Headland Canopy", "Turquoise Shallows", "Hidden Trail"],
+      "A hidden coastal cove sheltered by overhanging tropical foliage, ancient granite boulders, and unhurried southern solitude.",
+    features: ["Jungle Canopy Shore", "Hidden Cove", "Quiet Seclusion"],
     ctaLabel: "Access Guide",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Secluded sandy cove framed by lush tropical jungle canopy at Secret Jungle Beach",
   },
   {
     id: "polhena-beach-coral-reef",
