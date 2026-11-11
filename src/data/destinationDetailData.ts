@@ -3516,6 +3516,262 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
   },
 };
 
+const mirissaPromontoryBase = BEACH_DESTINATIONS.find((d) => d.slug === "mirissa-coastal-promontory");
+
+export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
+  slug: "mirissa-coastal-promontory",
+  name: mirissaPromontoryBase?.name ?? "Mirissa Coastal Promontory",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Coastal Ridge", "Elevated Panorama"],
+  distanceLabel: mirissaPromontoryBase?.distance ? `${mirissaPromontoryBase.distance} from Noonna` : "~6.0 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Elevated coastal promontory ridge overlooking Mirissa bay and ocean horizon",
+    script: "elevated coastal ridges & ocean vistas...",
+    title: "Mirissa Coastal Promontory",
+    deck: "A striking raised coastal ridge offering sweeping panoramic vistas across Mirissa's sweeping harbor, golden crescent shores, and breaking surf.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa Ridge" },
+      { icon: "compass", label: "Elevated Coastal Promontory & Outlook" },
+      { icon: "wb_sunny", label: "Prime Viewing: Dawn & Golden Hour" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & ridge intelligence...",
+    sectionTitle: "Promontory At A Glance: Ridge, Swell & Horizon",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning ridge walks, horizon observation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Sweeping ocean view from the heights of Mirissa Coastal Promontory",
+      topBadge: "Elevated Coastal Spine",
+      distanceBadge: "6.0 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 06:30 – 08:00 AM & 17:30 – 18:30 PM",
+      title: "Elevated Ridge & Ocean Expanse",
+      description:
+        "A commanding coastal headland rising above the surf zone, providing uninterrupted views of fishing vessels, reef lines, and distant horizon sunsets.",
+      facts: [
+        { icon: "thermostat", label: "Coastal Breeze: Refreshing Open-Ocean Air" },
+        { icon: "footprint", label: "Easy Hillside Path & Ridge Access" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "View Window",
+        title: "Prime Viewing & Lighting Window",
+        pill: "Dawn & Sunset Golden Hour",
+        description:
+          "Early morning hours between 06:30 – 08:00 AM offer tranquil cooling breezes and soft lighting, while evening golden hour brings vibrant amber skies.",
+        left: { icon: "air", label: "Refreshing ocean breeze" },
+        right: "Panoramic coastal horizon",
+      },
+      {
+        icon: "compass",
+        eyebrow: "Ridge Character",
+        title: "Promontory & Atmosphere Character",
+        pill: "Scenic Lookout",
+        description:
+          "An open ridge walkway offering inspiring perspectives of Sri Lanka's dynamic southern shoreline and rolling sea swells.",
+        left: { icon: "waves", label: "Distant surf spray" },
+        right: "Expansive ocean vistas",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'48\"N 80°27'15\"E",
+      title: "Door-to-Ridge Access",
+      description:
+        "Located ~6.0 km east along the Matara Coastal Road (A2) to the Mirissa headland approach. Reached in 10 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9467,80.4542",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Mirissa%20Coastal%20Promontory.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Mirissa Coastal Promontory",
+    sectionDeck:
+      "Positioned 6.0 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this scenic headland ridge is a quick, easy trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "6.0 km along Matara Coastal Road (A2)",
+        durationBadge: "~10 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road toward Mirissa headland",
+        description:
+          "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal strip, dropping you at the ridge access path.",
+        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "Enjoy a comfortable air-conditioned private car transfer arranged by our concierge for your morning or evening excursion.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of the Promontory",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Sweeping panorama from Mirissa Coastal Promontory ridge",
+        topBadge: "07:00 AM • Ridge Vista",
+        topBadgeRight: "6.0 km from hotel",
+        script: "coastal spine...",
+        title: "Morning Ridge Panorama",
+        description: "Expansive aerial perspectives overlooking the turquoise ocean and coastline.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Swaying palms framing ocean horizon from Mirissa headland",
+        topBadge: "Promontory Flora",
+        topBadgeRight: "Palm Canopy",
+        script: "ridge breeze...",
+        title: "Palm-Framed Horizon",
+        description: "Tall coastal palms swaying in the refreshing open-ocean ridge breeze.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Coastal cliff formation along Mirissa promontory",
+        topBadge: "Cliff Ledge",
+        topBadgeRight: "Rock Edge",
+        script: "stone & swell...",
+        title: "Headland Rock Ledge",
+        description: "Rugged stone formations buffering the headland against crashing ocean waves.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset over Mirissa coastal ridge",
+        topBadge: "18:00 PM • Sunset Glow",
+        topBadgeRight: "Golden Hour",
+        script: "evening light...",
+        title: "Ridge Sunset Horizon",
+        description: "Warm evening twilight washing over the raised coastal ridge and horizon.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Mirissa Coastal Promontory. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "parrot-rock",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Parrot Rock offshore islet in Mirissa",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "5.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Parrot Rock",
+        description: "A prominent offshore rocky islet linked to Mirissa beach, offering elevated 360-degree panoramic views across the bay.",
+        footerLeft: "Best visited at low to mid tide",
+        href: "/experiences/parrot-rock",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "coconut-tree-hill",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Coconut Tree Hill in Mirissa overlooking the Indian Ocean",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.2 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Coconut Tree Hill & Mirissa Point",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        footerLeft: "Ideal at dawn or golden hour",
+        href: "/experiences/coconut-tree-hill",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-beach-mirissa",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa hidden cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.5 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Beach Mirissa",
+        description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+        footerLeft: "Ideal for morning snorkeling & cliffside views",
+        href: "/experiences/secret-beach-mirissa",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Promontory Outing?",
+    deck: "Our concierge team will arrange comfortable transport timed perfectly for dawn or sunset ridge viewing, and ensure your morning towels or camera gear are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Mirissa%20Coastal%20Promontory%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -3529,6 +3785,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   SECRET_BEACH_MIRISSA_DETAIL,
   COCONUT_TREE_HILL_DETAIL,
   PARROT_ROCK_DETAIL,
+  MIRISSA_COASTAL_PROMONTORY_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

@@ -23,6 +23,7 @@ export async function generateStaticParams() {
     { slug: "secret-beach-mirissa" },
     { slug: "coconut-tree-hill" },
     { slug: "parrot-rock" },
+    { slug: "mirissa-coastal-promontory" },
   ];
 }
 

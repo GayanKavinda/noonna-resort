@@ -231,13 +231,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "mirissa-coastal-promontory",
     name: "Mirissa Coastal Promontory",
     category: "beach",
-    badge: "Eastern Bay Headland",
+    badge: "Coastal Ridge",
     distance: "~6.0 km",
-    subtitle: "Coastal Lookouts & Coves",
+    subtitle: "Elevated Panorama",
     description:
-      "A natural headland separating Mirissa's main surf bay from quieter eastern fishing harbours, providing elevated trails, breezy ocean lookouts, and tucked rocky coves.",
-    features: ["Elevated Coastal Trails", "Ocean Overlooks", "Fishing Harbour"],
+      "A striking raised coastal ridge offering sweeping panoramic vistas across Mirissa's sweeping harbor, golden crescent shores, and breaking surf.",
+    features: ["Elevated Coastal Ridge", "Harbor Panoramas", "Ocean Horizon"],
     ctaLabel: "View Route Guide",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Elevated coastal promontory ridge overlooking Mirissa bay and ocean horizon",
   },
 ];
 
