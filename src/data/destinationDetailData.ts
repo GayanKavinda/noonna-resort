@@ -2491,6 +2491,263 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
+const polhenaBase = BEACH_DESTINATIONS.find((d) => d.slug === "polhena-beach-coral-reef");
+
+export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
+  slug: "polhena-beach-coral-reef",
+  name: polhenaBase?.name ?? "Polhena Beach & Coral Reef",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Coral Lagoon", "Snorkeling & Sea Turtles"],
+  distanceLabel: polhenaBase?.distance ? `${polhenaBase.distance} from Noonna` : "~14 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Calm turquoise reef-sheltered waters and golden sand at Polhena Beach",
+    script: "protected coral lagoons & gentle sea turtles...",
+    title: "Polhena Beach & Coral Reef",
+    deck: "A reef-sheltered natural swimming lagoon in Matara featuring crystal-clear turquoise shallows, vibrant coral gardens, and resident green sea turtles.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Matara" },
+      { icon: "pool", label: "Offshore Coral Barrier & Calm Lagoon" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & reef intelligence...",
+    sectionTitle: "Polhena At A Glance: Coral Lagoon & Marine Life",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning snorkeling expeditions, calm afternoon dips, and comfortable journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Shallow turquoise protected swimming pool inside Polhena coral reef",
+      topBadge: "Reef-Protected Sanctuary",
+      distanceBadge: "14 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Snorkeling: 07:00 – 11:00 AM",
+      title: "Calm Coral Lagoon & Sea Turtle Habitat",
+      description:
+        "Protected by an offshore barrier reef that blocks heavy ocean swells, Polhena creates a vast, calm natural swimming pool where wild green turtles graze peacefully in the shallows.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Snorkel & Mask Rentals Available On-Site" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Snorkeling Window",
+        title: "Prime Snorkeling & Visibility Window",
+        pill: "Morning Calm",
+        description:
+          "Early morning hours between 07:00 – 11:00 AM provide highest water clarity, calm surface conditions, and active turtle feeding along the seagrass beds.",
+        left: { icon: "air", label: "Gentle morning offshore breeze" },
+        right: "High underwater visibility",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Lagoon Character",
+        title: "Lagoon & Marine Character",
+        pill: "Family Friendly / Calm",
+        description:
+          "Waist-deep, wave-free water sheltered by coral walls makes it exceptionally safe for relaxed swimming and beginner snorkeling.",
+        left: { icon: "waves", label: "Offshore reef wave buffer" },
+        right: "Resident green sea turtles",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'20\"N 80°31'50\"E",
+      title: "Door-to-Reef Access",
+      description:
+        "Located ~14 km east along the Matara Coastal Road (A2). Reached in 20–25 minutes by comfortable taxi or tuk-tuk safari.",
+      mapsHref: "https://maps.google.com/?q=5.9389,80.5306",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Polhena%20Beach.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Polhena Beach",
+    sectionDeck:
+      "Positioned 14 kilometers east along Sri Lanka's southern shoreline toward Matara, reaching Polhena's calm coral lagoon is a smooth trip:",
+    cards: [
+      {
+        title: "Hotel-Arranged Transport",
+        subtitle: "14 km along Matara Coastal Road (A2)",
+        durationBadge: "~22 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Direct Transfer",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Comfortable coastal transport heading toward Matara and Polhena",
+        description:
+          "Our concierge team can arrange a comfortable private car or trusted driver to take you directly to Polhena's main beach entrance.",
+        leftNote: "Estimated fare: 1,500–2,000 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Coastal Train Journey",
+        subtitle: "Kumbalgama Station to Matara Station",
+        durationBadge: "~18 mins + short tuk-tuk",
+        icon: "train",
+        iconLabel: "Southern Railway",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Scenic coastal railway tracks along southern Sri Lanka",
+        description:
+          "Take the scenic coastal train from nearby Kumbalgama to Matara terminus, followed by a quick 10-minute local tuk-tuk ride to the beach.",
+        leftNote: "Tickets at station (~100–150 LKR)",
+        rightNote: "Ocean views along the rail line",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Polhena",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Calm turquoise natural swimming lagoon sheltered by coral reef at Polhena",
+        topBadge: "08:00 AM • Calm Lagoon",
+        topBadgeRight: "14 km from hotel",
+        script: "crystal shallows...",
+        title: "Glassy Coral Lagoon",
+        description: "Protected turquoise shallows offering wave-free swimming and crystal-clear visibility.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Green sea turtle swimming gracefully in shallow coral waters",
+        topBadge: "Marine Wildlife",
+        topBadgeRight: "Resident Turtles",
+        script: "gentle swimmers...",
+        title: "Wild Green Sea Turtles",
+        description: "Friendly marine turtles frequently spotted grazing just feet from the shoreline.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Palm trees and golden sand beach along Polhena coastline",
+        topBadge: "Golden Shoreline",
+        topBadgeRight: "Palm Fringe",
+        script: "sunny shores...",
+        title: "Golden Sands & Palms",
+        description: "Spacious sandy beach areas lined with coconut palms and relaxed local shade spots.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset over Polhena reef lagoon",
+        topBadge: "18:00 PM • Twilight",
+        topBadgeRight: "Sunset Calm",
+        script: "evening glow...",
+        title: "Matara Sunset Horizon",
+        description: "Peaceful evening skies reflecting across the tranquil, glass-like reef basin.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Polhena’s coral lagoon. Explore surf breaks, secret tidal pools, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-jungle-beach",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Jungle Beach tropical cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "3.4 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Jungle Beach",
+        description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
+        footerLeft: "Ideal for shaded morning walks",
+        href: "/experiences/secret-jungle-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Polhena Snorkeling Outing?",
+    deck: "Our concierge team will arrange comfortable transport, coordinate snorkel gear rentals, and advise on optimal tide and turtle-spotting windows.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Polhena%20snorkeling%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -2500,6 +2757,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   RAMS_RIGHT_SURF_BREAK_DETAIL,
   AWEE_COCO_SECRET_POOL_DETAIL,
   SECRET_JUNGLE_BEACH_DETAIL,
+  POLHENA_BEACH_CORAL_REEF_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {
