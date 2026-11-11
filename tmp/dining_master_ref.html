@@ -1,0 +1,967 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#234b5d", "inverse-on-surface": "#f0f1f1", "tertiary": "#3a6173", "on-secondary-fixed": "#001e2e", "outline": "#70787f", "surface-bright": "#f9f9f9", "primary-fixed-dim": "#8ccefb", "on-primary-fixed-variant": "#004c6d", "surface-container-low": "#f3f3f4", "on-primary-fixed": "#001e2e", "on-secondary-fixed-variant": "#244b62", "on-secondary": "#ffffff", "secondary-fixed": "#c8e7ff", "outline-variant": "#c0c7cf", "on-error-container": "#93000a", "on-error": "#ffffff", "surface-tint": "#13658c", "tertiary-fixed": "#c0e8fe", "primary-fixed": "#c7e7ff", "surface-container": "#eeeeee", "on-surface": "#1a1c1c", "tertiary-fixed-dim": "#a5cce1", "error": "#ba1a1a", "surface": "#f9f9f9", "on-primary": "#ffffff", "secondary-fixed-dim": "#a6cbe7", "surface-variant": "#e2e2e2", "primary-container": "#347ba4", "on-tertiary-container": "#fbfdff", "error-container": "#ffdad6", "on-secondary-container": "#40657d", "primary": "#0d628a", "inverse-surface": "#2f3131", "surface-container-highest": "#e2e2e2", "secondary-container": "#bce2fe", "on-primary-container": "#fcfcff", "surface-container-lowest": "#ffffff", "on-background": "#1a1c1c", "on-surface-variant": "#40484e", "surface-dim": "#dadada", "surface-container-high": "#e8e8e8", "background": "#f9f9f9", "secondary": "#3e627b", "on-tertiary": "#ffffff", "inverse-primary": "#8ccefb", "tertiary-container": "#537a8c", "on-tertiary-fixed": "#001f2a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "headline-sm": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "headline-lg": [ "EB Garamond" ], "body-lg": [ "Inter" ], "label-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-hero-mobile": [ "EB Garamond" ], "headline-hero": [ "EB Garamond" ], "body-sm": [ "Inter" ], "label-md": [ "Inter" ], "label-lg": [ "Inter" ] }, "fontSize": { "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "500" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "300" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_12px_rgba(23,63,86,0.04)] z-50 flex flex-col pt-6 pb-6"><div class="px-6 mb-8"><div class="flex items-center space-x-2"><span class="font-headline-sm text-primary tracking-tight">Noonna</span><span class="font-label-sm text-tertiary px-2 py-0.5 rounded-full bg-surface-container">Culinary Studio</span></div><p class="font-body-sm text-on-surface-variant mt-1">Card Asset Spec &amp; Sandbox</p></div><nav class="flex-1 px-4 space-y-1.5" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded-lg"><a class="flex items-center px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="spec-overview" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">view_in_ar</span>Specification</a><a aria-current="page" class="flex items-center px-3.5 py-2.5 transition-all bg-primary-container text-on-primary-container font-medium rounded-lg" data-path="component-canvas" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">auto_awesome_motion</span>Interactive Canvas</a><a class="flex items-center px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="tokens-guide" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">palette</span>Visual Tokens</a><a class="flex items-center px-3.5 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="experience-preview" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">restaurant</span>Dining Directory</a></nav><div class="px-6 pt-4 border-t border-surface-container"><div class="flex items-center justify-between text-on-surface-variant font-label-sm"><span>Target: Coastal 12-Col</span><span class="text-primary font-medium">Clean Slate</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,63,86,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center space-x-4"><div class="flex items-center space-x-2 text-on-surface-variant font-label-md"><span class="material-symbols-outlined text-[18px]">layers</span><span>Culinary &amp; Dining Directory Card</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface">Master Spec Workbench</span></div></div><div class="flex items-center space-x-4"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface px-8"><div class="flex flex-col w-full">
+<!-- System / Canvas Status Bar -->
+<div class="flex flex-wrap items-center justify-between pb-6 gap-3">
+<div class="flex items-center space-x-2">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-sm uppercase tracking-wider text-primary font-semibold">Component Spec Canvas â€¢ DS-DINING-V1.0 â€¢ Production Approved</span>
+</div>
+<div class="flex items-center space-x-3 text-on-surface-variant font-label-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-medium">v1.2.0 â€¢ Active</span>
+<span>Noonna Design System</span>
+<span class="text-outline-variant">/</span>
+<span>Coastal 12-Col Master</span>
+</div>
+</div>
+<!-- Page Header Trio -->
+<div class="space-y-2 pb-10">
+<p class="font-headline-sm italic text-primary text-2xl md:text-3xl tracking-wide">
+      wood-fired clay pots &amp; coastal feasts...
+    </p>
+<h1 class="font-headline-hero text-on-surface text-3xl md:text-5xl tracking-tight">
+      Master Coastal Dining Directory &amp; Culinary Card System
+    </h1>
+<p class="font-body-lg text-on-surface-variant max-w-4xl pt-1">
+      Complete design system specification, interactive component playground, multi-image gallery strip architecture, optical typography pairing, and contextual metadata schema for â€˜A Taste of Sri Lankaâ€™ dining cards.
+    </p>
+</div>
+<!-- SECTION 1: LIVE INTERACTIVE COMPONENT PREVIEW & PLAYGROUND -->
+<section class="space-y-6 pb-16">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<div class="flex items-center space-x-2">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Section 01</span>
+<span class="text-outline-variant">â€¢</span>
+<span class="font-label-md text-on-surface-variant">Interactive Sandbox &amp; State Switcher</span>
+</div>
+<h2 class="font-headline-md text-on-surface mt-0.5">Component Playground</h2>
+</div>
+<!-- Card Switcher Tabs -->
+<div class="flex flex-wrap items-center gap-1.5 p-1.5 bg-surface-container rounded-xl self-start sm:self-auto" id="cardTabs">
+<button class="tab-btn active px-3.5 py-1.5 rounded-lg text-on-primary bg-primary font-label-md transition-all shadow-sm" data-idx="0" onclick="switchCard(0)">
+          Clay Pot Feast (Lucky Fort)
+        </button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all" data-idx="1" onclick="switchCard(1)">
+          Village Homestyle (Shirani)
+        </button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all" data-idx="2" onclick="switchCard(2)">
+          Sunset Seafood Grill (Le' Fish)
+        </button>
+<button class="tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all" data-idx="3" onclick="switchCard(3)">
+          Surf Cafe (Salty Swamis)
+        </button>
+</div>
+</div>
+<!-- Playground Grid: Dual Comparative Views (Standard 3-Col Spec Card + Wide Bento Card) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Primary Standard Card Preview (3-Col Grid Standard Unit) -->
+<div class="lg:col-span-6 flex flex-col items-center">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden transition-all duration-300 transform hover:-translate-y-1">
+<!-- 1. Hero Photo Container -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-high group">
+<img alt="Featured Culinary Dish" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional Sri Lankan rice and curry spread on a sun-drenched coastal porch, featuring clay pots of lentils, braised eggplant, and beetroot against vibrant tropical garden foliage and calm turquoise sea horizons" id="primaryHeroImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSqKEqaOjUplib8DTJ1__IMuncHryHkioi52Ertgnng5P3dgZbMPpWe7ha4vuRNZxpy-JRjwatZp9yZw1UAnDGe_WsypROo9GVvT29JTpcEg-dQBHYnIyVtJYo_fBE70Ou2dDRFkn5WDHjsqFaJzbpBBQB1plfDnKPTzqjmBfHB0-FhzJ1PGvtfNb2Al9cnuuq3pTCzjZkUz3bMqFVB_jCcBLmTMLykojHcjFnomcW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Top Floating Pill Badges -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<span class="px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm tracking-wider uppercase" id="cardBadgeLoc">
+                GALLE FORT â€¢ 24 KM
+              </span>
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm tracking-wider font-semibold shadow-sm" id="cardBadgeCat">
+                HOTEL FAVORITE
+              </span>
+</div>
+<div class="absolute bottom-3 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-md text-on-surface font-label-sm shadow-xs flex items-center space-x-1">
+<span class="material-symbols-outlined text-[14px] text-primary">camera_alt</span>
+<span id="photoCount">1 / 3 Captured</span>
+</div>
+</div>
+<!-- 2. Interactive 3-Thumbnail Gallery Strip -->
+<div class="p-4 bg-surface-container-low">
+<div class="grid grid-cols-3 gap-2" id="galleryStrip">
+<button class="thumb-btn ring-2 ring-primary rounded-lg overflow-hidden relative group focus:outline-none aspect-[4/3] bg-surface-container" onclick="setCardImage(0)">
+<img alt="Thumbnail 1" class="w-full h-full object-cover group-hover:opacity-90" data-alt="Close-up of bubbling coconut dhal and roasted curry powder in a traditional clay pot over outdoor fire" id="thumb0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgG3Wvno2IJBoOeXC2JIjDXHrjnADb0W2s1ri3cTLjB9OPDZv0l6MQ9kWJIRQGuuDejXegTb9qT5QcbnOHyxq7y_NDJH1nOvY62SJS7rCqDbQu9v2FWk3t7C2FPfU1-7gq3eauGiZjlqROA_lTHxY_SrrpXVW-70OKs5jUNaBMFTfpLdRziV03KahUfsLm63Ytf0g9oCZ7CT_OoGNr3dOePQI8f-1_StAnk7hDAu7N"/>
+<span class="absolute bottom-1 left-1 right-1 text-center font-label-sm text-[10px] text-white bg-black/60 rounded px-1 backdrop-blur-xs" id="thumbLabel0">Clay Pots</span>
+</button>
+<button class="thumb-btn ring-0 rounded-lg overflow-hidden relative group focus:outline-none aspect-[4/3] bg-surface-container" onclick="setCardImage(1)">
+<img alt="Thumbnail 2" class="w-full h-full object-cover group-hover:opacity-90" data-alt="Traditional Sri Lankan dining table set with ten diverse vegetable and meat curries in artisanal terracotta bowls" id="thumb1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0z2rgTwt-LdXgpjy-Q5R5MLG61Zk14yFt_mg6CqfSelLvYFH52iOmVqprxNszaJ5Sa5hcBV7UfLLhIuI-QMUazkHpN5l38cRHC1Y6bAAFpZ91RciLVp6MaiH-suAcAX5RfpGs4X2aAixuEHhhSC0Ho1b1QlgkdsWZ46wOtx3uFbiFRfQITtIdrTFZJj7aLWb6v2uIEmkZy8Wpb6NBvCj7swixkqv7nYUfKZUlS331"/>
+<span class="absolute bottom-1 left-1 right-1 text-center font-label-sm text-[10px] text-white bg-black/60 rounded px-1 backdrop-blur-xs" id="thumbLabel1">10 Curries</span>
+</button>
+<button class="thumb-btn ring-0 rounded-lg overflow-hidden relative group focus:outline-none aspect-[4/3] bg-surface-container" onclick="setCardImage(2)">
+<img alt="Thumbnail 3" class="w-full h-full object-cover group-hover:opacity-90" data-alt="Breezy outdoor courtyard with open air seating under woven thatch parasols at twilight" id="thumb2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF7-t6G_EMHT0k_T-MxX2q6lawtj3-ehQJ3m_YVCD2zmh4EJDsk2pLW2HExzer9BKJ9w9fsFXBbmlGXxiKQwH9u9jK77t1imc9ofMejx53L5PISJMr5o7uI6BCpr2wbi1bVgZ8jIrxv9xF9J5YSPQuprxUZ9olnafG54-FRXxFJ-bhHDKuvaiHKZ7Ti6Fn58mEqH6A39UVtVNOfRVauryxuwrc-F2MiESljgKJHgYn"/>
+<span class="absolute bottom-1 left-1 right-1 text-center font-label-sm text-[10px] text-white bg-black/60 rounded px-1 backdrop-blur-xs" id="thumbLabel2">Courtyard</span>
+</button>
+</div>
+</div>
+<!-- Content Padding Area -->
+<div class="p-6 space-y-4">
+<!-- 3. Reputation & Proximity Header -->
+<div class="flex items-center justify-between text-on-surface-variant font-label-md">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-amber-500 text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface" id="cardRating">4.8</span>
+<span class="text-outline text-body-sm" id="cardReviews">(340 Google â€¢ 4.8â˜… TripAdvisor)</span>
+</div>
+<div class="flex items-center space-x-1 text-primary font-medium">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span id="cardProximity">3 MINS WALK</span>
+</div>
+</div>
+<!-- 4. Typographic Hierarchy -->
+<div class="space-y-1">
+<h3 class="font-headline-sm text-2xl text-on-surface tracking-tight" id="cardTitle">
+                1. Lucky Fort Restaurant
+              </h3>
+<p class="font-label-md uppercase tracking-wider text-primary font-semibold" id="cardSubtitle">
+                Master Curry Artisans â€¢ Pradeep &amp; Family Kitchen
+              </p>
+<p class="font-body-md text-on-surface-variant pt-1" id="cardDescription">
+                Famed culinary benchmark celebrated for its grand 10-curry tasting table. Spices hand-ground on granite slabs, served with organic red heirloom rice, crispy papadam, and fragrant coconut sambol.
+              </p>
+</div>
+<!-- 5. Feature Badges -->
+<div class="flex flex-wrap gap-1.5 pt-1" id="cardBadgesList">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm">
+                10-Curry Clay Pot Feast â€¢ Rs 3,250 for 2
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">
+                Hand-ground Masalas
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">
+                Herb Garden Setting
+              </span>
+</div>
+<!-- 6. Operating Metadata Block -->
+<div class="p-3 rounded-xl bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex items-center space-x-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+<span class="text-on-surface" id="cardHours">11:00 AM â€“ 10:30 PM â€¢ Open Daily</span>
+</div>
+<span class="font-semibold text-primary" id="cardPriceTier">Rs 1,600 â€“ 3,500</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">call</span>
+<span id="cardPhone">+94 91 224 2901</span>
+</div>
+<span class="font-label-sm text-outline">TABLE RESERVATION ADVISED</span>
+</div>
+</div>
+<!-- 7. Dual Action Button Bar -->
+<div class="flex items-center gap-2 pt-2">
+<a class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md flex items-center justify-center space-x-1.5 transition-all text-center" href="https://maps.google.com/?q=Lucky+Fort+Restaurant+Galle" id="cardMapBtn" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Directions</span>
+</a>
+<a class="py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md flex items-center justify-center space-x-1 transition-all" href="tel:+94912242901" id="cardCallBtn">
+<span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+<button class="flex-1 py-2.5 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md flex items-center justify-center space-x-1.5 transition-all shadow-sm" onclick="openBookingDrawer()">
+<span>Book Table</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+<p class="font-label-sm text-outline-variant mt-3">Target Render: 384px-420px Standard Bento Card Slot</p>
+</div>
+<!-- Secondary Comparative Preview: Featured Wide Editorial Module -->
+<div class="lg:col-span-6 space-y-6">
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm space-y-5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm uppercase tracking-wider text-tertiary font-semibold">Featured Editorial Variant (Span-2 Wide)</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm">Layout Variant B</span>
+</div>
+<!-- Wide Card Horizontal Layout -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-md grid grid-cols-1 md:grid-cols-12 gap-0">
+<div class="md:col-span-5 relative min-h-[220px]">
+<img alt="Wide card hero" class="w-full h-full object-cover" data-alt="Overhead aesthetic flat lay of traditional Sri Lankan curry lunch on red woven fabric, surrounded by small terracotta bowls of vibrant turmeric dhal, spiced coconut sambol, and king coconut water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UQuq9H8vIFNMcSKr2r0PcUcQJSBGzTtbAIIR9MfBvTFQX2OZtbdS1LTYP4xCtbOXSwUQ0MjC1drtFuQojzjtg-NktmGaOWeeDRSOxQZMIRZF1AXwM6OG2-wBjp6QyWAFQ_e6vophONRrRDF5Dj3N7XmZ_PwxUHHUgdj_m4QzOICn6QV6Nam6AY8SrLk65jFAa54LexDFciVhgLP1fplH-X3B_0cei2vHYRIsz2lq"/>
+<div class="absolute top-3 left-3 bg-inverse-surface/85 text-inverse-on-surface px-2.5 py-0.5 rounded-full font-label-sm">
+                SIGNATURE CLASS
+              </div>
+</div>
+<div class="md:col-span-7 p-5 flex flex-col justify-between space-y-4">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+<span class="text-primary font-medium">GURUBEBILA â€¢ 250M</span>
+<div class="flex items-center text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-semibold ml-1">4.9</span>
+</div>
+</div>
+<h4 class="font-headline-sm text-xl text-on-surface">Shirani Home Cooked Feasts</h4>
+<p class="font-body-sm text-on-surface-variant line-clamp-2">
+                  Daily clay-pot hearth sessions with veranda dining. Guests grind cinnamon bark and roasted mustard seed on stone mortars.
+                </p>
+</div>
+<!-- Quick Specs -->
+<div class="flex flex-wrap gap-2 text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Class: 3 Hours</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Rs 4,000 / Person</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">Daily 11 AM &amp; 5 PM</span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-center transition-all" onclick="switchCard(1)">
+                  Load in Inspector
+                </button>
+<a class="py-2 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md flex items-center justify-center space-x-1 shadow-sm" href="https://wa.me/94779206951?text=Inquiry%20from%20Noonna%20Beach%20Hotel" rel="noopener noreferrer" target="_blank">
+<span>WhatsApp</span>
+<span class="material-symbols-outlined text-[15px]">chat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Real-Time Metrics & Validation Summary -->
+<div class="grid grid-cols-3 gap-3 pt-2">
+<div class="p-3 bg-surface rounded-xl text-center">
+<span class="font-label-sm text-outline-variant block">TOUCH TARGET</span>
+<span class="font-headline-sm text-primary text-xl font-bold">48 px</span>
+<span class="font-label-sm text-emerald-600 block mt-0.5">Compliant</span>
+</div>
+<div class="p-3 bg-surface rounded-xl text-center">
+<span class="font-label-sm text-outline-variant block">CONTRAST RATIO</span>
+<span class="font-headline-sm text-primary text-xl font-bold">11.4:1</span>
+<span class="font-label-sm text-emerald-600 block mt-0.5">AAA Pass</span>
+</div>
+<div class="p-3 bg-surface rounded-xl text-center">
+<span class="font-label-sm text-outline-variant block">ASPECT PRESERVATION</span>
+<span class="font-headline-sm text-primary text-xl font-bold">16:10</span>
+<span class="font-label-sm text-primary block mt-0.5">Zero Shift</span>
+</div>
+</div>
+</div>
+<!-- Live Modal Simulation Drawer (Toggled by Book Table) -->
+<div class="hidden p-5 rounded-2xl bg-surface-container-lowest shadow-xl border-l-4 border-primary transition-all" id="bookingDrawer">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary">concierge</span>
+<h4 class="font-headline-sm text-lg text-on-surface">Noonna Concierge Booking Assistant</h4>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="closeBookingDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-on-surface-variant pb-3">
+            We will liaise directly with the host family to secure outdoor veranda tables, customize dietary tolerances, and coordinate round-trip tuk-tuks.
+          </p>
+<div class="flex items-center justify-end space-x-2">
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md" onclick="closeBookingDrawer()">Cancel</button>
+<a class="px-4 py-1.5 rounded-lg bg-primary text-on-primary font-label-md flex items-center space-x-1" href="https://wa.me/94779206951" target="_blank">
+<span>Send to WhatsApp Concierge</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: COMPONENT ANATOMY & GEOMETRIC BLUEPRINT -->
+<section class="space-y-6 pb-16">
+<div>
+<div class="flex items-center space-x-2">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Section 02</span>
+<span class="text-outline-variant">â€¢</span>
+<span class="font-label-md text-on-surface-variant">Design System Architecture</span>
+</div>
+<h2 class="font-headline-md text-on-surface mt-0.5">Component Anatomy &amp; Geometric Blueprint</h2>
+</div>
+<!-- Anatomy Grid Breakdown -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Module 1 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary font-bold">
+          01
+        </div>
+<h3 class="font-headline-sm text-xl text-on-surface">Hero Container</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Strict 16:10 aspect ratio wrapper (<code class="bg-surface-container px-1 py-0.5 rounded text-primary">aspect-[16/10]</code>). Top radii 16px with overflow containment, dual top pill badges rendered in dark frosted glass (<code class="bg-surface-container px-1 py-0.5 rounded text-primary">backdrop-blur-md</code>) and Ocean Blue pill.
+        </p>
+<div class="pt-2 text-label-sm text-primary font-medium">Radius: 16px Top â€¢ Scrim: 40% V-Grad</div>
+</div>
+<!-- Module 2 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary font-bold">
+          02
+        </div>
+<h3 class="font-headline-sm text-xl text-on-surface">3-Image Strip</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Equally weighted 3-column micro grid (<code class="bg-surface-container px-1 py-0.5 rounded text-primary">grid-cols-3 gap-2</code>). Each thumbnail maintains a 4:3 ratio with 8px radius. Active item takes a 2px high-contrast stroke in <code class="bg-surface-container px-1 py-0.5 rounded text-primary">#397FA8</code>.
+        </p>
+<div class="pt-2 text-label-sm text-primary font-medium">Ratio: 4:3 â€¢ Gap: 8px â€¢ Micro-labels</div>
+</div>
+<!-- Module 3 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary font-bold">
+          03
+        </div>
+<h3 class="font-headline-sm text-xl text-on-surface">Metadata Block</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Structured container utilizing <code class="bg-surface-container px-1 py-0.5 rounded text-primary">bg-surface-container-low</code>. Encapsulates active trading hours with green operational status dot, price range currency indicator, and direct tap-to-call link.
+        </p>
+<div class="pt-2 text-label-sm text-primary font-medium">Elevation: Low-band â€¢ Live Status</div>
+</div>
+<!-- Module 4 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary font-bold">
+          04
+        </div>
+<h3 class="font-headline-sm text-xl text-on-surface">Dual Action Cluster</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Tri-segmented action hub: Directions (deep-link to Google Maps coords), direct phone invoke, and primary Solid Ocean Blue CTA button leading to WhatsApp concierge booking reservation sequence.
+        </p>
+<div class="pt-2 text-label-sm text-primary font-medium">Height: 44px min â€¢ Flex Grow 1</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: COMPLETE 10-VENUE GASTRONOMY DIRECTORY MATRIX -->
+<section class="space-y-6 pb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="flex items-center space-x-2">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Section 03</span>
+<span class="text-outline-variant">â€¢</span>
+<span class="font-label-md text-on-surface-variant">Production Database Schema</span>
+</div>
+<h2 class="font-headline-md text-on-surface mt-0.5">Complete 10-Venue Gastronomy Directory Matrix</h2>
+</div>
+<div class="flex items-center space-x-3 text-label-md text-on-surface-variant">
+<span class="flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-500 mr-1.5"></span> 10 Verified Hosts</span>
+<span>â€¢</span>
+<span>A Taste of Sri Lanka Index</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto rounded-2xl bg-surface-container-lowest shadow-md">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm uppercase tracking-wider">
+<th class="py-4 px-5">Rank &amp; Venue</th>
+<th class="py-4 px-4">Proximity &amp; Location</th>
+<th class="py-4 px-4">Category &amp; Price Range</th>
+<th class="py-4 px-5">Signature Specialty &amp; Dining Ritual</th>
+<th class="py-4 px-5 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm">
+<!-- Venue 1 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">01</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Lucky Fort Restaurant</div>
+<div class="text-outline font-label-sm">4.8â˜… (340 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Galle Fort</div>
+<div class="text-outline font-label-sm">24 km â€¢ 35 min drive</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm">Clay Pot Feast</span>
+<div class="font-semibold text-primary mt-1">Rs 3,250 (Feast for 2)</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Legendary 10-curry tasting table prepared in clay pots over embers. Accompanied by pumpkin coconut stew, deviled eggplant, and crispy papadam.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Lucky+Fort+Restaurant+Galle" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 2 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors bg-surface-container-low/40">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-label-md">02</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg flex items-center gap-1.5">
+<span>Shirani Home Made Rice &amp; Curry</span>
+<span class="material-symbols-outlined text-amber-500 text-[16px]">verified</span>
+</div>
+<div class="text-primary font-label-sm font-semibold">HOTEL TOP PICK â€¢ 4.9â˜…</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div class="font-semibold text-primary">Kadabeddagama</div>
+<div class="text-outline font-label-sm">250m â€¢ 3 min walk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Village Homestyle</span>
+<div class="font-semibold text-primary mt-1">Rs 1,000 â€“ 2,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Breezy village veranda. Rotating daily 6-curry feasts, sweet mango curry, hands-on cooking masterclasses with stone spice grinding.
+            </td>
+<td class="py-4 px-5 text-right space-x-1">
+<button class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm" onclick="switchCard(1)">
+<span>Inspect</span>
+</button>
+</td>
+</tr>
+<!-- Venue 3 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">03</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Kumbala Restaurant &amp; Cafe</div>
+<div class="text-outline font-label-sm">4.7â˜… (180 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Gurubebila</div>
+<div class="text-outline font-label-sm">2.1 km â€¢ 4 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Surfer Community Buffet</span>
+<div class="font-semibold text-primary mt-1">Rs 1,500 â€“ 2,500</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Generous post-surf lunch buffet laid out in clay serving basins. Fresh passion fruit cordials and spiced ginger tea.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Kumbala+Restaurant+Gurubebila" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 4 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">04</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Mettha's Home Cooked Meals</div>
+<div class="text-outline font-label-sm">4.8â˜… (210 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Unawatuna</div>
+<div class="text-outline font-label-sm">18 km â€¢ 28 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Courtyard Kitchen</span>
+<div class="font-semibold text-primary mt-1">Rs 1,000 â€“ 2,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Intimate colonial courtyard garden setting. Mettha prepares each vegetable dish to order with fresh coconut milk pressed at sunrise.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Metthas+Home+Cooked+Meals+Unawatuna" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 5 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">05</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Le' Fish Weligama</div>
+<div class="text-outline font-label-sm">4.7â˜… (420 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Weligama Beach</div>
+<div class="text-outline font-label-sm">3.2 km â€¢ 6 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm">Sunset Charcoal Grill</span>
+<div class="font-semibold text-primary mt-1">Rs 3,000 â€“ 8,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Tables in the sand under hanging lanterns. Select whole red snapper or jumbo prawns straight from returning catamaran outriggers.
+            </td>
+<td class="py-4 px-5 text-right">
+<button class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" onclick="switchCard(2)">
+<span>Inspect</span>
+</button>
+</td>
+</tr>
+<!-- Venue 6 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">06</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Sithum Fish Point</div>
+<div class="text-outline font-label-sm">4.6â˜… (160 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Weligama Bay</div>
+<div class="text-outline font-label-sm">3.0 km â€¢ 5 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Casual Seaside Grill</span>
+<div class="font-semibold text-primary mt-1">Rs 2,000 â€“ 6,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Unpretentious coastal barbecue on wooden benches. Calamari tossed in crushed garlic butter and lime sambol.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Sithum+Fish+Point+Weligama" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 7 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">07</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">After Surf Rooftop Cafe</div>
+<div class="text-outline font-label-sm">4.8â˜… (95 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Pelabandara Watta</div>
+<div class="text-outline font-label-sm">3.5 km â€¢ 7 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Rooftop &amp; Poke Bowls</span>
+<div class="font-semibold text-primary mt-1">Rs 2,000 â€“ 4,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Elevated panoramic ocean look-off. Fresh yellowfin tuna poke bowls, spirulina bowls, and natural sunset kombuchas.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=After+Surf+Cafe+Weligama" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 8 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">08</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Kerabujen Restaurant</div>
+<div class="text-outline font-label-sm">4.5â˜… (110 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Weligama Overlook</div>
+<div class="text-outline font-label-sm">3.4 km â€¢ 6 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">4th Floor Vista Dining</span>
+<div class="font-semibold text-primary mt-1">Rs 2,000 â€“ 6,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              High-elevation 360-degree views across Weligama bay curve. Traditional seafood kothu and curried mud crab.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Kerabujen+Restaurant+Weligama" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 9 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">09</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Aloha Coffee Gallery</div>
+<div class="text-outline font-label-sm">4.8â˜… (310 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Weligama Town</div>
+<div class="text-outline font-label-sm">3.6 km â€¢ 7 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Specialty Coffee &amp; Brunch</span>
+<div class="font-semibold text-primary mt-1">Seasonal â€¢ Rs 1,800â€“3,500</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Chill leafy courtyard gallery serving single-origin Ethiopian cold brews, sourdough toasts with poached local eggs, and cacao bowls.
+            </td>
+<td class="py-4 px-5 text-right">
+<a class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" href="https://maps.google.com/?q=Aloha+Coffee+Gallery+Weligama" rel="noopener noreferrer" target="_blank">
+<span>Map</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</td>
+</tr>
+<!-- Venue 10 -->
+<tr class="hover:bg-surface-container-lowest/80 transition-colors">
+<td class="py-4 px-5">
+<div class="flex items-center space-x-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-label-md">10</span>
+<div>
+<div class="font-semibold text-on-surface font-headline-sm text-lg">Salty Swamis Cafe &amp; Surf Shop</div>
+<div class="text-outline font-label-sm">4.9â˜… (520 Reviews)</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant">
+<div>Narigama Beach</div>
+<div class="text-outline font-label-sm">3.1 km â€¢ 5 min tuk-tuk</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm">Beachside Surf Lounge</span>
+<div class="font-semibold text-primary mt-1">Rs 2,000 â€“ 5,000</div>
+</td>
+<td class="py-4 px-5 text-on-surface-variant max-w-md">
+              Iconic coastal institution. Artisanal sourdough sandwiches, flat whites with oat milk, and beachfront deck dining under almond trees.
+            </td>
+<td class="py-4 px-5 text-right">
+<button class="inline-flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm" onclick="switchCard(3)">
+<span>Inspect</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- SECTION 4: 3 TECHNICAL SPECIFICATION CARDS -->
+<section class="space-y-6 pb-16">
+<div>
+<div class="flex items-center space-x-2">
+<span class="font-label-sm uppercase tracking-widest text-primary font-bold">Section 04</span>
+<span class="text-outline-variant">â€¢</span>
+<span class="font-label-md text-on-surface-variant">Foundations &amp; System Rules</span>
+</div>
+<h2 class="font-headline-md text-on-surface mt-0.5">Technical Specification Cards</h2>
+</div>
+<!-- 3 Spec Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card A: Typography System -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-5">
+<div class="space-y-4">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">format_size</span>
+</div>
+<div>
+<span class="font-label-sm uppercase text-outline-variant block">Token Card A</span>
+<h3 class="font-headline-sm text-xl text-on-surface">Typography System</h3>
+</div>
+</div>
+<div class="space-y-3 pt-2 text-body-sm">
+<div class="p-2.5 rounded-xl bg-surface-container-low">
+<div class="text-primary font-label-sm uppercase tracking-wider">Eyebrow Script</div>
+<div class="font-headline-sm text-lg italic text-primary">EB Garamond Italic / 22â€“30px</div>
+<div class="text-outline text-label-sm">Token: text-primary font-headline-sm</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low">
+<div class="text-on-surface font-label-sm uppercase tracking-wider">Card Title Heading</div>
+<div class="font-headline-md text-on-surface">EB Garamond Medium / 24â€“28px</div>
+<div class="text-outline text-label-sm">Token: text-on-surface font-headline-md</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low">
+<div class="text-primary font-label-sm uppercase tracking-wider">Host &amp; Location Micro</div>
+<div class="font-label-md uppercase tracking-[0.14em] text-primary font-semibold">Inter 600 / 11â€“12px</div>
+<div class="text-outline text-label-sm">Token: font-label-md tracking-wider</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low">
+<div class="text-on-surface-variant font-label-sm uppercase tracking-wider">Editorial Body Copy</div>
+<div class="font-body-md text-on-surface-variant">Inter Regular 400 / 15px (line-height: 24px)</div>
+<div class="text-outline text-label-sm">Token: text-on-surface-variant font-body-md</div>
+</div>
+</div>
+</div>
+<div class="font-label-sm text-outline-variant pt-2">Optical Kerning: Pre-adjusted for mobile &amp; canvas</div>
+</div>
+<!-- Card B: Color Tokens -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-5">
+<div class="space-y-4">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</div>
+<div>
+<span class="font-label-sm uppercase text-outline-variant block">Token Card B</span>
+<h3 class="font-headline-sm text-xl text-on-surface">Coastal Palette Tokens</h3>
+</div>
+</div>
+<div class="space-y-2.5 pt-2">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center space-x-2.5">
+<span class="w-6 h-6 rounded-md bg-primary inline-block shadow-xs"></span>
+<span class="font-label-md text-on-surface">Primary Ocean</span>
+</div>
+<code class="font-label-sm text-primary">#0d628a</code>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center space-x-2.5">
+<span class="w-6 h-6 rounded-md bg-primary-container inline-block shadow-xs"></span>
+<span class="font-label-md text-on-surface">Primary Hover</span>
+</div>
+<code class="font-label-sm text-primary">#347ba4</code>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center space-x-2.5">
+<span class="w-6 h-6 rounded-md bg-tertiary-container inline-block shadow-xs"></span>
+<span class="font-label-md text-on-surface">Deep Coastal</span>
+</div>
+<code class="font-label-sm text-tertiary">#537a8c</code>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center space-x-2.5">
+<span class="w-6 h-6 rounded-md bg-surface-container-highest inline-block shadow-xs"></span>
+<span class="font-label-md text-on-surface">Sea Mist Surface</span>
+</div>
+<code class="font-label-sm text-outline">#e2e2e2</code>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center space-x-2.5">
+<span class="w-6 h-6 rounded-md bg-amber-500 inline-block shadow-xs"></span>
+<span class="font-label-md text-on-surface">Reputation Gold</span>
+</div>
+<code class="font-label-sm text-amber-600">#f59e0b</code>
+</div>
+</div>
+</div>
+<div class="font-label-sm text-outline-variant pt-2">Exclusively using active Tailwind configuration tokens</div>
+</div>
+<!-- Card C: Engineering & Interaction Contract -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-5">
+<div class="space-y-4">
+<div class="flex items-center space-x-2.5">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<div>
+<span class="font-label-sm uppercase text-outline-variant block">Token Card C</span>
+<h3 class="font-headline-sm text-xl text-on-surface">Engineering Contract</h3>
+</div>
+</div>
+<div class="space-y-3 pt-2 text-body-sm text-on-surface-variant">
+<div class="flex items-start space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Grid Rhythm:</strong> 1-col on mobile, 2-col on tablet (768px+), 3-col on desktop (1200px+).</span>
+</div>
+<div class="flex items-start space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Image Swapping:</strong> Smooth hero cross-fade upon clicking any thumbnail in the 3-image strip without page reload.</span>
+</div>
+<div class="flex items-start space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>External Protocol:</strong> Google Maps &amp; WhatsApp triggers open via verified external parameters with <code class="bg-surface-container px-1 py-0.5 rounded text-primary text-xs">rel="noopener noreferrer"</code>.</span>
+</div>
+<div class="flex items-start space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Concierge Modal:</strong> Standardized event bus trigger <code class="bg-surface-container px-1 py-0.5 rounded text-primary text-xs">onConciergeRequest(venueId)</code>.</span>
+</div>
+</div>
+</div>
+<div class="font-label-sm text-outline-variant pt-2">Schema Spec Reference: DS-DINING-V1.0</div>
+</div>
+</div>
+</section>
+<!-- Master Spec Footer Bar -->
+<footer class="pt-8 pb-12 mt-4 border-t border-surface-container flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-md gap-4">
+<div class="flex items-center space-x-2">
+<span class="font-headline-sm text-primary tracking-tight">Noonna Beach Hotel</span>
+<span>â€¢</span>
+<span>Digital Art Direction Master Specification</span>
+</div>
+<div class="flex items-center space-x-3 text-label-sm">
+<span class="text-outline">Token Ref: CULINARY-CARD-DS-V1</span>
+<span>â€¢</span>
+<span>Â© 2026 Noonna Sanctuary</span>
+</div>
+</footer>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+  const cardData = [
+    {
+      title: "1. Lucky Fort Restaurant",
+      subtitle: "Master Curry Artisans â€¢ Pradeep & Family Kitchen",
+      description: "Famed culinary benchmark celebrated for its grand 10-curry tasting table. Spices hand-ground on granite slabs, served with organic red heirloom rice, crispy papadam, and fragrant coconut sambol.",
+      location: "GALLE FORT â€¢ 24 KM",
+      categoryBadge: "HOTEL FAVORITE",
+      rating: "4.8",
+      reviews: "(340 Google â€¢ 4.8â˜… TripAdvisor)",
+      proximity: "24 KM â€¢ 35 MIN DRIVE",
+      hours: "11:00 AM â€“ 10:30 PM â€¢ Open Daily",
+      price: "Rs 1,600 â€“ 3,500",
+      phone: "+94 91 224 2901",
+      mapUrl: "https://maps.google.com/?q=Lucky+Fort+Restaurant+Galle",
+      badges: ["10-Curry Clay Pot Feast â€¢ Rs 3,250 for 2", "Hand-ground Masalas", "Herb Garden Setting"],
+      images: [
+        { label: "Clay Pots", prompt: "Clay cooking pots arranged over coconut wood embers in an open rustic kitchen with glowing warm sunset light, traditional Sri Lankan kitchen setting" },
+        { label: "10 Curries", prompt: "A table filled with ten earthenware bowls filled with colorful curries, brown rice, papadums and lime wedges on a woven runner" },
+        { label: "Courtyard", prompt: "Courtyard dining under tropical palm trees and ambient hanging string lights in Galle Fort Sri Lanka" }
+      ]
+    },
+    {
+      title: "2. Shirani Home Made Rice & Curry",
+      subtitle: "Shirani & Lala's Family Kitchen â€¢ No. 36 Kadabeddagama",
+      description: "Simmered slowly over coconut husk fire in hand-crafted clay pots on a breezy village veranda 3 minutes from our gate. Renowned for rotating daily 6-curry feasts, mango curry, and personal cooking lessons.",
+      location: "KADABEDDAGAMA â€¢ 250M WALK",
+      categoryBadge: "VILLAGE HOMESTYLE",
+      rating: "4.9",
+      reviews: "(288 Google â€¢ 4.9â˜… TripAdvisor)",
+      proximity: "3 MINS WALK",
+      hours: "10:00 AM â€“ 10:00 PM â€¢ Open daily",
+      price: "Rs 1,000 â€“ 2,000",
+      phone: "+94 77 920 6951",
+      mapUrl: "https://maps.google.com/?q=Shirani+Home+Made+Rice+Curry+Gurubebila",
+      badges: ["Daily 6-Curries Feast & Fish â€¢ Rs 1,000â€“2,000", "Veranda Cooking Classes", "Stone spice grinding"],
+      images: [
+        { label: "Veranda", prompt: "Sri Lankan open veranda with wooden dining tables overlooking lush green banana plants and breadfruit trees in soft coastal light" },
+        { label: "6 Curries", prompt: "Close up top view of a white ceramic plate with red village rice, spiced jackfruit curry, dhal curry, green gotukola sambol and fried salted chili" },
+        { label: "Cooking Class", prompt: "Local Sri Lankan woman demonstrating spice grinding on an ancient black granite mortar on an outdoor wooden table" }
+      ]
+    },
+    {
+      title: "3. Le' Fish Weligama",
+      subtitle: "Beachfront Fresh Catch â€¢ Weligama Bay Pier",
+      description: "Atmospheric dinner tables arranged directly in soft sand beneath swaying coconut palms. Select whole red snapper, swordfish steaks, or tiger prawns caught that afternoon and grilled over coconut charcoal.",
+      location: "WELIGAMA BEACH â€¢ 3.2 KM",
+      categoryBadge: "OCEANFRONT GRILL",
+      rating: "4.7",
+      reviews: "(420 Google â€¢ 4.6â˜… TripAdvisor)",
+      proximity: "6 MINS TUK-TUK",
+      hours: "04:30 PM â€“ 11:30 PM â€¢ Sunset Catch",
+      price: "Rs 3,000 â€“ 8,000",
+      phone: "+94 71 832 9912",
+      mapUrl: "https://maps.google.com/?q=Le+Fish+Weligama",
+      badges: ["Fresh Catch Display", "Charcoal Grilled Seafood", "Candlelit Sand Tables"],
+      images: [
+        { label: "Sunset Catch", prompt: "Oceanfront wooden dining tables on beach sand with candle lanterns at dusk, gentle ocean waves rolling in under deep indigo twilight sky" },
+        { label: "Fresh Grill", prompt: "Fresh whole red snapper seasoned with lime, curry leaves, and spices grilling over charcoal embers outdoors" },
+        { label: "Beach Tables", prompt: "Bamboo cabana chairs and wooden tables on the beach with string fairy lights overhead at twilight in Sri Lanka" }
+      ]
+    },
+    {
+      title: "4. Salty Swamis Cafe & Surf Shop",
+      subtitle: "Specialty Roasters & Beach Bar â€¢ Narigama",
+      description: "Beloved coastal surf retreat serving artisan espresso, cold drip, toasted sourdough, and smashed avocado plates under shade trees with direct visual panorama of peeling beach break waves.",
+      location: "NARIGAMA BEACH â€¢ 3.1 KM",
+      categoryBadge: "SURF ROASTERY",
+      rating: "4.9",
+      reviews: "(520 Google â€¢ 4.9â˜… TripAdvisor)",
+      proximity: "5 MINS TUK-TUK",
+      hours: "07:30 AM â€“ 04:30 PM â€¢ Daily",
+      price: "Rs 2,000 â€“ 5,000",
+      phone: "+94 91 494 4820",
+      mapUrl: "https://maps.google.com/?q=Salty+Swamis+Cafe",
+      badges: ["Single-Origin Coffee", "House Sourdough", "Surfboard Shaping Bay"],
+      images: [
+        { label: "Surf Deck", prompt: "Surfers relaxing on outdoor wooden deck tables beneath coastal almond trees overlooking waves on the southern coast of Sri Lanka" },
+        { label: "Specialty Roast", prompt: "Pour-over specialty artisan coffee setup with ceramic mug and steamed flat white with leaf latte art on light teak table" },
+        { label: "Sourdough", prompt: "Crispy open-faced sourdough toast topped with creamy avocado, poached organic egg, chili flakes and microgreens in sunny coastal cafe" }
+      ]
+    }
+  ];
+
+  let currentCardIndex = 0;
+  let currentImageIndex = 0;
+
+  function switchCard(index) {
+    currentCardIndex = index;
+    currentImageIndex = 0;
+    const data = cardData[index];
+
+    // Update tab bar
+    const tabs = document.querySelectorAll("#cardTabs .tab-btn");
+    tabs.forEach((tab, idx) => {
+      if (idx === index) {
+        tab.className = "tab-btn active px-3.5 py-1.5 rounded-lg text-on-primary bg-primary font-label-md transition-all shadow-sm";
+      } else {
+        tab.className = "tab-btn px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md transition-all";
+      }
+    });
+
+    // Update Card Contents
+    document.getElementById("cardTitle").innerText = data.title;
+    document.getElementById("cardSubtitle").innerText = data.subtitle;
+    document.getElementById("cardDescription").innerText = data.description;
+    document.getElementById("cardBadgeLoc").innerText = data.location;
+    document.getElementById("cardBadgeCat").innerText = data.categoryBadge;
+    document.getElementById("cardRating").innerText = data.rating;
+    document.getElementById("cardReviews").innerText = data.reviews;
+    document.getElementById("cardProximity").innerText = data.proximity;
+    document.getElementById("cardHours").innerText = data.hours;
+    document.getElementById("cardPriceTier").innerText = data.price;
+    document.getElementById("cardPhone").innerText = data.phone;
+    document.getElementById("cardMapBtn").href = data.mapUrl;
+    document.getElementById("cardCallBtn").href = "tel:" + data.phone.replace(/[^0-9+]/g, '');
+
+    // Update Feature Badges
+    const badgeContainer = document.getElementById("cardBadgesList");
+    badgeContainer.innerHTML = "";
+    data.badges.forEach((b, i) => {
+      const span = document.createElement("span");
+      span.className = i === 0 
+        ? "px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm"
+        : "px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm";
+      span.innerText = b;
+      badgeContainer.appendChild(span);
+    });
+
+    // Update Thumbnails
+    for (let i = 0; i < 3; i++) {
+      const img = document.getElementById("thumb" + i);
+      const label = document.getElementById("thumbLabel" + i);
+      if (data.images[i]) {
+        img.setAttribute("data-alt", data.images[i].prompt);
+        label.innerText = data.images[i].label;
+      }
+    }
+
+    setCardImage(0);
+  }
+
+  function setCardImage(imageIdx) {
+    currentImageIndex = imageIdx;
+    const data = cardData[currentCardIndex];
+    const heroImg = document.getElementById("primaryHeroImg");
+    
+    if (data.images[imageIdx]) {
+      heroImg.setAttribute("data-alt", data.images[imageIdx].prompt);
+      document.getElementById("photoCount").innerText = (imageIdx + 1) + " / 3 Captured";
+    }
+
+    // Toggle active ring on thumbnail buttons
+    const thumbBtns = document.querySelectorAll("#galleryStrip .thumb-btn");
+    thumbBtns.forEach((btn, idx) => {
+      if (idx === imageIdx) {
+        btn.classList.add("ring-2", "ring-primary");
+        btn.classList.remove("ring-0");
+      } else {
+        btn.classList.remove("ring-2", "ring-primary");
+        btn.classList.add("ring-0");
+      }
+    });
+  }
+
+  function openBookingDrawer() {
+    const drawer = document.getElementById("bookingDrawer");
+    drawer.classList.remove("hidden");
+    drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function closeBookingDrawer() {
+    document.getElementById("bookingDrawer").classList.add("hidden");
+  }
+</script></main></div></body></html>
