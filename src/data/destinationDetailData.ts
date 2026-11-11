@@ -3260,6 +3260,262 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
   },
 };
 
+const parrotRockBase = BEACH_DESTINATIONS.find((d) => d.slug === "parrot-rock");
+
+export const PARROT_ROCK_DETAIL: DestinationDetail = {
+  slug: "parrot-rock",
+  name: parrotRockBase?.name ?? "Parrot Rock",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Offshore Islet", "Panoramic Viewpoint"],
+  distanceLabel: parrotRockBase?.distance ? `${parrotRockBase.distance} from Noonna` : "~5.8 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Parrot Rock rocky islet rising above Mirissa Bay and the Indian Ocean",
+    script: "offshore lookout & crashing ocean crests...",
+    title: "Parrot Rock Mirissa",
+    deck: "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated 360-degree panoramic views across the golden bay and open ocean.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa Bay" },
+      { icon: "compass", label: "Offshore Rocky Islet & Viewpoint" },
+      { icon: "wb_sunny", label: "Prime Viewing: Low to Mid Tide" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & viewpoint intelligence...",
+    sectionTitle: "Parrot Rock At A Glance: Islet, Surf & Horizon",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning islet climbs, bay observation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Looking back at Mirissa golden beach from the heights of Parrot Rock",
+      topBadge: "Offshore Panoramic Islet",
+      distanceBadge: "5.8 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Access: 07:00 – 11:00 AM (Low to Mid Tide)",
+      title: "Elevated Bay Lookout & Wave Vantage",
+      description:
+        "A striking rock formation standing just off the sandy shore. Climbing to its summit provides sweeping vistas of surfers, beach coves, and turquoise horizon waters.",
+      facts: [
+        { icon: "thermostat", label: "Coastal Breeze: Refreshing Open-Ocean Air" },
+        { icon: "footprint", label: "Sturdy Footwear Recommended for Rock Steps" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Access Window",
+        title: "Prime Access & Tide Window",
+        pill: "Morning Low Tide",
+        description:
+          "Visiting during morning low to mid tide ensures the safest and easiest crossing from the main sandy beach onto the rock stairway.",
+        left: { icon: "air", label: "Refreshing ocean breeze" },
+        right: "Safe tide crossing",
+      },
+      {
+        icon: "compass",
+        eyebrow: "Vantage Character",
+        title: "Islet & Vibe Character",
+        pill: "Elevated Lookout",
+        description:
+          "An invigorating climb yielding unmatched vantage points over Mirissa's sweeping coastline and breaking waves.",
+        left: { icon: "waves", label: "Surrounding surf spray" },
+        right: "360-degree ocean views",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'40\"N 80°27'30\"E",
+      title: "Door-to-Islet Access",
+      description:
+        "Located ~5.8 km east along the Matara Coastal Road (A2) to Mirissa Beach. Reached in 10 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9444,80.4583",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Parrot%20Rock%20Mirissa.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Parrot Rock",
+    sectionDeck:
+      "Positioned 5.8 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this iconic offshore islet is a quick, scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "5.8 km along Matara Coastal Road (A2)",
+        durationBadge: "~10 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa beach",
+        description:
+          "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal palm strip, dropping you directly at Mirissa main beach.",
+        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "Enjoy a comfortable air-conditioned private car transfer arranged by our concierge for your morning or afternoon excursion.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Parrot Rock",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Parrot Rock offshore islet rising above Mirissa Bay surf",
+        topBadge: "08:00 AM • Morning View",
+        topBadgeRight: "5.8 km from hotel",
+        script: "ocean lookout...",
+        title: "Summit Vista over Mirissa Bay",
+        description: "Panoramic views looking back toward the golden crescent beach and rolling waves.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Waves crashing against the rocky base of Parrot Rock",
+        topBadge: "Wave Action",
+        topBadgeRight: "Surrounding Surf",
+        script: "spray & stone...",
+        title: "Crashing Surf Below",
+        description: "Dynamic ocean swells breaking dramatically against the rocky base of the islet.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Shallow water crossing leading to Parrot Rock at low tide",
+        topBadge: "Low-Tide Crossing",
+        topBadgeRight: "Sand Spit",
+        script: "path & tide...",
+        title: "Islet Access Walkway",
+        description: "The natural sand spit and shallow crossing connecting the mainland to Parrot Rock.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset glow over Parrot Rock Mirissa",
+        topBadge: "18:00 PM • Sunset Glow",
+        topBadgeRight: "Golden Hour",
+        script: "evening light...",
+        title: "Twilight Ocean Horizon",
+        description: "Warm evening twilight washing over the offshore rock and surrounding bay waters.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Parrot Rock. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "coconut-tree-hill",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Coconut Tree Hill in Mirissa overlooking the Indian Ocean",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.2 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Coconut Tree Hill & Mirissa Point",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        footerLeft: "Ideal at dawn or golden hour",
+        href: "/experiences/coconut-tree-hill",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-beach-mirissa",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa hidden cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.5 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Beach Mirissa",
+        description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+        footerLeft: "Ideal for morning snorkeling & cliffside views",
+        href: "/experiences/secret-beach-mirissa",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "polhena-beach-coral-reef",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Polhena Beach natural coral pool",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
+        footerLeft: "Best in settled seas & morning light",
+        href: "/experiences/polhena-beach-coral-reef",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Parrot Rock Outing?",
+    deck: "Our concierge team will arrange comfortable transport, check optimal low-tide crossing times, and ensure your morning towels or camera gear are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Parrot%20Rock%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -3272,6 +3528,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   POLHENA_BEACH_CORAL_REEF_DETAIL,
   SECRET_BEACH_MIRISSA_DETAIL,
   COCONUT_TREE_HILL_DETAIL,
+  PARROT_ROCK_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

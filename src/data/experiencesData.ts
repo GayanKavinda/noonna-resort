@@ -215,13 +215,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "parrot-rock",
     name: "Parrot Rock",
     category: "beach",
-    badge: "Tidal Red Rock Islet",
+    badge: "Offshore Islet",
     distance: "~5.8 km",
-    subtitle: "Mirissa Bay Panoramas",
+    subtitle: "Panoramic Viewpoint",
     description:
-      "A standalone oceanic red rock islet situated right in Mirissa Bay, accessible via shallow tidal sandbars at low water, offering panoramic vistas across the surf arcs.",
-    features: ["Tidal Sandbar Walk", "Panoramic Bay View", "Low-Tide Access"],
+      "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated 360-degree panoramic views across the golden bay and open ocean.",
+    features: ["Offshore Rocky Islet", "360° Bay View", "Low-Tide Crossing"],
     ctaLabel: "Low Tide Timetable",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Parrot Rock rocky islet rising above Mirissa Bay and the Indian Ocean",
   },
   {
     id: "mirissa-coastal-promontory",

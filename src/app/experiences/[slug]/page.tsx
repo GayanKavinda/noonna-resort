@@ -22,6 +22,7 @@ export async function generateStaticParams() {
     { slug: "polhena-beach-coral-reef" },
     { slug: "secret-beach-mirissa" },
     { slug: "coconut-tree-hill" },
+    { slug: "parrot-rock" },
   ];
 }
 
