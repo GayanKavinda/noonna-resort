@@ -1405,11 +1405,283 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
+const lazyLeftBase = BEACH_DESTINATIONS.find((d) => d.slug === "lazy-left-surf-break");
+
+export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
+  slug: "lazy-left-surf-break",
+  name: lazyLeftBase?.name ?? "Lazy Left Surf Break",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Iconic Reef Break", "Longboard Haven"],
+  distanceLabel: lazyLeftBase?.distance ? `${lazyLeftBase.distance} from Noonna` : "~1.5 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Clean left-hand peeling wave at Lazy Left surf break in Midigama",
+    script: "endless left walls & glassy dawn swells...",
+    title: "Lazy Left Surf Break",
+    deck: "Sri Lanka's legendary long-peeling left-hand reef break—celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Midigama" },
+      { icon: "surfing", label: "Deep Reef Left Point Break" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "surf intelligence & swell dispatch...",
+    sectionTitle: "Lazy Left At A Glance: Swell, Reef & Rhythm",
+    sectionDeck:
+      "Essential field notes and wave conditions for morning dawn patrols, reef navigation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Crystal clear water and peeling wave crest at Midigama Lazy Left",
+      topBadge: "Legendary Left Lineup",
+      distanceBadge: "1.5 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 06:00 – 09:30 AM (Low to Mid Tide)",
+      title: "Long-Walling Lefts over Volcanic Shelf",
+      description:
+        "A reliable reef break delivering smooth, peeling left-hand rides spanning hundreds of meters. Features a gentle takeoff that mellows into forgiving, open shoulders.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Booties Recommended for Outer Shelf" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Swell Window",
+        title: "Prime Swell & Wind Window",
+        pill: "Dawn & Offshore",
+        description:
+          "Glassy dawn sessions between 06:00 – 09:30 AM with offshore North-Northeast (NNE) winds and South-Southwest (SSW) groundswells.",
+        left: { icon: "air", label: "Light offshore NNE winds" },
+        right: "SSW groundswell alignment",
+      },
+      {
+        icon: "surfing",
+        eyebrow: "Break Specs",
+        title: "Wave Character & Suitability",
+        pill: "Intermediate / Longboard",
+        description:
+          "Works best from 3 to 8 feet. Provides a friendly channel for paddling back out and long, walling rides favored by longboarders and progressive shortboarders.",
+        left: { icon: "waves", label: "Left-hand reef break" },
+        right: "Easy beach channel entry",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°57'45\"N 80°23'20\"E",
+      title: "Door-to-Lineup Access",
+      description:
+        "Just 1.5 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 5-minute coastal bicycle cruise.",
+      mapsHref: "https://maps.google.com/?q=5.9625,80.3880",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Lazy%20Left%20swell%20and%20tide%20updates.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Lazy Left Surf Break",
+    sectionDeck:
+      "Positioned 1.5 km west of Noonna Beach Hotel along the southern coastal road, reaching Midigama's premier surf lineup is quick and effortless:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "1.5 km along Matara Coastal Road (A2)",
+        durationBadge: "~3 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Tuk-tuk with surfboard racks heading toward Midigama surf breaks",
+        description:
+          "Our front desk connects you with local drivers for a fast, breezy ride straight to the Midigama beachfront facing Lazy Left.",
+        leftNote: "Estimated fare: 300–400 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Scenic coastal lane path",
+        durationBadge: "~5 mins",
+        icon: "pedal_bike",
+        iconLabel: "Guest Quiver Bike",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Cruiser bicycle with surfboard racks parked near Midigama beach",
+        description:
+          "Pedal down short coastal roads on our custom cruiser bikes outfitted with secure front surf racks.",
+        leftNote: "Complimentary for guests (subject to availability)",
+        rightNote: "Locks & racks provided",
+        featured: true,
+      },
+      {
+        title: "Low-Tide Shoreline Stroll",
+        subtitle: "Barefoot beach walk along coves",
+        durationBadge: "~15 mins",
+        icon: "footprint",
+        iconLabel: "Tideline Walk",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Shoreline walking view along Midigama coastal coves",
+        description:
+          "Take a leisurely morning barefoot walk westward along the golden tide line during low tide, enjoying ocean views all the way.",
+        leftNote: "Best during morning low tide",
+        rightNote: "Reef shoes recommended",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Lazy Left",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Clean glass wave peeling across Lazy Left lineup in Midigama",
+        topBadge: "06:15 AM • Dawn Glass",
+        topBadgeRight: "1.5 km from hotel",
+        script: "morning swell...",
+        title: "Dawn Glass over Lazy Left",
+        description: "Crisp offshore walls peeling unhurried over shallow coral shelves in crystalline morning light.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Surfer preparing longboard on golden sand near Midigama break",
+        topBadge: "Dawn Patrol Ritual",
+        topBadgeRight: "Quiver Prep",
+        script: "wax & wave...",
+        title: "Pre-Surf Setup",
+        description: "Single and longboards waxed on golden sands before paddling out into the morning lineup.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Palm tree canopy along Midigama coastal road near surf spot",
+        topBadge: "Coastal Approach",
+        topBadgeRight: "Palm Canopy",
+        script: "canopy path...",
+        title: "Shaded Coastal Access",
+        description: "Tranquil roadside coconut groves framing the short trip from Noonna Beach Hotel.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Golden sunset reflection over Midigama ocean waters",
+        topBadge: "18:00 PM • Golden Hour",
+        topBadgeRight: "Evening Glow",
+        script: "sunset surf...",
+        title: "Twilight Peelers",
+        description: "Evening golden hour sessions bathed in warm amber Indian Ocean light.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Lazy Left. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "abimanagama-beach",
+        filter: "beaches",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Calm turquoise waters and golden sand cove at Abimanagama Beach",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "2.9 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Abimanagama Beach",
+        description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
+        footerLeft: "Ideal for unhurried morning swims",
+        href: "/experiences/abimanagama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Lazy Left Surf Session?",
+    deck: "Our team will arrange reliable tuk-tuk transport, check live tide and swell reports, provide reef booties, and ensure your morning gear is ready.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Lazy%20Left%20surf%20session.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
   WELIGAMA_BEACH_DETAIL,
   AHANGAMA_BEACH_DETAIL,
+  LAZY_LEFT_SURF_BREAK_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

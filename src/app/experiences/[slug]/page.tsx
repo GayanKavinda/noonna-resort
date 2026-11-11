@@ -15,6 +15,7 @@ export async function generateStaticParams() {
     { slug: "abimanagama-beach" },
     { slug: "weligama-beach" },
     { slug: "ahangama-beach" },
+    { slug: "lazy-left-surf-break" },
   ];
 }
 

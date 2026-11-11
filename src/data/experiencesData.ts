@@ -106,13 +106,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "lazy-left-surf-break",
     name: "Lazy Left Surf Break",
     category: "beach",
-    badge: "Classic Point Break",
+    badge: "Iconic Reef Break",
     distance: "~1.5 km",
-    subtitle: "Intermediate to Advanced Swell",
+    subtitle: "Longboard Haven",
     description:
-      "A renowned, long-peeling left-hand reef wave breaking over a deep coral bed. Exceptionally smooth and consistent on medium south-west swells, making it one of Midigama's most beloved dawn patrol spots.",
-    features: ["Long Left Swell", "Deep Reef Bed", "Consistent Break"],
-    ctaLabel: "Check Swell Windows",
+      "Sri Lanka's legendary long-peeling left-hand reef break—celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
+    features: ["Deep Reef Left", "Longboard Haven", "Dawn Glass"],
+    ctaLabel: "View Surf Intel",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Clean left-hand peeling wave at Lazy Left surf break in Midigama",
   },
   {
     id: "rams-right-surf-break",
