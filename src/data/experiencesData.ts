@@ -199,13 +199,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "coconut-tree-hill",
     name: "Coconut Tree Hill",
     category: "beach",
-    badge: "Iconic Promontory",
+    badge: "Iconic Viewpoint",
     distance: "~6.2 km",
-    subtitle: "Sunrise & Twilight Viewpoint",
+    subtitle: "Red Cliff Promontory",
     description:
-      "A dramatic red-clay dome jutting straight into the Indian Ocean, densely crowned with towering leaning coconut palms that frame unobstructed horizon views.",
-    features: ["Red Clay Headland", "Leaning Palms", "360° Ocean Horizon"],
+      "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
+    features: ["Red Clay Promontory", "Crown Palms", "360° Horizon"],
     ctaLabel: "Sunset Times",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Coconut Tree Hill in Mirissa crowned with swaying palms over the Indian Ocean",
   },
   {
     id: "parrot-rock",
