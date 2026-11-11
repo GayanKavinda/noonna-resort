@@ -14,6 +14,7 @@ import {
 const cardIconMap = {
   schedule: Clock,
   surfing: Waves,
+  pool: Droplets,
 } as const;
 
 export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitalsData }) {
