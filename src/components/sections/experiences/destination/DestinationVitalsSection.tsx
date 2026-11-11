@@ -52,16 +52,16 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#173F56]/95 via-[#173F56]/35 to-transparent" />
             <div className="absolute top-6 left-6 right-6 flex flex-wrap items-center justify-between gap-3 z-10">
-              <span className="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-medium tracking-wide border border-white/25 shadow-sm flex items-center gap-1.5">
+              <span className="px-3.5 py-1.5 rounded-full bg-[#173F56]/85 backdrop-blur-md text-white text-xs font-semibold tracking-wide border border-white/25 shadow-sm flex items-center gap-1.5">
                 <Waves className="w-[15px] h-[15px] text-tertiary-fixed" aria-hidden="true" /> {showcase.topBadge}
               </span>
-              <span className="px-3 py-1 rounded-full bg-[#173F56]/80 backdrop-blur-md text-tertiary-fixed text-xs font-medium border border-white/15 flex items-center gap-1.5">
-                <MapPin className="w-[15px] h-[15px]" aria-hidden="true" /> {showcase.distanceBadge}
+              <span className="px-3 py-1 rounded-full bg-[#173F56]/95 backdrop-blur-md text-white text-xs font-semibold border border-white/25 shadow-sm flex items-center gap-1.5">
+                <MapPin className="w-[15px] h-[15px] text-tertiary-fixed" aria-hidden="true" /> {showcase.distanceBadge}
               </span>
             </div>
             <div className="relative p-8 z-10 text-white">
               <div className="flex items-center gap-2 mb-2">
-                <span className="px-2.5 py-0.5 rounded-full bg-tertiary-fixed/20 text-tertiary-fixed text-[11px] font-medium uppercase tracking-wider border border-tertiary-fixed/30">
+                <span className="px-2.5 py-0.5 rounded-full bg-[#173F56]/80 text-white text-[11px] font-semibold uppercase tracking-wider border border-white/25">
                   {showcase.panelBadge}
                 </span>
                 <span className="text-xs text-white/80">{showcase.panelBadgeText}</span>

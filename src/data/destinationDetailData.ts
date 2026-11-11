@@ -99,8 +99,16 @@ export interface DestinationGalleryData {
   items: DestinationGalleryItem[];
 }
 
+export type DestinationDiscoverFilterId =
+  | "all"
+  | "beaches"
+  | "spots"
+  | "heritage"
+  | "taste";
+
 export interface DestinationDiscoverSlide {
   id: string;
+  filter: Exclude<DestinationDiscoverFilterId, "all">;
   image: string;
   imageAlt: string;
   topBadge: string;
@@ -363,6 +371,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     slides: [
       {
         id: "galle-dutch-fort",
+        filter: "heritage",
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
         imageAlt: "Galle Dutch Fort ocean ramparts and historic stone lighthouse bastion",
@@ -380,6 +389,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         id: "coconut-tree-hill",
+        filter: "spots",
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
         imageAlt: "Coconut Tree Hill in Mirissa overlooking the Indian Ocean",
@@ -397,6 +407,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         id: "shirani-home-made-rice-curry",
+        filter: "taste",
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuBF-PDGX8yJQXxmnEWLqaxJsn-qkR6vHC3GYWU-hZesskSeUhlYL1dNEgMx670Pj3riWYEP7Fqk2_LixTXaS-bvSrzT5zfL26q_S9R9_ZKSjcHrHfDq_c2Ljkbr8MidTkvGJ28pdv6IyHuVBBMAG94IKVz0RWC5imuDgaxg3nhnncra81h9_j47Ye3ospRaNXekrqILhVCD1j7sLdFD_4SOzUPiD_qWKDWuMzM4eKyCqNtAHudxc5NE9Q",
         imageAlt: "Shirani Home Made Rice & Curry authentic storefront and restaurant in Weligama",
@@ -414,6 +425,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         id: "kushtarajagala-rock-relief",
+        filter: "heritage",
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
         imageAlt: "Ancient Kushtarajagala Bodhisattva rock relief carved into massive granite boulder",
@@ -431,6 +443,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         id: "koggala-lake-cinnamon-island",
+        filter: "heritage",
         image:
           "https://lh3.googleusercontent.com/aida/AEtjO1V0IcFLWz4OIUDOkUbRQE8Oeo_YfMBPpbiQuKC9qtsmnqL7YVaGLeUyoeJgUkuwKi64LS_sVYNAQ4unp2R2iJ4PQ0otYfd3tko4dD38lpnEqeTkXXjp_BjcH-YfagJb7y1Q8XZfEzo-Mk971W0O2OA_RIlzswHIcbIdnMQpsnbq3xrWTUB33rzUOyilqmmBb82lMhqVji36efy_5HnLLKGLuKoxopTUoUQ-Wcfm_bEe9Q",
         imageAlt: "Koggala Lake serene lagoon boat safari through mangroves and cinnamon island",
@@ -448,6 +461,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         id: "mirissa-whale-watching",
+        filter: "spots",
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuASH_yMHWtTPBRF1eqeiXfC-9AZLYvIxwi3P-xAwihEGAQPYCqhbVgE8CCUgxiIfsCoT6CsLa0wgXl5zuAyTVzKQoI8OoFHZYo-F3huY7ojQRtHQwMm20BQ1-WUtrujf8NFnGW5f1HWFG49r8vmukOkDB0RNq4WH0gyOrpkm5F-3UGHZs4eG3DxqlXakhU7RhupQMt_USSSgWrjlWdymUTERkbSO9nzTNJFLUZ-iO2OL4BJV4bZ17KcBg",
         imageAlt: "Mirissa Whale Watching majestic blue whale tail off the southern coast",
@@ -462,6 +476,60 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         footerLeft: "Dawn offshore boat departures",
         href: "/experiences",
         linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.2 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline",
+        href: "/experiences",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "polhena-tidal-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Sheltered natural tidal pool along the southern coast",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description:
+          "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip.",
+        footerLeft: "Best in settled seas",
+        href: "/experiences",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "coastal-spice-lunch",
+        filter: "taste",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuBF-PDGX8yJQXxmnEWLqaxJsn-qkR6vHC3GYWU-hZesskSeUhlYL1dNEgMx670Pj3riWYEP7Fqk2_LixTXaS-bvSrzT5zfL26q_S9R9_ZKSjcHrHfDq_c2Ljkbr8MidTkvGJ28pdv6IyHuVBBMAG94IKVz0RWC5imuDgaxg3nhnncra81h9_j47Ye3ospRaNXekrqILhVCD1j7sLdFD_4SOzUPiD_qWKDWuMzM4eKyCqNtAHudxc5NE9Q",
+        imageAlt: "Traditional Sri Lankan rice and curry spread in coastal setting",
+        topBadge: "Single Dining Directory",
+        topBadgeVariant: "glass",
+        distance: "2.4 km",
+        categoryIcon: "utensils",
+        category: "A Taste of Sri Lanka",
+        title: "Coastal Spice Lunch Tables",
+        description:
+          "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
+        footerLeft: "Host recommendations available",
+        href: "/experiences/dining",
+        linkLabel: "Explore Coastal Dining Guide →",
       },
     ],
   },

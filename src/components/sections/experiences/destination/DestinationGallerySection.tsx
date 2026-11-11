@@ -45,12 +45,16 @@ export function DestinationGallerySection({ gallery }: { gallery: DestinationGal
                   <div className="absolute inset-0 bg-gradient-to-t from-[#173F56]/90 via-[#173F56]/35 to-transparent" />
                 </div>
                 <div className="relative p-6 flex items-start justify-between z-10">
-                  <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-[11px] font-semibold tracking-wider uppercase border border-white/25 shadow-sm font-['Inter',sans-serif]">
+                  <span className="px-3 py-1 rounded-full bg-[#173F56]/85 backdrop-blur-md text-white text-[11px] font-semibold tracking-wider uppercase border border-white/25 shadow-sm font-['Inter',sans-serif]">
                     {item.topBadge}
                   </span>
                   {item.topBadgeRight ? (
-                    <span className="px-3 py-1 rounded-full bg-[#173F56]/80 backdrop-blur-md text-tertiary-fixed text-[11px] font-medium border border-white/15 font-['Inter',sans-serif] flex items-center gap-1">
-                      {item.topBadgeRight.includes("km") ? <MapPin className="w-[14px] h-[14px]" aria-hidden="true" /> : null}
+                    <span className={`px-3 py-1 rounded-full backdrop-blur-md text-[11px] font-semibold border font-['Inter',sans-serif] flex items-center gap-1 shadow-sm ${
+                      item.topBadgeRight.includes("km")
+                        ? "bg-[#397FA8] text-white border-white/20"
+                        : "bg-white/90 text-[#173F56] border-white/80"
+                    }`}>
+                      {item.topBadgeRight.includes("km") ? <MapPin className="w-[14px] h-[14px] text-white" aria-hidden="true" /> : null}
                       {item.topBadgeRight}
                     </span>
                   ) : null}

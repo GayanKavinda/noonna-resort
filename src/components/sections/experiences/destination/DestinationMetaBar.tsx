@@ -24,8 +24,8 @@ export function DestinationMetaBar({ destination }: { destination: DestinationDe
                 {tag}
               </span>
             ))}
-            <span className="px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant text-xs font-medium flex items-center gap-1">
-              <MapPin className="w-[14px] h-[14px]" aria-hidden="true" />
+            <span className="px-3 py-1 rounded-full bg-[#173F56] text-white text-xs font-semibold flex items-center gap-1.5 border border-[#173F56] shadow-sm">
+              <MapPin className="w-[14px] h-[14px] text-tertiary-fixed" aria-hidden="true" />
               {destination.distanceLabel}
             </span>
           </div>

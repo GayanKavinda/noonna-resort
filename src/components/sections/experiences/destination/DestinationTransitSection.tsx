@@ -47,10 +47,12 @@ export function DestinationTransitSection({ transit }: { transit: DestinationTra
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#173F56]/70 via-transparent to-transparent" />
                     <span
-                      className={`absolute top-3 right-3 px-2.5 py-1 rounded-full font-['Inter',sans-serif] text-[11px] font-semibold tracking-wide ${
+                      className={`absolute top-3 right-3 px-2.5 py-1 rounded-full font-['Inter',sans-serif] text-[11px] font-semibold tracking-wide shadow-sm ${
                         card.featured
-                          ? "bg-[#397FA8] text-white shadow-xs"
-                          : "bg-white/95 backdrop-blur-md border border-slate-200 text-[#173F56] shadow-sm"
+                          ? "bg-[#397FA8] text-white border border-white/20"
+                          : /km/i.test(card.durationBadge)
+                            ? "bg-[#173F56]/95 backdrop-blur-md border border-white/25 text-white"
+                            : "bg-white/95 backdrop-blur-md border border-slate-200 text-[#173F56]"
                       }`}
                     >
                       {card.durationBadge}
