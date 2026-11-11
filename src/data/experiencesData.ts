@@ -183,13 +183,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "secret-beach-mirissa",
     name: "Secret Beach Mirissa",
     category: "beach",
-    badge: "Hidden Cove Trio",
+    badge: "Hidden Cove",
     distance: "~6.5 km",
-    subtitle: "Blue Lagoon & Coconut Bluff",
+    subtitle: "Cliffside Snorkeling",
     description:
-      "A collection of three tiny secluded rocky coves including Blue Lagoon, Shelley Beach, and Main Beach. Golden sandbars and natural rock pools sheltered from heavier swell.",
-    features: ["Three Hidden Coves", "Sheltered Lagoon", "Rock Shallows"],
+      "A secluded coastal hideaway tucked behind Mirissa's green headlands, featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+    features: ["Sheltered Sandy Pockets", "Reef Pools", "Cliffside Lookout"],
     ctaLabel: "Discover Secret Cove",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Hidden sandy coves and turquoise tide pools at Secret Beach Mirissa",
   },
   {
     id: "coconut-tree-hill",

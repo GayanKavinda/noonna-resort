@@ -2748,6 +2748,262 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
   },
 };
 
+const secretBeachBase = BEACH_DESTINATIONS.find((d) => d.slug === "secret-beach-mirissa");
+
+export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
+  slug: "secret-beach-mirissa",
+  name: secretBeachBase?.name ?? "Secret Beach Mirissa",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Hidden Cove", "Cliffside Snorkeling"],
+  distanceLabel: secretBeachBase?.distance ? `${secretBeachBase.distance} from Noonna` : "~6.5 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Hidden sandy coves and turquoise tide pools at Secret Beach Mirissa",
+    script: "hidden coves & cliffside sunset lookouts...",
+    title: "Secret Beach Mirissa",
+    deck: "A secluded coastal hideaway tucked behind Mirissa's green headlands, featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa West" },
+      { icon: "pool", label: "Sheltered Sandy Pockets & Reef Pools" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & cove intelligence...",
+    sectionTitle: "Secret Beach At A Glance: Coves, Reefs & Crows",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning snorkeling sessions, cliffside relaxation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Shallow turquoise water and rocky cove formation at Secret Beach Mirissa",
+      topBadge: "Secluded Cliffside Cove",
+      distanceBadge: "6.5 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 07:00 – 11:00 AM",
+      title: "Intimate Sandy Pockets & Snorkel Reef",
+      description:
+        "A collection of three tiny, stunning coves shielded by rocky outcrops and coconut palms. Offers calm shallows for wading and vibrant marine life around the outer reef shelf.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Shoes Recommended for Rocky Entry" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Snorkel Window",
+        title: "Prime Snorkeling & Light Window",
+        pill: "Morning Calm",
+        description:
+          "Early morning hours between 07:00 – 11:00 AM provide glass-calm water, optimal underwater visibility, and peaceful shade before midday sun.",
+        left: { icon: "air", label: "Light offshore breeze" },
+        right: "High underwater clarity",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Cove Character",
+        title: "Cove & Atmosphere Character",
+        pill: "Intimate & Bohemian",
+        description:
+          "A relaxed, away-from-it-all atmosphere with shaded seating, hammock spots under palms, and gentle rock-protected wading pools.",
+        left: { icon: "waves", label: "Rock-sheltered coves" },
+        right: "Cliffside bistro views",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'45\"N 80°26'55\"E",
+      title: "Door-to-Cove Access",
+      description:
+        "Located ~6.5 km east along the Matara Coastal Road (A2) followed by a short hilltop lane. Reached in 10–12 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9458,80.4486",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Secret%20Beach%20Mirissa.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Secret Beach Mirissa",
+    sectionDeck:
+      "Positioned 6.5 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this hidden cliffside cove is a scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "6.5 km along Matara Coastal Road (A2)",
+        durationBadge: "~11 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa",
+        description:
+          "Our front desk connects you with trusted drivers for a comfortable ride east along the coastal palm strip, dropping you at the hilltop path leading down to the coves.",
+        leftNote: "Estimated fare: 800–1,000 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "For maximum comfort, our concierge can dispatch a private air-conditioned car to handle the brief morning or afternoon trip.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Secret Beach",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa turquoise cove and rocky ledge",
+        topBadge: "08:00 AM • Morning Shallows",
+        topBadgeRight: "6.5 km from hotel",
+        script: "hidden cove...",
+        title: "Glassy Cove Shallows",
+        description: "Intimate sandy pocket sheltered by volcanic rock outcrops and clear turquoise water.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Shaded cliffside seating area overlooking Secret Beach",
+        topBadge: "Cliffside Lookout",
+        topBadgeRight: "Shaded Café",
+        script: "coastal view...",
+        title: "Cliffside Bistro Vistas",
+        description: "Relaxed shaded seating overlooking the open ocean and hidden sandy coves below.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Lush green coastal headland framing Secret Beach Mirissa",
+        topBadge: "Green Headland",
+        topBadgeRight: "Palm Canopy",
+        script: "tropical ridge...",
+        title: "Tropical Headland Trail",
+        description: "Shaded pathway winding through coastal greenery down to the hidden shoreline.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber sunset glow over Secret Beach Mirissa headland",
+        topBadge: "18:00 PM • Sunset",
+        topBadgeRight: "Golden Hour",
+        script: "evening calm...",
+        title: "Cliffside Sunset Horizon",
+        description: "Breathtaking evening golden hour light washing over the western Mirissa headland.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Secret Beach Mirissa. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "polhena-beach-coral-reef",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Polhena Beach natural coral pool",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
+        footerLeft: "Best in settled seas & morning light",
+        href: "/experiences/polhena-beach-coral-reef",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-jungle-beach",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Jungle Beach tropical cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "3.4 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Jungle Beach",
+        description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
+        footerLeft: "Ideal for shaded morning walks",
+        href: "/experiences/secret-jungle-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Secret Beach Outing?",
+    deck: "Our concierge team will arrange comfortable tuk-tuk transport, coordinate cafe seating reservations, and ensure your morning towels are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Beach%20Mirissa%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -2758,6 +3014,7 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   AWEE_COCO_SECRET_POOL_DETAIL,
   SECRET_JUNGLE_BEACH_DETAIL,
   POLHENA_BEACH_CORAL_REEF_DETAIL,
+  SECRET_BEACH_MIRISSA_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

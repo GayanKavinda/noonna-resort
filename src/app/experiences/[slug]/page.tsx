@@ -20,6 +20,7 @@ export async function generateStaticParams() {
     { slug: "awee-coco-secret-pool" },
     { slug: "secret-jungle-beach" },
     { slug: "polhena-beach-coral-reef" },
+    { slug: "secret-beach-mirissa" },
   ];
 }
 
