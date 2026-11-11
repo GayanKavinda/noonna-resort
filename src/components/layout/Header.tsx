@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState, useSyncExternalStore } from "react";
+import React, { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { NAV_ITEMS, HOTEL_INFO } from "@/lib/constants";
+import { ChevronDown } from "lucide-react";
+import { NAV_ITEMS, HOTEL_INFO, type NavItem } from "@/lib/constants";
 
 function subscribeScroll(callback: () => void) {
   window.addEventListener("scroll", callback, { passive: true });
@@ -22,10 +23,37 @@ function getServerScrollSnapshot() {
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const scrolled = useSyncExternalStore(subscribeScroll, getScrollSnapshot, getServerScrollSnapshot);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const isHome = pathname === "/";
   const transparent = isHome && !scrolled;
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenDropdown(null);
+    };
+    const onClick = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onClick);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onClick);
+    };
+  }, []);
+
+  const isItemActive = (item: NavItem) => {
+    if (item.href === "/") return pathname === "/";
+    if (pathname === item.href) return true;
+    if (pathname?.startsWith(`${item.href}/`)) return true;
+    return item.children?.some((c) => c.href !== item.href && pathname === c.href.split("#")[0]) ?? false;
+  };
 
   return (
     <header
@@ -76,29 +104,90 @@ export const Header: React.FC = () => {
           aria-label="Primary Navigation"
           className="hidden md:flex items-center gap-8 lg:gap-10"
           data-purpose="primary-nav"
+          ref={dropdownRef}
         >
           {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname?.startsWith(item.href);
+            const isActive = isItemActive(item);
+            const hasChildren = !!item.children?.length;
+            const open = openDropdown === item.label;
+
+            if (!hasChildren) {
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-sans text-sm transition-colors py-1 ${
+                    transparent
+                      ? isActive
+                        ? "font-semibold text-white"
+                        : "font-medium text-white/90 hover:text-white"
+                      : isActive
+                        ? "font-semibold text-[#397FA8] hover:text-[#2e698d]"
+                        : "font-medium text-[#334155] hover:text-[#397FA8]"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            }
 
             return (
-              <Link
+              <div
                 key={item.href}
-                href={item.href}
-                className={`font-sans text-sm transition-colors py-1 ${
-                  transparent
-                    ? isActive
-                      ? "font-semibold text-white"
-                      : "font-medium text-white/90 hover:text-white"
-                    : isActive
-                      ? "font-semibold text-[#397FA8] hover:text-[#2e698d]"
-                      : "font-medium text-[#334155] hover:text-[#397FA8]"
-                }`}
+                className="relative"
+                onMouseEnter={() => setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
               >
-                {item.label}
-              </Link>
+                <button
+                  type="button"
+                  onClick={() => setOpenDropdown(open ? null : item.label)}
+                  aria-expanded={open}
+                  aria-haspopup="menu"
+                  className={`font-sans text-sm transition-colors py-1 inline-flex items-center gap-1 ${
+                    transparent
+                      ? isActive
+                        ? "font-semibold text-white"
+                        : "font-medium text-white/90 hover:text-white"
+                      : isActive
+                        ? "font-semibold text-[#397FA8] hover:text-[#2e698d]"
+                        : "font-medium text-[#334155] hover:text-[#397FA8]"
+                  }`}
+                >
+                  {item.label}
+                  <ChevronDown className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`} />
+                </button>
+                {open && (
+                  <div
+                    role="menu"
+                    className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-56"
+                  >
+                    <div className="rounded-xl border border-[#D9EAF3] bg-white/98 backdrop-blur-sm shadow-[0_12px_32px_-8px_rgba(23,63,86,0.18)] p-2">
+                      {item.children?.map((child) => {
+                        const childPath = child.href.split("#")[0];
+                        const childActive =
+                          child.href === item.href
+                            ? pathname === item.href
+                            : pathname === childPath;
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            role="menuitem"
+                            onClick={() => setOpenDropdown(null)}
+                            className={`block px-3 py-2.5 rounded-lg text-sm font-sans transition-colors ${
+                              childActive
+                                ? "bg-[#EAF5FA] text-[#397FA8] font-semibold"
+                                : "text-[#334155] hover:bg-[#F4FAFC] hover:text-[#397FA8]"
+                            }`}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
             );
           })}
         </nav>
@@ -192,23 +281,70 @@ export const Header: React.FC = () => {
 
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-[#D9EAF3] bg-white px-6 py-4 shadow-lg">
-          <nav className="flex flex-col space-y-3">
+          <nav className="flex flex-col space-y-1">
             {NAV_ITEMS.map((item) => {
-              const isActive =
-                item.href === "/" ? pathname === "/" : pathname?.startsWith(item.href);
+              const isActive = isItemActive(item);
+              const hasChildren = !!item.children?.length;
+              const expanded = mobileExpanded === item.label;
+
+              if (!hasChildren) {
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`font-sans text-base py-2 ${
+                      isActive
+                        ? "font-semibold text-[#397FA8]"
+                        : "font-medium text-slate-800 hover:text-[#397FA8]"
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              }
+
               return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`font-sans text-base py-1 ${
-                    isActive
-                      ? "font-semibold text-[#397FA8]"
-                      : "font-medium text-slate-800 hover:text-[#397FA8]"
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
+                <div key={item.href} className="py-1">
+                  <button
+                    type="button"
+                    onClick={() => setMobileExpanded(expanded ? null : item.label)}
+                    aria-expanded={expanded}
+                    className={`w-full flex items-center justify-between font-sans text-base py-2 ${
+                      isActive
+                        ? "font-semibold text-[#397FA8]"
+                        : "font-medium text-slate-800 hover:text-[#397FA8]"
+                    }`}
+                  >
+                    <span>{item.label}</span>
+                    <ChevronDown className={`w-4 h-4 transition-transform ${expanded ? "rotate-180" : ""}`} />
+                  </button>
+                  {expanded && (
+                    <div className="ml-3 mt-1 pl-3 border-l border-[#D9EAF3] flex flex-col">
+                      {item.children?.map((child) => {
+                        const childPath = child.href.split("#")[0];
+                        const childActive =
+                          child.href === item.href
+                            ? pathname === item.href
+                            : pathname === childPath;
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className={`font-sans text-[15px] py-2 ${
+                              childActive
+                                ? "font-semibold text-[#397FA8]"
+                                : "font-medium text-slate-700 hover:text-[#397FA8]"
+                            }`}
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
               );
             })}
           </nav>
