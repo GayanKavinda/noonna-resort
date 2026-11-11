@@ -1676,12 +1676,285 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
   },
 };
 
+const ramsRightBase = BEACH_DESTINATIONS.find((d) => d.slug === "rams-right-surf-break");
+
+export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
+  slug: "rams-right-surf-break",
+  name: ramsRightBase?.name ?? "Rams Right Surf Break",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Shallow Reef Barrel", "Advanced Surf Spot"],
+  distanceLabel: ramsRightBase?.distance ? `${ramsRightBase.distance} from Noonna` : "~1.6 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Hollow right-hand barrel breaking over shallow reef at Rams Right in Midigama",
+    script: "hollow barrels & technical right walls...",
+    title: "Rams Right Surf Break",
+    deck: "Sri Lanka's most iconic heavy right-hand barrel—a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Midigama" },
+      { icon: "surfing", label: "Shallow Right Reef Barrel" },
+      { icon: "wb_sunny", label: "Prime Season: November – March" },
+    ],
+  },
+  vitals: {
+    sectionScript: "surf intelligence & barrel dispatch...",
+    sectionTitle: "Rams Right At A Glance: Swell, Reef & Lineup",
+    sectionDeck:
+      "Essential field notes and wave conditions for morning barrel sessions, reef navigation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Crystal clear water and hollow right-hand breaking wave at Rams Right",
+      topBadge: "Advanced Barrel Lineup",
+      distanceBadge: "1.6 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 06:00 – 09:00 AM (Mid Tide)",
+      title: "Short, Fast & Hollow Right-Hander",
+      description:
+        "A focused reef break delivering intense, fast right-hand tubes over a shallow volcanic shelf. Features a critical takeoff and high-performance sections for experienced riders.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Booties Strongly Recommended" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Swell Window",
+        title: "Prime Swell & Wind Window",
+        pill: "Dawn Patrol & Offshore",
+        description:
+          "Glassy early morning sessions between 06:00 – 09:00 AM with clean Northeast (NE) offshore winds and South-Southwest (SSW) groundswells.",
+        left: { icon: "air", label: "Clean NE offshore winds" },
+        right: "SSW groundswell alignment",
+      },
+      {
+        icon: "surfing",
+        eyebrow: "Break Specs",
+        title: "Wave Character & Suitability",
+        pill: "Intermediate to Advanced",
+        description:
+          "Works best from 2 to 8 feet. Features a condensed takeoff zone with an easy roadside channel paddle-out directly in front of local cafes.",
+        left: { icon: "waves", label: "Right-hand reef barrel" },
+        right: "Roadside channel entry",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°57'48\"N 80°23'24\"E",
+      title: "Door-to-Lineup Access",
+      description:
+        "Just 1.6 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 6-minute coastal bicycle cruise.",
+      mapsHref: "https://maps.google.com/?q=5.9633,80.3900",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Rams%20Right%20swell%20and%20tide%20updates.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Rams Right Surf Break",
+    sectionDeck:
+      "Positioned 1.6 km west of Noonna Beach Hotel along the southern coastal road, reaching Midigama's premier barrel spot is quick and straightforward:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "1.6 km along Matara Coastal Road (A2)",
+        durationBadge: "~3 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Tuk-tuk with surfboard racks heading toward Midigama surf spots",
+        description:
+          "Our front desk connects you with trusted local drivers for a fast ride straight to the roadside viewing area and paddle-out channel at Rams.",
+        leftNote: "Estimated fare: 300–400 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Scenic coastal lane path",
+        durationBadge: "~6 mins",
+        icon: "pedal_bike",
+        iconLabel: "Guest Quiver Bike",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Cruiser bicycle with surfboard racks parked near Midigama coast",
+        description:
+          "Pedal down short coastal roads on our custom cruiser bikes outfitted with secure front surf racks.",
+        leftNote: "Complimentary for guests (subject to availability)",
+        rightNote: "Locks & racks provided",
+        featured: true,
+      },
+      {
+        title: "Low-Tide Shoreline Stroll",
+        subtitle: "Barefoot beach walk along coves",
+        durationBadge: "~15 mins",
+        icon: "footprint",
+        iconLabel: "Tideline Walk",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+        imageAlt: "Shoreline walking view along Midigama coastal coves",
+        description:
+          "Take a leisurely morning barefoot walk westward along the golden tide line during low tide, enjoying ocean views all the way.",
+        leftNote: "Best during morning low tide",
+        rightNote: "Reef booties recommended",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Rams Right",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Hollow right barrel peeling across Rams Right lineup in Midigama",
+        topBadge: "06:30 AM • Morning Barrel",
+        topBadgeRight: "1.6 km from hotel",
+        script: "clean tubes...",
+        title: "Dawn Barrels at Rams Right",
+        description: "Crisp offshore walls squaring up over a shallow reef shelf in clean morning light.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Surfer checking waves from the roadside cafe overlooking Rams Right",
+        topBadge: "Roadside Vantage",
+        topBadgeRight: "The Blue Porch View",
+        script: "coffee & swell...",
+        title: "Roadside Lineup Watch",
+        description: "Watching sets roll in from the elevated comfort of the front-row coastal cafe.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Palm tree canopy along Midigama coastal road near Rams",
+        topBadge: "Coastal Approach",
+        topBadgeRight: "Palm Canopy",
+        script: "canopy path...",
+        title: "Shaded Coastal Route",
+        description: "Tranquil roadside coconut groves framing the short journey from Noonna Beach Hotel.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Golden sunset reflection over Midigama ocean waters",
+        topBadge: "18:00 PM • Golden Hour",
+        topBadgeRight: "Evening Glow",
+        script: "sunset surf...",
+        title: "Twilight Right Peelers",
+        description: "Evening golden hour sessions bathed in warm amber Indian Ocean light.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Rams Right. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "lazy-left-surf-break",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Lazy Left surf break peeling wave in Midigama",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Lazy Left Surf Break",
+        description: "Sri Lanka's legendary longboard left-hand wave, offering smooth peeling walls and easy paddle channels.",
+        footerLeft: "Ideal for dawn patrol & longboard sessions",
+        href: "/experiences/lazy-left-surf-break",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Rams Right Surf Session?",
+    deck: "Our team will arrange reliable tuk-tuk transport, check live swell and wind conditions, provide reef booties, and ensure your morning gear is ready.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Rams%20Right%20surf%20session.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
   WELIGAMA_BEACH_DETAIL,
   AHANGAMA_BEACH_DETAIL,
   LAZY_LEFT_SURF_BREAK_DETAIL,
+  RAMS_RIGHT_SURF_BREAK_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

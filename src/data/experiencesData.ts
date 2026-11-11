@@ -122,13 +122,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "rams-right-surf-break",
     name: "Rams Right Surf Break",
     category: "beach",
-    badge: "Hollow Reef Barrel",
+    badge: "Shallow Reef Barrel",
     distance: "~1.6 km",
-    subtitle: "Advanced Shortboard Wave",
+    subtitle: "Advanced Surf Spot",
     description:
-      "Short, fast, and heavy hollow right-hand reef barrel breaking over shallow volcanic coral. A celebrated testing ground for experienced wave riders seeking adrenaline and barrel time.",
-    features: ["Fast Hollow Right", "Shallow Reef", "Expert Swell"],
+      "Sri Lanka's most iconic heavy right-hand barrel—a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
+    features: ["Right-Hand Barrel", "Shallow Reef", "Advanced Lineup"],
     ctaLabel: "View Wave Intel",
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Hollow right-hand barrel breaking over shallow reef at Rams Right in Midigama",
   },
   {
     id: "awee-coco-secret-pool",
