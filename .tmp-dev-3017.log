@@ -1,0 +1,11 @@
+
+> noonna-resort@0.1.0 dev
+> next dev -p 3017
+
+▲ Next.js 16.4.5 (Turbopack)
+- Local:         http://localhost:3017
+- Network:       http://100.116.110.46:3017
+- Environments: .env.local
+✓ Ready in 774ms
+✓ Running next.config.ts took 54ms
+[?25h

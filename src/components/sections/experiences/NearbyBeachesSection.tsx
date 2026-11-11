@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Info, Umbrella, Waves, ArrowRight, ArrowUpRight } from "lucide-react";
 
 export function NearbyBeachesSection() {
@@ -63,10 +64,10 @@ export function NearbyBeachesSection() {
               <Umbrella className="text-primary" size={18} />
               <span>Surf &amp; Sunset Sanctuary</span>
             </div>
-            <a className="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="#">
+            <Link className="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="/experiences/midigama-beach">
               <span>Explore Tides</span>
               <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-5 flex flex-col gap-6 justify-between">

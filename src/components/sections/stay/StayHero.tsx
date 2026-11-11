@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { STAY_DATA } from "@/data/stayData";
+import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { Bed, Users, ShowerHead, Waves, ArrowUpRight, ArrowDown, BadgeCheck } from "lucide-react";
 
 interface StayHeroProps {
@@ -22,23 +22,13 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Breadcrumb Navigation */}
-        <nav
-          aria-label="Breadcrumb"
-          className="flex items-center gap-2 text-xs text-slate-500 font-light mb-8"
-        >
-          <Link
-            href="/"
-            className="hover:text-[#397FA8] transition-colors focus:outline-none focus:ring-1 focus:ring-[#397FA8]"
-          >
-            Home
-          </Link>
-          <span className="text-slate-300" aria-hidden="true">
-            /
-          </span>
-          <span className="text-[#173F56] font-medium" aria-current="page">
-            The Stay
-          </span>
-        </nav>
+        <Breadcrumb
+          className="mb-8"
+          items={[
+            { label: "Home", href: "/" },
+            { label: "The Stay" },
+          ]}
+        />
 
         {/* Split Suite Hero Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">

@@ -1,25 +1,31 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS, HOTEL_INFO } from "@/lib/constants";
 
+function subscribeScroll(callback: () => void) {
+  window.addEventListener("scroll", callback, { passive: true });
+  return () => window.removeEventListener("scroll", callback);
+}
+
+function getScrollSnapshot() {
+  return window.scrollY > 24;
+}
+
+function getServerScrollSnapshot() {
+  return false;
+}
+
 export const Header: React.FC = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const scrolled = useSyncExternalStore(subscribeScroll, getScrollSnapshot, getServerScrollSnapshot);
 
   const isHome = pathname === "/";
   const transparent = isHome && !scrolled;
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [pathname]);
 
   return (
     <header
@@ -43,7 +49,7 @@ export const Header: React.FC = () => {
               width={48}
               height={48}
               priority
-              className="h-12 w-auto object-contain"
+              className={`h-12 w-auto object-contain transition-all duration-300 ${transparent ? "brightness-0 invert" : ""}`}
             />
           </Link>
           <div className="flex flex-col justify-center">
