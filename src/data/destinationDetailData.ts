@@ -3,7 +3,7 @@ import { BEACH_DESTINATIONS } from "./experiencesData";
 export type DestinationBreadcrumbCategory = "Beaches & Surf";
 
 export interface DestinationMetaItem {
-  icon: "location_on" | "waves" | "wb_sunny" | "near_me" | "pool" | "surfing";
+  icon: "location_on" | "waves" | "wb_sunny" | "near_me" | "pool" | "surfing" | "compass";
   label: string;
 }
 
@@ -29,7 +29,7 @@ export interface DestinationVitalsShowcase {
 }
 
 export interface DestinationVitalsCard {
-  icon: "schedule" | "surfing" | "pool";
+  icon: "schedule" | "surfing" | "pool" | "compass";
   eyebrow: string;
   title: string;
   pill: string;
@@ -2491,6 +2491,1287 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
+const polhenaBase = BEACH_DESTINATIONS.find((d) => d.slug === "polhena-beach-coral-reef");
+
+export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
+  slug: "polhena-beach-coral-reef",
+  name: polhenaBase?.name ?? "Polhena Beach & Coral Reef",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Coral Lagoon", "Snorkeling & Sea Turtles"],
+  distanceLabel: polhenaBase?.distance ? `${polhenaBase.distance} from Noonna` : "~14 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Calm turquoise reef-sheltered waters and golden sand at Polhena Beach",
+    script: "protected coral lagoons & gentle sea turtles...",
+    title: "Polhena Beach & Coral Reef",
+    deck: "A reef-sheltered natural swimming lagoon in Matara featuring crystal-clear turquoise shallows, vibrant coral gardens, and resident green sea turtles.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Matara" },
+      { icon: "pool", label: "Offshore Coral Barrier & Calm Lagoon" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & reef intelligence...",
+    sectionTitle: "Polhena At A Glance: Coral Lagoon & Marine Life",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning snorkeling expeditions, calm afternoon dips, and comfortable journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Shallow turquoise protected swimming pool inside Polhena coral reef",
+      topBadge: "Reef-Protected Sanctuary",
+      distanceBadge: "14 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Snorkeling: 07:00 – 11:00 AM",
+      title: "Calm Coral Lagoon & Sea Turtle Habitat",
+      description:
+        "Protected by an offshore barrier reef that blocks heavy ocean swells, Polhena creates a vast, calm natural swimming pool where wild green turtles graze peacefully in the shallows.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Snorkel & Mask Rentals Available On-Site" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Snorkeling Window",
+        title: "Prime Snorkeling & Visibility Window",
+        pill: "Morning Calm",
+        description:
+          "Early morning hours between 07:00 – 11:00 AM provide highest water clarity, calm surface conditions, and active turtle feeding along the seagrass beds.",
+        left: { icon: "air", label: "Gentle morning offshore breeze" },
+        right: "High underwater visibility",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Lagoon Character",
+        title: "Lagoon & Marine Character",
+        pill: "Family Friendly / Calm",
+        description:
+          "Waist-deep, wave-free water sheltered by coral walls makes it exceptionally safe for relaxed swimming and beginner snorkeling.",
+        left: { icon: "waves", label: "Offshore reef wave buffer" },
+        right: "Resident green sea turtles",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'20\"N 80°31'50\"E",
+      title: "Door-to-Reef Access",
+      description:
+        "Located ~14 km east along the Matara Coastal Road (A2). Reached in 20–25 minutes by comfortable taxi or tuk-tuk safari.",
+      mapsHref: "https://maps.google.com/?q=5.9389,80.5306",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Polhena%20Beach.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Polhena Beach",
+    sectionDeck:
+      "Positioned 14 kilometers east along Sri Lanka's southern shoreline toward Matara, reaching Polhena's calm coral lagoon is a smooth trip:",
+    cards: [
+      {
+        title: "Hotel-Arranged Transport",
+        subtitle: "14 km along Matara Coastal Road (A2)",
+        durationBadge: "~22 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Direct Transfer",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Comfortable coastal transport heading toward Matara and Polhena",
+        description:
+          "Our concierge team can arrange a comfortable private car or trusted driver to take you directly to Polhena's main beach entrance.",
+        leftNote: "Estimated fare: 1,500–2,000 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Coastal Train Journey",
+        subtitle: "Kumbalgama Station to Matara Station",
+        durationBadge: "~18 mins + short tuk-tuk",
+        icon: "train",
+        iconLabel: "Southern Railway",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Scenic coastal railway tracks along southern Sri Lanka",
+        description:
+          "Take the scenic coastal train from nearby Kumbalgama to Matara terminus, followed by a quick 10-minute local tuk-tuk ride to the beach.",
+        leftNote: "Tickets at station (~100–150 LKR)",
+        rightNote: "Ocean views along the rail line",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Polhena",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Calm turquoise natural swimming lagoon sheltered by coral reef at Polhena",
+        topBadge: "08:00 AM • Calm Lagoon",
+        topBadgeRight: "14 km from hotel",
+        script: "crystal shallows...",
+        title: "Glassy Coral Lagoon",
+        description: "Protected turquoise shallows offering wave-free swimming and crystal-clear visibility.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Green sea turtle swimming gracefully in shallow coral waters",
+        topBadge: "Marine Wildlife",
+        topBadgeRight: "Resident Turtles",
+        script: "gentle swimmers...",
+        title: "Wild Green Sea Turtles",
+        description: "Friendly marine turtles frequently spotted grazing just feet from the shoreline.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Palm trees and golden sand beach along Polhena coastline",
+        topBadge: "Golden Shoreline",
+        topBadgeRight: "Palm Fringe",
+        script: "sunny shores...",
+        title: "Golden Sands & Palms",
+        description: "Spacious sandy beach areas lined with coconut palms and relaxed local shade spots.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset over Polhena reef lagoon",
+        topBadge: "18:00 PM • Twilight",
+        topBadgeRight: "Sunset Calm",
+        script: "evening glow...",
+        title: "Matara Sunset Horizon",
+        description: "Peaceful evening skies reflecting across the tranquil, glass-like reef basin.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Polhena’s coral lagoon. Explore surf breaks, secret tidal pools, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-jungle-beach",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Jungle Beach tropical cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "3.4 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Jungle Beach",
+        description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
+        footerLeft: "Ideal for shaded morning walks",
+        href: "/experiences/secret-jungle-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Polhena Snorkeling Outing?",
+    deck: "Our concierge team will arrange comfortable transport, coordinate snorkel gear rentals, and advise on optimal tide and turtle-spotting windows.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Polhena%20snorkeling%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+const secretBeachBase = BEACH_DESTINATIONS.find((d) => d.slug === "secret-beach-mirissa");
+
+export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
+  slug: "secret-beach-mirissa",
+  name: secretBeachBase?.name ?? "Secret Beach Mirissa",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Hidden Cove", "Cliffside Snorkeling"],
+  distanceLabel: secretBeachBase?.distance ? `${secretBeachBase.distance} from Noonna` : "~6.5 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+    imageAlt: "Hidden sandy coves and turquoise tide pools at Secret Beach Mirissa",
+    script: "hidden coves & cliffside sunset lookouts...",
+    title: "Secret Beach Mirissa",
+    deck: "A secluded coastal hideaway tucked behind Mirissa's green headlands, featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa West" },
+      { icon: "pool", label: "Sheltered Sandy Pockets & Reef Pools" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & cove intelligence...",
+    sectionTitle: "Secret Beach At A Glance: Coves, Reefs & Crows",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning snorkeling sessions, cliffside relaxation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Shallow turquoise water and rocky cove formation at Secret Beach Mirissa",
+      topBadge: "Secluded Cliffside Cove",
+      distanceBadge: "6.5 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 07:00 – 11:00 AM",
+      title: "Intimate Sandy Pockets & Snorkel Reef",
+      description:
+        "A collection of three tiny, stunning coves shielded by rocky outcrops and coconut palms. Offers calm shallows for wading and vibrant marine life around the outer reef shelf.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Shoes Recommended for Rocky Entry" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Snorkel Window",
+        title: "Prime Snorkeling & Light Window",
+        pill: "Morning Calm",
+        description:
+          "Early morning hours between 07:00 – 11:00 AM provide glass-calm water, optimal underwater visibility, and peaceful shade before midday sun.",
+        left: { icon: "air", label: "Light offshore breeze" },
+        right: "High underwater clarity",
+      },
+      {
+        icon: "pool",
+        eyebrow: "Cove Character",
+        title: "Cove & Atmosphere Character",
+        pill: "Intimate & Bohemian",
+        description:
+          "A relaxed, away-from-it-all atmosphere with shaded seating, hammock spots under palms, and gentle rock-protected wading pools.",
+        left: { icon: "waves", label: "Rock-sheltered coves" },
+        right: "Cliffside bistro views",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'45\"N 80°26'55\"E",
+      title: "Door-to-Cove Access",
+      description:
+        "Located ~6.5 km east along the Matara Coastal Road (A2) followed by a short hilltop lane. Reached in 10–12 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9458,80.4486",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Secret%20Beach%20Mirissa.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Secret Beach Mirissa",
+    sectionDeck:
+      "Positioned 6.5 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this hidden cliffside cove is a scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "6.5 km along Matara Coastal Road (A2)",
+        durationBadge: "~11 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa",
+        description:
+          "Our front desk connects you with trusted drivers for a comfortable ride east along the coastal palm strip, dropping you at the hilltop path leading down to the coves.",
+        leftNote: "Estimated fare: 800–1,000 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "For maximum comfort, our concierge can dispatch a private air-conditioned car to handle the brief morning or afternoon trip.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Secret Beach",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa turquoise cove and rocky ledge",
+        topBadge: "08:00 AM • Morning Shallows",
+        topBadgeRight: "6.5 km from hotel",
+        script: "hidden cove...",
+        title: "Glassy Cove Shallows",
+        description: "Intimate sandy pocket sheltered by volcanic rock outcrops and clear turquoise water.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Shaded cliffside seating area overlooking Secret Beach",
+        topBadge: "Cliffside Lookout",
+        topBadgeRight: "Shaded Café",
+        script: "coastal view...",
+        title: "Cliffside Bistro Vistas",
+        description: "Relaxed shaded seating overlooking the open ocean and hidden sandy coves below.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Lush green coastal headland framing Secret Beach Mirissa",
+        topBadge: "Green Headland",
+        topBadgeRight: "Palm Canopy",
+        script: "tropical ridge...",
+        title: "Tropical Headland Trail",
+        description: "Shaded pathway winding through coastal greenery down to the hidden shoreline.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber sunset glow over Secret Beach Mirissa headland",
+        topBadge: "18:00 PM • Sunset",
+        topBadgeRight: "Golden Hour",
+        script: "evening calm...",
+        title: "Cliffside Sunset Horizon",
+        description: "Breathtaking evening golden hour light washing over the western Mirissa headland.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Secret Beach Mirissa. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "polhena-beach-coral-reef",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Polhena Beach natural coral pool",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
+        footerLeft: "Best in settled seas & morning light",
+        href: "/experiences/polhena-beach-coral-reef",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-jungle-beach",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Jungle Beach tropical cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "3.4 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Jungle Beach",
+        description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
+        footerLeft: "Ideal for shaded morning walks",
+        href: "/experiences/secret-jungle-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Secret Beach Outing?",
+    deck: "Our concierge team will arrange comfortable tuk-tuk transport, coordinate cafe seating reservations, and ensure your morning towels are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Beach%20Mirissa%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+const coconutTreeHillBase = BEACH_DESTINATIONS.find((d) => d.slug === "coconut-tree-hill");
+
+export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
+  slug: "coconut-tree-hill",
+  name: coconutTreeHillBase?.name ?? "Coconut Tree Hill",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Iconic Viewpoint", "Red Cliff Promontory"],
+  distanceLabel: coconutTreeHillBase?.distance ? `${coconutTreeHillBase.distance} from Noonna` : "~6.2 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Coconut Tree Hill in Mirissa crowned with swaying palms over the Indian Ocean",
+    script: "dramatic red cliffs & swaying crown palms...",
+    title: "Coconut Tree Hill & Mirissa Point",
+    deck: "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa East" },
+      { icon: "compass", label: "Elevated Coastal Promontory & Viewpoint" },
+      { icon: "wb_sunny", label: "Prime Viewing: Dawn & Golden Hour" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & viewpoint intelligence...",
+    sectionTitle: "Coconut Tree Hill At A Glance: Panorama & Terrain",
+    sectionDeck:
+      "Essential field notes and coastal conditions for dawn photography sessions, golden hour walks, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+      imageAlt: "Leaning palm trees silhouetted against turquoise ocean waters at Coconut Tree Hill",
+      topBadge: "Quintessential Southern Panorama",
+      distanceBadge: "6.2 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 06:00 – 07:30 AM & 17:30 – 18:30 PM",
+      title: "Raised Palm Promontory & Ocean Horizon",
+      description:
+        "A striking raised headland covered in slender coconut palms that frame sweeping views of blue ocean water, golden sand beaches, and distant surf breaks.",
+      facts: [
+        { icon: "thermostat", label: "Coastal Breeze: Refreshing On-Shore Air" },
+        { icon: "footprint", label: "Easy Coastal Path & Hillside Access" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Viewpoint Window",
+        title: "Prime Viewing & Lighting Window",
+        pill: "Dawn & Sunset Golden Hour",
+        description:
+          "Early morning hours between 06:00 – 07:30 AM offer serene, uncrowded lighting and soft pastel skies. Evening golden hour brings vibrant amber sunset reflections.",
+        left: { icon: "air", label: "Fresh coastal sea breeze" },
+        right: "Panoramic 360° horizon",
+      },
+      {
+        icon: "compass",
+        eyebrow: "Promontory Character",
+        title: "Promontory & Vibe Character",
+        pill: "Photographic Landmark",
+        description:
+          "An open, breezy hilltop platform offering unobstructed views of ocean swells crashing against the red cliff base and surrounding coconut groves.",
+        left: { icon: "waves", label: "Crashing ocean swell below" },
+        right: "Iconic palm silhouettes",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'52\"N 80°27'42\"E",
+      title: "Door-to-Viewpoint Access",
+      description:
+        "Located ~6.2 km east along the Matara Coastal Road (A2) followed by a short coastal path. Reached in 10 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9478,80.4617",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Coconut%20Tree%20Hill.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Coconut Tree Hill",
+    sectionDeck:
+      "Positioned 6.2 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this iconic palm promontory is a quick, scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "6.2 km along Matara Coastal Road (A2)",
+        durationBadge: "~10 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa viewpoint",
+        description:
+          "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal palm strip, dropping you steps away from the hillside access path.",
+        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "Enjoy a comfortable air-conditioned private car transfer arranged by our concierge for your dawn photography or sunset excursion.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Coconut Tree Hill",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Iconic palm-crowned ridge at Coconut Tree Hill overlooking blue ocean swells",
+        topBadge: "06:30 AM • Dawn Gold",
+        topBadgeRight: "6.2 km from hotel",
+        script: "morning crowns...",
+        title: "Dawn Light over Palm Crest",
+        description: "Slender coconut palms silhouetted against glowing morning skies and crashing Indian Ocean waves.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Swaying coconut canopy and sweeping coastal horizon at Coconut Tree Hill",
+        topBadge: "Promontory View",
+        topBadgeRight: "Ocean Panorama",
+        script: "ocean breeze...",
+        title: "Sweeping Coastal Horizon",
+        description: "An unobstructed 360-degree vantage point capturing the raw beauty of Sri Lanka's southern edge.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Red earth cliff ledge and palm silhouettes in Mirissa",
+        topBadge: "Red Earth Ledge",
+        topBadgeRight: "Cliffside Path",
+        script: "earth & palm...",
+        title: "Red Cliff Formation",
+        description: "Striking red-earth terrain rising above turquoise waters and white water foam.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset washing over Coconut Tree Hill palms",
+        topBadge: "18:00 PM • Sunset Glow",
+        topBadgeRight: "Golden Hour",
+        script: "evening light...",
+        title: "Amber Sunset Crown",
+        description: "Warm evening twilight bathing the towering palm trunks and ocean swells in golden hues.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Coconut Tree Hill. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "secret-beach-mirissa",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa hidden cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.5 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Beach Mirissa",
+        description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+        footerLeft: "Ideal for morning snorkeling & cliffside views",
+        href: "/experiences/secret-beach-mirissa",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "polhena-beach-coral-reef",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Polhena Beach natural coral pool",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
+        footerLeft: "Best in settled seas & morning light",
+        href: "/experiences/polhena-beach-coral-reef",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "awee-coco-secret-pool",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Awee Coco Secret Pool natural granite tide basins",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "2.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Awee Coco Secret Pool",
+        description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
+        footerLeft: "Best at morning low tide",
+        href: "/experiences/awee-coco-secret-pool",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Coconut Tree Hill Outing?",
+    deck: "Our concierge team will arrange comfortable transport timed perfectly for dawn or sunset lighting, and ensure your morning towels or camera gear are ready.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Coconut%20Tree%20Hill%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+const parrotRockBase = BEACH_DESTINATIONS.find((d) => d.slug === "parrot-rock");
+
+export const PARROT_ROCK_DETAIL: DestinationDetail = {
+  slug: "parrot-rock",
+  name: parrotRockBase?.name ?? "Parrot Rock",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Offshore Islet", "Panoramic Viewpoint"],
+  distanceLabel: parrotRockBase?.distance ? `${parrotRockBase.distance} from Noonna` : "~5.8 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Parrot Rock rocky islet rising above Mirissa Bay and the Indian Ocean",
+    script: "offshore lookout & crashing ocean crests...",
+    title: "Parrot Rock Mirissa",
+    deck: "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated 360-degree panoramic views across the golden bay and open ocean.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa Bay" },
+      { icon: "compass", label: "Offshore Rocky Islet & Viewpoint" },
+      { icon: "wb_sunny", label: "Prime Viewing: Low to Mid Tide" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & viewpoint intelligence...",
+    sectionTitle: "Parrot Rock At A Glance: Islet, Surf & Horizon",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning islet climbs, bay observation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Looking back at Mirissa golden beach from the heights of Parrot Rock",
+      topBadge: "Offshore Panoramic Islet",
+      distanceBadge: "5.8 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Access: 07:00 – 11:00 AM (Low to Mid Tide)",
+      title: "Elevated Bay Lookout & Wave Vantage",
+      description:
+        "A striking rock formation standing just off the sandy shore. Climbing to its summit provides sweeping vistas of surfers, beach coves, and turquoise horizon waters.",
+      facts: [
+        { icon: "thermostat", label: "Coastal Breeze: Refreshing Open-Ocean Air" },
+        { icon: "footprint", label: "Sturdy Footwear Recommended for Rock Steps" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Access Window",
+        title: "Prime Access & Tide Window",
+        pill: "Morning Low Tide",
+        description:
+          "Visiting during morning low to mid tide ensures the safest and easiest crossing from the main sandy beach onto the rock stairway.",
+        left: { icon: "air", label: "Refreshing ocean breeze" },
+        right: "Safe tide crossing",
+      },
+      {
+        icon: "compass",
+        eyebrow: "Vantage Character",
+        title: "Islet & Vibe Character",
+        pill: "Elevated Lookout",
+        description:
+          "An invigorating climb yielding unmatched vantage points over Mirissa's sweeping coastline and breaking waves.",
+        left: { icon: "waves", label: "Surrounding surf spray" },
+        right: "360-degree ocean views",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'40\"N 80°27'30\"E",
+      title: "Door-to-Islet Access",
+      description:
+        "Located ~5.8 km east along the Matara Coastal Road (A2) to Mirissa Beach. Reached in 10 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9444,80.4583",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Parrot%20Rock%20Mirissa.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Parrot Rock",
+    sectionDeck:
+      "Positioned 5.8 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this iconic offshore islet is a quick, scenic trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "5.8 km along Matara Coastal Road (A2)",
+        durationBadge: "~10 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa beach",
+        description:
+          "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal palm strip, dropping you directly at Mirissa main beach.",
+        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "Enjoy a comfortable air-conditioned private car transfer arranged by our concierge for your morning or afternoon excursion.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Parrot Rock",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Parrot Rock offshore islet rising above Mirissa Bay surf",
+        topBadge: "08:00 AM • Morning View",
+        topBadgeRight: "5.8 km from hotel",
+        script: "ocean lookout...",
+        title: "Summit Vista over Mirissa Bay",
+        description: "Panoramic views looking back toward the golden crescent beach and rolling waves.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Waves crashing against the rocky base of Parrot Rock",
+        topBadge: "Wave Action",
+        topBadgeRight: "Surrounding Surf",
+        script: "spray & stone...",
+        title: "Crashing Surf Below",
+        description: "Dynamic ocean swells breaking dramatically against the rocky base of the islet.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Shallow water crossing leading to Parrot Rock at low tide",
+        topBadge: "Low-Tide Crossing",
+        topBadgeRight: "Sand Spit",
+        script: "path & tide...",
+        title: "Islet Access Walkway",
+        description: "The natural sand spit and shallow crossing connecting the mainland to Parrot Rock.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset glow over Parrot Rock Mirissa",
+        topBadge: "18:00 PM • Sunset Glow",
+        topBadgeRight: "Golden Hour",
+        script: "evening light...",
+        title: "Twilight Ocean Horizon",
+        description: "Warm evening twilight washing over the offshore rock and surrounding bay waters.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Parrot Rock. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "coconut-tree-hill",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Coconut Tree Hill in Mirissa overlooking the Indian Ocean",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.2 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Coconut Tree Hill & Mirissa Point",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        footerLeft: "Ideal at dawn or golden hour",
+        href: "/experiences/coconut-tree-hill",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-beach-mirissa",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa hidden cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.5 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Beach Mirissa",
+        description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+        footerLeft: "Ideal for morning snorkeling & cliffside views",
+        href: "/experiences/secret-beach-mirissa",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "polhena-beach-coral-reef",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Polhena Beach natural coral pool",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "14 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Polhena Natural Pool",
+        description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
+        footerLeft: "Best in settled seas & morning light",
+        href: "/experiences/polhena-beach-coral-reef",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Parrot Rock Outing?",
+    deck: "Our concierge team will arrange comfortable transport, check optimal low-tide crossing times, and ensure your morning towels or camera gear are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Parrot%20Rock%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+const mirissaPromontoryBase = BEACH_DESTINATIONS.find((d) => d.slug === "mirissa-coastal-promontory");
+
+export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
+  slug: "mirissa-coastal-promontory",
+  name: mirissaPromontoryBase?.name ?? "Mirissa Coastal Promontory",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Coastal Ridge", "Elevated Panorama"],
+  distanceLabel: mirissaPromontoryBase?.distance ? `${mirissaPromontoryBase.distance} from Noonna` : "~6.0 km from Noonna",
+  hero: {
+    image:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+    imageAlt: "Elevated coastal promontory ridge overlooking Mirissa bay and ocean horizon",
+    script: "elevated coastal ridges & ocean vistas...",
+    title: "Mirissa Coastal Promontory",
+    deck: "A striking raised coastal ridge offering sweeping panoramic vistas across Mirissa's sweeping harbor, golden crescent shores, and breaking surf.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Mirissa Ridge" },
+      { icon: "compass", label: "Elevated Coastal Promontory & Outlook" },
+      { icon: "wb_sunny", label: "Prime Viewing: Dawn & Golden Hour" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & ridge intelligence...",
+    sectionTitle: "Promontory At A Glance: Ridge, Swell & Horizon",
+    sectionDeck:
+      "Essential field notes and coastal conditions for morning ridge walks, horizon observation, and effortless journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+      imageAlt: "Sweeping ocean view from the heights of Mirissa Coastal Promontory",
+      topBadge: "Elevated Coastal Spine",
+      distanceBadge: "6.0 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Window: 06:30 – 08:00 AM & 17:30 – 18:30 PM",
+      title: "Elevated Ridge & Ocean Expanse",
+      description:
+        "A commanding coastal headland rising above the surf zone, providing uninterrupted views of fishing vessels, reef lines, and distant horizon sunsets.",
+      facts: [
+        { icon: "thermostat", label: "Coastal Breeze: Refreshing Open-Ocean Air" },
+        { icon: "footprint", label: "Easy Hillside Path & Ridge Access" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "View Window",
+        title: "Prime Viewing & Lighting Window",
+        pill: "Dawn & Sunset Golden Hour",
+        description:
+          "Early morning hours between 06:30 – 08:00 AM offer tranquil cooling breezes and soft lighting, while evening golden hour brings vibrant amber skies.",
+        left: { icon: "air", label: "Refreshing ocean breeze" },
+        right: "Panoramic coastal horizon",
+      },
+      {
+        icon: "compass",
+        eyebrow: "Ridge Character",
+        title: "Promontory & Atmosphere Character",
+        pill: "Scenic Lookout",
+        description:
+          "An open ridge walkway offering inspiring perspectives of Sri Lanka's dynamic southern shoreline and rolling sea swells.",
+        left: { icon: "waves", label: "Distant surf spray" },
+        right: "Expansive ocean vistas",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°56'48\"N 80°27'15\"E",
+      title: "Door-to-Ridge Access",
+      description:
+        "Located ~6.0 km east along the Matara Coastal Road (A2) to the Mirissa headland approach. Reached in 10 minutes by open-air tuk-tuk.",
+      mapsHref: "https://maps.google.com/?q=5.9467,80.4542",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Mirissa%20Coastal%20Promontory.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Mirissa Coastal Promontory",
+    sectionDeck:
+      "Positioned 6.0 kilometers east along Sri Lanka's southern shoreline toward Mirissa, reaching this scenic headland ridge is a quick, easy trip:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "6.0 km along Matara Coastal Road (A2)",
+        durationBadge: "~10 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Safari",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Open-air tuk-tuk ride along coastal road toward Mirissa headland",
+        description:
+          "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal strip, dropping you at the ridge access path.",
+        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+        featured: true,
+      },
+      {
+        title: "Private Car Transfer",
+        subtitle: "Direct coastal highway route",
+        durationBadge: "~10 mins",
+        icon: "pedal_bike",
+        iconLabel: "Coastal Drive",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+        imageAlt: "Coastal road scenery near Mirissa",
+        description:
+          "Enjoy a comfortable air-conditioned private car transfer arranged by our concierge for your morning or evening excursion.",
+        leftNote: "Arranged via concierge",
+        rightNote: "Flexible return timing",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of the Promontory",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Sweeping panorama from Mirissa Coastal Promontory ridge",
+        topBadge: "07:00 AM • Ridge Vista",
+        topBadgeRight: "6.0 km from hotel",
+        script: "coastal spine...",
+        title: "Morning Ridge Panorama",
+        description: "Expansive aerial perspectives overlooking the turquoise ocean and coastline.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Swaying palms framing ocean horizon from Mirissa headland",
+        topBadge: "Promontory Flora",
+        topBadgeRight: "Palm Canopy",
+        script: "ridge breeze...",
+        title: "Palm-Framed Horizon",
+        description: "Tall coastal palms swaying in the refreshing open-ocean ridge breeze.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
+        imageAlt: "Coastal cliff formation along Mirissa promontory",
+        topBadge: "Cliff Ledge",
+        topBadgeRight: "Rock Edge",
+        script: "stone & swell...",
+        title: "Headland Rock Ledge",
+        description: "Rugged stone formations buffering the headland against crashing ocean waves.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
+        imageAlt: "Amber golden hour sunset over Mirissa coastal ridge",
+        topBadge: "18:00 PM • Sunset Glow",
+        topBadgeRight: "Golden Hour",
+        script: "evening light...",
+        title: "Ridge Sunset Horizon",
+        description: "Warm evening twilight washing over the raised coastal ridge and horizon.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Mirissa Coastal Promontory. Explore surf breaks, hidden coves, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "parrot-rock",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Parrot Rock offshore islet in Mirissa",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "5.8 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Parrot Rock",
+        description: "A prominent offshore rocky islet linked to Mirissa beach, offering elevated 360-degree panoramic views across the bay.",
+        footerLeft: "Best visited at low to mid tide",
+        href: "/experiences/parrot-rock",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "coconut-tree-hill",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
+        imageAlt: "Coconut Tree Hill in Mirissa overlooking the Indian Ocean",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.2 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Coconut Tree Hill & Mirissa Point",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        footerLeft: "Ideal at dawn or golden hour",
+        href: "/experiences/coconut-tree-hill",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "secret-beach-mirissa",
+        filter: "spots",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
+        imageAlt: "Secret Beach Mirissa hidden cove",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "glass",
+        distance: "6.5 km",
+        categoryIcon: "compass",
+        category: "Hidden Swim Spots & Viewpoints",
+        title: "Secret Beach Mirissa",
+        description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
+        footerLeft: "Ideal for morning snorkeling & cliffside views",
+        href: "/experiences/secret-beach-mirissa",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Promontory Outing?",
+    deck: "Our concierge team will arrange comfortable transport timed perfectly for dawn or sunset ridge viewing, and ensure your morning towels or camera gear are packed.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Mirissa%20Coastal%20Promontory%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
@@ -2500,6 +3781,11 @@ export const DESTINATION_DETAILS: DestinationDetail[] = [
   RAMS_RIGHT_SURF_BREAK_DETAIL,
   AWEE_COCO_SECRET_POOL_DETAIL,
   SECRET_JUNGLE_BEACH_DETAIL,
+  POLHENA_BEACH_CORAL_REEF_DETAIL,
+  SECRET_BEACH_MIRISSA_DETAIL,
+  COCONUT_TREE_HILL_DETAIL,
+  PARROT_ROCK_DETAIL,
+  MIRISSA_COASTAL_PROMONTORY_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {

@@ -1,5 +1,5 @@
 import type { DestinationHeroData } from "@/data/destinationDetailData";
-import { MapPin, Waves, Sun, Navigation, Droplets } from "lucide-react";
+import { MapPin, Waves, Sun, Navigation, Droplets, Compass } from "lucide-react";
 
 const metaIcons = {
   location_on: MapPin,
@@ -8,6 +8,7 @@ const metaIcons = {
   near_me: Navigation,
   pool: Droplets,
   surfing: Waves,
+  compass: Compass,
 } as const;
 
 export function DestinationHero({ hero }: { hero: DestinationHeroData }) {

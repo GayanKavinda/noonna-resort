@@ -9,12 +9,14 @@ import {
   Navigation,
   MessageCircle,
   Droplets,
+  Compass,
 } from "lucide-react";
 
 const cardIconMap = {
   schedule: Clock,
   surfing: Waves,
   pool: Droplets,
+  compass: Compass,
 } as const;
 
 export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitalsData }) {
