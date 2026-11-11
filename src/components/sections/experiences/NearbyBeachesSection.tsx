@@ -94,13 +94,13 @@ export function NearbyBeachesSection() {
             },
             {
               title: "Ahangama Beach",
-              tag: "Heritage & Cafés",
+              tag: "Reef Point Breaks",
               dist: "~3.8 km",
-              desc: "Home of the famous stilt fishing tradition, artisan sourdough bakeries, and coastal rock pools glowing in late-afternoon southern sun.",
-              footer: "Stilt Tradition & Vistas",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw",
-              href: null,
-              cta: null,
+              desc: "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
+              footer: "Boho Coastal Town",
+              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+              href: "/experiences/ahangama-beach",
+              cta: "Explore Ahangama",
             },
           ].map((c) => (
             <div key={c.title} className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.1)] transition-all flex flex-col sm:flex-row gap-5 items-stretch border-t border-surface-container">

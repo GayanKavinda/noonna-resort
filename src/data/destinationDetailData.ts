@@ -496,6 +496,24 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         linkLabel: "View Dedicated Page →",
       },
       {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
         id: "polhena-tidal-pool",
         filter: "spots",
         image:
@@ -757,6 +775,24 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
         linkLabel: "View Dedicated Page →",
       },
       {
@@ -1031,6 +1067,24 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         linkLabel: "View Dedicated Page →",
       },
       {
+        id: "ahangama-beach",
+        filter: "beaches",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Ahangama turquoise reef breaks and palm-lined shoreline",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Ahangama Beach",
+        description:
+          "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
+        footerLeft: "Great for surf sessions & sunset cafes",
+        href: "/experiences/ahangama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
         id: "kushtarajagala-rock-relief",
         filter: "heritage",
         image:
@@ -1080,10 +1134,282 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
+const ahangamaBase = BEACH_DESTINATIONS.find((d) => d.slug === "ahangama-beach");
+
+export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
+  slug: "ahangama-beach",
+  name: ahangamaBase?.name ?? "Ahangama Beach",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Reef Point Breaks", "Boho Coastal Town"],
+  distanceLabel: ahangamaBase?.distance ? `${ahangamaBase.distance} from Noonna` : "~3.8 km from Noonna",
+  hero: {
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
+    imageAlt: "Ahangama coastal cove with peeling waves and stilt fishermen frames",
+    script: "boho surf vibes & steady reef peelers...",
+    title: "Ahangama Beach & Surf Lineup",
+    deck: "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Ahangama" },
+      { icon: "surfing", label: "A-Frame Reef Breaks & Sandy Coves" },
+      { icon: "wb_sunny", label: "Prime Season: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & surf intelligence...",
+    sectionTitle: "Ahangama At A Glance: Reef Breaks & Coastal Vibe",
+    sectionDeck:
+      "Field notes and coastal conditions for morning reef sessions, vibrant cafe hops, and quick journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image:
+        "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
+      imageAlt: "Ahangama shallow turquoise reef shelf and coastal palms",
+      topBadge: "Reef Breaks & Surf Hub",
+      distanceBadge: "3.8 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Swell: 06:00 – 09:30 AM & 16:30 – 18:30 PM",
+      title: "Volcanic Reef Lineup & Beach Coves",
+      description:
+        "A dynamic stretch featuring famous reef breaks like Sticks and Marshmallows, alongside serene sandy coves for relaxed dips and morning walks.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "footprint", label: "Reef Booties Recommended for Outer Breaks" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Surf Window",
+        title: "Prime Swell & Light Window",
+        pill: "Dawn Patrol & Sunset",
+        description:
+          "Glassy early morning sessions between 06:00 – 09:30 AM before afternoon sea breezes pick up. Late golden hour brings warm amber light and mellow peelers.",
+        left: { icon: "air", label: "Light offshore sea breeze" },
+        right: "High water clarity",
+      },
+      {
+        icon: "surfing",
+        eyebrow: "Break Character",
+        title: "Reef & Beach Break Lineup",
+        pill: "Intermediate to Advanced",
+        description:
+          "Consistent lefts and rights peeling over shallow reef ledges for experienced surfers, with sandy beach entries available inside sheltered coves.",
+        left: { icon: "waves", label: "Sticks & Marshmallow Reefs" },
+        right: "Reef & sand channel entries",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°58'40\"N 80°22'28\"E",
+      title: "Door-to-Shore Access",
+      description:
+        "Positioned ~3.8 km west along the Matara Coastal Road (A2). Reached in a 7-minute tuk-tuk ride or a 15-minute coastal bicycle ride through quiet back lanes.",
+      mapsHref: "https://maps.google.com/?q=5.9777,80.3744",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20surf%20updates%20and%20cafe%20recommendations%20for%20Ahangama.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Ahangama Beach",
+    sectionDeck:
+      "Located 3.8 km west of Noonna Beach Hotel along the southern coastal road, reaching Ahangama's surf breaks and coastal spots is an easy journey:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "3.8 km along Matara Coastal Road (A2)",
+        durationBadge: "~7 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Open-Air Ride",
+        image:
+          "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Open-air tuk-tuk with surfboards driving toward Ahangama",
+        description:
+          "Enjoy a breezy ride west past coastal palm grooves and fruit stands. Drivers can drop you directly at your preferred surf break or beach cafe.",
+        leftNote: "Estimated fare: 400–600 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Cruiser Bike Ride",
+        subtitle: "Inland village & coastal paths",
+        durationBadge: "~15 mins",
+        icon: "pedal_bike",
+        iconLabel: "Scenic Cruise",
+        image:
+          "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Cruiser bicycle parked near Ahangama beach",
+        description:
+          "Pedal along peaceful back lanes, bypassing highway traffic on bicycles equipped with surfboard side racks.",
+        leftNote: "Bikes subject to hotel availability",
+        rightNote: "Locks provided",
+        featured: true,
+      },
+      {
+        title: "Coastal Train Trip",
+        subtitle: "Midigama Station to Ahangama Station",
+        durationBadge: "~5 mins",
+        icon: "train",
+        iconLabel: "Southern Railway",
+        image:
+          "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Coastal train heading toward Ahangama Railway Station",
+        description:
+          "Catch a quick 1-stop coastal train ride westward to Ahangama Halt, dropping you right in the center of town near cafes and beaches.",
+        leftNote: "Tickets at station (~80–120 LKR)",
+        rightNote: "Ocean views along the track",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Ahangama",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+        imageAlt: "Panoramic view of Ahangama outer reef break at dawn",
+        topBadge: "06:15 AM • Outer Reef",
+        topBadgeRight: "3.8 km from hotel",
+        script: "morning swell...",
+        title: "Dawn Lines at Sticks Break",
+        description: "Clean offshore walls peeling over shallow coral ledges in early morning light.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Stilt fishermen perched over turquoise water in Ahangama",
+        topBadge: "Traditional Culture",
+        topBadgeRight: "Stilt Fishermen",
+        script: "heritage & sea...",
+        title: "Iconic Stilt Fishermen",
+        description: "Traditional fishermen standing watch on wooden poles against the ocean horizon.",
+      },
+      {
+        span: "lg:col-span-7",
+        image:
+          "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Surfer walking along Ahangama palm-fringed shoreline",
+        topBadge: "Surf Lifestyle",
+        topBadgeRight: "Boho Vibe",
+        script: "coastal rhythm...",
+        title: "Barefoot Coastal Vibe",
+        description: "Relaxed oceanfront cafes and palm-shaded paths lining the beach strip.",
+      },
+      {
+        span: "lg:col-span-5",
+        image:
+          "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Amber golden hour sunset over Ahangama ocean reef",
+        topBadge: "17:50 PM • Golden Hour",
+        topBadgeRight: "Sunset Chill",
+        script: "evening calm...",
+        title: "Amber Sunset over the Reef",
+        description: "Peaceful twilight hues reflecting off calm tidepools and peeling waves.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Ahangama. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "abimanagama-beach",
+        filter: "beaches",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Calm turquoise waters and golden sand cove at Abimanagama Beach",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "2.9 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Abimanagama Beach",
+        description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
+        footerLeft: "Ideal for unhurried morning swims",
+        href: "/experiences/abimanagama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "3.5 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline & surf lessons",
+        href: "/experiences/weligama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "galle-dutch-fort",
+        filter: "heritage",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
+        imageAlt: "Galle Dutch Fort ocean ramparts and historic stone lighthouse bastion",
+        topBadge: "Single Page Hub",
+        topBadgeVariant: "glass",
+        distance: "22 km",
+        categoryIcon: "landmark",
+        category: "Historical & Cultural",
+        title: "Galle Dutch Fort Ramparts",
+        description:
+          "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
+        footerLeft: "Late afternoon sunset walk",
+        href: "/experiences/southern-heritage-coastal-expeditions",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Ahangama Outing?",
+    deck: "Our concierge team can arrange tuk-tuk transport, recommend popular surf spots or cafes, and organize reef booties or board rentals.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Ahangama%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
 export const DESTINATION_DETAILS: DestinationDetail[] = [
   MIDIGAMA_BEACH_DETAIL,
   ABIMANAGAMA_BEACH_DETAIL,
   WELIGAMA_BEACH_DETAIL,
+  AHANGAMA_BEACH_DETAIL,
 ];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {
