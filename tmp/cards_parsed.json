@@ -1,0 +1,302 @@
+[
+  {
+    "id": "lucky-fort",
+    "title": "1. Lucky Fort Restaurant",
+    "subtitle": "Mama Lucky's Family Kitchen since 1999 â€¢ No 7 Parawa St, Galle Fort",
+    "badge": "Clay Pot Feast",
+    "loc": "Galle Fort â€¢ ~24 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_AGsCYTXEz2ZNQQCYD9GHPQFlawrMa3edy_y-FUrsAfr8ZBejvpJYr1rqgCPXdB9OgRvL7zMZAk5IxqLveU9_Gt8R2tCqh12udzMVgIcOLPSP7-OBMQQpbg5GAhGBVwzDU8MXMzuB4ijKhi7CtY77f-w3koPBggBiEQLFhSFHD6Uji85EKplS572b_0DI8vfMkemWq2m0kAWdDfLJSZL3xO9jTY03A2hInp3lbYdLrLw392gjZBIbtQ",
+    "thumbs": [],
+    "rating": "4.5",
+    "reviews": "(1,950 TripAdvisor Reviews)",
+    "secPill": "UNESCO Galle Fort",
+    "desc": "Mama Lucky's celebrated 10-curry terracotta feast in an intimate Dutch Fort garden courtyard. All curries prepared fresh with hand-pressed coconut milk &amp; traditional spices.",
+    "highlights": [],
+    "metas": [],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Lucky+Fort+Restaurant+Galle+Fort",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-2.5 py-2 rounded-lg border border-slate-200 hover:border-[#397FA8]/40 hover:text-[#397FA8] text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "tel:+94912242922",
+        "attrs": "",
+        "text": "callCall"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20Lucky%20Fort%20Restaurant%20Galle%20Fort",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "table_restaurantBook Table"
+      }
+    ]
+  },
+  {
+    "id": "shirani",
+    "title": "2. Shirani Home Made Rice &amp; Curry",
+    "subtitle": "Shirani &amp; Lala's Family Kitchen â€¢ No. 36 Kadabaddagama, Gurubebila",
+    "badge": "Hotel Favorite",
+    "loc": "Kadabedda â€¢ 250m Walk",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuCdHN8SegYSnRhuARly7hgHtY2dJHP533x7bK5nuEgKx8d5hkPF0b2WzdRs9of6A7-pGzCCOrT0F1AMby6d64lNic6EXN9zyNcZazMgogY-ktXxQI8ZWcmW2COCGyECl_aXTi791oLYCMIj4of9QirJSPRmDySsAoH1vUCVLO0KaWMhY3u0adkAuxRryEUozoaloJ-LPKo3UXZdk6n7On30vBu3BDC7d7v04JcgmI0f1Rf8bpt7IzlHBw",
+    "thumbs": [],
+    "rating": "4.8",
+    "reviews": "(288 Google â€¢ 4.7â˜… 172 TripAdvisor)",
+    "secPill": "3 Mins Walk",
+    "desc": "Simmered slowly over coconut husk fire in hand-crafted clay pots on a breezy village veranda 3 minutes from our gate. Renowned for rotating daily 6-curry feasts, mango curry, and personal cooking lessons.",
+    "highlights": [],
+    "metas": [],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Shirani+Home+Made+Rice+Curry+Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-2.5 py-2 rounded-lg border border-slate-200 hover:border-[#397FA8]/40 hover:text-[#397FA8] text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "tel:+94779206951",
+        "attrs": "",
+        "text": "callCall"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20Shirani%20Home%20Made%20Rice%20&amp;%20Curry%20or%20Cooking%20Class",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "table_restaurantBook / Class"
+      }
+    ]
+  },
+  {
+    "id": "kumbala",
+    "title": "3. Kumbala Restaurant &amp; Cafe",
+    "subtitle": "Community Gathering Hub â€¢ 32/A Kadabeddagama Rd, Weligama",
+    "badge": "Community Buffet &amp; Cafe",
+    "loc": "Gurubebila â€¢ ~2.1 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuDs5LZVudRv1NUIiK40TmMaquNE6GZ66mSMW6jknFtS84a27RJnu2WLa-_MVfpkky0nBCkj-ngQxlobRSosLH0zidw5Ax3-f1cfiy1kAeHfacMO_SMXMc1BCYtxpvo8AqzzoY6jko1r67Uij8uwqzwohfxZERhm6d3gE5P5y8Uy3PaZTCyni_371zfu-j9i3URU6QUgMD0_XXyofaoJai43V1Ea8HWhrBf_6Rq8Z9N4nFhoZBtphqHCqA",
+    "thumbs": [],
+    "rating": "4.7",
+    "reviews": "(47 Google Reviews â€¢ #47 in Weligama)",
+    "secPill": "Kadabeddagama",
+    "desc": "Casual, cozy surfer &amp; traveler hub celebrated for authentic Sri Lankan rice &amp; curry buffet evenings, healthy fresh juices, and western comforts like chicken schnitzel. Free parking available.",
+    "highlights": [],
+    "metas": [
+      "schedule 8:00 AM â€“ 10:00 PM â€¢ Open daily",
+      "location_on 32/A Kadabeddagama Rd, Weligama 81700"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Kumbala+Restaurant+Cafe+Gurubebila",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Kumbala%20Restaurant%20%26%20Cafe",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatInquire"
+      }
+    ]
+  },
+  {
+    "id": "mettha",
+    "title": "4. Mettha's Home Cooked Meals",
+    "subtitle": "Mettha's Family Veranda Kitchen â€¢ Yaddehimulla Road, Unawatuna",
+    "badge": "Woman-Owned â€¢ Local Gem",
+    "loc": "Unawatuna â€¢ ~18 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwkoGVpv9SezDw_tehZyUBo2iFlUBmPaCglPJFoLYGvaqzENh7XQhUOH1onJwdSxN0ymg_JpyrizkjDmI8_f5sHBFm0H2y24LeF7iwxOI7I8koilGGMAprwHjmf3OBlna01qHWHPJmpyEchf_Qm-6P9hX0BeOQyOrBJLiR0hHNLFzsx1TpVenBltcH-pB44BguSIr8ctRSS1eKfnrOBAdgubZNACTwFiM65spqf8D6p21tfiagIGiC4g",
+    "thumbs": [],
+    "rating": "4.8",
+    "reviews": "(210 Reviews â€¢ Traditional Sri Lankan)",
+    "pricePill": "Rs 1,000â€“2,000",
+    "desc": "Authentic family-run traditional eatery in Unawatuna known for fresh rotating curries (jackfruit, beetroot, aubergine, mushroom, dhal, chicken &amp; ocean prawns) cooked upon order by Mettha with custom spice levels.",
+    "highlights": [],
+    "metas": [
+      "schedule 8:00 AM â€“ 10:00 PM â€¢ Daily",
+      "location_on Yaddehimulla Road, Unawatuna 80600"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Mettha's+Home+Cooked+Meals+Unawatuna",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-2.5 py-2 rounded-lg border border-slate-200 hover:border-[#397FA8]/40 hover:text-[#397FA8] text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "tel:+94775016678",
+        "attrs": "",
+        "text": "callCall"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Mettha's%20Home%20Cooked%20Meals%20Unawatuna",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  },
+  {
+    "id": "le-fish",
+    "title": "5. Le' Fish Weligama",
+    "subtitle": "Beachfront Fresh Catch &amp; Charcoal Embers â€¢ Weligama Bypass Road",
+    "badge": "Fresh Catch Grill",
+    "loc": "Weligama Beach â€¢ ~3.2 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_OByZYpD6V4CO5hs1QTE-CgaBkOnah2fctz4K6tnNw2S1YIHoTuKXglDyEXIuIygFhEnEx3kMUBeXtZbcRG5Y0Q0XGc2NcIZ_EjYodisZN_9jcLCZt9J8PQVL_1MJNKKecVcKuYdbXS6dVpI7-igyjze5r57vg7sRvLvqyHuO77M68BBn0a8n6QNDBIDxEmmA9PshvvLiaTOmfidJFoNTLIfpZJKJCJUnD2t0iEdE0Jouq32DwP9Pvw",
+    "thumbs": [],
+    "rating": "4.7",
+    "reviews": "(1,453 Reviews â€¢ #5 in Weligama)",
+    "pricePill": "Rs 3,000â€“8,000",
+    "desc": "Feet-in-the-sand seafood feast. Pick fresh whole reef fish, king prawns, and calamari grilled over hot charcoal embers.",
+    "highlights": [],
+    "metas": [
+      "schedule 10:00 AM â€“ 10:00 PM â€¢ Open daily",
+      "location_on Weligama Bypass Beach Rd"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Le+Fish+Weligama+Bypass+Road",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20a%20table%20at%20Le%27%20Fish%20Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  },
+  {
+    "id": "sithum",
+    "title": "6. Sithum Fish Point",
+    "subtitle": "Casual Beachfront Grill â€¢ Bypass Beach Road, Weligama",
+    "badge": "Seafood Platters",
+    "loc": "Weligama Beach â€¢ ~3.0 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkTYMrUDmZxzJ_BLceIcRUhdKgb5V-oG77uaXWOz2WyB847A66m-CL8caUfAqkPA9xZYJ7Pr_qaDv2WExi5biRwWqFXaKOZgszK1L9WItYe9NkS5uTDX23S277rueVaHyD6yLNgt9DhIF8VGXohuucHboJhA8DMIUwY6qmmP1E3iAu44ZsVjKAVpLZvgv-P0McXoVkqsGnufMDnJEwKZLhTxXuzcxuWZWzBE06THSjacu6MvEyDaWd_g",
+    "thumbs": [],
+    "rating": "4.9",
+    "reviews": "(268 Reviews â€¢ 270 Online Ratings)",
+    "pricePill": "Rs 2,000â€“6,000",
+    "desc": "Casual seaside tables on the sand renowned for generous portions of freshly caught red snapper, tuna, and garlic prawns.",
+    "highlights": [],
+    "metas": [
+      "schedule 9:00 AM â€“ 10:00 PM â€¢ Open",
+      "location_on Bypass Beach Road, Weligama"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Sithum+Fish+Point+Bypass+Beach+Road+Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Sithum%20Fish%20Point%20Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  },
+  {
+    "id": "after-surf",
+    "title": "7. After Surf Rooftop Cafe",
+    "subtitle": "Top floor above Surf Camp â€¢ Palabandara Watta, Weligama",
+    "badge": "Sunset Rooftop",
+    "loc": "Pelabandara Watta â€¢ ~3.5 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuCCQ8XxCmvdc5aDEMxW4fIkvkCETqjz0IfiosNXdtHk6YqtWNYJsE4kTyF1IhqaRdgrZ_R6vmGETOnlthYs3YS29jKt93QJFGGvsCLoo1IeAyOPO7An1LjpFE2BM6DdYm16CBAIEngPFQv1buf5QZsGAc70VgKxkSJ4awOIpUPG7IB-6DWhn8hrGkcStJGK7b5ER1tueuphQPqQ_sWGVHmXsFH96kLBPm_SoGLQHT-_U4Yvx2qrBcQlAw",
+    "thumbs": [],
+    "rating": "4.8",
+    "reviews": "(95 Reviews â€¢ 5.0 TripAdvisor)",
+    "pricePill": "Rs 2,000â€“4,000",
+    "desc": "Relaxed breezy rooftop above Weligama surf break serving poke bowls, grilled tacos, smoothie jars, and sunset mocktails.",
+    "highlights": [],
+    "metas": [
+      "schedule 8:00 AM â€“ 9:00 PM â€¢ Open",
+      "location_on Palabandara Watta, Weligama"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Palabandara+Watta+New+Bypass+Road+Pelana+Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20After%20Surf%20Rooftop%20Cafe%20Weligama",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  },
+  {
+    "id": "kerabujen",
+    "title": "8. Kerabujen Restaurant",
+    "subtitle": "Coastal Rooftop Dining â€¢ 4th Floor, 631A Matara Rd, Weligama",
+    "badge": "4TH FL PANORAMA",
+    "loc": "Weligama â€¢ ~3.4 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida-public/AB6AXuAfyjN9Z_YjB_XIdgWxK0pBasAEmVeEC7f86fCBfL1WHCI_qxbsFqnHHaqgrvWG2LfVQUryW-jJWGZPR8C_IdIcp2R8qbEYCaR0eRApAnXVSO12dY_a-fMmrx3GJ05HLe6nr83sqrVi3zOAyHasWIGufsEeMaKilihZPEQW9ucq9Qfxqg_K9tsV8MJKVjyz41cGvGa8S0OVEXdzDPn3px72Bt6TFXJKUcKl1aYBo6mqoJ_w47Noh_M7jQ",
+    "thumbs": [],
+    "rating": "4.5",
+    "reviews": "(110 Reviews â€¢ 5.0 TripAdvisor)",
+    "pricePill": "Rs 2,000â€“6,000",
+    "desc": "Elevated coastal dining with elevator access, sweeping bay panoramas, cold drinks, and tender grilled catch of the day.",
+    "highlights": [],
+    "metas": [
+      "schedule 11:00 AM â€“ 11:00 PM â€¢ Open",
+      "location_on 4th Fl, 631A Matara Rd (Elevator access)"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=4th+Floor+631A+Matara+Rd+Weligama+Kerabujen+Restaurant",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20I'd%20like%20to%20reserve%20a%20sunset%20table%20at%20Kerabujen%20Restaurant%20on%20the%204th%20floor...",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  },
+  {
+    "id": "aloha",
+    "title": "9. Aloha Coffee Gallery",
+    "subtitle": "Specialty Coffee &amp; Brunch Hideaway â€¢ 7 Sunanda Road, Weligama",
+    "badge": "Artisan Roast",
+    "loc": "Weligama â€¢ ~3.6 km",
+    "mainImg": "https://lh3.googleusercontent.com/aida/ALJJyrDT9ElnDSumWpLETbaGJOo9N-i4ubTnbueh4UsvZvhV1m5zvPkNXrdCuRkRnMO7fChbcyST85f_yLYsYbWj1mamaOY0EuXY3zJ7LzTbpnkexFY9G1xnK6tNvQjt9PStvKNodYOYr4gecaqSKP0jEFsKyVSmn9MrZkpSp5QaGfcdV2XIXMrLryxDE7NIe6CcseuRKDgv5Z4MrKH9SstUeLU3Sph2SntqoC2abJbx4vb7DQ",
+    "thumbs": [],
+    "rating": "4.8",
+    "reviews": "(310 Reviews â€¢ 4.6 TripAdvisor)",
+    "pricePill": "Rs 1,800â€“3,500",
+    "desc": "Specialty espresso and brunch hideaway. Seasonal tip: Shady Lane Mirissa serves breakfast favorites 8:00 AM â€“ 4:00 PM.",
+    "highlights": [],
+    "metas": [
+      "schedule 8:00 AM â€“ 4:00 PM â€¢ Brunch",
+      "location_on 7 Sunanda Road, Weligama"
+    ],
+    "actionAnchors": [
+      {
+        "class": "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1",
+        "href": "https://www.google.com/maps/search/?api=1&amp;query=Aloha+Coffee+Gallery+7+Sunanda+Road+Mirissa",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "directionsDirections"
+      },
+      {
+        "class": "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95",
+        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20could%20you%20check%20morning%20table%20availability%20and%20opening%20hours%20for%20Aloha%20Coffee%20Gallery%20in%20Mirissa?",
+        "attrs": " rel=\"noopener noreferrer\" target=\"_blank\"",
+        "text": "chatConcierge"
+      }
+    ]
+  }
+]

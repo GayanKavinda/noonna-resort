@@ -181,12 +181,19 @@ To preserve strict documentation integrity and prevent fabricating client claims
 - **Route:** `src/app/experiences/dining/page.tsx`
 - **Components:** 10 numbered dining venue cards, cuisine filters, host dining advisory note, `PreFooterCta` (`context="taste"`).
 
-### Phase 7.5: Reusable Destination Detail Dynamic Template
-- **Route:** `src/app/experiences/[slug]/page.tsx`
-- **Components:** `DestinationHero`, `DestinationVitals` (7:5 split bento bar), `DestinationTransit` (4 transit modes), `DestinationGallery` (5-card visual diary), `DiscoverCarousel` (category filterable), Concierge assistance banner.
+### Phase 7.5A: Midigama Beach First Destination Detail (Completed)
+- **Route:** `src/app/experiences/[slug]/page.tsx` with `generateStaticParams` returning `midigama-beach` only.
+- **Page template:** `src/components/sections/experiences/destination/DestinationDetailPage.tsx` composing reusable section components.
+- **Data:** `src/data/destinationDetailData.ts` (`DestinationDetail` schema + `MIDIGAMA_BEACH_DETAIL`, slug lookup) with page-specific content kept in data and aligned to existing `experiencesData.ts` Midigama entry.
+- **Sections implemented (per Stitch reference):** metadata/breadcrumb bar, hero banner, quick vitals bento (7:5 showcase + 3 cards/intel), transit (4 cards), curated glimpses gallery (5-card bento), Discover More carousel (filters, arrows, 6 slides, progress/indicator bar), seamless sanctuary concierge banner, `PreFooterCta` (`context="beaches"`).
+- **Linkage:** only Midigama Beach card on experiences landing linked to `/experiences/midigama-beach`; other destination cards not connected.
+- **Verification:** browser screenshot captured at 340px width and compared against 340x1600 Stitch `screen.png`; `npx tsc --noEmit`, `npx eslint` on changed files, and `npm run build` passed; route prerendered.
+
+### Phase 7.5B+: Remaining Destination Details (Planned)
+- Extend `DESTINATION_DETAILS` and static params/card links after Midigama visual approval.
 
 ### Phase 7.6: Linkage, Navigation & QA
-- Connect all cards across all pages to their corresponding detail routes.
+- Connect approved cards across pages to corresponding detail routes.
 - Full responsive verification across mobile (390px), tablet (768px), and desktop (1440px).
 - Verify TypeScript types, zero lint errors, and successful static prerendering.
 

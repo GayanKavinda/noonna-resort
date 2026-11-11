@@ -49,8 +49,8 @@ export default function SouthernHeritagePage() {
   return (
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
       {/* BREADCRUMBS & CONTEXT BAR */}
-      <section className="w-full bg-white border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <section className="w-full bg-white border-b border-[#D9EAF3]/60">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },

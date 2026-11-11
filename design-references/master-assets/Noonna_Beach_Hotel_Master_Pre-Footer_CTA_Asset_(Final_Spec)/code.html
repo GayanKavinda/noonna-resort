@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Noonna Beach Hotel - Master Pre-Footer CTA Asset</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600;700&amp;family=Moon+Dance&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ocean-blue': '#397FA8',
+            'ocean-hover': '#2E698D',
+            'deep-coastal': '#173F56',
+            'slate-charcoal': '#0F172A',
+            'slate-body': '#475569',
+            'slate-muted': '#64748B',
+            'coastal-sky': '#B8E0F5',
+            'coastal-mist': '#D9EAF3',
+            'coastal-cloud': '#F1F9FD',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            script: ['"Moon Dance"', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFFF;
+      color: #0F172A;
+      -webkit-font-smoothing: antialiased;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+    .font-script {
+      font-family: 'Moon Dance', cursive;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-slate-900 antialiased flex flex-col justify-between">
+<!-- TOP ASSET CONTROL HEADER -->
+<header class="w-full border-b border-slate-100 bg-white/95 backdrop-blur sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center space-x-3">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<div>
+<span class="text-[11px] font-semibold tracking-wider uppercase text-slate-400 block">Component Spec Canvas</span>
+<h1 class="text-sm font-semibold text-slate-800">Master Pre-Footer CTA Asset • Production Ready</h1>
+</div>
+</div>
+<div class="flex items-center space-x-4 text-xs text-slate-500">
+<span class="px-2.5 py-1 bg-slate-100 rounded text-slate-600 font-mono text-[11px]">v1.2.0 • Active</span>
+<span class="hidden md:inline-block border-l border-slate-200 h-4"></span>
+<span class="hidden md:inline-block font-serif text-slate-700 text-sm">Noonna Design System</span>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS AREA -->
+<main class="w-full max-w-7xl mx-auto px-6 py-12 flex-1 flex flex-col justify-center">
+<!-- COMPONENT SECTION META -->
+<div class="mb-6 flex flex-col sm:flex-row sm:items-end justify-between border-b border-slate-100 pb-4 gap-2">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-semibold tracking-widest text-[#397FA8] uppercase">Live Component Preview &amp; Playground</span>
+<span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded">Interactive Switcher</span>
+</div>
+<h2 class="text-2xl font-serif text-slate-900">Master Pre-Footer Booking CTA</h2>
+</div>
+<div class="text-xs text-slate-400 font-mono">Unified Global Geometry • Contextual Route Copy Architecture (8 Routes: 5 Core + 3 Experience Hubs &amp; Destinations)</div>
+</div>
+<!-- PAGE CONTEXT TAB SWITCHER -->
+<div class="mb-5 flex flex-wrap items-center gap-2 border border-slate-200/80 bg-slate-50/80 p-1.5 rounded-xl">
+<div class="w-full flex flex-col lg:flex-row lg:items-center justify-between gap-3 p-1.5">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-slate-400 px-2 py-1">Core Routes:</span>
+<button class="cta-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 bg-[#397FA8] text-white shadow-sm" id="tab-btn-home" onclick="switchCtaTab('home')" type="button">Home (/)</button>
+<button class="cta-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-stay" onclick="switchCtaTab('stay')" type="button">Stay (/stay)</button>
+<button class="cta-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-experiences" onclick="switchCtaTab('experiences')" type="button">Experiences (/experiences)</button>
+<button class="cta-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-gallery" onclick="switchCtaTab('gallery')" type="button">Gallery (/gallery)</button>
+<button class="cta-tab-btn px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-contact" onclick="switchCtaTab('contact')" type="button">Contact (/contact)</button>
+</div>
+<div class="h-px lg:h-6 w-full lg:w-px bg-slate-200"></div>
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="text-[11px] font-semibold uppercase tracking-wider text-[#397FA8] px-2 py-1">Experience Routes:</span>
+<button class="cta-tab-btn px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-southern-heritage" onclick="switchCtaTab('southern-heritage')" type="button">🏛️ Southern Heritage</button>
+<button class="cta-tab-btn px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-dining" onclick="switchCtaTab('dining')" type="button">🍽️ Dining Guide</button>
+<button class="cta-tab-btn px-2.5 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 text-slate-600 hover:text-slate-900 hover:bg-white/80" id="tab-btn-destination" onclick="switchCtaTab('destination')" type="button">📍 Destination ([slug])</button>
+</div>
+</div>
+</div>
+<!-- LIVE COMPONENT PREVIEW CONTAINER -->
+<div class="w-full bg-white border border-slate-200/70 rounded-2xl shadow-sm p-6 sm:p-12 mb-14 relative transition-all duration-300">
+<!-- Active context indicator tag -->
+<div class="absolute top-4 right-5 flex items-center space-x-2 text-[11px] font-mono text-slate-400 bg-slate-50 px-2.5 py-1 rounded border border-slate-100">
+<span class="w-1.5 h-1.5 rounded-full bg-[#397FA8]"></span>
+<span class="" id="preview-route-indicator">Route: / (Home)</span>
+</div>
+<!-- THE MASTER CTA COMPONENT -->
+<section class="w-full bg-white py-8 sm:py-12 transition-all duration-300">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<p class="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 lowercase tracking-wide select-none transition-all duration-200" id="cta-eyebrow">rest &amp; unwind...</p>
+<h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-slate-900 font-normal tracking-tight mb-4 leading-tight transition-all duration-200" id="cta-heading">Make Room for a Slower Stay</h2>
+<p class="text-slate-600 font-light text-base sm:text-lg max-w-xl mx-auto mb-9 leading-relaxed transition-all duration-200" id="cta-deck">Discover Noonna Beach Hotel and find a peaceful place to enjoy Sri Lanka's southern coast.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-7" id="cta-button-group">
+<a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-[#397FA8] hover:bg-[#2E698D] text-white font-medium text-sm rounded-lg transition-colors duration-200 shadow-sm hover:shadow group space-x-2" href="https://www.booking.com/hotel/lk/noonna-beach.html" id="cta-primary-btn" rel="noopener noreferrer" target="_blank">
+<span class="" id="cta-primary-label">Explore Noonna on Booking.com</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200">open_in_new</span>
+</a>
+<!-- Secondary Concierge CTA - strictly conditional (hidden by default) -->
+<a class="hidden w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-700 font-medium text-sm rounded-lg border border-slate-200 transition-colors duration-200 space-x-2" href="#" id="cta-secondary-btn" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#397FA8]">chat</span>
+<span class="">Chat with Concierge</span>
+</a>
+</div>
+<!-- TRUST BADGE: Exact text 'Listed on Booking.com', neutral styling, outbound link -->
+<div>
+<a class="inline-flex items-center justify-center space-x-1.5 text-xs text-slate-600 font-normal bg-slate-50 border border-slate-200/80 px-3 py-1 rounded-full hover:bg-slate-100 transition-colors duration-150" href="https://www.booking.com/hotel/lk/noonna-beach.html" id="cta-trust-badge-link" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[#397FA8] text-[15px]">hotel</span>
+<span id="cta-trust-badge">Listed on Booking.com</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- DESIGN SPECIFICATION & TOKEN HANDOFF -->
+<div class="w-full space-y-10">
+<!-- SECTION: COPY MATRIX TABLE -->
+<div>
+<div class="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<span class="text-xs font-semibold tracking-widest text-[#397FA8] uppercase">Architecture Specification</span>
+<h3 class="text-xl font-serif text-slate-900 mt-0.5">Page-by-Page Contextual Copy Matrix</h3>
+</div>
+<span class="text-xs text-slate-500 font-mono">Geometry: Invariant across all 8 routes (5 Core Pages • 3 Experience Hubs &amp; Destinations)</span>
+</div>
+<div class="overflow-x-auto rounded-xl border border-slate-200/80 bg-white shadow-sm">
+<table class="w-full text-left border-collapse text-xs">
+<thead>
+<tr class="bg-slate-50/80 border-b border-slate-200 text-slate-600 font-semibold">
+<th class="py-3.5 px-4 font-mono text-[11px]">Route</th>
+<th class="py-3.5 px-4 font-serif text-sm">Eyebrow (Moon Dance)</th>
+<th class="py-3.5 px-4 font-serif text-sm">Main Heading (Cormorant)</th>
+<th class="py-3.5 px-4 font-sans text-xs">Supporting Deck (Inter 300)</th>
+<th class="py-3.5 px-4 font-mono text-[11px]">CTA Action &amp; Label</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100 text-slate-700">
+<tr class="bg-slate-50/70">
+<td class="py-2 px-4 font-mono text-[10px] tracking-wider uppercase text-slate-400 font-semibold" colspan="5">Part 1: Core Platform Routes</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('home')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/ (Home)</td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">rest &amp; unwind...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Make Room for a Slower Stay</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Discover Noonna Beach Hotel and find a peaceful place to enjoy Sri Lanka's southern coast.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('stay')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/stay</td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">your quiet sanctuary...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Your Coastal Stay Awaits</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Discover the Double Room and explore the details of your stay in Kumbalgama.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore the Room on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('experiences')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/experiences</td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">begin your coastal journey...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Anchor Your Days by the Ocean</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Discover southern beaches, cultural landmarks and local experiences surrounding Kumbalgama.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('gallery')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/gallery</td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">experience stillness firsthand...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Step Into the Living Atmosphere</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Explore the photographs and moments that capture Noonna Beach Hotel and its coastal surroundings.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('contact')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/contact</td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">we are here to welcome you...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Let Us Help You Plan Your Stay</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Have questions about your stay? Get in touch with Noonna Beach Hotel or explore the available booking information.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+<tr class="bg-slate-50/70">
+<td class="py-2 px-4 font-mono text-[10px] tracking-wider uppercase text-slate-400 font-semibold" colspan="5">Part 2: Experience Hubs &amp; Destinations</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('southern-heritage')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/experiences/southern-heritage-coastal-expeditions<br/><span class="text-[10px] text-slate-400">Heritage Hub (Galle Fort, Kushtarajagala, Martin Wickramasinghe)</span></td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">stories, culture &amp; coastal discoveries...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Anchor Your Days in Southern Heritage</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">From ancient rock-carved heritage and historic colonial landmarks to the natural beauty of Sri Lanka's southern coast, discover the stories and landscapes surrounding your stay in Kumbalgama.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna Beach Hotel on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('dining')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/experiences/dining<br/><span class="text-[10px] text-slate-400">Dining Guide &amp; Regional Flavours</span></td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">artisanal flavours &amp; local traditions...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">A Taste of the Southern Coast</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">Discover local dining spots and regional flavours to explore during your stay in southern Sri Lanka.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+<tr class="hover:bg-slate-50/50 transition-colors cursor-pointer" onclick="switchCtaTab('destination')">
+<td class="py-3 px-4 font-mono font-medium text-[#397FA8]">/experiences/[slug]<br/><span class="text-[10px] text-slate-400">Individual Destination Pages (Beaches, Temples, Coves)</span></td>
+<td class="py-3 px-4 font-script text-base text-[#397FA8]">explore &amp; return to stillness...</td>
+<td class="py-3 px-4 font-serif text-sm font-medium text-slate-900">Make Kumbalgama Your Coastal Sanctuary</td>
+<td class="py-3 px-4 text-slate-500 max-w-xs">After exploring [Destination Name], return to the peaceful rhythm of Noonna Beach Hotel on the southern coast.</td>
+<td class="py-3 px-4 font-mono text-[11px] text-slate-800">Explore Noonna on Booking.com</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- TOKEN HANDOFF CARDS -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Typography System -->
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-[#397FA8]"></span>
+<h4 class="text-xs font-semibold uppercase tracking-wider text-slate-700">Typography System</h4>
+</div>
+<div class="space-y-4 text-xs">
+<div class="border-b border-slate-50 pb-3">
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Philosophy Eyebrow</span>
+<span class="font-script text-xl text-[#397FA8] block my-0.5">Moon Dance Regular</span>
+<span class="text-slate-500">Size: 30px / 36px (text-3xl / text-4xl) • Color: #397FA8 (Ocean Blue)</span>
+</div>
+<div class="border-b border-slate-50 pb-3">
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Main Heading</span>
+<span class="font-serif text-base text-slate-900 font-medium block my-0.5">Cormorant Garamond 400</span>
+<span class="text-slate-500">Size: 30px / 48px (3xl/4xl/5xl) • Color: #0F172A (Slate Charcoal)</span>
+</div>
+<div>
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Supporting Body &amp; Trust Badge</span>
+<span class="font-sans text-xs text-slate-700 block my-0.5">Inter 300 Light / 400 Regular</span>
+<span class="text-slate-500">Size: 16px / 18px body • 12px neutral badge</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Color Tokens -->
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-[#397FA8]"></span>
+<h4 class="text-xs font-semibold uppercase tracking-wider text-slate-700">Color Tokens (Coastal Palette)</h4>
+</div>
+<div class="space-y-2 text-xs">
+<div class="flex items-center justify-between p-1.5 rounded bg-slate-50">
+<div class="flex items-center space-x-2">
+<span class="w-3.5 h-3.5 rounded bg-[#397FA8] border border-black/5"></span>
+<span class="font-medium text-slate-700 text-[11px]">Ocean Blue</span>
+</div>
+<span class="font-mono text-slate-500 text-[11px]">#397FA8</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-slate-50">
+<div class="flex items-center space-x-2">
+<span class="w-3.5 h-3.5 rounded bg-[#2E698D] border border-black/5"></span>
+<span class="font-medium text-slate-700 text-[11px]">Ocean Hover</span>
+</div>
+<span class="font-mono text-slate-500 text-[11px]">#2E698D</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-slate-50">
+<div class="flex items-center space-x-2">
+<span class="w-3.5 h-3.5 rounded bg-[#173F56] border border-black/5"></span>
+<span class="font-medium text-slate-700 text-[11px]">Deep Coastal</span>
+</div>
+<span class="font-mono text-slate-500 text-[11px]">#173F56</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-slate-50">
+<div class="flex items-center space-x-2">
+<span class="w-3.5 h-3.5 rounded bg-[#0F172A] border border-black/5"></span>
+<span class="font-medium text-slate-700 text-[11px]">Slate Charcoal</span>
+</div>
+<span class="font-mono text-slate-500 text-[11px]">#0F172A</span>
+</div>
+<div class="flex items-center justify-between p-1.5 rounded bg-slate-50">
+<div class="flex items-center space-x-2">
+<span class="w-3.5 h-3.5 rounded bg-[#FFFFFF] border border-slate-300"></span>
+<span class="font-medium text-slate-700 text-[11px]">Pure White Surface</span>
+</div>
+<span class="font-mono text-slate-500 text-[11px]">#FFFFFF</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Engineering Contract Card -->
+<div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-[#397FA8]"></span>
+<h4 class="text-xs font-semibold uppercase tracking-wider text-slate-700">Engineering Contract</h4>
+</div>
+<div class="space-y-3 text-xs text-slate-600">
+<div>
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Component Schema &amp; Properties</span>
+<div class="font-mono text-[10.5px] text-slate-700 mt-1 space-y-0.5 bg-slate-50 p-2 rounded border border-slate-100">
+<div>• eyebrow: <span class="text-[#397FA8]">string</span></div>
+<div>• heading: <span class="text-[#397FA8]">string</span></div>
+<div>• description: <span class="text-[#397FA8]">string</span></div>
+<div>• ctaLabel: <span class="text-[#397FA8]">string</span></div>
+<div>• bookingUrl: <span class="text-[#397FA8]">string (locked)</span></div>
+<div>• showConcierge: <span class="text-[#397FA8]">boolean (false)</span></div>
+<div>• conciergeUrl: <span class="text-[#397FA8]">string | null</span></div>
+</div>
+</div>
+<div class="border-t border-slate-50 pt-2">
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Structural Invariant</span>
+<span class="font-mono text-[11px] text-slate-700 block mt-0.5">max-w-4xl mx-auto px-6 text-center</span>
+<span class="text-slate-500 text-[11px]">Zero layout shift across route switching. Single Double Room (Max 2 Guests) booking scope.</span>
+</div>
+<div class="border-t border-slate-50 pt-2">
+<span class="text-slate-400 block text-[10px] uppercase font-semibold">Conversion Link &amp; Neutral Badge</span>
+<span class="text-slate-700 text-[11px] block mt-0.5 font-mono truncate">booking.com/hotel/lk/noonna-beach.html</span>
+<span class="text-slate-500 text-[11px]">Badge: 'Listed on Booking.com' • No partner or guarantee claims. Rel: noopener noreferrer • Target: _blank</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ASSET FOOTER -->
+<footer class="w-full border-t border-slate-100 bg-white py-6">
+<div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+<span class="">© 2026 Noonna Beach Hotel • Master Design System Asset</span>
+<span class="font-mono text-[11px]">Component Ref: PRE-FOOTER-CTA-V1-SYNC</span>
+</div>
+</footer>
+<script>
+  const ctaData = {
+    home: {
+      route: 'Route: / (Home)',
+      eyebrow: 'rest & unwind...',
+      heading: 'Make Room for a Slower Stay',
+      description: "Discover Noonna Beach Hotel and find a peaceful place to enjoy Sri Lanka's southern coast.",
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    },
+    stay: {
+      route: 'Route: /stay',
+      eyebrow: 'your quiet sanctuary...',
+      heading: 'Your Coastal Stay Awaits',
+      description: 'Discover the Double Room and explore the details of your stay in Kumbalgama.',
+      ctaLabel: 'Explore the Room on Booking.com',
+      showConcierge: false
+    },
+    experiences: {
+      route: 'Route: /experiences',
+      eyebrow: 'begin your coastal journey...',
+      heading: 'Anchor Your Days by the Ocean',
+      description: 'Discover southern beaches, cultural landmarks and local experiences surrounding Kumbalgama.',
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    },
+    gallery: {
+      route: 'Route: /gallery',
+      eyebrow: 'experience stillness firsthand...',
+      heading: 'Step Into the Living Atmosphere',
+      description: 'Explore the photographs and moments that capture Noonna Beach Hotel and its coastal surroundings.',
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    },
+    contact: {
+      route: 'Route: /contact',
+      eyebrow: 'we are here to welcome you...',
+      heading: 'Let Us Help You Plan Your Stay',
+      description: 'Have questions about your stay? Get in touch with Noonna Beach Hotel or explore the available booking information.',
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    },
+    'southern-heritage': {
+      route: 'Route: /experiences/southern-heritage-coastal-expeditions',
+      eyebrow: 'stories, culture & coastal discoveries...',
+      heading: 'Anchor Your Days in Southern Heritage',
+      description: "From ancient rock-carved heritage and historic colonial landmarks to the natural beauty of Sri Lanka's southern coast, discover the stories and landscapes surrounding your stay in Kumbalgama.",
+      ctaLabel: 'Explore Noonna Beach Hotel on Booking.com',
+      showConcierge: false
+    },
+    dining: {
+      route: 'Route: /experiences/dining',
+      eyebrow: 'artisanal flavours & local traditions...',
+      heading: 'A Taste of the Southern Coast',
+      description: 'Discover local dining spots and regional flavours to explore during your stay in southern Sri Lanka.',
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    },
+    destination: {
+      route: 'Route: /experiences/[slug]',
+      eyebrow: 'explore & return to stillness...',
+      heading: 'Make Kumbalgama Your Coastal Sanctuary',
+      description: 'After exploring [Destination Name], return to the peaceful rhythm of Noonna Beach Hotel on the southern coast.',
+      ctaLabel: 'Explore Noonna on Booking.com',
+      showConcierge: false
+    }
+  };
+
+  function switchCtaTab(tabKey) {
+    const data = ctaData[tabKey];
+    if (!data) return;
+
+    const eyebrow = document.getElementById('cta-eyebrow');
+    const heading = document.getElementById('cta-heading');
+    const deck = document.getElementById('cta-deck');
+    const primaryLabel = document.getElementById('cta-primary-label');
+    const secondaryBtn = document.getElementById('cta-secondary-btn');
+    const routeIndicator = document.getElementById('preview-route-indicator');
+    const trustBadge = document.getElementById('cta-trust-badge');
+
+    if (eyebrow) eyebrow.textContent = data.eyebrow;
+    if (heading) heading.textContent = data.heading;
+    if (deck) deck.textContent = data.description;
+    if (primaryLabel) primaryLabel.textContent = data.ctaLabel;
+    if (routeIndicator) routeIndicator.textContent = data.route;
+    if (trustBadge) trustBadge.textContent = 'Listed on Booking.com';
+
+    if (secondaryBtn) {
+      if (data.showConcierge) {
+        secondaryBtn.classList.remove('hidden');
+      } else {
+        secondaryBtn.classList.add('hidden');
+      }
+    }
+
+    // Update pill button styles
+    document.querySelectorAll('.cta-tab-btn').forEach(btn => {
+      btn.classList.remove('bg-[#397FA8]', 'text-white', 'shadow-sm');
+      btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-white/80');
+    });
+    const activeBtn = document.getElementById('tab-btn-' + tabKey);
+    if (activeBtn) {
+      activeBtn.classList.add('bg-[#397FA8]', 'text-white', 'shadow-sm');
+      activeBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-white/80');
+    }
+  }
+</script>
+<div class="hidden" data-routes="8-route-specs" id="cta-data-store"></div>
+</body></html>

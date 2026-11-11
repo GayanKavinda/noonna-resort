@@ -196,3 +196,26 @@ select {
   background: var(--color-sky-blue);
   color: var(--color-deep-blue);
 }
+
+/* Midigama "Discover More Along the Southern Coast" filter chips */
+#regional-discoveries .discover-filters {
+  gap: 8px !important;
+  padding-bottom: 12px !important;
+  margin-bottom: 24px !important;
+}
+#regional-discoveries .discover-filter-chip {
+  padding: 6px 14px !important;
+  font-size: 13px !important;
+  line-height: 1.3 !important;
+  gap: 6px !important;
+  border-radius: 9999px !important;
+}
+#regional-discoveries .discover-filter-chip svg,
+#regional-discoveries .discover-filter-chip .discover-filter-chip-icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+#regional-discoveries .discover-filter-chip-note {
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+}

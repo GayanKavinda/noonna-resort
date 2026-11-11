@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Info, Umbrella, Waves, ArrowRight, ArrowUpRight } from "lucide-react";
 
 export function NearbyBeachesSection() {
@@ -63,10 +64,10 @@ export function NearbyBeachesSection() {
               <Umbrella className="text-primary" size={18} />
               <span>Surf &amp; Sunset Sanctuary</span>
             </div>
-            <a className="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="#">
+            <Link className="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="/experiences/midigama-beach">
               <span>Explore Tides</span>
               <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-5 flex flex-col gap-6 justify-between">
@@ -74,26 +75,32 @@ export function NearbyBeachesSection() {
             {
               title: "Abimanagama Beach",
               tag: "Secluded Cove",
-              dist: "~1.7 km",
+              dist: "~2.9 km",
               desc: "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
               footer: "Quiet Coastal Solitude",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcItOrfXna0vSwJ5EOYYmva61TmgmYPw_jDH1hOFB9vrStcU6_mfsXiP82fYA8h7KHLznc_QReprJOZ9jV4pIKRbQR0i1AqwcCNIgLFeM6vKVtnDqWQb-HDgGlEf1IqYiQNQdCZFEgQShw6wv4oqCBU0PKdsJW5qsRfhMHaI22CuK5X6WT1NojeVQ8FzCbIg-1CC-N7Y1lZ5yVYwQjpGcB5cZcwkHzKY22ULC5nyyTQvg9fzZGe-6J5lekxuoRc5U15Fmwl9bP7OQol3o",
+              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+              href: "/experiences/abimanagama-beach",
+              cta: "View Shoreline",
             },
             {
               title: "Weligama Beach",
-              tag: "Broad Sandy Bay",
+              tag: "Sandy Bay Break",
               dist: "~3.5 km",
-              desc: "Sweeping 2 km crescent bay offering gentle rolling waves, vibrant surf schools, and breezy beachfront seafood grills under leaning palms.",
-              footer: "Beginner Waves & Cafés",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCaaAyC5-Lqe3vInV5SCeDP_1NYWY5s3z313mA21OOxVqX-AZ5nEy7kmoo9ajRPYYyWkfpP9Py-4ibfkdDgpSwYyiUon697umTz0Dj58DdOpqshpNR20eVoJxrfnvwZnpikjjqBmhZJIpShPBe3_5DVkebfW_Mm9W9i_Ej3-TxOQ9YyZ1orTE34H_SRxZxhC42m3YkSZkOVsORhrpArqL4lTN5tSxtBrKBqefGHcuXoUKNSunnuyc4JoDADdddDQvbZsu7WEjPffa4cvAs",
+              desc: "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
+              footer: "Beginner Surf Haven",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+              href: "/experiences/weligama-beach",
+              cta: "View Bay Guide",
             },
             {
               title: "Ahangama Beach",
-              tag: "Heritage & Cafés",
+              tag: "Reef Point Breaks",
               dist: "~3.8 km",
-              desc: "Home of the famous stilt fishing tradition, artisan sourdough bakeries, and coastal rock pools glowing in late-afternoon southern sun.",
-              footer: "Stilt Tradition & Vistas",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw",
+              desc: "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
+              footer: "Boho Coastal Town",
+              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+              href: "/experiences/ahangama-beach",
+              cta: "Explore Ahangama",
             },
           ].map((c) => (
             <div key={c.title} className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.1)] transition-all flex flex-col sm:flex-row gap-5 items-stretch border-t border-surface-container">
@@ -111,7 +118,14 @@ export function NearbyBeachesSection() {
                 </div>
                 <div className="pt-2 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
                   <span>{c.footer}</span>
-                  <ArrowUpRight size={16} />
+                  {c.href ? (
+                    <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                      <span>{c.cta ?? "Explore"}</span>
+                      <ArrowUpRight size={16} />
+                    </Link>
+                  ) : (
+                    <ArrowUpRight size={16} />
+                  )}
                 </div>
               </div>
             </div>

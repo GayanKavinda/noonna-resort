@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, ConciergeBell, Fish, Info, Star, Utensils, UtensilsCrossed } from "lucide-react";
 
 export default function CulinarySpotlights() {
@@ -141,14 +142,14 @@ export default function CulinarySpotlights() {
             From authentic village curries to beachfront seafood barbecues and specialty surf cafes along Weligama, Midigama, and Ahangama.
           </p>
         </div>
-        <a
+        <Link
           className="px-8 py-3.5 rounded-xl bg-[#397FA8] hover:bg-[#2D6A8E] text-white font-label-md text-label-md font-semibold tracking-wide transition-all duration-200 shadow-sm inline-flex items-center gap-2 shrink-0"
-          href="#"
+          href="/experiences/dining"
         >
           <UtensilsCrossed size={18} />
           <span>View Complete Dining &amp; Restaurant Guide</span>
           <ArrowRight size={16} />
-        </a>
+        </Link>
       </div>
       <div className="mt-6 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light">
         <Info className="text-outline" size={16} />
