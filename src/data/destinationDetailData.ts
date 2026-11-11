@@ -3,7 +3,7 @@ import { BEACH_DESTINATIONS } from "./experiencesData";
 export type DestinationBreadcrumbCategory = "Beaches & Surf";
 
 export interface DestinationMetaItem {
-  icon: "location_on" | "waves" | "wb_sunny" | "near_me";
+  icon: "location_on" | "waves" | "wb_sunny" | "near_me" | "pool";
   label: string;
 }
 
@@ -287,7 +287,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       {
         title: "Coastal Train Journey",
         subtitle: "Direct southern railway line",
-        durationBadge: "1.9 km away",
+        durationBadge: "1.2 km away",
         icon: "train",
         iconLabel: "Midigama Halt Station",
         image:
@@ -431,13 +431,13 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Ancient Kushtarajagala Bodhisattva rock relief carved into massive granite boulder",
         topBadge: "Single Page Hub",
         topBadgeVariant: "glass",
-        distance: "1.8 km",
+        distance: "3.3 km",
         categoryIcon: "landmark",
         category: "Historical & Cultural",
         title: "Kushtarajagala Rock Relief",
         description:
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
-        footerLeft: "5 min cruiser bicycle ride",
+        footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
         linkLabel: "Explore Heritage & Wildlife Hub →",
       },
@@ -485,7 +485,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
         topBadge: "Dedicated Page",
         topBadgeVariant: "primary",
-        distance: "3.2 km",
+        distance: "2.8 km",
         categoryIcon: "waves",
         category: "The Beaches & Surf Breaks",
         title: "Weligama Bay",
@@ -503,7 +503,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Sheltered natural tidal pool along the southern coast",
         topBadge: "Dedicated Page",
         topBadgeVariant: "glass",
-        distance: "14 km",
+        distance: "17.5 km",
         categoryIcon: "compass",
         category: "Hidden Swim Spots & Viewpoints",
         title: "Polhena Natural Pool",
@@ -545,7 +545,271 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
   },
 };
 
-export const DESTINATION_DETAILS: DestinationDetail[] = [MIDIGAMA_BEACH_DETAIL];
+const abimanagamaBase = BEACH_DESTINATIONS.find((d) => d.slug === "abimanagama-beach");
+
+export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
+  slug: "abimanagama-beach",
+  name: abimanagamaBase?.name ?? "Abimanagama Beach",
+  breadcrumbCategory: "Beaches & Surf",
+  categoryLabel: "Beaches & Surf",
+  tags: ["Secluded Cove", "Coastal Lagoon"],
+  distanceLabel: abimanagamaBase?.distance ? `${abimanagamaBase.distance} from Noonna` : "~2.9 km from Noonna",
+  hero: {
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
+    imageAlt: "Tranquil sandy cove and turquoise waters at Abimanagama Beach",
+    script: "quiet shores & gentle coastal waters...",
+    title: "Abimanagama Beach & Secluded Cove",
+    deck: "A tranquil sandy hideaway featuring calm low-tide lagoons, swaying palm canopies, and unhurried coastal solitude.",
+    meta: [
+      { icon: "location_on", label: "Southern Province, Midigama East / Weligama" },
+      { icon: "pool", label: "Sheltered Sandy Cove & Fringing Reef" },
+      { icon: "wb_sunny", label: "Best Conditions: November – April" },
+    ],
+  },
+  vitals: {
+    sectionScript: "field notes & coastal intelligence...",
+    sectionTitle: "Abimanagama At A Glance: Tidepools & Terrain",
+    sectionDeck:
+      "Field notes for peaceful morning shoreline walks, calm low-tide dipping pools, and quick journeys from Noonna Beach Hotel.",
+    climateBadge: "Southern Province Microclimate",
+    showcase: {
+      image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
+      imageAlt: "Shallow turquoise sea shelf and golden sand at Abimanagama Beach",
+      topBadge: "Secluded Shoreline Dip",
+      distanceBadge: "2.9 km from Noonna",
+      panelBadge: "Daily Rhythm",
+      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
+      title: "Sheltered Sand Basin & Fringing Reef",
+      description:
+        "Naturally protected shallow waters tucked behind a light reef shelf. Offers calm, clear saltwater immersion away from high-density surf crowds.",
+      facts: [
+        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Approx)" },
+        { icon: "footprint", label: "Reef Shoes Recommended at Low Tide" },
+      ],
+    },
+    cards: [
+      {
+        icon: "schedule",
+        eyebrow: "Water Window",
+        title: "Best Swimming Window",
+        pill: "Morning Low Tide",
+        description:
+          "Glassy morning conditions between 06:30 – 10:00 AM yield gentle, clear water for swimming. Golden hour brings soft light and cooler coastal breezes.",
+        left: { icon: "air", label: "Light offshore sea breeze" },
+        right: "High water clarity",
+      },
+      {
+        icon: "surfing",
+        eyebrow: "Cove Character",
+        title: "Cove & Surf Character",
+        pill: "Beginner / Relaxed",
+        description:
+          "Soft beach breaks and easy ocean entry suitable for longboard sessions or casual dips, sheltered from heavier outer swell.",
+        left: { icon: "waves", label: "Sandy beach entry" },
+        right: "Low crowd density",
+      },
+    ],
+    intel: {
+      eyebrow: "Direct Access & Navigation",
+      coordinates: "5°57'30\"N 80°24'30\"E",
+      title: "Door-to-Shore Access",
+      description:
+        "Positioned 2.9 km east along the Matara Coastal Road (A2) towards Weligama. Easily reached via a short 5-minute tuk-tuk ride or a scenic 11-minute coastal bicycle cruise.",
+      mapsHref: "https://maps.google.com/?q=5.958333,80.408333",
+      mapsLabel: "Google Maps Pin",
+      hostHref:
+        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20beach%20and%20tide%20updates%20for%20Abimanagama.",
+      hostLabel: "WhatsApp Host",
+    },
+  },
+  transit: {
+    sectionScript: "effortless journeys...",
+    sectionTitle: "Getting to Abimanagama Beach",
+    sectionDeck:
+      "Located 2.9 km east of Noonna Beach Hotel along the southern coastal road, reaching Abimanagama's quiet cove is simple and fast:",
+    cards: [
+      {
+        title: "Local Tuk-Tuk Safari",
+        subtitle: "2.9 km along Matara Coastal Road (A2)",
+        durationBadge: "~5 mins",
+        icon: "electric_rickshaw",
+        iconLabel: "Quick Ride",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Open-air tuk-tuk ride along Sri Lanka coastal road",
+        description:
+          "Enjoy a quick, breezy ride along the coastal palm strip. Drivers can drop you directly at Abimanagama Road leading to the shoreline.",
+        leftNote: "Estimated fare: 400–500 LKR (confirm locally)",
+        rightNote: "Hotel gate pickup available",
+      },
+      {
+        title: "Coastal Bicycle Ride",
+        subtitle: "Inland village & coastal lanes",
+        durationBadge: "~11 mins",
+        icon: "pedal_bike",
+        iconLabel: "Scenic Cruise",
+        image: "https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Cruiser bicycle parked by golden sand beach",
+        description:
+          "Pedal along gentle coastal lanes and village paths, bypassing main road traffic with front-basket or rack-equipped bikes.",
+        leftNote: "Bikes subject to hotel availability",
+        rightNote: "Locks provided",
+        featured: true,
+      },
+      {
+        title: "Shoreline Stroll",
+        subtitle: "Beach & roadside tideline stroll",
+        durationBadge: "~30 mins",
+        icon: "footprint",
+        iconLabel: "Coastal Walk",
+        image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop",
+        imageAlt: "Stroll along golden tide line in southern Sri Lanka",
+        description:
+          "Walk eastward along the coastal margin at low tide, taking in roadside coconut stalls and glimpses of local fishing boats.",
+        leftNote: "Best during morning hours",
+        rightNote: "Sun protection recommended",
+      },
+    ],
+  },
+  gallery: {
+    sectionScript: "visual journal...",
+    sectionTitle: "Curated Glimpses of Abimanagama",
+    allHref: "/experiences",
+    items: [
+      {
+        span: "lg:col-span-7",
+        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+        imageAlt: "Panoramic view of Abimanagama sandy bay at low tide",
+        topBadge: "07:00 AM • Morning Low Tide",
+        topBadgeRight: "2.9 km from hotel",
+        script: "morning calm...",
+        title: "Glassy Morning Cove",
+        description: "Soft golden sands and sheltered water illuminated by early morning light.",
+      },
+      {
+        span: "lg:col-span-5",
+        image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Palm trees hanging over calm turquoise water at Abimanagama",
+        topBadge: "Coastal Flora",
+        topBadgeRight: "Palm Canopy",
+        script: "shade & sea...",
+        title: "Coconut Shade & Shallow Waters",
+        description: "Naturally shaded beach spots perfect for quiet reading and relaxed sea dips.",
+      },
+      {
+        span: "lg:col-span-7",
+        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Local fishing boats resting on golden sand at Abimanagama Beach",
+        topBadge: "Local Heritage",
+        topBadgeRight: "Artisanal Fishermen",
+        script: "coastal life...",
+        title: "Artisanal Fishing Boats",
+        description: "Traditional wooden outrigger canoes rested on golden sand between morning trips.",
+      },
+      {
+        span: "lg:col-span-5",
+        image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
+        imageAlt: "Warm amber golden hour reflections on Abimanagama shoreline",
+        topBadge: "17:45 PM • Golden Hour",
+        topBadgeRight: "Sunset Quiet",
+        script: "evening glow...",
+        title: "Sunset over the Horizon",
+        description: "Peaceful coastal twilight bathed in warm amber ocean reflections.",
+      },
+    ],
+  },
+  discover: {
+    sectionScript: "unfold the journey...",
+    sectionTitle: "Discover More Along the Southern Coast",
+    sectionDeck:
+      "Extend your slow days beyond Abimanagama. Explore the living heritage, secret tidal pools, spice trails, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+    slides: [
+      {
+        id: "midigama-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Midigama Sandy Cove panoramic coastal view",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "1.4 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Midigama Beach & Coastal Coves",
+        description:
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+        footerLeft: "Reef breaks & tidepools",
+        href: "/experiences/midigama-beach",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "weligama-bay-beach",
+        filter: "beaches",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
+        imageAlt: "Wide sandy Weligama Bay shoreline with gentle surf",
+        topBadge: "Dedicated Page",
+        topBadgeVariant: "primary",
+        distance: "2.8 km",
+        categoryIcon: "waves",
+        category: "The Beaches & Surf Breaks",
+        title: "Weligama Bay",
+        description:
+          "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
+        footerLeft: "Calm morning shoreline",
+        href: "/experiences",
+        linkLabel: "View Dedicated Page →",
+      },
+      {
+        id: "kushtarajagala-rock-relief",
+        filter: "heritage",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
+        imageAlt: "Ancient Kushtarajagala Bodhisattva rock relief carved into massive granite boulder",
+        topBadge: "Single Page Hub",
+        topBadgeVariant: "glass",
+        distance: "3.3 km",
+        categoryIcon: "landmark",
+        category: "Historical & Cultural",
+        title: "Kushtarajagala Rock Relief",
+        description:
+          "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
+        footerLeft: "10-12 min cruiser bicycle ride",
+        href: "/experiences/southern-heritage-coastal-expeditions",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
+      },
+      {
+        id: "galle-dutch-fort",
+        filter: "heritage",
+        image:
+          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw",
+        imageAlt: "Galle Dutch Fort ocean ramparts and historic stone lighthouse bastion",
+        topBadge: "Single Page Hub",
+        topBadgeVariant: "glass",
+        distance: "22 km",
+        categoryIcon: "landmark",
+        category: "Historical & Cultural",
+        title: "Galle Dutch Fort Ramparts",
+        description:
+          "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
+        footerLeft: "Late afternoon sunset walk",
+        href: "/experiences/southern-heritage-coastal-expeditions",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
+      },
+    ],
+  },
+  concierge: {
+    script: "seamless sanctuary service",
+    title: "Would You Like Us to Prepare Your Abimanagama Outing?",
+    deck: "Our team can arrange a local driver, provide fresh towels, pack chilled king coconuts, and advise on optimal tide times for your visit.",
+    primaryHref:
+      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Abimanagama%20outing.",
+    primaryLabel: "Plan Outing with Host",
+    secondaryHref: "https://wa.me/94779206951",
+    secondaryLabel: "WhatsApp Concierge",
+  },
+};
+
+export const DESTINATION_DETAILS: DestinationDetail[] = [MIDIGAMA_BEACH_DETAIL, ABIMANAGAMA_BEACH_DETAIL];
 
 export function getDestinationDetailBySlug(slug: string): DestinationDetail | undefined {
   return DESTINATION_DETAILS.find((d) => d.slug === slug);

@@ -50,7 +50,7 @@ function shuffleSlides(slides: DestinationDiscoverSlide[]): DestinationDiscoverS
 function SlideCard({ slide }: { slide: DestinationDiscoverSlide }) {
   const Icon = catIcon[slide.categoryIcon];
   return (
-    <div className="discover-slide snap-start shrink-0 w-[340px] sm:w-[380px] h-[480px] relative rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all group border border-[#D9EAF3]/80 bg-[#173F56] flex flex-col justify-between">
+    <div className="discover-slide snap-start shrink-0 w-[260px] sm:w-[290px] md:w-[310px] h-[380px] sm:h-[400px] relative rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group border border-[#D9EAF3]/80 bg-[#173F56] flex flex-col justify-between">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt={slide.imageAlt}
@@ -60,32 +60,32 @@ function SlideCard({ slide }: { slide: DestinationDiscoverSlide }) {
         src={slide.image}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-on-primary-fixed/95 via-on-primary-fixed/40 to-transparent" />
-      <div className="relative p-6 flex items-start justify-between z-10">
+      <div className="relative p-4 flex items-start justify-between gap-2 z-10">
         <span
-          className={`px-3 py-1 rounded-full backdrop-blur-md text-white text-[10px] font-semibold tracking-wider uppercase border border-white/25 shadow-sm ${
+          className={`px-2.5 py-0.5 rounded-full backdrop-blur-md text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase border border-white/25 shadow-sm ${
             slide.topBadgeVariant === "primary" ? "bg-[#397FA8]" : "bg-[#173F56]/85"
           }`}
         >
           {slide.topBadge}
         </span>
-        <span className="px-3 py-1 rounded-full bg-[#173F56]/90 backdrop-blur-md text-white text-[11px] font-semibold flex items-center gap-1.5 border border-white/25 shadow-sm">
-          <MapPin className="w-3.5 h-3.5 text-tertiary-fixed" aria-hidden="true" />
+        <span className="px-2.5 py-0.5 rounded-full bg-[#173F56]/90 backdrop-blur-md text-white text-[10px] sm:text-[11px] font-semibold flex items-center gap-1 border border-white/25 shadow-sm shrink-0">
+          <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-tertiary-fixed" aria-hidden="true" />
           {slide.distance}
         </span>
       </div>
-      <div className="relative p-6 z-10 text-white space-y-2">
-        <div className="flex items-center gap-2 text-tertiary-fixed text-[11px] font-medium uppercase tracking-wider">
-          <Icon className="w-4 h-4" aria-hidden="true" />
+      <div className="relative p-4 z-10 text-white space-y-1.5">
+        <div className="flex items-center gap-1.5 text-tertiary-fixed text-[10px] sm:text-[11px] font-medium uppercase tracking-wider">
+          <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" aria-hidden="true" />
           {slide.category}
         </div>
-        <h3 className="font-serif text-2xl text-white font-medium leading-snug group-hover:text-tertiary-fixed transition-colors">
+        <h3 className="font-serif text-lg sm:text-xl text-white font-medium leading-snug group-hover:text-tertiary-fixed transition-colors">
           {slide.title}
         </h3>
-        <p className="text-xs text-white/80 font-light leading-relaxed">{slide.description}</p>
-        <div className="pt-4 border-t border-white/20 flex items-center justify-between">
-          <span className="text-[11px] text-tertiary-fixed-dim/95">{slide.footerLeft}</span>
+        <p className="text-[11px] sm:text-xs text-white/80 font-light leading-relaxed line-clamp-3">{slide.description}</p>
+        <div className="pt-3 border-t border-white/20 flex items-center justify-between gap-2">
+          <span className="text-[10px] sm:text-[11px] text-tertiary-fixed-dim/95 line-clamp-1">{slide.footerLeft}</span>
           <Link
-            className="text-xs text-tertiary-fixed font-semibold hover:text-white flex items-center gap-1.5 transition-colors"
+            className="text-[11px] sm:text-xs text-tertiary-fixed font-semibold hover:text-white flex items-center gap-1 transition-colors shrink-0 text-right"
             href={slide.href}
           >
             {slide.linkLabel}
@@ -99,10 +99,18 @@ function SlideCard({ slide }: { slide: DestinationDiscoverSlide }) {
 export function DestinationDiscoverCarousel({ discover }: { discover: DestinationDiscoverData }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeFilter, setActiveFilter] = useState<DestinationDiscoverFilterId>("all");
-  const [shuffled] = useState(() => shuffleSlides(discover.slides));
+  const [shuffled, setShuffled] = useState<DestinationDiscoverSlide[]>(discover.slides);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [canPrev, setCanPrev] = useState(false);
-  const [canNext, setCanNext] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [canScroll, setCanScroll] = useState(false);
+  const activeIndexRef = useRef(0);
+
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      setShuffled(shuffleSlides(discover.slides));
+    }, 0);
+    return () => window.clearTimeout(id);
+  }, [discover.slides]);
 
   const visibleSlides = useMemo(() => {
     if (activeFilter === "all") return shuffled;
@@ -121,13 +129,12 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
     const el = trackRef.current;
     if (!el) return;
     const max = Math.max(0, el.scrollWidth - el.clientWidth);
-    const left = el.scrollLeft;
-    setCanPrev(left > 4);
-    setCanNext(left < max - 4);
-
+    setCanScroll(max > 4);
     const step = getScrollStep();
-    const idx = step > 0 ? Math.round(left / step) : 0;
-    setActiveIndex(Math.min(Math.max(idx, 0), Math.max(visibleSlides.length - 1, 0)));
+    const idx = step > 0 ? Math.round(el.scrollLeft / step) : 0;
+    const clamped = Math.min(Math.max(idx, 0), Math.max(visibleSlides.length - 1, 0));
+    activeIndexRef.current = clamped;
+    setActiveIndex(clamped);
   }, [getScrollStep, visibleSlides.length]);
 
   useEffect(() => {
@@ -151,19 +158,57 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
     };
   }, [updateScrollState]);
 
-  const scrollBy = (dir: -1 | 1) => {
-    const el = trackRef.current;
-    if (!el) return;
-    el.scrollBy({ left: dir * getScrollStep(), behavior: "smooth" });
-  };
-
-  const scrollToIndex = (idx: number) => {
-    const el = trackRef.current;
-    if (!el) return;
-    el.scrollTo({ left: idx * getScrollStep(), behavior: "smooth" });
-  };
+  const scrollToIndex = useCallback(
+    (idx: number, behavior: ScrollBehavior = "smooth") => {
+      const el = trackRef.current;
+      if (!el) return;
+      const step = getScrollStep();
+      const max = Math.max(0, el.scrollWidth - el.clientWidth);
+      const left = Math.min(idx * step, max);
+      el.scrollTo({ left, behavior });
+    },
+    [getScrollStep],
+  );
 
   const total = visibleSlides.length;
+
+  const scrollBy = (dir: -1 | 1) => {
+    if (total <= 0) return;
+    const el = trackRef.current;
+    if (!el) return;
+    const max = Math.max(0, el.scrollWidth - el.clientWidth);
+    if (max <= 4) return;
+    const step = getScrollStep();
+    let next = activeIndexRef.current + dir;
+    if (dir === 1 && (el.scrollLeft >= max - 4 || next >= total)) {
+      el.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+    if (dir === -1 && (el.scrollLeft <= 4 || next < 0)) {
+      el.scrollTo({ left: max, behavior: "smooth" });
+      return;
+    }
+    next = Math.min(Math.max(next, 0), total - 1);
+    el.scrollTo({ left: Math.min(next * step, max), behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    if (paused || total <= 1 || !canScroll) return;
+    if (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(() => {
+      const el = trackRef.current;
+      if (!el) return;
+      const max = Math.max(0, el.scrollWidth - el.clientWidth);
+      if (max <= 4) return;
+      if (el.scrollLeft >= max - 4) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+      const step = getScrollStep();
+      el.scrollBy({ left: step, behavior: "smooth" });
+    }, 3500);
+    return () => window.clearInterval(id);
+  }, [paused, total, canScroll, getScrollStep]);
 
   return (
     <section
@@ -194,8 +239,8 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
           <div className="flex items-center gap-3 self-start lg:self-auto shrink-0">
             <button
               aria-label="Previous destinations"
-              className="w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#D9EAF3]/30 text-[#173F56] flex items-center justify-center transition-all shadow-sm hover:border-[#397FA8] active:scale-95 shrink-0 disabled:opacity-40 disabled:pointer-events-none"
-              disabled={!canPrev || total === 0}
+              className="w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#D9EAF3]/30 text-[#173F56] flex items-center justify-center transition-all shadow-sm hover:border-[#397FA8] active:scale-95 shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
+              disabled={total <= 1 || !canScroll}
               onClick={() => scrollBy(-1)}
               type="button"
             >
@@ -203,8 +248,8 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
             </button>
             <button
               aria-label="Next destinations"
-              className="w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#D9EAF3]/30 text-[#173F56] flex items-center justify-center transition-all shadow-sm hover:border-[#397FA8] active:scale-95 shrink-0 disabled:opacity-40 disabled:pointer-events-none"
-              disabled={!canNext || total === 0}
+              className="w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#D9EAF3]/30 text-[#173F56] flex items-center justify-center transition-all shadow-sm hover:border-[#397FA8] active:scale-95 shrink-0 disabled:opacity-40 disabled:cursor-not-allowed"
+              disabled={total <= 1 || !canScroll}
               onClick={() => scrollBy(1)}
               type="button"
             >
@@ -268,16 +313,22 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
 
         <div
           ref={trackRef}
-          className="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scroll-smooth"
+          className="flex gap-4 sm:gap-5 overflow-x-auto pb-5 snap-x snap-mandatory"
           id="coastal-carousel-track"
-          style={{ scrollbarWidth: "none" }}
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          onFocus={() => setPaused(true)}
+          onBlur={() => setPaused(false)}
+          onTouchStart={() => setPaused(true)}
+          onTouchEnd={() => setPaused(false)}
         >
           {visibleSlides.map((slide) => (
             <SlideCard key={slide.id} slide={slide} />
           ))}
         </div>
 
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-[#D9EAF3]/50 text-xs text-[#4A6B82]">
+        <div className="mt-5 sm:mt-6 flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 sm:pt-5 border-t border-[#D9EAF3]/50 text-xs text-[#4A6B82]">
           <div className="flex items-center gap-2 flex-wrap">
             {visibleSlides.map((slide, i) => (
               <button

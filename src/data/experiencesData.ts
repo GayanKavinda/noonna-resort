@@ -61,12 +61,14 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Abimanagama Beach",
     category: "beach",
     badge: "Secluded Cove",
-    distance: "~1.7 km",
+    distance: "~2.9 km",
     subtitle: "Quiet Coastal Solitude",
     description:
       "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
     features: ["Quiet Coastal Solitude", "Amber Sands", "Tide Shallows"],
     ctaLabel: "View Shoreline",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Tranquil sandy cove and turquoise waters at Abimanagama Beach",
   },
   {
     id: "weligama-beach",

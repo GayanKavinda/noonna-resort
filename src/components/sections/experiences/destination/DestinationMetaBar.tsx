@@ -11,7 +11,7 @@ export function DestinationMetaBar({ destination }: { destination: DestinationDe
             items={[
               { label: "Home", href: "/" },
               { label: "Experiences", href: "/experiences" },
-              { label: destination.breadcrumbCategory },
+              { label: destination.breadcrumbCategory, href: "/experiences#nearby-beaches" },
               { label: destination.name },
             ]}
           />

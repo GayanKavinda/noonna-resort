@@ -75,10 +75,12 @@ export function NearbyBeachesSection() {
             {
               title: "Abimanagama Beach",
               tag: "Secluded Cove",
-              dist: "~1.7 km",
+              dist: "~2.9 km",
               desc: "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
               footer: "Quiet Coastal Solitude",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcItOrfXna0vSwJ5EOYYmva61TmgmYPw_jDH1hOFB9vrStcU6_mfsXiP82fYA8h7KHLznc_QReprJOZ9jV4pIKRbQR0i1AqwcCNIgLFeM6vKVtnDqWQb-HDgGlEf1IqYiQNQdCZFEgQShw6wv4oqCBU0PKdsJW5qsRfhMHaI22CuK5X6WT1NojeVQ8FzCbIg-1CC-N7Y1lZ5yVYwQjpGcB5cZcwkHzKY22ULC5nyyTQvg9fzZGe-6J5lekxuoRc5U15Fmwl9bP7OQol3o",
+              img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
+              href: "/experiences/abimanagama-beach",
+              cta: "View Shoreline",
             },
             {
               title: "Weligama Beach",
@@ -95,6 +97,8 @@ export function NearbyBeachesSection() {
               desc: "Home of the famous stilt fishing tradition, artisan sourdough bakeries, and coastal rock pools glowing in late-afternoon southern sun.",
               footer: "Stilt Tradition & Vistas",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw",
+              href: null,
+              cta: null,
             },
           ].map((c) => (
             <div key={c.title} className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.1)] transition-all flex flex-col sm:flex-row gap-5 items-stretch border-t border-surface-container">
@@ -112,7 +116,14 @@ export function NearbyBeachesSection() {
                 </div>
                 <div className="pt-2 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
                   <span>{c.footer}</span>
-                  <ArrowUpRight size={16} />
+                  {c.href ? (
+                    <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                      <span>{c.cta ?? "Explore"}</span>
+                      <ArrowUpRight size={16} />
+                    </Link>
+                  ) : (
+                    <ArrowUpRight size={16} />
+                  )}
                 </div>
               </div>
             </div>

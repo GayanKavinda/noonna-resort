@@ -10,7 +10,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return [{ slug: "midigama-beach" }];
+  return [{ slug: "midigama-beach" }, { slug: "abimanagama-beach" }];
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
