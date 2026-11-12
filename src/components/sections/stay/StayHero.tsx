@@ -39,8 +39,8 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
             </span>
 
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-[52px] leading-[1.12] text-[#173F56] font-normal tracking-tight mb-4">
-              Double Room <br />
-              <span className="italic font-normal">with Private Bathroom</span>
+              Entire Resort <br />
+              <span className="italic font-normal">Rental for a Private Stay</span>
             </h1>
 
             <p className="text-[15px] sm:text-base text-slate-600 leading-relaxed mb-8 font-light max-w-xl">
@@ -106,7 +106,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
               <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[520px]">
                 <Image
                   src="/images/rooms/deluxe-ocean-suite.jpg"
-                  alt="Interior of Double Room with Private Bathroom at Noonna Beach Hotel"
+                  alt="Interior space at Noonna Beach Hotel in Kumbalgama"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -118,15 +118,15 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
                 <div className="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl flex items-center justify-between border border-[#D9EAF3] shadow-sm">
                   <div>
                     <p className="text-xs uppercase tracking-wider text-[#397FA8] font-semibold">
-                      Double Room
+                      Entire Resort Rental
                     </p>
                     <p className="font-heading text-base sm:text-lg text-[#173F56] font-normal">
-                      Double Room with Private Bathroom
+                      Private Resort Stay in Kumbalgama
                     </p>
                   </div>
                   <span className="px-3 py-1.5 rounded-full bg-[#EBF5FB] text-[#397FA8] text-xs font-semibold border border-[#D9EAF3] flex items-center gap-1">
                     <BadgeCheck className="w-3.5 h-3.5" />{" "}
-                    Verified Unit
+                    Private Stay
                   </span>
                 </div>
               </div>

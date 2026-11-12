@@ -18,8 +18,8 @@ import {
 import { HOTEL_INFO } from "@/lib/constants";
 
 const SUBJECT_OPTIONS = [
-  "Entire-House Reservation",
-  "Group or Family Stay (Weekly)",
+  "Entire Resort Reservation",
+  "Group or Family Private Resort Stay",
   "Airport Transfer & Arrival",
   "Experiences & Surf Advice",
   "Other Inquiry",
@@ -218,9 +218,9 @@ export function ContactInquiry() {
           </div>
 
           <p className="font-body-md text-[#475569] text-sm sm:text-base font-light leading-relaxed max-w-xl mx-auto">
-            Whether requesting special arrival arrangements, an entire-house
-            stay for your group or family, or surf condition advice, our hosting
-            team is at your gentle disposal.
+            Whether requesting special arrival arrangements, an entire resort
+            rental for a private resort stay with your group or family, or surf
+            condition advice, our hosting team is at your gentle disposal.
           </p>
         </div>
 

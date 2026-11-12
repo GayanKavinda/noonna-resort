@@ -45,7 +45,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
               <div className="p-3.5 rounded-2xl bg-[#EBF5FB]/60 border border-[#D9EAF3] flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-[#397FA8] shrink-0" />
                 <p className="text-xs text-[#173F56] font-medium">
-                  <strong>Official Address:</strong> Noonna Beach Hotel, 81170 Kumbalgama, Sri Lanka
+                  <strong>Location:</strong> Noonna Beach Hotel, Kumbalgama, Southern Province, Sri Lanka
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
 
                 {/* Verified Pin Tag */}
                 <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl text-xs text-slate-600 font-medium border border-[#D9EAF3]">
-                  Noonna Beach Hotel, 81170 Kumbalgama, Sri Lanka
+                  Noonna Beach Hotel, Kumbalgama, Southern Province, Sri Lanka
                 </div>
               </div>
             </div>

@@ -12,10 +12,9 @@ import {
   Check,
 } from "lucide-react";
 
-const ADDRESS_TEXT =
-  "NOONNA BEACH HOTEL 2, 81170 Kumbalgama, Southern Province, Sri Lanka";
+const ADDRESS_TEXT = "Noonna Beach Hotel, Kumbalgama, Southern Province, Sri Lanka";
 
-const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/Mnts3PWGC7eZ8qFx7";
+const GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8";
 
 const EMBED_MAP_URL =
   "https://maps.google.com/maps?q=Noonna%20Beach%20Hotel%20Kumbalgama%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed";
@@ -88,13 +87,10 @@ export function ContactLocation() {
 
               <div className="space-y-1.5">
                 <p className="font-body-md text-sm font-semibold text-[#173F56]">
-                  NOONNA BEACH HOTEL 2
+                  Noonna Beach Hotel
                 </p>
                 <p className="font-body-md text-xs sm:text-sm text-[#475569] font-light leading-relaxed">
-                  81170 Kumbalgama, Southern Province, Sri Lanka
-                </p>
-                <p className="font-label-sm text-[11px] text-[#64748B] font-medium tracking-wide pt-0.5">
-                  GPS: 5.9724° N, 80.3719° E
+                  Kumbalgama, Southern Province, Sri Lanka
                 </p>
               </div>
 

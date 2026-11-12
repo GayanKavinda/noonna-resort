@@ -126,7 +126,7 @@ export const HomeSocialFeed: React.FC = () => {
           >
             <Image
               src="/images/rooms/deluxe-ocean-suite.jpg"
-              alt="Double Room interior"
+              alt="Noonna Beach Hotel interior"
               fill
               sizes="(max-width: 768px) 50vw, 25vw"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

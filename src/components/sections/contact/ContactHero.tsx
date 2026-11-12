@@ -25,10 +25,10 @@ export function ContactHero() {
             </h1>
             <p className="font-body-md text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-xl">
               Planning a coastal escape for your group or family? Reach out to
-              our seaside sanctuary directly for tailored itineraries,
-              entire-house stay enquiries, or effortless reservation options
-              along Kumbalgama&apos;s calm shoreline. Noonna Beach Hotel is
-              offered as an entire-house rental, not as separate rooms.
+              our seaside sanctuary directly for tailored itineraries, entire
+              resort rental enquiries, or effortless reservation options along
+              Kumbalgama&apos;s calm shoreline. Noonna Beach Hotel is offered as
+              an entire resort rental for a private resort stay.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
               <a

@@ -14,7 +14,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "What accommodations and private ocean views can I expect?",
     answer:
-      "Noonna Beach Hotel is offered as an entire-house rental for your group or family, not as separate rooms. Enjoy a private coastal retreat with comfortable shared spaces, ocean-facing verandas overlooking the surf breaks, and a peaceful setting for an unhurried stay along Kumbalgama's shoreline.",
+      "Noonna Beach Hotel is offered as an entire resort rental for a private resort stay for your group or family. Enjoy a private coastal retreat with shared spaces, ocean-facing verandas overlooking the surf breaks, and a peaceful setting for an unhurried stay along Kumbalgama's shoreline.",
   },
   {
     question:

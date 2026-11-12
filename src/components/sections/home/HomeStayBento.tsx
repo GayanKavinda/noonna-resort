@@ -26,7 +26,7 @@ export const HomeStayBento: React.FC = () => {
             <div className="relative w-full h-full min-h-[440px]">
               <Image
                 src="/images/rooms/deluxe-ocean-suite.jpg"
-                alt="Double Room with Private Bathroom Luxury Suite"
+                alt="Noonna Beach Hotel coastal retreat interior"
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="w-full h-full min-h-[440px] object-cover transition-transform duration-500 group-hover:scale-[1.02]"
@@ -35,13 +35,13 @@ export const HomeStayBento: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/80 via-transparent to-transparent" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <span className="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs tracking-wider uppercase text-white font-medium mb-2 border border-white/30 font-sans">
-                Exclusive Private Suite
+                Entire Resort Rental
               </span>
               <h3 className="font-heading text-2xl md:text-3xl font-normal text-white mb-1.5">
-                Double Room with Private Bathroom
+                A Private Resort Stay by the Sea
               </h3>
               <p className="text-sm text-white/90 font-light font-sans">
-                Custom timber details, natural sea cross-breeze ventilation, and direct shoreline views.
+                Reserved exclusively for your group or family, with open coastal views and a peaceful shoreline setting.
               </p>
             </div>
           </div>
@@ -82,11 +82,11 @@ export const HomeStayBento: React.FC = () => {
                 </div>
 
                 <h4 className="font-heading text-2xl font-normal text-[#173F56] mb-3">
-                  Private Coastal Unit
+                  Entire Resort Rental
                 </h4>
 
                 <p className="text-sm text-slate-600 mb-6 leading-relaxed font-light font-sans">
-                  Reserved exclusively for your party. Enjoy total tranquility with dedicated host assistance, daily linen service, and peaceful garden surroundings.
+                  Reserved exclusively for your party as a private resort stay, with dedicated host assistance and peaceful coastal surroundings.
                 </p>
 
                 {/* 4 Feature Pills in exact Stitch geometry */}
@@ -95,7 +95,7 @@ export const HomeStayBento: React.FC = () => {
                     <svg className="w-4 h-4 text-[#397FA8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12h18M3 10h18M3 14h18" />
                     </svg>
-                    <span>Double Bed</span>
+                    <span>Entire Resort</span>
                   </div>
 
                   <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-[#D9EAF3] text-xs font-medium text-[#173F56] font-sans">
@@ -109,14 +109,14 @@ export const HomeStayBento: React.FC = () => {
                     <svg className="w-4 h-4 text-[#397FA8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12h16M4 12v5a3 3 0 003 3h10a3 3 0 003-3v-5M7 12V6a2 2 0 012-2h1a2 2 0 012 2v6" />
                     </svg>
-                    <span>Private En-Suite</span>
+                    <span>Private Stay</span>
                   </div>
 
                   <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white border border-[#D9EAF3] text-xs font-medium text-[#173F56] font-sans">
                     <svg className="w-4 h-4 text-[#397FA8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
-                    <span>Max 2 Guests</span>
+                    <span>Group &amp; Family</span>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export const HomeStayBento: React.FC = () => {
                 href="/stay"
                 className="inline-flex items-center gap-2 text-sm font-medium text-[#397FA8] hover:text-[#173F56] transition-colors pt-2 font-sans"
               >
-                <span>Explore Accommodations</span>
+                <span>Explore the Stay</span>
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>

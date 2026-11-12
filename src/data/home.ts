@@ -107,9 +107,9 @@ export const HOME_TRANSIT_GUIDES: TransitItem[] = [
 export const HOME_FAQS: FaqItem[] = [
   {
     id: "faq-1",
-    question: "What room types are available at Noonna Beach Hotel?",
+    question: "What accommodation is available at Noonna Beach Hotel?",
     answer:
-      "Noonna Beach Hotel offers an intimate sanctuary featuring a dedicated Double Room with a private bathroom, designed for a quiet coastal stay for up to two guests.",
+      "Noonna Beach Hotel is offered as an entire resort rental for a private resort stay, providing a quiet coastal setting along Sri Lanka's southern shore.",
   },
   {
     id: "faq-2",

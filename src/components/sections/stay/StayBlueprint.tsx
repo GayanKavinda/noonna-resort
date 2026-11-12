@@ -47,7 +47,7 @@ export const StayBlueprint: React.FC<StayBlueprintProps> = ({
             Inside the Stay
           </h2>
           <p className="text-[15px] sm:text-base text-slate-600 font-light leading-relaxed">
-            Thoughtfully appointed for couple travelers, surf wanderers, and quiet coastal retreats. One primary accommodation configured for peaceful comfort.
+            Thoughtfully appointed for a private resort stay, offering an unhurried coastal retreat along Sri Lanka&apos;s southern shore.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export const StayBlueprint: React.FC<StayBlueprintProps> = ({
             </div>
             <div>
               <span className="text-[10px] uppercase tracking-widest text-[#397FA8] font-medium block mb-0.5">
-                Primary Accommodation
+                Entire Resort Rental
               </span>
               <h3 className="font-heading text-2xl text-[#173F56] font-medium tracking-tight">
                 {STAY_DATA.roomName}
@@ -70,11 +70,11 @@ export const StayBlueprint: React.FC<StayBlueprintProps> = ({
           <div className="flex flex-wrap items-center gap-2.5">
             <span className="px-3.5 py-1.5 rounded-full bg-white text-[#173F56] text-xs font-normal border border-[#D9EAF3] shadow-sm flex items-center gap-1.5">
               <Users className="w-4 h-4 text-[#397FA8]" />{" "}
-              Max 2 Adults
+              Private Resort Stay
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-white text-[#173F56] text-xs font-normal border border-[#D9EAF3] shadow-sm flex items-center gap-1.5">
               <Bed className="w-4 h-4 text-[#397FA8]" />{" "}
-              1 Double Bed
+              Group &amp; Family
             </span>
           </div>
         </div>

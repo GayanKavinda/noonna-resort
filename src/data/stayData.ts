@@ -29,34 +29,34 @@ export interface TransitDistance {
 }
 
 export const STAY_DATA = {
-  roomName: "Double Room with Private Bathroom",
+  roomName: "Entire Resort Rental",
   shortDescription:
-    "A serene coastal sanctuary in Kumbalgama with quiet ocean-facing surroundings and refreshing southern coastal breezes.",
-  capacity: "Max 2 Guests",
-  bedding: "1 Double Bed",
+    "A serene coastal sanctuary in Kumbalgama offered as an entire resort rental for a private resort stay, with quiet ocean-facing surroundings and refreshing southern coastal breezes.",
+  capacity: "Private resort stay",
+  bedding: "Entire resort rental",
   view: "Coastal Setting",
-  bathroom: "Private En-Suite Bathroom",
+  bathroom: "Private resort amenities",
   bookingUrl: HOTEL_INFO.bookingUrl,
 
   heroBadges: [
     {
-      label: "1 Double Bed",
-      detail: "Clean fresh linens",
+      label: "Entire Resort Rental",
+      detail: "Private resort stay",
       icon: "bed",
     },
     {
-      label: "Max 2 Guests",
-      detail: "Couple & solo stays",
+      label: "Group & Family Stay",
+      detail: "Reserved for your party",
       icon: "group",
     },
     {
-      label: "Private Bathroom",
-      detail: "En-suite bath & shower",
+      label: "Private Coastal Setting",
+      detail: "Kumbalgama shoreline",
       icon: "shower",
     },
     {
-      label: "Coastal Setting",
-      detail: "Kumbalgama shoreline",
+      label: "Oceanfront Atmosphere",
+      detail: "Southern coastal breezes",
       icon: "waves",
     },
   ],
@@ -65,8 +65,8 @@ export const STAY_DATA = {
   mosaicImages: [
     {
       src: "/images/rooms/deluxe-ocean-suite.jpg",
-      alt: "Double Room interior at Noonna Beach Hotel with double bed and natural light",
-      caption: "Double Room · 1 Double Bed",
+      alt: "Interior space at Noonna Beach Hotel with natural light",
+      caption: "Entire Resort Rental · Private Resort Stay",
       span: "md:col-span-7 h-[380px] md:h-[440px]",
     },
     {
@@ -93,18 +93,18 @@ export const STAY_DATA = {
   specifications: [
     {
       id: "bedding",
-      category: "Rest & Sleep",
-      title: "Room & Bedding",
+      category: "Rest & Stay",
+      title: "Entire Resort Rental",
       description:
-        "Double room arrangement fitted with one comfortable double bed dressed in fresh coastal linens.",
+        "The property is offered as an entire resort rental for a private resort stay, reserved exclusively for your group or family.",
       iconName: "bed",
     },
     {
       id: "bathroom",
-      category: "En-Suite",
-      title: "Private Bathroom",
+      category: "Private Stay",
+      title: "Private Resort Comforts",
       description:
-        "En-suite bathroom with bath and shower facilities, toilet, and fresh towels provided.",
+        "Enjoy the privacy and comfort of a dedicated coastal retreat prepared for an unhurried stay.",
       iconName: "shower",
     },
     {
@@ -254,17 +254,17 @@ export const STAY_DATA = {
     },
     {
       id: "children",
-      title: "Children & Extra Guests",
-      badge: "Standard Policy",
+      title: "Children & Guests",
+      badge: "Entire Resort Rental",
       description:
-        "Children are welcome. Accommodation is configured for up to 2 guests in 1 double bed.",
+        "Children are welcome. Noonna Beach Hotel is offered as an entire resort rental for a private resort stay.",
     },
     {
       id: "beds",
-      title: "Cots & Extra Beds",
-      badge: "Unavailable",
+      title: "Accommodation Details",
+      badge: "Confirm with Host",
       description:
-        "Extra beds and cots are not available for this room configuration.",
+        "Specific accommodation configurations can be confirmed directly with the host for your stay.",
       isNeutral: true,
     },
     {

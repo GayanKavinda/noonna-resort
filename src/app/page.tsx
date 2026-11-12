@@ -23,7 +23,7 @@ export default function HomePage() {
       {/* 2. Welcome Introduction */}
       <HomeWelcome />
 
-      {/* 3. The Stay Bento (Double Room) */}
+      {/* 3. The Stay Bento (Entire Resort Rental) */}
       <HomeStayBento />
 
       {/* 4. Stay Highlights (Confirmed Amenities) */}
