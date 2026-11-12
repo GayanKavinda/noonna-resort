@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
@@ -26,6 +26,7 @@ export function GalleryPageContent() {
   const [activeFilter, setActiveFilter] = useState<GalleryCategory>("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [loadedCount, setLoadedCount] = useState(GALLERY_INITIAL_VISIBLE);
+  const [imgRatio, setImgRatio] = useState(3 / 2);
 
   const filteredGrid = useMemo(() => {
     if (activeFilter === "all") return GALLERY_GRID_IMAGES;
@@ -170,14 +171,14 @@ export function GalleryPageContent() {
               Showing <strong className="text-slate-800 font-semibold">{showingCount}</strong> of {activeFilterTotal} Moments
             </span>
             <div className="h-4 w-px bg-slate-200" />
-              <div className="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
-                <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#397FA8] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
-                  <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
-                </button>
-                <button aria-label="Masonry View" className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors" title="Mosaic Masonry" type="button">
-                  <LayoutDashboard className="w-[18px] h-[18px]" strokeWidth={1.8} />
-                </button>
-              </div>
+            <div className="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
+              <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#397FA8] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
+                <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
+              </button>
+              <button aria-label="Masonry View" className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors" title="Mosaic Masonry" type="button">
+                <LayoutDashboard className="w-[18px] h-[18px]" strokeWidth={1.8} />
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -254,68 +255,117 @@ export function GalleryPageContent() {
         </div>
       </section>
 
-      {/* 6. INTERACTIVE LIGHTBOX MODAL */}
+      {/* 6. ZEN LIGHTBOX */}
       {lightboxItem && (
         <div
           aria-label="Photo Lightbox"
           aria-modal="true"
-          className="fixed inset-0 z-[100] bg-[#2f3131]/80 backdrop-blur-md flex flex-col items-center justify-between p-4 sm:p-8 transition-opacity duration-300"
-          id="gallery-lightbox"
           role="dialog"
+          id="gallery-lightbox"
+          className="fixed inset-0 z-[100] bg-white flex flex-col zen-fade"
           onClick={(e) => {
             if (e.target === e.currentTarget) closeLightbox();
           }}
         >
-          <div className="w-full max-w-6xl flex items-center justify-between text-white py-2 z-10">
-            <div className="flex flex-col text-left">
-              <span className="font-label-sm text-label-sm tracking-widest uppercase text-secondary-fixed" id="lightbox-category">{lightboxItem.label}</span>
-              <h4 className="font-headline-sm text-headline-sm text-on-primary" id="lightbox-title">{lightboxItem.title}</h4>
-            </div>
-            <div className="flex items-center gap-6">
-              <span className="font-label-md text-label-md text-surface-container-highest tracking-widest" id="lightbox-counter">{(lightboxIndex ?? 0) + 1} of {ALL_GALLERY_IMAGES.length}</span>
-              <button
-                aria-label="Close Lightbox"
-                className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center text-white transition-colors focus:outline-none"
-                onClick={closeLightbox}
-                type="button"
-              >
-                <X className="w-6 h-6" strokeWidth={2} />
-              </button>
-            </div>
+          <style>{`
+            @keyframes zenFade { from { opacity: 0; } to { opacity: 1; } }
+            @keyframes zenRise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+            .zen-fade { animation: zenFade .35s ease both; }
+            .zen-rise { animation: zenRise .5s ease both; }
+          `}</style>
+
+          {/* Top bar */}
+          <div className="flex items-center justify-between px-6 sm:px-10 pt-6 sm:pt-8">
+            <span
+              id="lightbox-counter"
+              className="text-xs tracking-[0.3em] text-[#64748B] font-medium tabular-nums"
+            >
+              {String((lightboxIndex ?? 0) + 1).padStart(2, "0")}
+              <span className="mx-2 text-[#B8E0F5]">/</span>
+              {String(ALL_GALLERY_IMAGES.length).padStart(2, "0")}
+            </span>
+
+            <button
+              aria-label="Close Lightbox"
+              onClick={closeLightbox}
+              type="button"
+              className="w-10 h-10 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
+            >
+              <X className="w-5 h-5" strokeWidth={1.5} />
+            </button>
           </div>
 
-          <div className="relative w-full max-w-5xl flex-1 flex items-center justify-center my-4 overflow-hidden" onClick={(e) => e.stopPropagation()}>
+          {/* Image stage */}
+          <div
+            className="relative flex-1 min-h-0 flex items-center justify-center px-14 py-2"
+            style={{ containerType: "size" }}
+            onClick={closeLightbox}
+          >
             <button
               aria-label="Previous Photo"
-              className="absolute left-2 sm:left-4 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors focus:outline-none"
-              onClick={prevImage}
+              onClick={(e) => { e.stopPropagation(); prevImage(); }}
               type="button"
+              className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
             >
-              <ChevronLeft className="w-7 h-7" strokeWidth={2} />
+              <ChevronLeft className="w-5 h-5" strokeWidth={1.5} />
             </button>
-            <div className="w-full h-full max-h-[768px] flex items-center justify-center relative">
-              <Image
-                alt={lightboxItem.alt}
-                id="lightbox-img"
-                src={lightboxItem.src}
-                fill
-                unoptimized
-                className="!relative !w-auto !h-auto max-h-full max-w-full object-contain rounded-xl shadow-2xl transition-transform duration-300"
-                sizes="100vw"
-              />
-            </div>
+
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              key={lightboxItem.id}
+              alt={lightboxItem.alt}
+              id="lightbox-img"
+              src={lightboxItem.src}
+              onLoad={(e) => {
+                const { naturalWidth, naturalHeight } = e.currentTarget;
+                if (naturalWidth && naturalHeight) setImgRatio(naturalWidth / naturalHeight);
+              }}
+              style={{
+                aspectRatio: imgRatio,
+                width: `min(100cqw, calc(100cqh * ${imgRatio}))`,
+                objectFit: "cover",
+              }}
+              className="rounded-2xl sm:rounded-3xl zen-rise shadow-[0_20px_50px_rgba(23,63,86,0.12)] border border-[#D9EAF3]/70"
+              onClick={(e) => e.stopPropagation()}
+            />
+
             <button
               aria-label="Next Photo"
-              className="absolute right-2 sm:right-4 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors focus:outline-none"
-              onClick={nextImage}
+              onClick={(e) => { e.stopPropagation(); nextImage(); }}
               type="button"
+              className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
             >
-              <ChevronRight className="w-7 h-7" strokeWidth={2} />
+              <ChevronRight className="w-5 h-5" strokeWidth={1.5} />
             </button>
           </div>
 
-          <div className="w-full max-w-2xl text-center py-2 z-10">
-            <p className="font-body-sm text-body-sm text-surface-container-highest font-light tracking-wide" id="lightbox-caption">{lightboxItem.caption}</p>
+          {/* Caption */}
+          <div
+            key={`cap-${lightboxItem.id}`}
+            className="zen-rise w-full max-w-2xl mx-auto text-center px-6 pb-4 sm:pb-6 pt-5"
+          >
+            <span
+              id="lightbox-category"
+              className="block text-[11px] tracking-[0.35em] uppercase text-[#397FA8] font-semibold mb-3"
+            >
+              {lightboxItem.label}
+            </span>
+
+            <h4
+              id="lightbox-title"
+              className="font-headline-sm text-headline-sm text-[#173F56] mb-3"
+            >
+              {lightboxItem.title}
+            </h4>
+
+            <div className="w-10 h-px bg-[#397FA8]/40 mx-auto mb-3" />
+
+            <p
+              id="lightbox-caption"
+              className="text-sm sm:text-[15px] text-slate-500 font-light leading-relaxed"
+            >
+              {lightboxItem.caption}
+            </p>
           </div>
         </div>
       )}
