@@ -50,7 +50,7 @@ export function ExperiencesHero() {
         </div>
         <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
           <span className="flex items-center gap-1.5">
-            <Umbrella className="text-primary" size={16} /> 10 Coastal Shores &amp; Breaks
+            <Umbrella className="text-primary" size={16} /> 13 Coastal Shores &amp; Breaks
           </span>
           <span className="text-outline-variant font-light">•</span>
           <span className="flex items-center gap-1.5">
@@ -74,7 +74,7 @@ export function ExperiencesHero() {
           <div className="relative z-10 p-6 flex items-center justify-between">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-[#173F56] shadow-sm font-label-sm text-label-sm font-semibold">
               <Waves size={16} className="text-primary" />
-              <span>10 Coastal Shores &amp; Breaks</span>
+              <span>13 Coastal Shores &amp; Breaks</span>
             </div>
             <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
               <Umbrella size={18} />

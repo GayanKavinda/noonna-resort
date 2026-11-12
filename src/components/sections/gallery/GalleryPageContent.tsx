@@ -1,0 +1,324 @@
+﻿"use client";
+
+import React, { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight, Grid2X2, LayoutDashboard, Sparkles, Waves, X, ZoomIn } from "lucide-react";
+import {
+  ALL_GALLERY_IMAGES,
+  FEATURED_IMAGE,
+  GALLERY_FILTERS,
+  GALLERY_GRID_IMAGES,
+  GALLERY_INITIAL_VISIBLE,
+  GALLERY_TOTAL_COUNT,
+  type GalleryCategory,
+  type GalleryImage,
+} from "@/data/galleryData";
+
+function ExpandMoreIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 15.5 5.5 9l1.4-1.4L12 12.7l5.1-5.1L18.5 9z" />
+    </svg>
+  );
+}
+
+export function GalleryPageContent() {
+  const [activeFilter, setActiveFilter] = useState<GalleryCategory>("all");
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [loadedCount, setLoadedCount] = useState(GALLERY_INITIAL_VISIBLE);
+
+  const filteredGrid = useMemo(() => {
+    if (activeFilter === "all") return GALLERY_GRID_IMAGES;
+    const filter = GALLERY_FILTERS.find((f) => f.id === activeFilter);
+    const matches = filter?.matchCategories ?? [];
+    return GALLERY_GRID_IMAGES.filter((img) => img.gridCategory && matches.includes(img.gridCategory));
+  }, [activeFilter]);
+
+  const visibleGrid = useMemo(() => filteredGrid.slice(0, Math.min(loadedCount, filteredGrid.length)), [filteredGrid, loadedCount]);
+
+  const showingCount = activeFilter === "all" ? Math.min(loadedCount, filteredGrid.length) : filteredGrid.length;
+  const activeFilterTotal = GALLERY_FILTERS.find((f) => f.id === activeFilter)?.count ?? GALLERY_TOTAL_COUNT;
+
+  const openLightbox = (id: number) => {
+    const idx = ALL_GALLERY_IMAGES.findIndex((img) => img.id === id);
+    if (idx >= 0) setLightboxIndex(idx);
+  };
+
+  const closeLightbox = () => setLightboxIndex(null);
+  const nextImage = () => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((lightboxIndex + 1) % ALL_GALLERY_IMAGES.length);
+  };
+  const prevImage = () => {
+    if (lightboxIndex === null) return;
+    setLightboxIndex((lightboxIndex - 1 + ALL_GALLERY_IMAGES.length) % ALL_GALLERY_IMAGES.length);
+  };
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowRight") setLightboxIndex((i) => (i === null ? i : (i + 1) % ALL_GALLERY_IMAGES.length));
+      if (e.key === "ArrowLeft") setLightboxIndex((i) => (i === null ? i : (i - 1 + ALL_GALLERY_IMAGES.length) % ALL_GALLERY_IMAGES.length));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [lightboxIndex]);
+
+  const lightboxItem: GalleryImage | null = lightboxIndex === null ? null : ALL_GALLERY_IMAGES[lightboxIndex];
+
+  const progressPercent = activeFilterTotal > 0 ? Math.round((showingCount / activeFilterTotal) * 100) : 0;
+  const remaining = Math.max(activeFilterTotal - showingCount, 0);
+
+  return (
+    <>
+      {/* 2. GALLERY INTRODUCTION */}
+      <section className="w-full max-w-5xl mx-auto px-6 lg:px-8 pt-8 pb-12 text-center flex flex-col items-center">
+        <span className="font-script text-3xl text-primary mb-2 select-none">
+          moments captured in stillness...
+        </span>
+        <span className="font-label-sm text-label-sm tracking-[0.25em] text-secondary uppercase font-semibold mb-3">
+          A CLOSER LOOK
+        </span>
+        <h1 className="font-headline-hero text-headline-hero text-on-surface max-w-3xl mb-6">
+          Moments by the Sea
+        </h1>
+        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto font-light leading-relaxed">
+          Explore the spaces, scenery, and little details that make a stay at Noonna Beach Hotel special.
+        </p>
+      </section>
+
+      {/* 3. FEATURED PHOTOGRAPH */}
+      <section className="w-full max-w-6xl mx-auto px-6 lg:px-8 mb-16">
+        <div
+          className="relative w-full h-[480px] lg:h-[580px] rounded-3xl overflow-hidden shadow-sm group cursor-pointer bg-white border border-slate-200"
+          onClick={() => openLightbox(FEATURED_IMAGE.id)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              openLightbox(FEATURED_IMAGE.id);
+            }
+          }}
+        >
+          <Image
+            alt={FEATURED_IMAGE.alt}
+            data-alt={FEATURED_IMAGE.dataAlt}
+            src={FEATURED_IMAGE.src}
+            fill
+            unoptimized
+            priority
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            sizes="(max-width: 1280px) 100vw, 1152px"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2f3131]/60 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+          <div className="absolute top-6 left-6 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 rounded-full shadow-sm flex items-center gap-2">
+            <Waves className="text-primary w-4 h-4" strokeWidth={2} aria-hidden="true" />
+            <span className="font-label-sm text-label-sm tracking-wider uppercase text-secondary font-semibold">Kumbalgama Shoreline • Barefoot Sanctuary</span>
+          </div>
+          <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-on-primary">
+            <div>
+              <span className="font-script text-2xl text-secondary-fixed block">evening stillness</span>
+              <h2 className="font-headline-md text-headline-md text-on-primary drop-shadow-sm">Veranda Horizon at Dusk</h2>
+            </div>
+            <div className="hidden sm:flex items-center gap-2 bg-surface-container-lowest/20 backdrop-blur-md px-4 py-2 rounded-full text-white font-label-md text-label-md hover:bg-surface-container-lowest/40 transition-colors">
+              <ZoomIn className="w-[18px] h-[18px]" strokeWidth={1.8} aria-hidden="true" />
+              <span>View Fullscreen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4 & 5. EXPANDABLE LUXURY EDITORIAL GALLERY TOOLBAR */}
+      <section className="w-full max-w-6xl mx-auto px-6 lg:px-8 mb-8">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-5 border-b border-slate-200/80 pb-6">
+          <div className="flex items-center flex-wrap gap-2 text-xs">
+            {GALLERY_FILTERS.map((filter) => {
+              const active = activeFilter === filter.id;
+              return (
+                <button
+                  key={filter.id}
+                  type="button"
+                  onClick={() => {
+                    setActiveFilter(filter.id);
+                    setLoadedCount(GALLERY_INITIAL_VISIBLE);
+                  }}
+                  className={
+                    active
+                      ? "px-4 py-2 rounded-full bg-[#397FA8] text-white font-medium shadow-sm transition-all flex items-center gap-1.5"
+                      : "px-4 py-2 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-700 hover:text-slate-900 border border-slate-200/70 font-medium transition-all flex items-center gap-1.5"
+                  }
+                >
+                  <span>{filter.label}</span>
+                  <span className={active ? "px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-semibold" : "px-1.5 py-0.5 rounded-full bg-slate-200 text-slate-600 text-[10px] font-semibold"}>
+                    {filter.count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-2 lg:pt-0">
+            <span className="text-xs text-slate-500 font-medium tracking-wide flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#397FA8]" />
+              Showing <strong className="text-slate-800 font-semibold">{showingCount}</strong> of {activeFilterTotal} Moments
+            </span>
+            <div className="h-4 w-px bg-slate-200" />
+              <div className="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
+                <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#397FA8] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
+                  <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
+                </button>
+                <button aria-label="Masonry View" className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors" title="Mosaic Masonry" type="button">
+                  <LayoutDashboard className="w-[18px] h-[18px]" strokeWidth={1.8} />
+                </button>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. MAIN PHOTO GALLERY */}
+      <section className="w-full max-w-6xl mx-auto px-6 lg:px-8 mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 items-start" id="gallery-grid">
+          {visibleGrid.map((item) => (
+            <div
+              key={item.id}
+              className="gallery-item group cursor-pointer relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 bg-slate-100"
+              data-category={item.gridCategory}
+              onClick={() => openLightbox(item.id)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openLightbox(item.id);
+                }
+              }}
+            >
+              <Image
+                alt={item.alt}
+                src={item.src}
+                fill
+                unoptimized
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#397FA8] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                  <ZoomIn className="w-5 h-5" strokeWidth={1.8} />
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* PROGRESSIVE DISCLOSURE & ARCHIVE ACCESS CONTROLS */}
+        <div className="mt-14 pt-10 border-t border-slate-200/80 flex flex-col items-center justify-center text-center">
+          <div className="w-full max-w-xs mb-4">
+            <div className="flex justify-between text-xs text-slate-500 mb-1.5 font-medium">
+              <span>Curated display: {showingCount} moments</span>
+              <span className="text-[#397FA8] font-semibold">{progressPercent}% of {activeFilterTotal}</span>
+            </div>
+            <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200/60">
+              <div className="h-full bg-[#397FA8] rounded-full" style={{ width: `${progressPercent}%` }} />
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3.5 mt-2">
+            <button
+              type="button"
+              onClick={() => setLoadedCount((c) => Math.min(c + 9, GALLERY_GRID_IMAGES.length))}
+              className="px-8 py-3 rounded-full bg-[#397FA8] hover:bg-[#2e698d] text-white font-medium text-sm transition-all shadow-sm hover:shadow flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={activeFilter !== "all" || showingCount >= GALLERY_TOTAL_COUNT}
+            >
+              <span>Load More Moments</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-white/20 font-semibold">{remaining} remaining</span>
+              <ExpandMoreIcon className="w-[18px] h-[18px] group-hover:translate-y-0.5 transition-transform" />
+            </button>
+            <button
+              type="button"
+              className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-medium text-sm transition-all flex items-center gap-2"
+            >
+              <Sparkles className="w-[18px] h-[18px] text-[#397FA8]" strokeWidth={1.8} />
+              <span>View Complete 36-Photo Archive</span>
+            </button>
+          </div>
+          <p className="text-xs text-slate-400 mt-4 font-light">
+            High-resolution architectural &amp; coastal photography captured on location at Kumbalgama.
+          </p>
+        </div>
+      </section>
+
+      {/* 6. INTERACTIVE LIGHTBOX MODAL */}
+      {lightboxItem && (
+        <div
+          aria-label="Photo Lightbox"
+          aria-modal="true"
+          className="fixed inset-0 z-[100] bg-[#2f3131]/80 backdrop-blur-md flex flex-col items-center justify-between p-4 sm:p-8 transition-opacity duration-300"
+          id="gallery-lightbox"
+          role="dialog"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) closeLightbox();
+          }}
+        >
+          <div className="w-full max-w-6xl flex items-center justify-between text-white py-2 z-10">
+            <div className="flex flex-col text-left">
+              <span className="font-label-sm text-label-sm tracking-widest uppercase text-secondary-fixed" id="lightbox-category">{lightboxItem.label}</span>
+              <h4 className="font-headline-sm text-headline-sm text-on-primary" id="lightbox-title">{lightboxItem.title}</h4>
+            </div>
+            <div className="flex items-center gap-6">
+              <span className="font-label-md text-label-md text-surface-container-highest tracking-widest" id="lightbox-counter">{(lightboxIndex ?? 0) + 1} of {ALL_GALLERY_IMAGES.length}</span>
+              <button
+                aria-label="Close Lightbox"
+                className="w-10 h-10 rounded-full bg-white/20 hover:bg-white/40 flex items-center justify-center text-white transition-colors focus:outline-none"
+                onClick={closeLightbox}
+                type="button"
+              >
+                <X className="w-6 h-6" strokeWidth={2} />
+              </button>
+            </div>
+          </div>
+
+          <div className="relative w-full max-w-5xl flex-1 flex items-center justify-center my-4 overflow-hidden" onClick={(e) => e.stopPropagation()}>
+            <button
+              aria-label="Previous Photo"
+              className="absolute left-2 sm:left-4 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors focus:outline-none"
+              onClick={prevImage}
+              type="button"
+            >
+              <ChevronLeft className="w-7 h-7" strokeWidth={2} />
+            </button>
+            <div className="w-full h-full max-h-[768px] flex items-center justify-center relative">
+              <Image
+                alt={lightboxItem.alt}
+                id="lightbox-img"
+                src={lightboxItem.src}
+                fill
+                unoptimized
+                className="!relative !w-auto !h-auto max-h-full max-w-full object-contain rounded-xl shadow-2xl transition-transform duration-300"
+                sizes="100vw"
+              />
+            </div>
+            <button
+              aria-label="Next Photo"
+              className="absolute right-2 sm:right-4 z-20 w-12 h-12 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors focus:outline-none"
+              onClick={nextImage}
+              type="button"
+            >
+              <ChevronRight className="w-7 h-7" strokeWidth={2} />
+            </button>
+          </div>
+
+          <div className="w-full max-w-2xl text-center py-2 z-10">
+            <p className="font-body-sm text-body-sm text-surface-container-highest font-light tracking-wide" id="lightbox-caption">{lightboxItem.caption}</p>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

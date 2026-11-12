@@ -54,8 +54,8 @@ const CTA_CONTENT: Record<
   gallery: {
     eyebrow: "experience stillness firsthand...",
     title: "Step Into the Living Atmosphere",
-    deck: "Turn captured coastal moments into your reality. Reserve your intimate stay along Sri Lanka's golden shoreline.",
-    buttonText: "Reserve Your Room on Booking.com",
+    deck: "Explore the photographs and moments that capture Noonna Beach Hotel and its coastal surroundings.",
+    buttonText: "Explore Noonna on Booking.com",
     href: HOTEL_INFO.bookingUrl,
   },
   contact: {

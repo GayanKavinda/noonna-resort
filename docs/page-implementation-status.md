@@ -1,4 +1,4 @@
-# Noonna Beach Hotel — Page Implementation Status
+﻿# Noonna Beach Hotel â€” Page Implementation Status
 
 | Route | Page / Section Scope | Source / Reference Status | Implementation Status | Visual Verification | Functional Verification | Notes & Restrictions |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -9,7 +9,7 @@
 | `/experiences/southern-heritage-coastal-expeditions` | Dedicated Heritage Page | Approved Reference (`experiences_southern_heritage_...`) | **COMPLETED (Phase 7.3)** | Passed (hero, 2 divisions, 9 chapters, field notes, beaches, gastronomy, pre-footer) | Route prerendered & build verified | 9 destinations with restrained placeholders for unavailable genuine imagery; WhatsApp CTAs use generic wa.me links pending confirmation. |
 | `/experiences/dining` | Complete Dining & Restaurant Guide | Approved Reference (`experiences_a_taste_of_sri_lanka_...`) | **COMPLETED (Phase 7.4)** | Passed (hero, directory, 10 venue cards, pre-footer) | Route prerendered & build verified | 10 independent regional recommendations with restrained neutral placeholders for unavailable genuine venue imagery; unsupported details (ratings/prices/hours/contacts/maps/concierge actions) omitted. |
 | `/experiences/midigama-beach` | Midigama Beach destination detail (first `[slug]` implementation) | Approved Reference (`experiences_midigama_beach_detail_updated_carousel`) | **COMPLETED (Phase 7.5A)** | Browser screenshot captured at 340px width (`.tmp-midigama-340x5000.png`, 340x5000) and compared against Stitch `screen.png` (340x1600); core structure/sections/typography/spacing/colors matched to reference, full-page height differs due to live header/footer and browser render. | Route prerendered (`/experiences/midigama-beach`), breadcrumb links verified in code, carousel scroll controls functional, no broken internal links, existing experiences pages unaffected; `npx tsc --noEmit`, `npx eslint` (changed files), `npm run build` passed. | Reusable template/data in `src/data/destinationDetailData.ts` + `src/components/sections/experiences/destination/*`; only Midigama card linked from experiences landing. Reference remote placeholder images retained (intentional dummy imagery). Concierge WhatsApp uses number from reference pending client confirmation. |
-| `/gallery` | Gallery | Unverified export in `design-references/pages/` | **Planned** | - | - | On hold until desktop reference is approved. |
+| `/gallery` | Gallery | Approved Reference (`noonna_beach_hotel_gallery_desktop`) | **COMPLETED (Phase 8)** | Code-verified against `code.html`/master assets; automated browser screenshot capture pending in this environment (headless Edge attempts at 1440px did not produce output). | Route prerendered (`/gallery`); `npx tsc --noEmit`, `npx eslint` (changed files), `npm run build` passed. | Breadcrumb + intro, featured photo, category filters/toolbar, 9-image grid, progressive disclosure controls, lightbox (open/close/Esc/arrows/backdrop/scroll lock), and `<PreFooterCta context="gallery" />` implemented. Reference remote placeholder images retained (intentional dummy imagery). |
 | `/contact` | Contact & Booking | Unverified export in `design-references/pages/` | **Planned** | - | - | On hold until desktop reference is approved. Phone and email unconfirmed. |
 
 ---
@@ -22,3 +22,4 @@
 - **TypeScript:** Strict type check (`npx tsc --noEmit`) passed with 0 errors.
 - **Turbopack Build:** `npm run build` compiled successfully in 0.68s. Static pages prerendered cleanly.
 - **Live Local Server Test:** HTTP 200 OK verified on `http://localhost:3000`.
+
