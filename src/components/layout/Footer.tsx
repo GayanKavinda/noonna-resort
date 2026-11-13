@@ -148,10 +148,10 @@ export const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href={HOTEL_INFO.socials.whatsapp || "https://wa.me/94771234567"}
+                href={`https://wa.me/${HOTEL_INFO.tempWhatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                title="WhatsApp Concierge (+94 Concierge Direct)"
+                title="WhatsApp Concierge (temporary number pending owner confirmation)"
                 aria-label="WhatsApp"
                 className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:bg-[#2f6b8f] hover:text-white transition-all shadow-sm"
               >
@@ -160,8 +160,8 @@ export const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="tel:+94771234567"
-                title="Direct Phone (+94 Call Host)"
+                href={`tel:${HOTEL_INFO.tempPhone}`}
+                title="Direct Phone (temporary number pending owner confirmation)"
                 aria-label="Phone"
                 className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:bg-[#2f6b8f] hover:text-white transition-all shadow-sm"
               >

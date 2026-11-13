@@ -2,19 +2,34 @@
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { GalleryPageContent } from "@/components/sections/gallery/GalleryPageContent";
+import { absoluteUrl } from "@/lib/siteUrl";
+
+const title = "Gallery — Moments by the Sea";
+const fullTitle = "Gallery — Moments by the Sea | Noonna Beach Hotel";
+const description =
+  "Explore the spaces, scenery, and little details that make a stay at Noonna Beach Hotel special.";
+const canonical = absoluteUrl("/gallery");
+const image = "/images/hotel/hero-beach.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "Gallery — Moments by the Sea | Noonna Beach Hotel",
-  description:
-    "Explore the spaces, scenery, and little details that make a stay at Noonna Beach Hotel special.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   openGraph: {
-    title: "Gallery — Moments by the Sea | Noonna Beach Hotel",
-    description:
-      "Explore the spaces, scenery, and little details that make a stay at Noonna Beach Hotel special.",
-    url: "/gallery",
+    title: fullTitle,
+    description,
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
     locale: "en_LK",
     type: "website",
+    images: [{ url: imageUrl, alt: "Noonna Beach Hotel coastal gallery" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description,
+    images: [imageUrl],
   },
 };
 

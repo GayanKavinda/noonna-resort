@@ -1,22 +1,38 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { UtensilsCrossed } from "lucide-react";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { DiningHero } from "@/components/sections/experiences/dining/DiningHero";
 import { DiningDirectorySection } from "@/components/sections/experiences/dining/DiningDirectorySection";
+import { absoluteUrl } from "@/lib/siteUrl";
+
+const title = "A Taste of Sri Lanka — 10 Coastal Dining Destinations";
+const fullTitle = "A Taste of Sri Lanka — 10 Coastal Dining Destinations | Noonna Beach Hotel";
+const description =
+  "Curated coastal clay-pot feasts, fresh beachside grills, and artisanal surf cafes along the southern shoreline near Noonna Beach Hotel.";
+const canonical = absoluteUrl("/experiences/dining");
+const image = "/images/hotel/hero-beach.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "A Taste of Sri Lanka — 10 Coastal Dining Destinations | Noonna Beach Hotel",
-  description:
-    "Curated coastal clay-pot feasts, fresh beachside grills, and artisanal surf cafes along the southern shoreline near Noonna Beach Hotel.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   openGraph: {
-    title: "A Taste of Sri Lanka — 10 Coastal Dining Destinations | Noonna Beach Hotel",
+    title: fullTitle,
     description:
       "Curated coastal clay-pot feasts, fresh beachside grills, and artisanal surf cafes along the southern shoreline.",
-    url: "/experiences/dining",
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
     locale: "en_LK",
     type: "website",
+    images: [{ url: imageUrl, alt: "Coastal dining near Noonna Beach Hotel" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description,
+    images: [imageUrl],
   },
 };
 
@@ -55,4 +71,3 @@ export default function DiningPage() {
     </div>
   );
 }
-

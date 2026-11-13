@@ -1,4 +1,4 @@
-import { HOTEL_INFO } from "@/lib/constants";
+﻿import { HOTEL_INFO } from "@/lib/constants";
 
 export interface StaySpecification {
   id: string;
@@ -66,7 +66,7 @@ export const STAY_DATA = {
     {
       src: "/images/rooms/deluxe-ocean-suite.jpg",
       alt: "Interior space at Noonna Beach Hotel with natural light",
-      caption: "Entire Resort Rental · Private Resort Stay",
+      caption: "Entire Resort Rental Â· Private Resort Stay",
       span: "md:col-span-7 h-[380px] md:h-[440px]",
     },
     {
@@ -240,55 +240,55 @@ export const STAY_DATA = {
   policies: [
     {
       id: "checkin",
-      title: "Check-in Window",
-      badge: "Flexible / Host Assisted",
+      title: "Check-in",
+      badge: "24 hours",
       description:
-        "Check-in arrangements and arrival times are coordinated seamlessly with the property host.",
+        "Check-in is available 24 hours. Please confirm arrival arrangements through your booking channel or directly with the property if agreed.",
     },
     {
       id: "checkout",
-      title: "Check-out Window",
-      badge: "Morning Departure",
+      title: "Check-out",
+      badge: "12:00–14:00",
       description:
-        "Standard morning check-out window. Exact departure times confirmed with host on arrival.",
+        "Check-out is available from 12:00 to 14:00. Any departure arrangements beyond these times should be confirmed in advance.",
     },
     {
       id: "children",
-      title: "Children & Guests",
-      badge: "Entire Resort Rental",
+      title: "Children & Extra Beds",
+      badge: "Children welcome",
       description:
-        "Children are welcome. Noonna Beach Hotel is offered as an entire resort rental for a private resort stay.",
+        "Children of any age are welcome. Guests aged 18 and above are charged as adults. Cots and extra beds are unavailable. Noonna Beach Hotel is offered as an entire resort rental for a private resort stay.",
     },
     {
       id: "beds",
       title: "Accommodation Details",
-      badge: "Confirm with Host",
+      badge: "Confirm with property",
       description:
-        "Specific accommodation configurations can be confirmed directly with the host for your stay.",
+        "Specific accommodation configuration for an entire-resort stay should be confirmed directly with the property. No room, bedroom, bed, or occupancy details are published on this website.",
       isNeutral: true,
     },
     {
       id: "pets",
-      title: "Pets Policy",
-      badge: "Not Allowed",
+      title: "Pets",
+      badge: "Not allowed",
       description:
-        "Pets are not permitted in order to maintain a clean, peaceful environment for all guests.",
+        "Pets are not allowed.",
       isNeutral: true,
     },
     {
       id: "events",
-      title: "Parties & Quiet Hours",
-      badge: "Not Permitted",
+      title: "Parties & Events",
+      badge: "Not allowed",
       description:
-        "Parties, events, and loud disturbances are not permitted. Calm quiet hours observed at night.",
+        "Parties and events are not allowed.",
       isNeutral: true,
     },
     {
       id: "booking",
       title: "Cancellation & Prepayment",
-      badge: "Rate Dependent",
+      badge: "Varies by option",
       description:
-        "Cancellation and prepayment conditions depend on the room rate selected on Booking.com.",
+        "Cancellation and prepayment policies vary according to accommodation type. Please check the conditions for your selected option when making a reservation.",
     },
   ] as StayPolicy[],
 
@@ -324,4 +324,5 @@ export const STAY_DATA = {
     ] as TransitDistance[],
   },
 };
+
 
