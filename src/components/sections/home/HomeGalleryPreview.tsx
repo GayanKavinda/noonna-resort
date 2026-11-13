@@ -1,97 +1,98 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export const HomeGalleryPreview: React.FC = () => {
   return (
-    <section className="w-full bg-white py-20 px-8 border-b border-[#D9EAF3]/40" id="gallery">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+    <section className="w-full border-b border-[#D9EAF3]/40 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8" id="gallery">
+      <div className="mx-auto max-w-6xl">
+        <Reveal className="mb-10 flex flex-col justify-between gap-6 sm:mb-12 md:flex-row md:items-end">
           <div>
-            <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block leading-none select-none">
+            <span className="mb-2 block select-none font-script text-3xl font-normal leading-none tracking-wide text-[#2f6b8f] sm:text-4xl">
               Visual diary...
             </span>
-            <h2 className="font-heading text-[36px] md:text-[44px] leading-tight text-[#173F56] font-normal">
+            <h2 className="font-heading text-[32px] font-normal leading-tight text-[#173F56] sm:text-[36px] md:text-[44px]">
               A Glimpse of the Coast
             </h2>
           </div>
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#397FA8] hover:text-[#173F56] transition-colors font-sans"
+            className="inline-flex items-center gap-2 font-sans text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56]"
           >
             <span>View All Photos</span>
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </Link>
-        </div>
+        </Reveal>
 
-        {/* 4-Card Asymmetric Bento matching Stitch Reference Lines 503-528 */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-          {/* Card 1: 8 Cols, 420px */}
-          <div className="md:col-span-8 h-[420px] rounded-3xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] border border-[#D9EAF3]/60 group relative">
+        {/* 4-Card Asymmetric Bento matching Stitch Reference */}
+        <Stagger className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-12">
+          {/* Card 1: 8 Cols */}
+          <StaggerItem className="group relative h-[260px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[320px] md:col-span-8 md:h-[420px]">
             <Image
               src="/images/hotel/hero-beach.jpg"
               alt="Southern Coast Shoreline at Sundown"
               fill
               sizes="(max-width: 768px) 100vw, 66vw"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#D9EAF3]">
-              <span className="text-xs text-[#173F56] font-medium font-sans">
+            <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
+              <span className="font-sans text-xs font-medium text-[#173F56]">
                 Southern Coast Shoreline at Sundown
               </span>
             </div>
-          </div>
+          </StaggerItem>
 
-          {/* Card 2: 4 Cols, 420px */}
-          <div className="md:col-span-4 h-[420px] rounded-3xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] border border-[#D9EAF3]/60 group relative">
+          {/* Card 2: 4 Cols */}
+          <StaggerItem className="group relative h-[260px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[320px] md:col-span-4 md:h-[420px]">
             <Image
               src="/images/hotel/property-grounds.jpg"
               alt="Garden Footpath to Sea"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#D9EAF3]">
-              <span className="text-xs text-[#173F56] font-medium font-sans">
+            <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
+              <span className="font-sans text-xs font-medium text-[#173F56]">
                 Garden Footpath to Sea
               </span>
             </div>
-          </div>
+          </StaggerItem>
 
-          {/* Card 3: 6 Cols, 300px */}
-          <div className="md:col-span-6 h-[300px] rounded-3xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] border border-[#D9EAF3]/60 group relative">
+          {/* Card 3: 6 Cols */}
+          <StaggerItem className="group relative h-[240px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[280px] md:col-span-6 md:h-[300px]">
             <Image
               src="/images/hotel/property-exterior.jpg"
               alt="Morning Tea on the Veranda"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#D9EAF3]">
-              <span className="text-xs text-[#173F56] font-medium font-sans">
+            <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
+              <span className="font-sans text-xs font-medium text-[#173F56]">
                 Morning Tea on the Veranda
               </span>
             </div>
-          </div>
+          </StaggerItem>
 
-          {/* Card 4: 6 Cols, 300px */}
-          <div className="md:col-span-6 h-[300px] rounded-3xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] border border-[#D9EAF3]/60 group relative">
+          {/* Card 4: 6 Cols */}
+          <StaggerItem className="group relative h-[240px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[280px] md:col-span-6 md:h-[300px]">
             <Image
               src="/images/rooms/deluxe-ocean-suite.jpg"
               alt="Twilight Ambiance at Noonna Beach"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-[#D9EAF3]">
-              <span className="text-xs text-[#173F56] font-medium font-sans">
+            <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
+              <span className="font-sans text-xs font-medium text-[#173F56]">
                 Twilight Ambiance
               </span>
             </div>
-          </div>
-        </div>
+          </StaggerItem>
+        </Stagger>
       </div>
     </section>
   );

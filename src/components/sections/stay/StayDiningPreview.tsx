@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { STAY_DATA } from "@/data/stayData";
 import { ShoppingBag, Utensils, GlassWater, Lightbulb, Coffee } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 interface StayDiningPreviewProps {
   className?: string;
@@ -18,90 +19,83 @@ export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
 }) => {
   return (
     <section
-      className={`w-full bg-white py-20 px-8 border-b border-[#D9EAF3]/40 ${className}`}
+      className={`w-full border-b border-[#D9EAF3]/40 bg-white px-4 py-14 sm:px-6 sm:py-16 md:py-20 ${className}`}
     >
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Dining Editorial Info */}
-          <div className="lg:col-span-5 text-left flex flex-col items-start">
-            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-[#EBF5FB] border border-[#D9EAF3]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#397FA8]" />
-              <span className="text-[11px] uppercase tracking-widest text-[#173F56] font-semibold">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-14">
+          <Reveal className="flex flex-col items-start text-left">
+            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-[#EBF4F9] px-3 py-1">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#2f6b8f]" />
+              <span className="font-body text-[10px] font-semibold uppercase tracking-[0.18em] text-[#2f6b8f]">
                 {STAY_DATA.diningBadge}
               </span>
             </div>
 
-            <span
-              className="font-script text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
-              style={{ fontSize: "1.75rem" }}
-            >
+            <span className="mb-1.5 block font-script text-[26px] font-normal leading-none text-[#2f6b8f] sm:text-[28px]">
               {STAY_DATA.diningCursive}
             </span>
 
-            <h2 className="font-heading text-[42px] leading-tight text-[#173F56] font-normal mb-4">
+            <h2 className="mb-3 font-heading text-[30px] font-normal leading-tight tracking-tight text-[#173F56] sm:text-[32px] md:text-[36px]">
               {STAY_DATA.diningTitle}
             </h2>
 
-            <p className="text-[15px] text-slate-600 leading-relaxed mb-6 font-light">
+            <p className="mb-5 max-w-xl font-body text-sm font-light leading-relaxed text-[#475569] sm:mb-6 md:text-[15px]">
               {STAY_DATA.diningDeck}
             </p>
 
-            {/* 3 Dining Highlight Cards */}
-            <div className="space-y-3 w-full mb-6">
+            <Stagger className="mb-5 w-full space-y-3">
               {STAY_DATA.diningFeatures.map((feature, idx) => {
                 const FeatureIcon = DINING_ICONS[feature.iconName] ?? ShoppingBag;
                 return (
-                  <div
+                  <StaggerItem
                     key={idx}
-                    className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] flex items-start gap-3.5 shadow-sm"
+                    className="flex items-start gap-3.5 rounded-2xl border border-[#D9EAF3] bg-white p-3.5 shadow-sm"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] text-[#397FA8] flex items-center justify-center shrink-0 mt-0.5">
-                      <FeatureIcon className="w-5 h-5" />
+                    <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#EBF5FB] text-[#2f6b8f]">
+                      <FeatureIcon className="h-[18px] w-[18px]" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-semibold text-[#173F56]">
+                      <h4 className="font-heading text-lg font-medium leading-snug text-[#173F56]">
                         {feature.title}
                       </h4>
-                      <p className="text-[11px] text-slate-500 font-light leading-relaxed mt-0.5">
+                      <p className="mt-0.5 font-body text-[13px] font-light leading-relaxed text-[#475569]">
                         {feature.description}
                       </p>
                     </div>
-                  </div>
+                  </StaggerItem>
                 );
               })}
-            </div>
+            </Stagger>
 
-            {/* Host Note Card */}
-            <div className="p-3.5 rounded-2xl bg-[#EBF5FB]/60 border border-[#D9EAF3] text-xs text-[#173F56] font-light flex items-start gap-2.5 w-full">
-              <Lightbulb className="w-[18px] h-[18px] text-[#397FA8] shrink-0 mt-0.5" />
+            <div className="flex w-full items-start gap-2.5 rounded-2xl border border-[#D9EAF3] bg-[#EBF5FB]/60 p-3.5 text-[13px] font-light leading-relaxed text-[#173F56]">
+              <Lightbulb className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#2f6b8f]" />
               <span>
-                <strong>Host Note:</strong> {STAY_DATA.diningHostNote}
+                <strong className="font-medium">Host Note:</strong> {STAY_DATA.diningHostNote}
               </span>
             </div>
-          </div>
+          </Reveal>
 
-          {/* Right Column: Imagery with Floating Pill Badge */}
-          <div className="lg:col-span-7">
-            <div className="w-full relative rounded-3xl overflow-hidden shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)] bg-white border border-[#D9EAF3]/70 group">
-              <div className="relative w-full h-[460px]">
+          <Reveal delay={0.05} className="w-full">
+            <div className="group relative w-full overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)]">
+              <div className="relative aspect-[4/3] min-h-[260px] w-full sm:min-h-[320px] lg:aspect-[5/4] lg:min-h-[320px]">
                 <Image
                   src="/images/hotel/property-grounds.jpg"
                   alt="Oceanfront Dining and Breakfast at Noonna Beach Hotel"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="w-full h-[460px] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/50 via-transparent to-transparent pointer-events-none" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#001e2e]/45 via-transparent to-transparent" />
 
-                <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md px-5 py-2.5 rounded-full border border-[#D9EAF3] shadow-sm flex items-center gap-2">
-                  <Coffee className="w-[18px] h-[18px] text-[#397FA8]" />
-                  <span className="text-xs uppercase tracking-wider text-[#173F56] font-medium">
+                <div className="absolute bottom-4 left-4 flex max-w-[calc(100%-2rem)] items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-3.5 py-2 shadow-sm backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-5 sm:py-2.5">
+                  <Coffee className="h-[18px] w-[18px] shrink-0 text-[#2f6b8f]" />
+                  <span className="font-body text-[10px] font-semibold uppercase leading-snug tracking-[0.12em] text-[#173F56] sm:text-[11px]">
                     {STAY_DATA.diningImageBadge}
                   </span>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

@@ -14,16 +14,19 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 import type { DiningAction, DiningVenue } from "@/data/diningData";
+import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
+
+const FALLBACK_IMAGE = NEUTRAL_IMAGE_PLACEHOLDER;
 
 function HighlightIcon({ icon }: { icon: "dinner_dining" | "skillet" | "local_cafe" | "coffee" }) {
-  const cls = "w-[13px] h-[13px] text-[#397FA8] shrink-0";
+  const cls = "w-[13px] h-[13px] text-[#2f6b8f] shrink-0";
   if (icon === "dinner_dining") return <UtensilsCrossed className={cls} aria-hidden="true" />;
   if (icon === "skillet") return <Flame className={cls} aria-hidden="true" />;
   return <Coffee className={cls} aria-hidden="true" />;
 }
 
 function MetaIcon({ icon }: { icon: "schedule" | "call" | "location_on" }) {
-  const cls = "w-[14px] h-[14px] text-[#397FA8] shrink-0";
+  const cls = "w-[14px] h-[14px] text-[#2f6b8f] shrink-0";
   if (icon === "schedule") return <Clock className={cls} aria-hidden="true" />;
   if (icon === "call") return <Phone className={cls} aria-hidden="true" />;
   return <MapPin className={cls} aria-hidden="true" />;
@@ -39,12 +42,12 @@ function ActionIcon({ icon }: { icon: DiningAction["icon"] }) {
 
 function actionClass(variant: DiningAction["variant"]) {
   if (variant === "primary") {
-    return "px-3 py-2 rounded-lg bg-[#397FA8] hover:bg-[#2e698d] text-white text-[11px] font-medium transition-colors flex items-center gap-1 duration-200 hover:shadow hover:scale-105 active:scale-95";
+    return "inline-flex min-h-[36px] items-center justify-center gap-1 rounded-lg bg-[#2f6b8f] px-3 py-2 text-[11px] font-medium text-white transition-colors duration-200 hover:bg-[#25566f] hover:shadow active:scale-95 sm:hover:scale-105";
   }
   if (variant === "outline") {
-    return "px-2.5 py-2 rounded-lg border border-slate-200 hover:border-[#397FA8]/40 hover:text-[#397FA8] text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1";
+    return "inline-flex min-h-[36px] items-center justify-center gap-1 rounded-lg border border-slate-200 px-2.5 py-2 text-[11px] font-medium text-slate-700 transition-colors hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f]";
   }
-  return "px-3 py-2 rounded-lg bg-slate-100 hover:bg-[#397FA8] hover:text-white text-slate-700 text-[11px] font-medium transition-colors flex items-center gap-1";
+  return "inline-flex min-h-[36px] items-center justify-center gap-1 rounded-lg bg-slate-100 px-3 py-2 text-[11px] font-medium text-slate-700 transition-colors hover:bg-[#2f6b8f] hover:text-white";
 }
 
 interface Props {
@@ -54,6 +57,9 @@ interface Props {
 
 export function DiningVenueCard({ venue, onOpenModal }: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [imgErrors, setImgErrors] = useState<Record<string, boolean>>({});
+  const resolveImg = (src: string) => (imgErrors[src] ? FALLBACK_IMAGE : src);
+  const isErrored = (src: string) => !!imgErrors[src];
   const mainSrc =
     activeIndex === 0
       ? venue.mainImage.src
@@ -69,30 +75,32 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
 
   if (venue.featured) {
     return (
-      <div className="mt-12 max-w-4xl mx-auto w-full">
+      <div className="mx-auto mt-8 w-full max-w-4xl sm:mt-12">
         <div
           id={venue.id}
           data-dining-id={venue.id}
           onClick={() => onOpenModal(venue)}
-          className="dining-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-shadow group flex flex-col md:flex-row cursor-pointer transition-all duration-300 hover:shadow-xl hover:border-slate-300"
+          className="dining-card group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-slate-300 hover:shadow-xl md:flex-row"
         >
-          <div className="md:w-5/12 shrink-0 flex flex-col">
-            <div className="relative h-64 md:h-auto md:min-h-[260px] md:flex-1 overflow-hidden">
+          <div className="flex shrink-0 flex-col md:w-5/12">
+            <div className="relative h-56 overflow-hidden sm:h-64 md:h-auto md:min-h-[260px] md:flex-1">
               <Image
-                src={mainSrc}
+                src={resolveImg(mainSrc)}
                 alt={mainAlt}
                 fill
                 sizes="(max-width: 768px) 100vw, 420px"
-                className="w-full h-full object-cover group-hover:scale-105 duration-300 card-main-img transition-all"
+                unoptimized={isErrored(mainSrc)}
+                className="card-main-img h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
+                onError={() => setImgErrors((prev) => (prev[mainSrc] ? prev : { ...prev, [mainSrc]: true }))}
               />
-              <span className="absolute top-3.5 left-3.5 px-2.5 py-1 rounded bg-slate-900/80 text-white text-[11px] font-medium backdrop-blur-xs">
+              <span className="absolute left-3 top-3 rounded bg-slate-900/80 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-xs sm:left-3.5 sm:top-3.5">
                 {venue.locationBadge}
               </span>
-              <span className="absolute top-3.5 right-3.5 px-2 py-0.5 rounded bg-[#e5f1f8] text-[#244b62] text-[10px] font-semibold uppercase">
+              <span className="absolute right-3 top-3 rounded bg-[#e5f1f8] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#244b62] sm:right-3.5 sm:top-3.5">
                 {venue.categoryBadge}
               </span>
             </div>
-            <div className="grid grid-cols-3 gap-2 p-2.5 bg-slate-50 border-t border-slate-100">
+            <div className="grid grid-cols-3 gap-2 border-t border-slate-100 bg-slate-50 p-2.5">
               {venue.thumbs.slice(0, 3).map((t, i) => {
                 const idx = i + 1;
                 const active = activeIndex === idx;
@@ -104,19 +112,21 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                       e.stopPropagation();
                       setActiveIndex(idx);
                     }}
-                    className={`thumb-btn cursor-pointer relative h-16 rounded overflow-hidden group/img transition-all duration-200 p-0 border-0 text-left w-full ${
-                      active ? "ring-2 ring-[#397FA8] opacity-100" : "opacity-80"
+                    className={`thumb-btn group/img relative h-14 w-full cursor-pointer overflow-hidden rounded border-0 p-0 text-left transition-all duration-200 sm:h-16 ${
+                      active ? "opacity-100 ring-2 ring-[#2f6b8f]" : "opacity-80"
                     }`}
                     data-img-src={t.src}
                   >
                     <Image
-                      src={t.src}
+                      src={resolveImg(t.src)}
                       alt={t.alt}
                       fill
                       sizes="120px"
-                      className="w-full h-full object-cover group-hover/img:scale-110 duration-200"
+                      unoptimized={isErrored(t.src)}
+                      className="h-full w-full object-cover duration-200 group-hover/img:scale-110"
+                      onError={() => setImgErrors((prev) => (prev[t.src] ? prev : { ...prev, [t.src]: true }))}
                     />
-                    <span className="absolute inset-0 bg-slate-900/30 flex items-end p-1 text-[8px] text-white font-medium">
+                    <span className="absolute inset-0 flex items-end bg-slate-900/30 p-1 text-[8px] font-medium text-white">
                       {t.label ?? ""}
                     </span>
                   </button>
@@ -125,38 +135,38 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
             </div>
           </div>
 
-          <div className="p-6 md:p-8 flex flex-col flex-1 justify-between gap-6">
+          <div className="flex flex-1 flex-col justify-between gap-5 p-5 sm:gap-6 sm:p-6 md:p-8">
               <div>
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-1.5">
-                    <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200/60 text-[11px] font-bold flex items-center gap-0.5">
+                    <span className="flex items-center gap-0.5 rounded border border-amber-200/60 bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-700">
                       ★ {venue.rating}
                     </span>
-                    <span className="text-[11px] text-slate-500 font-light">{venue.reviews}</span>
+                    <span className="text-[11px] font-light text-slate-500">{venue.reviews}</span>
                   </div>
                   {venue.priceNote ? (
                     <span className="text-[11px] font-semibold text-slate-700">{venue.priceNote}</span>
                   ) : null}
                 </div>
-                <h3 className="font-cormorant text-2xl md:text-3xl text-slate-900 font-medium group-hover:text-[#397FA8] transition-colors leading-snug">
+                <h3 className="font-cormorant text-2xl font-medium leading-snug text-slate-900 transition-colors group-hover:text-[#2f6b8f] md:text-3xl">
                   {venue.number}. {venue.name}
                 </h3>
-                <p className="text-[11px] text-[#397FA8] font-medium mt-1 mb-3">{venue.subtitle}</p>
+                <p className="mb-3 mt-1 text-[11px] font-medium text-[#2f6b8f]">{venue.subtitle}</p>
                 {venue.description ? (
-                  <p className="text-sm text-slate-600 font-light leading-relaxed">
+                  <p className="text-sm font-light leading-relaxed text-slate-600">
                     {venue.description}
                   </p>
                 ) : null}
 
-                <div className="mt-4 pt-3.5 border-t border-slate-100 flex flex-col sm:flex-row sm:items-start justify-between gap-3 text-xs text-slate-500">
+                <div className="mt-4 flex flex-col justify-between gap-3 border-t border-slate-100 pt-3.5 text-xs text-slate-500 sm:flex-row sm:items-start">
                   {venue.meta.map((m, idx) => (
-                    <div key={`${m.text}-${idx}`} className="flex items-start gap-1.5 text-[11px]">
+                    <div key={`${m.text}-${idx}`} className="flex min-w-0 items-start gap-1.5 text-[11px]">
                       <MetaIcon icon={m.icon} />
-                      <span className={m.truncate ? "truncate" : ""}>
+                      <span className={m.truncate ? "min-w-0 truncate" : "break-words"}>
                         {m.href ? (
                           <a
                             href={m.href}
-                            className="hover:text-[#397FA8] text-slate-600 font-medium"
+                            className="font-medium text-slate-600 hover:text-[#2f6b8f]"
                             onClick={(e) => e.stopPropagation()}
                           >
                             {m.text}
@@ -165,7 +175,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                           <span>
                             {m.text}
                             {m.emphasis ? (
-                              <span className="text-emerald-600 font-medium ml-1">
+                              <span className="ml-1 font-medium text-emerald-700">
                                 • {m.emphasis}
                               </span>
                             ) : null}
@@ -177,9 +187,9 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs">
-                <span className="text-[11px] font-medium text-slate-600 flex items-center gap-1.5">
-                  <Coffee className="w-[14px] h-[14px] text-[#397FA8]" aria-hidden="true" />
+              <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4 text-xs">
+                <span className="flex items-center gap-1.5 text-[11px] font-medium text-slate-600">
+                  <Coffee className="h-[14px] w-[14px] text-[#2f6b8f]" aria-hidden="true" />
                   {venue.featuredFooterLeft ?? "Beachside Specialty Roastery"}
                 </span>
                 <div className="flex flex-wrap items-center gap-2">
@@ -209,25 +219,27 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
       id={venue.id}
       data-dining-id={venue.id}
       onClick={() => onOpenModal(venue)}
-      className="dining-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-shadow group flex flex-col cursor-pointer transition-all duration-300 hover:shadow-xl hover:border-slate-300"
+      className="dining-card group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-slate-300 hover:shadow-xl"
     >
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-48 overflow-hidden sm:h-56">
         <Image
-          src={mainSrc}
+          src={resolveImg(mainSrc)}
           alt={mainAlt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="w-full h-full object-cover group-hover:scale-105 duration-300 card-main-img transition-all"
+          unoptimized={isErrored(mainSrc)}
+          className="card-main-img h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
+          onError={() => setImgErrors((prev) => (prev[mainSrc] ? prev : { ...prev, [mainSrc]: true }))}
         />
-        <span className="absolute top-3 left-3 px-2.5 py-1 rounded bg-slate-900/80 text-white text-[11px] font-medium backdrop-blur-xs">
+        <span className="absolute left-3 top-3 rounded bg-slate-900/80 px-2.5 py-1 text-[11px] font-medium text-white backdrop-blur-xs">
           {venue.locationBadge}
         </span>
-        <span className="absolute top-3 right-3 px-2 py-0.5 rounded bg-[#e5f1f8] text-[#244b62] text-[10px] font-semibold uppercase">
+        <span className="absolute right-3 top-3 rounded bg-[#e5f1f8] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#244b62]">
           {venue.categoryBadge}
         </span>
       </div>
 
-      <div className={`grid ${galleryCols} bg-slate-50 border-y border-slate-100`}>
+      <div className={`grid ${galleryCols} border-y border-slate-100 bg-slate-50`}>
         {venue.thumbs.map((t, i) => {
           const idx = i + 1;
           const active = activeIndex === idx;
@@ -239,19 +251,21 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                 e.stopPropagation();
                 setActiveIndex(idx);
               }}
-              className={`thumb-btn cursor-pointer relative h-16 rounded overflow-hidden group/img transition-all duration-200 p-0 border-0 text-left w-full ${
-                active ? "ring-2 ring-[#397FA8] opacity-100" : "opacity-80"
+              className={`thumb-btn group/img relative h-14 w-full cursor-pointer overflow-hidden rounded border-0 p-0 text-left transition-all duration-200 sm:h-16 ${
+                active ? "opacity-100 ring-2 ring-[#2f6b8f]" : "opacity-80"
               }`}
               data-img-src={t.src}
             >
               <Image
-                src={t.src}
+                src={resolveImg(t.src)}
                 alt={t.alt}
                 fill
                 sizes="120px"
-                className="w-full h-full object-cover group-hover/img:scale-110 duration-200"
+                unoptimized={isErrored(t.src)}
+                className="h-full w-full object-cover duration-200 group-hover/img:scale-110"
+                onError={() => setImgErrors((prev) => (prev[t.src] ? prev : { ...prev, [t.src]: true }))}
               />
-              <span className="absolute inset-0 bg-slate-900/30 flex items-end p-1 text-[8px] text-white font-medium">
+              <span className="absolute inset-0 flex items-end bg-slate-900/30 p-1 text-[8px] font-medium text-white">
                 {t.label ?? ""}
               </span>
             </button>
@@ -259,17 +273,17 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
         })}
       </div>
 
-      <div className="p-6 flex flex-col flex-1 justify-between gap-6">
+      <div className="flex flex-1 flex-col justify-between gap-5 p-5 sm:gap-6 sm:p-6">
         <div>
-          <div className="flex flex-wrap items-center justify-between gap-1.5 mb-3">
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-1.5">
             <div className="flex items-center gap-1.5">
-              <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200/60 text-[11px] font-bold flex items-center gap-0.5">
+              <span className="flex items-center gap-0.5 rounded border border-amber-200/60 bg-amber-50 px-2 py-0.5 text-[11px] font-bold text-amber-700">
                 ★ {venue.rating}
               </span>
-              <span className="text-[11px] text-slate-500 font-light">{venue.reviews}</span>
+              <span className="text-[11px] font-light text-slate-500">{venue.reviews}</span>
             </div>
             {venue.secondaryPill ? (
-              <span className="px-2 py-0.5 rounded bg-sky-50 text-[#244b62] text-[10px] font-semibold uppercase">
+              <span className="rounded bg-sky-50 px-2 py-0.5 text-[10px] font-semibold uppercase text-[#244b62]">
                 {venue.secondaryPill}
               </span>
             ) : venue.priceNote ? (
@@ -277,16 +291,16 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
             ) : null}
           </div>
 
-          <h3 className="font-cormorant text-2xl text-slate-900 font-medium group-hover:text-[#397FA8] transition-colors leading-snug">
+          <h3 className="font-cormorant text-2xl font-medium leading-snug text-slate-900 transition-colors group-hover:text-[#2f6b8f]">
             {venue.number}. {venue.name}
           </h3>
-          <p className="text-[11px] text-[#397FA8] font-medium mt-1 mb-2.5">{venue.subtitle}</p>
+          <p className="mb-2.5 mt-1 text-[11px] font-medium text-[#2f6b8f]">{venue.subtitle}</p>
           {venue.description ? (
-            <p className="text-xs text-slate-600 font-light leading-relaxed">{venue.description}</p>
+            <p className="text-xs font-light leading-relaxed text-slate-600">{venue.description}</p>
           ) : null}
 
           {venue.highlights && venue.highlights.length > 0 ? (
-            <div className="mt-4 p-3 rounded-xl bg-[#e5f1f8]/60 border border-sky-200/60 space-y-2 text-[11px]">
+            <div className="mt-4 space-y-2 rounded-xl border border-sky-200/60 bg-[#e5f1f8]/60 p-3 text-[11px]">
               {venue.highlights.map((h, i) => (
                 <div key={h.label} className="flex items-center justify-between gap-2">
                   <span
@@ -297,7 +311,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                     <HighlightIcon icon={h.icon} />
                     {h.label}
                   </span>
-                  <span className={`${i === 0 ? "font-bold text-[#397FA8]" : "text-slate-500"}`}>
+                  <span className={`${i === 0 ? "font-bold text-[#2f6b8f]" : "text-slate-500"}`}>
                     {h.value}
                   </span>
                 </div>
@@ -305,15 +319,15 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
             </div>
           ) : null}
 
-          <div className="mt-4 pt-3 border-t border-slate-100 space-y-1.5 text-xs text-slate-500">
+          <div className="mt-4 space-y-1.5 border-t border-slate-100 pt-3 text-xs text-slate-500">
             {venue.meta.map((m, idx) => (
-              <div key={`${m.text}-${idx}`} className="flex items-center gap-1.5 text-[11px]">
+              <div key={`${m.text}-${idx}`} className="flex min-w-0 items-center gap-1.5 text-[11px]">
                 <MetaIcon icon={m.icon} />
-                <span className={m.truncate ? "truncate" : ""}>
+                <span className={m.truncate ? "min-w-0 truncate" : "break-words"}>
                   {m.href ? (
                     <a
                       href={m.href}
-                      className="hover:text-[#397FA8] text-slate-600 font-medium"
+                      className="font-medium text-slate-600 hover:text-[#2f6b8f]"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {m.text}
@@ -322,7 +336,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                     <span>
                       {m.text}
                       {m.emphasis ? (
-                        <span className="text-emerald-600 font-medium ml-1">
+                        <span className="ml-1 font-medium text-emerald-700">
                           • {m.emphasis}
                         </span>
                       ) : null}
@@ -334,8 +348,8 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
           </div>
         </div>
 
-        <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-slate-100 pt-4 text-xs">
+          <div className="flex flex-wrap items-center gap-2">
             {venue.actions
               .filter((a) => a.icon === "directions" || a.icon === "call")
               .map((a) => (
@@ -352,7 +366,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                 </a>
               ))}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             {venue.actions
               .filter((a) => a.icon === "table_restaurant" || a.icon === "chat")
               .map((a) => (

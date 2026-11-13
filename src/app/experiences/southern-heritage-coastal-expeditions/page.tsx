@@ -50,7 +50,7 @@ export default function SouthernHeritagePage() {
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
       {/* BREADCRUMBS & CONTEXT BAR */}
       <section className="w-full bg-white border-b border-[#D9EAF3]/60">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },
@@ -58,9 +58,9 @@ export default function SouthernHeritagePage() {
               { label: "Historical & Cultural Gems" },
             ]}
           />
-          <div className="inline-flex items-center gap-2 self-start md:self-auto px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200 text-[#0d628a] text-xs font-medium">
+          <div className="inline-flex items-center gap-2 self-start md:self-auto max-w-full px-3 py-1.5 sm:px-3.5 rounded-full bg-slate-50 border border-slate-200 text-[#0d628a] text-[11px] sm:text-xs font-medium leading-snug">
             <svg
-              className="w-[15px] h-[15px]"
+              className="w-[15px] h-[15px] shrink-0"
               viewBox="0 0 24 24"
               fill="currentColor"
               aria-hidden="true"
@@ -68,7 +68,7 @@ export default function SouthernHeritagePage() {
             >
               <path d="M12 10.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm4.93 5.36-2.2 5.28a1 1 0 0 1-.53.53l-5.28 2.2a.5.5 0 0 1-.66-.66l2.2-5.28a1 1 0 0 1 .53-.53l5.28-2.2a.5.5 0 0 1 .66.66Z" />
             </svg>
-            <span>9 Curated Chapters • 0.4 km – 24 km from Kumbalgama</span>
+            <span className="min-w-0">9 Curated Chapters • 0.4 km – 24 km from Kumbalgama</span>
           </div>
         </div>
       </section>
@@ -82,12 +82,12 @@ export default function SouthernHeritagePage() {
         icon={DIVISION_1.icon}
       />
 
-      <div className="w-full space-y-16 lg:space-y-24 pb-16">
+      <div className="w-full space-y-12 sm:space-y-16 lg:space-y-24 pb-12 sm:pb-16">
         {division1.map((chapter) => (
           <HeritageChapter key={chapter.id} chapter={chapter} />
         ))}
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <DivisionIntro
             eyebrow={DIVISION_2.eyebrow}
             title={DIVISION_2.title}

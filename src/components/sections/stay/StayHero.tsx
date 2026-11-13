@@ -3,6 +3,7 @@ import Image from "next/image";
 import { STAY_DATA } from "@/data/stayData";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { Bed, Users, ShowerHead, Waves, ArrowUpRight, ArrowDown, BadgeCheck } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 interface StayHeroProps {
   className?: string;
@@ -18,120 +19,117 @@ const HERO_BADGE_ICONS: Record<string, React.ElementType> = {
 export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
   return (
     <section
-      className={`w-full bg-white pt-24 pb-16 md:pt-28 md:pb-20 border-b border-[#D9EAF3]/60 ${className}`}
+      className={`w-full border-b border-[#D9EAF3]/60 bg-white pb-14 pt-24 sm:pb-16 md:pb-20 md:pt-28 ${className}`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Breadcrumb Navigation */}
-        <Breadcrumb
-          className="mb-8"
-          items={[
-            { label: "Home", href: "/" },
-            { label: "The Stay" },
-          ]}
-        />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+        <Reveal>
+          <Breadcrumb
+            className="mb-6 sm:mb-8"
+            items={[
+              { label: "Home", href: "/" },
+              { label: "The Stay" },
+            ]}
+          />
+        </Reveal>
 
-        {/* Split Suite Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          {/* Left Column: Room Overview & Key Specs */}
-          <div className="lg:col-span-6 flex flex-col items-start text-left">
-            <span className="font-script text-3xl sm:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block">
-              where the ocean sets the rhythm...
-            </span>
+        <div className="grid grid-cols-1 items-center gap-8 sm:gap-10 lg:grid-cols-12 lg:gap-14">
+          <div className="flex flex-col items-start text-left lg:col-span-6">
+            <Reveal>
+              <span className="mb-2 block font-script text-3xl font-normal tracking-wide text-[#2f6b8f] sm:text-4xl">
+                where the ocean sets the rhythm...
+              </span>
 
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-[52px] leading-[1.12] text-[#173F56] font-normal tracking-tight mb-4">
-              Double Room <br />
-              <span className="italic font-normal">with Private Bathroom</span>
-            </h1>
+              <h1 className="mb-4 font-heading text-[34px] font-normal leading-[1.12] tracking-tight text-[#173F56] sm:text-4xl md:text-5xl lg:text-[52px]">
+                Entire Resort <br />
+                <span className="font-normal italic">Rental for a Private Stay</span>
+              </h1>
 
-            <p className="text-[15px] sm:text-base text-slate-600 leading-relaxed mb-8 font-light max-w-xl">
-              {STAY_DATA.shortDescription}
-            </p>
+              <p className="mb-6 max-w-xl text-[15px] font-light leading-relaxed text-slate-600 sm:mb-8 sm:text-base">
+                {STAY_DATA.shortDescription}
+              </p>
+            </Reveal>
 
-            {/* Core Specifications 4-Chip Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full mb-8">
+            <Stagger className="mb-6 grid w-full grid-cols-1 gap-3 sm:mb-8 sm:grid-cols-2 sm:gap-3.5">
               {STAY_DATA.heroBadges.map((badge, index) => {
                 const BadgeIcon = HERO_BADGE_ICONS[badge.icon] ?? Bed;
                 return (
-                  <div
-                    key={index}
-                    className="p-3.5 rounded-2xl bg-white border border-[#D9EAF3] shadow-sm flex items-start gap-3 hover:border-[#397FA8]/40 transition-colors"
-                  >
-                    <div className="w-9 h-9 rounded-xl bg-[#EBF5FB] flex items-center justify-center text-[#397FA8] shrink-0 mt-0.5">
-                      <BadgeIcon className="w-5 h-5" />
+                  <StaggerItem key={index}>
+                    <div className="flex items-start gap-3 rounded-2xl border border-[#D9EAF3] bg-white p-3.5 shadow-sm transition-colors hover:border-[#2f6b8f]/40">
+                      <div className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#EBF5FB] text-[#2f6b8f]">
+                        <BadgeIcon className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-[#173F56]">
+                          {badge.label}
+                        </p>
+                        <p className="text-[11px] font-light text-slate-500">
+                          {badge.detail}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold text-[#173F56]">
-                        {badge.label}
-                      </p>
-                      <p className="text-[11px] text-slate-500 font-light">
-                        {badge.detail}
-                      </p>
-                    </div>
-                  </div>
+                  </StaggerItem>
                 );
               })}
-            </div>
+            </Stagger>
 
-            {/* CTAs & Official Booking Link */}
-            <div className="flex flex-wrap items-center gap-4 mb-4">
+            <Reveal delay={0.05} className="mb-4 flex w-full flex-col items-stretch gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <a
                 href={STAY_DATA.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-12 px-7 rounded-xl bg-[#397FA8] hover:bg-[#2e698c] text-white text-[14px] font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-[0_8px_24px_-4px_rgba(23,63,86,0.2)] hover:-translate-y-0.5"
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-6 text-[14px] font-medium text-white shadow-[0_8px_24px_-4px_rgba(23,63,86,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto sm:px-7"
               >
                 <span>Check Availability on Booking.com</span>
-                <ArrowUpRight className="w-[18px] h-[18px]" />
+                <ArrowUpRight className="h-[18px] w-[18px]" />
               </a>
 
               <a
                 href="#accommodation-blueprint"
-                className="h-12 px-5 rounded-xl bg-white hover:bg-[#EBF5FB]/60 text-[#173F56] text-[14px] font-medium border border-[#D9EAF3] transition-colors inline-flex items-center gap-1.5"
+                className="inline-flex h-12 w-full items-center justify-center gap-1.5 rounded-xl border border-[#D9EAF3] bg-white px-5 text-[14px] font-medium text-[#173F56] transition-colors hover:bg-[#EBF5FB]/60 sm:w-auto"
               >
                 <span>Explore Room Details</span>
-                <ArrowDown className="w-[18px] h-[18px] text-[#397FA8]" />
+                <ArrowDown className="h-[18px] w-[18px] text-[#2f6b8f]" />
               </a>
-            </div>
+            </Reveal>
 
-            {/* Trust Indicator */}
-            <div className="flex items-center gap-2 text-xs text-slate-500 font-light">
-              <BadgeCheck className="w-4 h-4 text-[#397FA8]" />
-              <span>Official Booking.com Listing · Verified Accommodation</span>
-            </div>
+            <Reveal delay={0.08}>
+              <div className="flex items-start gap-2 text-xs font-light text-slate-500 sm:items-center">
+                <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-[#2f6b8f] sm:mt-0" />
+                <span>Official Booking.com Listing Â· Verified Accommodation</span>
+              </div>
+            </Reveal>
           </div>
 
-          {/* Right Column: Prominent Interior Photo */}
-          <div className="lg:col-span-6">
-            <div className="w-full relative rounded-3xl overflow-hidden shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)] bg-white border border-[#D9EAF3]/70 group">
-              <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[520px]">
+          <Reveal className="lg:col-span-6">
+            <div className="group relative w-full overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)]">
+              <div className="relative h-[300px] w-full sm:h-[400px] md:h-[460px] lg:h-[520px]">
                 <Image
                   src="/images/rooms/deluxe-ocean-suite.jpg"
-                  alt="Interior of Double Room with Private Bathroom at Noonna Beach Hotel"
+                  alt="Interior space at Noonna Beach Hotel in Kumbalgama"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/70 via-transparent to-transparent pointer-events-none" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#001e2e]/70 via-transparent to-transparent" />
 
-                {/* Floating Info Pill matching Stitch reference */}
-                <div className="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl flex items-center justify-between border border-[#D9EAF3] shadow-sm">
+                <div className="absolute bottom-4 left-4 right-4 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#D9EAF3] bg-white/95 p-3.5 shadow-sm backdrop-blur-md sm:bottom-6 sm:left-6 sm:right-6 sm:flex-row sm:items-center sm:p-4">
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-[#397FA8] font-semibold">
-                      Double Room
+                    <p className="text-xs font-semibold uppercase tracking-wider text-[#2f6b8f]">
+                      Entire Resort Rental
                     </p>
-                    <p className="font-heading text-base sm:text-lg text-[#173F56] font-normal">
-                      Double Room with Private Bathroom
+                    <p className="font-heading text-base font-normal text-[#173F56] sm:text-lg">
+                      Private Resort Stay in Kumbalgama
                     </p>
                   </div>
-                  <span className="px-3 py-1.5 rounded-full bg-[#EBF5FB] text-[#397FA8] text-xs font-semibold border border-[#D9EAF3] flex items-center gap-1">
-                    <BadgeCheck className="w-3.5 h-3.5" />{" "}
-                    Verified Unit
+                  <span className="flex items-center gap-1 rounded-full border border-[#D9EAF3] bg-[#EBF5FB] px-3 py-1.5 text-xs font-semibold text-[#2f6b8f]">
+                    <BadgeCheck className="h-3.5 w-3.5" />{" "}
+                    Private Stay
                   </span>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

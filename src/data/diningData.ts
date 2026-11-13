@@ -1,4 +1,4 @@
-export interface DiningHighlight {
+﻿export interface DiningHighlight {
   icon: "dinner_dining" | "skillet" | "local_cafe" | "coffee";
   label: string;
   value: string;
@@ -120,9 +120,9 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["clay-pot"],
     "name": "Lucky Fort Restaurant",
-    "subtitle": "Mama Lucky's Family Kitchen since 1999 • No 7 Parawa St, Galle Fort",
+    "subtitle": "Mama Lucky's Family Kitchen since 1999 â€¢ No 7 Parawa St, Galle Fort",
     "description": "Mama Lucky's celebrated 10-curry terracotta feast in an intimate Dutch Fort garden courtyard. All curries prepared fresh with hand-pressed coconut milk & traditional spices.",
-    "locationBadge": "Galle Fort • ~24 km",
+    "locationBadge": "Galle Fort â€¢ ~24 km",
     "categoryBadge": "Clay Pot Feast",
     "secondaryPill": "UNESCO Galle Fort",
     "rating": "4.5",
@@ -163,7 +163,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "12:00 PM – 10:30 PM",
+        "text": "12:00 PM â€“ 10:30 PM",
         "emphasis": "Open daily"
       },
       {
@@ -198,11 +198,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Lucky Fort Restaurant",
       "tag": "Clay Pot Feast",
-      "dist": "Galle Fort • ~24 km",
+      "dist": "Galle Fort â€¢ ~24 km",
       "rating": "4.7",
       "reviews": "(717 reviews)",
-      "price": "Rs 1,000–5,000",
-      "hours": "12:00 PM – 9:00 PM daily • Open for lunch & dinner",
+      "price": "Rs 1,000â€“5,000",
+      "hours": "12:00 PM â€“ 9:00 PM daily â€¢ Open for lunch & dinner",
       "address": "07 Parawa St, Galle Fort, Southern Province",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1WaeH8Ha6_BGuX8CjdjL-JdVH6r9P7ZCdCGWp-DFYLtdnpgdtUP52yE3txW3OJR2i_aYuFaBI1Ucth-ChFtgdyr9dLC-sSzNo20lnxikFa6UM4bcZWX-JQW9iNLOUuYAbWafEfKJ3OnWDC0lWBtajIbRgo3JhuAj9qlhFi9rsa0zPl9hFaFD-5uT54I3UrFikeYR2RCPlMtt4vOH9_S3y6ALWdowrD5ZIuOUP7zQxgKdJsvuQZUW2Y8BCA",
       "desc": "A celebrated Dutch Fort institution renowned for its traditional 10-curry terracotta feast served in an airy colonial garden courtyard. Every individual dish celebrates ancestral southern seasoning without shortcuts.",
@@ -216,13 +216,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["clay-pot"],
     "name": "Shirani Home Made Rice & Curry",
-    "subtitle": "Shirani & Lala's Family Kitchen • No. 36 Kadabaddagama, Gurubebila",
+    "subtitle": "Shirani & Lala's Family Kitchen â€¢ No. 36 Kadabaddagama, Gurubebila",
     "description": "Simmered slowly over coconut husk fire in hand-crafted clay pots on a breezy village veranda 3 minutes from our gate. Renowned for rotating daily 6-curry feasts, mango curry, and personal cooking lessons.",
-    "locationBadge": "Kadabedda • 250m Walk",
+    "locationBadge": "Kadabedda â€¢ 250m Walk",
     "categoryBadge": "Hotel Favorite",
     "secondaryPill": "3 Mins Walk",
     "rating": "4.8",
-    "reviews": "(288 Google • 4.7★ 172 TripAdvisor)",
+    "reviews": "(288 Google â€¢ 4.7â˜… 172 TripAdvisor)",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCdHN8SegYSnRhuARly7hgHtY2dJHP533x7bK5nuEgKx8d5hkPF0b2WzdRs9of6A7-pGzCCOrT0F1AMby6d64lNic6EXN9zyNcZazMgogY-ktXxQI8ZWcmW2COCGyECl_aXTi791oLYCMIj4of9QirJSPRmDySsAoH1vUCVLO0KaWMhY3u0adkAuxRryEUozoaloJ-LPKo3UXZdk6n7On30vBu3BDC7d7v04JcgmI0f1Rf8bpt7IzlHBw",
       "alt": "Shirani Home Made Rice & Curry Village Veranda Spread"
@@ -253,13 +253,13 @@ export const DINING_VENUES: DiningVenue[] = [
       {
         "icon": "dinner_dining",
         "label": "Daily 6 Curries Feast & Fish",
-        "value": "Rs 1,000–2,000"
+        "value": "Rs 1,000â€“2,000"
       }
     ],
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 10:00 PM",
+        "text": "8:00 AM â€“ 10:00 PM",
         "emphasis": "Open daily"
       },
       {
@@ -294,11 +294,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Shirani Home Made Rice & Curry",
       "tag": "Hotel Favorite",
-      "dist": "Kadabedda • 250m Walk (3 Mins)",
+      "dist": "Kadabedda â€¢ 250m Walk (3 Mins)",
       "rating": "4.8",
       "reviews": "(288 reviews)",
-      "price": "Rs 1,000–2,000",
-      "hours": "8:00 AM – 10:00 PM daily • Fresh midday hearth",
+      "price": "Rs 1,000â€“2,000",
+      "hours": "8:00 AM â€“ 10:00 PM daily â€¢ Fresh midday hearth",
       "address": "No. 36, Kadabaddagama, Gurubebila (Near Noonna Beach Hotel)",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1Wuh45leaz8PCqe8LHLilyfyIrCs-ZdKHno6PtSdwoLbvILGTo_MzSeeLyvtmLK3Ld58NRXBO7LoYAQtQo4xvRngtbivvGbP7XCbnWQhmhO5uldlzR7ddhiPVC3opBQP7LP0CiOcMOdDkbPG5BdxDOhxbnhCgcY-1OGY0BRssWeDdqJJ_2BbNIbkJwwpgPedityRBkKffQWSa-m_Gp444h_h4HBEM5raTuy94_bsatRbqqZrzdFY9McuL1_",
       "desc": "Simmered slowly over coconut husk fire in hand-molded terracotta pots on a breezy village veranda just 3 minutes leisurely walk from our hotel gates. Infinite hospitality and true village cooking.",
@@ -312,13 +312,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["clay-pot"],
     "name": "Kumbala Restaurant & Cafe",
-    "subtitle": "Community Gathering Hub • 32/A Kadabeddagama Rd, Weligama",
+    "subtitle": "Community Gathering Hub â€¢ 32/A Kadabeddagama Rd, Weligama",
     "description": "Casual, cozy surfer & traveler hub celebrated for authentic Sri Lankan rice & curry buffet evenings, healthy fresh juices, and western comforts like chicken schnitzel. Free parking available.",
-    "locationBadge": "Gurubebila • ~2.1 km",
+    "locationBadge": "Gurubebila â€¢ ~2.1 km",
     "categoryBadge": "Community Buffet & Cafe",
     "secondaryPill": "Kadabeddagama",
     "rating": "4.7",
-    "reviews": "(47 Google Reviews • #47 in Weligama)",
+    "reviews": "(47 Google Reviews â€¢ #47 in Weligama)",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDs5LZVudRv1NUIiK40TmMaquNE6GZ66mSMW6jknFtS84a27RJnu2WLa-_MVfpkky0nBCkj-ngQxlobRSosLH0zidw5Ax3-f1cfiy1kAeHfacMO_SMXMc1BCYtxpvo8AqzzoY6jko1r67Uij8uwqzwohfxZERhm6d3gE5P5y8Uy3PaZTCyni_371zfu-j9i3URU6QUgMD0_XXyofaoJai43V1Ea8HWhrBf_6Rq8Z9N4nFhoZBtphqHCqA",
       "alt": "Kumbala Restaurant seafood feast platter"
@@ -344,13 +344,13 @@ export const DINING_VENUES: DiningVenue[] = [
       {
         "icon": "dinner_dining",
         "label": "All-You-Can-Eat Curry Buffet",
-        "value": "Rs 1,500–2,500 ($5–8)"
+        "value": "Rs 1,500â€“2,500 ($5â€“8)"
       }
     ],
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 10:00 PM",
+        "text": "8:00 AM â€“ 10:00 PM",
         "emphasis": "Open daily"
       },
       {
@@ -378,11 +378,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Kumbala Restaurant & Cafe",
       "tag": "Community Buffet",
-      "dist": "Gurubebila • ~2.1 km",
+      "dist": "Gurubebila â€¢ ~2.1 km",
       "rating": "4.6",
       "reviews": "(47 reviews)",
-      "price": "Rs 1,200–2,500",
-      "hours": "8:00 AM – 10:00 PM • Evening Buffet 6:30 PM",
+      "price": "Rs 1,200â€“2,500",
+      "hours": "8:00 AM â€“ 10:00 PM â€¢ Evening Buffet 6:30 PM",
       "address": "32/A Kadabeddagama Rd, Weligama 81700",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1W74aW2tofj98nhXR8t4YBaAu_ckKwrPdHLUnpd1ulUfK2Tz02_CuJc3nTA1D_YQp11Cp2fTxK0S9mumdRAP-aWHFH1oDVXFDIYh6_NDtWppdhBFiCorgTX3JszbBGp_CqMBWorZeSJkmIGYam5fgibZqkkdXYA9WQcbtUGv6e-CsYm69Ki0BTtIqprjFDagdl17DkaXCjq7mcEWGquZsBAFAS7Cri_NYGzo7nPheX9HFOKiczhWxoK452Y",
       "desc": "A friendly surf outpost celebrated for wholesome, generous ingredients and evening all-you-can-eat Sri Lankan buffet tables surrounded by travelers and wave riders.",
@@ -396,13 +396,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["clay-pot"],
     "name": "Mettha's Home Cooked Meals",
-    "subtitle": "Mettha's Family Veranda Kitchen • Yaddehimulla Road, Unawatuna",
+    "subtitle": "Mettha's Family Veranda Kitchen â€¢ Yaddehimulla Road, Unawatuna",
     "description": "Authentic family-run traditional eatery in Unawatuna known for fresh rotating curries (jackfruit, beetroot, aubergine, mushroom, dhal, chicken & ocean prawns) cooked upon order by Mettha with custom spice levels.",
-    "locationBadge": "Unawatuna • ~18 km",
-    "categoryBadge": "Woman-Owned • Local Gem",
+    "locationBadge": "Unawatuna â€¢ ~18 km",
+    "categoryBadge": "Woman-Owned â€¢ Local Gem",
     "rating": "4.8",
-    "reviews": "(210 Reviews • Traditional Sri Lankan)",
-    "priceNote": "Rs 1,000–2,000",
+    "reviews": "(210 Reviews â€¢ Traditional Sri Lankan)",
+    "priceNote": "Rs 1,000â€“2,000",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwkoGVpv9SezDw_tehZyUBo2iFlUBmPaCglPJFoLYGvaqzENh7XQhUOH1onJwdSxN0ymg_JpyrizkjDmI8_f5sHBFm0H2y24LeF7iwxOI7I8koilGGMAprwHjmf3OBlna01qHWHPJmpyEchf_Qm-6P9hX0BeOQyOrBJLiR0hHNLFzsx1TpVenBltcH-pB44BguSIr8ctRSS1eKfnrOBAdgubZNACTwFiM65spqf8D6p21tfiagIGiC4g",
       "alt": "Mettha's Home Cooked Meals Unawatuna"
@@ -428,7 +428,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 10:00 PM",
+        "text": "8:00 AM â€“ 10:00 PM",
         "emphasis": "Daily"
       },
       {
@@ -463,11 +463,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Mettha Home Cooked Meals",
       "tag": "Garden Porch",
-      "dist": "Mirissa • ~5.5 km",
+      "dist": "Mirissa â€¢ ~5.5 km",
       "rating": "4.8",
       "reviews": "(190 reviews)",
-      "price": "Rs 1,000–2,200",
-      "hours": "11:30 AM – 9:30 PM daily",
+      "price": "Rs 1,000â€“2,200",
+      "hours": "11:30 AM â€“ 9:30 PM daily",
       "address": "Beach Road / Udupila area, Mirissa",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1Wuh45leaz8PCqe8LHLilyfyIrCs-ZdKHno6PtSdwoLbvILGTo_MzSeeLyvtmLK3Ld58NRXBO7LoYAQtQo4xvRngtbivvGbP7XCbnWQhmhO5uldlzR7ddhiPVC3opBQP7LP0CiOcMOdDkbPG5BdxDOhxbnhCgcY-1OGY0BRssWeDdqJJ_2BbNIbkJwwpgPedityRBkKffQWSa-m_Gp444h_h4HBEM5raTuy94_bsatRbqqZrzdFY9McuL1_",
       "desc": "Generational home recipes served under garden fruit trees on a tranquil covered family porch away from the busy harbor strip.",
@@ -481,13 +481,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["beach-grill"],
     "name": "Le' Fish Weligama",
-    "subtitle": "Beachfront Fresh Catch & Charcoal Embers • Weligama Bypass Road",
+    "subtitle": "Beachfront Fresh Catch & Charcoal Embers â€¢ Weligama Bypass Road",
     "description": "Feet-in-the-sand seafood feast. Pick fresh whole reef fish, king prawns, and calamari grilled over hot charcoal embers.",
-    "locationBadge": "Weligama Beach • ~3.2 km",
+    "locationBadge": "Weligama Beach â€¢ ~3.2 km",
     "categoryBadge": "Fresh Catch Grill",
     "rating": "4.7",
-    "reviews": "(1,453 Reviews • #5 in Weligama)",
-    "priceNote": "Rs 3,000–8,000",
+    "reviews": "(1,453 Reviews â€¢ #5 in Weligama)",
+    "priceNote": "Rs 3,000â€“8,000",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_OByZYpD6V4CO5hs1QTE-CgaBkOnah2fctz4K6tnNw2S1YIHoTuKXglDyEXIuIygFhEnEx3kMUBeXtZbcRG5Y0Q0XGc2NcIZ_EjYodisZN_9jcLCZt9J8PQVL_1MJNKKecVcKuYdbXS6dVpI7-igyjze5r57vg7sRvLvqyHuO77M68BBn0a8n6QNDBIDxEmmA9PshvvLiaTOmfidJFoNTLIfpZJKJCJUnD2t0iEdE0Jouq32DwP9Pvw",
       "alt": "Le' Fish Weligama Beachfront Dining on the Sand"
@@ -513,7 +513,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "10:00 AM – 10:00 PM",
+        "text": "10:00 AM â€“ 10:00 PM",
         "emphasis": "Open daily"
       },
       {
@@ -541,13 +541,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Le' Fish Weligama",
       "tag": "Fresh Catch Grill",
-      "dist": "Weligama Beach • ~3.2 km",
+      "dist": "Weligama Beach â€¢ ~3.2 km",
       "rating": "4.8",
       "reviews": "(1.5K reviews)",
-      "price": "Rs 3,000–8,000",
-      "hours": "10:00 AM – 10:00 PM daily",
+      "price": "Rs 3,000â€“8,000",
+      "hours": "10:00 AM â€“ 10:00 PM daily",
       "address": "Weligama Bypass Beach Rd, Weligama Bay",
-      "img": "https://lh3.googleusercontent.com/aida/AEtjO1X67X5Ijk98Q412bse9ur3DH_qlJMw-LoBoUK0aARdpfnBXj_5-O2ywvS9N9lz_ZpEA251_Ec4ykBNtu1jXhwqYPPToJEP5Sk8MFOeOorASVwiD5X8VOAVga7OwbHIUPq_NbVaJd2lTx_S9u8M5U5jA-X3kUsgFOwdAVQyqMXoIZZd1wn1HsXPSgY766a5TX7_2w-rK2e1D5NfwQqWO0eewcxBV7XvJ1AZ4FeGH4bymrS0HBZW_tivmqAjY",
+      "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD_OByZYpD6V4CO5hs1QTE-CgaBkOnah2fctz4K6tnNw2S1YIHoTuKXglDyEXIuIygFhEnEx3kMUBeXtZbcRG5Y0Q0XGc2NcIZ_EjYodisZN_9jcLCZt9J8PQVL_1MJNKKecVcKuYdbXS6dVpI7-igyjze5r57vg7sRvLvqyHuO77M68BBn0a8n6QNDBIDxEmmA9PshvvLiaTOmfidJFoNTLIfpZJKJCJUnD2t0iEdE0Jouq32DwP9Pvw",
       "desc": "Barefoot dining directly on the sands of Weligama Bay. Hand-select your seafood catch from iced wooden dhow trays, grilled directly over coconut charcoal.",
       "specialties": "Charcoal grilled jumbo prawns, whole red snapper with garlic butter, calamari steaks, and sea-salt roasted sweet potatoes.",
       "dietary": "Pescatarian paradise; gluten-free grilled options with fresh lime and garlic herbs."
@@ -559,13 +559,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["beach-grill"],
     "name": "Sithum Fish Point",
-    "subtitle": "Casual Beachfront Grill • Bypass Beach Road, Weligama",
+    "subtitle": "Casual Beachfront Grill â€¢ Bypass Beach Road, Weligama",
     "description": "Casual seaside tables on the sand renowned for generous portions of freshly caught red snapper, tuna, and garlic prawns.",
-    "locationBadge": "Weligama Beach • ~3.0 km",
+    "locationBadge": "Weligama Beach â€¢ ~3.0 km",
     "categoryBadge": "Seafood Platters",
     "rating": "4.9",
-    "reviews": "(268 Reviews • 270 Online Ratings)",
-    "priceNote": "Rs 2,000–6,000",
+    "reviews": "(268 Reviews â€¢ 270 Online Ratings)",
+    "priceNote": "Rs 2,000â€“6,000",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkTYMrUDmZxzJ_BLceIcRUhdKgb5V-oG77uaXWOz2WyB847A66m-CL8caUfAqkPA9xZYJ7Pr_qaDv2WExi5biRwWqFXaKOZgszK1L9WItYe9NkS5uTDX23S277rueVaHyD6yLNgt9DhIF8VGXohuucHboJhA8DMIUwY6qmmP1E3iAu44ZsVjKAVpLZvgv-P0McXoVkqsGnufMDnJEwKZLhTxXuzcxuWZWzBE06THSjacu6MvEyDaWd_g",
       "alt": "Sithum Fish Point Weligama Beachfront Dining Table Feast"
@@ -591,7 +591,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "9:00 AM – 10:00 PM",
+        "text": "9:00 AM â€“ 10:00 PM",
         "emphasis": "Open"
       },
       {
@@ -619,13 +619,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Sithum Fish Point",
       "tag": "Seafood Platters",
-      "dist": "Weligama Beach • ~3.0 km",
+      "dist": "Weligama Beach â€¢ ~3.0 km",
       "rating": "4.9",
       "reviews": "(268 reviews)",
-      "price": "Rs 2,000–6,000",
-      "hours": "9:00 AM – 10:00 PM daily",
+      "price": "Rs 2,000â€“6,000",
+      "hours": "9:00 AM â€“ 10:00 PM daily",
       "address": "Bypass Beach Road, Weligama Bay",
-      "img": "https://lh3.googleusercontent.com/aida/AEtjO1X67X5Ijk98Q412bse9ur3DH_qlJMw-LoBoUK0aARdpfnBXj_5-O2ywvS9N9lz_ZpEA251_Ec4ykBNtu1jXhwqYPPToJEP5Sk8MFOeOorASVwiD5X8VOAVga7OwbHIUPq_NbVaJd2lTx_S9u8M5U5jA-X3kUsgFOwdAVQyqMXoIZZd1wn1HsXPSgY766a5TX7_2w-rK2e1D5NfwQqWO0eewcxBV7XvJ1AZ4FeGH4bymrS0HBZW_tivmqAjY",
+      "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkTYMrUDmZxzJ_BLceIcRUhdKgb5V-oG77uaXWOz2WyB847A66m-CL8caUfAqkPA9xZYJ7Pr_qaDv2WExi5biRwWqFXaKOZgszK1L9WItYe9NkS5uTDX23S277rueVaHyD6yLNgt9DhIF8VGXohuucHboJhA8DMIUwY6qmmP1E3iAu44ZsVjKAVpLZvgv-P0McXoVkqsGnufMDnJEwKZLhTxXuzcxuWZWzBE06THSjacu6MvEyDaWd_g",
       "desc": "A no-frills, top-rated local fishermen point serving enormous sizzling platters of freshly brought morning catch at candid prices.",
       "specialties": "Garlic butter lobster, grilled tuna steaks, Sri Lankan curried crab, and cassava chips.",
       "dietary": "Fresh seafood simply grilled with sea salt, pepper, and coconut oil."
@@ -637,13 +637,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["rooftop", "cafe"],
     "name": "After Surf Rooftop Cafe",
-    "subtitle": "Top floor above Surf Camp • Palabandara Watta, Weligama",
+    "subtitle": "Top floor above Surf Camp â€¢ Palabandara Watta, Weligama",
     "description": "Relaxed breezy rooftop above Weligama surf break serving poke bowls, grilled tacos, smoothie jars, and sunset mocktails.",
-    "locationBadge": "Pelabandara Watta • ~3.5 km",
+    "locationBadge": "Pelabandara Watta â€¢ ~3.5 km",
     "categoryBadge": "Sunset Rooftop",
     "rating": "4.8",
-    "reviews": "(95 Reviews • 5.0 TripAdvisor)",
-    "priceNote": "Rs 2,000–4,000",
+    "reviews": "(95 Reviews â€¢ 5.0 TripAdvisor)",
+    "priceNote": "Rs 2,000â€“4,000",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCCQ8XxCmvdc5aDEMxW4fIkvkCETqjz0IfiosNXdtHk6YqtWNYJsE4kTyF1IhqaRdgrZ_R6vmGETOnlthYs3YS29jKt93QJFGGvsCLoo1IeAyOPO7An1LjpFE2BM6DdYm16CBAIEngPFQv1buf5QZsGAc70VgKxkSJ4awOIpUPG7IB-6DWhn8hrGkcStJGK7b5ER1tueuphQPqQ_sWGVHmXsFH96kLBPm_SoGLQHT-_U4Yvx2qrBcQlAw",
       "alt": "After Surf Rooftop Cafe rooftop terrace with friends and palms"
@@ -669,7 +669,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 9:00 PM",
+        "text": "8:00 AM â€“ 9:00 PM",
         "emphasis": "Open"
       },
       {
@@ -697,11 +697,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "After Surf Rooftop Cafe",
       "tag": "Sunset Rooftop",
-      "dist": "Weligama • ~3.5 km",
+      "dist": "Weligama â€¢ ~3.5 km",
       "rating": "4.9",
       "reviews": "(2.4K reviews)",
-      "price": "Rs 2,000–4,000",
-      "hours": "8:00 AM – 9:00 PM daily",
+      "price": "Rs 2,000â€“4,000",
+      "hours": "8:00 AM â€“ 9:00 PM daily",
       "address": "Palabandara Watta, Weligama Surf Point",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1V04xicQqJPBijWjfd2pyHcdi3NWiov9b_OluPcjFW4LitpNF9OdF6RQQt5J6VRJVhPt_TvE_WLWi3gJURz_lsqksA30PTBeKoMnzieFpljy6bFhd_8o5p8xiyucPsVUSdkTBmUozAYIjFH3YJsNtcZmEmFaKsnvMDX9bgUfwBlIMOmcgNo7KqbFsFcbXlZtyUgLSN9T5t743oXbj-KbpDsk98JnqrwAFlIk0MaFng7urlT8-mHxrffPDE",
       "desc": "Breezy wooden rooftop perch looking across the Weligama bay break. Perfect for post-surf refueling, sunset cocktails, and refreshing bowls.",
@@ -715,13 +715,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["rooftop"],
     "name": "Kerabujen Restaurant",
-    "subtitle": "Coastal Rooftop Dining • 4th Floor, 631A Matara Rd, Weligama",
+    "subtitle": "Coastal Rooftop Dining â€¢ 4th Floor, 631A Matara Rd, Weligama",
     "description": "Elevated coastal dining with elevator access, sweeping bay panoramas, cold drinks, and tender grilled catch of the day.",
-    "locationBadge": "Weligama • ~3.4 km",
+    "locationBadge": "Weligama â€¢ ~3.4 km",
     "categoryBadge": "4TH FL PANORAMA",
     "rating": "4.5",
-    "reviews": "(110 Reviews • 5.0 TripAdvisor)",
-    "priceNote": "Rs 2,000–6,000",
+    "reviews": "(110 Reviews â€¢ 5.0 TripAdvisor)",
+    "priceNote": "Rs 2,000â€“6,000",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAfyjN9Z_YjB_XIdgWxK0pBasAEmVeEC7f86fCBfL1WHCI_qxbsFqnHHaqgrvWG2LfVQUryW-jJWGZPR8C_IdIcp2R8qbEYCaR0eRApAnXVSO12dY_a-fMmrx3GJ05HLe6nr83sqrVi3zOAyHasWIGufsEeMaKilihZPEQW9ucq9Qfxqg_K9tsV8MJKVjyz41cGvGa8S0OVEXdzDPn3px72Bt6TFXJKUcKl1aYBo6mqoJ_w47Noh_M7jQ",
       "alt": "Kerabujen Restaurant Rooftop Dining & Wicker Lanterns Ambiance"
@@ -747,7 +747,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "11:00 AM – 11:00 PM",
+        "text": "11:00 AM â€“ 11:00 PM",
         "emphasis": "Open"
       },
       {
@@ -775,11 +775,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Kerabujen Restaurant",
       "tag": "4th Fl Panorama",
-      "dist": "Weligama • ~3.4 km",
+      "dist": "Weligama â€¢ ~3.4 km",
       "rating": "4.9",
       "reviews": "(214 reviews)",
-      "price": "Rs 2,000–6,000",
-      "hours": "11:00 AM – 11:00 PM daily",
+      "price": "Rs 2,000â€“6,000",
+      "hours": "11:00 AM â€“ 11:00 PM daily",
       "address": "4th Fl, 631A Matara Rd (Elevator access), Weligama",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1W74aW2tofj98nhXR8t4YBaAu_ckKwrPdHLUnpd1ulUfK2Tz02_CuJc3nTA1D_YQp11Cp2fTxK0S9mumdRAP-aWHFH1oDVXFDIYh6_NDtWppdhBFiCorgTX3JszbBGp_CqMBWorZeSJkmIGYam5fgibZqkkdXYA9WQcbtUGv6e-CsYm69Ki0BTtIqprjFDagdl17DkaXCjq7mcEWGquZsBAFAS7Cri_NYGzo7nPheX9HFOKiczhWxoK452Y",
       "desc": "Elevated coastal dining featuring expansive bay panoramas, gentle acoustic sounds, and an extensive ocean grill menu.",
@@ -793,13 +793,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": false,
     "categories": ["cafe"],
     "name": "Aloha Coffee Gallery",
-    "subtitle": "Specialty Coffee & Brunch Hideaway • 7 Sunanda Road, Weligama",
-    "description": "Specialty espresso and brunch hideaway. Seasonal tip: Shady Lane Mirissa serves breakfast favorites 8:00 AM – 4:00 PM.",
-    "locationBadge": "Weligama • ~3.6 km",
+    "subtitle": "Specialty Coffee & Brunch Hideaway â€¢ 7 Sunanda Road, Weligama",
+    "description": "Specialty espresso and brunch hideaway. Seasonal tip: Shady Lane Mirissa serves breakfast favorites 8:00 AM â€“ 4:00 PM.",
+    "locationBadge": "Weligama â€¢ ~3.6 km",
     "categoryBadge": "Artisan Roast",
     "rating": "4.8",
-    "reviews": "(310 Reviews • 4.6 TripAdvisor)",
-    "priceNote": "Rs 1,800–3,500",
+    "reviews": "(310 Reviews â€¢ 4.6 TripAdvisor)",
+    "priceNote": "Rs 1,800â€“3,500",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida/ALJJyrDT9ElnDSumWpLETbaGJOo9N-i4ubTnbueh4UsvZvhV1m5zvPkNXrdCuRkRnMO7fChbcyST85f_yLYsYbWj1mamaOY0EuXY3zJ7LzTbpnkexFY9G1xnK6tNvQjt9PStvKNodYOYr4gecaqSKP0jEFsKyVSmn9MrZkpSp5QaGfcdV2XIXMrLryxDE7NIe6CcseuRKDgv5Z4MrKH9SstUeLU3Sph2SntqoC2abJbx4vb7DQ",
       "alt": "Aloha Coffee Gallery smoothie bowl & artisanal breakfast"
@@ -825,7 +825,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 4:00 PM",
+        "text": "8:00 AM â€“ 4:00 PM",
         "emphasis": "Brunch"
       },
       {
@@ -853,11 +853,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Aloha Coffee Gallery",
       "tag": "Artisan Roast",
-      "dist": "Weligama • ~3.6 km",
+      "dist": "Weligama â€¢ ~3.6 km",
       "rating": "4.5",
       "reviews": "(265 reviews)",
-      "price": "Rs 1,500–3,500",
-      "hours": "8:00 AM – 4:00 PM daily",
+      "price": "Rs 1,500â€“3,500",
+      "hours": "8:00 AM â€“ 4:00 PM daily",
       "address": "7 Sunanda Road, Weligama",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1V04xicQqJPBijWjfd2pyHcdi3NWiov9b_OluPcjFW4LitpNF9OdF6RQQt5J6VRJVhPt_TvE_WLWi3gJURz_lsqksA30PTBeKoMnzieFpljy6bFhd_8o5p8xiyucPsVUSdkTBmUozAYIjFH3YJsNtcZmEmFaKsnvMDX9bgUfwBlIMOmcgNo7KqbFsFcbXlZtyUgLSN9T5t743oXbj-KbpDsk98JnqrwAFlIk0MaFng7urlT8-mHxrffPDE",
       "desc": "Artisanal roastery tucked in a quiet palm garden. Famous for craft cold brews, oat milk flat whites, and healthy brunch plates.",
@@ -871,13 +871,13 @@ export const DINING_VENUES: DiningVenue[] = [
     "featured": true,
     "categories": ["cafe"],
     "name": "Salty Swamis Cafe & Surf Shop",
-    "subtitle": "Specialty Roasters & Surf Shop • 543 Matara Road, Narigama",
+    "subtitle": "Specialty Roasters & Surf Shop â€¢ 543 Matara Road, Narigama",
     "description": "Legendary beachfront surf hangout pouring single-origin pour-overs alongside artisanal sourdough wraps, smoothie bowls, and curated coastal aesthetics.",
-    "locationBadge": "Narigama Beach • ~3.1 km",
+    "locationBadge": "Narigama Beach â€¢ ~3.1 km",
     "categoryBadge": "Surf Lounge",
     "rating": "4.9",
-    "reviews": "(520 Google • 4.8★ TripAdvisor)",
-    "priceNote": "Rs 2,000–5,000",
+    "reviews": "(520 Google â€¢ 4.8â˜… TripAdvisor)",
+    "priceNote": "Rs 2,000â€“5,000",
     "featuredFooterLeft": "Beachside Specialty Roastery",
     "mainImage": {
       "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAJnxZk1hgz_w3DGNEaEbhk3IfA71If_L-BVC4WRoEw1BOrCOyOrhDD63OYqlY9uH5NzMdOFKbb9QjfwXZzqi5-tlH_TytmWuP2tFU-IgVdvYEeuozSQVEjE6WxIXsWM-sJvABs25qR4ZmSv8HJWnWMuWbdYxIFMCxJEExv3aZQnHjX3u1qr9ofYYGaYeByAZyq8FL9npRmjlTP50U4_OrP6lXqr4hC9QAsVGmkw2T9ohjNxFnlP0wtGw",
@@ -904,7 +904,7 @@ export const DINING_VENUES: DiningVenue[] = [
     "meta": [
       {
         "icon": "schedule",
-        "text": "8:00 AM – 4:00 PM",
+        "text": "8:00 AM â€“ 4:00 PM",
         "emphasis": "Daytime Roast"
       },
       {
@@ -932,11 +932,11 @@ export const DINING_VENUES: DiningVenue[] = [
     "modal": {
       "title": "Salty Swamis Cafe & Surf Shop",
       "tag": "Surf Lounge",
-      "dist": "Narigama Beach • ~3.1 km",
+      "dist": "Narigama Beach â€¢ ~3.1 km",
       "rating": "4.9",
       "reviews": "(520 reviews)",
-      "price": "Rs 2,000–5,000",
-      "hours": "8:00 AM – 4:00 PM • Daytime Roast",
+      "price": "Rs 2,000â€“5,000",
+      "hours": "8:00 AM â€“ 4:00 PM â€¢ Daytime Roast",
       "address": "543 Matara Road, Weligama Beach",
       "img": "https://lh3.googleusercontent.com/aida/AEtjO1V04xicQqJPBijWjfd2pyHcdi3NWiov9b_OluPcjFW4LitpNF9OdF6RQQt5J6VRJVhPt_TvE_WLWi3gJURz_lsqksA30PTBeKoMnzieFpljy6bFhd_8o5p8xiyucPsVUSdkTBmUozAYIjFH3YJsNtcZmEmFaKsnvMDX9bgUfwBlIMOmcgNo7KqbFsFcbXlZtyUgLSN9T5t743oXbj-KbpDsk98JnqrwAFlIk0MaFng7urlT8-mHxrffPDE",
       "desc": "Iconic southern coastline surf hideout boasting single-origin specialty coffees, ocean view benches, and creative culinary bowls.",

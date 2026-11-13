@@ -1,51 +1,50 @@
 import Link from "next/link";
 import { ArrowRight, Compass, Info } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export default function HeritageSection() {
   return (
     <section
-      className="max-w-7xl mx-auto w-full px-6 lg:px-12 py-16 scroll-mt-24"
+      className="mx-auto w-full max-w-7xl scroll-mt-24 px-4 py-12 sm:px-6 sm:py-16 lg:px-12"
       id="heritage-wildlife"
     >
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+      <Reveal>
+        <div className="flex flex-col justify-between gap-6 pb-8 sm:pb-10 md:flex-row md:items-end md:pb-12">
         <div className="space-y-2">
           <span
-            className="font-script text-2xl md:text-3xl text-[#397FA8] font-normal tracking-wide block"
+            className="block font-script text-[1.6rem] font-normal tracking-wide text-[#2f6b8f] sm:text-2xl md:text-3xl"
             style={{
               fontFamily: "Moon Dance, cursive",
-              color: "rgb(57, 127, 168)",
-              fontSize: "1.85rem",
-              fontWeight: "400",
               lineHeight: "1.2",
             }}
           >
             ancient kingdoms &amp; living ecosystems...
           </span>
           <h2
-            className="font-serif text-[38px] md:text-[44px] text-on-surface tracking-tight font-normal leading-tight"
+            className="font-serif text-[32px] font-normal leading-tight tracking-tight text-on-surface sm:text-[38px] md:text-[44px]"
             style={{
               fontFamily: "Cormorant Garamond, Georgia, serif",
               fontWeight: "400",
               color: "rgb(23, 63, 86)",
               letterSpacing: "-0.01em",
-              fontSize: "2.5rem",
               lineHeight: "1.15",
             }}
           >
             Discover the Local Area
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-xl font-light leading-relaxed">
+          <p className="max-w-xl font-body-md text-[15px] font-light leading-relaxed text-on-surface-variant sm:text-body-md">
             Explore nine revered heritage treasures, ancient monasteries, serene coastal lagoons, and vibrant wildlife sanctuaries situated near Kumbalgama.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
-          <span className="text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider bg-surface-container-low px-4 py-2 rounded-full">
+          <span className="rounded-full bg-surface-container-low px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
             09 Heritage &amp; Wildlife Gems
           </span>
         </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </div>
+      </Reveal>
+      <Stagger className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
@@ -63,8 +62,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Heritage Site</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
@@ -82,8 +81,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Folk Museum</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" />
@@ -101,8 +100,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Ancient Shrine</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5mfmgEsrNgKfAjHQHMcOfMMaXXtvMblIuI5w1wFzrDIAtFzG2IgHQvYlGgDPSlGpvPZJulmrBGdGrbpVDBEx0il2pk5LuzSBSj7uDULf3v7KnI8pPclWBr232AGAuXS6fk3i2Lg49vAAxGaC83KGRf7OKJGID1jlmlPQdB5jUm_l1JUTemYA9LTPRaXgJi9Wm3ac78dO3faehyQ027lCbOw_iPSSHvT5jULBlDKr_YdZy5nYCW2uG7Q" />
@@ -120,8 +119,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Local Artisans</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
@@ -139,8 +138,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Coastal Landmark</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
@@ -158,8 +157,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Lagoon Sanctuary</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw" />
@@ -177,8 +176,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Living Tradition</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" />
@@ -196,8 +195,8 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Marine Wildlife</span>
             </div>
           </div>
-        </div>
-        <div className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
+        </StaggerItem>
+        <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGr-KFMClnJb2SWeatY1wj6YG9S9Y8JFjWmwtLZzVyFR5UB7u3cb7hfCLf_CAJ_cGJ5WcT6M_PoxHbnIloBFRtUA1edf5h0_KOX_mv4gnFgfzZdX1pJgMMxANOD2EpIg_3jLsYOLzXnaeI07oz4Umu_tE1Iu5_b0Tua-I-ByVcDdfnT6hT7VXIguEMgVm-7Pla2Vzk1VUjewLqzgA83-NqrI4MEY3cSwgxqB6RYO5kCEx5i6zrSIMmQ" />
@@ -215,22 +214,26 @@ export default function HeritageSection() {
               <span className="text-xs text-on-surface-variant font-light">Ayurvedic Centre</span>
             </div>
           </div>
+        </StaggerItem>
+      </Stagger>
+      <Reveal delay={0.1}>
+        <div className="mt-10 mb-6 flex flex-col items-center justify-center gap-4 text-center sm:mt-12 sm:flex-row">
+          <Link
+            href="/experiences/southern-heritage-coastal-expeditions"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#2f6b8f] px-6 py-3.5 font-label-md text-label-md font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#25566f] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] sm:w-auto sm:px-8"
+          >
+            <Compass className="text-[18px]" size={18} />
+            <span>Explore Southern Heritage &amp; Coastal Expeditions</span>
+            <ArrowRight className="text-[16px]" size={16} />
+          </Link>
         </div>
-      </div>
-      <div className="mt-12 mb-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-        <Link
-          href="/experiences/southern-heritage-coastal-expeditions"
-          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#397FA8] hover:bg-[#2E698D] text-white font-label-md text-label-md font-semibold tracking-wide shadow-sm hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] transition-all duration-200"
-        >
-          <Compass className="text-[18px]" size={18} />
-          <span>Explore Southern Heritage &amp; Coastal Expeditions</span>
-          <ArrowRight className="text-[16px]" size={16} />
-        </Link>
-      </div>
-      <div className="mt-8 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light">
-        <Info className="text-outline text-[16px]" size={16} />
-        <span>Day excursions and English-speaking guided tours arranged daily by the concierge desk.</span>
-      </div>
+      </Reveal>
+      <Reveal delay={0.15}>
+        <div className="mt-8 flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm font-light">
+          <Info className="text-outline text-[16px]" size={16} />
+          <span>Day excursions and English-speaking guided tours arranged daily by the concierge desk.</span>
+        </div>
+      </Reveal>
     </section>
   );
 }

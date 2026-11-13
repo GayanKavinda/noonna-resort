@@ -36,10 +36,10 @@ export function DiningDirectorySection() {
   return (
     <>
       <section className="w-full bg-white">
-        <div className="max-w-4xl mx-auto px-6 pt-6 pb-4">
+        <div className="mx-auto max-w-4xl px-4 pt-5 pb-4 sm:px-6 sm:pt-6">
           {/* Header */}
-          <p className="text-center text-sm text-slate-500 font-light leading-snug">
-            <span className="font-semibold text-slate-900 uppercase tracking-wider text-[13px]">
+          <p className="text-center text-sm font-light leading-snug text-slate-500">
+            <span className="text-[13px] font-semibold uppercase tracking-wider text-slate-900">
               {DINING_VITALS.title}
             </span>
             <span className="mx-1.5">·</span>
@@ -47,60 +47,62 @@ export function DiningDirectorySection() {
           </p>
 
           {/* Divider with icon */}
-          <div className="flex items-center gap-4 my-4" aria-hidden="true">
+          <div className="my-4 flex items-center gap-4" aria-hidden="true">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-slate-200" />
-            <div className="w-8 h-8 rounded-full bg-[#e5f1f8] flex items-center justify-center text-[#397FA8]">
-              <Compass className="w-4 h-4" />
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#e5f1f8] text-[#2f6b8f]">
+              <Compass className="h-4 w-4" />
             </div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-slate-200" />
           </div>
 
           {/* Filters */}
-          <div
-            id="filter-pill-container"
-            className="flex flex-wrap items-center justify-center gap-2"
-          >
-            {DINING_FILTERS.map(({ id, label }) => {
-              const isActive = activeFilter === id;
-              const Icon = FILTER_ICONS[id];
-              return (
-                <button
-                  key={id}
-                  type="button"
-                  onClick={() => setActiveFilter(id)}
-                  className={`h-6 px-3 inline-flex items-center gap-1.5 rounded-full text-[10px] leading-none font-medium cursor-pointer transition-colors duration-200 ${
-                    isActive
-                      ? "bg-[#397FA8] text-white"
-                      : "bg-white text-slate-600 border border-slate-200 hover:border-[#397FA8] hover:text-[#397FA8]"
-                  }`}
-                >
-                  <Icon className="w-3 h-3 shrink-0" aria-hidden="true" />
-                  <span>{label}</span>
-                </button>
-              );
-            })}
+          <div className="-mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden">
+            <div
+              id="filter-pill-container"
+              className="flex w-max min-w-full items-center justify-start gap-2 sm:w-auto sm:flex-wrap sm:justify-center"
+            >
+              {DINING_FILTERS.map(({ id, label }) => {
+                const isActive = activeFilter === id;
+                const Icon = FILTER_ICONS[id];
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => setActiveFilter(id)}
+                    className={`inline-flex min-h-[36px] shrink-0 cursor-pointer items-center gap-1.5 rounded-full px-3.5 text-[11px] font-medium leading-none transition-colors duration-200 sm:min-h-0 sm:h-7 sm:px-3 sm:text-[10px] ${
+                      isActive
+                        ? "bg-[#2f6b8f] text-white"
+                        : "border border-slate-200 bg-white text-slate-600 hover:border-[#2f6b8f] hover:text-[#2f6b8f]"
+                    }`}
+                  >
+                    <Icon className="h-3.5 w-3.5 shrink-0 sm:h-3 sm:w-3" aria-hidden="true" />
+                    <span className="whitespace-nowrap">{label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
       {/* 3. Curated Culinary Directory */}
-      <section className="w-full bg-white border-t border-slate-100 pt-12 pb-12" id="dining-directory">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-6">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#397FA8]">
+      <section className="w-full border-t border-slate-100 bg-white pt-10 pb-10 sm:pt-12 sm:pb-12" id="dining-directory">
+        <div className="mx-auto max-w-7xl px-4 pt-6 pb-6 sm:px-6 sm:pt-10 lg:px-12">
+          <div className="mx-auto mb-8 max-w-2xl text-center sm:mb-12">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#2f6b8f]">
               {DINING_DIRECTORY.eyebrow}
             </span>
-            <h2 className="font-cormorant text-4xl lg:text-5xl text-slate-900 mt-2">
+            <h2 className="mt-2 font-cormorant text-[32px] leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {DINING_DIRECTORY.title}
             </h2>
-            <p className="text-slate-600 text-sm font-light mt-3 leading-relaxed">
+            <p className="mt-3 text-sm font-light leading-relaxed text-slate-600">
               {DINING_DIRECTORY.subtitle}
             </p>
           </div>
 
           <motion.div
             layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+            className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10"
             id="dining-cards-grid"
             transition={{ layout: { duration: 0.35, ease: [0.25, 0.1, 0.25, 1] } }}
           >
@@ -149,7 +151,7 @@ export function DiningDirectorySection() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
-                className="text-center py-12 text-slate-400 text-sm"
+                className="text-center py-12 text-slate-500 text-sm"
               >
                 No dining spots found under this category filter.
               </motion.div>

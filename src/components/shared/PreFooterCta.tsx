@@ -1,6 +1,7 @@
 ﻿import React from "react";
 import { HOTEL_INFO } from "@/lib/constants";
 import { ArrowUpRight } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
 
 export type CtaRouteContext =
   | "home"
@@ -40,7 +41,7 @@ const CTA_CONTENT: Record<
   stay: {
     eyebrow: "your quiet sanctuary...",
     title: "Your Coastal Stay Awaits",
-    deck: "Discover the Double Room and explore the details of your stay in Kumbalgama.",
+    deck: "Explore the entire-resort stay and the details of your private retreat in Kumbalgama.",
     buttonText: "Explore the Room on Booking.com",
     href: HOTEL_INFO.bookingUrl,
   },
@@ -54,8 +55,8 @@ const CTA_CONTENT: Record<
   gallery: {
     eyebrow: "experience stillness firsthand...",
     title: "Step Into the Living Atmosphere",
-    deck: "Turn captured coastal moments into your reality. Reserve your intimate stay along Sri Lanka's golden shoreline.",
-    buttonText: "Reserve Your Room on Booking.com",
+    deck: "Explore the photographs and moments that capture Noonna Beach Hotel and its coastal surroundings.",
+    buttonText: "Explore Noonna on Booking.com",
     href: HOTEL_INFO.bookingUrl,
   },
   contact: {
@@ -117,9 +118,9 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
 
   return (
     <section className={`w-full bg-white py-8 sm:py-12 border-t border-[#D9EAF3]/70 ${className}`}>
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <Reveal className="max-w-4xl mx-auto px-6 text-center">
         {/* Philosophy Script Eyebrow */}
-        <p className="font-script text-3xl sm:text-4xl text-[#397FA8] mb-3 tracking-wide select-none lowercase">
+        <p className="font-script text-3xl sm:text-4xl text-[#2f6b8f] mb-3 tracking-wide select-none lowercase">
           {content.eyebrow}
         </p>
 
@@ -139,7 +140,7 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
             href={content.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-[#397FA8] hover:bg-[#2e698d] text-white font-medium text-sm rounded-lg transition-colors duration-200 shadow-sm hover:shadow group gap-2 font-sans"
+            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm rounded-lg transition-colors duration-200 shadow-sm hover:shadow group gap-2 font-sans"
           >
             <span>{content.buttonText}</span>
             <ArrowUpRight className="w-[18px] h-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
@@ -154,10 +155,10 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
           className="inline-flex items-center justify-center gap-1.5 text-xs text-slate-600 font-normal bg-slate-50 border border-slate-200/80 px-3 py-1 rounded-full hover:bg-slate-100 transition-colors duration-150 font-sans"
         >
           <ArrowUpRight className="hidden" aria-hidden="true" />
-          <svg className="w-[15px] h-[15px] text-[#397FA8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
+          <svg className="w-[15px] h-[15px] text-[#2f6b8f]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
           <span>Listed on Booking.com</span>
         </a>
-      </div>
+      </Reveal>
     </section>
   );
 };

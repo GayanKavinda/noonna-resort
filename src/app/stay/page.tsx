@@ -9,13 +9,13 @@ import { StayLocationMap } from "@/components/sections/stay/StayLocationMap";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 
 export const metadata: Metadata = {
-  title: "The Stay | Double Room with Private Bathroom | Noonna Beach Hotel",
+  title: "The Stay | Entire Resort Rental | Noonna Beach Hotel",
   description:
-    "Explore the Double Room with Private Bathroom at Noonna Beach Hotel in Kumbalgama, Sri Lanka. Maximum 2 guests, peaceful coastal setting, steps from the shoreline.",
+    "Explore an entire resort rental at Noonna Beach Hotel in Kumbalgama, Sri Lanka. A private resort stay in a peaceful coastal setting, steps from the shoreline.",
   openGraph: {
-    title: "The Stay | Double Room | Noonna Beach Hotel",
+    title: "The Stay | Entire Resort Rental | Noonna Beach Hotel",
     description:
-      "A serene coastal sanctuary in Kumbalgama, Southern Province, Sri Lanka. Double Room with Private Bathroom for 2 guests.",
+      "A serene coastal sanctuary in Kumbalgama, Southern Province, Sri Lanka, offered as an entire resort rental for a private resort stay.",
     url: "https://noonnabeach.com/stay",
     siteName: "Noonna Beach Hotel",
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "/images/rooms/deluxe-ocean-suite.jpg",
         width: 1200,
         height: 800,
-        alt: "Double Room at Noonna Beach Hotel, Kumbalgama, Sri Lanka",
+        alt: "Noonna Beach Hotel in Kumbalgama, Sri Lanka",
       },
     ],
     locale: "en_US",
@@ -35,23 +35,14 @@ export default function StayPage() {
   // Verified structured schema for Google Rich Results
   const hotelRoomSchema = {
     "@context": "https://schema.org",
-    "@type": "HotelRoom",
-    name: "Double Room with Private Bathroom",
+    "@type": "LodgingBusiness",
+    name: "Noonna Beach Hotel",
     description:
-      "A peaceful double room accommodation located at Noonna Beach Hotel in Kumbalgama, Sri Lanka, accommodating up to 2 guests.",
-    occupancy: {
-      "@type": "QuantitativeValue",
-      maxValue: 2,
-    },
-    bed: {
-      "@type": "BedDetails",
-      numberOfBeds: 1,
-      typeOfBed: "Double",
-    },
+      "Noonna Beach Hotel in Kumbalgama, Sri Lanka, offered as an entire resort rental for a private resort stay along the southern coast.",
     amenityFeature: [
       {
         "@type": "LocationFeatureSpecification",
-        name: "Private bathroom",
+        name: "Private resort stay",
         value: true,
       },
       {
@@ -70,15 +61,11 @@ export default function StayPage() {
         value: true,
       },
     ],
-    containedInPlace: {
-      "@type": "Hotel",
-      name: "Noonna Beach Hotel",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Kumbalgama",
-        addressRegion: "Southern Province",
-        addressCountry: "LK",
-      },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kumbalgama",
+      addressRegion: "Southern Province",
+      addressCountry: "LK",
     },
   };
 

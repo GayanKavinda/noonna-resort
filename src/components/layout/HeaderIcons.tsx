@@ -18,7 +18,7 @@ export const HeaderIcons: React.FC<HeaderIconsProps> = ({ className = "" }) => {
         rel="noopener noreferrer"
         aria-label="Official Instagram: @noonnabeach"
         title="Instagram (@noonnabeach)"
-        className="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-2xs"
+        className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
       >
         <svg
           className="w-4 h-4 fill-current"
@@ -36,7 +36,7 @@ export const HeaderIcons: React.FC<HeaderIconsProps> = ({ className = "" }) => {
         rel="noopener noreferrer"
         aria-label="Official YouTube: Noonna Beach Hotel Films"
         title="YouTube (Noonna Beach Hotel Films)"
-        className="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-2xs"
+        className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
       >
         <svg
           className="w-4 h-4 fill-current"
@@ -55,7 +55,7 @@ export const HeaderIcons: React.FC<HeaderIconsProps> = ({ className = "" }) => {
           rel="noopener noreferrer"
           aria-label="Official WhatsApp Concierge: Direct Booking & Guest Inquiries"
           title="WhatsApp Concierge"
-          className="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-2xs"
+          className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
         >
           <svg
             className="w-4 h-4 fill-current"
@@ -74,7 +74,7 @@ export const HeaderIcons: React.FC<HeaderIconsProps> = ({ className = "" }) => {
         rel="noopener noreferrer"
         aria-label="Official Facebook: /noonnabeachhotel"
         title="Facebook (/noonnabeachhotel)"
-        className="w-8 h-8 rounded-full border border-[#397FA8]/30 flex items-center justify-center text-[#397FA8] hover:text-white hover:bg-[#397FA8] transition-all duration-200 shadow-2xs"
+        className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
       >
         <svg
           className="w-4 h-4 fill-current"

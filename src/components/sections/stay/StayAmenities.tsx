@@ -1,6 +1,7 @@
 import React from "react";
 import { STAY_DATA } from "@/data/stayData";
 import { Bed, ShowerHead, Coffee, Wifi, Check } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 interface StayAmenitiesProps {
   className?: string;
@@ -19,39 +20,37 @@ export const StayAmenities: React.FC<StayAmenitiesProps> = ({
   return (
     <section
       id="suite-details"
-      className={`w-full bg-white py-20 px-8 border-b border-[#D9EAF3]/40 ${className}`}
+      className={`w-full border-b border-[#D9EAF3]/40 bg-white px-4 py-14 sm:px-6 sm:py-16 md:py-20 lg:px-8 ${className}`}
     >
-      <div className="max-w-6xl mx-auto">
-        {/* Section Heading */}
-        <div className="text-center max-w-xl mx-auto mb-16">
+      <div className="mx-auto max-w-6xl">
+        <Reveal className="mx-auto mb-10 max-w-xl text-center sm:mb-12 md:mb-16">
           <span
-            className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block"
+            className="mb-2 block font-script text-3xl font-normal tracking-wide text-[#2f6b8f] md:text-4xl"
             style={{ fontSize: "1.75rem" }}
           >
             tailored comforts...
           </span>
-          <h2 className="font-heading text-[40px] leading-tight text-[#173F56] font-normal">
+          <h2 className="font-heading text-[32px] font-normal leading-tight text-[#173F56] sm:text-[36px] md:text-[40px]">
             Thoughtful Essentials
           </h2>
-          <p className="text-[15px] text-slate-600 mt-3 font-light">
+          <p className="mt-3 text-[15px] font-light text-slate-600">
             Everything you need for an effortless, barefoot coastal rhythm.
           </p>
-        </div>
+        </Reveal>
 
-        {/* 4-Column Categorized Amenities Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Stagger className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {STAY_DATA.amenityCategories.map((category, index) => {
             const CatIcon = AMENITY_ICONS[category.iconName] ?? Bed;
             return (
-              <div
+              <StaggerItem
                 key={index}
-                className="p-6 rounded-3xl bg-white border border-[#D9EAF3] shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)] hover:border-[#397FA8]/50 transition-all flex flex-col group"
+                className="group flex flex-col rounded-3xl border border-[#D9EAF3] bg-white p-5 shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)] transition-all hover:border-[#2f6b8f]/50 sm:p-6"
               >
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-[#EBF5FB] text-[#397FA8] flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
-                    <CatIcon className="w-[22px] h-[22px]" />
+                <div className="mb-5 flex items-center gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#EBF5FB] text-[#2f6b8f] transition-transform group-hover:scale-105">
+                    <CatIcon className="h-[22px] w-[22px]" />
                   </div>
-                  <h3 className="font-heading text-xl text-[#173F56] font-normal leading-tight">
+                  <h3 className="font-heading text-xl font-normal leading-tight text-[#173F56]">
                     {category.title}
                   </h3>
                 </div>
@@ -60,17 +59,17 @@ export const StayAmenities: React.FC<StayAmenitiesProps> = ({
                   {category.items.map((item, itemIdx) => (
                     <li
                       key={itemIdx}
-                      className="flex items-center gap-2.5 text-xs text-slate-600 font-light"
+                      className="flex items-start gap-2.5 text-xs font-light text-slate-600"
                     >
-                      <Check className="w-4 h-4 text-[#397FA8] shrink-0" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#2f6b8f]" />
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </StaggerItem>
             );
           })}
-        </div>
+        </Stagger>
       </div>
     </section>
   );

@@ -48,7 +48,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
         {/* Carousel Header trio & Directional Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-4 border-b border-[#D9EAF3]/60">
           <div className="max-w-2xl space-y-1.5">
-            <span className="block font-script text-3xl md:text-4xl text-[#397FA8] leading-none mb-1 select-none">
+            <span className="block font-script text-3xl md:text-4xl text-[#2f6b8f] leading-none mb-1 select-none">
               {eyebrow}
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-[40px] text-[#173F56] font-normal tracking-tight leading-tight">
@@ -66,7 +66,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
               aria-label="Previous discovery slide"
-              className="w-10 h-10 rounded-full border border-[#D9EAF3] flex items-center justify-center text-[#173F56] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 cursor-pointer shadow-2xs"
+              className="w-10 h-10 rounded-full border border-[#D9EAF3] flex items-center justify-center text-[#173F56] hover:bg-[#2f6b8f] hover:text-white hover:border-[#2f6b8f] disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 cursor-pointer shadow-2xs"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
@@ -77,7 +77,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
               aria-label="Next discovery slide"
-              className="w-10 h-10 rounded-full border border-[#D9EAF3] flex items-center justify-center text-[#173F56] hover:bg-[#397FA8] hover:text-white hover:border-[#397FA8] disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 cursor-pointer shadow-2xs"
+              className="w-10 h-10 rounded-full border border-[#D9EAF3] flex items-center justify-center text-[#173F56] hover:bg-[#2f6b8f] hover:text-white hover:border-[#2f6b8f] disabled:opacity-40 disabled:pointer-events-none transition-all duration-200 cursor-pointer shadow-2xs"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -108,7 +108,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center text-[#397FA8]/40">
+                  <div className="flex h-full w-full items-center justify-center text-[#2f6b8f]/40">
                     <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
@@ -116,7 +116,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
                 )}
                 {/* Category Pill Tag */}
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#397FA8] text-xs font-semibold uppercase tracking-wider border border-[#D9EAF3]">
+                  <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#2f6b8f] text-xs font-semibold uppercase tracking-wider border border-[#D9EAF3]">
                     {slide.tag}
                   </span>
                 </div>
@@ -128,7 +128,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
                   <span className="text-xs text-[#64748B] font-mono block mb-1.5">
                     {slide.meta}
                   </span>
-                  <h3 className="font-heading text-2xl font-medium text-[#173F56] mb-2 leading-tight group-hover:text-[#397FA8] transition-colors">
+                  <h3 className="font-heading text-2xl font-medium text-[#173F56] mb-2 leading-tight group-hover:text-[#2f6b8f] transition-colors">
                     {slide.title}
                   </h3>
                   <p className="font-body text-xs sm:text-sm text-slate-600 font-light leading-relaxed mb-4">
@@ -139,7 +139,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
                 {slide.href && (
                   <Link
                     href={slide.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#397FA8] hover:text-[#173F56] transition-colors mt-auto"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#2f6b8f] hover:text-[#173F56] transition-colors mt-auto"
                   >
                     <span>Explore detail</span>
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

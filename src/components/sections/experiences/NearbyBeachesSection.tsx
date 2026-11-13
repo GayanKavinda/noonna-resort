@@ -1,42 +1,43 @@
 import Link from "next/link";
 import { Info, Umbrella, Waves, ArrowRight, ArrowUpRight } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function NearbyBeachesSection() {
   return (
-    <section className="max-w-7xl mx-auto w-full px-6 lg:px-12 py-16 scroll-mt-24" id="nearby-beaches">
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+    <section className="mx-auto w-full max-w-7xl scroll-mt-24 px-4 py-12 sm:px-6 sm:py-16 lg:px-12" id="nearby-beaches">
+      <Reveal className="flex flex-col justify-between gap-6 pb-8 sm:pb-10 md:flex-row md:items-end md:pb-12">
         <div className="space-y-2">
           <span
-            className="font-script text-2xl md:text-3xl text-[#397FA8] font-normal tracking-wide block"
-            style={{ fontFamily: '"Moon Dance", cursive', color: "rgb(57, 127, 168)", fontSize: "1.85rem", fontWeight: 400, lineHeight: 1.2 }}
+            className="block font-script text-[1.6rem] font-normal tracking-wide text-[#2f6b8f] sm:text-2xl md:text-3xl"
+            style={{ fontFamily: '"Moon Dance", cursive', lineHeight: 1.2 }}
           >
             where the ocean sets the rhythm...
           </span>
           <h2
-            className="font-serif text-[38px] md:text-[44px] text-on-surface tracking-tight font-normal leading-tight"
+            className="font-serif text-[32px] font-normal leading-tight tracking-tight text-on-surface sm:text-[38px] md:text-[44px]"
             style={{
               fontFamily: '"Cormorant Garamond", Georgia, serif',
               fontWeight: 400,
               color: "rgb(23, 63, 86)",
               letterSpacing: "-0.01em",
-              fontSize: "2.5rem",
               lineHeight: 1.15,
             }}
           >
             Find Your Favourite Shore
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-xl font-light leading-relaxed">
+          <p className="max-w-xl font-body-md text-[15px] font-light leading-relaxed text-on-surface-variant sm:text-body-md">
             Explore the distinct sands along Sri Lanka&apos;s famed southern coastal strip, from quiet secluded tide-pool bays to celebrated point breaks.
           </p>
         </div>
-        <div className="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low px-4 py-2 rounded-full self-start md:self-auto">
+        <div className="self-start rounded-full bg-surface-container-low px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant md:self-auto">
           Southern Province • Ahangama - Weligama Belt
         </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-8">
-        <div className="lg:col-span-7 bg-surface-container-lowest rounded-3xl p-8 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t-2 border-primary">
-          <div className="space-y-6">
-            <div className="relative h-72 rounded-2xl overflow-hidden bg-surface-container group">
+      </Reveal>
+      <Reveal className="mb-8">
+        <div className="grid grid-cols-1 items-stretch gap-6 sm:gap-8 lg:grid-cols-12">
+          <div className="flex flex-col justify-between rounded-3xl border-t-2 border-primary bg-surface-container-lowest p-5 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] transition-all hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] sm:p-6 lg:col-span-7 lg:p-8">
+          <div className="space-y-5 sm:space-y-6">
+            <div className="group relative h-56 overflow-hidden rounded-2xl bg-surface-container sm:h-64 lg:h-72">
               <img
                 alt="Midigama Beach waves and turquoise surf break"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -75,7 +76,7 @@ export function NearbyBeachesSection() {
             {
               title: "Abimanagama Beach",
               tag: "Secluded Cove",
-              dist: "~2.9 km",
+              dist: "~1.7 km",
               desc: "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
               footer: "Quiet Coastal Solitude",
               img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
@@ -103,20 +104,20 @@ export function NearbyBeachesSection() {
               cta: "Explore Ahangama",
             },
           ].map((c) => (
-            <div key={c.title} className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.1)] transition-all flex flex-col sm:flex-row gap-5 items-stretch border-t border-surface-container">
-              <div className="w-full sm:w-40 h-36 rounded-2xl overflow-hidden bg-surface-container shrink-0">
-                <img alt={c.title} className="w-full h-full object-cover" src={c.img} />
+            <div key={c.title} className="flex flex-col items-stretch gap-4 rounded-3xl border-t border-surface-container bg-surface-container-lowest p-5 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] transition-all hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.1)] sm:flex-row sm:gap-5 sm:p-6">
+              <div className="h-44 w-full shrink-0 overflow-hidden rounded-2xl bg-surface-container sm:h-36 sm:w-40">
+                <img alt={c.title} className="h-full w-full object-cover" src={c.img} />
               </div>
               <div className="flex flex-col justify-between space-y-2">
                 <div className="space-y-1">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">{c.tag}</span>
                     <span className="text-primary font-label-sm text-label-sm font-semibold bg-surface-container-low px-2 py-0.5 rounded-full">{c.dist}</span>
                   </div>
                   <h4 className="font-serif text-xl text-on-surface font-normal" style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}>{c.title}</h4>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant font-light line-clamp-2">{c.desc}</p>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant font-light line-clamp-3 sm:line-clamp-2">{c.desc}</p>
                 </div>
-                <div className="pt-2 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-2 font-label-sm text-label-sm text-primary font-semibold">
                   <span>{c.footer}</span>
                   {c.href ? (
                     <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
@@ -132,13 +133,14 @@ export function NearbyBeachesSection() {
           ))}
         </div>
       </div>
+      </Reveal>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
         {[
-          { name: "Lazy Left Surf Break", tag: "Classic Point Break", dist: "~1.5 km", desc: "Long, ultra-smooth, and gentle reef wave heavily popular for longboarders and intermediate surfers peeling across deep coral.", footer: "Longboard & Intermediate Haven", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" },
-          { name: "Rams Right Surf Break", tag: "Hollow Reef Barrel", dist: "~1.6 km", desc: "Fast, powerful, and sharp A-frame reef break that creates heavy hollow barrels for advanced surfers seeking technical hollow waves.", footer: "Shortboard Reef Challenge", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" },
+          { name: "Lazy Left Surf Break", tag: "Classic Point Break", dist: "~1.5 km", desc: "Long, ultra-smooth, and gentle reef wave heavily popular for longboarders and intermediate surfers peeling across deep coral.", footer: "Longboard & Intermediate Haven", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w", href: "/experiences/lazy-left-surf-break", cta: "View Surf Intel" },
+          { name: "Rams Right Surf Break", tag: "Hollow Reef Barrel", dist: "~1.6 km", desc: "Fast, powerful, and sharp A-frame reef break that creates heavy hollow barrels for advanced surfers seeking technical hollow waves.", footer: "Shortboard Reef Challenge", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA", href: "/experiences/rams-right-surf-break", cta: "View Reef Guide" },
           { name: "Awee Coco Secret Pool", tag: "Secluded Tidal Pools", dist: "~2.8 km", desc: "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.", footer: "Natural Saltwater Bath", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/awee-coco-secret-pool", cta: "View Pool Guide" },
           { name: "Secret Jungle Beach", tag: "Hidden Cove", dist: "~3.4 km", desc: "A hidden coastal cove sheltered by overhanging tropical foliage, ancient granite boulders, and unhurried southern solitude.", footer: "Jungle Canopy Shore", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/secret-jungle-beach", cta: "Access Guide" },
-          { name: "Polhena Beach & Coral Reef", tag: "Coral Lagoon", dist: "~14 km", desc: "A reef-sheltered natural swimming lagoon in Matara featuring crystal-clear turquoise shallows, vibrant coral gardens, and resident green sea turtles.", footer: "Snorkeling & Sea Turtles", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/polhena-beach-coral-reef", cta: "Explore Map" },
+          { name: "Polhena Beach & Coral Reef", tag: "Coral Lagoon", dist: "~12 km", desc: "A reef-sheltered natural swimming lagoon in Matara featuring crystal-clear turquoise shallows, vibrant coral gardens, and resident green sea turtles.", footer: "Snorkeling & Sea Turtles", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/polhena-beach-coral-reef", cta: "Explore Map" },
           { name: "Secret Beach Mirissa", tag: "Hidden Cove", dist: "~6.5 km", desc: "A secluded coastal hideaway tucked behind Mirissa's green headlands, featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.", footer: "Cliffside Snorkeling", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg", href: "/experiences/secret-beach-mirissa", cta: "Discover Secret Cove" },
           { name: "Coconut Tree Hill", tag: "Iconic Viewpoint", dist: "~6.2 km", desc: "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.", footer: "Panoramic Sunset Vista", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ", href: "/experiences/coconut-tree-hill", cta: "Sunset Times" },
           { name: "Parrot Rock", tag: "Offshore Islet", dist: "~5.8 km", desc: "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated 360-degree panoramic views across the golden bay and open ocean.", footer: "360° Bay Lookout", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ", href: "/experiences/parrot-rock", cta: "Low Tide Timetable" },
@@ -158,7 +160,14 @@ export function NearbyBeachesSection() {
             </div>
             <div className="pt-4 border-t border-surface-container mt-3 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
               <span>{c.footer}</span>
-              <ArrowUpRight size={16} />
+              {c.href ? (
+                <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                  <span>{c.cta ?? "Explore"}</span>
+                  <ArrowUpRight size={16} />
+                </Link>
+              ) : (
+                <ArrowUpRight size={16} />
+              )}
             </div>
           </div>
         ))}

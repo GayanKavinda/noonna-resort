@@ -75,6 +75,20 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {
@@ -114,19 +128,23 @@ h6 {
 }
 
 /* Design-ref typography tokens (Experiences) */
+.font-body-sm {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.font-body-lg {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.font-headline-hero,
 .font-headline-md {
   font-family: var(--font-cormorant), Georgia, serif;
 }
 .font-headline-lg {
   font-family: var(--font-cormorant), Georgia, serif;
 }
+.font-headline-sm {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
 .font-body-md {
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-.font-body-sm {
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-.font-body-lg {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 .font-label-sm,
@@ -135,6 +153,12 @@ h6 {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+.text-headline-hero {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
 .text-headline-lg {
   font-size: 40px;
   line-height: 48px;

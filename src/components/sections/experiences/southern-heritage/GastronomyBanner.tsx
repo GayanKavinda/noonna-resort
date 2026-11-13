@@ -11,13 +11,13 @@ export function GastronomyBanner() {
           </div>
           <div className="lg:col-span-5 space-y-4">
             <div className="space-y-1.5">
-              <p className="font-script text-2xl md:text-3xl text-[#397FA8] leading-none">
+              <p className="font-script text-2xl md:text-3xl text-[#2f6b8f] leading-none">
                 flavor &amp; heritage...
               </p>
               <h2 className="font-cormorant text-2xl lg:text-3xl font-normal text-[#173F56] leading-snug tracking-tight">
                 A Taste of the Southern Coast
               </h2>
-              <p className="text-xs font-medium text-[#397FA8] tracking-wide">
+              <p className="text-xs font-medium text-[#2f6b8f] tracking-wide">
                 Fresh Ocean Catch, Clay-Pot Curries &amp; Coastal Cafes
               </p>
             </div>
@@ -39,14 +39,14 @@ export function GastronomyBanner() {
             </div>
             <div className="flex flex-wrap items-center gap-2.5 pt-1.5">
               <a
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#2f6b8f] hover:border-[#2f6b8f] transition-colors text-xs font-medium shadow-sm"
                 href="/experiences"
               >
-                <UtensilsCrossed className="w-4 h-4 text-[#397FA8]" />
+                <UtensilsCrossed className="w-4 h-4 text-[#2f6b8f]" />
                 <span>View Dining Directory</span>
               </a>
               <a
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#2f6b8f] text-white hover:bg-[#25566f] transition-colors text-xs font-medium shadow-sm"
                 href="https://wa.me/?text=Hello%20Concierge,%20could%20you%20share%20your%20favorite%20local%20curry%20and%20cafe%20recommendations%20near%20Noonna?"
                 rel="noopener noreferrer"
                 target="_blank"

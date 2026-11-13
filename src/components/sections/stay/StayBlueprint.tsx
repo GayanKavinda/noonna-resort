@@ -13,6 +13,7 @@ import {
   Shirt,
   Laptop,
 } from "lucide-react";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 interface StayBlueprintProps {
   className?: string;
@@ -35,84 +36,82 @@ export const StayBlueprint: React.FC<StayBlueprintProps> = ({
   return (
     <section
       id="accommodation-blueprint"
-      className={`w-full bg-white py-16 md:py-24 border-b border-[#D9EAF3]/60 ${className}`}
+      className={`w-full border-b border-[#D9EAF3]/60 bg-white py-14 sm:py-16 md:py-24 ${className}`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <span className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+        <Reveal className="mx-auto mb-10 max-w-2xl text-center sm:mb-12 md:mb-16">
+          <span className="mb-2 block font-script text-3xl font-normal tracking-wide text-[#2f6b8f] md:text-4xl">
             where thoughtful design meets calm...
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-[44px] leading-tight text-[#173F56] font-normal mb-3 tracking-tight">
+          <h2 className="mb-3 font-heading text-[32px] font-normal leading-tight tracking-tight text-[#173F56] sm:text-4xl md:text-[44px]">
             Inside the Stay
           </h2>
-          <p className="text-[15px] sm:text-base text-slate-600 font-light leading-relaxed">
-            Thoughtfully appointed for couple travelers, surf wanderers, and quiet coastal retreats. One primary accommodation configured for peaceful comfort.
+          <p className="text-[15px] font-light leading-relaxed text-slate-600 sm:text-base">
+            Thoughtfully appointed for a private resort stay, offering an unhurried coastal retreat along Sri Lanka&apos;s southern shore.
           </p>
-        </div>
+        </Reveal>
 
-        {/* Room Overview Bar */}
-        <div className="p-6 sm:p-7 rounded-2xl bg-white border border-[#D9EAF3]/80 mb-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)]">
+        <Reveal className="mb-8 flex flex-col items-start justify-between gap-5 rounded-2xl border border-[#D9EAF3]/80 bg-white p-5 shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)] sm:mb-10 sm:flex-row sm:items-center sm:p-7">
           <div className="flex items-center gap-4">
-            <div className="w-11 h-11 rounded-xl bg-white border border-[#D9EAF3] flex items-center justify-center text-[#397FA8] shadow-sm shrink-0">
-              <Hotel className="w-[22px] h-[22px]" />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#D9EAF3] bg-white text-[#2f6b8f] shadow-sm">
+              <Hotel className="h-[22px] w-[22px]" />
             </div>
             <div>
-              <span className="text-[10px] uppercase tracking-widest text-[#397FA8] font-medium block mb-0.5">
-                Primary Accommodation
+              <span className="mb-0.5 block text-[10px] font-medium uppercase tracking-widest text-[#2f6b8f]">
+                Entire Resort Rental
               </span>
-              <h3 className="font-heading text-2xl text-[#173F56] font-medium tracking-tight">
+              <h3 className="font-heading text-xl font-medium tracking-tight text-[#173F56] sm:text-2xl">
                 {STAY_DATA.roomName}
               </h3>
             </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5">
-            <span className="px-3.5 py-1.5 rounded-full bg-white text-[#173F56] text-xs font-normal border border-[#D9EAF3] shadow-sm flex items-center gap-1.5">
-              <Users className="w-4 h-4 text-[#397FA8]" />{" "}
-              Max 2 Adults
+            <span className="flex items-center gap-1.5 rounded-full border border-[#D9EAF3] bg-white px-3.5 py-1.5 text-xs font-normal text-[#173F56] shadow-sm">
+              <Users className="h-4 w-4 text-[#2f6b8f]" />{" "}
+              Private Resort Stay
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white text-[#173F56] text-xs font-normal border border-[#D9EAF3] shadow-sm flex items-center gap-1.5">
-              <Bed className="w-4 h-4 text-[#397FA8]" />{" "}
-              1 Double Bed
+            <span className="flex items-center gap-1.5 rounded-full border border-[#D9EAF3] bg-white px-3.5 py-1.5 text-xs font-normal text-[#173F56] shadow-sm">
+              <Bed className="h-4 w-4 text-[#2f6b8f]" />{" "}
+              Group &amp; Family
             </span>
           </div>
-        </div>
+        </Reveal>
 
-        {/* 8 Accommodation Detail Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <Stagger className="mb-8 grid grid-cols-1 gap-4 sm:mb-10 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {STAY_DATA.specifications.map((spec) => {
             const Icon = SPEC_ICONS[spec.iconName] ?? Hotel;
             return (
-              <div
+              <StaggerItem
                 key={spec.id}
-                className="p-6 rounded-2xl bg-white border border-[#D9EAF3]/80 shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)] hover:border-[#397FA8]/50 transition-all duration-300 flex flex-col group hover:-translate-y-0.5"
+                className="group flex flex-col rounded-2xl border border-[#D9EAF3]/80 bg-white p-5 shadow-[0_2px_12px_-4px_rgba(23,63,86,0.03)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#2f6b8f]/50 sm:p-6"
               >
-                <div className="w-10 h-10 rounded-xl bg-white border border-[#D9EAF3] text-[#397FA8] flex items-center justify-center group-hover:scale-105 transition-transform shrink-0 mb-4 shadow-sm">
-                  <Icon className="w-5 h-5" />
+                <div className="mb-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#D9EAF3] bg-white text-[#2f6b8f] shadow-sm transition-transform group-hover:scale-105">
+                  <Icon className="h-5 w-5" />
                 </div>
-                <span className="text-[10px] uppercase tracking-widest text-[#397FA8] font-medium block mb-1">
+                <span className="mb-1 block text-[10px] font-medium uppercase tracking-widest text-[#2f6b8f]">
                   {spec.category}
                 </span>
-                <h4 className="font-heading text-[19px] text-[#173F56] font-medium mb-2 leading-tight">
+                <h4 className="mb-2 font-heading text-[19px] font-medium leading-tight text-[#173F56]">
                   {spec.title}
                 </h4>
-                <p className="text-xs text-slate-500 font-light leading-relaxed">
+                <p className="text-xs font-light leading-relaxed text-slate-500">
                   {spec.description}
                 </p>
-              </div>
+              </StaggerItem>
             );
           })}
-        </div>
+        </Stagger>
 
-        {/* Footnote */}
-        <div className="p-4 rounded-xl bg-white border border-[#D9EAF3]/80 flex items-start sm:items-center justify-center gap-2.5 max-w-2xl mx-auto shadow-sm text-center">
-          <Info className="w-[18px] h-[18px] text-[#397FA8] shrink-0 mt-0.5 sm:mt-0" />
-          <p className="text-xs text-slate-500 font-light">
-            <strong className="font-medium text-[#173F56]">Note:</strong>{" "}
-            Capacity and bed arrangements subject to seasonal confirmation. Please review details on Booking.com.
-          </p>
-        </div>
+        <Reveal>
+          <div className="mx-auto flex max-w-2xl items-start justify-center gap-2.5 rounded-xl border border-[#D9EAF3]/80 bg-white p-4 text-center shadow-sm sm:items-center">
+            <Info className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#2f6b8f] sm:mt-0" />
+            <p className="text-left text-xs font-light text-slate-500 sm:text-center">
+              <strong className="font-medium text-[#173F56]">Note:</strong>{" "}
+              Capacity and bed arrangements subject to seasonal confirmation. Please review details on Booking.com.
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

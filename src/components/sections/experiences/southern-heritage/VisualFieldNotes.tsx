@@ -8,7 +8,7 @@ export function VisualFieldNotes() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80" />
         <div className="relative z-10 max-w-xl space-y-4">
           <div
-            className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/40 flex items-center justify-center mx-auto text-white"
+            className="w-16 h-16 rounded-full bg-[#25566f]/90 backdrop-blur-md border border-white/40 flex items-center justify-center mx-auto text-white"
             aria-hidden="true"
           >
             <Play className="w-8 h-8 fill-current" />
