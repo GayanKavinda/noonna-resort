@@ -25,20 +25,22 @@ export default function DiningPage() {
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
       <div className="flex flex-col w-full">
         {/* 1. BREADCRUMB & METADATA BAR */}
-        <section className="w-full bg-white border-b border-[#D9EAF3]/60">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <Breadcrumb
-                items={[
-                  { label: "Home", href: "/" },
-                  { label: "Experiences", href: "/experiences" },
-                  { label: "A Taste of Sri Lanka — 10 Coastal Dining Destinations" },
-                ]}
-              />
+        <section className="w-full border-b border-[#D9EAF3]/60 bg-white">
+          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-12">
+            <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <div className="min-w-0">
+                <Breadcrumb
+                  items={[
+                    { label: "Home", href: "/" },
+                    { label: "Experiences", href: "/experiences" },
+                    { label: "A Taste of Sri Lanka — 10 Coastal Dining Destinations" },
+                  ]}
+                />
+              </div>
               <div className="flex flex-wrap items-center gap-2">
-                <span className="px-3 py-1 rounded-full bg-[#e5f1f8] text-[#244b62] text-xs font-medium">Culinary Guide</span>
-                <span className="px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-medium flex items-center gap-1">
-                  <UtensilsCrossed className="w-[14px] h-[14px]" aria-hidden="true" />
+                <span className="rounded-full bg-[#e5f1f8] px-3 py-1 text-xs font-medium text-[#244b62]">Culinary Guide</span>
+                <span className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600">
+                  <UtensilsCrossed className="h-[14px] w-[14px]" aria-hidden="true" />
                   10 Curated Spots
                 </span>
               </div>

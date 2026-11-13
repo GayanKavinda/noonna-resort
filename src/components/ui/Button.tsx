@@ -33,14 +33,14 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     primary:
-      "bg-[#397FA8] text-white hover:bg-[#2E698D] hover:shadow-md focus:ring-[#397FA8]",
+      "bg-[#2f6b8f] text-white hover:bg-[#25566f] hover:shadow-md focus:ring-[#2f6b8f]",
     secondary:
-      "bg-[#F1F9FD] text-[#173F56] border border-[#D9EAF3] hover:bg-[#E2F0F9] focus:ring-[#397FA8]",
+      "bg-[#F1F9FD] text-[#173F56] border border-[#D9EAF3] hover:bg-[#E2F0F9] focus:ring-[#2f6b8f]",
     outline:
-      "bg-transparent text-[#397FA8] border border-[#397FA8] hover:bg-[#F1F9FD] focus:ring-[#397FA8]",
+      "bg-transparent text-[#2f6b8f] border border-[#2f6b8f] hover:bg-[#F1F9FD] focus:ring-[#2f6b8f]",
     ghost:
-      "bg-transparent text-[#475569] hover:text-[#173F56] hover:bg-[#F1F9FD] focus:ring-[#397FA8]",
-    link: "bg-transparent text-[#397FA8] hover:text-[#2E698D] underline underline-offset-4 p-0 shadow-none",
+      "bg-transparent text-[#475569] hover:text-[#173F56] hover:bg-[#F1F9FD] focus:ring-[#2f6b8f]",
+    link: "bg-transparent text-[#2f6b8f] hover:text-[#2E698D] underline underline-offset-4 p-0 shadow-none",
   }[variant];
 
   const content = (

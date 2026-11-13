@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState, useSyncExternalStore } from "react"
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { NAV_ITEMS, HOTEL_INFO, type NavItem } from "@/lib/constants";
 
@@ -22,22 +23,38 @@ function getServerScrollSnapshot() {
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const reduceMotion = useReducedMotion();
+  const [menuState, setMenuState] = useState({ open: false, path: pathname });
+  const mobileMenuOpen = menuState.open && menuState.path === pathname;
+  const setMobileMenuOpen = (next: boolean | ((open: boolean) => boolean)) => {
+    setMenuState((prev) => {
+      const openNow = prev.open && prev.path === pathname;
+      const resolved = typeof next === "function" ? next(openNow) : next;
+      return { open: resolved, path: pathname };
+    });
+  };
+  const [dropdownState, setDropdownState] = useState<{ value: string | null; path: string }>({ value: null, path: pathname });
+  const openDropdown = dropdownState.path === pathname ? dropdownState.value : null;
+  const setOpenDropdown = (value: string | null) => setDropdownState({ value, path: pathname });
+  const [expandedState, setExpandedState] = useState<{ value: string | null; path: string }>({ value: null, path: pathname });
+  const mobileExpanded = expandedState.path === pathname ? expandedState.value : null;
+  const setMobileExpanded = (value: string | null) => setExpandedState({ value, path: pathname });
   const scrolled = useSyncExternalStore(subscribeScroll, getScrollSnapshot, getServerScrollSnapshot);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const isHome = pathname === "/";
-  const transparent = isHome && !scrolled;
+  const transparent = isHome && !scrolled && !mobileMenuOpen;
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpenDropdown(null);
+      if (e.key === "Escape") {
+        setDropdownState({ value: null, path: pathname });
+        setMenuState({ open: false, path: pathname });
+      }
     };
     const onClick = (e: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setOpenDropdown(null);
+        setDropdownState({ value: null, path: pathname });
       }
     };
     document.addEventListener("keydown", onKey);
@@ -46,7 +63,16 @@ export const Header: React.FC = () => {
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("mousedown", onClick);
     };
-  }, []);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [mobileMenuOpen]);
 
   const isItemActive = (item: NavItem) => {
     if (item.href === "/") return pathname === "/";
@@ -63,12 +89,12 @@ export const Header: React.FC = () => {
       }`}
       data-purpose="site-header"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between gap-3 sm:gap-4 lg:gap-6">
         {/* Brand Logo & Wordmark */}
-        <div className="flex items-center gap-3.5 shrink-0" data-purpose="brand-lockup">
+        <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0 flex-1 lg:flex-initial" data-purpose="brand-lockup">
           <Link
             href="/"
-            className="block focus:outline-none focus:ring-2 focus:ring-[#397FA8] focus:ring-offset-2 rounded"
+            className="block shrink-0 focus:outline-none focus:ring-2 focus:ring-[#2f6b8f] focus:ring-offset-2 rounded"
             aria-label="Noonna Beach Hotel Home"
           >
             <Image
@@ -77,21 +103,21 @@ export const Header: React.FC = () => {
               width={48}
               height={48}
               priority
-              className={`h-12 w-auto object-contain transition-all duration-300 ${transparent ? "brightness-0 invert" : ""}`}
+              className={`h-10 sm:h-12 w-auto object-contain transition-[filter] duration-300 ${transparent ? "brightness-0 invert" : ""}`}
             />
           </Link>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center min-w-0">
             <Link
               href="/"
-              className={`font-heading font-semibold text-[23px] tracking-tight leading-tight hover:opacity-95 transition-colors ${
-                transparent ? "text-white" : "text-[#397FA8]"
+              className={`font-heading font-semibold text-[20px] sm:text-[23px] tracking-tight leading-tight hover:opacity-95 transition-colors truncate ${
+                transparent ? "text-white" : "text-[#2f6b8f]"
               }`}
             >
               Noonna
             </Link>
             <span
-              className={`font-sans uppercase text-[9.5px] font-semibold tracking-widest -mt-0.5 transition-colors ${
-                transparent ? "text-white/80" : "text-[#64748B]"
+              className={`font-sans uppercase text-[8.5px] sm:text-[9.5px] font-semibold tracking-[0.18em] sm:tracking-widest -mt-0.5 transition-colors truncate ${
+                transparent ? "text-white/80" : "text-[#475569]"
               }`}
             >
               Beach Hotel
@@ -102,7 +128,7 @@ export const Header: React.FC = () => {
         {/* Center Navigation Links */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden md:flex items-center gap-8 lg:gap-10"
+          className="hidden lg:flex items-center gap-8 lg:gap-10"
           data-purpose="primary-nav"
           ref={dropdownRef}
         >
@@ -122,8 +148,8 @@ export const Header: React.FC = () => {
                         ? "font-semibold text-white"
                         : "font-medium text-white/90 hover:text-white"
                       : isActive
-                        ? "font-semibold text-[#397FA8] hover:text-[#2e698d]"
-                        : "font-medium text-[#334155] hover:text-[#397FA8]"
+                        ? "font-semibold text-[#2f6b8f] hover:text-[#25566f]"
+                        : "font-medium text-[#334155] hover:text-[#2f6b8f]"
                   }`}
                 >
                   {item.label}
@@ -149,51 +175,57 @@ export const Header: React.FC = () => {
                         ? "font-semibold text-white"
                         : "font-medium text-white/90 hover:text-white"
                       : isActive
-                        ? "font-semibold text-[#397FA8] hover:text-[#2e698d]"
-                        : "font-medium text-[#334155] hover:text-[#397FA8]"
+                        ? "font-semibold text-[#2f6b8f] hover:text-[#25566f]"
+                        : "font-medium text-[#334155] hover:text-[#2f6b8f]"
                   }`}
                 >
                   {item.label}
-                  <ChevronDown className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform motion-reduce:transition-none ${open ? "rotate-180" : ""}`} />
                 </button>
-                {open && (
-                  <div
-                    role="menu"
-                    className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-56"
-                  >
-                    <div className="rounded-xl border border-[#D9EAF3] bg-white/98 backdrop-blur-sm shadow-[0_12px_32px_-8px_rgba(23,63,86,0.18)] p-2">
-                      {item.children?.map((child) => {
-                        const childPath = child.href.split("#")[0];
-                        const childActive =
-                          child.href === item.href
-                            ? pathname === item.href
-                            : pathname === childPath;
-                        return (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            role="menuitem"
-                            onClick={() => setOpenDropdown(null)}
-                            className={`block px-3 py-2.5 rounded-lg text-sm font-sans transition-colors ${
-                              childActive
-                                ? "bg-[#EAF5FA] text-[#397FA8] font-semibold"
-                                : "text-[#334155] hover:bg-[#F4FAFC] hover:text-[#397FA8]"
-                            }`}
-                          >
-                            {child.label}
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  </div>
-                )}
+                <AnimatePresence>
+                  {open && (
+                    <motion.div
+                      role="menu"
+                      initial={reduceMotion ? false : { opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 4 }}
+                      transition={{ duration: 0.16, ease: [0.22, 1, 0.36, 1] }}
+                      className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-56"
+                    >
+                      <div className="rounded-xl border border-[#D9EAF3] bg-white/98 backdrop-blur-sm shadow-[0_12px_32px_-8px_rgba(23,63,86,0.18)] p-2">
+                        {item.children?.map((child) => {
+                          const childPath = child.href.split("#")[0];
+                          const childActive =
+                            child.href === item.href
+                              ? pathname === item.href
+                              : pathname === childPath;
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              role="menuitem"
+                              onClick={() => setOpenDropdown(null)}
+                              className={`block px-3 py-2.5 rounded-lg text-sm font-sans transition-colors ${
+                                childActive
+                                  ? "bg-[#EAF5FA] text-[#2f6b8f] font-semibold"
+                                  : "text-[#334155] hover:bg-[#F4FAFC] hover:text-[#2f6b8f]"
+                              }`}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}
         </nav>
 
         {/* Right Side: Social Media Icons + Primary CTA Button */}
-        <div className="flex items-center gap-4 sm:gap-6 shrink-0" data-purpose="header-actions">
+        <div className="flex items-center gap-2 sm:gap-4 lg:gap-6 shrink-0" data-purpose="header-actions">
           <div className="hidden lg:flex items-center gap-2.5" data-purpose="social-links">
             {[
               {
@@ -228,10 +260,10 @@ export const Header: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label={item.label}
                 title={item.title}
-                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-200 shadow-xs ${
+                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors duration-200 shadow-xs motion-reduce:transition-none ${
                   transparent
                     ? "border-white/40 text-white hover:text-[#173F56] hover:bg-white"
-                    : "border-[#397FA8]/30 text-[#397FA8] hover:text-white hover:bg-[#397FA8]"
+                    : "border-[#2f6b8f]/40 text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f]"
                 }`}
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -245,15 +277,16 @@ export const Header: React.FC = () => {
             href={HOTEL_INFO.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#397FA8] hover:bg-[#2e698d] text-white text-xs md:text-sm font-medium px-5 py-2.5 rounded-lg shadow-sm transition-all duration-200 hover:shadow-md group"
+            className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#2f6b8f] hover:bg-[#245670] text-white text-[11px] sm:text-xs md:text-sm font-medium px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg shadow-sm transition-colors duration-200 hover:shadow-md motion-reduce:transition-none group"
             data-purpose="cta-booking-button"
           >
-            <span className="font-sans tracking-wide">Book Your Stay</span>
+            <span className="font-sans tracking-wide whitespace-nowrap">Book Your Stay</span>
             <svg
-              className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+              className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transition-none"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path d="M14 5l7 7m0 0l-7 7m7-7H3" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
             </svg>
@@ -261,14 +294,15 @@ export const Header: React.FC = () => {
 
           <button
             type="button"
-            className={`md:hidden p-2 rounded-lg transition-colors ${
+            className={`lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg transition-colors motion-reduce:transition-none ${
               transparent ? "text-white hover:bg-white/10" : "text-[#173F56] hover:bg-gray-100"
             }`}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            onClick={() => setMobileMenuOpen((open) => !open)}
             aria-expanded={mobileMenuOpen}
-            aria-label="Toggle navigation menu"
+            aria-controls="mobile-primary-navigation"
+            aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -279,77 +313,99 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[#D9EAF3] bg-white px-6 py-4 shadow-lg">
-          <nav className="flex flex-col space-y-1">
-            {NAV_ITEMS.map((item) => {
-              const isActive = isItemActive(item);
-              const hasChildren = !!item.children?.length;
-              const expanded = mobileExpanded === item.label;
+      <AnimatePresence initial={false}>
+        {mobileMenuOpen && (
+          <motion.div
+            id="mobile-primary-navigation"
+            initial={reduceMotion ? false : { opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={reduceMotion ? { opacity: 1 } : { opacity: 0, height: 0 }}
+            transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:hidden border-t border-[#D9EAF3] bg-white px-4 sm:px-6 shadow-lg max-h-[calc(100vh-4.5rem)] overflow-y-auto overscroll-contain"
+          >
+            <nav className="flex flex-col space-y-1 py-4" aria-label="Mobile Primary Navigation">
+              {NAV_ITEMS.map((item) => {
+                const isActive = isItemActive(item);
+                const hasChildren = !!item.children?.length;
+                const expanded = mobileExpanded === item.label;
+                const submenuId = `mobile-submenu-${item.label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
-              if (!hasChildren) {
+                if (!hasChildren) {
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`font-sans text-base py-2.5 min-h-11 flex items-center ${
+                        isActive
+                          ? "font-semibold text-[#2f6b8f]"
+                          : "font-medium text-slate-800 hover:text-[#2f6b8f]"
+                      }`}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                }
+
                 return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`font-sans text-base py-2 ${
-                      isActive
-                        ? "font-semibold text-[#397FA8]"
-                        : "font-medium text-slate-800 hover:text-[#397FA8]"
-                    }`}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
+                  <div key={item.href} className="py-1">
+                    <button
+                      type="button"
+                      onClick={() => setMobileExpanded(expanded ? null : item.label)}
+                      aria-expanded={expanded}
+                      aria-controls={submenuId}
+                      className={`w-full flex items-center justify-between font-sans text-base py-2.5 min-h-11 ${
+                        isActive
+                          ? "font-semibold text-[#2f6b8f]"
+                          : "font-medium text-slate-800 hover:text-[#2f6b8f]"
+                      }`}
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown className={`w-4 h-4 transition-transform motion-reduce:transition-none ${expanded ? "rotate-180" : ""}`} aria-hidden="true" />
+                    </button>
+                    <AnimatePresence initial={false}>
+                      {expanded && (
+                        <motion.div
+                          id={submenuId}
+                          initial={reduceMotion ? false : { opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={reduceMotion ? { opacity: 1 } : { opacity: 0, height: 0 }}
+                          transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
+                          className="overflow-hidden"
+                        >
+                          <div className="ml-3 mt-1 pl-3 border-l border-[#D9EAF3] flex flex-col">
+                            {item.children?.map((child) => {
+                              const childPath = child.href.split("#")[0];
+                              const childActive =
+                                child.href === item.href
+                                  ? pathname === item.href
+                                  : pathname === childPath;
+                              return (
+                                <Link
+                                  key={child.href}
+                                  href={child.href}
+                                  className={`font-sans text-[15px] py-2.5 min-h-11 flex items-center ${
+                                    childActive
+                                      ? "font-semibold text-[#2f6b8f]"
+                                      : "font-medium text-slate-700 hover:text-[#2f6b8f]"
+                                  }`}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {child.label}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
                 );
-              }
-
-              return (
-                <div key={item.href} className="py-1">
-                  <button
-                    type="button"
-                    onClick={() => setMobileExpanded(expanded ? null : item.label)}
-                    aria-expanded={expanded}
-                    className={`w-full flex items-center justify-between font-sans text-base py-2 ${
-                      isActive
-                        ? "font-semibold text-[#397FA8]"
-                        : "font-medium text-slate-800 hover:text-[#397FA8]"
-                    }`}
-                  >
-                    <span>{item.label}</span>
-                    <ChevronDown className={`w-4 h-4 transition-transform ${expanded ? "rotate-180" : ""}`} />
-                  </button>
-                  {expanded && (
-                    <div className="ml-3 mt-1 pl-3 border-l border-[#D9EAF3] flex flex-col">
-                      {item.children?.map((child) => {
-                        const childPath = child.href.split("#")[0];
-                        const childActive =
-                          child.href === item.href
-                            ? pathname === item.href
-                            : pathname === childPath;
-                        return (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className={`font-sans text-[15px] py-2 ${
-                              childActive
-                                ? "font-semibold text-[#397FA8]"
-                                : "font-medium text-slate-700 hover:text-[#397FA8]"
-                            }`}
-                            onClick={() => setMobileMenuOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </nav>
-        </div>
-      )}
+              })}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

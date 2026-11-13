@@ -26,7 +26,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     left: "text-left items-start",
   }[alignment];
 
-  const eyebrowColor = isDark ? "text-white/90" : "text-[#397FA8]";
+  const eyebrowColor = isDark ? "text-white/90" : "text-[#2f6b8f]";
   const titleColor = isDark ? "text-white" : "text-[#173F56]";
   const deckColor = isDark ? "text-slate-200" : "text-slate-600";
 

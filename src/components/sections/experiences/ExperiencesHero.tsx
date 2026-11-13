@@ -1,24 +1,25 @@
 import { Umbrella, Landmark, Utensils, Waves, ArrowRight, Compass } from "lucide-react";
 import Link from "next/link";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export function ExperiencesHero() {
   return (
-    <section className="max-w-7xl mx-auto w-full px-6 lg:px-12 pt-6 pb-20">
-      <div className="max-w-3xl mx-auto text-center space-y-5 pb-10">
+    <section className="mx-auto w-full max-w-7xl px-4 pb-14 pt-6 sm:px-6 sm:pb-16 lg:px-12 lg:pb-20">
+      <Reveal className="mx-auto max-w-3xl space-y-4 pb-8 text-center sm:space-y-5 sm:pb-10">
         <div className="space-y-1.5">
           <span
-            className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide block"
-            style={{ fontFamily: '"Moon Dance", cursive', fontSize: "2.15rem" }}
+            className="block font-script text-[1.75rem] font-normal tracking-wide text-[#2f6b8f] sm:text-3xl md:text-4xl"
+            style={{ fontFamily: '"Moon Dance", cursive' }}
           >
             where the ocean sets the rhythm...
           </span>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm tracking-widest uppercase font-semibold">
-            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-secondary-container/40 px-3.5 py-1 font-label-sm text-label-sm font-semibold uppercase tracking-widest text-on-secondary-container">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             Explore the Southern Coast
           </div>
         </div>
         <h1
-          className="font-serif text-[44px] md:text-[54px] text-on-surface tracking-tight leading-tight font-normal"
+          className="font-serif text-[34px] font-normal leading-tight tracking-tight text-on-surface sm:text-[44px] md:text-[54px]"
           style={{
             fontFamily: '"Cormorant Garamond", Georgia, serif',
             fontWeight: 400,
@@ -27,20 +28,20 @@ export function ExperiencesHero() {
             lineHeight: 1.15,
           }}
         >
-          Discover More <span className="italic font-normal text-primary">by the Sea</span>
+          Discover More <span className="font-normal italic text-primary">by the Sea</span>
         </h1>
-        <p className="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed max-w-2xl mx-auto">
+        <p className="mx-auto max-w-2xl font-body-lg text-[15px] font-light leading-relaxed text-on-surface-variant sm:text-body-lg">
           From laid-back beaches to local flavours and memorable coastal adventures, discover the experiences waiting around Kumbalgama.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <div className="flex flex-col items-stretch justify-center gap-3 pt-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <a
-            className="px-8 py-3.5 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg tracking-wide hover:bg-primary transition-all duration-200 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.12)]"
+            className="inline-flex items-center justify-center rounded-full bg-primary-container px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-on-primary-container shadow-[0_4px_24px_-4px_rgba(23,63,86,0.12)] transition-all duration-200 hover:bg-primary"
             href="#nearby-beaches"
           >
             Explore Nearby Places
           </a>
           <a
-            className="px-8 py-3.5 rounded-full bg-surface-container-low text-primary hover:bg-secondary-container/40 font-label-lg text-label-lg tracking-wide transition-all duration-200"
+            className="inline-flex items-center justify-center rounded-full bg-surface-container-low px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-primary transition-all duration-200 hover:bg-secondary-container/40"
             href="https://www.booking.com/hotel/lk/noonna-beach.html"
             rel="noopener noreferrer"
             target="_blank"
@@ -48,23 +49,23 @@ export function ExperiencesHero() {
             Book Your Stay
           </a>
         </div>
-        <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 pt-4 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant sm:gap-x-6">
           <span className="flex items-center gap-1.5">
             <Umbrella className="text-primary" size={16} /> 13 Coastal Shores &amp; Breaks
           </span>
-          <span className="text-outline-variant font-light">•</span>
+          <span className="hidden font-light text-slate-500 sm:inline">â€¢</span>
           <span className="flex items-center gap-1.5">
             <Landmark className="text-primary" size={16} /> 9 Heritage &amp; Wildlife Gems
           </span>
-          <span className="text-outline-variant font-light">•</span>
+          <span className="hidden font-light text-slate-500 sm:inline">â€¢</span>
           <span className="flex items-center gap-1.5">
             <Utensils className="text-primary" size={16} /> 10 Coastal Dining Discoveries
           </span>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch pt-2">
-        <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
+      <Stagger className="grid grid-cols-1 items-stretch gap-6 pt-2 md:grid-cols-2 lg:grid-cols-12">
+        <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] lg:col-span-4 lg:min-h-[460px]">
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
             alt="Turquoise surf and golden shoreline along Sri Lanka's southern coast near Midigama"
@@ -76,7 +77,7 @@ export function ExperiencesHero() {
               <Waves size={16} className="text-primary" />
               <span>13 Coastal Shores &amp; Breaks</span>
             </div>
-            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
+            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors">
               <Umbrella size={18} />
             </span>
           </div>
@@ -104,11 +105,11 @@ export function ExperiencesHero() {
               </a>
             </div>
           </div>
-        </div>
+        </StaggerItem>
 
-        <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
+        <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] lg:col-span-4 lg:min-h-[460px]">
           <img
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             alt="Historic ramparts and ocean views at Galle Dutch Fort on Sri Lanka's southern coast"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw"
           />
@@ -118,7 +119,7 @@ export function ExperiencesHero() {
               <Landmark size={16} className="text-primary" />
               <span>9 Heritage &amp; Wildlife Gems</span>
             </div>
-            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
+            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors">
               <Compass size={18} />
             </span>
           </div>
@@ -146,11 +147,11 @@ export function ExperiencesHero() {
               </Link>
             </div>
           </div>
-        </div>
+        </StaggerItem>
 
-        <div className="lg:col-span-4 flex flex-col justify-between rounded-3xl overflow-hidden bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] group hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] transition-all duration-500 relative min-h-[460px] border border-slate-200/80">
+        <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] md:col-span-2 lg:col-span-4 lg:min-h-[460px]">
           <img
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
             alt="Traditional Sri Lankan rice and curry spread at a coastal dining table"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-PDGX8yJQXxmnEWLqaxJsn-qkR6vHC3GYWU-hZesskSeUhlYL1dNEgMx670Pj3riWYEP7Fqk2_LixTXaS-bvSrzT5zfL26q_S9R9_ZKSjcHrHfDq_c2Ljkbr8MidTkvGJ28pdv6IyHuVBBMAG94IKVz0RWC5imuDgaxg3nhnncra81h9_j47Ye3ospRaNXekrqILhVCD1j7sLdFD_4SOzUPiD_qWKDWuMzM4eKyCqNtAHudxc5NE9Q"
           />
@@ -160,7 +161,7 @@ export function ExperiencesHero() {
               <Utensils size={16} className="text-primary" />
               <span>10 Coastal Dining Discoveries</span>
             </div>
-            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#397FA8] group-hover:text-white transition-colors">
+            <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md flex items-center justify-center text-[#173F56] shadow-sm group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors">
               <Compass size={18} />
             </span>
           </div>
@@ -188,8 +189,8 @@ export function ExperiencesHero() {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
+        </StaggerItem>
+      </Stagger>
     </section>
   );
 }

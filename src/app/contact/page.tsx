@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface pt-20">
-      <section className="w-full bg-surface-container-lowest py-4">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="w-full bg-surface-container-lowest py-3 sm:py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },

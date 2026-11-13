@@ -6,7 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:routes": "playwright test tests/routes",
+    "test:e2e:responsive": "playwright test tests/responsive",
+    "test:e2e:interactions": "playwright test tests/navigation tests/experiences tests/dining tests/gallery tests/contact",
+    "test:e2e:accessibility": "playwright test tests/accessibility",
+    "test:e2e:motion": "playwright test tests/motion"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.3",
@@ -21,6 +30,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -152,12 +152,12 @@ export function GalleryPageContent() {
                   }}
                   className={
                     active
-                      ? "px-4 py-2 rounded-full bg-[#397FA8] text-white font-medium shadow-sm transition-all flex items-center gap-1.5"
+                      ? "px-4 py-2 rounded-full bg-[#2f6b8f] text-white font-medium shadow-sm transition-all flex items-center gap-1.5"
                       : "px-4 py-2 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-700 hover:text-slate-900 border border-slate-200/70 font-medium transition-all flex items-center gap-1.5"
                   }
                 >
                   <span>{filter.label}</span>
-                  <span className={active ? "px-1.5 py-0.5 rounded-full bg-white/20 text-[10px] font-semibold" : "px-1.5 py-0.5 rounded-full bg-slate-200 text-slate-600 text-[10px] font-semibold"}>
+                  <span className={active ? "px-1.5 py-0.5 rounded-full bg-[#25566f]/90 text-[10px] font-semibold" : "px-1.5 py-0.5 rounded-full bg-slate-200 text-slate-600 text-[10px] font-semibold"}>
                     {filter.count}
                   </span>
                 </button>
@@ -167,12 +167,12 @@ export function GalleryPageContent() {
 
           <div className="flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-2 lg:pt-0">
             <span className="text-xs text-slate-500 font-medium tracking-wide flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#397FA8]" />
+              <span className="w-2 h-2 rounded-full bg-[#2f6b8f]" />
               Showing <strong className="text-slate-800 font-semibold">{showingCount}</strong> of {activeFilterTotal} Moments
             </span>
             <div className="h-4 w-px bg-slate-200" />
             <div className="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
-              <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#397FA8] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
+              <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#2f6b8f] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
                 <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
               </button>
               <button aria-label="Masonry View" className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors" title="Mosaic Masonry" type="button">
@@ -210,7 +210,7 @@ export function GalleryPageContent() {
                 sizes="(max-width: 768px) 50vw, 25vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#397FA8] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#2f6b8f] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
                   <ZoomIn className="w-5 h-5" strokeWidth={1.8} />
                 </span>
               </div>
@@ -223,10 +223,10 @@ export function GalleryPageContent() {
           <div className="w-full max-w-xs mb-4">
             <div className="flex justify-between text-xs text-slate-500 mb-1.5 font-medium">
               <span>Curated display: {showingCount} moments</span>
-              <span className="text-[#397FA8] font-semibold">{progressPercent}% of {activeFilterTotal}</span>
+              <span className="text-[#2f6b8f] font-semibold">{progressPercent}% of {activeFilterTotal}</span>
             </div>
             <div className="w-full h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200/60">
-              <div className="h-full bg-[#397FA8] rounded-full" style={{ width: `${progressPercent}%` }} />
+              <div className="h-full bg-[#2f6b8f] rounded-full" style={{ width: `${progressPercent}%` }} />
             </div>
           </div>
 
@@ -234,22 +234,22 @@ export function GalleryPageContent() {
             <button
               type="button"
               onClick={() => setLoadedCount((c) => Math.min(c + 9, GALLERY_GRID_IMAGES.length))}
-              className="px-8 py-3 rounded-full bg-[#397FA8] hover:bg-[#2e698d] text-white font-medium text-sm transition-all shadow-sm hover:shadow flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-8 py-3 rounded-full bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm transition-all shadow-sm hover:shadow flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={activeFilter !== "all" || showingCount >= GALLERY_TOTAL_COUNT}
             >
               <span>Load More Moments</span>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-white/20 font-semibold">{remaining} remaining</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-[#25566f]/90 font-semibold">{remaining} remaining</span>
               <ExpandMoreIcon className="w-[18px] h-[18px] group-hover:translate-y-0.5 transition-transform" />
             </button>
             <button
               type="button"
               className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-medium text-sm transition-all flex items-center gap-2"
             >
-              <Sparkles className="w-[18px] h-[18px] text-[#397FA8]" strokeWidth={1.8} />
+              <Sparkles className="w-[18px] h-[18px] text-[#2f6b8f]" strokeWidth={1.8} />
               <span>View Complete 36-Photo Archive</span>
             </button>
           </div>
-          <p className="text-xs text-slate-400 mt-4 font-light">
+          <p className="text-xs text-slate-500 mt-4 font-light">
             High-resolution architectural &amp; coastal photography captured on location at Kumbalgama.
           </p>
         </div>
@@ -262,7 +262,11 @@ export function GalleryPageContent() {
           aria-modal="true"
           role="dialog"
           id="gallery-lightbox"
-          className="fixed inset-0 z-[100] bg-white flex flex-col zen-fade"
+          className="fixed inset-0 z-[100] bg-white flex h-dvh max-h-dvh flex-col overflow-hidden zen-fade"
+          style={{
+            paddingTop: "env(safe-area-inset-top)",
+            paddingBottom: "env(safe-area-inset-bottom)",
+          }}
           onClick={(e) => {
             if (e.target === e.currentTarget) closeLightbox();
           }}
@@ -272,13 +276,16 @@ export function GalleryPageContent() {
             @keyframes zenRise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
             .zen-fade { animation: zenFade .35s ease both; }
             .zen-rise { animation: zenRise .5s ease both; }
+            @media (prefers-reduced-motion: reduce) {
+              .zen-fade, .zen-rise { animation: none !important; transform: none !important; }
+            }
           `}</style>
 
           {/* Top bar */}
-          <div className="flex items-center justify-between px-6 sm:px-10 pt-6 sm:pt-8">
+          <div className="flex shrink-0 items-center justify-between px-4 pt-4 sm:px-10 sm:pt-8">
             <span
               id="lightbox-counter"
-              className="text-xs tracking-[0.3em] text-[#64748B] font-medium tabular-nums"
+              className="text-xs font-medium tabular-nums tracking-[0.3em] text-[#64748B]"
             >
               {String((lightboxIndex ?? 0) + 1).padStart(2, "0")}
               <span className="mx-2 text-[#B8E0F5]">/</span>
@@ -289,25 +296,28 @@ export function GalleryPageContent() {
               aria-label="Close Lightbox"
               onClick={closeLightbox}
               type="button"
-              className="w-10 h-10 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9EAF3] bg-white text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40"
             >
-              <X className="w-5 h-5" strokeWidth={1.5} />
+              <X className="h-5 w-5" strokeWidth={1.5} />
             </button>
           </div>
 
           {/* Image stage */}
           <div
-            className="relative flex-1 min-h-0 flex items-center justify-center px-14 py-2"
+            className="relative flex min-h-0 flex-1 items-center justify-center px-12 py-2 sm:px-14"
             style={{ containerType: "size" }}
             onClick={closeLightbox}
           >
             <button
               aria-label="Previous Photo"
-              onClick={(e) => { e.stopPropagation(); prevImage(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                prevImage();
+              }}
               type="button"
-              className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
+              className="absolute left-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:left-6"
             >
-              <ChevronLeft className="w-5 h-5" strokeWidth={1.5} />
+              <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
             </button>
 
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -323,46 +333,52 @@ export function GalleryPageContent() {
               style={{
                 aspectRatio: imgRatio,
                 width: `min(100cqw, calc(100cqh * ${imgRatio}))`,
+                maxHeight: "100%",
+                maxWidth: "100%",
                 objectFit: "cover",
               }}
-              className="rounded-2xl sm:rounded-3xl zen-rise shadow-[0_20px_50px_rgba(23,63,86,0.12)] border border-[#D9EAF3]/70"
+              className="zen-rise rounded-2xl border border-[#D9EAF3]/70 shadow-[0_20px_50px_rgba(23,63,86,0.12)] sm:rounded-3xl"
               onClick={(e) => e.stopPropagation()}
             />
 
             <button
               aria-label="Next Photo"
-              onClick={(e) => { e.stopPropagation(); nextImage(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                nextImage();
+              }}
               type="button"
-              className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full border border-[#D9EAF3] bg-white hover:bg-[#F1F9FD] text-[#397FA8] hover:text-[#173F56] flex items-center justify-center transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#397FA8]/40 shadow-sm"
+              className="absolute right-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:right-6"
             >
-              <ChevronRight className="w-5 h-5" strokeWidth={1.5} />
+              <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
             </button>
           </div>
 
           {/* Caption */}
           <div
             key={`cap-${lightboxItem.id}`}
-            className="zen-rise w-full max-w-2xl mx-auto text-center px-6 pb-4 sm:pb-6 pt-5"
+            className="zen-rise mx-auto w-full max-w-2xl shrink-0 overflow-y-auto overscroll-contain px-4 pb-4 pt-4 text-center sm:px-6 sm:pb-6 sm:pt-5"
+            style={{ maxHeight: "min(38dvh, 22rem)" }}
           >
             <span
               id="lightbox-category"
-              className="block text-[11px] tracking-[0.35em] uppercase text-[#397FA8] font-semibold mb-3"
+              className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.35em] text-[#2f6b8f] sm:mb-3"
             >
               {lightboxItem.label}
             </span>
 
             <h4
               id="lightbox-title"
-              className="font-headline-sm text-headline-sm text-[#173F56] mb-3"
+              className="font-headline-sm text-headline-sm mb-2 text-[#173F56] sm:mb-3"
             >
               {lightboxItem.title}
             </h4>
 
-            <div className="w-10 h-px bg-[#397FA8]/40 mx-auto mb-3" />
+            <div className="mx-auto mb-2 h-px w-10 bg-[#2f6b8f]/40 sm:mb-3" />
 
             <p
               id="lightbox-caption"
-              className="text-sm sm:text-[15px] text-slate-500 font-light leading-relaxed"
+              className="text-sm font-light leading-relaxed text-slate-500 sm:text-[15px]"
             >
               {lightboxItem.caption}
             </p>

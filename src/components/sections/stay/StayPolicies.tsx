@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   Info,
 } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
 
 interface StayPoliciesProps {
   className?: string;
@@ -30,43 +31,41 @@ export const StayPolicies: React.FC<StayPoliciesProps> = ({
 }) => {
   return (
     <section
-      className={`w-full bg-white py-16 md:py-24 border-b border-[#D9EAF3]/60 ${className}`}
+      className={`w-full border-b border-[#D9EAF3]/60 bg-white py-14 sm:py-16 md:py-24 ${className}`}
     >
-      <div className="max-w-4xl mx-auto px-6 sm:px-8">
-        {/* Section Heading */}
-        <div className="text-center max-w-xl mx-auto mb-12">
-          <span className="font-script text-3xl md:text-4xl text-[#397FA8] font-normal tracking-wide mb-2 block">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <Reveal className="mx-auto mb-10 max-w-xl text-center sm:mb-12">
+          <span className="mb-2 block font-script text-3xl font-normal tracking-wide text-[#2f6b8f] md:text-4xl">
             seamless stay...
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-[40px] leading-tight text-[#173F56] font-normal mb-3 tracking-tight">
+          <h2 className="mb-3 font-heading text-[32px] font-normal leading-tight tracking-tight text-[#173F56] sm:text-4xl md:text-[40px]">
             Good to Know
           </h2>
-          <p className="text-[15px] sm:text-base text-slate-600 font-light leading-relaxed">
+          <p className="text-[15px] font-light leading-relaxed text-slate-600 sm:text-base">
             Simple guidelines to ensure a restful, harmonious stay for every traveler on the southern shore.
           </p>
-        </div>
+        </Reveal>
 
-        {/* Policies List Container */}
-        <div className="bg-white rounded-2xl border border-[#D9EAF3] shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)] overflow-hidden divide-y divide-[#D9EAF3]/60">
+        <Reveal className="divide-y divide-[#D9EAF3]/60 overflow-hidden rounded-2xl border border-[#D9EAF3] bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)]">
           {STAY_DATA.policies.map((policy) => {
             const IconComponent = POLICY_ICONS[policy.id] ?? Info;
             return (
               <div
                 key={policy.id}
-                className="p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#EBF5FB]/30 transition-colors"
+                className="flex flex-col justify-between gap-3 p-4 transition-colors hover:bg-[#EBF5FB]/30 sm:flex-row sm:items-center sm:gap-4 sm:p-6"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-[#EBF5FB] text-[#397FA8] flex items-center justify-center shrink-0">
-                    <IconComponent className="w-5 h-5" />
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#EBF5FB] text-[#2f6b8f]">
+                    <IconComponent className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-heading text-lg text-[#173F56] font-medium">
+                    <h4 className="font-heading text-lg font-medium text-[#173F56]">
                       {policy.title}
                     </h4>
                     <span
-                      className={`inline-block sm:hidden mt-1 text-xs font-medium px-2.5 py-0.5 rounded-full ${
+                      className={`mt-1 inline-block rounded-full px-2.5 py-0.5 text-xs font-medium sm:hidden ${
                         policy.isNeutral
-                          ? "bg-slate-100 text-slate-600 border border-slate-200"
+                          ? "border border-slate-200 bg-slate-100 text-slate-600"
                           : "bg-[#EBF5FB] text-[#173F56]"
                       }`}
                     >
@@ -75,32 +74,33 @@ export const StayPolicies: React.FC<StayPoliciesProps> = ({
                   </div>
                 </div>
 
-                <div className="text-left sm:text-right sm:max-w-md">
+                <div className="text-left sm:max-w-md sm:text-right">
                   <span
-                    className={`hidden sm:inline-block text-xs font-medium px-2.5 py-0.5 rounded-full mb-1 ${
+                    className={`mb-1 hidden rounded-full px-2.5 py-0.5 text-xs font-medium sm:inline-block ${
                       policy.isNeutral
-                        ? "bg-slate-100 text-slate-600 border border-slate-200"
+                        ? "border border-slate-200 bg-slate-100 text-slate-600"
                         : "bg-[#EBF5FB] text-[#173F56]"
                     }`}
                   >
                     {policy.badge}
                   </span>
-                  <p className="text-sm text-slate-600 font-light leading-relaxed mt-0.5">
+                  <p className="mt-0.5 text-sm font-light leading-relaxed text-slate-600">
                     {policy.description}
                   </p>
                 </div>
               </div>
             );
           })}
-        </div>
+        </Reveal>
 
-        {/* Verification Note Footnote */}
-        <div className="mt-6 p-4 rounded-xl bg-[#EBF5FB]/60 border border-[#D9EAF3] text-center text-xs text-slate-600 font-light flex items-center justify-center gap-2">
-          <Info className="w-4 h-4 text-[#397FA8] shrink-0" />
-          <span>
-            Please review your exact arrival date details and cancellation terms directly on Booking.com before confirming your reservation.
-          </span>
-        </div>
+        <Reveal delay={0.05}>
+          <div className="mt-6 flex items-start justify-center gap-2 rounded-xl border border-[#D9EAF3] bg-[#EBF5FB]/60 p-4 text-center text-xs font-light text-slate-600 sm:items-center">
+            <Info className="mt-0.5 h-4 w-4 shrink-0 text-[#2f6b8f] sm:mt-0" />
+            <span className="text-left sm:text-center">
+              Please review your exact arrival date details and cancellation terms directly on Booking.com before confirming your reservation.
+            </span>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

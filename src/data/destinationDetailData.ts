@@ -1,4 +1,5 @@
-import { BEACH_DESTINATIONS } from "./experiencesData";
+﻿import { BEACH_DESTINATIONS } from "./experiencesData";
+import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
 
 export type DestinationBreadcrumbCategory = "Beaches & Surf";
 
@@ -170,7 +171,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     imageAlt: "Midigama Sandy Cove panoramic coastal view",
     script: "gentle tides & unhurried surf...",
     title: "Midigama Beach & Coastal Coves",
-    deck: "The legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+    deck: "The legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
     meta: [
       { icon: "location_on", label: "Southern Province, Weligama" },
       { icon: "waves", label: "Reef Point Breaks & Calm Lagoons" },
@@ -191,12 +192,12 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       topBadge: "Low-Tide Granite Soak Basins",
       distanceBadge: "1.4 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
+      panelBadgeText: "Optimal Low Tide: 06:30 â€“ 10:00 AM",
       title: "Volcanic Granite Tidal Pools & Reef Shelf",
       description:
         "Naturally protected saltwater dipping baths etched into ancient volcanic rock shelves. Glassy turquoise pools allow serene, wakeful immersion sheltered from the Indian Ocean swell.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: 28°C / 82°F" },
+        { icon: "thermostat", label: "Water Temp: 28Â°C / 82Â°F" },
         { icon: "footprint", label: "Reef Footwear Loaned at Portico" },
       ],
     },
@@ -207,7 +208,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         title: "Prime Swell & Water Window",
         pill: "Dawn & Twilight",
         description:
-          "Glassy dawn sessions between 06:00 – 09:30 AM with offshore sea breezes. Evening golden hour peelers from 17:00 PM onwards bathed in amber coastal light.",
+          "Glassy dawn sessions between 06:00 â€“ 09:30 AM with offshore sea breezes. Evening golden hour peelers from 17:00 PM onwards bathed in amber coastal light.",
         left: { icon: "air", label: "Light offshore breezes" },
         right: "Crystalline clarity",
       },
@@ -252,13 +253,13 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Sri Lankan safari tuk-tuk with surfboard racks along coastal road near Midigama",
         description:
           "Our front desk team connects you directly with trusted Kumbalgama tuk-tuk drivers. Enjoy a breezy open-air ride past waving palm canopies and roadside thambili stalls.",
-        leftNote: "Standard fare: 300–400 LKR",
+        leftNote: "Standard fare: 300â€“400 LKR",
         rightNote: "Hotel gate pickup",
       },
       {
         title: "Coastal Cruisers",
         subtitle: "Scenic village interior path",
-        durationBadge: "~6 mins • Complimentary",
+        durationBadge: "~6 mins â€¢ Complimentary",
         icon: "pedal_bike",
         iconLabel: "Guest Quiver Bike",
         image:
@@ -281,7 +282,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Couple walking along golden sand shoreline in Weligama near Midigama",
         description:
           "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide. Pass serene shallow rock pools and greeting local stilt fishermen.",
-        leftNote: "Best at low tide (06:30–09:00 AM)",
+        leftNote: "Best at low tide (06:30â€“09:00 AM)",
         rightNote: "Reef shoes handy",
       },
       {
@@ -295,7 +296,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Scenic coastal railway and shoreline landscape near Midigama station",
         description:
           "Midigama's quaint colonial open-air railway halt offers scenic connections towards the UNESCO Galle Fort (35 mins) or Colombo along the ocean tracks.",
-        leftNote: "Tickets at station (~80–120 LKR)",
+        leftNote: "Tickets at station (~80â€“120 LKR)",
         rightNote: "Ocean vistas",
       },
     ],
@@ -310,7 +311,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
         imageAlt: "Midigama turquoise outer reef and peeling dawn surf break",
-        topBadge: "06:15 AM • Outer Reef",
+        topBadge: "06:15 AM â€¢ Outer Reef",
         topBadgeRight: "1.4 km from hotel",
         script: "morning swell...",
         title: "Dawn Glass over Outer Reef",
@@ -333,7 +334,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
         imageAlt: "Natural rock dip pools and volcanic granite tide basins in Midigama",
-        topBadge: "Low Tide • 07:30 AM",
+        topBadge: "Low Tide â€¢ 07:30 AM",
         topBadgeRight: "Tidal Pools",
         script: "natural baths...",
         title: "Granite Tidal Soak Basins",
@@ -355,7 +356,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Twilight solitude and amber sunset reflection on Midigama beach",
-        topBadge: "Twilight Solitude • 18:15 PM",
+        topBadge: "Twilight Solitude â€¢ 18:15 PM",
         topBadgeRight: "Sunset Cove",
         script: "evening calm...",
         title: "Golden Crescent Cove",
@@ -385,7 +386,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -400,10 +401,10 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -418,10 +419,10 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -439,13 +440,13 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "koggala-lake-cinnamon-island",
         filter: "heritage",
         image:
-          "https://lh3.googleusercontent.com/aida/AEtjO1V0IcFLWz4OIUDOkUbRQE8Oeo_YfMBPpbiQuKC9qtsmnqL7YVaGLeUyoeJgUkuwKi64LS_sVYNAQ4unp2R2iJ4PQ0otYfd3tko4dD38lpnEqeTkXXjp_BjcH-YfagJb7y1Q8XZfEzo-Mk971W0O2OA_RIlzswHIcbIdnMQpsnbq3xrWTUB33rzUOyilqmmBb82lMhqVji36efy_5HnLLKGLuKoxopTUoUQ-Wcfm_bEe9Q",
+          NEUTRAL_IMAGE_PLACEHOLDER,
         imageAlt: "Koggala Lake serene lagoon boat safari through mangroves and cinnamon island",
         topBadge: "Single Page Hub",
         topBadgeVariant: "glass",
@@ -457,7 +458,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Peaceful wooden catamaran cruises gliding past bird-rich mangrove channels, quiet hermitages, and organic cinnamon peelers.",
         footerLeft: "Dawn birdwatching safaris",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "mirissa-whale-watching",
@@ -475,7 +476,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Encounter gentle blue whales, playful spinner dolphins, and sea turtles across open Indian Ocean waters on morning marine expeditions.",
         footerLeft: "Dawn offshore boat departures",
         href: "/experiences",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -493,7 +494,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -511,7 +512,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "polhena-tidal-pool",
@@ -529,7 +530,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip.",
         footerLeft: "Best in settled seas",
         href: "/experiences",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -547,7 +548,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -581,7 +582,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
     meta: [
       { icon: "location_on", label: "Southern Province, Midigama East / Weligama" },
       { icon: "pool", label: "Sheltered Sandy Cove & Fringing Reef" },
-      { icon: "wb_sunny", label: "Best Conditions: November – April" },
+      { icon: "wb_sunny", label: "Best Conditions: November â€“ April" },
     ],
   },
   vitals: {
@@ -596,12 +597,12 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
       topBadge: "Secluded Shoreline Dip",
       distanceBadge: "1.7 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
+      panelBadgeText: "Optimal Low Tide: 06:30 â€“ 10:00 AM",
       title: "Sheltered Sand Basin & Fringing Reef",
       description:
         "Naturally protected shallow waters tucked behind a light reef shelf. Offers calm, clear saltwater immersion away from high-density surf crowds.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Approx)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Approx)" },
         { icon: "footprint", label: "Reef Shoes Recommended at Low Tide" },
       ],
     },
@@ -612,7 +613,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         title: "Best Swimming Window",
         pill: "Morning Low Tide",
         description:
-          "Glassy morning conditions between 06:30 – 10:00 AM yield gentle, clear water for swimming. Golden hour brings soft light and cooler coastal breezes.",
+          "Glassy morning conditions between 06:30 â€“ 10:00 AM yield gentle, clear water for swimming. Golden hour brings soft light and cooler coastal breezes.",
         left: { icon: "air", label: "Light offshore sea breeze" },
         right: "High water clarity",
       },
@@ -656,7 +657,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along Sri Lanka coastal road",
         description:
           "Enjoy a quick, breezy ride along the coastal palm strip. Drivers can drop you directly at Abimanagama Road leading to the shoreline.",
-        leftNote: "Estimated fare: 400–500 LKR (confirm locally)",
+        leftNote: "Estimated fare: 400â€“500 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -697,7 +698,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         span: "lg:col-span-7",
         image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
         imageAlt: "Panoramic view of Abimanagama sandy bay at low tide",
-        topBadge: "07:00 AM • Morning Low Tide",
+        topBadge: "07:00 AM â€¢ Morning Low Tide",
         topBadgeRight: "2.9 km from hotel",
         script: "morning calm...",
         title: "Glassy Morning Cove",
@@ -727,7 +728,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         span: "lg:col-span-5",
         image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
         imageAlt: "Warm amber golden hour reflections on Abimanagama shoreline",
-        topBadge: "17:45 PM • Golden Hour",
+        topBadge: "17:45 PM â€¢ Golden Hour",
         topBadgeRight: "Sunset Quiet",
         script: "evening glow...",
         title: "Sunset over the Horizon",
@@ -754,10 +755,10 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -775,7 +776,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -793,7 +794,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -811,7 +812,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -829,7 +830,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -844,10 +845,10 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -864,7 +865,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -879,10 +880,10 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -900,7 +901,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -931,11 +932,11 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
     imageAlt: "Wide sandy crescent cove of Weligama Bay with gentle ocean surf",
     script: "broad golden bay & forgiving waves...",
     title: "Weligama Bay & Sandy Crescent",
-    deck: "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
+    deck: "Sri Lanka's quintessential surf havenâ€”a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
     meta: [
       { icon: "location_on", label: "Southern Province, Weligama Bay" },
       { icon: "surfing", label: "Sand-Bottom Beach Break & Gentle Inside Rollers" },
-      { icon: "wb_sunny", label: "Prime Season: November – April" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ April" },
     ],
   },
   vitals: {
@@ -951,12 +952,12 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
       topBadge: "Sand-Bottom Beginner Haven",
       distanceBadge: "3.5 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Waves: 06:00 – 10:00 AM & 16:30 – 18:30 PM",
+      panelBadgeText: "Optimal Waves: 06:00 â€“ 10:00 AM & 16:30 â€“ 18:30 PM",
       title: "Expansive Golden Sand Crescent & Taprobane View",
       description:
         "A sweeping 3 km crescent bay protected from heavy ocean swell, offering safe sand-bottom wave entries and iconic views of forested Taprobane Island.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "surfing", label: "Softboard & Rashguard Recommended" },
       ],
     },
@@ -967,7 +968,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         title: "Prime Surf & Water Window",
         pill: "Dawn & Golden Hour",
         description:
-          "Glassy dawn sessions between 06:00 – 09:30 AM yield light offshore sea breezes. Late afternoon sessions offer soft amber twilight lighting and consistent sandbar peelers.",
+          "Glassy dawn sessions between 06:00 â€“ 09:30 AM yield light offshore sea breezes. Late afternoon sessions offer soft amber twilight lighting and consistent sandbar peelers.",
         left: { icon: "air", label: "Gentle offshore winds" },
         right: "Sandbar clarity",
       },
@@ -1012,7 +1013,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Tuk-tuk ride along Sri Lankan coastal road near Weligama",
         description:
           "Hop in an open-air tuk-tuk equipped with surfboard racks for a quick ride past coastal views and fruit stalls directly to the beach front.",
-        leftNote: "Estimated fare: 400–600 LKR (confirm locally)",
+        leftNote: "Estimated fare: 400â€“600 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -1041,7 +1042,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Scenic coastal train traveling toward Weligama Railway Station",
         description:
           "Board at nearby Kumbalgama Halt for a quick, scenic 1-stop coastal train ride into Weligama town center, steps from the bay.",
-        leftNote: "Tickets at station (~80–120 LKR)",
+        leftNote: "Tickets at station (~80â€“120 LKR)",
         rightNote: "Ocean view tracks",
       },
     ],
@@ -1056,7 +1057,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
         imageAlt: "Panoramic morning light over Weligama Bay and surf lineup",
-        topBadge: "06:30 AM • Morning Dawn",
+        topBadge: "06:30 AM â€¢ Morning Dawn",
         topBadgeRight: "3.5 km from hotel",
         script: "morning swell...",
         title: "Dawn Lineup across the Bay",
@@ -1089,7 +1090,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Golden sunset over Weligama Bay with surfboards on the sand",
-        topBadge: "17:45 PM • Golden Hour",
+        topBadge: "17:45 PM â€¢ Golden Hour",
         topBadgeRight: "Sunset Glow",
         script: "evening calm...",
         title: "Golden Hour Glow",
@@ -1116,10 +1117,10 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "abimanagama-beach",
@@ -1135,7 +1136,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
         footerLeft: "Ideal for unhurried morning swims",
         href: "/experiences/abimanagama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -1153,7 +1154,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -1171,7 +1172,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -1189,7 +1190,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1204,10 +1205,10 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -1224,7 +1225,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -1239,10 +1240,10 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -1260,7 +1261,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -1291,11 +1292,11 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
     imageAlt: "Ahangama coastal cove with peeling waves and stilt fishermen frames",
     script: "boho surf vibes & steady reef peelers...",
     title: "Ahangama Beach & Surf Lineup",
-    deck: "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
+    deck: "The vibrant surf epicenter of Sri Lanka's southern coastâ€”renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
     meta: [
       { icon: "location_on", label: "Southern Province, Ahangama" },
       { icon: "surfing", label: "A-Frame Reef Breaks & Sandy Coves" },
-      { icon: "wb_sunny", label: "Prime Season: November – April" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ April" },
     ],
   },
   vitals: {
@@ -1311,12 +1312,12 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
       topBadge: "Reef Breaks & Surf Hub",
       distanceBadge: "3.8 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Swell: 06:00 – 09:30 AM & 16:30 – 18:30 PM",
+      panelBadgeText: "Optimal Swell: 06:00 â€“ 09:30 AM & 16:30 â€“ 18:30 PM",
       title: "Volcanic Reef Lineup & Beach Coves",
       description:
         "A dynamic stretch featuring famous reef breaks like Sticks and Marshmallows, alongside serene sandy coves for relaxed dips and morning walks.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Recommended for Outer Breaks" },
       ],
     },
@@ -1327,7 +1328,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         title: "Prime Swell & Light Window",
         pill: "Dawn Patrol & Sunset",
         description:
-          "Glassy early morning sessions between 06:00 – 09:30 AM before afternoon sea breezes pick up. Late golden hour brings warm amber light and mellow peelers.",
+          "Glassy early morning sessions between 06:00 â€“ 09:30 AM before afternoon sea breezes pick up. Late golden hour brings warm amber light and mellow peelers.",
         left: { icon: "air", label: "Light offshore sea breeze" },
         right: "High water clarity",
       },
@@ -1372,7 +1373,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk with surfboards driving toward Ahangama",
         description:
           "Enjoy a breezy ride west past coastal palm grooves and fruit stands. Drivers can drop you directly at your preferred surf break or beach cafe.",
-        leftNote: "Estimated fare: 400–600 LKR (confirm locally)",
+        leftNote: "Estimated fare: 400â€“600 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -1401,7 +1402,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Coastal train heading toward Ahangama Railway Station",
         description:
           "Catch a quick 1-stop coastal train ride westward to Ahangama Halt, dropping you right in the center of town near cafes and beaches.",
-        leftNote: "Tickets at station (~80–120 LKR)",
+        leftNote: "Tickets at station (~80â€“120 LKR)",
         rightNote: "Ocean views along the track",
       },
     ],
@@ -1416,7 +1417,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
         imageAlt: "Panoramic view of Ahangama outer reef break at dawn",
-        topBadge: "06:15 AM • Outer Reef",
+        topBadge: "06:15 AM â€¢ Outer Reef",
         topBadgeRight: "3.8 km from hotel",
         script: "morning swell...",
         title: "Dawn Lines at Sticks Break",
@@ -1449,7 +1450,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
         imageAlt: "Amber golden hour sunset over Ahangama ocean reef",
-        topBadge: "17:50 PM • Golden Hour",
+        topBadge: "17:50 PM â€¢ Golden Hour",
         topBadgeRight: "Sunset Chill",
         script: "evening calm...",
         title: "Amber Sunset over the Reef",
@@ -1476,10 +1477,10 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "abimanagama-beach",
@@ -1495,7 +1496,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
         footerLeft: "Ideal for unhurried morning swims",
         href: "/experiences/abimanagama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -1513,7 +1514,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -1531,7 +1532,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1546,10 +1547,10 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -1566,7 +1567,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -1581,10 +1582,10 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -1602,7 +1603,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -1620,7 +1621,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -1651,11 +1652,11 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
     imageAlt: "Clean left-hand peeling wave at Lazy Left surf break in Midigama",
     script: "endless left walls & glassy dawn swells...",
     title: "Lazy Left Surf Break",
-    deck: "Sri Lanka's legendary long-peeling left-hand reef break—celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
+    deck: "Sri Lanka's legendary long-peeling left-hand reef breakâ€”celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
     meta: [
       { icon: "location_on", label: "Southern Province, Midigama" },
       { icon: "surfing", label: "Deep Reef Left Point Break" },
-      { icon: "wb_sunny", label: "Prime Season: November – April" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ April" },
     ],
   },
   vitals: {
@@ -1671,12 +1672,12 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
       topBadge: "Legendary Left Lineup",
       distanceBadge: "1.5 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Window: 06:00 – 09:30 AM (Low to Mid Tide)",
+      panelBadgeText: "Optimal Window: 06:00 â€“ 09:30 AM (Low to Mid Tide)",
       title: "Long-Walling Lefts over Volcanic Shelf",
       description:
         "A reliable reef break delivering smooth, peeling left-hand rides spanning hundreds of meters. Features a gentle takeoff that mellows into forgiving, open shoulders.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Recommended for Outer Shelf" },
       ],
     },
@@ -1687,7 +1688,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         title: "Prime Swell & Wind Window",
         pill: "Dawn & Offshore",
         description:
-          "Glassy dawn sessions between 06:00 – 09:30 AM with offshore North-Northeast (NNE) winds and South-Southwest (SSW) groundswells.",
+          "Glassy dawn sessions between 06:00 â€“ 09:30 AM with offshore North-Northeast (NNE) winds and South-Southwest (SSW) groundswells.",
         left: { icon: "air", label: "Light offshore NNE winds" },
         right: "SSW groundswell alignment",
       },
@@ -1732,7 +1733,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         imageAlt: "Tuk-tuk with surfboard racks heading toward Midigama surf breaks",
         description:
           "Our front desk connects you with local drivers for a fast, breezy ride straight to the Midigama beachfront facing Lazy Left.",
-        leftNote: "Estimated fare: 300–400 LKR (confirm locally)",
+        leftNote: "Estimated fare: 300â€“400 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -1776,7 +1777,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
         imageAlt: "Clean glass wave peeling across Lazy Left lineup in Midigama",
-        topBadge: "06:15 AM • Dawn Glass",
+        topBadge: "06:15 AM â€¢ Dawn Glass",
         topBadgeRight: "1.5 km from hotel",
         script: "morning swell...",
         title: "Dawn Glass over Lazy Left",
@@ -1809,7 +1810,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Golden sunset reflection over Midigama ocean waters",
-        topBadge: "18:00 PM • Golden Hour",
+        topBadge: "18:00 PM â€¢ Golden Hour",
         topBadgeRight: "Evening Glow",
         script: "sunset surf...",
         title: "Twilight Peelers",
@@ -1836,10 +1837,10 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "abimanagama-beach",
@@ -1855,7 +1856,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         description: "A peaceful sandy cove with calm low-tide dip pools and unhurried coastal views.",
         footerLeft: "Ideal for unhurried morning swims",
         href: "/experiences/abimanagama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -1873,7 +1874,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -1891,7 +1892,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -1909,7 +1910,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1924,10 +1925,10 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -1944,7 +1945,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -1959,10 +1960,10 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -1980,7 +1981,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -1998,7 +1999,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -2029,11 +2030,11 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
     imageAlt: "Hollow right-hand barrel breaking over shallow reef at Rams Right in Midigama",
     script: "hollow barrels & technical right walls...",
     title: "Rams Right Surf Break",
-    deck: "Sri Lanka's most iconic heavy right-hand barrel—a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
+    deck: "Sri Lanka's most iconic heavy right-hand barrelâ€”a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
     meta: [
       { icon: "location_on", label: "Southern Province, Midigama" },
       { icon: "surfing", label: "Shallow Right Reef Barrel" },
-      { icon: "wb_sunny", label: "Prime Season: November – March" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ March" },
     ],
   },
   vitals: {
@@ -2049,12 +2050,12 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
       topBadge: "Advanced Barrel Lineup",
       distanceBadge: "1.6 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Window: 06:00 – 09:00 AM (Mid Tide)",
+      panelBadgeText: "Optimal Window: 06:00 â€“ 09:00 AM (Mid Tide)",
       title: "Short, Fast & Hollow Right-Hander",
       description:
         "A focused reef break delivering intense, fast right-hand tubes over a shallow volcanic shelf. Features a critical takeoff and high-performance sections for experienced riders.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Strongly Recommended" },
       ],
     },
@@ -2065,7 +2066,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         title: "Prime Swell & Wind Window",
         pill: "Dawn Patrol & Offshore",
         description:
-          "Glassy early morning sessions between 06:00 – 09:00 AM with clean Northeast (NE) offshore winds and South-Southwest (SSW) groundswells.",
+          "Glassy early morning sessions between 06:00 â€“ 09:00 AM with clean Northeast (NE) offshore winds and South-Southwest (SSW) groundswells.",
         left: { icon: "air", label: "Clean NE offshore winds" },
         right: "SSW groundswell alignment",
       },
@@ -2110,7 +2111,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         imageAlt: "Tuk-tuk with surfboard racks heading toward Midigama surf spots",
         description:
           "Our front desk connects you with trusted local drivers for a fast ride straight to the roadside viewing area and paddle-out channel at Rams.",
-        leftNote: "Estimated fare: 300–400 LKR (confirm locally)",
+        leftNote: "Estimated fare: 300â€“400 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -2154,7 +2155,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
         imageAlt: "Hollow right barrel peeling across Rams Right lineup in Midigama",
-        topBadge: "06:30 AM • Morning Barrel",
+        topBadge: "06:30 AM â€¢ Morning Barrel",
         topBadgeRight: "1.6 km from hotel",
         script: "clean tubes...",
         title: "Dawn Barrels at Rams Right",
@@ -2187,7 +2188,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Golden sunset reflection over Midigama ocean waters",
-        topBadge: "18:00 PM • Golden Hour",
+        topBadge: "18:00 PM â€¢ Golden Hour",
         topBadgeRight: "Evening Glow",
         script: "sunset surf...",
         title: "Twilight Right Peelers",
@@ -2214,10 +2215,10 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "lazy-left-surf-break",
@@ -2234,7 +2235,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         description: "Sri Lanka's legendary longboard left-hand wave, offering smooth peeling walls and easy paddle channels.",
         footerLeft: "Ideal for dawn patrol & longboard sessions",
         href: "/experiences/lazy-left-surf-break",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -2252,7 +2253,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -2270,7 +2271,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -2288,7 +2289,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -2303,10 +2304,10 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -2323,7 +2324,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -2338,10 +2339,10 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -2359,7 +2360,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -2377,7 +2378,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -2428,12 +2429,12 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
       topBadge: "Low-Tide Granite Soak Basins",
       distanceBadge: "2.8 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
+      panelBadgeText: "Optimal Low Tide: 06:30 â€“ 10:00 AM",
       title: "Sheltered Saltwater Dipping Baths",
       description:
         "Naturally formed rock basins etched into ancient volcanic ledges. Outer reef barriers block ocean swells, creating crystal-clear calm water for peaceful morning immersion.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Reef Footwear Loaned at Portico" },
       ],
     },
@@ -2444,7 +2445,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         title: "Prime Tide & Light Window",
         pill: "Dawn & Morning Low Tide",
         description:
-          "Glassy morning soak sessions between 06:30 – 10:00 AM during low tide provide maximum water clarity and protection from surf swells.",
+          "Glassy morning soak sessions between 06:30 â€“ 10:00 AM during low tide provide maximum water clarity and protection from surf swells.",
         left: { icon: "air", label: "Light offshore morning breezes" },
         right: "Crystalline pool clarity",
       },
@@ -2489,7 +2490,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road near secret pool location",
         description:
           "Our front desk connects you directly with trusted drivers for a quick, breezy ride past palm canopies straight to the coastal footpath.",
-        leftNote: "Estimated fare: 350–450 LKR (confirm locally)",
+        leftNote: "Estimated fare: 350â€“450 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -2518,7 +2519,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         imageAlt: "Couple walking along golden sand shoreline near coastal tide pools",
         description:
           "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide. Pass serene shallow rock pools and coastal flora.",
-        leftNote: "Best at low tide (06:30–09:00 AM)",
+        leftNote: "Best at low tide (06:30â€“09:00 AM)",
         rightNote: "Reef shoes handy",
       },
     ],
@@ -2533,7 +2534,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
         imageAlt: "Calm turquoise tidepools and shallow volcanic granite reef shelf at low tide",
-        topBadge: "07:00 AM • Low Tide",
+        topBadge: "07:00 AM â€¢ Low Tide",
         topBadgeRight: "2.8 km from hotel",
         script: "morning calm...",
         title: "Glassy Granite Soak Basins",
@@ -2566,7 +2567,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber golden hour twilight reflecting on coastal tide pools",
-        topBadge: "18:00 PM • Twilight",
+        topBadge: "18:00 PM â€¢ Twilight",
         topBadgeRight: "Sunset Glow",
         script: "evening calm...",
         title: "Amber Twilight Pool",
@@ -2593,10 +2594,10 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "lazy-left-surf-break",
@@ -2613,7 +2614,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         description: "Sri Lanka's legendary longboard left-hand wave, offering smooth peeling walls and easy paddle channels.",
         footerLeft: "Ideal for dawn patrol & longboard sessions",
         href: "/experiences/lazy-left-surf-break",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "rams-right-surf-break",
@@ -2630,7 +2631,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         description: "Midigama's heavy, short, and hollow right-hand reef barrel for experienced surfers seeking technical tubes.",
         footerLeft: "Ideal for morning barrel sessions",
         href: "/experiences/rams-right-surf-break",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -2648,7 +2649,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -2666,7 +2667,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -2681,10 +2682,10 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -2701,7 +2702,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -2716,10 +2717,10 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -2737,7 +2738,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -2755,7 +2756,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -2806,12 +2807,12 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
       topBadge: "Untamed Coastal Cove",
       distanceBadge: "3.4 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Exploration: 06:30 – 10:00 AM",
+      panelBadgeText: "Optimal Exploration: 06:30 â€“ 10:00 AM",
       title: "Canopy-Sheltered Sandy Sanctuary",
       description:
         "A quiet, private beach enclave where tropical jungle greenery meets golden sand. Protected by natural rock formations, it offers absolute peace away from the main highway.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Sturdy Footwear Recommended for Trail Path" },
       ],
     },
@@ -2822,7 +2823,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         title: "Prime Shade & Light Window",
         pill: "Morning Canopy Light",
         description:
-          "Early morning hours between 06:30 – 10:00 AM provide cool shade under the tropical foliage and pristine, glassy water conditions in the cove.",
+          "Early morning hours between 06:30 â€“ 10:00 AM provide cool shade under the tropical foliage and pristine, glassy water conditions in the cove.",
         left: { icon: "air", label: "Cool jungle breeze" },
         right: "Natural canopy shade",
       },
@@ -2867,7 +2868,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road near Secret Jungle Beach",
         description:
           "Our front desk connects you directly with trusted drivers for a quick, breezy ride past palm canopies straight to the shaded jungle trail entry.",
-        leftNote: "Estimated fare: 400–500 LKR (confirm locally)",
+        leftNote: "Estimated fare: 400â€“500 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
       },
       {
@@ -2896,7 +2897,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         imageAlt: "Shoreline walking view along southern coastal coves",
         description:
           "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide, passing serene rock formations.",
-        leftNote: "Best at low tide (06:30–09:00 AM)",
+        leftNote: "Best at low tide (06:30â€“09:00 AM)",
         rightNote: "Sturdy footwear handy",
       },
     ],
@@ -2911,7 +2912,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
         imageAlt: "Secluded sandy cove framed by lush tropical jungle canopy",
-        topBadge: "07:00 AM • Morning Shade",
+        topBadge: "07:00 AM â€¢ Morning Shade",
         topBadgeRight: "3.4 km from hotel",
         script: "jungle calm...",
         title: "Canopy-Framed Shoreline",
@@ -2944,7 +2945,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber twilight reflecting on jungle-bordered coastal waters",
-        topBadge: "18:00 PM • Twilight",
+        topBadge: "18:00 PM â€¢ Twilight",
         topBadgeRight: "Sunset Calm",
         script: "evening glow...",
         title: "Jungle Twilight Calm",
@@ -2971,10 +2972,10 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -2991,7 +2992,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -3009,7 +3010,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "ahangama-beach",
@@ -3027,7 +3028,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Iconic reef breaks, vibrant oceanfront cafes, and traditional stilt fishermen along a lively coastline.",
         footerLeft: "Great for surf sessions & sunset cafes",
         href: "/experiences/ahangama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -3045,7 +3046,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3060,10 +3061,10 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -3078,10 +3079,10 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
         description:
-          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+          "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -3099,7 +3100,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -3117,7 +3118,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -3152,7 +3153,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
     meta: [
       { icon: "location_on", label: "Southern Province, Matara" },
       { icon: "pool", label: "Offshore Coral Barrier & Calm Lagoon" },
-      { icon: "wb_sunny", label: "Prime Season: November – April" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ April" },
     ],
   },
   vitals: {
@@ -3168,12 +3169,12 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
       topBadge: "Reef-Protected Sanctuary",
       distanceBadge: "12 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Snorkeling: 07:00 – 11:00 AM",
+      panelBadgeText: "Optimal Snorkeling: 07:00 â€“ 11:00 AM",
       title: "Calm Coral Lagoon & Sea Turtle Habitat",
       description:
         "Protected by an offshore barrier reef that blocks heavy ocean swells, Polhena creates a vast, calm natural swimming pool where wild green turtles graze peacefully in the shallows.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Snorkel & Mask Rentals Available On-Site" },
       ],
     },
@@ -3184,7 +3185,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         title: "Prime Snorkeling & Visibility Window",
         pill: "Morning Calm",
         description:
-          "Early morning hours between 07:00 – 11:00 AM provide highest water clarity, calm surface conditions, and active turtle feeding along the seagrass beds.",
+          "Early morning hours between 07:00 â€“ 11:00 AM provide highest water clarity, calm surface conditions, and active turtle feeding along the seagrass beds.",
         left: { icon: "air", label: "Gentle morning offshore breeze" },
         right: "High underwater visibility",
       },
@@ -3204,7 +3205,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
       coordinates: "~12 km from Noonna",
       title: "Door-to-Reef Access",
       description:
-        "Located ~14 km east along the Matara Coastal Road (A2). Reached in 20–25 minutes by comfortable taxi or tuk-tuk safari.",
+        "Located ~14 km east along the Matara Coastal Road (A2). Reached in 20â€“25 minutes by comfortable taxi or tuk-tuk safari.",
       mapsHref: "https://maps.app.goo.gl/eXBqiQKEKQjswRHV7",
       mapsLabel: "Google Maps Pin",
       hostHref:
@@ -3229,7 +3230,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         imageAlt: "Comfortable coastal transport heading toward Matara and Polhena",
         description:
           "Our concierge team can arrange a comfortable private car or trusted driver to take you directly to Polhena's main beach entrance.",
-        leftNote: "Estimated fare: 1,500–2,000 LKR (confirm locally)",
+        leftNote: "Estimated fare: 1,500â€“2,000 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
         featured: true,
       },
@@ -3244,7 +3245,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         imageAlt: "Scenic coastal railway tracks along southern Sri Lanka",
         description:
           "Take the scenic coastal train from nearby Kumbalgama to Matara terminus, followed by a quick 10-minute local tuk-tuk ride to the beach.",
-        leftNote: "Tickets at station (~100–150 LKR)",
+        leftNote: "Tickets at station (~100â€“150 LKR)",
         rightNote: "Ocean views along the rail line",
       },
     ],
@@ -3259,7 +3260,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
         imageAlt: "Calm turquoise natural swimming lagoon sheltered by coral reef at Polhena",
-        topBadge: "08:00 AM • Calm Lagoon",
+        topBadge: "08:00 AM â€¢ Calm Lagoon",
         topBadgeRight: "14 km from hotel",
         script: "crystal shallows...",
         title: "Glassy Coral Lagoon",
@@ -3292,7 +3293,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber golden hour sunset over Polhena reef lagoon",
-        topBadge: "18:00 PM • Twilight",
+        topBadge: "18:00 PM â€¢ Twilight",
         topBadgeRight: "Sunset Calm",
         script: "evening glow...",
         title: "Matara Sunset Horizon",
@@ -3304,7 +3305,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
     sectionScript: "unfold the journey...",
     sectionTitle: "Discover More Along the Southern Coast",
     sectionDeck:
-      "Extend your slow days beyond Polhena’s coral lagoon. Explore surf breaks, secret tidal pools, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
+      "Extend your slow days beyond Polhenaâ€™s coral lagoon. Explore surf breaks, secret tidal pools, coastal heritage, and ocean wildlife nestled within effortless reach of Noonna Beach Hotel.",
     slides: [
       {
         id: "midigama-beach",
@@ -3319,10 +3320,10 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -3339,7 +3340,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "secret-jungle-beach",
@@ -3356,7 +3357,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
         footerLeft: "Ideal for shaded morning walks",
         href: "/experiences/secret-jungle-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -3374,7 +3375,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -3392,7 +3393,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3407,10 +3408,10 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -3428,7 +3429,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -3446,7 +3447,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -3481,7 +3482,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
     meta: [
       { icon: "location_on", label: "Southern Province, Mirissa West" },
       { icon: "pool", label: "Sheltered Sandy Pockets & Reef Pools" },
-      { icon: "wb_sunny", label: "Prime Season: November – April" },
+      { icon: "wb_sunny", label: "Prime Season: November â€“ April" },
     ],
   },
   vitals: {
@@ -3497,12 +3498,12 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
       topBadge: "Secluded Cliffside Cove",
       distanceBadge: "6.5 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Window: 07:00 – 11:00 AM",
+      panelBadgeText: "Optimal Window: 07:00 â€“ 11:00 AM",
       title: "Intimate Sandy Pockets & Snorkel Reef",
       description:
         "A collection of three tiny, stunning coves shielded by rocky outcrops and coconut palms. Offers calm shallows for wading and vibrant marine life around the outer reef shelf.",
       facts: [
-        { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
+        { icon: "thermostat", label: "Water Temp: ~28Â°C / 82Â°F (Year-Round)" },
         { icon: "footprint", label: "Reef Shoes Recommended for Rocky Entry" },
       ],
     },
@@ -3513,7 +3514,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         title: "Prime Snorkeling & Light Window",
         pill: "Morning Calm",
         description:
-          "Early morning hours between 07:00 – 11:00 AM provide glass-calm water, optimal underwater visibility, and peaceful shade before midday sun.",
+          "Early morning hours between 07:00 â€“ 11:00 AM provide glass-calm water, optimal underwater visibility, and peaceful shade before midday sun.",
         left: { icon: "air", label: "Light offshore breeze" },
         right: "High underwater clarity",
       },
@@ -3533,7 +3534,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
       coordinates: "~6.5 km from Noonna",
       title: "Door-to-Cove Access",
       description:
-        "Located ~6.5 km east along the Matara Coastal Road (A2) followed by a short hilltop lane. Reached in 10–12 minutes by open-air tuk-tuk.",
+        "Located ~6.5 km east along the Matara Coastal Road (A2) followed by a short hilltop lane. Reached in 10â€“12 minutes by open-air tuk-tuk.",
       mapsHref: "https://maps.app.goo.gl/9gw6BEGuaiyfi9i47",
       mapsLabel: "Google Maps Pin",
       hostHref:
@@ -3558,7 +3559,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa",
         description:
           "Our front desk connects you with trusted drivers for a comfortable ride east along the coastal palm strip, dropping you at the hilltop path leading down to the coves.",
-        leftNote: "Estimated fare: 800–1,000 LKR (confirm locally)",
+        leftNote: "Estimated fare: 800â€“1,000 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
         featured: true,
       },
@@ -3588,7 +3589,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
         imageAlt: "Secret Beach Mirissa turquoise cove and rocky ledge",
-        topBadge: "08:00 AM • Morning Shallows",
+        topBadge: "08:00 AM â€¢ Morning Shallows",
         topBadgeRight: "6.5 km from hotel",
         script: "hidden cove...",
         title: "Glassy Cove Shallows",
@@ -3600,7 +3601,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Shaded cliffside seating area overlooking Secret Beach",
         topBadge: "Cliffside Lookout",
-        topBadgeRight: "Shaded Café",
+        topBadgeRight: "Shaded CafÃ©",
         script: "coastal view...",
         title: "Cliffside Bistro Vistas",
         description: "Relaxed shaded seating overlooking the open ocean and hidden sandy coves below.",
@@ -3621,7 +3622,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber sunset glow over Secret Beach Mirissa headland",
-        topBadge: "18:00 PM • Sunset",
+        topBadge: "18:00 PM â€¢ Sunset",
         topBadgeRight: "Golden Hour",
         script: "evening calm...",
         title: "Cliffside Sunset Horizon",
@@ -3650,7 +3651,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
         footerLeft: "Best in settled seas & morning light",
         href: "/experiences/polhena-beach-coral-reef",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -3667,7 +3668,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "secret-jungle-beach",
@@ -3684,7 +3685,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         description: "A secluded coastal haven framed by lush tropical foliage and ancient granite boulders, offering absolute tranquility.",
         footerLeft: "Ideal for shaded morning walks",
         href: "/experiences/secret-jungle-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -3702,7 +3703,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -3720,7 +3721,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3735,10 +3736,10 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "midigama-beach",
@@ -3753,10 +3754,10 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -3774,7 +3775,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -3792,7 +3793,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -3823,7 +3824,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
     imageAlt: "Coconut Tree Hill in Mirissa crowned with swaying palms over the Indian Ocean",
     script: "dramatic red cliffs & swaying crown palms...",
     title: "Coconut Tree Hill & Mirissa Point",
-    deck: "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
+    deck: "Sri Lanka's quintessential southern panoramaâ€”a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
     meta: [
       { icon: "location_on", label: "Southern Province, Mirissa East" },
       { icon: "compass", label: "Elevated Coastal Promontory & Viewpoint" },
@@ -3843,7 +3844,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
       topBadge: "Quintessential Southern Panorama",
       distanceBadge: "6.2 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Window: 06:00 – 07:30 AM & 17:30 – 18:30 PM",
+      panelBadgeText: "Optimal Window: 06:00 â€“ 07:30 AM & 17:30 â€“ 18:30 PM",
       title: "Raised Palm Promontory & Ocean Horizon",
       description:
         "A striking raised headland covered in slender coconut palms that frame sweeping views of blue ocean water, golden sand beaches, and distant surf breaks.",
@@ -3859,9 +3860,9 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         title: "Prime Viewing & Lighting Window",
         pill: "Dawn & Sunset Golden Hour",
         description:
-          "Early morning hours between 06:00 – 07:30 AM offer serene, uncrowded lighting and soft pastel skies. Evening golden hour brings vibrant amber sunset reflections.",
+          "Early morning hours between 06:00 â€“ 07:30 AM offer serene, uncrowded lighting and soft pastel skies. Evening golden hour brings vibrant amber sunset reflections.",
         left: { icon: "air", label: "Fresh coastal sea breeze" },
-        right: "Panoramic 360° horizon",
+        right: "Panoramic 360Â° horizon",
       },
       {
         icon: "compass",
@@ -3904,7 +3905,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa viewpoint",
         description:
           "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal palm strip, dropping you steps away from the hillside access path.",
-        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        leftNote: "Estimated fare: 700â€“900 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
         featured: true,
       },
@@ -3934,7 +3935,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
         imageAlt: "Iconic palm-crowned ridge at Coconut Tree Hill overlooking blue ocean swells",
-        topBadge: "06:30 AM • Dawn Gold",
+        topBadge: "06:30 AM â€¢ Dawn Gold",
         topBadgeRight: "6.2 km from hotel",
         script: "morning crowns...",
         title: "Dawn Light over Palm Crest",
@@ -3967,7 +3968,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber golden hour sunset washing over Coconut Tree Hill palms",
-        topBadge: "18:00 PM • Sunset Glow",
+        topBadge: "18:00 PM â€¢ Sunset Glow",
         topBadgeRight: "Golden Hour",
         script: "evening light...",
         title: "Amber Sunset Crown",
@@ -3996,7 +3997,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
         footerLeft: "Ideal for morning snorkeling & cliffside views",
         href: "/experiences/secret-beach-mirissa",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "polhena-beach-coral-reef",
@@ -4013,7 +4014,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
         footerLeft: "Best in settled seas & morning light",
         href: "/experiences/polhena-beach-coral-reef",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "awee-coco-secret-pool",
@@ -4030,7 +4031,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         description: "Naturally protected saltwater dipping baths etched into volcanic rock shelves, offering serene morning soak sessions.",
         footerLeft: "Best at morning low tide",
         href: "/experiences/awee-coco-secret-pool",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -4048,7 +4049,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -4066,7 +4067,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4081,10 +4082,10 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "midigama-beach",
@@ -4099,10 +4100,10 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -4120,7 +4121,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -4138,7 +4139,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -4189,7 +4190,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
       topBadge: "Offshore Panoramic Islet",
       distanceBadge: "5.8 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Access: 07:00 – 11:00 AM (Low to Mid Tide)",
+      panelBadgeText: "Optimal Access: 07:00 â€“ 11:00 AM (Low to Mid Tide)",
       title: "Elevated Bay Lookout & Wave Vantage",
       description:
         "A striking rock formation standing just off the sandy shore. Climbing to its summit provides sweeping vistas of surfers, beach coves, and turquoise horizon waters.",
@@ -4250,7 +4251,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road heading toward Mirissa beach",
         description:
           "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal palm strip, dropping you directly at Mirissa main beach.",
-        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        leftNote: "Estimated fare: 700â€“900 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
         featured: true,
       },
@@ -4280,7 +4281,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
         imageAlt: "Parrot Rock offshore islet rising above Mirissa Bay surf",
-        topBadge: "08:00 AM • Morning View",
+        topBadge: "08:00 AM â€¢ Morning View",
         topBadgeRight: "5.8 km from hotel",
         script: "ocean lookout...",
         title: "Summit Vista over Mirissa Bay",
@@ -4313,7 +4314,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber golden hour sunset glow over Parrot Rock Mirissa",
-        topBadge: "18:00 PM • Sunset Glow",
+        topBadge: "18:00 PM â€¢ Sunset Glow",
         topBadgeRight: "Golden Hour",
         script: "evening light...",
         title: "Twilight Ocean Horizon",
@@ -4339,10 +4340,10 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         categoryIcon: "compass",
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
-        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "secret-beach-mirissa",
@@ -4359,7 +4360,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
         footerLeft: "Ideal for morning snorkeling & cliffside views",
         href: "/experiences/secret-beach-mirissa",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "polhena-beach-coral-reef",
@@ -4376,7 +4377,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         description: "Reef-sheltered turquoise water forming a calm natural swimming pool, perfect for an unhurried afternoon dip with sea turtles.",
         footerLeft: "Best in settled seas & morning light",
         href: "/experiences/polhena-beach-coral-reef",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -4394,7 +4395,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -4412,7 +4413,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4427,10 +4428,10 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "midigama-beach",
@@ -4445,10 +4446,10 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -4466,7 +4467,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -4484,7 +4485,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },
@@ -4535,7 +4536,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
       topBadge: "Elevated Coastal Spine",
       distanceBadge: "6.0 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Window: 06:30 – 08:00 AM & 17:30 – 18:30 PM",
+      panelBadgeText: "Optimal Window: 06:30 â€“ 08:00 AM & 17:30 â€“ 18:30 PM",
       title: "Elevated Ridge & Ocean Expanse",
       description:
         "A commanding coastal headland rising above the surf zone, providing uninterrupted views of fishing vessels, reef lines, and distant horizon sunsets.",
@@ -4551,7 +4552,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         title: "Prime Viewing & Lighting Window",
         pill: "Dawn & Sunset Golden Hour",
         description:
-          "Early morning hours between 06:30 – 08:00 AM offer tranquil cooling breezes and soft lighting, while evening golden hour brings vibrant amber skies.",
+          "Early morning hours between 06:30 â€“ 08:00 AM offer tranquil cooling breezes and soft lighting, while evening golden hour brings vibrant amber skies.",
         left: { icon: "air", label: "Refreshing ocean breeze" },
         right: "Panoramic coastal horizon",
       },
@@ -4596,7 +4597,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         imageAlt: "Open-air tuk-tuk ride along coastal road toward Mirissa headland",
         description:
           "Our front desk connects you directly with trusted drivers for a fast ride east along the coastal strip, dropping you at the ridge access path.",
-        leftNote: "Estimated fare: 700–900 LKR (confirm locally)",
+        leftNote: "Estimated fare: 700â€“900 LKR (confirm locally)",
         rightNote: "Hotel gate pickup available",
         featured: true,
       },
@@ -4626,7 +4627,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
         imageAlt: "Sweeping panorama from Mirissa Coastal Promontory ridge",
-        topBadge: "07:00 AM • Ridge Vista",
+        topBadge: "07:00 AM â€¢ Ridge Vista",
         topBadgeRight: "6.0 km from hotel",
         script: "coastal spine...",
         title: "Morning Ridge Panorama",
@@ -4659,7 +4660,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         image:
           "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
         imageAlt: "Amber golden hour sunset over Mirissa coastal ridge",
-        topBadge: "18:00 PM • Sunset Glow",
+        topBadge: "18:00 PM â€¢ Sunset Glow",
         topBadgeRight: "Golden Hour",
         script: "evening light...",
         title: "Ridge Sunset Horizon",
@@ -4688,7 +4689,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         description: "A prominent offshore rocky islet linked to Mirissa beach, offering elevated 360-degree panoramic views across the bay.",
         footerLeft: "Best visited at low to mid tide",
         href: "/experiences/parrot-rock",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "coconut-tree-hill",
@@ -4702,10 +4703,10 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         categoryIcon: "compass",
         category: "Hidden Swim Spots & Viewpoints",
         title: "Coconut Tree Hill & Mirissa Point",
-        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swells—the quintessential southern panorama.",
+        description: "Dramatic red cliff dome crowned with swaying palms over crashing Indian Ocean swellsâ€”the quintessential southern panorama.",
         footerLeft: "Ideal at dawn or golden hour",
         href: "/experiences/coconut-tree-hill",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "secret-beach-mirissa",
@@ -4722,7 +4723,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         description: "A secluded coastal hideaway featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
         footerLeft: "Ideal for morning snorkeling & cliffside views",
         href: "/experiences/secret-beach-mirissa",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "weligama-bay-beach",
@@ -4740,7 +4741,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "A long crescent of soft sand and forgiving waves, ideal for easy morning swims and first surf sessions.",
         footerLeft: "Calm morning shoreline & surf lessons",
         href: "/experiences/weligama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "galle-dutch-fort",
@@ -4758,7 +4759,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4773,10 +4774,10 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         category: "A Taste of Sri Lanka",
         title: "Shirani Home Made Rice & Curry",
         description:
-          "Beloved courtyard feast prepared in traditional earthenware pots—jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
+          "Beloved courtyard feast prepared in traditional earthenware potsâ€”jackfruit, spiced okra, clay-oven dhal, and freshly pressed coconut sambol.",
         footerLeft: "Concierge table reservations",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
       {
         id: "midigama-beach",
@@ -4791,10 +4792,10 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
         category: "The Beaches & Surf Breaks",
         title: "Midigama Beach & Coastal Coves",
         description:
-          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
+          "Legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lankaâ€™s southern coast.",
         footerLeft: "Reef breaks & tidepools",
         href: "/experiences/midigama-beach",
-        linkLabel: "View Dedicated Page →",
+        linkLabel: "View Dedicated Page â†’",
       },
       {
         id: "kushtarajagala-rock-relief",
@@ -4812,7 +4813,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub →",
+        linkLabel: "Explore Heritage & Wildlife Hub â†’",
       },
       {
         id: "coastal-spice-lunch",
@@ -4830,7 +4831,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "Seasonal rice and curry with fresh catch, garden vegetables, and bright sambols served in relaxed local dining rooms.",
         footerLeft: "Host recommendations available",
         href: "/experiences/dining",
-        linkLabel: "Explore Coastal Dining Guide →",
+        linkLabel: "Explore Coastal Dining Guide â†’",
       },
     ],
   },

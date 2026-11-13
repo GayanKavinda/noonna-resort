@@ -29,13 +29,13 @@ function PlaceholderImage({
     <div
       className={`relative overflow-hidden border border-slate-100 bg-gradient-to-br from-slate-200 via-slate-100 to-[#dbe9f2] ${className}`}
     >
-      <div className="absolute inset-0 flex items-center justify-center text-slate-400">
+      <div className="absolute inset-0 flex items-center justify-center text-slate-500">
         <ImageIcon className="w-8 h-8" strokeWidth={1.5} />
       </div>
       {overlay !== "none" && <div className={`absolute inset-0 ${grad}`} />}
       {image.topBadge && (
         <div
-          className={`absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white uppercase tracking-wider font-medium ${
+          className={`absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-[#25566f]/90 backdrop-blur-md border border-white/30 text-white uppercase tracking-wider font-medium ${
             image.topBadge.includes("06:00") || image.topBadge.includes("Photography")
               ? "px-3 py-1 text-[10px] flex items-center gap-1.5 bg-black/60 border-white/20"
               : "text-[10px]"
@@ -80,10 +80,17 @@ function PlaceholderImage({
 
 function Facts({ facts }: { facts: HeritageChapterData["facts"] }) {
   return (
-    <div className="grid grid-cols-3 gap-2.5 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 p-3 sm:p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 text-neutral-800">
       {facts.map((f, i) => (
-        <div key={f.label} className={i > 0 ? "pl-2.5 border-l border-slate-200" : ""}>
-          <span className="text-[10px] text-neutral-400 block uppercase tracking-wider font-medium">
+        <div
+          key={f.label}
+          className={
+            i > 0
+              ? "pt-2.5 border-t border-slate-200 sm:pt-0 sm:border-t-0 sm:pl-2.5 sm:border-l"
+              : ""
+          }
+        >
+          <span className="text-[10px] text-neutral-500 block uppercase tracking-wider font-medium">
             {f.label}
           </span>
           <span className="text-xs font-semibold text-[#173F56] block">{f.value}</span>
@@ -96,23 +103,23 @@ function Facts({ facts }: { facts: HeritageChapterData["facts"] }) {
 
 function Actions({ actions }: { actions: HeritageChapterData["actions"] }) {
   return (
-    <div className="flex flex-wrap items-center gap-2.5 pt-1">
+    <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-2.5 pt-1">
       {actions.map((a) => (
         <a
           key={a.label}
           className={
             a.variant === "outline"
-              ? "inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#397FA8] hover:border-[#397FA8] transition-colors text-xs font-medium shadow-sm"
-              : "inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#397FA8] text-white hover:bg-[#2c6687] transition-colors text-xs font-medium shadow-sm"
+              ? "inline-flex w-full sm:w-auto items-center justify-center gap-1.5 px-4 py-2.5 sm:py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#2f6b8f] hover:border-[#2f6b8f] transition-colors text-xs font-medium shadow-sm text-center"
+              : "inline-flex w-full sm:w-auto items-center justify-center gap-1.5 px-4 py-2.5 sm:py-2 rounded-lg bg-[#2f6b8f] text-white hover:bg-[#25566f] transition-colors text-xs font-medium shadow-sm text-center"
           }
           href={a.href}
           rel="noopener noreferrer"
           target="_blank"
         >
           {a.icon === "map" ? (
-            <MapPin className={`w-4 h-4 ${a.variant === "outline" ? "text-[#397FA8]" : ""}`} />
+            <MapPin className={`w-4 h-4 shrink-0 ${a.variant === "outline" ? "text-[#2f6b8f]" : ""}`} />
           ) : (
-            <MessageCircle className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4 shrink-0" />
           )}
           <span>{a.label}</span>
         </a>
@@ -125,14 +132,14 @@ function TextBlock({ chapter }: { chapter: HeritageChapterData }) {
   return (
     <div className="space-y-4">
       <div className="space-y-1.5">
-        <div className="flex flex-wrap items-center gap-2 mb-1">
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1">
           {chapter.badges.map((b) =>
             b.star ? (
               <span
                 key={b.text}
-                className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#397FA8]/20 text-[10px] tracking-wider uppercase font-semibold"
+                className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EBF4F9] text-[#173F56] border border-[#2f6b8f]/20 text-[10px] tracking-wider uppercase font-semibold"
               >
-                <span className="text-[#397FA8]">★</span> {b.text}
+                <span className="text-[#2f6b8f]">★</span> {b.text}
               </span>
             ) : (
               <span
@@ -144,10 +151,10 @@ function TextBlock({ chapter }: { chapter: HeritageChapterData }) {
             )
           )}
         </div>
-        <h3 className="font-cormorant text-2xl lg:text-3xl font-medium text-[#173F56] leading-snug tracking-tight">
+        <h3 className="font-cormorant text-[1.7rem] leading-tight sm:text-2xl lg:text-3xl font-medium text-[#173F56] sm:leading-snug tracking-tight text-balance">
           {chapter.title}
         </h3>
-        <p className="text-xs font-medium text-[#397FA8] tracking-wide">
+        <p className="text-xs font-medium text-[#2f6b8f] tracking-wide">
           {chapter.subtitle}
         </p>
       </div>
@@ -171,11 +178,11 @@ function ChapterImages({ chapter }: { chapter: HeritageChapterData }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <PlaceholderImage
             image={i0}
-            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-[220px]"
+            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-0 sm:min-h-[220px]"
           />
           <PlaceholderImage
             image={i1}
-            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-[140px]"
+            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-0 sm:min-h-[140px]"
           />
         </div>
       );
@@ -184,11 +191,11 @@ function ChapterImages({ chapter }: { chapter: HeritageChapterData }) {
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
           <PlaceholderImage
             image={i0}
-            className="sm:col-span-7 rounded-2xl shadow-sm min-h-[260px] sm:min-h-[320px]"
+            className="sm:col-span-7 rounded-2xl shadow-sm min-h-[220px] sm:min-h-[320px]"
           />
           <PlaceholderImage
             image={i1}
-            className="sm:col-span-5 rounded-2xl shadow-sm min-h-[200px] sm:min-h-[320px]"
+            className="sm:col-span-5 rounded-2xl shadow-sm min-h-[180px] sm:min-h-[320px]"
           />
         </div>
       );
@@ -197,11 +204,11 @@ function ChapterImages({ chapter }: { chapter: HeritageChapterData }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <PlaceholderImage
             image={i0}
-            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-[240px]"
+            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-0 sm:min-h-[240px]"
           />
           <PlaceholderImage
             image={i1}
-            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-[140px]"
+            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-0 sm:min-h-[140px]"
           />
         </div>
       );
@@ -210,22 +217,22 @@ function ChapterImages({ chapter }: { chapter: HeritageChapterData }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <PlaceholderImage
             image={i0}
-            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-[220px]"
+            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-0 sm:min-h-[220px]"
           />
           <PlaceholderImage
             image={i1}
-            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-[140px]"
+            className="sm:col-span-2 rounded-xl shadow-sm aspect-[21/9] min-h-0 sm:min-h-[140px]"
           />
         </div>
       );
     case "whale":
       return (
-        <div className="grid grid-cols-2 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
           {[i0, i1, i2, i3].filter(Boolean).map((img, idx) => (
             <PlaceholderImage
               key={idx}
               image={img}
-              className="rounded-2xl shadow-sm aspect-[16/10]"
+              className="rounded-2xl shadow-sm aspect-[16/10] min-h-0 sm:min-h-[140px]"
               compact
             />
           ))}
@@ -233,16 +240,24 @@ function ChapterImages({ chapter }: { chapter: HeritageChapterData }) {
       );
     case "snake":
       return (
-        <div className="grid grid-cols-2 gap-3.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
           <PlaceholderImage
             image={i0}
-            className="col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-[220px]"
+            className="sm:col-span-2 rounded-2xl shadow-sm aspect-[16/9] min-h-0 sm:min-h-[220px]"
           />
-          <PlaceholderImage image={i1} className="rounded-xl shadow-sm aspect-[16/10]" compact />
-          <PlaceholderImage image={i2} className="rounded-xl shadow-sm aspect-[16/10]" compact />
+          <PlaceholderImage
+            image={i1}
+            className="rounded-xl shadow-sm aspect-[16/10] min-h-0 sm:min-h-[120px]"
+            compact
+          />
+          <PlaceholderImage
+            image={i2}
+            className="rounded-xl shadow-sm aspect-[16/10] min-h-0 sm:min-h-[120px]"
+            compact
+          />
           <PlaceholderImage
             image={i3}
-            className="col-span-2 rounded-xl shadow-sm aspect-[21/9]"
+            className="sm:col-span-2 rounded-xl shadow-sm aspect-[16/9] sm:aspect-[21/9] min-h-0 sm:min-h-[140px]"
             compact
           />
         </div>
@@ -260,9 +275,9 @@ export function HeritageChapter({ chapter }: { chapter: HeritageChapterData }) {
   return (
     <article
       id={`chapter-${chapter.number}`}
-      className="max-w-7xl mx-auto px-6 lg:px-8 scroll-mt-28"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24 sm:scroll-mt-28"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
         {textFirst ? (
           <>
             <div className={`${textColClass} order-2 lg:order-1`}>

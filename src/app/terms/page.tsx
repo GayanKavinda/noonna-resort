@@ -3,6 +3,7 @@ import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
+import { Reveal } from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -82,33 +83,36 @@ const sections = [
 export default function TermsPage() {
   return (
     <div className="w-full bg-white min-h-screen text-slate-700 pt-20">
-      <section className="w-full bg-white py-4 border-b border-[#D9EAF3]/60">
+      <section className="w-full bg-white py-3 sm:py-4 border-b border-[#D9EAF3]/60">
         <Container>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]} />
         </Container>
       </section>
 
-      <section className="py-12 sm:py-16">
+      <section className="py-10 sm:py-12 lg:py-16">
         <Container>
+          <Reveal>
           <SectionHeading
             eyebrow="stay with clarity..."
             title="Terms & Conditions"
             deck="These terms outline general website information and confirmed stay policies for Noonna Beach Hotel. Reservation-specific conditions provided on Booking.com or agreed directly with the property take precedence where applicable."
             alignment="left"
             isHero
-            className="mb-10 max-w-none"
+            className="mb-8 sm:mb-10 max-w-none"
           />
+          </Reveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          <Reveal delay={0.1}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
             {sections.map((section) => (
               <article
                 key={section.title}
-                className="rounded-2xl border border-[#D9EAF3] bg-[#EBF5FB]/20 p-6 sm:p-8"
+                className="rounded-2xl border border-[#D9EAF3] bg-[#EBF5FB]/20 p-5 sm:p-6 md:p-8"
               >
-                <h2 className="font-heading text-2xl sm:text-[28px] text-[#173F56] font-normal tracking-tight mb-4">
+                <h2 className="font-heading text-xl sm:text-2xl md:text-[28px] text-[#173F56] font-normal tracking-tight mb-3 sm:mb-4 leading-snug text-balance">
                   {section.title}
                 </h2>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {section.body.map((paragraph) => (
                     <p key={paragraph} className="font-body text-sm sm:text-base font-light leading-relaxed text-slate-600">
                       {paragraph}
@@ -118,12 +122,15 @@ export default function TermsPage() {
               </article>
             ))}
           </div>
+          </Reveal>
 
-          <aside className="mt-6 lg:mt-8 rounded-xl border border-[#D9EAF3] bg-white p-5 text-sm text-slate-600 font-light leading-relaxed">
+          <Reveal delay={0.15}>
+          <aside className="mt-5 sm:mt-6 lg:mt-8 rounded-xl border border-[#D9EAF3] bg-white p-4 sm:p-5 text-sm text-slate-600 font-light leading-relaxed">
             <p>
               <span className="font-medium text-[#173F56]">Important:</span> Cancellation/prepayment details depend on the accommodation type and the conditions selected for your reservation. Please confirm the exact conditions shown on Booking.com for Booking.com reservations, or the conditions specifically agreed for a direct reservation.
             </p>
           </aside>
+          </Reveal>
         </Container>
       </section>
 

@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results
+/playwright/.auth/
+
+# qa-evidence (test artifacts - too large / paths too long for git)
+/qa-evidence/
+
