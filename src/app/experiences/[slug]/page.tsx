@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { DestinationDetailPage } from "@/components/sections/experiences/destination/DestinationDetailPage";
 import { getDestinationDetailBySlug } from "@/data/destinationDetailData";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 export const instant = false;
 
@@ -66,8 +67,24 @@ export default async function ExperienceDestinationPage({ params }: PageProps) {
   const { slug } = await params;
   const destination = getDestinationDetailBySlug(slug);
   if (!destination) notFound();
+
+  // Visible breadcrumb: Home > Experiences > Beaches & Surf > {destination name}
+  // JSON-LD emitted only when SITE_URL is configured (absolute URLs required).
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+    { name: destination.breadcrumbCategory, path: "/experiences#nearby-beaches" },
+    { name: destination.name, path: `/experiences/${destination.slug}` },
+  ]);
+
   return (
     <main className="w-full pt-20 bg-surface-container-lowest min-h-screen">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <DestinationDetailPage destination={destination} />
     </main>
   );

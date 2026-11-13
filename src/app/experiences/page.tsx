@@ -8,6 +8,7 @@ import { CoastalMotion } from "@/components/sections/experiences/CoastalMotion";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "Experiences & Coastal Journeys";
 const fullTitle = "Experiences & Coastal Journeys | Noonna Beach Hotel";
@@ -60,8 +61,19 @@ export const metadata: Metadata = {
 };
 
 export default function ExperiencesPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+  ]);
+
   return (
     <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <section className="w-full bg-surface-container-lowest border-b border-[#D9EAF3]/60">
         <div className="max-w-7xl mx-auto w-full px-6 lg:px-12 py-4">
           <Breadcrumb

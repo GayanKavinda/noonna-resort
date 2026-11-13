@@ -7,6 +7,7 @@ import { ContactLocation } from "@/components/sections/contact/ContactLocation";
 import { ContactFaq } from "@/components/sections/contact/ContactFaq";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "Contact & Booking";
 const fullTitle = "Contact & Booking | Noonna Beach Hotel";
@@ -39,8 +40,19 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Contact & Booking", path: "/contact" },
+  ]);
+
   return (
     <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <section className="w-full bg-surface-container-lowest py-3 sm:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <Breadcrumb

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { Reveal } from "@/components/motion/Reveal";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "Terms & Conditions";
 const fullTitle = "Terms & Conditions | Noonna Beach Hotel";
@@ -97,8 +98,19 @@ const sections = [
 ];
 
 export default function TermsPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Terms & Conditions", path: "/terms" },
+  ]);
+
   return (
     <div className="w-full bg-white min-h-screen text-slate-700 pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <section className="w-full bg-white py-3 sm:py-4 border-b border-[#D9EAF3]/60">
         <Container>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]} />

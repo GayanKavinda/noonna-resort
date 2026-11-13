@@ -12,6 +12,7 @@
   Utensils,
   Waves,
 } from "lucide-react";
+import Link from "next/link";
 import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
 
 export default function HotelSurroundings() {
@@ -40,7 +41,7 @@ export default function HotelSurroundings() {
               Hotel Surroundings &amp; What&apos;s Nearby
             </h2>
             <p className="font-body-md text-body-md text-[#4A6B82] max-w-2xl font-light leading-relaxed">
-              Everything within easy reach of Noonna Beach Hotel in Kumbalgama â€” from secluded bays and village eateries to railway stations and regional airstrips.
+              Everything within easy reach of Noonna Beach Hotel in Kumbalgama — from secluded bays and village eateries to railway stations and regional airstrips.
             </p>
           </div>
           <div className="flex items-center gap-3 self-start md:self-auto shrink-0">
@@ -93,7 +94,7 @@ export default function HotelSurroundings() {
                     <Utensils className="w-4 h-4" />
                   </div>
                   <div>
-                    <h3 className="font-serif text-lg font-normal text-[#173F56] leading-tight" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Restaurants &amp; CafÃ©s</h3>
+                    <h3 className="font-serif text-lg font-normal text-[#173F56] leading-tight" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>Restaurants &amp; Cafés</h3>
                     <span className="font-mono text-[10px] tracking-widest uppercase text-slate-500 block pt-0.5">Local Dining</span>
                   </div>
                 </div>
@@ -221,16 +222,15 @@ export default function HotelSurroundings() {
           <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between flex-wrap gap-4">
             <div className="px-4 py-2 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-[#173F56] font-label-sm text-label-sm uppercase tracking-wider font-semibold border border-white/60 shadow-sm flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-primary" />
-              Southern Coast Experiences â€¢ Handcrafted Daily Itineraries
+              Southern Coast Experiences • Handcrafted Daily Itineraries
             </div>
-            <a
+            <Link
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f6b8f] text-white font-label-sm text-label-sm font-medium hover:bg-[#2D6A8E] transition-colors shadow-sm"
-              data-path="contact"
-              href="#"
+              href="/contact#inquiry-form"
             >
               <span>Reserve with Concierge</span>
               <ArrowUpRight size={16} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">

@@ -19,8 +19,8 @@ export function DestinationConciergeBanner({ concierge }: { concierge: Destinati
             <a
               className="min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-sm font-medium rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all text-center"
               href={concierge.primaryHref}
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <MessageCircle className="w-[18px] h-[18px] shrink-0" aria-hidden="true" />
               <span>{concierge.primaryLabel}</span>
@@ -28,8 +28,8 @@ export function DestinationConciergeBanner({ concierge }: { concierge: Destinati
             <a
               className="min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f]/10 hover:bg-[#2f6b8f]/20 text-[#2f6b8f] text-sm font-medium rounded-xl flex items-center justify-center gap-2 border border-[#2f6b8f]/20 transition-all text-center"
               href={concierge.secondaryHref}
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Headset className="w-[18px] h-[18px] shrink-0" aria-hidden="true" />
               <span>{concierge.secondaryLabel}</span>

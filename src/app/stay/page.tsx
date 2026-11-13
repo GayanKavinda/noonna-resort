@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { StayHero } from "@/components/sections/stay/StayHero";
 import { StayVisualMosaic } from "@/components/sections/stay/StayVisualMosaic";
 import { StayBlueprint } from "@/components/sections/stay/StayBlueprint";
@@ -8,6 +8,7 @@ import { StayPolicies } from "@/components/sections/stay/StayPolicies";
 import { StayLocationMap } from "@/components/sections/stay/StayLocationMap";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "The Stay | Entire Resort Rental";
 const fullTitle = "The Stay | Entire Resort Rental | Noonna Beach Hotel";
@@ -48,18 +49,24 @@ export const metadata: Metadata = {
 };
 
 export default function StayPage() {
-  // Structured data uses only supported, owner/Booking-confirmed information.
-  // Exact production hostname/canonical, fixed priceRange, ratings/reviews,
-  // street/postal details, room/occupancy counts, and unverified geo are omitted.
-  // Coordinates below are the property pin resolved from the owner-provided
-  // Google Maps link (https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8): !3d5.93312 !4d80.6138029.
-  const hotelRoomSchema = {
+  // Structured data: supported, owner/Booking-confirmed information only.
+  // Entire resort rental presentation (not a multi-room catalogue). No integrated
+  // booking engine, no payment processing/reservation confirmation on this site.
+  // Hostname-dependent URL fields are emitted only when a validated SITE_URL is configured.
+  // Coordinates are the verified property pin from the owner-provided Google Maps link
+  // (https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8): !3d5.93312 !4d80.6138029.
+  const pageUrl = absoluteUrl("/stay");
+  const imagePath = "/images/rooms/deluxe-ocean-suite.jpg";
+  const imageUrlAbs = absoluteUrl(imagePath);
+
+  const hotelSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "LodgingBusiness",
     name: "Noonna Beach Hotel",
     description:
       "Noonna Beach Hotel in Kumbalgama, Southern Province, Sri Lanka, offered as an entire resort rental for a private resort stay along the southern coast.",
-    image: "/images/rooms/deluxe-ocean-suite.jpg",
+    ...(pageUrl ? { "@id": pageUrl, url: pageUrl } : {}),
+    image: imageUrlAbs ?? imagePath,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Kumbalgama",
@@ -71,6 +78,7 @@ export default function StayPage() {
       latitude: 5.93312,
       longitude: 80.6138029,
     },
+    hasMap: "https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8",
     amenityFeature: [
       {
         "@type": "LocationFeatureSpecification",
@@ -124,7 +132,7 @@ export default function StayPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelRoomSchema) }}
+        dangerouslySetInnerHTML={{ __html: stringifyJsonLd(hotelSchema) }}
       />
 
       <div className="flex flex-col w-full">

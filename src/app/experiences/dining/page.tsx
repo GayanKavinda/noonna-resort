@@ -5,6 +5,7 @@ import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { DiningHero } from "@/components/sections/experiences/dining/DiningHero";
 import { DiningDirectorySection } from "@/components/sections/experiences/dining/DiningDirectorySection";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "A Taste of Sri Lanka — 10 Coastal Dining Destinations";
 const fullTitle = "A Taste of Sri Lanka — 10 Coastal Dining Destinations | Noonna Beach Hotel";
@@ -37,8 +38,20 @@ export const metadata: Metadata = {
 };
 
 export default function DiningPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+    { name: "A Taste of Sri Lanka — 10 Coastal Dining Destinations", path: "/experiences/dining" },
+  ]);
+
   return (
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <div className="flex flex-col w-full">
         {/* 1. BREADCRUMB & METADATA BAR */}
         <section className="w-full border-b border-[#D9EAF3]/60 bg-white">

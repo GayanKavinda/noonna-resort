@@ -3,6 +3,7 @@ import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { GalleryPageContent } from "@/components/sections/gallery/GalleryPageContent";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "Gallery — Moments by the Sea";
 const fullTitle = "Gallery — Moments by the Sea | Noonna Beach Hotel";
@@ -34,8 +35,19 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Gallery", path: "/gallery" },
+  ]);
+
   return (
     <div className="w-full bg-surface-container-lowest min-h-screen text-on-surface pt-24">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <div className="flex flex-col w-full bg-surface-container-lowest">
         <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 pt-8 pb-4">
           <Breadcrumb

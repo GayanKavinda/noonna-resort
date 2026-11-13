@@ -81,8 +81,8 @@ export const HomeLocation: React.FC = () => {
               <a
                 className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-5 text-xs font-semibold uppercase tracking-wider text-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto"
                 href={MAPS_URL}
-                rel="noopener noreferrer"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>Get Directions</span>
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

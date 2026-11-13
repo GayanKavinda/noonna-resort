@@ -118,8 +118,8 @@ export function NearbyBeachesCarousel() {
                   <a
                     className="text-[#2f6b8f] hover:text-[#2c6687] transition-colors flex items-center gap-1 font-semibold shrink-0"
                     href={card.mapHref}
-                    rel="noopener noreferrer"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Explore Maps →
                   </a>

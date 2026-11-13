@@ -14,6 +14,7 @@ import {
   HERITAGE_CHAPTERS,
 } from "@/data/southernHeritageData";
 import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
 
 const title = "Southern Heritage & Coastal Expeditions";
 const fullTitle = "Southern Heritage & Coastal Expeditions | Noonna Beach Hotel";
@@ -61,9 +62,20 @@ export const metadata: Metadata = {
 export default function SouthernHeritagePage() {
   const division1 = HERITAGE_CHAPTERS.filter((c) => c.division === 1);
   const division2 = HERITAGE_CHAPTERS.filter((c) => c.division === 2);
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+    { name: "Historical & Cultural Gems", path: "/experiences/southern-heritage-coastal-expeditions" },
+  ]);
 
   return (
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       {/* BREADCRUMBS & CONTEXT BAR */}
       <section className="w-full bg-white border-b border-[#D9EAF3]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
