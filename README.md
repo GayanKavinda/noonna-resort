@@ -2,11 +2,11 @@
 
   <img src="public/images/branding/logo.png" alt="Noonna Beach Hotel Logo" width="120" />
 
-  # 🌊 Noonna Beach Hotel & Coastal Sanctuary
-  
-  **A Luxury Coastal Sanctuary on Sri Lanka's Southern Shoreline**
-  
-  *Kumbalgama, Matara District, Southern Province, Sri Lanka*
+# 🌊 Noonna Beach Hotel & Coastal Sanctuary
+
+**A Luxury Coastal Sanctuary on Sri Lanka's Southern Shoreline**
+
+_Kumbalgama, Matara District, Southern Province, Sri Lanka_
 
   <p align="center">
     <a href="https://www.booking.com/hotel/lk/noonna-beach.html">
@@ -27,16 +27,18 @@
     <a href="#-contact--operations">Contact</a>
   </p>
 
-  ---
+---
+
 </div>
 
 ## 📌 Executive Summary
 
-**Noonna Beach Hotel** is a premium, boutique beachfront retreat nestled along the pristine southern coastline of Sri Lanka. 
+**Noonna Beach Hotel** is a premium, boutique beachfront retreat nestled along the pristine southern coastline of Sri Lanka.
 
 This repository houses the official high-performance web platform designed to provide potential guests with a digital experience mirroring the luxury and tranquility of the physical resort. The platform blends high-definition visuals, immersive regional storytelling, streamlined reservation handoffs via Booking.com, and seamless direct inquiries via integrated transactional emails.
 
 ### 🌟 Highlights at a Glance
+
 - 🌴 **Prime Oceanfront Location**: Kumbalgama beachside haven with direct access to southern coastal surf and heritage.
 - 🛏️ **Boutique Accommodation**: Curated showcase of private Double Rooms with ocean vistas, modern comforts, and bespoke amenities.
 - 🗺️ **Comprehensive Regional Guide**: 28+ southern coast destinations, surf breaks (Midigama, Mirissa, Weligama), and cultural expeditions.
@@ -84,21 +86,21 @@ This repository houses the official high-performance web platform designed to pr
 ```mermaid
 flowchart TD
     Guest([Prospective Guest]) --> Landing[Homepage / Landing Page]
-    
+
     Landing --> ExploreStay[Explore 'The Stay']
     Landing --> ExploreExp[Browse Experiences & Surf Spots]
     Landing --> ViewGallery[Browse Photo Gallery]
     Landing --> ContactForm[Direct Contact & Inquiries]
-    
+
     ExploreStay --> BookingAction{Ready to Book?}
     BookingAction -- Yes --> BookingChannel[Official Booking.com Partner Engine]
     BookingAction -- Custom Inquiry --> ContactForm
-    
+
     ContactForm --> Validation[Zod & React Hook Form Validation]
     Validation --> API[Next.js API Route /api/contact]
     API --> Resend[Resend Transactional Email Gateway]
     Resend --> HotelAdmin([Hotel Operations Team])
-    
+
     BookingChannel --> ReservationConfirmed([Confirmed Stay at Noonna])
 ```
 
@@ -137,29 +139,29 @@ graph LR
 
 ## 💎 Key Features
 
-| Category | Capability | Description |
-|---|---|---|
-| **Digital Concierge** | **The Stay Showcase** | High-resolution room showcase with dimension specs, amenities (A/C, WiFi, ocean balcony), and pricing indicators. |
-| **Regional Discovery** | **28+ Destination Guides** | Deep guides covering Southern Coast beaches (Midigama, Mirissa, Weligama), Dondra Lighthouse, and safari excursions. |
-| **Reservation Engine** | **Verified Partner Integration**| Seamless handoff to verified Booking.com listing ensuring immediate calendar sync and secure transactions. |
-| **Inquiry Pipeline** | **Direct Guest Messaging** | Server-side validated contact form powered by **Resend** with real-time feedback via **Sonner**. |
-| **Interactive UI** | **Touch-Optimized Carousels** | Responsive sliders, Bento grid layouts, lightbox gallery, and fluid mobile navigation menu. |
-| **Quality Assured** | **Comprehensive QA** | Full end-to-end regression test suite orchestrated via **Playwright** across desktop and mobile viewports. |
+| Category               | Capability                       | Description                                                                                                          |
+| ---------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Digital Concierge**  | **The Stay Showcase**            | High-resolution room showcase with dimension specs, amenities (A/C, WiFi, ocean balcony), and pricing indicators.    |
+| **Regional Discovery** | **28+ Destination Guides**       | Deep guides covering Southern Coast beaches (Midigama, Mirissa, Weligama), Dondra Lighthouse, and safari excursions. |
+| **Reservation Engine** | **Verified Partner Integration** | Seamless handoff to verified Booking.com listing ensuring immediate calendar sync and secure transactions.           |
+| **Inquiry Pipeline**   | **Direct Guest Messaging**       | Server-side validated contact form powered by **Resend** with real-time feedback via **Sonner**.                     |
+| **Interactive UI**     | **Touch-Optimized Carousels**    | Responsive sliders, Bento grid layouts, lightbox gallery, and fluid mobile navigation menu.                          |
+| **Quality Assured**    | **Comprehensive QA**             | Full end-to-end regression test suite orchestrated via **Playwright** across desktop and mobile viewports.           |
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Domain | Technology | Purpose |
-|---|---|---|
-| **Core Framework** | [Next.js 16 (App Router)](https://nextjs.org/) | Hybrid Server Components, optimized image pipelines, and file-based routing. |
-| **UI Library** | [React 19](https://react.dev/) | Modern concurrent UI architecture and component state handling. |
-| **Styling** | [Tailwind CSS 4](https://tailwindcss.com/) | Cutting-edge utility-first CSS engine with responsive design tokens. |
-| **Typography & Icons** | [Lucide React](https://lucide.dev/) | Consistent, lightweight vector iconography. |
-| **Animations** | [Framer Motion](https://www.framer.com/motion/) | Smooth entrance, scroll transitions, and interactive visual polish. |
-| **Form Management** | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | Type-safe form validation with client and server resilience. |
-| **Email Delivery** | [Resend](https://resend.com/) | Robust API integration for inquiry deliveries to hotel operations. |
-| **Testing & Verification** | [Playwright](https://playwright.dev/) | Comprehensive automated end-to-end cross-browser testing. |
+| Domain                     | Technology                                                                | Purpose                                                                      |
+| -------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Core Framework**         | [Next.js 16 (App Router)](https://nextjs.org/)                            | Hybrid Server Components, optimized image pipelines, and file-based routing. |
+| **UI Library**             | [React 19](https://react.dev/)                                            | Modern concurrent UI architecture and component state handling.              |
+| **Styling**                | [Tailwind CSS 4](https://tailwindcss.com/)                                | Cutting-edge utility-first CSS engine with responsive design tokens.         |
+| **Typography & Icons**     | [Lucide React](https://lucide.dev/)                                       | Consistent, lightweight vector iconography.                                  |
+| **Animations**             | [Framer Motion](https://www.framer.com/motion/)                           | Smooth entrance, scroll transitions, and interactive visual polish.          |
+| **Form Management**        | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) | Type-safe form validation with client and server resilience.                 |
+| **Email Delivery**         | [Resend](https://resend.com/)                                             | Robust API integration for inquiry deliveries to hotel operations.           |
+| **Testing & Verification** | [Playwright](https://playwright.dev/)                                     | Comprehensive automated end-to-end cross-browser testing.                    |
 
 ---
 
@@ -201,10 +203,12 @@ noonna-resort/
 Follow these instructions to run the project locally for development or review.
 
 ### Prerequisites
+
 - **Node.js**: `v18.17.0` or higher
 - **Package Manager**: `npm`, `pnpm`, or `yarn`
 
 ### 1. Clone & Install
+
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/noonna-resort.git
@@ -217,12 +221,15 @@ npm install
 ```
 
 ### 2. Configure Environment Variables
+
 Create a `.env.local` file from the provided `.env.example`:
+
 ```bash
 cp .env.example .env.local
 ```
 
 Configure your credentials:
+
 ```env
 # Resend API Key for sending inquiries
 RESEND_API_KEY=re_your_api_key_here
@@ -235,12 +242,15 @@ RESEND_FROM_EMAIL=inquiries@noonnabeach.com
 ```
 
 ### 3. Run Development Server
+
 ```bash
 npm run dev
 ```
+
 Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the resort platform.
 
 ### 4. Build for Production
+
 ```bash
 # Generate optimized production build
 npm run build
@@ -250,6 +260,7 @@ npm run start
 ```
 
 ### 5. Automated Testing (Playwright)
+
 ```bash
 # Run comprehensive E2E test suite
 npx playwright test

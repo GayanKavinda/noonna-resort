@@ -1,4 +1,4 @@
-﻿import { HOTEL_INFO } from "@/lib/constants";
+import { HOTEL_INFO } from "@/lib/constants";
 
 export interface StaySpecification {
   id: string;
@@ -61,31 +61,49 @@ export const STAY_DATA = {
     },
   ],
 
-  // 4 Genuine project images mapped to the mosaic
+  // 7 Space images mapped to the visual mosaic
   mosaicImages: [
     {
-      src: "/images/rooms/deluxe-ocean-suite.jpg",
-      alt: "Interior space at Noonna Beach Hotel with natural light",
-      caption: "Entire Resort Rental Â· Private Resort Stay",
+      src: "/images/stay/a-glimpse-into-the-space/Air_Conditioned_Four_Poster_Canopy_Bedroom.webp",
+      alt: "Air-Conditioned Four-Poster Canopy Bedroom at Noonna Beach Hotel",
+      caption: "Air-Conditioned Four-Poster Canopy Bedroom",
       span: "md:col-span-7 h-[380px] md:h-[440px]",
     },
     {
-      src: "/images/hotel/hero-beach.jpg",
-      alt: "Kumbalgama sandy shoreline steps from Noonna Beach Hotel",
-      caption: "Kumbalgama Coastline & Surf",
+      src: "/images/stay/a-glimpse-into-the-space/Rooftop_Lounge_Deck_at_Night.webp",
+      alt: "Rooftop Lounge Deck at Night overlooking the coastal skyline",
+      caption: "Rooftop Lounge Deck at Night",
       span: "md:col-span-5 h-[380px] md:h-[440px]",
     },
     {
-      src: "/images/hotel/property-exterior.jpg",
-      alt: "Exterior facade and private entrance of Noonna Beach Hotel",
-      caption: "Private Coastal Entrance & Grounds",
-      span: "md:col-span-6 h-[300px] md:h-[340px]",
+      src: "/images/stay/a-glimpse-into-the-space/Covered_Rooftop_Bar_and_Lounge_Terrace.webp",
+      alt: "Covered Rooftop Bar and Lounge Terrace at Noonna Beach Hotel",
+      caption: "Covered Rooftop Bar & Lounge Terrace",
+      span: "md:col-span-4 h-[300px] md:h-[350px]",
     },
     {
-      src: "/images/hotel/property-grounds.jpg",
-      alt: "Lush tropical palm garden surrounding Noonna Beach Hotel",
-      caption: "Tropical Coastal Garden",
-      span: "md:col-span-6 h-[300px] md:h-[340px]",
+      src: "/images/stay/a-glimpse-into-the-space/Spacious_Kitchen_and_Dining_Area.webp",
+      alt: "Spacious Kitchen and Dining Area with modern cooking amenities",
+      caption: "Spacious Kitchen & Dining Area",
+      span: "md:col-span-4 h-[300px] md:h-[350px]",
+    },
+    {
+      src: "/images/stay/a-glimpse-into-the-space/Oceanfront_Rooftop_BBQ_and_Grill_Deck.webp",
+      alt: "Oceanfront Rooftop BBQ and Grill Deck with seaside views",
+      caption: "Oceanfront Rooftop BBQ & Grill Deck",
+      span: "md:col-span-4 h-[300px] md:h-[350px]",
+    },
+    {
+      src: "/images/stay/a-glimpse-into-the-space/Modern_Industrial_Private_Washroom.webp",
+      alt: "Modern Industrial Private Washroom with premium rainfall shower",
+      caption: "Modern Industrial Private Washroom",
+      span: "md:col-span-6 h-[320px] md:h-[370px]",
+    },
+    {
+      src: "/images/stay/a-glimpse-into-the-space/Tropical_Terrace_Blooms_Overlooking_Coast.webp",
+      alt: "Tropical Terrace Blooms Overlooking the Southern Coastline",
+      caption: "Tropical Terrace Blooms Overlooking Coast",
+      span: "md:col-span-6 h-[320px] md:h-[370px]",
     },
   ],
 
@@ -211,7 +229,7 @@ export const STAY_DATA = {
     "Wake up to nourishing seaside dining and artisanal flavors prepared with seasonal southern Sri Lankan ingredients and versatile international dishes.",
   diningBadge: "Dining & Breakfast",
   diningCursive: "a taste of the coast...",
-  diningImageBadge: "Oceanfront Dining & Breakfast Spread",
+  diningImageBadge: "Rooftop Lounge and Bar Night View",
   diningHostNote:
     "Dining arrangements, daily breakfast inclusions, and seasonal menu selections to be confirmed directly with host upon check-in.",
 

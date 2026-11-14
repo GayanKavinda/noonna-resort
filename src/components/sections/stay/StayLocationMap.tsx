@@ -5,6 +5,9 @@ import { STAY_DATA } from "@/data/stayData";
 import { MapPin, Train, Waves, Umbrella, Compass, ArrowRight } from "lucide-react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Noonna+Beach+Hotel,+Kumbalgama,+Southern+Province,+Sri+Lanka";
+
 interface StayLocationMapProps {
   className?: string;
 }
@@ -84,8 +87,8 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
             <div className="rounded-3xl border border-[#D9EAF3] bg-white p-2.5 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:p-3">
               <div className="relative h-[280px] w-full overflow-hidden rounded-2xl bg-white sm:h-[340px] md:h-[380px] lg:h-[400px]">
                 <Image
-                  src="/images/hotel/hero-beach.jpg"
-                  alt="Southern Coast Sri Lanka Map View"
+                  src="/images/stay/find-us-on-the-southern-coast/Noonna_Beach_Hotel_Exterior_Aerial_View.webp"
+                  alt="Noonna Beach Hotel Exterior Aerial View"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="h-full w-full object-cover"
@@ -95,12 +98,18 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative flex items-center justify-center">
                     <div className="absolute h-12 w-12 animate-ping rounded-full bg-[#2f6b8f]/20" />
-                    <div className="relative z-10 flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md">
+                    <a
+                      href={MAPS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open Noonna Beach Hotel in Google Maps"
+                      className="relative z-10 flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md transition-colors hover:bg-white"
+                    >
                       <MapPin className="h-5 w-5 text-[#2f6b8f]" />
                       <span className="text-xs font-semibold tracking-wide text-[#173F56]">
                         Noonna Beach Hotel
                       </span>
-                    </div>
+                    </a>
                   </div>
                 </div>
 

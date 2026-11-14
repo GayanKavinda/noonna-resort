@@ -79,8 +79,8 @@ export const StayDiningPreview: React.FC<StayDiningPreviewProps> = ({
             <div className="group relative w-full overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)]">
               <div className="relative aspect-[4/3] min-h-[260px] w-full sm:min-h-[320px] lg:aspect-[5/4] lg:min-h-[320px]">
                 <Image
-                  src="/images/hotel/property-grounds.jpg"
-                  alt="Oceanfront Dining and Breakfast at Noonna Beach Hotel"
+                  src="/images/stay/food-and-your-stay/Rooftop_Lounge_and_Bar_Night_View.webp"
+                  alt="Rooftop Lounge and Bar Night View"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
