@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Production site URL helper for SEO infrastructure (Phase 10.6.3).
  *
  * Configure via SITE_URL environment variable, e.g.:
@@ -20,7 +20,7 @@ function isLoopbackHost(hostname: string): boolean {
 }
 
 export function getSiteUrl(): URL | undefined {
-  const raw = process.env.SITE_URL?.trim();
+  const raw = process.env.SITE_URL?.trim() || process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (!raw) return undefined;
   try {
     const url = new URL(raw);

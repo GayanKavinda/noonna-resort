@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import React from "react";
 import { HOME_FAQS } from "@/data/home";
 import { FaqAccordion } from "@/components/shared/FaqAccordion";
@@ -20,7 +20,7 @@ const title = "Noonna Beach Hotel | Kumbalgama, Sri Lanka";
 const description =
   "Discover Noonna Beach Hotel, a private coastal sanctuary on Sri Lanka's southern shoreline.";
 const canonical = absoluteUrl("/");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/branding/og-image.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

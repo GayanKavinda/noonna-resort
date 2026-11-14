@@ -256,7 +256,7 @@ export default function HotelSurroundings() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-semibold text-primary uppercase tracking-wider">{item.cat}</span>
-                    <span className="text-slate-300">â€¢</span>
+                    <span className="text-slate-500" aria-hidden="true">•</span>
                     <span className="text-xs text-slate-500 font-light">{item.time}</span>
                   </div>
                   <h3 className="font-serif text-xl font-normal text-[#173F56] group-hover:text-[#2f6b8f] transition-colors leading-tight" style={{ fontFamily: "Cormorant Garamond, Georgia, serif" }}>{item.title}</h3>

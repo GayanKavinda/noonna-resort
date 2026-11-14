@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter, Moon_Dance } from "next/font/google";
 import "./globals.css";
 import { SiteLayout } from "@/components/layout/SiteLayout";
@@ -37,13 +37,16 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/hotel/hero-beach.jpg",
-        alt: "Noonna Beach Hotel on Sri Lanka's southern shoreline",
+        url: "/images/branding/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Noonna Beach Hotel - Official Hotel Website",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/branding/og-image.jpg"],
   },
   robots: {
     index: true,
