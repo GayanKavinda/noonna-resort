@@ -27,8 +27,8 @@ export const HomeStayBento: React.FC = () => {
             <div className="group relative min-h-[320px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)] sm:min-h-[380px] lg:min-h-[440px]">
               <div className="relative h-full min-h-[320px] w-full sm:min-h-[380px] lg:min-h-[440px]">
                 <Image
-                  src="/images/rooms/deluxe-ocean-suite.jpg"
-                  alt="Noonna Beach Hotel coastal retreat interior"
+                  src="/images/home/your-own-coastal-hideaway/Noonna_Hotel.webp"
+                  alt="Bedroom at Noonna Resort"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
@@ -65,7 +65,7 @@ export const HomeStayBento: React.FC = () => {
                 </div>
                 <div className="absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] rounded-full border border-[#D9EAF3] bg-white/95 px-3.5 py-1.5 shadow-sm backdrop-blur-sm sm:bottom-4 sm:left-4 sm:px-4">
                   <span className="font-sans text-xs font-medium text-[#173F56]">
-                    Garden Footpath &amp; Sea Breeze
+                    Tropical Garden Pathways
                   </span>
                 </div>
               </div>

@@ -33,10 +33,10 @@ export const HomeLocation: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="mb-1 text-sm font-semibold text-[#173F56]">
+                  <h4 className="mb-1 text-sm font-semibold text-[#173F56] sm:text-[15px]">
                     Airport Transfer &amp; Expressway
                   </h4>
-                  <p className="text-xs font-light leading-relaxed text-slate-600">
+                  <p className="text-[13px] font-light leading-relaxed text-slate-600 sm:text-sm">
                     Approx. 2.5 hours scenic expressway drive from Colombo Bandaranaike International Airport (CMB).
                   </p>
                 </div>
@@ -49,10 +49,10 @@ export const HomeLocation: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="mb-1 text-sm font-semibold text-[#173F56]">
+                  <h4 className="mb-1 text-sm font-semibold text-[#173F56] sm:text-[15px]">
                     Coastal Rail Access
                   </h4>
-                  <p className="text-xs font-light leading-relaxed text-slate-600">
+                  <p className="text-[13px] font-light leading-relaxed text-slate-600 sm:text-sm">
                     Direct coastal railway connections link Galle and Matara stations within 30 minutes of our gates.
                   </p>
                 </div>
@@ -66,10 +66,10 @@ export const HomeLocation: React.FC = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="mb-1 text-sm font-semibold text-[#173F56]">
+                  <h4 className="mb-1 text-sm font-semibold text-[#173F56] sm:text-[15px]">
                     Sanctuary Coordinates
                   </h4>
-                  <p className="text-xs font-light leading-relaxed text-slate-600">
+                  <p className="text-[13px] font-light leading-relaxed text-slate-600 sm:text-sm">
                     Southern Coast Shoreline, Matara District, Southern Province, Sri Lanka.
                   </p>
                 </div>
@@ -107,27 +107,13 @@ export const HomeLocation: React.FC = () => {
             <div className="rounded-3xl border border-[#D9EAF3] bg-white p-2.5 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:p-3">
               <div className="relative h-[280px] w-full overflow-hidden rounded-2xl bg-[#D9EAF3]/40 sm:h-[340px] md:h-[380px]">
                 <Image
-                  src="/images/hotel/hero-beach.jpg"
-                  alt="Southern Coast Sri Lanka Map View"
+                  src="/images/home/find-your-way-to-the-coast/map/Galle Full Droneshot.webp"
+                  alt="Aerial view of Galle and the southern coast"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-[#001e2e]/30" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative flex items-center justify-center">
-                    <div className="absolute h-12 w-12 animate-ping rounded-full bg-[#2f6b8f]/30" />
-                    <div className="relative z-10 flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-4 py-2 shadow-lg backdrop-blur-md">
-                      <svg className="h-5 w-5 text-[#2f6b8f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      <span className="font-sans text-xs font-semibold tracking-wide text-[#173F56]">
-                        Noonna Beach Hotel
-                      </span>
-                    </div>
-                  </div>
-                </div>
                 <div className="absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] rounded-xl border border-[#D9EAF3] bg-white/90 px-3 py-2 font-sans text-xs font-medium text-slate-700 backdrop-blur-sm sm:bottom-4 sm:left-4 sm:px-4">
                   Southern Province, Sri Lanka
                 </div>

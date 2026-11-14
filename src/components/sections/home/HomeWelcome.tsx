@@ -40,8 +40,8 @@ export const HomeWelcome: React.FC = () => {
           <div className="group relative w-full overflow-hidden rounded-3xl border border-[#D9EAF3]/50 bg-white shadow-[0_16px_40px_-8px_rgba(23,63,86,0.06)]">
             <div className="relative h-[280px] w-full sm:h-[360px] md:h-[420px] lg:h-[480px]">
               <Image
-                src="/images/hotel/property-exterior.jpg"
-                alt="Sun-drenched Ocean Veranda facing Indian Ocean"
+                src="/images/home/a-little-closer-to-the-ocean/coastal-rooftop-sun-deck.webp"
+                alt="Coastal rooftop sun deck overlooking the Indian Ocean"
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.01]"
@@ -52,7 +52,7 @@ export const HomeWelcome: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
               <span className="font-sans text-[11px] font-medium uppercase tracking-wider text-[#173F56] sm:text-xs">
-                Sun-drenched Ocean Veranda
+                Coastal Rooftop Sun Deck
               </span>
             </div>
           </div>

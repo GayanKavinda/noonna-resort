@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { HOTEL_INFO } from "@/lib/constants";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
@@ -9,16 +8,19 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 export const HomeHero: React.FC = () => {
   return (
     <section className="relative flex min-h-[100svh] w-full items-center overflow-hidden bg-[#173F56] supports-[height:100dvh]:min-h-[100dvh]">
-      {/* Hero background image (optimized). /videos/home-hero.mp4 unavailable; poster fallback preserved without raw duplicate/video requests. */}
       <div className="absolute inset-0 h-full w-full overflow-hidden">
-        <Image
-          src="/images/hotel/hero-beach.jpg"
-          alt="Sri Lanka Southern Coast Ocean View at Golden Hour"
-          fill
-          priority
-          sizes="100vw"
+        <video
           className="h-full w-full object-cover object-center"
-        />
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hotel/hero-beach.jpg"
+          aria-label="Sri Lanka southern coast ocean view at golden hour"
+        >
+          <source src="/videos/home/hero/hero.webm" type="video/webm" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-[#001e2e]/85 via-[#001e2e]/45 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#001e2e]/80 via-transparent to-black/30" />
       </div>

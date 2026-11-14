@@ -27,8 +27,8 @@ export const HomeExperiences: React.FC = () => {
           <StaggerItem className="group overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)]">
             <div className="relative h-56 overflow-hidden sm:h-64">
               <Image
-                src="/images/hotel/hero-beach.jpg"
-                alt="Southern Coast Beaches & Surf Breaks"
+                src="/images/home/explore-beyond-your-stay/southern-coast-beaches/weligama-beach-the-ultimate-destination-for-vacation.webp"
+                alt="Weligama beach on Sri Lanka's southern coast"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -60,14 +60,14 @@ export const HomeExperiences: React.FC = () => {
           <StaggerItem className="group overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)]">
             <div className="relative h-56 overflow-hidden sm:h-64">
               <Image
-                src="/images/hotel/property-grounds.jpg"
-                alt="Coastal Exploration and Lighthouse Trail"
+                src="/images/home/explore-beyond-your-stay/coastal-exploration/Light-House_Galle_Fort.webp"
+                alt="Lighthouse at Galle Fort on Sri Lanka's southern coast"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute left-4 top-4 rounded-full border border-[#D9EAF3] bg-white/95 px-3.5 py-1 backdrop-blur-md">
-                <span className="font-sans text-xs font-medium text-[#2f6b8f]">Coast Trails</span>
+                <span className="font-sans text-xs font-medium text-[#2f6b8f]">Heritage Coast</span>
               </div>
             </div>
             <div className="p-6 sm:p-8">
@@ -75,13 +75,13 @@ export const HomeExperiences: React.FC = () => {
                 Coastal Exploration
               </h3>
               <p className="mb-6 font-sans text-sm font-light leading-relaxed text-slate-600">
-                Scenic trails towards historic Dondra Lighthouse, protected sea turtle conservation sanctuaries, and tranquil shaded village bicycle circuits.
+                Walk the historic ramparts of Galle Fort to its iconic lighthouse, wander colonial-era streets and heritage sites, and take in sweeping ocean views at sunset.
               </p>
               <Link
                 href="/experiences"
                 className="inline-flex items-center gap-1 font-sans text-xs font-medium text-[#2f6b8f] transition-transform group-hover:translate-x-1"
               >
-                <span>View Trails</span>
+                <span>Explore Galle Fort</span>
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -93,8 +93,8 @@ export const HomeExperiences: React.FC = () => {
           <StaggerItem className="group overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)]">
             <div className="relative h-56 overflow-hidden sm:h-64">
               <Image
-                src="/images/hotel/property-exterior.jpg"
-                alt="Local Food & Clay Pot Dining Culture"
+                src="/images/home/explore-beyond-your-stay/local-food-and-culture/Food_Culture.webp"
+                alt="Local food and culture of Sri Lanka's southern coast"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

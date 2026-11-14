@@ -32,15 +32,15 @@ export const HomeGalleryPreview: React.FC = () => {
           {/* Card 1: 8 Cols */}
           <StaggerItem className="group relative h-[260px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[320px] md:col-span-8 md:h-[420px]">
             <Image
-              src="/images/hotel/hero-beach.jpg"
-              alt="Southern Coast Shoreline at Sundown"
+              src="/images/home/a-glimpse-of-the-coast/coconut-palm-grove-at-sunset/Mirissa_Coastal_Promontory.webp"
+              alt="Coconut Palm Grove at Sunset"
               fill
               sizes="(max-width: 768px) 100vw, 66vw"
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
               <span className="font-sans text-xs font-medium text-[#173F56]">
-                Southern Coast Shoreline at Sundown
+                Coconut Palm Grove at Sunset
               </span>
             </div>
           </StaggerItem>
@@ -48,15 +48,15 @@ export const HomeGalleryPreview: React.FC = () => {
           {/* Card 2: 4 Cols */}
           <StaggerItem className="group relative h-[260px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[320px] md:col-span-4 md:h-[420px]">
             <Image
-              src="/images/hotel/property-grounds.jpg"
-              alt="Garden Footpath to Sea"
+              src="/images/home/a-glimpse-of-the-coast/boat-safari-through-mangrove-tunnel/Koggala_Lake&Mangroves.webp"
+              alt="Boat Safari Through Mangrove Tunnel"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
               <span className="font-sans text-xs font-medium text-[#173F56]">
-                Garden Footpath to Sea
+                Boat Safari Through Mangrove Tunnel
               </span>
             </div>
           </StaggerItem>
@@ -64,15 +64,15 @@ export const HomeGalleryPreview: React.FC = () => {
           {/* Card 3: 6 Cols */}
           <StaggerItem className="group relative h-[240px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[280px] md:col-span-6 md:h-[300px]">
             <Image
-              src="/images/hotel/property-exterior.jpg"
-              alt="Morning Tea on the Veranda"
+              src="/images/home/a-glimpse-of-the-coast/island-temple-connected-by-footbridge/Matara_Temple.webp"
+              alt="Island Temple Connected by Footbridge"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
               <span className="font-sans text-xs font-medium text-[#173F56]">
-                Morning Tea on the Veranda
+                Island Temple Connected by Footbridge
               </span>
             </div>
           </StaggerItem>
@@ -80,15 +80,15 @@ export const HomeGalleryPreview: React.FC = () => {
           {/* Card 4: 6 Cols */}
           <StaggerItem className="group relative h-[240px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.05)] sm:h-[280px] md:col-span-6 md:h-[300px]">
             <Image
-              src="/images/rooms/deluxe-ocean-suite.jpg"
-              alt="Twilight Ambiance at Noonna Beach"
+              src="/images/home/a-glimpse-of-the-coast/traditional-stilt-fishermen-at-coast/Ahangama_Beach_Fishers.webp"
+              alt="Traditional Stilt Fishermen at Coast"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
             />
             <div className="absolute bottom-4 left-4 max-w-[calc(100%-2rem)] rounded-full border border-[#D9EAF3] bg-white/90 px-3.5 py-2 backdrop-blur-md sm:bottom-6 sm:left-6 sm:px-4">
               <span className="font-sans text-xs font-medium text-[#173F56]">
-                Twilight Ambiance
+                Traditional Stilt Fishermen at Coast
               </span>
             </div>
           </StaggerItem>
