@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export const HomeHighlights: React.FC = () => {
@@ -30,7 +30,7 @@ export const HomeHighlights: React.FC = () => {
               High-Speed Wi-Fi
             </h3>
             <p className="text-xs text-slate-600 font-light leading-relaxed font-sans">
-              Stay connected or work remotely beside the Indian Ocean.
+              Free Wi-Fi is available, subject to on-site conditions.
             </p>
           </StaggerItem>
 
@@ -60,7 +60,7 @@ export const HomeHighlights: React.FC = () => {
               Coastal Breakfast
             </h3>
             <p className="text-xs text-slate-600 font-light leading-relaxed font-sans">
-              Tropical fruits, Ceylon tea, and fresh morning bakery selections.
+              Breakfast options may be available (including Italian, Asian, American, or breakfast to go), subject to arrangement.
             </p>
           </StaggerItem>
 
@@ -75,7 +75,7 @@ export const HomeHighlights: React.FC = () => {
               Private En-Suite
             </h3>
             <p className="text-xs text-slate-600 font-light leading-relaxed font-sans">
-              Dedicated private bathroom with organic botanical wash amenities.
+              Private bathroom facilities as available for the stay.
             </p>
           </StaggerItem>
 
@@ -97,10 +97,11 @@ export const HomeHighlights: React.FC = () => {
 
         <Reveal delay={0.1}>
           <p className="text-xs text-center text-slate-500 mt-10 italic font-sans">
-            *Amenities indicated are verified placeholders confirmed for guest arrivals.
+            *Amenity details are based on supplied listing information and may vary by arrangement; please confirm specifics with the property or booking channel.
           </p>
         </Reveal>
       </div>
     </section>
   );
 };
+

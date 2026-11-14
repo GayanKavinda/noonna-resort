@@ -1,51 +1,16 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HOTEL_INFO } from "@/lib/constants";
-import { Reveal, Stagger, StaggerItem, useReducedMotion } from "@/components/motion/Reveal";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export const HomeHero: React.FC = () => {
-  const reduceMotion = useReducedMotion();
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (reduceMotion) {
-      video.pause();
-      try {
-        video.currentTime = 0;
-      } catch {
-        // ignore seek issues before metadata is ready
-      }
-      return;
-    }
-    const playPromise = video.play();
-    if (playPromise && typeof playPromise.catch === "function") {
-      playPromise.catch(() => {
-        // autoplay can be blocked; poster/background image remains visible
-      });
-    }
-  }, [reduceMotion]);
-
   return (
     <section className="relative flex min-h-[100svh] w-full items-center overflow-hidden bg-[#173F56] supports-[height:100dvh]:min-h-[100dvh]">
-      {/* Background Video & Duotone Bleed */}
+      {/* Hero background image (optimized). /videos/home-hero.mp4 unavailable; poster fallback preserved without raw duplicate/video requests. */}
       <div className="absolute inset-0 h-full w-full overflow-hidden">
-        <video
-          ref={videoRef}
-          autoPlay={!reduceMotion}
-          muted
-          loop={!reduceMotion}
-          playsInline
-          preload="metadata"
-          poster="/images/hotel/hero-beach.jpg"
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source src="/videos/home-hero.mp4" type="video/mp4" />
-        </video>
         <Image
           src="/images/hotel/hero-beach.jpg"
           alt="Sri Lanka Southern Coast Ocean View at Golden Hour"

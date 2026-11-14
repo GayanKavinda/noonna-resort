@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Image from "next/image";
 import { HOTEL_INFO } from "@/lib/constants";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
@@ -22,8 +22,8 @@ export const HomeSocialFeed: React.FC = () => {
           <a
             className="inline-flex items-center gap-2 font-sans text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56]"
             href={HOTEL_INFO.socials.instagram}
-            rel="noopener noreferrer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span>Follow @noonnabeach</span>
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

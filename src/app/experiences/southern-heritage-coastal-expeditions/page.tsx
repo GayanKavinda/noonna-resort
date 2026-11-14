@@ -13,11 +13,21 @@ import {
   DIVISION_2,
   HERITAGE_CHAPTERS,
 } from "@/data/southernHeritageData";
+import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
+
+const title = "Southern Heritage & Coastal Expeditions";
+const fullTitle = "Southern Heritage & Coastal Expeditions | Noonna Beach Hotel";
+const description =
+  "Discover nine curated southern Sri Lankan sanctuaries near Noonna Beach Hotel, from ancient granite reliefs and Galle Fort to Koggala lagoons, stilt fishermen, whale watching, and Weligama's snake farm.";
+const canonical = absoluteUrl("/experiences/southern-heritage-coastal-expeditions");
+const image = "/images/hotel/property-exterior.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "Southern Heritage & Coastal Expeditions | Noonna Beach Hotel",
-  description:
-    "Discover nine curated southern Sri Lankan sanctuaries near Noonna Beach Hotel, from ancient granite reliefs and Galle Fort to Koggala lagoons, stilt fishermen, whale watching, and Weligama's snake farm.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   keywords: [
     "Southern Heritage & Coastal Expeditions",
     "Noonna Beach Hotel experiences",
@@ -32,22 +42,40 @@ export const metadata: Metadata = {
     "Snake Farm Weligama",
   ],
   openGraph: {
-    title: "Southern Heritage & Coastal Expeditions | Noonna Beach Hotel",
+    title: fullTitle,
     description:
       "Nine handpicked heritage sanctuaries and coastal expeditions curated by Noonna Beach Hotel in Kumbalgama, Sri Lanka.",
-    url: "/experiences/southern-heritage-coastal-expeditions",
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
     locale: "en_LK",
     type: "website",
+    images: [{ url: imageUrl, alt: "Southern heritage and coastal surroundings near Noonna Beach Hotel" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description,
+    images: [imageUrl],
   },
 };
 
 export default function SouthernHeritagePage() {
   const division1 = HERITAGE_CHAPTERS.filter((c) => c.division === 1);
   const division2 = HERITAGE_CHAPTERS.filter((c) => c.division === 2);
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Experiences", path: "/experiences" },
+    { name: "Historical & Cultural Gems", path: "/experiences/southern-heritage-coastal-expeditions" },
+  ]);
 
   return (
     <div className="w-full bg-white min-h-screen text-[#1a1c1c] pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       {/* BREADCRUMBS & CONTEXT BAR */}
       <section className="w-full bg-white border-b border-[#D9EAF3]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-3 sm:py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">

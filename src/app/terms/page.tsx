@@ -1,22 +1,39 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { Reveal } from "@/components/motion/Reveal";
+import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
+
+const title = "Terms & Conditions";
+const fullTitle = "Terms & Conditions | Noonna Beach Hotel";
+const description =
+  "General website terms and confirmed stay policies for Noonna Beach Hotel, including check-in, children, pets, events, and booking conditions.";
+const canonical = absoluteUrl("/terms");
+const image = "/images/hotel/hero-beach.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
-  description:
-    "General website terms and confirmed stay policies for Noonna Beach Hotel, including check-in, children, pets, events, and booking conditions.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   openGraph: {
-    title: "Terms & Conditions | Noonna Beach Hotel",
+    title: fullTitle,
     description:
       "Website terms and confirmed stay policies for Noonna Beach Hotel in Kumbalgama, Sri Lanka.",
-    url: "/terms",
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
     locale: "en_LK",
     type: "website",
+    images: [{ url: imageUrl, alt: "Noonna Beach Hotel" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description,
+    images: [imageUrl],
   },
 };
 
@@ -31,7 +48,7 @@ const sections = [
   {
     title: "Reservations and Booking Conditions",
     body: [
-      "Reservations made through Booking.com are subject to the conditions displayed for the selected reservation on Booking.com. Cancellation and prepayment conditions vary by accommodation type and the selected booking conditions.",
+      "Reservations made through Booking.com are subject to the conditions displayed for the selected reservation on Booking.com. Cancellation and prepayment policies vary according to accommodation type. Please check the conditions for your selected option when making a reservation.",
       "Reservations made directly with the property, where agreed, are subject to the conditions specifically agreed with the property. Reservation-specific conditions provided on Booking.com or agreed directly with the property take precedence over general information on this website.",
     ],
   },
@@ -81,8 +98,19 @@ const sections = [
 ];
 
 export default function TermsPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Terms & Conditions", path: "/terms" },
+  ]);
+
   return (
     <div className="w-full bg-white min-h-screen text-slate-700 pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <section className="w-full bg-white py-3 sm:py-4 border-b border-[#D9EAF3]/60">
         <Container>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms & Conditions" }]} />
@@ -127,7 +155,7 @@ export default function TermsPage() {
           <Reveal delay={0.15}>
           <aside className="mt-5 sm:mt-6 lg:mt-8 rounded-xl border border-[#D9EAF3] bg-white p-4 sm:p-5 text-sm text-slate-600 font-light leading-relaxed">
             <p>
-              <span className="font-medium text-[#173F56]">Important:</span> Cancellation/prepayment details depend on the accommodation type and the conditions selected for your reservation. Please confirm the exact conditions shown on Booking.com for Booking.com reservations, or the conditions specifically agreed for a direct reservation.
+              <span className="font-medium text-[#173F56]">Important:</span> Cancellation and prepayment policies vary according to accommodation type. Please check the conditions for your selected option when making a reservation. For Booking.com reservations, confirm the exact conditions shown on Booking.com; for direct reservations, confirm the conditions specifically agreed with the property.
             </p>
           </aside>
           </Reveal>

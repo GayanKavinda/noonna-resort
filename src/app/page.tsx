@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import React from "react";
 import { HOME_FAQS } from "@/data/home";
 import { FaqAccordion } from "@/components/shared/FaqAccordion";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
+import { absoluteUrl } from "@/lib/siteUrl";
 
 // Individual Homepage Modular Sections
 import { HomeHero } from "@/components/sections/home/HomeHero";
@@ -13,6 +15,34 @@ import { HomeGalleryPreview } from "@/components/sections/home/HomeGalleryPrevie
 import { HomeSocialFeed } from "@/components/sections/home/HomeSocialFeed";
 import { HomeVideoShowcase } from "@/components/sections/home/HomeVideoShowcase";
 import { HomeLocation } from "@/components/sections/home/HomeLocation";
+
+const title = "Noonna Beach Hotel | Kumbalgama, Sri Lanka";
+const description =
+  "Discover Noonna Beach Hotel, a private coastal sanctuary on Sri Lanka's southern shoreline.";
+const canonical = absoluteUrl("/");
+const image = "/images/branding/og-image.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
+
+export const metadata: Metadata = {
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
+  openGraph: {
+    title,
+    description,
+    url: canonical ?? undefined,
+    siteName: "Noonna Beach Hotel",
+    locale: "en_LK",
+    type: "website",
+    images: [{ url: imageUrl, alt: "Noonna Beach Hotel on Sri Lanka's southern shoreline" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [imageUrl],
+  },
+};
 
 export default function HomePage() {
   return (

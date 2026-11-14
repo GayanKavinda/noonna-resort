@@ -113,8 +113,8 @@ function Actions({ actions }: { actions: HeritageChapterData["actions"] }) {
               : "inline-flex w-full sm:w-auto items-center justify-center gap-1.5 px-4 py-2.5 sm:py-2 rounded-lg bg-[#2f6b8f] text-white hover:bg-[#25566f] transition-colors text-xs font-medium shadow-sm text-center"
           }
           href={a.href}
-          rel="noopener noreferrer"
           target="_blank"
+          rel="noopener noreferrer"
         >
           {a.icon === "map" ? (
             <MapPin className={`w-4 h-4 shrink-0 ${a.variant === "outline" ? "text-[#2f6b8f]" : ""}`} />

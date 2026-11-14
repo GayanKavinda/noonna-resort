@@ -33,13 +33,17 @@ export const HOTEL_INFO = {
   location: "Kumbalgama, Southern Coast, Sri Lanka",
   // Verified official booking channel
   bookingUrl: "https://www.booking.com/hotel/lk/noonna-beach.html",
-  // Social media handles
+  // Temporary project contact value pending authentic owner confirmation/replacement before production.
+  // Do not treat as a verified official hotel number.
+  tempPhone: "+94779206951",
+  tempPhoneDisplay: "+94 77 920 6951",
+  tempWhatsapp: "94779206951",
+  // Social media handles (destinations pending final owner confirmation)
   socials: {
     instagram: "https://instagram.com/noonnabeach",
     facebook: "https://facebook.com/noonnabeach",
     youtube: "https://youtube.com/@noonnabeach",
-    // Note: Official phone number is pending client confirmation.
-    // Kept undefined so components handle unconfirmed status cleanly without fake numbers or placeholder usernames.
-    whatsapp: undefined as string | undefined,
+    // Temporary project WhatsApp value pending authentic owner confirmation/replacement before production.
+    whatsapp: "94779206951" as string | undefined,
   },
 } as const;

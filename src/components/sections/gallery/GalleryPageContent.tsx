@@ -24,6 +24,7 @@ function ExpandMoreIcon({ className = "" }: { className?: string }) {
 
 export function GalleryPageContent() {
   const [activeFilter, setActiveFilter] = useState<GalleryCategory>("all");
+  const [viewMode, setViewMode] = useState<"grid" | "masonry">("grid");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [loadedCount, setLoadedCount] = useState(GALLERY_INITIAL_VISIBLE);
   const [imgRatio, setImgRatio] = useState(3 / 2);
@@ -172,10 +173,32 @@ export function GalleryPageContent() {
             </span>
             <div className="h-4 w-px bg-slate-200" />
             <div className="inline-flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200">
-              <button aria-label="Editorial Grid View" className="p-1.5 rounded-lg bg-white text-[#2f6b8f] shadow-xs flex items-center justify-center transition-colors" title="Editorial Grid" type="button">
+              <button
+                aria-label="Editorial Grid View"
+                aria-pressed={viewMode === "grid"}
+                onClick={() => setViewMode("grid")}
+                className={`p-1.5 rounded-lg flex items-center justify-center transition-colors ${
+                  viewMode === "grid"
+                    ? "bg-white text-[#2f6b8f] shadow-xs"
+                    : "text-slate-500 hover:text-slate-800"
+                }`}
+                title="Editorial Grid"
+                type="button"
+              >
                 <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
               </button>
-              <button aria-label="Masonry View" className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors" title="Mosaic Masonry" type="button">
+              <button
+                aria-label="Masonry View"
+                aria-pressed={viewMode === "masonry"}
+                onClick={() => setViewMode("masonry")}
+                className={`p-1.5 rounded-lg flex items-center justify-center transition-colors ${
+                  viewMode === "masonry"
+                    ? "bg-white text-[#2f6b8f] shadow-xs"
+                    : "text-slate-500 hover:text-slate-800"
+                }`}
+                title="Mosaic Masonry"
+                type="button"
+              >
                 <LayoutDashboard className="w-[18px] h-[18px]" strokeWidth={1.8} />
               </button>
             </div>
@@ -185,38 +208,104 @@ export function GalleryPageContent() {
 
       {/* 5. MAIN PHOTO GALLERY */}
       <section className="w-full max-w-6xl mx-auto px-6 lg:px-8 mb-24">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 items-start" id="gallery-grid">
-          {visibleGrid.map((item) => (
-            <div
-              key={item.id}
-              className="gallery-item group cursor-pointer relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 bg-slate-100"
-              data-category={item.gridCategory}
-              onClick={() => openLightbox(item.id)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  openLightbox(item.id);
-                }
-              }}
-            >
-              <Image
-                alt={item.alt}
-                src={item.src}
-                fill
-                unoptimized
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#2f6b8f] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <ZoomIn className="w-5 h-5" strokeWidth={1.8} />
-                </span>
-              </div>
+
+        {/* keyframe injected once — cards fade+rise in on each mount */}
+        <style>{`
+          @keyframes cardIn {
+            from { opacity: 0; transform: translateY(12px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0)   scale(1);    }
+          }
+        `}</style>
+
+        {/* Single wrapper — key forces remount on view switch, triggering per-card animation */}
+        <div key={viewMode} id="gallery-grid">
+
+          {/* ── GRID VIEW ── */}
+          {viewMode === "grid" && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 items-start">
+              {visibleGrid.map((item, i) => (
+                <div
+                  key={item.id}
+                  style={{
+                    animation: "cardIn 350ms ease both",
+                    animationDelay: `${Math.min(i * 30, 300)}ms`,
+                  }}
+                  className="gallery-item group cursor-pointer relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300 bg-slate-100"
+                  data-category={item.gridCategory}
+                  onClick={() => openLightbox(item.id)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault();
+                      openLightbox(item.id);
+                    }
+                  }}
+                >
+                  <Image
+                    alt={item.alt}
+                    src={item.src}
+                    fill
+                    unoptimized
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#2f6b8f] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                      <ZoomIn className="w-5 h-5" strokeWidth={1.8} />
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          )}
+
+          {/* ── MASONRY VIEW ── */}
+          {viewMode === "masonry" && (
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 lg:gap-5">
+              {visibleGrid.map((item, i) => {
+                const isTall = i % 5 === 0 || i % 7 === 3;
+                return (
+                  <div
+                    key={item.id}
+                    style={{
+                      animation: "cardIn 350ms ease both",
+                      animationDelay: `${Math.min(i * 30, 300)}ms`,
+                    }}
+                    className={`gallery-item break-inside-avoid mb-4 lg:mb-5 group cursor-pointer relative overflow-hidden rounded-2xl shadow-xs hover:shadow-md transition-shadow duration-300 bg-slate-100 ${
+                      isTall ? "aspect-[3/4]" : "aspect-[4/3]"
+                    }`}
+                    data-category={item.gridCategory}
+                    onClick={() => openLightbox(item.id)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        openLightbox(item.id);
+                      }
+                    }}
+                  >
+                    <Image
+                      alt={item.alt}
+                      src={item.src}
+                      fill
+                      unoptimized
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <span className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-md text-[#2f6b8f] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                        <ZoomIn className="w-5 h-5" strokeWidth={1.8} />
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+        </div>{/* end key wrapper */}
 
         {/* PROGRESSIVE DISCLOSURE & ARCHIVE ACCESS CONTROLS */}
         <div className="mt-14 pt-10 border-t border-slate-200/80 flex flex-col items-center justify-center text-center">

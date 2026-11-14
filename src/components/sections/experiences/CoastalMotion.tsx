@@ -60,7 +60,12 @@ export default function CoastalMotion() {
             </div>
           </div>
           <div className="mt-4 border-t border-surface-container pt-4">
-            <a className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary hover:underline" href="#">
+            <a
+              className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary hover:underline"
+              href="https://instagram.com/noonnabeach"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span>Explore Instagram Channel</span>
               <ExternalLink size={16} />
             </a>
@@ -98,7 +103,7 @@ export default function CoastalMotion() {
             </div>
           </div>
           <div className="mt-4 border-t border-surface-container pt-4">
-            <a className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary transition-all hover:gap-3" href="#">
+            <a className="inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary transition-all hover:gap-3" href="#arrival-map">
               <span>View Full Arrival &amp; Route Guide</span>
               <ArrowRight size={16} />
             </a>

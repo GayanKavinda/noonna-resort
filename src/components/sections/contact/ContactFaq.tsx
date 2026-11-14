@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
@@ -21,18 +21,18 @@ const FAQ_ITEMS: FaqItem[] = [
     question:
       "What are the check-in and check-out times, and can I arrive early?",
     answer:
-      "Standard check-in begins at 14:00 and check-out is until 11:00. Early check-in or relaxed late departure can be arranged depending on availability. If you arrive early, leave your luggage with our concierge and enjoy the beach while your stay is prepared.",
+      "Check-in is available 24 hours and check-out is available from 12:00 to 14:00. Any arrival or departure arrangements beyond these stated times should be confirmed through the applicable booking channel or directly with the property if agreed.",
   },
   {
-    question: "Is coastal breakfast included in the stay?",
+    question: "Are breakfast options available during the stay?",
     answer:
-      "Fresh seasonal breakfasts can be prepared during your stay. Enjoy tropical fruits, freshly brewed Ceylon tea, and your choice of traditional Sri Lankan or continental morning dishes on your veranda or by the shore.",
+      "Breakfast options may be available during your stay, including Italian, Asian, American, and breakfast-to-go options, subject to arrangement and availability. Please confirm details with the property or your booking channel.",
   },
   {
     question:
-      "Can the hotel coordinate private airport transfers and island transit?",
+      "Can airport transfers or local transport be arranged?",
     answer:
-      "Certainly. Private air-conditioned vehicle transfers can be arranged from Bandaranaike International Airport (CMB) or Mattala Rajapaksa International Airport (HRI) directly to our gates, as well as local tuk-tuks to Kumbalgama train station, Weligama, and Galle Fort.",
+      "Transport arrangements such as local tuk-tuks or transfers may be possible depending on availability. Please confirm options, routes, and timing directly with the property or through your booking arrangements.",
   },
   {
     question:
@@ -41,9 +41,9 @@ const FAQ_ITEMS: FaqItem[] = [
       "Noonna Beach Hotel sits along a tranquil stretch of golden sand facing gentle breaker tides. You have direct access to peaceful morning walks and proximity to famous surf points like Midigama and Weligama just minutes down the coast.",
   },
   {
-    question: "What are the bathroom policies and Wi-Fi access?",
+    question: "What facilities can guests expect?",
     answer:
-      "The house includes private en-suite bathroom facilities with fresh towels and essential bath amenities. Complimentary high-speed fiber Wi-Fi is accessible throughout guest spaces, verandas, and property grounds.",
+      "Based on supplied listing information, facilities may include sea views, air-conditioning, balconies, private bathrooms, bathrobes, tea and coffee makers, free Wi-Fi, work desks, and garden/outdoor areas. Specific setup for an entire-resort stay should be confirmed directly with the property.",
   },
 ];
 
@@ -139,4 +139,5 @@ export function ContactFaq() {
     </section>
   );
 }
+
 

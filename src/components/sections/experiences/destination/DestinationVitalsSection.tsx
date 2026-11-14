@@ -151,8 +151,8 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
                 <a
                   className="min-h-10 sm:h-9 px-3 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-all text-center"
                   href={vitals.intel.mapsHref}
-                  rel="noopener noreferrer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Navigation className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                   <span>{vitals.intel.mapsLabel}</span>
@@ -160,8 +160,8 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
                 <a
                   className="min-h-10 sm:h-9 px-3 bg-white/10 hover:bg-white hover:text-[#173F56] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 border border-white/20 transition-all text-center"
                   href={vitals.intel.hostHref}
-                  rel="noopener noreferrer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <MessageCircle className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                   <span>{vitals.intel.hostLabel}</span>

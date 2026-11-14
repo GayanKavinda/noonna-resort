@@ -39,7 +39,9 @@ export const test = base.extend<Fixtures>({
         }
         expect(otherConsole, `Console errors: ${JSON.stringify(otherConsole)}`).toEqual([]);
         expect(runtime.pageErrors, `Page errors: ${JSON.stringify(runtime.pageErrors)}`).toEqual([]);
-        const failed = filterUnexpectedFailedRequests(runtime.failedRequests);
+        const failed = filterUnexpectedFailedRequests(runtime.failedRequests, {
+          pageOrigin: new URL(page.url()).origin,
+        });
         expect(failed, `Unexpected failed requests: ${JSON.stringify(failed)}`).toEqual([]);
         const bad = filterUnexpectedBadResponses(runtime.badResponses);
         expect(bad, `Unexpected bad responses: ${JSON.stringify(bad)}`).toEqual([]);

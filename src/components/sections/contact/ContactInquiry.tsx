@@ -526,8 +526,8 @@ export function ContactInquiry() {
                 <a
                   className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"
                   href={HOTEL_INFO.socials.instagram}
-                  rel="noopener noreferrer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
                     <div className="w-7 h-7 rounded-full bg-white border border-[#D9EAF3] flex items-center justify-center text-[#2f6b8f] group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors shrink-0">

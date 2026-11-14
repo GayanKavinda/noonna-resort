@@ -77,10 +77,32 @@ export function filterUnexpectedConsole(errors: string[]) {
   });
 }
 
-export function filterUnexpectedFailedRequests(reqs: RuntimeCollector["failedRequests"]) {
-  return reqs.filter(
-    (r) => !THIRD_PARTY_OR_EMBED.test(r.url) && !KNOWN_MISSING_LOCAL_ASSETS.some((re) => re.test(r.url)),
-  );
+export function filterUnexpectedFailedRequests(
+  reqs: RuntimeCollector["failedRequests"],
+  opts?: { pageOrigin?: string },
+) {
+  return reqs.filter((r) => {
+    if (THIRD_PARTY_OR_EMBED.test(r.url) || KNOWN_MISSING_LOCAL_ASSETS.some((re) => re.test(r.url))) return false;
+    // Next.js App Router can abort/cancel in-flight same-origin RSC segment prefetch/data fetches
+    // during interaction/navigation (net::ERR_ABORTED) and reissue them; treat these client-side
+    // cancellations as benign when the failure is an abort of an RSC fetch, not a network/server error.
+    if (r.failure === "net::ERR_ABORTED" && r.resourceType === "fetch" && /[?&]_rsc=/.test(r.url)) return false;
+    // Next.js image optimizer requests can be cancelled (net::ERR_ABORTED) during responsive
+    // layout/viewport transitions or interaction-driven reloads while the same image loads
+    // successfully via another request/candidate. Only ignore this exact, narrow case:
+    // same-origin GET to /_next/image with net::ERR_ABORTED. HTTP errors, non-GET, other
+    // paths/origins, decode/missing-image symptoms, console/page errors, and unrelated aborts
+    // remain reported.
+    if (r.failure === "net::ERR_ABORTED" && r.resourceType === "image" && r.method === "GET") {
+      try {
+        const u = new URL(r.url);
+        if (u.pathname === "/_next/image" && opts?.pageOrigin && u.origin === opts.pageOrigin) return false;
+      } catch {
+        // malformed URL: keep reported
+      }
+    }
+    return true;
+  });
 }
 
 export function filterUnexpectedBadResponses(resps: RuntimeCollector["badResponses"]) {

@@ -7,42 +7,87 @@ import { StayDiningPreview } from "@/components/sections/stay/StayDiningPreview"
 import { StayPolicies } from "@/components/sections/stay/StayPolicies";
 import { StayLocationMap } from "@/components/sections/stay/StayLocationMap";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
+import { absoluteUrl } from "@/lib/siteUrl";
+import { stringifyJsonLd } from "@/lib/structuredData";
+
+const title = "The Stay | Entire Resort Rental";
+const fullTitle = "The Stay | Entire Resort Rental | Noonna Beach Hotel";
+const description =
+  "Explore an entire resort rental at Noonna Beach Hotel in Kumbalgama, Sri Lanka. A private resort stay in a peaceful coastal setting, steps from the shoreline.";
+const canonical = absoluteUrl("/stay");
+const image = "/images/rooms/deluxe-ocean-suite.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "The Stay | Entire Resort Rental | Noonna Beach Hotel",
-  description:
-    "Explore an entire resort rental at Noonna Beach Hotel in Kumbalgama, Sri Lanka. A private resort stay in a peaceful coastal setting, steps from the shoreline.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   openGraph: {
-    title: "The Stay | Entire Resort Rental | Noonna Beach Hotel",
+    title: fullTitle,
     description:
       "A serene coastal sanctuary in Kumbalgama, Southern Province, Sri Lanka, offered as an entire resort rental for a private resort stay.",
-    url: "https://noonnabeach.com/stay",
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
+    locale: "en_LK",
+    type: "website",
     images: [
       {
-        url: "/images/rooms/deluxe-ocean-suite.jpg",
+        url: imageUrl,
         width: 1200,
         height: 800,
         alt: "Noonna Beach Hotel in Kumbalgama, Sri Lanka",
       },
     ],
-    locale: "en_US",
-    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description:
+      "A private resort stay at Noonna Beach Hotel in Kumbalgama, Sri Lanka.",
+    images: [imageUrl],
   },
 };
 
 export default function StayPage() {
-  // Verified structured schema for Google Rich Results
-  const hotelRoomSchema = {
+  // Structured data: supported, owner/Booking-confirmed information only.
+  // Entire resort rental presentation (not a multi-room catalogue). No integrated
+  // booking engine, no payment processing/reservation confirmation on this site.
+  // Hostname-dependent URL fields are emitted only when a validated SITE_URL is configured.
+  // Coordinates are the verified property pin from the owner-provided Google Maps link
+  // (https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8): !3d5.93312 !4d80.6138029.
+  const pageUrl = absoluteUrl("/stay");
+  const imagePath = "/images/rooms/deluxe-ocean-suite.jpg";
+  const imageUrlAbs = absoluteUrl(imagePath);
+
+  const hotelSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "LodgingBusiness",
     name: "Noonna Beach Hotel",
     description:
-      "Noonna Beach Hotel in Kumbalgama, Sri Lanka, offered as an entire resort rental for a private resort stay along the southern coast.",
+      "Noonna Beach Hotel in Kumbalgama, Southern Province, Sri Lanka, offered as an entire resort rental for a private resort stay along the southern coast.",
+    ...(pageUrl ? { "@id": pageUrl, url: pageUrl } : {}),
+    image: imageUrlAbs ?? imagePath,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Kumbalgama",
+      addressRegion: "Southern Province",
+      addressCountry: "LK",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 5.93312,
+      longitude: 80.6138029,
+    },
+    hasMap: "https://maps.app.goo.gl/7Fea7dbtqiWPuo2T8",
     amenityFeature: [
       {
         "@type": "LocationFeatureSpecification",
-        name: "Private resort stay",
+        name: "Entire resort rental / private resort stay",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Free Wi-Fi",
         value: true,
       },
       {
@@ -52,28 +97,42 @@ export default function StayPage() {
       },
       {
         "@type": "LocationFeatureSpecification",
-        name: "Free WiFi",
+        name: "Free private parking",
         value: true,
       },
       {
         "@type": "LocationFeatureSpecification",
-        name: "Free Parking",
+        name: "Sea views and balconies (as available)",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Restaurant and bar",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "24-hour front desk",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Room service",
+        value: true,
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        name: "Garden",
         value: true,
       },
     ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Kumbalgama",
-      addressRegion: "Southern Province",
-      addressCountry: "LK",
-    },
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(hotelRoomSchema) }}
+        dangerouslySetInnerHTML={{ __html: stringifyJsonLd(hotelSchema) }}
       />
 
       <div className="flex flex-col w-full">
@@ -104,4 +163,3 @@ export default function StayPage() {
     </>
   );
 }
-

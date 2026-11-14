@@ -1,22 +1,39 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PreFooterCta } from "@/components/shared/PreFooterCta";
 import { Reveal } from "@/components/motion/Reveal";
+import { absoluteUrl } from "@/lib/siteUrl";
+import { buildBreadcrumbJsonLd, stringifyJsonLd } from "@/lib/structuredData";
+
+const title = "Privacy Policy";
+const fullTitle = "Privacy Policy | Noonna Beach Hotel";
+const description =
+  "How Noonna Beach Hotel handles information on this website, including contact inquiries, third-party services, and privacy requests.";
+const canonical = absoluteUrl("/privacy");
+const image = "/images/hotel/hero-beach.jpg";
+const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "How Noonna Beach Hotel handles information on this website, including contact inquiries, third-party services, and privacy requests.",
+  title,
+  description,
+  alternates: canonical ? { canonical } : undefined,
   openGraph: {
-    title: "Privacy Policy | Noonna Beach Hotel",
+    title: fullTitle,
     description:
       "Website privacy information for Noonna Beach Hotel, including contact form limitations and third-party services used on this site.",
-    url: "/privacy",
+    url: canonical ?? undefined,
     siteName: "Noonna Beach Hotel",
     locale: "en_LK",
     type: "website",
+    images: [{ url: imageUrl, alt: "Noonna Beach Hotel" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: fullTitle,
+    description,
+    images: [imageUrl],
   },
 };
 
@@ -73,8 +90,19 @@ const sections = [
 ];
 
 export default function PrivacyPage() {
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Privacy Policy", path: "/privacy" },
+  ]);
+
   return (
     <div className="w-full bg-white min-h-screen text-slate-700 pt-20">
+      {breadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: stringifyJsonLd(breadcrumbJsonLd) }}
+        />
+      ) : null}
       <section className="w-full bg-white py-3 sm:py-4 border-b border-[#D9EAF3]/60">
         <Container>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Privacy Policy" }]} />
