@@ -21,7 +21,14 @@ const moonDance = Moon_Dance({
   variable: "--font-moon-dance",
 });
 
-const metadataBase = getMetadataBase();
+// Reads SITE_URL or NEXT_PUBLIC_SITE_URL if provided, else falls back to your real production domain
+const metadataBase =
+  getMetadataBase() ??
+  new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://noonnabeachhotel.com"
+  );
 
 export const metadata: Metadata = {
   ...(metadataBase ? { metadataBase } : {}),
@@ -61,6 +68,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+      </head>
       <body
         className={`${cormorant.variable} ${inter.variable} ${moonDance.variable}`}
       >
