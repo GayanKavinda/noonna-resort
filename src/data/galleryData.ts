@@ -20,8 +20,8 @@ export interface GalleryImage {
 }
 
 export const GALLERY_FILTERS: GalleryFilter[] = [
-  { id: "all", label: "All Photos", count: 20 },
-  { id: "sanctuary", label: "The Sanctuary & Suites", count: 20, matchCategories: ["stay"] },
+  { id: "all", label: "All Photos", count: 46 },
+  { id: "sanctuary", label: "The Sanctuary & Suites", count: 46, matchCategories: ["stay"] },
   { id: "ocean", label: "Ocean Horizons & Coastline", count: 0, matchCategories: ["coast", "views"] },
   { id: "epicure", label: "Epicure & Dining", count: 0, matchCategories: ["dining"] },
   { id: "atmosphere", label: "Daily Atmosphere", count: 0, matchCategories: [] },
@@ -261,8 +261,294 @@ export const GALLERY_GRID_IMAGES: GalleryImage[] = [
       "Peaceful nighttime atmosphere showcasing the illuminated beverage coolers, bar seating, and cozy lounge tables.",
     src: "/images/gallery/the-stay/DSC04410_6000x4000_17.webp",
   },
+  {
+    id: 21,
+    title: "Handcrafted Timber Headboard & Crisp Linens",
+    alt: "Handcrafted Timber Headboard & Crisp Linens",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Solid dark wood four-poster frame paired with plush white pillows and breathable cotton bedding.",
+    src: "/images/gallery/the-stay/IMG_2795_3024x4032_66.webp",
+  },
+  {
+    id: 22,
+    title: "King Suite with Striped Beach Towels",
+    alt: "King Suite with Striped Beach Towels",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Spacious white-dressed king bed prepared for coastal stays with fresh blue-and-white striped beach towels.",
+    src: "/images/gallery/the-stay/IMG_2798_4032x3024_69.webp",
+  },
+  {
+    id: 23,
+    title: "Modern Shared Kitchen & Timber Dining Table",
+    alt: "Modern Shared Kitchen & Timber Dining Table",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Fully equipped contemporary kitchen featuring marble-patterned cabinetry, gas cooktop, refrigerator, and a long handcrafted wooden dining table.",
+    src: "/images/gallery/the-stay/IMG_2822_4032x3024_56.webp",
+  },
+  {
+    id: 24,
+    title: "Surfboard Storage Rack by the Ocean",
+    alt: "Surfboard Storage Rack by the Ocean",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Dedicated outdoor surfboard rack stocked with colorful longboards and funboards steps away from the waves.",
+    src: "/images/gallery/the-stay/IMG_2842_4032x3024_61.webp",
+  },
+  {
+    id: 25,
+    title: "Covered Rooftop Lounge & High-Top Bar",
+    alt: "Covered Rooftop Lounge & High-Top Bar",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Open-air social terrace featuring a rustic timber bar, high-top seating, wooden loungers, and warm string lighting.",
+    src: "/images/gallery/the-stay/IMG_2857_4032x3024_62.webp",
+  },
+  {
+    id: 26,
+    title: "Oceanfront Sun Loungers & Coastal Cliff View",
+    alt: "Oceanfront Sun Loungers & Coastal Cliff View",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Handcrafted wooden sunbeds positioned on the rooftop terrace framing the turquoise Indian Ocean and lush green headland.",
+    src: "/images/gallery/the-stay/IMG_2860_4032x3024_63.webp",
+  },
+  {
+    id: 27,
+    title: "Four-Poster Canopy Bed & Air-Conditioned Suite",
+    alt: "Four-Poster Canopy Bed & Air-Conditioned Suite",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Comfortable guest bedroom featuring a sheer white mosquito canopy, dark wood four-poster bed, and patterned drapery.",
+    src: "/images/gallery/the-stay/DSC04423_6000x4000_30.webp",
+  },
+  {
+    id: 28,
+    title: "In-Room Wardrobe & Lounge Chair Corner",
+    alt: "In-Room Wardrobe & Lounge Chair Corner",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Spacious bedroom corner outfitted with a full-height wooden wardrobe and a casual orange inflatable lounge chair.",
+    src: "/images/gallery/the-stay/DSC04424_6000x4000_18.webp",
+  },
+  {
+    id: 29,
+    title: "Sheer Canopy Suite & Beach Essentials",
+    alt: "Sheer Canopy Suite & Beach Essentials",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Inviting king bed enclosed in fine white netting with folded striped beach towels ready for the shore.",
+    src: "/images/gallery/the-stay/DSC04425_6000x4000_19.webp",
+  },
+  {
+    id: 30,
+    title: "Air-Conditioned Canopy Bedroom Overview",
+    alt: "Air-Conditioned Canopy Bedroom Overview",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Bright, airy guest room equipped with air conditioning, ceiling fan, four-poster canopy bed, and relaxing lounge seating.",
+    src: "/images/gallery/the-stay/IMG_2791_3024x4032_65.webp",
+  },
+  {
+    id: 31,
+    title: "Modern Tiled En-Suite Bathroom",
+    alt: "Modern Tiled En-Suite Bathroom",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Clean, bright private bathroom outfitted with glossy white subway tiles, contemporary fixtures, and dark slate flooring.",
+    src: "/images/gallery/the-stay/IMG_2895_4032x3024_49.webp",
+  },
+  {
+    id: 32,
+    title: "Rustic Timber Bar & Stone-Topped Table",
+    alt: "Rustic Timber Bar & Stone-Topped Table",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Open-air rooftop lounge featuring a natural log bar counter, high-top seating, and an artistic stone cocktail table.",
+    src: "/images/gallery/the-stay/IMG_2861_4032x3024_41.webp",
+  },
+  {
+    id: 33,
+    title: "Rooftop Bar Seating & String Light Canopy",
+    alt: "Rooftop Bar Seating & String Light Canopy",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Spacious covered terrace lined with colorful bar stools, rustic timber accents, and overhead Edison bulb lighting.",
+    src: "/images/gallery/the-stay/IMG_2863_4032x3024_64.webp",
+  },
+  {
+    id: 34,
+    title: "Panoramic Ocean View from the Rooftop Deck",
+    alt: "Panoramic Ocean View from the Rooftop Deck",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Expansive view looking out from the shaded rooftop bar across the turquoise Indian Ocean and lush coastal headland.",
+    src: "/images/gallery/the-stay/IMG_2864_4032x3024_42.webp",
+  },
+  {
+    id: 35,
+    title: "Handcrafted Timber Bar Wall & Art Detail",
+    alt: "Handcrafted Timber Bar Wall & Art Detail",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Warm rustic wood paneling accented with trailing indoor greenery, floating live-edge shelves, and vibrant equestrian wall art.",
+    src: "/images/gallery/the-stay/IMG_2866_4032x3024_43.webp",
+  },
+  {
+    id: 36,
+    title: "Natural Log Bar Counter & Tropical Terrace",
+    alt: "Natural Log Bar Counter & Tropical Terrace",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Close-up perspective of the textured bark bar top paired with modern stools and views of surrounding palm trees.",
+    src: "/images/gallery/the-stay/IMG_2868_4032x3024_44.webp",
+  },
+  {
+    id: 37,
+    title: "Oceanfront Sun Loungers & Coastal Horizon",
+    alt: "Oceanfront Sun Loungers & Coastal Horizon",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Handcrafted wooden sunbeds positioned on the open rooftop deck overlooking blue waves and the green headland.",
+    src: "/images/gallery/the-stay/IMG_2870_4032x3024_45.webp",
+  },
+  {
+    id: 38,
+    title: "Tropical Oleander Blooms Overlooking the Cove",
+    alt: "Tropical Oleander Blooms Overlooking the Cove",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Vibrant pink coastal flowers framing the tranquil ocean bay and lush green hillside in soft morning light.",
+    src: "/images/gallery/the-stay/IMG_2873_4032x3024_46.webp",
+  },
+  {
+    id: 39,
+    title: "Rooftop Barbecue Grill & Outdoor Dining Deck",
+    alt: "Rooftop Barbecue Grill & Outdoor Dining Deck",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Custom barrel-style charcoal grill ready for sunset seafood cookouts on the breezy oceanview terrace.",
+    src: "/images/gallery/the-stay/IMG_2880_4032x3024_47.webp",
+  },
+  {
+    id: 40,
+    title: "Industrial Cement-Finish Rooftop Washroom",
+    alt: "Industrial Cement-Finish Rooftop Washroom",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Sleek dark polished-cement washroom featuring an oval mirror, modern basin, and coastal boat-themed door art.",
+    src: "/images/gallery/the-stay/IMG_2881_4032x3024_48.webp",
+  },
+  {
+    id: 41,
+    title: "Sunlit Kitchen & Surfboard Rack View",
+    alt: "Sunlit Kitchen & Surfboard Rack View",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Modern black marble-finish kitchen and solid timber dining table overlooking colorful surfboards stacked outside the window.",
+    src: "/images/gallery/the-stay/IMG_2922_4032x3024_39.webp",
+  },
+  {
+    id: 42,
+    title: "Modern Rain Shower & Hot Water System",
+    alt: "Modern Rain Shower & Hot Water System",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Contemporary white-tiled shower enclosure featuring a square overhead rainfall fixture, handheld wand, and instant water heater.",
+    src: "/images/gallery/the-stay/IMG_2898_3024x4032_50.webp",
+  },
+  {
+    id: 43,
+    title: "Serene Common Lounge & Teak Planter's Chairs",
+    alt: "Serene Common Lounge & Teak Planter's Chairs",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Airy, bright living area furnished with traditional slatted wooden planter's chairs, warm wall sconces, and a tranquil Buddha statue.",
+    src: "/images/gallery/the-stay/IMG_2914_4032x3024_52.webp",
+  },
+  {
+    id: 44,
+    title: "Spacious Interior Hallway & Relaxation Seating",
+    alt: "Spacious Interior Hallway & Relaxation Seating",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Cool, tiled common space featuring handcrafted timber lounge chairs, ceiling fans, and peaceful Sri Lankan cultural decor.",
+    src: "/images/gallery/the-stay/IMG_2917_4032x3024_35.webp",
+  },
+  {
+    id: 45,
+    title: "Tranquil Reading Corner & Warm Ambient Lighting",
+    alt: "Tranquil Reading Corner & Warm Ambient Lighting",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Cozy indoor nook illuminated by soft pendant lights, showcasing classic wooden seating, dark drapery, and local artwork.",
+    src: "/images/gallery/the-stay/IMG_2919_4032x3024_37.webp",
+  },
+  {
+    id: 46,
+    title: "Open-Concept Living Space & Wooden Armchairs",
+    alt: "Open-Concept Living Space & Wooden Armchairs",
+    category: "sanctuary",
+    gridCategory: "stay",
+    label: "THE STAY",
+    caption:
+      "Expansive, breezy lounge area outfitted with polished floor tiles, solid wood display cabinetry, and reclining timber armchairs.",
+    src: "/images/gallery/the-stay/IMG_2920_4032x3024_38.webp",
+  },
 ];
 
-export const GALLERY_TOTAL_COUNT = 20;
-export const GALLERY_INITIAL_VISIBLE = 20;
+export const GALLERY_TOTAL_COUNT = 46;
+export const GALLERY_INITIAL_VISIBLE = 9;
 export const ALL_GALLERY_IMAGES: GalleryImage[] = [FEATURED_IMAGE, ...GALLERY_GRID_IMAGES];

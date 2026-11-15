@@ -324,7 +324,7 @@ export function GalleryPageContent() {
               type="button"
               onClick={() => setLoadedCount((c) => Math.min(c + 9, GALLERY_GRID_IMAGES.length))}
               className="px-8 py-3 rounded-full bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm transition-all shadow-sm hover:shadow flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled={activeFilter !== "all" || showingCount >= GALLERY_TOTAL_COUNT}
+              disabled={activeFilter !== "all" || showingCount >= activeFilterTotal}
             >
               <span>Load More Moments</span>
               <span className="text-xs px-2 py-0.5 rounded-full bg-[#25566f]/90 font-semibold">{remaining} remaining</span>
@@ -332,10 +332,12 @@ export function GalleryPageContent() {
             </button>
             <button
               type="button"
-              className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-medium text-sm transition-all flex items-center gap-2"
+              onClick={() => setLoadedCount(GALLERY_GRID_IMAGES.length)}
+              className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-medium text-sm transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={showingCount >= activeFilterTotal}
             >
               <Sparkles className="w-[18px] h-[18px] text-[#2f6b8f]" strokeWidth={1.8} />
-              <span>View Complete 36-Photo Archive</span>
+              <span>View Complete {activeFilterTotal}-Photo Archive</span>
             </button>
           </div>
           <p className="text-xs text-slate-500 mt-4 font-light">
