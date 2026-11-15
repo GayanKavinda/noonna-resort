@@ -65,7 +65,7 @@ export function ContactHero() {
             <div className="relative rounded-2xl overflow-hidden shadow-[0_16px_40px_-8px_rgba(23,63,86,0.12)] border border-slate-200">
               <div className="relative w-full h-64 sm:h-80 lg:h-96">
                 <Image
-                  src="/images/contact/contact-hero/property-exterior.jpg"
+                  src="/images/contact/contact-hero/DJI_20261010061935_0172_D_8064x6048_26.webp"
                   alt="Noonna Beach Hotel oceanfront setting and tropical palms in Kumbalgama"
                   fill
                   priority
