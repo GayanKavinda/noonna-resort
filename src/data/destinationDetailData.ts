@@ -166,7 +166,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
   tags: ["Coastal Shoreline", "Surfing & Tidepools"],
   distanceLabel: "~1.4 km from Noonna",
   hero: {
-    image: "/images/experiences/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
+          image: "/images/experiences/beaches/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
     imageAlt: "Palm fringed sandy beach coastline at Midigama",
     script: "gentle tides & unhurried surf...",
     title: "Midigama Beach & Coastal Coves",
@@ -184,7 +184,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       "Essential field notes and coastal conditions for unhurried morning tidal walks, reef break timing, and effortless journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image: "/images/experiences/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
+          image: "/images/experiences/beaches/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
       imageAlt: "Rocky sandy cove aerial view at Midigama",
       topBadge: "Rocky Sandy Cove",
       distanceBadge: "1.4 km from Noonna",
@@ -246,7 +246,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "electric_rickshaw",
         iconLabel: "Open-Air Safari",
         image:
-          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-tuk-tuk-safari.jpg",
+          "/images/experiences/beaches/midigama-beach/midigama-tuk-tuk-safari.jpg",
         imageAlt: "Sri Lankan safari tuk-tuk with surfboard racks along coastal road near Midigama",
         description:
           "Our front desk team connects you directly with trusted Kumbalgama tuk-tuk drivers. Enjoy a breezy open-air ride past waving palm canopies and roadside thambili stalls.",
@@ -260,7 +260,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "pedal_bike",
         iconLabel: "Guest Quiver Bike",
         image:
-          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-coastal-cruisers.jpg",
+          "/images/experiences/beaches/midigama-beach/midigama-coastal-cruisers.jpg",
         imageAlt: "Vintage coastal cruiser bicycles with surfboard side carriers on golden sands",
         description:
           "Pedal along tranquil inland lanes through quiet cinnamon gardens and coastal coconut groves, bypassing highway bustle with our curated cruisers bikes with front surf racks.",
@@ -275,7 +275,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "footprint",
         iconLabel: "Tideline Walk",
         image:
-          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-low-tide-walk.jpg",
+          "/images/experiences/beaches/midigama-beach/midigama-low-tide-walk.jpg",
         imageAlt: "Couple walking along golden sand shoreline in Weligama near Midigama",
         description:
           "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide. Pass serene shallow rock pools and greeting local stilt fishermen.",
@@ -289,7 +289,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "train",
         iconLabel: "Midigama Halt Station",
         image:
-          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-coastal-train.jpg",
+          "/images/experiences/beaches/midigama-beach/midigama-coastal-train.jpg",
         imageAlt: "Scenic coastal railway and shoreline landscape near Midigama station",
         description:
           "Midigama's quaint colonial open-air railway halt offers scenic connections towards the UNESCO Galle Fort (35 mins) or Colombo along the ocean tracks.",
@@ -305,7 +305,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     items: [
       {
         span: "lg:col-span-7",
-        image: "/images/experiences/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
+        image: "/images/experiences/beaches/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
         imageAlt: "Rocky Sandy Cove Aerial View",
         topBadge: "Aerial Cove",
         topBadgeRight: "1.4 km from hotel",
@@ -316,7 +316,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         span: "lg:col-span-5",
-        image: "/images/experiences/midigama-beach/Couple_Walking_Along_Tropical_Shoreline.webp",
+          image: "/images/experiences/beaches/midigama-beach/Couple_Walking_Along_Tropical_Shoreline.webp",
         imageAlt: "Couple Walking Along Tropical Shoreline",
         topBadge: "Shoreline Walk",
         topBadgeRight: "Palm Fringed Coast",
@@ -327,7 +327,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         span: "lg:col-span-5",
-        image: "/images/experiences/midigama-beach/Watching_Ocean_Sunset_on_Beach.jpg",
+          image: "/images/experiences/beaches/midigama-beach/Watching_Ocean_Sunset_on_Beach.jpg",
         imageAlt: "Watching Ocean Sunset on Beach",
         topBadge: "Golden Hour",
         topBadgeRight: "Sunset Cove",
@@ -338,7 +338,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       },
       {
         span: "lg:col-span-4",
-        image: "/images/experiences/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
+        image: "/images/experiences/beaches/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
         imageAlt: "Palm Fringed Sandy Beach Coastline",
         topBadge: "Coastal Panorama",
         topBadgeRight: "Midigama Shore",
@@ -559,8 +559,8 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
   tags: ["Secluded Cove", "Coastal Lagoon"],
   distanceLabel: "~1.7 km from Noonna",
   hero: {
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
-    imageAlt: "Tranquil sandy cove and turquoise waters at Abimanagama Beach",
+        image: "/images/experiences/beaches/abimanagama-beach/Scenic_Sandy_Bay_and_Coastal_Cliff.webp",
+    imageAlt: "Scenic sandy bay and coastal cliff at Abimanagama Beach",
     script: "quiet shores & gentle coastal waters...",
     title: "Abimanagama Beach & Secluded Cove",
     deck: "A tranquil sandy hideaway featuring calm low-tide lagoons, swaying palm canopies, and unhurried coastal solitude.",
@@ -577,15 +577,15 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
       "Field notes for peaceful morning shoreline walks, calm low-tide dipping pools, and quick journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
-      imageAlt: "Shallow turquoise sea shelf and golden sand at Abimanagama Beach",
-      topBadge: "Secluded Shoreline Dip",
+      image: "/images/experiences/beaches/abimanagama-beach/Sunlit_Rocky_Headland_and_Shoreline.webp",
+      imageAlt: "Sunlit rocky headland and shoreline at Abimanagama Beach",
+      topBadge: "Rocky Headland Shoreline",
       distanceBadge: "1.7 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
-      title: "Sheltered Sand Basin & Fringing Reef",
+      title: "Sunlit Rocky Headland & Shoreline",
       description:
-        "Naturally protected shallow waters tucked behind a light reef shelf. Offers calm, clear saltwater immersion away from high-density surf crowds.",
+        "A sunlit rocky headland meeting gentle shoreline waters, offering a clear view of Abimanagama's coastal terrain and calm tidal character.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Approx)" },
         { icon: "footprint", label: "Reef Shoes Recommended at Low Tide" },
@@ -616,10 +616,10 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~1.7 km from Noonna",
-      title: "Door-to-Shore Access",
+      title: "Door-to-Shore Navigation",
       description:
         "Positioned 2.9 km east along the Matara Coastal Road (A2) towards Weligama. Easily reached via a short 5-minute tuk-tuk ride or a scenic 11-minute coastal bicycle cruise.",
-      mapsHref: "https://maps.app.goo.gl/Z3RjtBKLbiCVjrhw5",
+      mapsHref: "https://maps.app.goo.gl/7fSnS9QP8AqMa29r7",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20beach%20and%20tide%20updates%20for%20Abimanagama.",
@@ -680,44 +680,59 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
-        imageAlt: "Panoramic view of Abimanagama sandy bay at low tide",
-        topBadge: "07:00 AM • Morning Low Tide",
-        topBadgeRight: "2.9 km from hotel",
-        script: "morning calm...",
-        title: "Glassy Morning Cove",
-        description: "Soft golden sands and sheltered water illuminated by early morning light.",
+        span: "lg:col-span-7 lg:row-span-2",
+    image: "/images/experiences/beaches/abimanagama-beach/Scenic_Sandy_Bay_and_Coastal_Cliff.webp",
+        imageAlt: "Scenic Sandy Bay and Coastal Cliff",
+        topBadge: "Coastal Bay",
+        topBadgeRight: "1.7 km from Noonna",
+        script: "secluded shoreline...",
+        title: "Scenic Sandy Bay and Coastal Cliff",
+        description:
+          "A sweeping view of Abimanagama's sandy bay framed by a coastal cliff and calm turquoise water.",
       },
       {
         span: "lg:col-span-5",
-        image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Palm trees hanging over calm turquoise water at Abimanagama",
-        topBadge: "Coastal Flora",
-        topBadgeRight: "Palm Canopy",
-        script: "shade & sea...",
-        title: "Coconut Shade & Shallow Waters",
-        description: "Naturally shaded beach spots perfect for quiet reading and relaxed sea dips.",
-      },
-      {
-        span: "lg:col-span-7",
-        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Local fishing boats resting on golden sand at Abimanagama Beach",
-        topBadge: "Local Heritage",
-        topBadgeRight: "Artisanal Fishermen",
-        script: "coastal life...",
-        title: "Artisanal Fishing Boats",
-        description: "Traditional wooden outrigger canoes rested on golden sand between morning trips.",
+        image: "/images/experiences/beaches/abimanagama-beach/Family_and_Outrigger_Canoe_on_Tropical_Beach.webp",
+        imageAlt: "Family and Outrigger Canoe on Tropical Beach",
+        topBadge: "Beach Life",
+        topBadgeRight: "Golden Sands",
+        script: "coastal moments...",
+        title: "Family and Outrigger Canoe on Tropical Beach",
+        description:
+          "A family moment beside a traditional outrigger canoe resting on the tropical beach.",
       },
       {
         span: "lg:col-span-5",
-        image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Warm amber golden hour reflections on Abimanagama shoreline",
-        topBadge: "17:45 PM • Golden Hour",
+        image: "/images/experiences/beaches/abimanagama-beach/Golden_Sandy_Beach_and_Turquoise_Waves.webp",
+        imageAlt: "Golden Sandy Beach and Turquoise Waves",
+        topBadge: "Turquoise Shore",
+        topBadgeRight: "Gentle Waves",
+        script: "sunlit sands...",
+        title: "Golden Sandy Beach and Turquoise Waves",
+        description:
+          "Golden sand meeting clear turquoise waves along Abimanagama's quiet shoreline.",
+      },
+      {
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/abimanagama-beach/Dramatic_Coastal_Cliffs_and_Rocky_Shore.webp",
+        imageAlt: "Dramatic Coastal Cliffs and Rocky Shore",
+        topBadge: "Rocky Coast",
+        topBadgeRight: "Headland Views",
+        script: "wild edge...",
+        title: "Dramatic Coastal Cliffs and Rocky Shore",
+        description:
+          "Dramatic coastal cliffs and a rocky shore shaping the rugged character of the cove.",
+      },
+      {
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/abimanagama-beach/Vibrant_Sunset_Over_Palm_Fringed_Beach.webp",
+        imageAlt: "Vibrant Sunset Over Palm Fringed Beach",
+        topBadge: "Golden Hour",
         topBadgeRight: "Sunset Quiet",
         script: "evening glow...",
-        title: "Sunset over the Horizon",
-        description: "Peaceful coastal twilight bathed in warm amber ocean reflections.",
+        title: "Vibrant Sunset Over Palm Fringed Beach",
+        description:
+          "A vibrant sunset casting warm color over the palm-fringed beach at Abimanagama.",
       },
     ],
   },
@@ -912,9 +927,8 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
   tags: ["Sandy Bay Break", "Beginner Surf Haven"],
   distanceLabel: "~3.5 km from Noonna",
   hero: {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-    imageAlt: "Wide sandy crescent cove of Weligama Bay with gentle ocean surf",
+    image: "/images/experiences/beaches/weligama-beach/Golden_Sunset_Over_Weligama_Coast.webp",
+    imageAlt: "Golden sunset over Weligama coast",
     script: "broad golden bay & forgiving waves...",
     title: "Weligama Bay & Sandy Crescent",
     deck: "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
@@ -931,16 +945,15 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
       "Field notes and coastal conditions for morning surf lessons, unhurried beach walks, and effortless excursions from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-      imageAlt: "Broad golden sand beach and soft rolling waves at Weligama Bay",
-      topBadge: "Sand-Bottom Beginner Haven",
+      image: "/images/experiences/beaches/weligama-beach/Sunset_Glow_Over_Palm_Fringed_Shore.webp",
+      imageAlt: "Sunset glow over palm fringed shore at Weligama Bay",
+      topBadge: "Palm-Fringed Sunset Shore",
       distanceBadge: "3.5 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Waves: 06:00 – 10:00 AM & 16:30 – 18:30 PM",
-      title: "Expansive Golden Sand Crescent & Taprobane View",
+      panelBadgeText: "Best Light: 06:00 – 09:30 AM & 17:00 – 18:30 PM",
+      title: "Sunset Glow Over Palm-Fringed Shore",
       description:
-        "A sweeping 3 km crescent bay protected from heavy ocean swell, offering safe sand-bottom wave entries and iconic views of forested Taprobane Island.",
+        "A palm-lined Weligama shoreline bathed in warm sunset light, where gentle bay waves meet soft sand and a relaxed coastal evening atmosphere.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
         { icon: "surfing", label: "Softboard & Rashguard Recommended" },
@@ -971,10 +984,10 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~3.5 km from Noonna",
-      title: "Door-to-Bay Access",
+      title: "Door-to-Shore Navigation",
       description:
-        "Located ~3.5 km east along the Matara Coastal Road (A2). Reached in a 6-minute open-air tuk-tuk ride or a 14-minute coastal bicycle ride along village lanes.",
-      mapsHref: "https://maps.app.goo.gl/91KL6xZupDuBhVmC9",
+        "About 3.5 km east along Matara Coastal Road (A2) towards Weligama. Around 6 minutes by tuk-tuk or 14 minutes by bicycle from Noonna.",
+      mapsHref: "https://maps.app.goo.gl/Cnv9bM1WtPMbeVaH8",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20a%20surf%20instructor%20or%20transfer%20to%20Weligama%20Bay.",
@@ -1038,48 +1051,81 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-        imageAlt: "Panoramic morning light over Weligama Bay and surf lineup",
-        topBadge: "06:30 AM • Morning Dawn",
-        topBadgeRight: "3.5 km from hotel",
-        script: "morning swell...",
-        title: "Dawn Lineup across the Bay",
-        description: "Soft glass waves breaking evenly along golden sandbars in early light.",
+        span: "lg:col-span-7 lg:row-span-2",
+        image: "/images/experiences/beaches/weligama-beach/Weligama_Beach_Coastal_Aerial_View.webp",
+        imageAlt: "Weligama Beach Coastal Aerial View",
+        topBadge: "Aerial Bay",
+        topBadgeRight: "3.5 km from Noonna",
+        script: "crescent coastline...",
+        title: "Weligama Beach Coastal Aerial View",
+        description:
+          "An aerial perspective of Weligama Bay's broad sandy crescent, calm turquoise water, and lively coastal shoreline.",
       },
       {
         span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Surfer heading into soft rolling surf at Weligama Bay",
-        topBadge: "Beginner Sessions",
-        topBadgeRight: "Softboard Haven",
-        script: "learn & glide...",
-        title: "First Wave Immersion",
-        description: "Forgiving sand-bottom swells ideal for initial stand-up rides and longboard glides.",
-      },
-      {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
-        imageAlt: "Forested Taprobane Island silhouette in Weligama Bay",
-        topBadge: "Coastal Landmark",
-        topBadgeRight: "Taprobane Islet",
-        script: "island view...",
-        title: "Taprobane Island Silhouette",
-        description: "The famous private island villa framed by swaying palms and ocean horizons.",
+        image: "/images/experiences/beaches/weligama-beach/Golden_Sunset_Over_Weligama_Coast.webp",
+        imageAlt: "Golden Sunset Over Weligama Coast",
+        topBadge: "Golden Hour",
+        topBadgeRight: "Evening Coast",
+        script: "sunset glow...",
+        title: "Golden Sunset Over Weligama Coast",
+        description:
+          "Warm sunset light settling over the Weligama coastline, casting golden tones across the bay.",
       },
       {
         span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Golden sunset over Weligama Bay with surfboards on the sand",
-        topBadge: "17:45 PM • Golden Hour",
-        topBadgeRight: "Sunset Glow",
+        image: "/images/experiences/beaches/weligama-beach/Aerial_View_of_Surfers_in_Turquoise_Bay.webp",
+        imageAlt: "Aerial View of Surfers in Turquoise Bay",
+        topBadge: "Surf Lineup",
+        topBadgeRight: "Turquoise Water",
+        script: "gentle swells...",
+        title: "Aerial View of Surfers in Turquoise Bay",
+        description:
+          "Surfers spread across Weligama's turquoise bay, riding soft waves along the sandy-bottom break.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/weligama-beach/Coastal_Rock_Breakwater_and_Ocean_Waves.webp",
+        imageAlt: "Coastal Rock Breakwater and Ocean Waves",
+        topBadge: "Breakwater",
+        topBadgeRight: "Ocean Edge",
+        script: "shoreline rhythm...",
+        title: "Coastal Rock Breakwater and Ocean Waves",
+        description:
+          "Ocean waves meeting the coastal rock breakwater along Weligama's working shoreline.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/weligama-beach/Fishing_Boats_Anchored_in_Coastal_Bay.webp",
+        imageAlt: "Fishing Boats Anchored in Coastal Bay",
+        topBadge: "Harbour Life",
+        topBadgeRight: "Anchored Boats",
+        script: "coastal heritage...",
+        title: "Fishing Boats Anchored in Coastal Bay",
+        description:
+          "Traditional fishing boats resting at anchor in the sheltered coastal bay near Weligama.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/weligama-beach/Traditional_Stilt_Fishermen_at_Dusk.webp",
+        imageAlt: "Traditional Stilt Fishermen at Dusk",
+        topBadge: "Living Tradition",
+        topBadgeRight: "Dusk Silhouettes",
+        script: "stilt fishing...",
+        title: "Traditional Stilt Fishermen at Dusk",
+        description:
+          "Stilt fishermen silhouetted at dusk, reflecting one of the southern coast's iconic traditions.",
+      },
+      {
+        span: "lg:col-span-12",
+        image: "/images/experiences/beaches/weligama-beach/Sunset_Glow_Over_Palm_Fringed_Shore.webp",
+        imageAlt: "Sunset Glow Over Palm Fringed Shore",
+        topBadge: "Palm-Fringed Shore",
+        topBadgeRight: "Twilight Glow",
         script: "evening calm...",
-        title: "Golden Hour Glow",
-        description: "Warm amber twilight washing over relaxed beachfront cafes and sandy shores.",
+        title: "Sunset Glow Over Palm Fringed Shore",
+        description:
+          "A wide view of Weligama's palm-fringed shore glowing in warm sunset light.",
       },
     ],
   },
@@ -1272,9 +1318,8 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
   tags: ["Reef Point Breaks", "Boho Coastal Town"],
   distanceLabel: "~3.8 km from Noonna",
   hero: {
-    image:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
-    imageAlt: "Ahangama coastal cove with peeling waves and stilt fishermen frames",
+    image: "/images/experiences/beaches/ahangama-beach/Ahangama_Coastline_Sunset_Aerial_View.webp",
+    imageAlt: "Ahangama coastline sunset aerial view",
     script: "boho surf vibes & steady reef peelers...",
     title: "Ahangama Beach & Surf Lineup",
     deck: "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
@@ -1291,16 +1336,15 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
       "Field notes and coastal conditions for morning reef sessions, vibrant cafe hops, and quick journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1200&auto=format&fit=crop",
-      imageAlt: "Ahangama shallow turquoise reef shelf and coastal palms",
-      topBadge: "Reef Breaks & Surf Hub",
+      image: "/images/experiences/beaches/ahangama-beach/Overcast_Day_at_Ahangama_Beach.webp",
+      imageAlt: "Overcast day at Ahangama Beach with reef and shoreline",
+      topBadge: "Reef & Shoreline View",
       distanceBadge: "3.8 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Swell: 06:00 – 09:30 AM & 16:30 – 18:30 PM",
-      title: "Volcanic Reef Lineup & Beach Coves",
+      title: "Overcast Day at Ahangama Beach",
       description:
-        "A dynamic stretch featuring famous reef breaks like Sticks and Marshmallows, alongside serene sandy coves for relaxed dips and morning walks.",
+        "A moody coastal view of Ahangama's shoreline and reef under soft overcast light, capturing the area's rugged surf character and relaxed beach atmosphere.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Recommended for Outer Breaks" },
@@ -1331,10 +1375,10 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~3.8 km from Noonna",
-      title: "Door-to-Shore Access",
+      title: "Door-to-Shore Navigation",
       description:
         "Positioned ~3.8 km west along the Matara Coastal Road (A2). Reached in a 7-minute tuk-tuk ride or a 15-minute coastal bicycle ride through quiet back lanes.",
-      mapsHref: "https://maps.app.goo.gl/pYS4unMoPH9ci2jb9",
+      mapsHref: "https://maps.app.goo.gl/ZMevFYvCWWBkVnwp9",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20surf%20updates%20and%20cafe%20recommendations%20for%20Ahangama.",
@@ -1398,48 +1442,103 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image:
-          "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop",
-        imageAlt: "Panoramic view of Ahangama outer reef break at dawn",
-        topBadge: "06:15 AM • Outer Reef",
-        topBadgeRight: "3.8 km from hotel",
-        script: "morning swell...",
-        title: "Dawn Lines at Sticks Break",
-        description: "Clean offshore walls peeling over shallow coral ledges in early morning light.",
+        span: "lg:col-span-7 lg:row-span-2",
+        image: "/images/experiences/beaches/ahangama-beach/Ahangama_Coastline_Sunset_Aerial_View.webp",
+        imageAlt: "Ahangama Coastline Sunset Aerial View",
+        topBadge: "Sunset Aerial",
+        topBadgeRight: "3.8 km from Noonna",
+        script: "coastline glow...",
+        title: "Ahangama Coastline Sunset Aerial View",
+        description:
+          "An aerial view of Ahangama's coastline bathed in sunset light, revealing the sweep of shore, reef, and ocean.",
       },
       {
         span: "lg:col-span-5",
-        image:
-          "https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Stilt fishermen perched over turquoise water in Ahangama",
-        topBadge: "Traditional Culture",
-        topBadgeRight: "Stilt Fishermen",
+        image: "/images/experiences/beaches/ahangama-beach/Ahangama_Beach_Coastal_Aerial_View.webp",
+        imageAlt: "Ahangama Beach Coastal Aerial View",
+        topBadge: "Aerial Coast",
+        topBadgeRight: "Reef & Shore",
+        script: "from above...",
+        title: "Ahangama Beach Coastal Aerial View",
+        description:
+          "A broad aerial look at Ahangama's beach and coastal waters, showing the curve of sand and reef-lined sea.",
+      },
+      {
+        span: "lg:col-span-5",
+        image: "/images/experiences/beaches/ahangama-beach/Traditional_Stilt_Fishermen_at_Coast.webp",
+        imageAlt: "Traditional Stilt Fishermen at Coast",
+        topBadge: "Living Tradition",
+        topBadgeRight: "Stilt Fishing",
         script: "heritage & sea...",
-        title: "Iconic Stilt Fishermen",
-        description: "Traditional fishermen standing watch on wooden poles against the ocean horizon.",
+        title: "Traditional Stilt Fishermen at Coast",
+        description:
+          "Traditional stilt fishermen along the Ahangama coast, a distinctive scene of the southern shoreline.",
       },
       {
-        span: "lg:col-span-7",
-        image:
-          "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Surfer walking along Ahangama palm-fringed shoreline",
-        topBadge: "Surf Lifestyle",
-        topBadgeRight: "Boho Vibe",
-        script: "coastal rhythm...",
-        title: "Barefoot Coastal Vibe",
-        description: "Relaxed oceanfront cafes and palm-shaded paths lining the beach strip.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Scenic_Ocean_Waves_and_Coastal_Horizon.webp",
+        imageAlt: "Scenic Ocean Waves and Coastal Horizon",
+        topBadge: "Open Horizon",
+        topBadgeRight: "Rolling Waves",
+        script: "ocean rhythm...",
+        title: "Scenic Ocean Waves and Coastal Horizon",
+        description:
+          "Rolling ocean waves stretching to the coastal horizon, capturing Ahangama's open sea character.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1000&auto=format&fit=crop",
-        imageAlt: "Amber golden hour sunset over Ahangama ocean reef",
-        topBadge: "17:50 PM • Golden Hour",
-        topBadgeRight: "Sunset Chill",
-        script: "evening calm...",
-        title: "Amber Sunset over the Reef",
-        description: "Peaceful twilight hues reflecting off calm tidepools and peeling waves.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Ahangama_Headland_and_Rocky_Shoreline.webp",
+        imageAlt: "Ahangama Headland and Rocky Shoreline",
+        topBadge: "Rocky Headland",
+        topBadgeRight: "Coastal Edge",
+        script: "rugged shore...",
+        title: "Ahangama Headland and Rocky Shoreline",
+        description:
+          "Ahangama's headland and rocky shoreline where textured rock meets moving coastal water.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Fishing_Boats_Anchored_on_Ahangama_Beach.webp",
+        imageAlt: "Fishing Boats Anchored on Ahangama Beach",
+        topBadge: "Harbour Life",
+        topBadgeRight: "Anchored Boats",
+        script: "coastal craft...",
+        title: "Fishing Boats Anchored on Ahangama Beach",
+        description:
+          "Fishing boats anchored along Ahangama Beach, reflecting the area's working coastal life.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Sandy_Shoreline_and_Tropical_Trees_at_Ahangama.webp",
+        imageAlt: "Sandy Shoreline and Tropical Trees at Ahangama",
+        topBadge: "Sandy Shore",
+        topBadgeRight: "Tropical Trees",
+        script: "palm-lined sands...",
+        title: "Sandy Shoreline and Tropical Trees at Ahangama",
+        description:
+          "A sandy shoreline edged by tropical trees, offering a calm, leafy corner of Ahangama.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Overcast_Day_at_Ahangama_Beach.webp",
+        imageAlt: "Overcast Day at Ahangama Beach",
+        topBadge: "Moody Coast",
+        topBadgeRight: "Soft Light",
+        script: "coastal calm...",
+        title: "Overcast Day at Ahangama Beach",
+        description:
+          "A quiet, overcast day at Ahangama Beach with soft light over the shore and sea.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/ahangama-beach/Rocky_Shoreline_and_Crashing_Waves_at_Ahangama.webp",
+        imageAlt: "Rocky Shoreline and Crashing Waves at Ahangama",
+        topBadge: "Crashing Waves",
+        topBadgeRight: "Rocky Shore",
+        script: "wild surf...",
+        title: "Rocky Shoreline and Crashing Waves at Ahangama",
+        description:
+          "Waves crashing against Ahangama's rocky shoreline, highlighting the energy of the reef coast.",
       },
     ],
   },
