@@ -1,7 +1,7 @@
 "use client";
 
 import type { DestinationHeroData } from "@/data/destinationDetailData";
-import { MapPin, Waves, Sun, Navigation, Droplets, Compass } from "lucide-react";
+import { MapPin, Waves, Sun, Navigation, Droplets, Compass, Trees } from "lucide-react";
 import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
 
 const metaIcons = {
@@ -12,6 +12,7 @@ const metaIcons = {
   pool: Droplets,
   surfing: Waves,
   compass: Compass,
+  park: Trees,
 } as const;
 
 export function DestinationHero({ hero }: { hero: DestinationHeroData }) {
