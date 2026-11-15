@@ -21,7 +21,7 @@ const fullTitle = "Southern Heritage & Coastal Expeditions | Noonna Beach Hotel"
 const description =
   "Discover nine curated southern Sri Lankan sanctuaries near Noonna Beach Hotel, from ancient granite reliefs and Galle Fort to Koggala lagoons, stilt fishermen, whale watching, and Weligama's snake farm.";
 const canonical = absoluteUrl("/experiences/southern-heritage-coastal-expeditions");
-const image = "/images/hotel/property-exterior.jpg";
+const image = "/images/experiences/discover-more-by-the-sea/paravi-duwa-temple-matara/cinematic-color-grade-deep-cool-7692de7a-2k-6ae34e4faf0d2.webp";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

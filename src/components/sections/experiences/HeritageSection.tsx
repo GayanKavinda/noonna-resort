@@ -47,7 +47,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
+              <img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/galle-dutch-fort/grok-1793163385571jpg-fdd856b0-2k-6ae3488dc47da.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~24 km</span>
             </div>
             <div className="space-y-2">
@@ -66,7 +66,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
+              <img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/martin-wickramasinghe-museum/imgi_2_martin-wickramasinghe-folk-museum-complex-feb3b7d1b1e35ae650b6575c026007fa.jpg_6332be77_2K_2752x1536_1.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.8 km</span>
             </div>
             <div className="space-y-2">
@@ -85,7 +85,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZOCtqAwd2D3CcIBbNKrDzh1vUGuZ25L-sUdF8zwllT9VqUgUuZPkWR0EFfHdYXWS5cy-eoogrR2LXKuB5QLXvvnX9nPeiLChgo4KTceMzuPWnMV_jEKcmAukldNAzqRNNlV2dx5xkY1D6QlxRRzvN4P-tg-NiYJZ8iiwIGXbP2QjBF84-Qj9R5OjqaeyDllrHYc1OB2GSVv4y8QKuoLH5NRz4jfAFskgKuLLxG5_23Z7tH5MWpLjUKA" />
+              <img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/kushtarajagala-rock-relief/screenshot-2026-08-21-at-130903png-0ee9ef07-2k-6ae34bc08308c.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~2.7 km</span>
             </div>
             <div className="space-y-2">
@@ -104,7 +104,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5mfmgEsrNgKfAjHQHMcOfMMaXXtvMblIuI5w1wFzrDIAtFzG2IgHQvYlGgDPSlGpvPZJulmrBGdGrbpVDBEx0il2pk5LuzSBSj7uDULf3v7KnI8pPclWBr232AGAuXS6fk3i2Lg49vAAxGaC83KGRf7OKJGID1jlmlPQdB5jUm_l1JUTemYA9LTPRaXgJi9Wm3ac78dO3faehyQ027lCbOw_iPSSHvT5jULBlDKr_YdZy5nYCW2uG7Q" />
+              <img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/kumbalgama-potters-village/can_you_change_cloths_colors_db40388e_2K_2752x1536_2.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~0.4 km</span>
             </div>
             <div className="space-y-2">
@@ -123,7 +123,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE3BMzTe5la_jYpvmHwBGajqt_4iIWGWq5n6iuq5gW1CgXm1JiZIAt0tFR0c_fvTtBIo7Bg2LkuRlC25lYPMpTTHw07_K5mjaqQDOHkVl3povVCy8rilMbk23QAD-TFJIsAUAZYVU_HqI87-1NQBf_TVQNwbUJbvWAPVGBc72n4mBHcQnvng69ssQJuVZDLUKGaCwoYsgpyHTpUdPVHmvyAMq0GeKFSughx7_YNB_8QdXH7izwa7cRzQ" />
+              <img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/taprobane-island/LSL_B2_Taprobane-Island_1920x700.jpg_039d249e_2K_2752x1536_3.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~3.1 km</span>
             </div>
             <div className="space-y-2">
@@ -142,7 +142,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM2BLLs2dIaRd4H9TJHkvSCu8zXzf1CGmCPsq-4-Nqdny2SR6StXj47GHheIAufXFR5cDxajv9vl7yg5inl87CY9PbUd1r27X7_xdnkr3Onk1Xe3R7DiyoqRnS56Dtl8hTvM33HrGZ4NcGXHwzdZcBpwPGe5jLcYVMQHQFNJXS1vl3IHv9vWlNq3XYnXbRCJfcaEWo9orrhfwcn3YxGIsfSxhyAot8GpVSNB85kDFVWn_3jN76dlg58uyWOI2MM4yWKBIrV7vwkeVBl3E" />
+              <img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/koggala-lake-and-mangroves/soft-golden-hour-color-grade-aa5d2c8b-2k-6ae34b7acfc14.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.0 km</span>
             </div>
             <div className="space-y-2">
@@ -161,7 +161,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvcIJkds0JSs1vtxozfqTZydkvNuuQxYk6oiqFRhRYRtUVh89I1F3ZjVmfvwcLd0QBe64wNj1Jk4oXE-8MdghIpLatfX44wh2ai1nZbo2ViYw4E_mjsOsPl_Zo6-vKq3967j0fIrJQH3eeP3Id7QLXdOWbAdSxcTjW3uSfTi5XWnEtoAl6q83dMpAgV7lKRhTBw8b7b5prKtszNjVnaKdr8G11A4mguq4Cgt2Fu_1D1_oX5feSdRbE9c3bSElC1XZCGZkjRLyMptI5-Hw" />
+              <img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/koggala-stilt-fishermen-coast/d73f2c_7803db0635204ae1b3933fdcf11c735dmv2-2-1536x1024.webp_0a0b8f81_2K_2752x1536_1.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~6.8 km</span>
             </div>
             <div className="space-y-2">
@@ -180,7 +180,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrd4CoqgIt8I67ZCLK1YpyhYEMfyZU7KDTFHlE3Dhs9YWkjnvf-lzba1NKCjUuXGgnp59WK2mr9Z1k1vlKee_0qaJiTlPyshynmwDvpI4E-LLadCm906HOBtsyzs5uLAgQgo_eowPzgwQki7yw2HpXk07on9ZMWa7y3zNYgll_6VkqMFk4jMw2BektaasW9dSIpgHG5G9pxJRkVXZq2yefHSgennzdkZpHhxXRJF6y6w0vEF1Gsf5D7w" />
+              <img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/whale-watching-cruises/ep29e5zs0fadacjhqabp.webp_43e61c12_2K_2752x1536_1.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~8.0 km</span>
             </div>
             <div className="space-y-2">
@@ -199,7 +199,7 @@ export default function HeritageSection() {
         <StaggerItem className="bg-surface-container-lowest rounded-3xl p-6 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] hover:shadow-[0_16px_40px_-8px_rgba(23,63,86,0.1)] transition-all flex flex-col justify-between border-t border-surface-container group">
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
-              <img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGr-KFMClnJb2SWeatY1wj6YG9S9Y8JFjWmwtLZzVyFR5UB7u3cb7hfCLf_CAJ_cGJ5WcT6M_PoxHbnIloBFRtUA1edf5h0_KOX_mv4gnFgfzZdX1pJgMMxANOD2EpIg_3jLsYOLzXnaeI07oz4Umu_tE1Iu5_b0Tua-I-ByVcDdfnT6hT7VXIguEMgVm-7Pla2Vzk1VUjewLqzgA83-NqrI4MEY3cSwgxqB6RYO5kCEx5i6zrSIMmQ" />
+              <img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/snake-farm-weligama/f6534070-8554-4033-8009-0fda72aed238.webp_0b76be95_2K_2752x1536_4.webp" />
               <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~5.1 km</span>
             </div>
             <div className="space-y-2">

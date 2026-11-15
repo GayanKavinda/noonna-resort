@@ -26,13 +26,13 @@ export const HomeExperiences: React.FC = () => {
           {/* Card 1: Southern Coast Beaches */}
           <StaggerItem className="group overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)]">
             <div className="relative h-56 overflow-hidden sm:h-64">
-              <Image
-                src="/images/home/explore-beyond-your-stay/southern-coast-beaches/weligama-beach-the-ultimate-destination-for-vacation.webp"
-                alt="Weligama beach on Sri Lanka's southern coast"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+                <Image
+                  src="/images/home/explore-beyond-your-stay/southern-coast-beaches/Lazy-Left-Sri-Lanka.webp"
+                  alt="Lazy Left surf break along the southern coast of Sri Lanka"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
               <div className="absolute left-4 top-4 rounded-full border border-[#D9EAF3] bg-white/95 px-3.5 py-1 backdrop-blur-md">
                 <span className="font-sans text-xs font-medium text-[#2f6b8f]">Coastal Tides</span>
               </div>

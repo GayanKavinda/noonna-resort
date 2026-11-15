@@ -10,7 +10,7 @@ const fullTitle = "Gallery — Moments by the Sea | Noonna Beach Hotel";
 const description =
   "Explore the spaces, scenery, and little details that make a stay at Noonna Beach Hotel special.";
 const canonical = absoluteUrl("/gallery");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/shared/hero-beach.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

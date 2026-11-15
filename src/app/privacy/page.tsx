@@ -12,7 +12,7 @@ const fullTitle = "Privacy Policy | Noonna Beach Hotel";
 const description =
   "How Noonna Beach Hotel handles information on this website, including contact inquiries, third-party services, and privacy requests.";
 const canonical = absoluteUrl("/privacy");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/shared/hero-beach.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

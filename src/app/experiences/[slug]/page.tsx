@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const path = `/experiences/${destination.slug}`;
   const canonical = absoluteUrl(path);
   const heroImage = destination.hero.image;
-  const imageUrl = heroImage ? absoluteUrl(heroImage) ?? heroImage : absoluteUrl("/images/hotel/hero-beach.jpg") ?? "/images/hotel/hero-beach.jpg";
+  const imageUrl = heroImage ? absoluteUrl(heroImage) ?? heroImage : absoluteUrl("/images/shared/hero-beach.jpg") ?? "/images/shared/hero-beach.jpg";
 
   return {
     title: fullTitle,

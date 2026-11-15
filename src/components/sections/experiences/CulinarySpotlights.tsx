@@ -48,14 +48,14 @@ export default function CulinarySpotlights() {
                   <img
                     alt="Traditional clay pot curry feast"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5mfmgEsrNgKfAjHQHMcOfMMaXXtvMblIuI5w1wFzrDIAtFzG2IgHQvYlGgDPSlGpvPZJulmrBGdGrbpVDBEx0il2pk5LuzSBSj7uDULf3v7KnI8pPclWBr232AGAuXS6fk3i2Lg49vAAxGaC83KGRf7OKJGID1jlmlPQdB5jUm_l1JUTemYA9LTPRaXgJi9Wm3ac78dO3faehyQ027lCbOw_iPSSHvT5jULBlDKr_YdZy5nYCW2uG7Q"
+                    src="/images/experiences/a-taste-of-sri-lanka/claypot-curries-and-ocean-bounty/a5f1d5e5-09ff-409d-b647-9f86cda8823a.jpg"
                   />
                 </div>
                 <div className="h-48 overflow-hidden rounded-2xl bg-surface-container sm:h-60">
                   <img
                     alt="Fresh seafood catch grilling over charcoal fire on a Sri Lankan beach"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    src={NEUTRAL_IMAGE_PLACEHOLDER}
+                    src="/images/experiences/a-taste-of-sri-lanka/claypot-curries-and-ocean-bounty/658975289_967863016195618_232561311671886841_n.jpg"
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function CulinarySpotlights() {
                 <img
                   alt="Shirani Home Made Rice and Curry"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj7_11MWwGzAUfS7-5vWQKKq0i-WQNfHj4d1yD_aqiIsy596jc6R4q__uanBdd4pvOxT4yEYltKrgFAZA-3ciTkveSmcca9lrBe-vK4FvEdsrVT7oQhmPSjHIY3vNRyZWtWcwZG3xW0kvozhzxAV2nszmk3jQOaetF8YZZcOIIFRwQxpF45G2GQEYkw2jW43ldGONc0qKOGF2vxmJTw7rUhd6gWYU1kaUJTk4_P5UJVMOPVSsv4pDP9g"
+                  src="/images/experiences/a-taste-of-sri-lanka/shirani-home-made-rice-and-curry/img-20191009-195211-largejpg.jpg"
                 />
               </div>
               <div className="space-y-3">

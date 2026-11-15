@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/branding/og-image.jpg",
+        // url: "/images/branding/og-image.jpg",
+        url: "/images/branding/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Noonna Beach Hotel - Official Hotel Website",
@@ -53,7 +54,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/branding/og-image.jpg"],
+    // images: ["/images/branding/og-image.jpg"],
+    images: ["/images/branding/og-image.webp"],
   },
   robots: {
     index: true,

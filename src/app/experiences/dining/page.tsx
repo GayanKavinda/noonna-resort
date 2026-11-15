@@ -12,7 +12,7 @@ const fullTitle = "A Taste of Sri Lanka — 10 Coastal Dining Destinations | Noo
 const description =
   "Curated coastal clay-pot feasts, fresh beachside grills, and artisanal surf cafes along the southern shoreline near Noonna Beach Hotel.";
 const canonical = absoluteUrl("/experiences/dining");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/experiences/dining/hero-beach.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

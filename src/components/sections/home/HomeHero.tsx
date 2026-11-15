@@ -16,7 +16,7 @@ export const HomeHero: React.FC = () => {
           loop
           playsInline
           preload="metadata"
-          poster="/images/hotel/hero-beach.jpg"
+          poster="/images/home/hero/hero-beach.jpg"
           aria-label="Sri Lanka southern coast ocean view at golden hour"
         >
           <source src="/videos/home/hero/hero.webm" type="video/webm" />

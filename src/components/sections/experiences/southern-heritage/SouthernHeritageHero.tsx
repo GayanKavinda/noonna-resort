@@ -1,10 +1,18 @@
-﻿export function SouthernHeritageHero() {
+﻿import Image from "next/image";
+
+export function SouthernHeritageHero() {
   return (
     <section className="w-full px-6 lg:px-8 py-8 bg-white">
       <div className="max-w-7xl mx-auto relative rounded-3xl overflow-hidden shadow-xl bg-neutral-900 min-h-[380px] lg:min-h-[440px] flex flex-col justify-end">
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#173F56] via-[#2c6687] to-[#0f3b52]" />
+        <Image
+          src="/images/experiences/discover-more-by-the-sea/paravi-duwa-temple-matara/cinematic-color-grade-deep-cool-7692de7a-2k-6ae34e4faf0d2.webp"
+          alt="Paravi Duwa Temple on a small island in Matara, connected by a footbridge"
+          fill
+          priority
+          sizes="(max-width: 1280px) 100vw, 1280px"
+          className="object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.35),transparent_35%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.18),transparent_30%)]" />
         <div className="relative z-10 p-8 md:p-12 lg:p-14 max-w-3xl space-y-3.5">
           <p className="font-script text-2xl md:text-3xl text-white/95 leading-none drop-shadow-sm">
             sacred lore &amp; coastal rhythm...

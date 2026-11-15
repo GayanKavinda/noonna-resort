@@ -1,4 +1,4 @@
-﻿import {
+import {
   ArrowRight,
   ArrowUpRight,
   CircleDot,
@@ -214,9 +214,9 @@ export default function HotelSurroundings() {
         </div>
         <div className="mb-10 w-full h-64 md:h-72 rounded-2xl overflow-hidden relative border border-slate-200/80 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] group">
           <img
-            alt="Southern Sri Lanka coastline and ocean encounters"
+            alt="Coastal scene near Abimanagama Beach on Sri Lanka's southern shore"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            src={NEUTRAL_IMAGE_PLACEHOLDER}
+            src="/images/experiences/make-the-most-of-your-stay/img-20191109-150320jpg-2k-20261027193224-6ae347d54a654.webp"
           />
           <div className="absolute inset-0 bg-primary/20 backdrop-blur-[0.5px]" />
           <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between flex-wrap gap-4">
@@ -237,8 +237,8 @@ export default function HotelSurroundings() {
           {[
             { n: "01", icon: Waves, cat: "Point Breaks", time: "Year-round", title: "Surf & Point Breaks", desc: "Catch world-class peeling waves across Lazy Left, Rams, and Weligama Bay with guided private coaching.", link: "Board Rentals & Coaching" },
             { n: "02", icon: Compass, cat: "Coastal Solitude", time: "Morning Low Tide", title: "Low-Tide Alcoves & Reef Walks", desc: "Stroll tranquil exposed sand bars and bathe in calm natural rock pools sheltered from outer swells.", link: "Tide Guides on Request" },
-            { n: "03", icon: CircleDot, cat: "Marine Sanctuary", time: "Nov â€“ Apr", title: "Snorkelling & Sea Turtles", desc: "Swim alongside gentle green sea turtles amidst vibrant coral reefs in Polhena's protected calm waters.", link: "Gear & Fins Arranged" },
-            { n: "04", icon: Waves, cat: "Ocean Expedition", time: "Dec â€“ Apr", title: "Deep Sea Whale Watching", desc: "Set out from Mirissa Harbour to witness majestic blue whales and spinner dolphins with ethical maritime skippers.", link: "Private Yacht Charters" },
+            { n: "03", icon: CircleDot, cat: "Marine Sanctuary", time: "Nov – Apr", title: "Snorkelling & Sea Turtles", desc: "Swim alongside gentle green sea turtles amidst vibrant coral reefs in Polhena's protected calm waters.", link: "Gear & Fins Arranged" },
+            { n: "04", icon: Waves, cat: "Ocean Expedition", time: "Dec – Apr", title: "Deep Sea Whale Watching", desc: "Set out from Mirissa Harbour to witness majestic blue whales and spinner dolphins with ethical maritime skippers.", link: "Private Yacht Charters" },
             { n: "05", icon: Sparkles, cat: "Inland Groves", time: "Koggala Hills", title: "Cinnamon Plantation Walks", desc: "Explore lush inland estates near Koggala Lake, witness artisan quill peeling, and taste freshly brewed spiced infusions.", link: "Estate Walk & Tasting" },
             { n: "06", icon: Landmark, cat: "Heritage Path", time: "Half-Day", title: "Cultural Shrines & Fort Heritage", desc: "Journey to ancient Kushtarajagala rock reliefs, Galle Dutch Fort ramparts, and southern folk art sanctuaries.", link: "Curated Private Itinerary" },
           ].map((item) => (

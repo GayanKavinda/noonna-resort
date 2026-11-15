@@ -65,7 +65,7 @@ export function ContactHero() {
             <div className="relative rounded-2xl overflow-hidden shadow-[0_16px_40px_-8px_rgba(23,63,86,0.12)] border border-slate-200">
               <div className="relative w-full h-64 sm:h-80 lg:h-96">
                 <Image
-                  src="/images/hotel/property-exterior.jpg"
+                  src="/images/contact/contact-hero/property-exterior.jpg"
                   alt="Noonna Beach Hotel oceanfront setting and tropical palms in Kumbalgama"
                   fill
                   priority
@@ -125,7 +125,7 @@ export function ContactHero() {
                 Response Window
               </p>
               <p className="font-body-sm text-xs font-semibold text-[#173F56] leading-snug">
-                Within 2â€“4 Hours
+                Within 2–4 Hours
               </p>
             </div>
           </StaggerItem>

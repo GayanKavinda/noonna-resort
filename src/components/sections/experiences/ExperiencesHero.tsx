@@ -53,11 +53,11 @@ export function ExperiencesHero() {
           <span className="flex items-center gap-1.5">
             <Umbrella className="text-primary" size={16} /> 13 Coastal Shores &amp; Breaks
           </span>
-          <span className="hidden font-light text-slate-500 sm:inline">â€¢</span>
+          <span className="hidden font-light text-slate-500 sm:inline">•</span>
           <span className="flex items-center gap-1.5">
             <Landmark className="text-primary" size={16} /> 9 Heritage &amp; Wildlife Gems
           </span>
-          <span className="hidden font-light text-slate-500 sm:inline">â€¢</span>
+          <span className="hidden font-light text-slate-500 sm:inline">•</span>
           <span className="flex items-center gap-1.5">
             <Utensils className="text-primary" size={16} /> 10 Coastal Dining Discoveries
           </span>
@@ -68,8 +68,8 @@ export function ExperiencesHero() {
         <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] lg:col-span-4 lg:min-h-[460px]">
           <img
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 absolute inset-0"
-            alt="Turquoise surf and golden shoreline along Sri Lanka's southern coast near Midigama"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD21pthuzDtjw1SpdnKurfMKvU0N8IptkHHFTLgw26UdlLFxrjTGhosj5nya-18dARMMQF9o4JnMBTI_Q6mkAfRcO98IW_1kth9AkPhZBXueiU4mD0Iqz5dydDqlUHuMlcwXGMEE3hvGbFzvh8DJo7ulUtPUtAOYfmQZmBdGTRbcm0b1uB0QYkxP3piJ9jpfnQrCE6Gzn8J-LbZ0-MYHsuXQ4eRcKgzd7B0YIbW2N3djmkYDfAxJc-BbTcKitPhKqBQzswlsUs8k7q010g"
+            alt="Lazy Left surf break along the southern coast of Sri Lanka"
+            src="/images/home/explore-beyond-your-stay/southern-coast-beaches/Lazy-Left-Sri-Lanka.webp"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
           <div className="relative z-10 p-6 flex items-center justify-between">
@@ -110,8 +110,8 @@ export function ExperiencesHero() {
         <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] lg:col-span-4 lg:min-h-[460px]">
           <img
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            alt="Historic ramparts and ocean views at Galle Dutch Fort on Sri Lanka's southern coast"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVkjDfFQDq5VLW87Q3MjnjGNQbW5xaSmmVPjC7p6J3jIftJ6sGrmDzgCQCnnlFIC1lgkzIjFV7a58RMDB77ByizXhodxDJoFKk5k_sqBUdc0pzM8_uXL3dTdTo7cc1WBNhpDORezd4tmvasJVutugpp8xjO4P38js1BSCCNc4JWBkFFICuXcxLmsovOyH2xU1Yir-VeSyq-1Ll37KE7GhEBHPEKUVk1VIGz7R-jDLdzv8OMRtkl8Xiw"
+            alt="Paravi Duwa Temple on a small island in Matara, connected by a footbridge"
+            src="/images/experiences/discover-more-by-the-sea/paravi-duwa-temple-matara/cinematic-color-grade-deep-cool-7692de7a-2k-6ae34e4faf0d2.webp"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
           <div className="relative z-10 p-6 flex items-center justify-between">
@@ -152,8 +152,8 @@ export function ExperiencesHero() {
         <StaggerItem className="group relative flex min-h-[360px] flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-900 shadow-[0_12px_40px_-8px_rgba(23,63,86,0.12)] transition-all duration-500 hover:scale-[1.015] hover:shadow-[0_20px_48px_-10px_rgba(23,63,86,0.2)] sm:min-h-[420px] md:col-span-2 lg:col-span-4 lg:min-h-[460px]">
           <img
             className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-            alt="Traditional Sri Lankan rice and curry spread at a coastal dining table"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-PDGX8yJQXxmnEWLqaxJsn-qkR6vHC3GYWU-hZesskSeUhlYL1dNEgMx670Pj3riWYEP7Fqk2_LixTXaS-bvSrzT5zfL26q_S9R9_ZKSjcHrHfDq_c2Ljkbr8MidTkvGJ28pdv6IyHuVBBMAG94IKVz0RWC5imuDgaxg3nhnncra81h9_j47Ye3ospRaNXekrqILhVCD1j7sLdFD_4SOzUPiD_qWKDWuMzM4eKyCqNtAHudxc5NE9Q"
+            alt="Salty Swamis Cafe & Surf Shop in Weligama"
+            src="/images/experiences/discover-more-by-the-sea/a-taste-of-sri-lankas-southern-coast/salty-swamis-cafe-and-surf-shop-weligama.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d2232]/95 via-[#0d2232]/45 to-black/20" />
           <div className="relative z-10 p-6 flex items-center justify-between">

@@ -1,4 +1,4 @@
-﻿import { BEACH_DESTINATIONS } from "./experiencesData";
+import { BEACH_DESTINATIONS } from "./experiencesData";
 import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
 
 export type DestinationBreadcrumbCategory = "Beaches & Surf";
@@ -166,9 +166,8 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
   tags: ["Coastal Shoreline", "Surfing & Tidepools"],
   distanceLabel: "~1.4 km from Noonna",
   hero: {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-    imageAlt: "Midigama Sandy Cove panoramic coastal view",
+    image: "/images/experiences/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
+    imageAlt: "Palm fringed sandy beach coastline at Midigama",
     script: "gentle tides & unhurried surf...",
     title: "Midigama Beach & Coastal Coves",
     deck: "The legendary surf breaks, secluded rock pools, and sunset gathering point of Sri Lanka’s southern coast.",
@@ -185,17 +184,15 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       "Essential field notes and coastal conditions for unhurried morning tidal walks, reef break timing, and effortless journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-      imageAlt:
-        "Calm turquoise tidepools and shallow volcanic granite reef shelf in Midigama at low tide",
-      topBadge: "Low-Tide Granite Soak Basins",
+      image: "/images/experiences/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
+      imageAlt: "Rocky sandy cove aerial view at Midigama",
+      topBadge: "Rocky Sandy Cove",
       distanceBadge: "1.4 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
-      title: "Volcanic Granite Tidal Pools & Reef Shelf",
+      title: "Rocky Sandy Cove & Reef Shelf",
       description:
-        "Naturally protected saltwater dipping baths etched into ancient volcanic rock shelves. Glassy turquoise pools allow serene, wakeful immersion sheltered from the Indian Ocean swell.",
+        "An aerial glimpse of Midigama's rocky sandy cove, where granite outcrops, reef shelves, and turquoise shallows shape the shoreline's calm tidal character.",
       facts: [
         { icon: "thermostat", label: "Water Temp: 28°C / 82°F" },
         { icon: "footprint", label: "Reef Footwear Loaned at Portico" },
@@ -228,8 +225,8 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       coordinates: "~1.4 km from Noonna",
       title: "Door-to-Shore Navigation",
       description:
-        "Just 1.4 km west along Matara Coastal Road (A2). 4 minutes by open-air tuk-tuk safari or 15 minutes barefoot stroll at low tide.",
-      mapsHref: "https://maps.app.goo.gl/Y83T4vS2S1H9Rp888",
+        "Just steps from the shore in Gandara, NOONNA BEACH HOTEL can be reached via Jayabodiya Road just off the main coastal route. Minutes by local tuk-tuk or a scenic coastal walk along the southern beachfront.",
+      mapsHref: "https://maps.app.goo.gl/X8YDfKbJBeZ8Km168",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Midigama%20tide%20and%20surf%20updates.",
@@ -249,7 +246,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "electric_rickshaw",
         iconLabel: "Open-Air Safari",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-tuk-tuk-safari.jpg",
         imageAlt: "Sri Lankan safari tuk-tuk with surfboard racks along coastal road near Midigama",
         description:
           "Our front desk team connects you directly with trusted Kumbalgama tuk-tuk drivers. Enjoy a breezy open-air ride past waving palm canopies and roadside thambili stalls.",
@@ -263,7 +260,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "pedal_bike",
         iconLabel: "Guest Quiver Bike",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-coastal-cruisers.jpg",
         imageAlt: "Vintage coastal cruiser bicycles with surfboard side carriers on golden sands",
         description:
           "Pedal along tranquil inland lanes through quiet cinnamon gardens and coastal coconut groves, bypassing highway bustle with our curated cruisers bikes with front surf racks.",
@@ -278,7 +275,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "footprint",
         iconLabel: "Tideline Walk",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDd5g419uHZs12brsUfcG0d1a5sujcloZoA26W30KpuaHeTDmk16C43LGbW0vD7HPrL-Mu2cCDZ5NKDL74dBX4qnGy8csA0HNKXR9PlithWT-DZXyLEdgv04xQwYNLt9o0TzfiLTo24RVKxYfJpMNsj_YOsoLxoL9xU6IDvO0Q7MUD2oNPnYLFkEteF5UP3lrOV14FZIwVW70mGiELC8KnzVHvXvb1D9lJ1AlYVk2WO3D7Nc0s5lTPHtg",
+          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-low-tide-walk.jpg",
         imageAlt: "Couple walking along golden sand shoreline in Weligama near Midigama",
         description:
           "Tuck your sandals in hand and walk westward along the golden tide line during morning low tide. Pass serene shallow rock pools and greeting local stilt fishermen.",
@@ -292,7 +289,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
         icon: "train",
         iconLabel: "Midigama Halt Station",
         image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
+          "/images/experiences/find-your-favourite-shore/midigama-beach/midigama-coastal-train.jpg",
         imageAlt: "Scenic coastal railway and shoreline landscape near Midigama station",
         description:
           "Midigama's quaint colonial open-air railway halt offers scenic connections towards the UNESCO Galle Fort (35 mins) or Colombo along the ocean tracks.",
@@ -308,59 +305,47 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     items: [
       {
         span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-        imageAlt: "Midigama turquoise outer reef and peeling dawn surf break",
-        topBadge: "06:15 AM • Outer Reef",
+        image: "/images/experiences/midigama-beach/Rocky_Sandy_Cove_Aerial_View.jpg",
+        imageAlt: "Rocky Sandy Cove Aerial View",
+        topBadge: "Aerial Cove",
         topBadgeRight: "1.4 km from hotel",
-        script: "morning swell...",
-        title: "Dawn Glass over Outer Reef",
+        script: "reef & shoreline...",
+        title: "Rocky Sandy Cove Aerial View",
         description:
-          "Crisp offshore walls peeling unhurried over shallow coral shelves in crystalline morning light, sheltered by ancient granite topography.",
+          "An overhead view of Midigama's rocky sandy cove, where reef textures and clear coastal water meet the shoreline.",
       },
       {
         span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Surfer waxing single fin board on golden sand in Midigama",
-        topBadge: "Dawn Patrol Ritual",
-        topBadgeRight: "Portico Quiver",
-        script: "wax & wave...",
-        title: "Barefoot Surf Preparation",
-        description: "Single fins waxed on golden sands with mineral zinc before the morning tide rises.",
+        image: "/images/experiences/midigama-beach/Couple_Walking_Along_Tropical_Shoreline.webp",
+        imageAlt: "Couple Walking Along Tropical Shoreline",
+        topBadge: "Shoreline Walk",
+        topBadgeRight: "Palm Fringed Coast",
+        script: "barefoot moments...",
+        title: "Couple Walking Along Tropical Shoreline",
+        description:
+          "A quiet walk along the tropical shoreline, framed by palms and the easy rhythm of the southern coast.",
       },
       {
-        span: "lg:col-span-4",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuCMeHUCJQXkpMUYdzxYm0uwRYfO3AtsTsijzRkSqHjw4P1Z37sn1yQqCY1ApH069Mr3i82DIn78DNgkGvx-7VdeFZ1Xczr72EBQlmfStaKsqJbBnQKe5LJJiuTOztvaRTE2QkbZaI_xql_kfrcobybPZdxOInwvrUwUPX_qUb8AF4GNMpHhJWt6XosBuOJnPAr7X8jV2K6p6NCkzLpPyvpaHyz966S4j61Z-OHjZAUpGme4CVEjAa6leQ",
-        imageAlt: "Natural rock dip pools and volcanic granite tide basins in Midigama",
-        topBadge: "Low Tide • 07:30 AM",
-        topBadgeRight: "Tidal Pools",
-        script: "natural baths...",
-        title: "Granite Tidal Soak Basins",
-        description: "Natural calm saltwater baths sheltered by ancient volcanic granite ledges.",
-      },
-      {
-        span: "lg:col-span-4",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
-        imageAlt: "Coconut Grove palm canopies along the southern coastal shoreline near Midigama",
-        topBadge: "Matara Coastal Road",
-        topBadgeRight: "Inland Cruise",
-        script: "canopy & reef...",
-        title: "Coconut Grove Shaded Trails",
-        description: "Quiet cycling routes winding through cinnamon plantations and swaying palms.",
-      },
-      {
-        span: "lg:col-span-4",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Twilight solitude and amber sunset reflection on Midigama beach",
-        topBadge: "Twilight Solitude • 18:15 PM",
+        span: "lg:col-span-5",
+        image: "/images/experiences/midigama-beach/Watching_Ocean_Sunset_on_Beach.jpg",
+        imageAlt: "Watching Ocean Sunset on Beach",
+        topBadge: "Golden Hour",
         topBadgeRight: "Sunset Cove",
-        script: "evening calm...",
-        title: "Golden Crescent Cove",
-        description: "Quiet evening shoreline bathed in warm amber Indian Ocean twilight glow.",
+        script: "evening glow...",
+        title: "Watching Ocean Sunset on Beach",
+        description:
+          "A calm moment watching the ocean at sunset as warm light settles over the beach.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/midigama-beach/Palm_Fringed_Sandy_Beach_Coastline.webp",
+        imageAlt: "Palm Fringed Sandy Beach Coastline",
+        topBadge: "Coastal Panorama",
+        topBadgeRight: "Midigama Shore",
+        script: "palm-lined sands...",
+        title: "Palm Fringed Sandy Beach Coastline",
+        description:
+          "A sweeping view of Midigama's palm-fringed sandy beach coastline, capturing the relaxed character of the shore.",
       },
     ],
   },
@@ -386,7 +371,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coconut-tree-hill",
@@ -440,7 +425,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "koggala-lake-cinnamon-island",
@@ -458,7 +443,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Peaceful wooden catamaran cruises gliding past bird-rich mangrove channels, quiet hermitages, and organic cinnamon peelers.",
         footerLeft: "Dawn birdwatching safaris",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "mirissa-whale-watching",
@@ -812,7 +797,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "galle-dutch-fort",
@@ -830,7 +815,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1172,7 +1157,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "galle-dutch-fort",
@@ -1190,7 +1175,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1532,7 +1517,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1603,7 +1588,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -1910,7 +1895,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -1981,7 +1966,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -2289,7 +2274,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -2360,7 +2345,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -2667,7 +2652,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -2738,7 +2723,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -3046,7 +3031,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3100,7 +3085,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -3393,7 +3378,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3429,7 +3414,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -3721,7 +3706,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -3775,7 +3760,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -4067,7 +4052,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4121,7 +4106,7 @@ export const COCONUT_TREE_HILL_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -4413,7 +4398,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4467,7 +4452,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",
@@ -4759,7 +4744,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "Centuries-old stone bastions, ocean breeze walks along Flag Rock, colonial archways, and vibrant independent artisan jewelers.",
         footerLeft: "Late afternoon sunset walk",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "shirani-home-made-rice-curry",
@@ -4813,7 +4798,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
           "Majestic 12-foot rock relief of Avalokiteshvara Bodhisattva carved into a granite cliff edge, draped in centuries of folklore and silent reverence.",
         footerLeft: "10-12 min cruiser bicycle ride",
         href: "/experiences/southern-heritage-coastal-expeditions",
-        linkLabel: "Explore Heritage & Wildlife Hub â†’",
+        linkLabel: "Explore Heritage & Wildlife Hub →",
       },
       {
         id: "coastal-spice-lunch",

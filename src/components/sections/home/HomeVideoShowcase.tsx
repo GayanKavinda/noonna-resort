@@ -59,7 +59,7 @@ export const HomeVideoShowcase: React.FC = () => {
               loop
               playsInline
               preload="metadata"
-              poster="/images/hotel/hero-beach.jpg"
+                poster="/images/home/hero/hero-beach.jpg"
               aria-label="See More of Noonna Beach"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
@@ -135,7 +135,7 @@ export const HomeVideoShowcase: React.FC = () => {
               </p>
               <div className="group relative h-36 cursor-pointer overflow-hidden rounded-2xl border border-[#D9EAF3]/60">
                 <Image
-                  src="/images/hotel/property-exterior.jpg"
+                    src="/images/home/see-more-of-noonna-beach/property-exterior.jpg"
                   alt="Morning Tides & Ceylon Tea Video Still"
                   fill
                   sizes="(max-width: 1024px) 100vw, 33vw"

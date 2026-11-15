@@ -43,7 +43,7 @@ export const HomeSocialFeed: React.FC = () => {
               target="_blank"
             >
               <Image
-                src="/images/hotel/hero-beach.jpg"
+                src="/images/home/life-at-noonna-beach/hero-beach.jpg"
                 alt="Beachfront golden hour"
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
@@ -73,7 +73,7 @@ export const HomeSocialFeed: React.FC = () => {
               target="_blank"
             >
               <Image
-                src="/images/hotel/property-exterior.jpg"
+                src="/images/home/life-at-noonna-beach/property-exterior.jpg"
                 alt="Quiet veranda lounge"
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
@@ -103,7 +103,7 @@ export const HomeSocialFeed: React.FC = () => {
               target="_blank"
             >
               <Image
-                src="/images/hotel/property-grounds.jpg"
+                src="/images/home/life-at-noonna-beach/property-grounds.jpg"
                 alt="Lush tropical gardens"
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
@@ -133,7 +133,7 @@ export const HomeSocialFeed: React.FC = () => {
               target="_blank"
             >
               <Image
-                src="/images/rooms/deluxe-ocean-suite.jpg"
+                src="/images/stay/entire-resort-rental-for-a-private-stay/deluxe-ocean-suite.jpg"
                 alt="Noonna Beach Hotel interior"
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"

@@ -12,7 +12,7 @@ const fullTitle = "Terms & Conditions | Noonna Beach Hotel";
 const description =
   "General website terms and confirmed stay policies for Noonna Beach Hotel, including check-in, children, pets, events, and booking conditions.";
 const canonical = absoluteUrl("/terms");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/shared/hero-beach.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

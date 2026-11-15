@@ -20,7 +20,8 @@ const title = "Noonna Beach Hotel | Kumbalgama, Sri Lanka";
 const description =
   "Discover Noonna Beach Hotel, a private coastal sanctuary on Sri Lanka's southern shoreline.";
 const canonical = absoluteUrl("/");
-const image = "/images/branding/og-image.jpg";
+// const image = "/images/branding/og-image.jpg";
+const image = "/images/branding/og-image.webp";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

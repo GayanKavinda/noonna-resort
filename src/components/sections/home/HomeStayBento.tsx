@@ -56,7 +56,7 @@ export const HomeStayBento: React.FC = () => {
               <div className="group relative h-[220px] overflow-hidden rounded-3xl border border-[#D9EAF3]/60 bg-white shadow-[0_4px_24px_-4px_rgba(23,63,86,0.04)] sm:h-[240px]">
                 <div className="relative h-full w-full">
                   <Image
-                    src="/images/hotel/property-grounds.jpg"
+                    src="/images/home/your-own-coastal-hideaway/tropical-garden-pathways.jpg"
                     alt="Garden Pathways and Tropical Palms"
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"

@@ -95,7 +95,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
             <Reveal delay={0.08}>
               <div className="flex items-start gap-2 text-xs font-light text-slate-500 sm:items-center">
                 <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-[#2f6b8f] sm:mt-0" />
-                <span>Official Booking.com Listing Â· Verified Accommodation</span>
+                <span>Official Booking.com Listing · Verified Accommodation</span>
               </div>
             </Reveal>
           </div>
@@ -104,7 +104,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
             <div className="group relative w-full overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-white shadow-[0_16px_40px_-8px_rgba(23,63,86,0.08)]">
               <div className="relative h-[300px] w-full sm:h-[400px] md:h-[460px] lg:h-[520px]">
                 <Image
-                  src="/images/rooms/deluxe-ocean-suite.jpg"
+                  src="/images/stay/entire-resort-rental-for-a-private-stay/deluxe-ocean-suite.jpg"
                   alt="Interior space at Noonna Beach Hotel in Kumbalgama"
                   fill
                   priority

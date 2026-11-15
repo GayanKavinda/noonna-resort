@@ -14,7 +14,7 @@ const fullTitle = "Contact & Booking | Noonna Beach Hotel";
 const description =
   "Contact Noonna Beach Hotel in Kumbalgama, Sri Lanka for reservations, inquiries, and travel assistance along the southern coast.";
 const canonical = absoluteUrl("/contact");
-const image = "/images/hotel/property-exterior.jpg";
+const image = "/images/contact/contact-hero/property-exterior.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

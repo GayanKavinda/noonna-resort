@@ -15,7 +15,7 @@ const fullTitle = "Experiences & Coastal Journeys | Noonna Beach Hotel";
 const description =
   "Explore 13 southern beaches and surf breaks, 9 historic sanctuaries and mangrove lagoons, and authentic coastal dining surrounding Noonna Beach Hotel in Kumbalgama, Sri Lanka.";
 const canonical = absoluteUrl("/experiences");
-const image = "/images/hotel/hero-beach.jpg";
+const image = "/images/experiences/coastal-journeys/hero-beach.jpg";
 const imageUrl = absoluteUrl(image) ?? image;
 
 export const metadata: Metadata = {

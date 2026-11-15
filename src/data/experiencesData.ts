@@ -52,7 +52,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
       "Famed for its legendary peeling reef breaks including Lazy Left, Rams, and Plantations. Midigama retains an unhurried, laid-back coastal charm with authentic roadside coconut shacks, quiet stretches of sand, and golden afternoon light.",
     features: ["Surf & Sunset Sanctuary", "Tide Pools", "Coconut Groves"],
     ctaLabel: "Explore Tides",
-    image: "/images/hotel/hero-beach.jpg",
+    image: "/images/experiences/beaches/hero-beach.jpg",
     imageAlt: "Midigama Beach waves and turquoise surf break near Noonna Beach Hotel",
   },
   {
@@ -378,11 +378,11 @@ export const CULINARY_SPOTLIGHTS: CulinarySpotlightItem[] = [
     meta: "Daily Harbour Catch & Local Claypot Traditions",
     images: [
       {
-        src: "/images/hotel/property-grounds.jpg",
+        src: "/images/experiences/a-taste-of-sri-lanka/claypot-curries-and-ocean-bounty/a5f1d5e5-09ff-409d-b647-9f86cda8823a.jpg",
         alt: "Traditional clay pot curry feast in southern Sri Lanka",
       },
       {
-        src: "/images/hotel/hero-beach.jpg",
+        src: "/images/experiences/a-taste-of-sri-lanka/claypot-curries-and-ocean-bounty/658975289_967863016195618_232561311671886841_n.jpg",
         alt: "Fresh seafood grilling along Sri Lankan coastline",
       },
     ],
@@ -399,7 +399,7 @@ export const CULINARY_SPOTLIGHTS: CulinarySpotlightItem[] = [
     meta: "Ask Concierge for Walking Directions & Seating",
     images: [
       {
-        src: "/images/hotel/property-exterior.jpg",
+        src: "/images/experiences/a-taste-of-sri-lanka/shirani-home-made-rice-and-curry/img-20191009-195211-largejpg.jpg",
         alt: "Shirani Home Made Rice and Curry in Kumbalgama",
       },
     ],
