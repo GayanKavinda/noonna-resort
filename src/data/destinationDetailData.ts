@@ -3761,7 +3761,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
 const parrotRockBase = BEACH_DESTINATIONS.find((d) => d.slug === "parrot-rock");
 
 export const PARROT_ROCK_DETAIL: DestinationDetail = {
-
+  slug: "parrot-rock",
   name: parrotRockBase?.name ?? "Parrot Rock",
   breadcrumbCategory: "Beaches & Surf",
   categoryLabel: "Beaches & Surf",
