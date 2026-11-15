@@ -116,12 +116,14 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "fort",
     images: [
       {
-        alt: "Galle Dutch Fort Bastions and Lighthouse",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/galle-dutch-fort/couple-walking-near-galle-lighthouse.webp",
+        alt: "Couple walking near the Galle Fort lighthouse at Point Utrecht Bastion",
         topBadge: "Historic Citadel",
         caption: "Point Utrecht Bastion & 1939 White Lighthouse",
       },
       {
-        alt: "Colonial stone masonry and quiet laneways of Galle Fort",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/galle-dutch-fort/galle-dutch-fort-aerial-sunset-view.webp",
+        alt: "Aerial sunset view of Galle Dutch Fort and its historic ramparts",
         caption: "Dutch Colonial Archways & Historic Citadel Walkways",
       },
     ],
@@ -159,12 +161,14 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "kushta",
     images: [
       {
-        alt: "Detailed full view of ancient Kushtarajagala carved rock relief monolith",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/kushtarajagala-rock-relief/kushtarajagala-ancient-stone-carving-weligama.webp",
+        alt: "Ancient Kushtarajagala stone carving at Weligama",
         topBadge: "Sacred Monolith • 8th C.",
         caption: "Mahayana Avalokiteshvara in Granite",
       },
       {
-        alt: "Coastal ambiance and sacred grounds near Weligama",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/kushtarajagala-rock-relief/kushtarajagala-rock-relief-statue-close-up.webp",
+        alt: "Close-up of the Kushtarajagala rock relief statue",
         caption: "Sacred Bo Tree Canopies",
       },
     ],
@@ -205,14 +209,15 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "potters",
     images: [
       {
-        alt: "Master Sri Lankan artisan shaping earthenware clay vessel on wheel",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/kumbalgama-potters-village/children-painting-clay-pottery-kumbalgama-village.webp",
+        alt: "Children painting clay pottery in Kumbalgama village",
         topBadge: "Traditional Wheel Craft",
-        caption: "Generational Master Shaping Terracotta Clay",
+        caption: "Children Painting Clay Pottery",
       },
       {
-        alt: "Tropical sun-curing yards and red clay patios in Kumbalgama",
-        caption:
-          "Continuous wheel craft sustained across five ancestral village generations",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/kumbalgama-potters-village/kumbalgama-potters-village-roadside-clay-pots.webp",
+        alt: "Roadside display of clay pots at Kumbalgama Potters' Village",
+        caption: "Roadside Clay Pots at Kumbalgama Potters' Village",
       },
     ],
   },
@@ -249,12 +254,14 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "museum",
     images: [
       {
-        alt: "Martin Wickramasinghe Museum Folk Heritage Estate in Koggala",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/martin-wickramasinghe-museum/martin-wickramasinghe-ancestral-home-koggala-museum.webp",
+        alt: "Martin Wickramasinghe ancestral home at the Koggala museum complex",
         topBadge: "Ancestral Folk Estate",
         caption: "Botanical Gardens & Traditional Southern Artifacts",
       },
       {
-        alt: "Quiet scenic coastal atmosphere near Koggala and Weligama",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/martin-wickramasinghe-museum/traditional-bullock-cart-at-martin-wickramasinghe-museum.webp",
+        alt: "Traditional bullock cart at the Martin Wickramasinghe Museum",
         caption: "Rich Literary and Folk Traditions of Southern Sri Lanka",
       },
     ],
@@ -294,14 +301,14 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "taprobane",
     images: [
       {
-        alt: "Aerial perspective of Taprobane Island showing colonial villa surrounded by azure waters",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/taprobane-island/beach-swing-overlooking-taprobane-island-dusk.webp",
+        alt: "Beach swing overlooking Taprobane Island at dusk in Weligama Bay",
         topBadge: "Aerial Island & Villa",
         caption: "Private Islet in Weligama Bay",
-        iconCaption:
-          "Count de Mauny's romantic retreat anchored off the beach",
       },
       {
-        alt: "Scenic Weligama Bay turquoise tidal waters and headlands",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/taprobane-island/taprobane-island-private-villa-aerial-view.webp",
+        alt: "Aerial view of Taprobane Island private villa in Weligama Bay",
         caption: "Turquoise Reef Basin & Wadeable Sand Spit at Low Tide",
       },
     ],

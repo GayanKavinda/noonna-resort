@@ -5,6 +5,7 @@
   MapPin,
   MessageCircle,
 } from "lucide-react";
+import Image from "next/image";
 import type {
   HeritageChapter as HeritageChapterData,
   HeritageImage,
@@ -29,9 +30,19 @@ function PlaceholderImage({
     <div
       className={`relative overflow-hidden border border-slate-100 bg-gradient-to-br from-slate-200 via-slate-100 to-[#dbe9f2] ${className}`}
     >
-      <div className="absolute inset-0 flex items-center justify-center text-slate-500">
-        <ImageIcon className="w-8 h-8" strokeWidth={1.5} />
-      </div>
+      {image.src ? (
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+        />
+      ) : (
+        <div className="absolute inset-0 flex items-center justify-center text-slate-500">
+          <ImageIcon className="w-8 h-8" strokeWidth={1.5} />
+        </div>
+      )}
       {overlay !== "none" && <div className={`absolute inset-0 ${grad}`} />}
       {image.topBadge && (
         <div

@@ -5,8 +5,8 @@ export function SouthernHeritageHero() {
     <section className="w-full px-6 lg:px-8 py-8 bg-white">
       <div className="max-w-7xl mx-auto relative rounded-3xl overflow-hidden shadow-xl bg-neutral-900 min-h-[380px] lg:min-h-[440px] flex flex-col justify-end">
         <Image
-          src="/images/experiences/discover-more-by-the-sea/paravi-duwa-temple-matara/cinematic-color-grade-deep-cool-7692de7a-2k-6ae34e4faf0d2.webp"
-          alt="Paravi Duwa Temple on a small island in Matara, connected by a footbridge"
+          src="/images/experiences/southern-heritage-coastal-expeditions/hero/southern-heritage-coastal-expeditions-hero.webp"
+          alt="Southern heritage and coastal landscape near Galle Fort, Sri Lanka"
           fill
           priority
           sizes="(max-width: 1280px) 100vw, 1280px"

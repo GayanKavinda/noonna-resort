@@ -45,13 +45,20 @@ export default function HotelSurroundings() {
             </p>
           </div>
           <div className="flex items-center gap-3 self-start md:self-auto shrink-0">
-            <a
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-[#D9EAF3] text-[#173F56] hover:border-[#2f6b8f] hover:bg-slate-50 text-xs font-medium tracking-wide shadow-sm transition-all duration-200"
-              href="#arrival-map"
-            >
-              <Compass className="w-3.5 h-3.5 text-[#2f6b8f]" />
-              <span className="font-normal">Show on Map</span>
-            </a>
+            <div className="group relative">
+              <button
+                type="button"
+                disabled
+                aria-disabled="true"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white border border-[#D9EAF3] text-[#173F56] text-xs font-medium tracking-wide shadow-sm opacity-60 cursor-not-allowed"
+              >
+                <Compass className="w-3.5 h-3.5 text-[#2f6b8f]" />
+                <span className="font-normal">Show on Map</span>
+              </button>
+              <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-[#173F56] px-2.5 py-1 text-[11px] font-medium text-white opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+                Under development
+              </span>
+            </div>
             <a
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#2f6b8f] hover:bg-[#25566f] text-white text-xs font-medium tracking-wide shadow-sm transition-all duration-200"
               href="https://www.booking.com/hotel/lk/noonna-beach.html"
