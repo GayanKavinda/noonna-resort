@@ -83,7 +83,7 @@ export interface DestinationTransitData {
 }
 
 export interface DestinationGalleryItem {
-  span: "lg:col-span-7" | "lg:col-span-5" | "lg:col-span-4";
+  span: "lg:col-span-7" | "lg:col-span-5" | "lg:col-span-4" | "lg:col-span-6" | "lg:col-span-12" | "lg:col-span-7 lg:row-span-2";
   image: string;
   imageAlt: string;
   topBadge: string;
@@ -1731,9 +1731,8 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
   tags: ["Iconic Reef Break", "Longboard Haven"],
   distanceLabel: "~1.5 km from Noonna",
   hero: {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-    imageAlt: "Clean left-hand peeling wave at Lazy Left surf break in Midigama",
+    image: "/images/experiences/beaches/lazy-left-surf-break/Lazy_Left_Surf_Break_Aerial_Coastline.webp",
+    imageAlt: "Aerial coastline view of Lazy Left surf break at Midigama",
     script: "endless left walls & glassy dawn swells...",
     title: "Lazy Left Surf Break",
     deck: "Sri Lanka's legendary long-peeling left-hand reef break—celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
@@ -1750,16 +1749,15 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
       "Essential field notes and wave conditions for morning dawn patrols, reef navigation, and effortless journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-      imageAlt: "Crystal clear water and peeling wave crest at Midigama Lazy Left",
-      topBadge: "Legendary Left Lineup",
+      image: "/images/experiences/beaches/lazy-left-surf-break/Lazy_Left_Beach_Bathers_and_Umbrellas.webp",
+      imageAlt: "Beach bathers and umbrellas near Lazy Left at Midigama",
+      topBadge: "Beachside Shore Scene",
       distanceBadge: "1.5 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Window: 06:00 – 09:30 AM (Low to Mid Tide)",
-      title: "Long-Walling Lefts over Volcanic Shelf",
+      title: "Lazy Left Beach Bathers and Umbrellas",
       description:
-        "A reliable reef break delivering smooth, peeling left-hand rides spanning hundreds of meters. Features a gentle takeoff that mellows into forgiving, open shoulders.",
+        "A relaxed view of beachgoers and umbrellas along the Lazy Left shore, capturing the easygoing seaside atmosphere beside Midigama's surf lineup.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Recommended for Outer Shelf" },
@@ -1790,10 +1788,10 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~1.5 km from Noonna",
-      title: "Door-to-Lineup Access",
+      title: "Door-to-Shore Navigation",
       description:
-        "Just 1.5 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 5-minute coastal bicycle cruise.",
-      mapsHref: "https://maps.app.goo.gl/ZfkQg3LNtndf4dzSA",
+        "About 1.5 km west along Matara Coastal Road (A2) in Midigama. Around 3 minutes by tuk-tuk or 5 minutes by bicycle from Noonna.",
+      mapsHref: "https://maps.app.goo.gl/6BAipJAkShgEmCMFA",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Lazy%20Left%20swell%20and%20tide%20updates.",
@@ -1857,48 +1855,48 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-        imageAlt: "Clean glass wave peeling across Lazy Left lineup in Midigama",
-        topBadge: "06:15 AM • Dawn Glass",
-        topBadgeRight: "1.5 km from hotel",
-        script: "morning swell...",
-        title: "Dawn Glass over Lazy Left",
-        description: "Crisp offshore walls peeling unhurried over shallow coral shelves in crystalline morning light.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/lazy-left-surf-break/Lazy_Left_Surf_Break_Aerial_Coastline.webp",
+        imageAlt: "Lazy Left Surf Break Aerial Coastline",
+        topBadge: "Aerial Coastline",
+        topBadgeRight: "1.5 km from Noonna",
+        script: "reef from above...",
+        title: "Lazy Left Surf Break Aerial Coastline",
+        description:
+          "An aerial view of the Lazy Left coastline at Midigama, showing the surf break, reef, and shoreline stretching along the southern coast.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Surfer preparing longboard on golden sand near Midigama break",
-        topBadge: "Dawn Patrol Ritual",
-        topBadgeRight: "Quiver Prep",
-        script: "wax & wave...",
-        title: "Pre-Surf Setup",
-        description: "Single and longboards waxed on golden sands before paddling out into the morning lineup.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/lazy-left-surf-break/Surfers_Riding_Lazy_Left_Wave.webp",
+        imageAlt: "Surfers Riding Lazy Left Wave",
+        topBadge: "Surf Lineup",
+        topBadgeRight: "Peeling Lefts",
+        script: "morning rides...",
+        title: "Surfers Riding Lazy Left Wave",
+        description:
+          "Surfers riding a clean left-hand wave at Lazy Left, capturing the smooth, peeling character of the break.",
       },
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
-        imageAlt: "Palm tree canopy along Midigama coastal road near surf spot",
-        topBadge: "Coastal Approach",
-        topBadgeRight: "Palm Canopy",
-        script: "canopy path...",
-        title: "Shaded Coastal Access",
-        description: "Tranquil roadside coconut groves framing the short trip from Noonna Beach Hotel.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/lazy-left-surf-break/Lazy_Left_Beach_Bathers_and_Umbrellas.webp",
+        imageAlt: "Lazy Left Beach Bathers and Umbrellas",
+        topBadge: "Beachside Scene",
+        topBadgeRight: "Shoreline Relaxation",
+        script: "easygoing shore...",
+        title: "Lazy Left Beach Bathers and Umbrellas",
+        description:
+          "Beach bathers and umbrellas along the Lazy Left shore, reflecting the relaxed seaside atmosphere beside the surf.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Golden sunset reflection over Midigama ocean waters",
-        topBadge: "18:00 PM • Golden Hour",
-        topBadgeRight: "Evening Glow",
-        script: "sunset surf...",
-        title: "Twilight Peelers",
-        description: "Evening golden hour sessions bathed in warm amber Indian Ocean light.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/lazy-left-surf-break/Surfers_Near_Midigama_Islet.webp",
+        imageAlt: "Surfers Near Midigama Islet",
+        topBadge: "Islet & Lineup",
+        topBadgeRight: "Coastal Panorama",
+        script: "ocean horizon...",
+        title: "Surfers Near Midigama Islet",
+        description:
+          "Surfers in the water near the Midigama islet, with open ocean views framing this iconic stretch of coastline.",
       },
     ],
   },
@@ -2109,9 +2107,8 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
   tags: ["Shallow Reef Barrel", "Advanced Surf Spot"],
   distanceLabel: "~1.6 km from Noonna",
   hero: {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-    imageAlt: "Hollow right-hand barrel breaking over shallow reef at Rams Right in Midigama",
+    image: "/images/experiences/beaches/rams-right-surf-break/Surfers_Catching_Waves_in_Shallow_Waters.webp",
+    imageAlt: "Surfers catching waves in shallow waters at Rams Right",
     script: "hollow barrels & technical right walls...",
     title: "Rams Right Surf Break",
     deck: "Sri Lanka's most iconic heavy right-hand barrel—a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
@@ -2128,16 +2125,15 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
       "Essential field notes and wave conditions for morning barrel sessions, reef navigation, and effortless journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-      imageAlt: "Crystal clear water and hollow right-hand breaking wave at Rams Right",
-      topBadge: "Advanced Barrel Lineup",
+      image: "/images/experiences/beaches/rams-right-surf-break/Surfer_Riding_Wave_at_Sunset.webp",
+      imageAlt: "Surfer riding a wave at sunset at Rams Right",
+      topBadge: "Sunset Ride",
       distanceBadge: "1.6 km from Noonna",
       panelBadge: "Daily Rhythm",
       panelBadgeText: "Optimal Window: 06:00 – 09:00 AM (Mid Tide)",
-      title: "Short, Fast & Hollow Right-Hander",
+      title: "Surfer Riding Wave at Sunset",
       description:
-        "A focused reef break delivering intense, fast right-hand tubes over a shallow volcanic shelf. Features a critical takeoff and high-performance sections for experienced riders.",
+        "A surfer carving along a wave at sunset, capturing the warm evening light and energetic surf character of Rams Right.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
         { icon: "footprint", label: "Reef Booties Strongly Recommended" },
@@ -2168,10 +2164,10 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~1.6 km from Noonna",
-      title: "Door-to-Lineup Access",
+      title: "Door-to-Shore Navigation",
       description:
-        "Just 1.6 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk ride or a 6-minute coastal bicycle cruise.",
-      mapsHref: "https://www.google.com/maps/search/?api=1&query=Rams+Right+Surf+Break+Midigama+Sri+Lanka",
+        "Just 1.4 km west along Matara Coastal Road (A2). 4 minutes by open-air tuk-tuk safari or 15 minutes barefoot stroll at low tide.",
+      mapsHref: "https://maps.app.goo.gl/WNvd5u5TLcYy9Enj7",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Rams%20Right%20swell%20and%20tide%20updates.",
@@ -2235,48 +2231,48 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-        imageAlt: "Hollow right barrel peeling across Rams Right lineup in Midigama",
-        topBadge: "06:30 AM • Morning Barrel",
-        topBadgeRight: "1.6 km from hotel",
-        script: "clean tubes...",
-        title: "Dawn Barrels at Rams Right",
-        description: "Crisp offshore walls squaring up over a shallow reef shelf in clean morning light.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/rams-right-surf-break/Surfers_Catching_Waves_in_Shallow_Waters.webp",
+        imageAlt: "Surfers Catching Waves in Shallow Waters",
+        topBadge: "Reef Lineup",
+        topBadgeRight: "1.6 km from Noonna",
+        script: "shallow-water rides...",
+        title: "Surfers Catching Waves in Shallow Waters",
+        description:
+          "Surfers catching waves in the shallow waters at Rams Right, with clear turquoise conditions over the reef.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Surfer checking waves from the roadside cafe overlooking Rams Right",
-        topBadge: "Roadside Vantage",
-        topBadgeRight: "The Blue Porch View",
-        script: "coffee & swell...",
-        title: "Roadside Lineup Watch",
-        description: "Watching sets roll in from the elevated comfort of the front-row coastal cafe.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/rams-right-surf-break/Noonna_Beach_Hotel_and_Coastline_Aerial_View.webp",
+        imageAlt: "Noonna Beach Hotel and Coastline Aerial View",
+        topBadge: "Aerial Coastline",
+        topBadgeRight: "Hotel & Shore",
+        script: "from above...",
+        title: "Noonna Beach Hotel and Coastline Aerial View",
+        description:
+          "An aerial view of Noonna Beach Hotel and the surrounding coastline near Rams Right on Sri Lanka's southern shore.",
       },
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
-        imageAlt: "Palm tree canopy along Midigama coastal road near Rams",
-        topBadge: "Coastal Approach",
-        topBadgeRight: "Palm Canopy",
-        script: "canopy path...",
-        title: "Shaded Coastal Route",
-        description: "Tranquil roadside coconut groves framing the short journey from Noonna Beach Hotel.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/rams-right-surf-break/Surfer_Riding_Wave_at_Sunset.webp",
+        imageAlt: "Surfer Riding Wave at Sunset",
+        topBadge: "Golden Hour",
+        topBadgeRight: "Sunset Session",
+        script: "evening glow...",
+        title: "Surfer Riding Wave at Sunset",
+        description:
+          "A surfer riding a wave at Rams Right as warm sunset light reflects across the water.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Golden sunset reflection over Midigama ocean waters",
-        topBadge: "18:00 PM • Golden Hour",
-        topBadgeRight: "Evening Glow",
-        script: "sunset surf...",
-        title: "Twilight Right Peelers",
-        description: "Evening golden hour sessions bathed in warm amber Indian Ocean light.",
+        span: "lg:col-span-6",
+        image: "/images/experiences/beaches/rams-right-surf-break/Surfer_Walking_Down_Tropical_Path_with_Board.webp",
+        imageAlt: "Surfer Walking Down Tropical Path with Board",
+        topBadge: "Coastal Path",
+        topBadgeRight: "Board in Hand",
+        script: "path to the break...",
+        title: "Surfer Walking Down Tropical Path with Board",
+        description:
+          "A surfer carrying a board along a tropical path toward the shoreline, setting out for a session at Rams Right.",
       },
     ],
   },
@@ -2488,9 +2484,8 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
   tags: ["Secluded Tidal Pools", "Natural Saltwater Bath"],
   distanceLabel: "~2.8 km from Noonna",
   hero: {
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7CF0553z64tfJtXojnp_CW90EddnVj_e-OPtLS0vxIRyzZvHXgwrQj6zFkSpd6WjjkifyIc-zLyEMukvDlYQnB7cnmYaJqtCMV7nWbUp4nCosCtQCTdKiHmuldoVM0ejbgzbv3aI8JMfPml2Hi8bmhLhH-kO5DxM_OwGb075k7nsCGTzZ0Xu4aUa4rQv3TkMjZtTs7nGk13YtHH0w6RFkeUkTfQMja7nGIb6rPXmReL5L3HsaD7uVeg",
-    imageAlt: "Calm turquoise natural rock pool sheltered by volcanic granite ledges at Awee Coco",
+    image: "/images/experiences/beaches/awee-coco-secret-pool/Group_Surf_Lesson_on_Weligama_Beach.webp",
+    imageAlt: "Group surf lesson on Weligama Beach near Awee Coco",
     script: "hidden tidal basins & serene palm shade...",
     title: "Awee Coco Secret Pool",
     deck: "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.",
@@ -2507,19 +2502,18 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
       "Essential field notes and coastal conditions for unhurried morning soak sessions, reef navigation, and effortless journeys from Noonna Beach Hotel.",
     climateBadge: "Southern Province Microclimate",
     showcase: {
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-      imageAlt: "Sheltered shallow turquoise water in natural rock basin at Awee Coco Secret Pool",
-      topBadge: "Low-Tide Granite Soak Basins",
+      image: "/images/experiences/beaches/awee-coco-secret-pool/Clifftop_Infinity_Pool_Overlooking_Weligama_Coast.webp",
+      imageAlt: "Clifftop infinity pool overlooking Weligama coast",
+      topBadge: "Clifftop Coastal View",
       distanceBadge: "2.8 km from Noonna",
       panelBadge: "Daily Rhythm",
-      panelBadgeText: "Optimal Low Tide: 06:30 – 10:00 AM",
-      title: "Sheltered Saltwater Dipping Baths",
+      panelBadgeText: "Best Light: Morning & Late Afternoon",
+      title: "Clifftop Infinity Pool Overlooking Weligama Coast",
       description:
-        "Naturally formed rock basins etched into ancient volcanic ledges. Outer reef barriers block ocean swells, creating crystal-clear calm water for peaceful morning immersion.",
+        "A clifftop infinity pool with sweeping views over the Weligama coastline, capturing the elevated coastal scenery near Awee Coco.",
       facts: [
         { icon: "thermostat", label: "Water Temp: ~28°C / 82°F (Year-Round)" },
-        { icon: "footprint", label: "Reef Footwear Loaned at Portico" },
+        { icon: "footprint", label: "Reef Footwear Recommended for Rocky Areas" },
       ],
     },
     cards: [
@@ -2547,10 +2541,10 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
     intel: {
       eyebrow: "Direct Access & Navigation",
       coordinates: "~2.8 km from Noonna",
-      title: "Door-to-Pool Access",
+      title: "Door-to-Shore Navigation",
       description:
-        "Positioned 2.8 km along the southern coastal route. Easily reached via a 4-minute tuk-tuk safari or a 10-minute scenic coastal bicycle ride.",
-      mapsHref: "https://maps.app.goo.gl/sFpuvsoxbCosjjD28",
+        "Just 1.6 km west along the Matara Coastal Road (A2). Reachable in a 3-minute open-air tuk-tuk safari or a 5-minute coastal bicycle cruise to Awee Coco Secret Pool Surf Point.",
+      mapsHref: "https://maps.app.goo.gl/CCDnMHh7qBNg2DCj8",
       mapsLabel: "Google Maps Pin",
       hostHref:
         "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Awee%20Coco%20tide%20and%20access%20updates.",
@@ -2614,48 +2608,70 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
     allHref: "/experiences",
     items: [
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuD5M7aGwpJb3Tt2_Jll_GTXGAC6k9ga1dVgPnvlQT5so6SKbh5jm_yhz3rDcB7Mxb1jLMZG3kLP1HH7Oo9yjx3nBxWWtczKh-ZvUe-jvBWn9LY290oNcxRDJrUd2L825zzGc5Gi8GaWI4UuCsVOFmoJ2BXgm_NroxmtMKwf6U4_noZ_cnVpCgkjGEH9lPyLDChkFUpVtZ_9Gqr9uHBHvsZoShaMPT-1TTjDvjLqFU0wptqxZfG3NGEQRw",
-        imageAlt: "Calm turquoise tidepools and shallow volcanic granite reef shelf at low tide",
-        topBadge: "07:00 AM • Low Tide",
-        topBadgeRight: "2.8 km from hotel",
-        script: "morning calm...",
-        title: "Glassy Granite Soak Basins",
-        description: "Crystal-clear saltwater dipping baths sheltered by ancient volcanic granite ledges.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Surfers_Riding_Waves_at_Coco_Surf_Point.webp",
+        imageAlt: "Surfers Riding Waves at Coco Surf Point",
+        topBadge: "Surf Point",
+        topBadgeRight: "Coco Break",
+        script: "rolling swells...",
+        title: "Surfers Riding Waves at Coco Surf Point",
+        description:
+          "Surfers riding waves at Coco Surf Point, capturing the lively surf scene near Awee Coco.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Sunlight filtering through palm canopy over coastal rock pools",
-        topBadge: "Canopy Shade",
-        topBadgeRight: "Palm Ledge",
-        script: "shade & breeze...",
-        title: "Sheltered Palm Ledge",
-        description: "Natural shade and tranquil seating spots nestled among coastal palm trees.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Group_Surf_Lesson_on_Weligama_Beach.webp",
+        imageAlt: "Group Surf Lesson on Weligama Beach",
+        topBadge: "Surf Lesson",
+        topBadgeRight: "Sandy Shore",
+        script: "learn to surf...",
+        title: "Group Surf Lesson on Weligama Beach",
+        description:
+          "A group surf lesson underway on Weligama Beach, with instructors guiding beginners in gentle conditions.",
       },
       {
-        span: "lg:col-span-7",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuDHrQAt5FWvfF6S3lX6tY0-KZFLaApcroNzMzgSb4ZxraB5eQRNqJHER6iCJHFN3zV4cox7TIP3uafnKROHYqkAlmx5c0bikQjfnjOzbqTDZj0D1r6_incNJyYcfRLoi8DAjBPhoJ0nijNL-mEdM3FxNxpxMbBxL4rovvMg2MdeLFBm-2AmSql6r3yQ0MUiNXHo37Ybk3GxC2Ys4gYnsGG_AkptpKlzTZVW7XsrSkrdtZUOywN6IiRrAw",
-        imageAlt: "Coconut Grove palm canopies along the southern coastal shoreline",
-        topBadge: "Inland Approach",
-        topBadgeRight: "Grove Path",
-        script: "grove trail...",
-        title: "Coconut Grove Pathway",
-        description: "Quiet shaded trails winding past swaying palms and coastal greenery.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Beginner_Surf_Coaching_on_Sandy_Shore.webp",
+        imageAlt: "Beginner Surf Coaching on Sandy Shore",
+        topBadge: "Coaching",
+        topBadgeRight: "Beginner Waves",
+        script: "first rides...",
+        title: "Beginner Surf Coaching on Sandy Shore",
+        description:
+          "Beginner surf coaching on the sandy shore, focused on building confidence in the shallows.",
       },
       {
-        span: "lg:col-span-5",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuA8T14NK17znhnRCR4z_fY31VBnIDTG2xG4Mw3tL_yMZGwQ8wLYMS4tewxMXiJY-qWq9Ye1FXtvqS_xZ9i6zMyuMFW9BdIp--gifAA6YTZL8nR3Sgusebxhly4YSF7quV3bS12zvbo1setTPo9UwTQA7t-oWIPEhvM9OxPGQ-etIS62ZxPza3jDzncVaXWlVWRHwOQU5LMHqwtixvW3umzlLLoBoBQmHLpKpRtH84tIcPF9YEfN8KeBWw",
-        imageAlt: "Amber golden hour twilight reflecting on coastal tide pools",
-        topBadge: "18:00 PM • Twilight",
-        topBadgeRight: "Sunset Glow",
-        script: "evening calm...",
-        title: "Amber Twilight Pool",
-        description: "Quiet evening tide pools bathed in warm amber Indian Ocean twilight glow.",
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Secluded_Palm_Fringed_Beach_and_Pool_Aerial.webp",
+        imageAlt: "Secluded Palm Fringed Beach and Pool Aerial",
+        topBadge: "Aerial Cove",
+        topBadgeRight: "Palm-Fringed Shore",
+        script: "hidden sanctuary...",
+        title: "Secluded Palm Fringed Beach and Pool Aerial",
+        description:
+          "An aerial view of a secluded palm-fringed beach and pool, highlighting Awee Coco's tucked-away coastal setting.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Awee_Coco_Secret_Pool_Surf_Point.webp",
+        imageAlt: "Awee Coco Secret Pool Surf Point",
+        topBadge: "Surf Point",
+        topBadgeRight: "Secret Pool",
+        script: "coastal landmark...",
+        title: "Awee Coco Secret Pool Surf Point",
+        description:
+          "A view of Awee Coco Secret Pool Surf Point, where coastal scenery and surf culture meet.",
+      },
+      {
+        span: "lg:col-span-4",
+        image: "/images/experiences/beaches/awee-coco-secret-pool/Clifftop_Infinity_Pool_Overlooking_Weligama_Coast.webp",
+        imageAlt: "Clifftop Infinity Pool Overlooking Weligama Coast",
+        topBadge: "Clifftop View",
+        topBadgeRight: "Weligama Coast",
+        script: "elevated outlook...",
+        title: "Clifftop Infinity Pool Overlooking Weligama Coast",
+        description:
+          "An infinity pool perched above the coastline, offering sweeping views over Weligama's shoreline and ocean.",
       },
     ],
   },
