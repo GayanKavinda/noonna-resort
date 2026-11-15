@@ -320,7 +320,7 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     layout: "text-left",
     destination: "Koggala Lake & Cinnamon Mangroves",
     title: "Koggala Lake & Cinnamon Mangroves",
-    subtitle: "Koggala Lagoon • 7.5 km from Noonna",
+    subtitle: "Koggala Lagoon • 11.5 km from Noonna",
     badges: [
       { text: "Curator's Top Pick", star: true },
       { text: "LAGOON BIOSPHERE • BIRDS & SPICE ISLANDS" },
@@ -328,7 +328,7 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     description:
       "Board a private wooden lagoon boat gliding past lush mangrove tunnels and remote cinnamon-peeling islets. Watch sea eagles dive while tasting freshly scraped warm cinnamon bark prepared by island families.",
     facts: [
-      { label: "Transit", value: "12 mins", sub: "Tuk-tuk to jetty" },
+      { label: "Transit", value: "18 mins", sub: "Tuk-tuk to jetty" },
       { label: "Timing", value: "2.5 Hours", sub: "Morning / 4 PM" },
       { label: "Access", value: "Private Boat", sub: "Concierge booking" },
     ],
@@ -349,12 +349,14 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "lagoon",
     images: [
       {
-        alt: "Serene misty lagoon waterways of Koggala Lake",
-        caption: "Cinnamon Island & Mangrove Lagoons",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/koggala-lake-mangroves/tourists-exploring-koggala-lake-by-boat.webp",
+        alt: "Tourists exploring Koggala Lake by boat",
+        caption: "Tourists Exploring Koggala Lake by Boat",
       },
       {
-        alt: "Fresh cinnamon peeling on islet in Koggala lake",
-        caption: "Artisanal Cinnamon Bark Processing & Spice Gardens",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/koggala-lake-mangroves/boat-navigating-through-koggala-mangrove-tunnels.webp",
+        alt: "Boat navigating through Koggala mangrove tunnels",
+        caption: "Boat Navigating Through Koggala Mangrove Tunnels",
       },
     ],
   },
@@ -365,7 +367,7 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     layout: "text-right",
     destination: "Koggala Stilt Fishermen Coast",
     title: "Koggala Stilt Fishermen Coast",
-    subtitle: "Ahangama & Koggala Reefs • 6 km from Noonna",
+    subtitle: "Koggala Coast • 9.1 km from Noonna",
     badges: [
       { text: "Guest Favorite", star: true },
       { text: "ICONIC MARITIME HERITAGE • REEF LIVING" },
@@ -373,7 +375,7 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     description:
       "A centuries-old fishing tradition known as 'Ritipanna', practiced exclusively along this stretch of southern reef. Fishermen balance precariously on slender wooden poles anchored into coral fissures to catch spotted herrings without casting shadows.",
     facts: [
-      { label: "Transit", value: "8 mins", sub: "Coastal scooter" },
+      { label: "Transit", value: "16 mins", sub: "Drive via A2" },
       { label: "Best Hour", value: "6:30 AM", sub: "First dawn" },
       { label: "Etiquette", value: "Respectful", sub: "Support families" },
     ],
@@ -394,13 +396,15 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "stilt",
     images: [
       {
-        alt: "Traditional stilt fishermen practicing Ritipanna perched on poles above morning coastal waves",
-        topBadge: "Dawn Patrol • 06:00 AM",
-        caption: "Ritipanna • Ancient Stilt Fishing (Ahangama & Koggala Reefs)",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/koggala-stilt-fishermen-coast/traditional-stilt-fishermen-at-sunset-koggala.webp",
+        alt: "Traditional stilt fishermen at sunset in Koggala",
+        topBadge: "Dawn & Dusk • Coastal Tradition",
+        caption: "Traditional Stilt Fishermen at Sunset, Koggala",
       },
       {
-        alt: "Reef surge and calm waters around Ahangama fishing perches",
-        caption: "Handmade Wooden Petta & Shallow Coral Shelves",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/koggala-stilt-fishermen-coast/fisherman-balancing-on-wooden-stilt-pole.webp",
+        alt: "Fisherman balancing on a wooden stilt pole in the surf",
+        caption: "Fisherman Balancing on a Wooden Stilt Pole",
       },
     ],
   },
@@ -411,12 +415,12 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     layout: "text-left",
     destination: "Whale Watching Cruises",
     title: "Whale Watching in Mirissa",
-    subtitle: "Mirissa Fishery Harbour • 11 km from Noonna",
+    subtitle: "Mirissa Fishery Harbour • 10.8 km from Noonna",
     badges: [{ text: "INDIAN OCEAN EXPEDITION • OCEAN GIANTS" }],
     description:
       "The deep continental shelf drops off just a few nautical miles off Mirissa, creating one of the world's most reliable corridors to encounter majestic Blue Whales, Bryde's whales, and playful spinner dolphin pods in the open Indian Ocean.",
     facts: [
-      { label: "Transit", value: "18 mins", sub: "Hotel vehicle" },
+      { label: "Transit", value: "23 mins", sub: "Drive along coast" },
       { label: "Departure", value: "6:00 AM", sub: "Harbour launch" },
       { label: "Season", value: "Nov – Apr", sub: "Calm waters" },
     ],
@@ -437,20 +441,24 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "whale",
     images: [
       {
-        alt: "Blue Whale fluke diving into Indian Ocean",
-        caption: "Blue Whale Fluke Diving • Mirissa Trench",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/whale-watching-mirissa/tourists-embarking-on-whale-watching-boat-mirissa.webp",
+        alt: "Tourists embarking on a whale watching boat at Mirissa harbour",
+        caption: "Tourists Embarking on Whale Watching Boat, Mirissa",
       },
       {
-        alt: "Whale pod surfacing alongside safari boat",
-        caption: "Whale Pod Surfacing Alongside Safari Boat",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/whale-watching-mirissa/blue-whale-fluke-breaching-mirissa-waters.webp",
+        alt: "Blue whale fluke breaching in Mirissa waters",
+        caption: "Blue Whale Fluke Breaching Mirissa Waters",
       },
       {
-        alt: "Double-decker vessel tracking Indian Ocean giants",
-        caption: "Double-Decker Expedition Vessel",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/whale-watching-mirissa/whale-watching-excursion-boat-near-mirissa.webp",
+        alt: "Whale watching excursion boat near Mirissa",
+        caption: "Whale Watching Excursion Boat Near Mirissa",
       },
       {
-        alt: "Coastal whale watching vessel Gindara",
-        caption: "Coastal Whale Vessel 'Gindara'",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/whale-watching-mirissa/travelers-photographing-whales-from-mirissa-vessel.webp",
+        alt: "Travelers photographing whales from a vessel off Mirissa",
+        caption: "Travelers Photographing Whales from Mirissa Vessel",
       },
     ],
   },
@@ -461,12 +469,12 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     layout: "text-right",
     destination: "Snake Farm Weligama",
     title: "Snake Farm Weligama",
-    subtitle: "Udukawa, Weligama • 6.2 km from Noonna",
+    subtitle: "Udukawa, Weligama • 12.7 km from Noonna",
     badges: [{ text: "AYURVEDIC MEDICINE & WILDLIFE RESCUE" }],
     description:
       "Run by multi-generational Ayurvedic doctors practicing traditional antivenom therapies, this renowned sanctuary rescues and rehabilitates local pythons, vipers, and cobras while educating visitors on ethical wildlife coexistence.",
     facts: [
-      { label: "Transit", value: "10 mins", sub: "Tuk-tuk" },
+      { label: "Transit", value: "23 mins", sub: "Drive inland" },
       { label: "Hours", value: "9am – 5pm", sub: "Open daily" },
       { label: "Entry", value: "~1,500 LKR", sub: "Rescue fund" },
     ],
@@ -487,21 +495,25 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
     imageLayout: "snake",
     images: [
       {
-        alt: "Photographer alongside Ayurvedic handler safely observing spectacled cobra",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/snake-farm-weligama/visitor-interacting-safely-with-cobra-at-weligama-snake-farm.webp",
+        alt: "Visitor interacting safely with a cobra at Weligama Snake Farm",
         topBadge: "Guided Photography & Safe Handling",
-        caption: "Ayurvedic Conservation & Educational Encounters",
+        caption: "Visitor Interacting Safely with Cobra at Weligama Snake Farm",
       },
       {
-        alt: "Spectacled Cobra in sanctuary courtyard",
-        caption: "Spectacled Cobra",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/snake-farm-weligama/cobra-raised-on-ground-at-traditional-snake-farm.webp",
+        alt: "Cobra raised on the ground at a traditional snake farm",
+        caption: "Cobra Raised on Ground at Traditional Snake Farm",
       },
       {
-        alt: "Ayurvedic handler calmly holding snake in sanctuary grounds",
-        caption: "Ayurvedic Coexistence",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/snake-farm-weligama/tourist-holding-large-python-at-weligama-reptile-center.webp",
+        alt: "Tourist holding a large python at Weligama reptile center",
+        caption: "Tourist Holding Large Python at Weligama Reptile Center",
       },
       {
-        alt: "Guest holding gentle rescued Indian rock python",
-        caption: "Gentle Python Interaction & Wildlife Rehabilitation",
+        src: "/images/experiences/southern-heritage-coastal-expeditions/snake-farm-weligama/photographer-capturing-snake-demonstration-at-farm.webp",
+        alt: "Photographer capturing a snake demonstration at the farm",
+        caption: "Photographer Capturing Snake Demonstration at Farm",
       },
     ],
   },
