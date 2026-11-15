@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import {
   Camera,
   ChevronLeft,
@@ -81,7 +82,14 @@ export function NearbyBeachesCarousel() {
               className="w-[min(85vw,320px)] sm:w-[320px] md:w-[340px] sm:min-w-[320px] md:min-w-[340px] sm:max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0"
             >
               <div className="relative h-44 sm:h-52 overflow-hidden bg-gradient-to-br from-[#cfe3ee] via-[#e6eef3] to-[#b8d4e6]">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                <Image
+                  src={card.image}
+                  alt={card.imageAlt}
+                  fill
+                  sizes="(max-width: 640px) 85vw, 340px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
                 <div className="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">
                   {card.distance}
                 </div>

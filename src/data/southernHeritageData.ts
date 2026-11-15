@@ -56,6 +56,7 @@ export type BeachCard = {
   description: string;
   distance: string;
   imageBadge: string;
+  image: string;
   tags: string[];
   footerIcon: "surfing" | "waves" | "camera" | "pool";
   footerLabel: string;
@@ -521,32 +522,36 @@ export const HERITAGE_CHAPTERS: HeritageChapter[] = [
 
 export const BEACH_CARDS: BeachCard[] = [
   {
-    title: "Midigama Beach & Coves",
+    title: "Midigama Beach",
     subtitle: "Surf & Snorkel Coves",
     category: "Surf & Snorkel",
     description:
-      "Protected quiet sandy pockets alongside legendary surf breaks like Lazy Left and Rams, perfect for uncrowded coastal strolls and reef snorkeling.",
-    distance: "0.8 km • 3 mins",
+      "Quiet sandy coves alongside Midigama's legendary reef breaks, ideal for uncrowded coastal strolls, mellow swims, and golden-hour light.",
+    distance: "1.4 km • 4 mins",
     imageBadge: "Surf & Snorkel",
-    tags: ["Tide Pools", "Reef Snorkel", "Quiet Sands"],
+    image:
+      "/images/experiences/beaches/midigama-beach/midigama-sandy-cove-visit-weligama.jpg_473eaa99_2K_2752x1536_1.webp",
+    tags: ["Reef Breaks", "Sandy Cove", "Sunset Strolls"],
     footerIcon: "surfing",
-    footerLabel: "Shallow Reefs",
-    mapHref: "https://maps.google.com/?q=Midigama+Beach+Sri+Lanka",
-    imageAlt: "Midigama Beach & Coves",
+    footerLabel: "Reef & Cove",
+    mapHref: "https://maps.app.goo.gl/X8YDfKbJBeZ8Km168",
+    imageAlt: "Sandy cove and turquoise surf at Midigama Beach",
   },
   {
-    title: "Weligama Bay Surf Arc",
+    title: "Weligama Beach",
     subtitle: "Gentle Sands & Learn to Surf",
     category: "Beginner Waves",
     description:
-      "A sprawling, sheltered sandy crescent bay renowned worldwide for forgiving rolling waves, barefoot surf schools, and vibrant beach cafes.",
-    distance: "2.0 km • 5 mins",
+      "A sweeping sandy bay known for forgiving rolling waves, surf schools, and breezy beachfront cafes—perfect for first-time surfers.",
+    distance: "3.5 km • 8 mins",
     imageBadge: "Beginner Waves",
+    image:
+      "/images/experiences/beaches/weligama-beach/weligama-beach-the-ultimate-destination-for-vacation.webp",
     tags: ["Beginner Surf", "Sandy Bottom", "Beach Cafes"],
     footerIcon: "waves",
-    footerLabel: "Sandy Bottom",
+    footerLabel: "Sandy Bay",
     mapHref: "https://maps.google.com/?q=Weligama+Beach+Sri+Lanka",
-    imageAlt: "Weligama Bay Surf Arc",
+    imageAlt: "Wide sandy arc of Weligama Bay on Sri Lanka's south coast",
   },
   {
     title: "Mirissa Coastal Promontory",
@@ -556,24 +561,28 @@ export const BEACH_CARDS: BeachCard[] = [
       "A striking coastal headland offering sweeping panoramic vistas across Mirissa's harbor, golden crescent shores, and breaking surf.",
     distance: "3.1 km • 6 mins",
     imageBadge: "Scenic Vista",
+    image:
+      "/images/experiences/beaches/mirissa-coastal-promontory/Mirissa_Coastal_Promontory_Aerial_View_at_Dusk.webp",
     tags: ["Ocean Views", "Palm Headland", "Sunset Vista"],
     footerIcon: "camera",
     footerLabel: "Sunset View",
-    mapHref: "https://maps.google.com/?q=Mirissa+Coastal+Promontory",
-    imageAlt: "Mirissa Coastal Promontory",
+    mapHref: "https://maps.app.goo.gl/p6qbtF3DszuEL2jPA",
+    imageAlt: "Aerial dusk view of Mirissa Coastal Promontory",
   },
   {
     title: "Secret Beach Mirissa",
     subtitle: "Secluded Tidal Cove & Pools",
     category: "Tide Pools",
     description:
-      "Tucked behind headlands via a scenic jungle trail, featuring natural granite tide pools and calm turquoise bathing spots sheltered from open ocean swell.",
-    distance: "7.2 km • 16 mins",
+      "A hidden coastal hideaway with intimate sandy pockets and calm tide pools, tucked behind Mirissa's green headlands.",
+    distance: "2.9 km • 7 mins",
     imageBadge: "Tide Pools",
+    image:
+      "/images/experiences/beaches/secret-beach-mirissa/Secret-Beach-Mirissa-1.webp_fb6ce4a2_2K_2752x1536_4.webp",
     tags: ["Tide Pools", "Secluded Cove", "Snorkel Waters"],
     footerIcon: "pool",
-    footerLabel: "Tidal Lagoons",
-    mapHref: "https://maps.google.com/?q=Secret+Beach+Mirissa",
-    imageAlt: "Secret Beach Mirissa",
+    footerLabel: "Tidal Cove",
+    mapHref: "https://maps.app.goo.gl/rSpiZSeZGJArgFe37",
+    imageAlt: "Secluded cove and turquoise water at Secret Beach Mirissa",
   },
 ];
