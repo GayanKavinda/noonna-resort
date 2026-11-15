@@ -89,15 +89,15 @@ export default function CoastalMotion() {
             </div>
             <div className="grid grid-cols-1 gap-3 min-[360px]:grid-cols-3">
               <div className="space-y-1 rounded-xl bg-surface-container-low p-3 text-center">
-                <div className="font-label-sm text-label-sm font-semibold text-primary">~1.2 km</div>
+                <div className="font-label-sm text-label-sm font-semibold text-primary">1.2 km</div>
                 <div className="font-body-sm text-body-sm text-on-surface-variant">Train Station</div>
               </div>
               <div className="space-y-1 rounded-xl bg-surface-container-low p-3 text-center">
-                <div className="font-label-sm text-label-sm font-semibold text-primary">~1.4 km</div>
+                <div className="font-label-sm text-label-sm font-semibold text-primary">1.4 km</div>
                 <div className="font-body-sm text-body-sm text-on-surface-variant">Midigama Surf</div>
               </div>
               <div className="space-y-1 rounded-xl bg-surface-container-low p-3 text-center">
-                <div className="font-label-sm text-label-sm font-semibold text-primary">~3.0 km</div>
+                <div className="font-label-sm text-label-sm font-semibold text-primary">3.0 km</div>
                 <div className="font-body-sm text-body-sm text-on-surface-variant">Weligama Bay</div>
               </div>
             </div>

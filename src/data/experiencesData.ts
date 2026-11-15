@@ -46,7 +46,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Midigama Beach",
     category: "beach",
     badge: "World-Renowned Swell Sanctuary",
-    distance: "~1.4 km",
+    distance: "1.4 km",
     subtitle: "Point Break Waves",
     description:
       "Famed for its legendary peeling reef breaks including Lazy Left, Rams, and Plantations. Midigama retains an unhurried, laid-back coastal charm with authentic roadside coconut shacks, quiet stretches of sand, and golden afternoon light.",
@@ -61,7 +61,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Abimanagama Beach",
     category: "beach",
     badge: "Secluded Cove",
-    distance: "~1.7 km",
+    distance: "1.7 km",
     subtitle: "Quiet Coastal Solitude",
     description:
       "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
@@ -76,7 +76,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Weligama Beach",
     category: "beach",
     badge: "Sandy Bay Break",
-    distance: "~3.5 km",
+    distance: "3.5 km",
     subtitle: "Beginner Surf Haven",
     description:
       "Sri Lanka's quintessential surf haven—a wide, golden sand bay featuring forgiving sandbar waves, beginner surf schools, and coastal views toward Taprobane Island.",
@@ -92,7 +92,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Ahangama Beach",
     category: "beach",
     badge: "Reef Point Breaks",
-    distance: "~3.8 km",
+    distance: "3.8 km",
     subtitle: "Boho Coastal Town",
     description:
       "The vibrant surf epicenter of Sri Lanka's southern coast—renowned for iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views.",
@@ -107,7 +107,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Lazy Left Surf Break",
     category: "beach",
     badge: "Iconic Reef Break",
-    distance: "~1.5 km",
+    distance: "1.5 km",
     subtitle: "Longboard Haven",
     description:
       "Sri Lanka's legendary long-peeling left-hand reef break—celebrated for forgiving shoulders, long walls, and ideal conditions for longboards and progression.",
@@ -123,7 +123,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Rams Right Surf Break",
     category: "beach",
     badge: "Shallow Reef Barrel",
-    distance: "~1.6 km",
+    distance: "1.6 km",
     subtitle: "Advanced Surf Spot",
     description:
       "Sri Lanka's most iconic heavy right-hand barrel—a punchy, fast reef break offering short, technical rides and pristine tubes for confident surfers.",
@@ -139,7 +139,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Awee Coco Secret Pool",
     category: "beach",
     badge: "Secluded Tidal Pools",
-    distance: "~2.8 km",
+    distance: "2.8 km",
     subtitle: "Natural Saltwater Bath",
     description:
       "A secluded coastal sanctuary featuring natural granite saltwater dipping baths, sheltered turquoise tide pools, and tranquil shaded palm groves.",
@@ -155,7 +155,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Secret Jungle Beach",
     category: "beach",
     badge: "Hidden Cove",
-    distance: "~3.4 km",
+    distance: "3.4 km",
     subtitle: "Jungle Canopy Shore",
     description:
       "A hidden coastal cove sheltered by overhanging tropical foliage, ancient granite boulders, and unhurried southern solitude.",
@@ -171,7 +171,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Polhena Beach & Coral Reef",
     category: "beach",
     badge: "Lagoon & Marine Sanctuary",
-    distance: "~12 km",
+    distance: "12 km",
     subtitle: "Snorkelling with Green Sea Turtles",
     description:
       "Enclosed by an expansive offshore barrier reef that creates a placid, pool-like lagoon. Renowned for frequent sightings of resident green turtles feeding in shallow seagrass beds.",
@@ -184,7 +184,7 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     name: "Secret Beach Mirissa",
     category: "beach",
     badge: "Hidden Cove",
-    distance: "~6.5 km",
+    distance: "6.5 km",
     subtitle: "Cliffside Snorkeling",
     description:
       "A secluded coastal hideaway tucked behind Mirissa's green headlands, featuring intimate sandy pockets, calm tide pools, and a relaxed cliffside bar.",
@@ -195,28 +195,12 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     imageAlt: "Hidden sandy coves and turquoise tide pools at Secret Beach Mirissa",
   },
   {
-    id: "coconut-tree-hill",
-    slug: "coconut-tree-hill",
-    name: "Coconut Tree Hill",
-    category: "beach",
-    badge: "Iconic Headland Viewpoint",
-    distance: "~3.1 km",
-    subtitle: "Palm-Crowned Headland",
-    description:
-      "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
-    features: ["Red Clay Promontory", "Crown Palms", "360° Horizon"],
-    ctaLabel: "Sunset Times",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
-    imageAlt: "Coconut Tree Hill on the Mirissa coastal promontory crowned with swaying palms"
-  },
-  {
     id: "parrot-rock",
     slug: "parrot-rock",
     name: "Parrot Rock",
     category: "beach",
     badge: "Offshore Islet",
-    distance: "~5.8 km",
+    distance: "5.8 km",
     subtitle: "Panoramic Viewpoint",
     description:
       "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated 360-degree panoramic views across the golden bay and open ocean.",
@@ -231,16 +215,15 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "mirissa-coastal-promontory",
     name: "Mirissa Coastal Promontory",
     category: "beach",
-    badge: "Coastal Promontory Viewpoint",
-    distance: "~3.1 km",
-    subtitle: "Home of Coconut Tree Hill",
+    badge: "Iconic Viewpoint",
+    distance: "3.1 km",
+    subtitle: "Elevated Panorama",
     description:
-      "A raised coastal promontory in Mirissa crowned by Coconut Tree Hill, offering sweeping views over the harbor, golden shores, and Indian Ocean swells.",
-    features: ["Elevated Coastal Ridge", "Harbor Panoramas", "Ocean Horizon"],
+      "A striking coastal headland offering sweeping panoramic vistas across Mirissa's harbor, golden crescent shores, and breaking surf.",
+    features: ["Iconic Viewpoint", "Harbor Panoramas", "Ocean Horizon"],
     ctaLabel: "View Route Guide",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
-    imageAlt: "Mirissa coastal promontory overlooking the bay and ocean horizon"
+    image: "/images/experiences/beaches/mirissa-coastal-promontory/Mirissa_Coastal_Promontory_Aerial_View_at_Dusk.webp",
+    imageAlt: "Aerial view of Mirissa coastal promontory at dusk",
   },
 ];
 
@@ -252,7 +235,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Galle Dutch Fort",
     category: "heritage",
     badge: "UNESCO World Heritage",
-    distance: "~24 km",
+    distance: "24 km",
     subtitle: "Colonial Bastions & Sunset Walk",
     description:
       "Living 17th-century fortified citadel with cobblestone alleys, Dutch colonial architecture, ocean ramparts, and artisan jewellery boutiques.",
@@ -265,7 +248,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Martin Wickramasinghe Museum",
     category: "heritage",
     badge: "Literary & Folk History",
-    distance: "~7.8 km",
+    distance: "7.8 km",
     subtitle: "Koggala Folk Culture Sanctuary",
     description:
       "The preserved ancestral estate of Sri Lanka's greatest author, exhibiting rare folk artifacts, traditional fishing implements, and native flora gardens.",
@@ -278,7 +261,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Kushtarajagala Rock Relief",
     category: "heritage",
     badge: "Ancient Sacred Monolith",
-    distance: "~2.7 km",
+    distance: "2.7 km",
     subtitle: "8th-Century Granite Bodhisattva",
     description:
       "An extraordinary 8th-century Mahayana Buddhist rock carving of Avalokiteshvara chiseled directly into a towering roadside granite cliff in Weligama.",
@@ -291,7 +274,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Kumbalgama Potters' Village",
     category: "heritage",
     badge: "Artisan Craft Heritage",
-    distance: "~0.4 km",
+    distance: "0.4 km",
     subtitle: "Living Terracotta Traditions",
     description:
       "Quiet village compound moments from Noonna where multi-generational families shape terracotta water jars, cooking pots, and lamps on manual kick wheels.",
@@ -304,7 +287,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Taprobane Island",
     category: "heritage",
     badge: "Private Islet Villa",
-    distance: "~3.1 km",
+    distance: "3.1 km",
     subtitle: "Weligama Bay Architectural Icon",
     description:
       "A romantic octagonal private island villa built in the 1920s by the eccentric Count de Mauny-Talvande, rising dramatically from the turquoise shallows of Weligama Bay.",
@@ -317,7 +300,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Koggala Lake & Mangroves",
     category: "heritage",
     badge: "Coastal Lagoon Ecology",
-    distance: "~7.0 km",
+    distance: "7.0 km",
     subtitle: "Cinnamon Islands & Wildlife Safari",
     description:
       "A vast brackish wetland lagoon sprinkled with eight secluded islets, home to traditional cinnamon peelers, Buddhist hermitage monasteries, and abundant birdlife.",
@@ -330,7 +313,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Koggala Stilt Fishermen Coast",
     category: "heritage",
     badge: "Living Artisanal Custom",
-    distance: "~6.8 km",
+    distance: "6.8 km",
     subtitle: "Iconic Southern Maritime Ritual",
     description:
       "The enduring southern Sri Lankan spectacle of fishermen balancing poised on crossbars lashed to vertical poles embedded deep in nearshore coral reefs.",
@@ -343,7 +326,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Whale Watching Cruises",
     category: "heritage",
     badge: "Marine Expedition",
-    distance: "~8.0 km",
+    distance: "8.0 km",
     subtitle: "Blue Whales & Oceanic Trenches",
     description:
       "Departure harbor for ethical oceanic cruises into the continental shelf trench where Blue Whales, Sperm Whales, and pods of Spinner Dolphins feed in deep waters.",
@@ -356,7 +339,7 @@ export const HERITAGE_DESTINATIONS: DestinationItem[] = [
     name: "Snake Farm Weligama",
     category: "heritage",
     badge: "Ayurvedic Herbal Sanctuary",
-    distance: "~5.1 km",
+    distance: "5.1 km",
     subtitle: "Reptile Conservation Sanctuary",
     description:
       "A respected conservation sanctuary and indigenous Ayurvedic medicine center dedicated to rescuing local reptiles and producing traditional snakebite antidotes.",
@@ -448,8 +431,7 @@ export const SURROUNDINGS_DATA: SurroundingsCategory[] = [
       { name: "Ahangama Coastal Rock Pools", distance: "3.8 km" },
       { name: "Snake Farm Weligama Sanctuary", distance: "5.1 km" },
       { name: "Parrot Rock Mirissa Lookout", distance: "5.8 km" },
-      { name: "Mirissa Coastal Promontory", distance: "6.0 km" },
-      { name: "Coconut Tree Hill Red Cliff", distance: "6.2 km" },
+      { name: "Mirissa Coastal Promontory", distance: "3.1 km" },
       { name: "Secret Beach Mirissa Lagoon", distance: "6.5 km" },
       { name: "Koggala Lake & Mangrove Estuary", distance: "7.0 km" },
       { name: "Martin Wickramasinghe Gardens", distance: "7.8 km" },

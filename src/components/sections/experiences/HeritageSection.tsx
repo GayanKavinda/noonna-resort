@@ -48,7 +48,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Galle Dutch Fort UNESCO Citadel" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/galle-dutch-fort/grok-1793163385571jpg-fdd856b0-2k-6ae3488dc47da.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~24 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">24 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">UNESCO World Heritage</div>
@@ -67,7 +67,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Martin Wickramasinghe Folk Art Museum" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/martin-wickramasinghe-museum/imgi_2_martin-wickramasinghe-folk-museum-complex-feb3b7d1b1e35ae650b6575c026007fa.jpg_6332be77_2K_2752x1536_1.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.8 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">7.8 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Literary &amp; Folk History</div>
@@ -86,7 +86,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Kushtarajagala Rock Relief Weligama" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/kushtarajagala-rock-relief/screenshot-2026-08-21-at-130903png-0ee9ef07-2k-6ae34bc08308c.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~2.7 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">2.7 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ancient Sacred Monolith</div>
@@ -105,7 +105,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Kumbalgama Potters Village traditional terracotta crafts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/kumbalgama-potters-village/can_you_change_cloths_colors_db40388e_2K_2752x1536_2.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~0.4 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">0.4 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Artisan Craft Heritage</div>
@@ -124,7 +124,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Taprobane Island Weligama Bay private islet" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/taprobane-island/LSL_B2_Taprobane-Island_1920x700.jpg_039d249e_2K_2752x1536_3.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~3.1 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">3.1 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Private Islet Villa</div>
@@ -143,7 +143,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Koggala Lake &amp; Mangroves lagoon sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/koggala-lake-and-mangroves/soft-golden-hour-color-grade-aa5d2c8b-2k-6ae34b7acfc14.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~7.0 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">7.0 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Coastal Lagoon Ecology</div>
@@ -162,7 +162,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Koggala Stilt Fishermen Coastline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/koggala-stilt-fishermen-coast/d73f2c_7803db0635204ae1b3933fdcf11c735dmv2-2-1536x1024.webp_0a0b8f81_2K_2752x1536_1.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~6.8 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">6.8 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Living Artisanal Custom</div>
@@ -181,7 +181,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Whale Watching Cruises off Mirissa" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/whale-watching-cruises/ep29e5zs0fadacjhqabp.webp_43e61c12_2K_2752x1536_1.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~8.0 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">8.0 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Marine Expedition</div>
@@ -200,7 +200,7 @@ export default function HeritageSection() {
           <div className="space-y-4">
             <div className="relative h-44 rounded-2xl overflow-hidden bg-surface-container">
               <img alt="Snake Farm Weligama Ayurvedic Sanctuary" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/experiences/discover-the-local-area/snake-farm-weligama/f6534070-8554-4033-8009-0fda72aed238.webp_0b76be95_2K_2752x1536_4.webp" />
-              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">~5.1 km</span>
+              <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">5.1 km</span>
             </div>
             <div className="space-y-2">
               <div className="text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Ayurvedic Herbal Sanctuary</div>

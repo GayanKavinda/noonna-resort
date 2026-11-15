@@ -23,7 +23,7 @@ export const PUBLIC_ROUTES: string[] = [
   "/experiences/secret-jungle-beach",
   "/experiences/polhena-beach-coral-reef",
   "/experiences/secret-beach-mirissa",
-  "/experiences/coconut-tree-hill",
+  "/experiences/mirissa-coastal-promontory",
   "/experiences/parrot-rock",
   "/experiences/mirissa-coastal-promontory",
   "/gallery",
