@@ -199,16 +199,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "coconut-tree-hill",
     name: "Coconut Tree Hill",
     category: "beach",
-    badge: "Iconic Viewpoint",
-    distance: "~6.2 km",
-    subtitle: "Red Cliff Promontory",
+    badge: "Iconic Headland Viewpoint",
+    distance: "~3.1 km",
+    subtitle: "Palm-Crowned Headland",
     description:
       "Sri Lanka's quintessential southern panorama—a dramatic red-earth cliff dome crowned with soaring palms overlooking crashing Indian Ocean swells.",
     features: ["Red Clay Promontory", "Crown Palms", "360° Horizon"],
     ctaLabel: "Sunset Times",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
-    imageAlt: "Coconut Tree Hill in Mirissa crowned with swaying palms over the Indian Ocean",
+    imageAlt: "Coconut Tree Hill on the Mirissa coastal promontory crowned with swaying palms"
   },
   {
     id: "parrot-rock",
@@ -231,16 +231,16 @@ export const BEACH_DESTINATIONS: DestinationItem[] = [
     slug: "mirissa-coastal-promontory",
     name: "Mirissa Coastal Promontory",
     category: "beach",
-    badge: "Coastal Ridge",
-    distance: "~6.0 km",
-    subtitle: "Elevated Panorama",
+    badge: "Coastal Promontory Viewpoint",
+    distance: "~3.1 km",
+    subtitle: "Home of Coconut Tree Hill",
     description:
-      "A striking raised coastal ridge offering sweeping panoramic vistas across Mirissa's sweeping harbor, golden crescent shores, and breaking surf.",
+      "A raised coastal promontory in Mirissa crowned by Coconut Tree Hill, offering sweeping views over the harbor, golden shores, and Indian Ocean swells.",
     features: ["Elevated Coastal Ridge", "Harbor Panoramas", "Ocean Horizon"],
     ctaLabel: "View Route Guide",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAAdT7cKQ0G9XszZA52Ecr-6t63aKpdlh-Yms2GGNfehpuRUO4OkRFUYNvf3dDRM6Iey1TWrcW1UM2rlZnyiWE__efwJ2_QlXRF7IbxxmTic6UFFD_-vrIZ8lHbtP9EBHKYV44XSEXzRbnXBrJwjFL7hiz6-X4is1HlHG4X4vLFq35BHJywMe549tRuEKgXxpb4WuhcJ-L9tIp3B9oU1RDNs8VmuRAIirDeq8zAGXv1vHFs5-FHuIhJuQ",
-    imageAlt: "Elevated coastal promontory ridge overlooking Mirissa bay and ocean horizon",
+    imageAlt: "Mirissa coastal promontory overlooking the bay and ocean horizon"
   },
 ];
 
