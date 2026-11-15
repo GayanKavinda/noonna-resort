@@ -1,7 +1,6 @@
 ﻿"use client";
 
-import { useRef } from "react";
-import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import {
   Camera,
   ChevronLeft,
@@ -11,7 +10,16 @@ import {
   Droplets,
   Wind,
 } from "lucide-react";
-import { BEACH_CARDS } from "@/data/southernHeritageData";
+import { BEACH_CARDS, type BeachCard } from "@/data/southernHeritageData";
+
+function shuffle<T>(items: T[]): T[] {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
 function FooterIcon({ icon }: { icon: "surfing" | "waves" | "camera" | "pool" }) {
   const cls = "w-[15px] h-[15px] text-[#2f6b8f]";
@@ -23,6 +31,12 @@ function FooterIcon({ icon }: { icon: "surfing" | "waves" | "camera" | "pool" })
 
 export function NearbyBeachesCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const [cards, setCards] = useState<BeachCard[]>(BEACH_CARDS);
+
+  useEffect(() => {
+    setCards(shuffle(BEACH_CARDS));
+  }, []);
+
   const scrollBy = (dir: number) => {
     const reduce =
       typeof window !== "undefined" &&
@@ -76,20 +90,19 @@ export function NearbyBeachesCarousel() {
           className="flex gap-4 sm:gap-6 overflow-x-auto pb-4 pt-2 snap-x snap-mandatory scroll-smooth no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {BEACH_CARDS.map((card) => (
+          {cards.map((card) => (
             <div
               key={card.title}
               className="w-[min(85vw,320px)] sm:w-[320px] md:w-[340px] sm:min-w-[320px] md:min-w-[340px] sm:max-w-[340px] bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm flex flex-col group hover:shadow-md transition-shadow snap-start shrink-0"
             >
               <div className="relative h-44 sm:h-52 overflow-hidden bg-gradient-to-br from-[#cfe3ee] via-[#e6eef3] to-[#b8d4e6]">
-                <Image
+                <img
                   src={card.image}
                   alt={card.imageAlt}
-                  fill
-                  sizes="(max-width: 640px) 85vw, 340px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
                 <div className="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-[10px]">
                   {card.distance}
                 </div>

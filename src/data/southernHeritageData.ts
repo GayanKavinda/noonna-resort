@@ -538,6 +538,22 @@ export const BEACH_CARDS: BeachCard[] = [
     imageAlt: "Sandy cove and turquoise surf at Midigama Beach",
   },
   {
+    title: "Abimanagama Beach",
+    subtitle: "Quiet Coastal Solitude",
+    category: "Secluded Cove",
+    description:
+      "An unhurried stretch of amber sands tucked away from the main highway, ideal for restorative coastal strolls and calm water wading.",
+    distance: "1.7 km • 4 mins",
+    imageBadge: "Secluded Cove",
+    image:
+      "/images/experiences/beaches/abimanagama-beach/Golden_Sandy_Beach_and_Turquoise_Waves.webp",
+    tags: ["Amber Sands", "Quiet Cove", "Tide Shallows"],
+    footerIcon: "waves",
+    footerLabel: "Quiet Shore",
+    mapHref: "https://maps.google.com/?q=Abimanagama+Beach+Sri+Lanka",
+    imageAlt: "Golden sands and turquoise waves at Abimanagama Beach",
+  },
+  {
     title: "Weligama Beach",
     subtitle: "Gentle Sands & Learn to Surf",
     category: "Beginner Waves",
@@ -554,6 +570,134 @@ export const BEACH_CARDS: BeachCard[] = [
     imageAlt: "Wide sandy arc of Weligama Bay on Sri Lanka's south coast",
   },
   {
+    title: "Ahangama Beach",
+    subtitle: "Boho Coastal Town",
+    category: "Reef Point Breaks",
+    description:
+      "A vibrant surf hub with iconic reef breaks, oceanfront cafes, stilt fishermen, and golden sunset views along the southern coast.",
+    distance: "3.8 km • 9 mins",
+    imageBadge: "Reef Breaks",
+    image:
+      "/images/experiences/beaches/ahangama-beach/Ahangama_Beach_Coastal_Aerial_View.webp",
+    tags: ["Reef Breaks", "Cafe Scene", "Stilt Fishermen"],
+    footerIcon: "surfing",
+    footerLabel: "Surf Town",
+    mapHref: "https://maps.google.com/?q=Ahangama+Beach+Sri+Lanka",
+    imageAlt: "Aerial coastal view of Ahangama Beach and reef breaks",
+  },
+  {
+    title: "Lazy Left Surf Break",
+    subtitle: "Longboard Haven",
+    category: "Classic Point Break",
+    description:
+      "A long, smooth left-hand reef wave popular with longboarders and intermediates, peeling gently across deep coral.",
+    distance: "1.5 km • 4 mins",
+    imageBadge: "Point Break",
+    image:
+      "/images/experiences/beaches/lazy-left-surf-break/Lazy-Left-Sri-Lanka.webp",
+    tags: ["Longboard", "Left Reef", "Dawn Glass"],
+    footerIcon: "surfing",
+    footerLabel: "Longboard Wave",
+    mapHref: "https://maps.google.com/?q=Lazy+Left+Surf+Break+Midigama",
+    imageAlt: "Clean peeling wave at Lazy Left surf break in Midigama",
+  },
+  {
+    title: "Rams Right Surf Break",
+    subtitle: "Hollow Reef Barrel",
+    category: "Advanced Surf Spot",
+    description:
+      "A fast, powerful A-frame reef break producing hollow barrels for experienced surfers seeking technical rides.",
+    distance: "1.4 km • 4 mins",
+    imageBadge: "Reef Barrel",
+    image:
+      "/images/experiences/beaches/rams-right-surf-break/480548153_122214750026083898_7444910258561657280_n.jpg_1c472787_2K_2752x1536_3.webp",
+    tags: ["Right Barrel", "Shallow Reef", "Advanced"],
+    footerIcon: "surfing",
+    footerLabel: "Reef Challenge",
+    mapHref: "https://maps.app.goo.gl/WNvd5u5TLcYy9Enj7",
+    imageAlt: "Surfer riding a wave at Rams Right surf break",
+  },
+  {
+    title: "Awee Coco Secret Pool",
+    subtitle: "Natural Saltwater Bath",
+    category: "Secluded Tidal Pools",
+    description:
+      "A secluded coastal sanctuary of granite saltwater dipping baths, sheltered turquoise tide pools, and shaded palm groves.",
+    distance: "2.8 km • 7 mins",
+    imageBadge: "Tide Pools",
+    image:
+      "/images/experiences/beaches/awee-coco-secret-pool/A-secret-beach-cove-near-Weligama.jpg_e18043f1_2K_2752x1536_1.webp",
+    tags: ["Granite Pools", "Palm Shade", "Calm Swim"],
+    footerIcon: "pool",
+    footerLabel: "Tidal Pool",
+    mapHref: "https://maps.app.goo.gl/CCDnMHh7qBNg2DCj8",
+    imageAlt: "Secluded beach cove and natural pools near Awee Coco",
+  },
+  {
+    title: "Secret Jungle Beach",
+    subtitle: "Jungle Canopy Shore",
+    category: "Hidden Cove",
+    description:
+      "A hidden coastal cove sheltered by tropical foliage and granite boulders, offering quiet southern solitude by the sea.",
+    distance: "2.1 km • 6 mins",
+    imageBadge: "Hidden Cove",
+    image:
+      "/images/experiences/beaches/secret-jungle-beach/jungle-beach-coast-visit-weligama.jpg_1a985ae0_2K_2752x1536_4.webp",
+    tags: ["Jungle Shore", "Hidden Cove", "Quiet Swim"],
+    footerIcon: "waves",
+    footerLabel: "Secluded Cove",
+    mapHref: "https://maps.app.goo.gl/KPaEdnqpMcRWrrHu8",
+    imageAlt: "Secret jungle beach cove framed by tropical greenery",
+  },
+  {
+    title: "Polhena Beach & Coral Reef",
+    subtitle: "Snorkelling & Sea Turtles",
+    category: "Coral Lagoon",
+    description:
+      "A reef-sheltered natural lagoon with crystal-clear shallows, vibrant coral gardens, and frequent green sea turtle sightings.",
+    distance: "2.4 km • 6 mins",
+    imageBadge: "Coral Lagoon",
+    image:
+      "/images/experiences/beaches/polhena-beach-coral-reef/817663936_18088621133666188_6333421277778168248_n.jpg_2e61ba44_2K_2752x1536_1.webp",
+    tags: ["Snorkelling", "Sea Turtles", "Reef Lagoon"],
+    footerIcon: "pool",
+    footerLabel: "Marine Lagoon",
+    mapHref: "https://maps.app.goo.gl/7oG12aDTcvRtTwwd8",
+    imageAlt: "Turquoise reef lagoon and shoreline at Polhena Beach",
+  },
+  {
+    title: "Secret Beach Mirissa",
+    subtitle: "Secluded Tidal Cove & Pools",
+    category: "Hidden Cove",
+    description:
+      "A hidden coastal hideaway with intimate sandy pockets and calm tide pools, tucked behind Mirissa's green headlands.",
+    distance: "2.9 km • 7 mins",
+    imageBadge: "Tide Pools",
+    image:
+      "/images/experiences/beaches/secret-beach-mirissa/Secret-Beach-Mirissa-1.webp_fb6ce4a2_2K_2752x1536_4.webp",
+    tags: ["Tide Pools", "Secluded Cove", "Snorkel Waters"],
+    footerIcon: "pool",
+    footerLabel: "Tidal Cove",
+    mapHref: "https://maps.app.goo.gl/rSpiZSeZGJArgFe37",
+    imageAlt: "Secluded cove and turquoise water at Secret Beach Mirissa",
+  },
+  {
+    title: "Parrot Rock",
+    subtitle: "360° Bay Lookout",
+    category: "Offshore Islet",
+    description:
+      "A dramatic offshore rocky islet accessible from Mirissa's main beach, offering elevated panoramic views across the bay.",
+    distance: "5.8 km • 12 mins",
+    imageBadge: "Offshore Islet",
+    image:
+      "/images/experiences/beaches/parrot-rock/Parrot-Rock.jpg_5cf8aa91_2K_2752x1536_2.webp",
+    tags: ["Bay Views", "Low-Tide Crossing", "Lookout"],
+    footerIcon: "camera",
+    footerLabel: "Panoramic View",
+    mapHref: "https://maps.google.com/?q=Parrot+Rock+Mirissa",
+    imageAlt: "Parrot Rock rising above Mirissa Bay",
+  },
+  {
     title: "Mirissa Coastal Promontory",
     subtitle: "Panoramic Headland & Ocean Views",
     category: "Scenic Vista",
@@ -568,21 +712,5 @@ export const BEACH_CARDS: BeachCard[] = [
     footerLabel: "Sunset View",
     mapHref: "https://maps.app.goo.gl/p6qbtF3DszuEL2jPA",
     imageAlt: "Aerial dusk view of Mirissa Coastal Promontory",
-  },
-  {
-    title: "Secret Beach Mirissa",
-    subtitle: "Secluded Tidal Cove & Pools",
-    category: "Tide Pools",
-    description:
-      "A hidden coastal hideaway with intimate sandy pockets and calm tide pools, tucked behind Mirissa's green headlands.",
-    distance: "2.9 km • 7 mins",
-    imageBadge: "Tide Pools",
-    image:
-      "/images/experiences/beaches/secret-beach-mirissa/Secret-Beach-Mirissa-1.webp_fb6ce4a2_2K_2752x1536_4.webp",
-    tags: ["Tide Pools", "Secluded Cove", "Snorkel Waters"],
-    footerIcon: "pool",
-    footerLabel: "Tidal Cove",
-    mapHref: "https://maps.app.goo.gl/rSpiZSeZGJArgFe37",
-    imageAlt: "Secluded cove and turquoise water at Secret Beach Mirissa",
   },
 ];

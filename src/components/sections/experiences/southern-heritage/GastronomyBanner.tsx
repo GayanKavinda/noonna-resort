@@ -7,8 +7,22 @@ export function GastronomyBanner() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100 bg-gradient-to-br from-[#e8dfd2] via-[#f3ede4] to-[#d9cdbb]" />
-            <div className="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100 bg-gradient-to-br from-[#dbe7ec] via-[#eef4f7] to-[#c8d9e3]" />
+            <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100">
+              <img
+                src="/images/experiences/southern-heritage-coastal-expeditions/a-taste-of-the-southern-coast/kerabujen-restaurant-weligama.jpg"
+                alt="Dining at Kerabujen Restaurant in Weligama"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-sm aspect-[4/3] border border-slate-100">
+              <img
+                src="/images/experiences/southern-heritage-coastal-expeditions/a-taste-of-the-southern-coast/salty-swamis-cafe-weligama.jpg"
+                alt="Salty Swamis Cafe and Surf Shop in Weligama"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
           </div>
           <div className="lg:col-span-5 space-y-4">
             <div className="space-y-1.5">
@@ -41,7 +55,7 @@ export function GastronomyBanner() {
             <div className="flex flex-wrap items-center gap-2.5 pt-1.5">
               <Link
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#2f6b8f] hover:border-[#2f6b8f] transition-colors text-xs font-medium shadow-sm"
-                href="/experiences"
+                href="/experiences/dining"
               >
                 <UtensilsCrossed className="w-4 h-4 text-[#2f6b8f]" />
                 <span>View Dining Directory</span>
