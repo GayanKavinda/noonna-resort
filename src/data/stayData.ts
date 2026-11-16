@@ -37,6 +37,7 @@ export const STAY_DATA = {
   view: "Coastal Setting",
   bathroom: "Private resort amenities",
   bookingUrl: HOTEL_INFO.bookingUrl,
+  whatsapp: HOTEL_INFO.tempWhatsapp,
 
   heroBadges: [
     {

@@ -33,17 +33,15 @@ export const HOTEL_INFO = {
   location: "Kumbalgama, Southern Coast, Sri Lanka",
   // Verified official booking channel
   bookingUrl: "https://www.booking.com/hotel/lk/noonna-beach.html",
-  // Temporary project contact value pending authentic owner confirmation/replacement before production.
-  // Do not treat as a verified official hotel number.
-  tempPhone: "+94779206951",
-  tempPhoneDisplay: "+94 77 920 6951",
-  tempWhatsapp: "94779206951",
-  // Social media handles (destinations pending final owner confirmation)
+  // Primary guest contact (WhatsApp / phone)
+  tempPhone: "+94716300100",
+  tempPhoneDisplay: "+94 71 630 0100",
+  tempWhatsapp: "94716300100",
+  // Social media handles
   socials: {
     instagram: "https://instagram.com/noonnabeach",
     facebook: "https://facebook.com/noonnabeach",
     youtube: "https://youtube.com/@noonnabeach",
-    // Temporary project WhatsApp value pending authentic owner confirmation/replacement before production.
-    whatsapp: "94779206951" as string | undefined,
+    whatsapp: "https://wa.me/94716300100" as string | undefined,
   },
 } as const;

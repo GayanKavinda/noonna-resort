@@ -1,4 +1,4 @@
-﻿export interface DiningHighlight {
+export interface DiningHighlight {
   icon: "dinner_dining" | "skillet" | "local_cafe" | "coffee";
   label: string;
   value: string;
@@ -108,7 +108,7 @@ export const DINING_DIRECTORY = {
   eyebrow: "Curated Culinary Directory",
   title: "10 Coastal Dining Destinations",
   subtitle:
-    "From legendary 10-curry terracotta platters to sunset beach barbecues and tranquil surf garden roasters. Click any destination for menu notes and concierge bookings.",
+    "From legendary 10-curry terracotta platters to sunset beach barbecues and tranquil surf garden roasters. Click any destination for menu notes and concierge inquiries.",
 };
 
 export const DINING_VENUES: DiningVenue[] = [
@@ -182,9 +182,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": false
       },
       {
-        "label": "Book Table",
-        "icon": "table_restaurant",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20Lucky%20Fort%20Restaurant%20Galle%20Fort",
+        "label": "Ask Concierge",
+        "icon": "chat",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20dining%20at%20Lucky%20Fort%20Restaurant%20in%20Galle%20Fort.",
         "variant": "primary",
         "external": true
       }
@@ -254,8 +254,8 @@ export const DINING_VENUES: DiningVenue[] = [
       },
       {
         "icon": "call",
-        "text": "+94 77 920 6951",
-        "href": "tel:+94779206951"
+        "text": "+94 71 630 0100",
+        "href": "tel:+94716300100"
       }
     ],
     "actions": [
@@ -269,14 +269,14 @@ export const DINING_VENUES: DiningVenue[] = [
       {
         "label": "Call",
         "icon": "call",
-        "href": "tel:+94779206951",
+        "href": "tel:+94716300100",
         "variant": "outline",
         "external": false
       },
       {
-        "label": "Book / Class",
-        "icon": "table_restaurant",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20Shirani%20Home%20Made%20Rice%20&%20Curry%20or%20Cooking%20Class",
+        "label": "Ask Concierge",
+        "icon": "chat",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20dining%20or%20cooking%20classes%20at%20Shirani%20Home%20Made%20Rice%20%26%20Curry.",
         "variant": "primary",
         "external": true
       }
@@ -359,9 +359,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Inquire",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Kumbala%20Restaurant%20%26%20Cafe",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Kumbala%20Restaurant%20%26%20Cafe.",
         "variant": "primary",
         "external": true
       }
@@ -445,9 +445,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": false
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Mettha's%20Home%20Cooked%20Meals%20Unawatuna",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Mettha%27s%20Home%20Cooked%20Meals%20in%20Unawatuna.",
         "variant": "primary",
         "external": true
       }
@@ -524,9 +524,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20a%20table%20at%20Le%27%20Fish%20Weligama",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Le%27%20Fish%20in%20Weligama.",
         "variant": "primary",
         "external": true
       }
@@ -603,9 +603,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20Sithum%20Fish%20Point%20Weligama",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Sithum%20Fish%20Point%20in%20Weligama.",
         "variant": "primary",
         "external": true
       }
@@ -682,9 +682,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20assist%20with%20reserving%20or%20inquiring%20about%20After%20Surf%20Rooftop%20Cafe%20Weligama",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20After%20Surf%20Rooftop%20Cafe%20in%20Weligama.",
         "variant": "primary",
         "external": true
       }
@@ -761,9 +761,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20I'd%20like%20to%20reserve%20a%20sunset%20table%20at%20Kerabujen%20Restaurant%20on%20the%204th%20floor...",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Kerabujen%20Restaurant%20in%20Weligama.",
         "variant": "primary",
         "external": true
       }
@@ -840,9 +840,9 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20could%20you%20check%20morning%20table%20availability%20and%20opening%20hours%20for%20Aloha%20Coffee%20Gallery%20in%20Mirissa?",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Aloha%20Coffee%20Gallery%20in%20Mirissa.",
         "variant": "primary",
         "external": true
       }
@@ -920,10 +920,10 @@ export const DINING_VENUES: DiningVenue[] = [
         "external": true
       },
       {
-        "label": "Concierge",
+        "label": "Ask Concierge",
         "icon": "chat",
-        "href": "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge%2C%20please%20assist%20with%20visiting%20or%20reserving%20at%20Salty%20Swamis%20Cafe%20%26%20Surf%20Shop%20in%20Weligama.",
-        "variant": "outline",
+        "href": "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20I%27d%20like%20to%20ask%20about%20Salty%20Swamis%20Cafe%20%26%20Surf%20Shop%20in%20Weligama.",
+        "variant": "primary",
         "external": true
       }
     ],

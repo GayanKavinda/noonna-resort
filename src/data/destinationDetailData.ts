@@ -229,7 +229,7 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/X8YDfKbJBeZ8Km168",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Midigama%20tide%20and%20surf%20updates.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20Midigama%20tide%20and%20surf%20updates.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -524,9 +524,9 @@ export const MIDIGAMA_BEACH_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Midigama Outing?",
     deck: "Our team will arrange a trusted local driver, provide custom reef booties, pack chilled king coconuts in cooler packs, and ensure boards are waiting for your morning tide.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Midigama%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Midigama%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -604,7 +604,7 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/7fSnS9QP8AqMa29r7",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20beach%20and%20tide%20updates%20for%20Abimanagama.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20beach%20and%20tide%20updates%20for%20Abimanagama.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -874,9 +874,9 @@ export const ABIMANAGAMA_BEACH_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Abimanagama Outing?",
     deck: "Our team can arrange a local driver, provide fresh towels, pack chilled king coconuts, and advise on optimal tide times for your visit.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Abimanagama%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Abimanagama%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -954,7 +954,7 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/Cnv9bM1WtPMbeVaH8",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20a%20surf%20instructor%20or%20transfer%20to%20Weligama%20Bay.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20a%20surf%20instructor%20or%20transfer%20to%20Weligama%20Bay.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -1247,9 +1247,9 @@ export const WELIGAMA_BEACH_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Weligama Surf & Beach Outing?",
     deck: "Our team can arrange a local driver, connect you with certified surf instructors, pack chilled king coconuts, and advise on wave timing.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Weligama%20surf%20and%20beach%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Weligama%20surf%20and%20beach%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -1327,7 +1327,7 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/ZMevFYvCWWBkVnwp9",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20surf%20updates%20and%20cafe%20recommendations%20for%20Ahangama.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20surf%20updates%20and%20cafe%20recommendations%20for%20Ahangama.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -1642,9 +1642,9 @@ export const AHANGAMA_BEACH_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Ahangama Outing?",
     deck: "Our concierge team can arrange tuk-tuk transport, recommend popular surf spots or cafes, and organize reef booties or board rentals.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Ahangama%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Ahangama%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -1722,7 +1722,7 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/6BAipJAkShgEmCMFA",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Lazy%20Left%20swell%20and%20tide%20updates.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20Lazy%20Left%20swell%20and%20tide%20updates.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -2000,9 +2000,9 @@ export const LAZY_LEFT_SURF_BREAK_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Lazy Left Surf Session?",
     deck: "Our team will arrange reliable tuk-tuk transport, check live tide and swell reports, provide reef booties, and ensure your morning gear is ready.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Lazy%20Left%20surf%20session.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Lazy%20Left%20surf%20session.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -2080,7 +2080,7 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/WNvd5u5TLcYy9Enj7",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Rams%20Right%20swell%20and%20tide%20updates.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20Rams%20Right%20swell%20and%20tide%20updates.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -2359,9 +2359,9 @@ export const RAMS_RIGHT_SURF_BREAK_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Rams Right Surf Session?",
     deck: "Our team will arrange reliable tuk-tuk transport, check live swell and wind conditions, provide reef booties, and ensure your morning gear is ready.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Rams%20Right%20surf%20session.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Rams%20Right%20surf%20session.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -2439,7 +2439,7 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/CCDnMHh7qBNg2DCj8",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Awee%20Coco%20tide%20and%20access%20updates.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20Awee%20Coco%20tide%20and%20access%20updates.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -2739,9 +2739,9 @@ export const AWEE_COCO_SECRET_POOL_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Awee Coco Outing?",
     deck: "Our team will arrange a trusted local driver, provide custom reef booties, pack chilled king coconuts in cooler packs, and ensure towels are ready for your morning soak.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Awee%20Coco%20pool%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Awee%20Coco%20pool%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -2819,7 +2819,7 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/KPaEdnqpMcRWrrHu8",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20send%20Secret%20Jungle%20Beach%20access%20details.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20send%20Secret%20Jungle%20Beach%20access%20details.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -3081,9 +3081,9 @@ export const SECRET_JUNGLE_BEACH_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Secret Jungle Beach Outing?",
     deck: "Our team will arrange trusted transport, provide trail guidance, pack chilled king coconuts in cooler packs, and ensure towels are ready.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Jungle%20Beach%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Jungle%20Beach%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -3161,7 +3161,7 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/7oG12aDTcvRtTwwd8",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Polhena%20Beach.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Polhena%20Beach.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -3408,9 +3408,9 @@ export const POLHENA_BEACH_CORAL_REEF_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Polhena Snorkeling Outing?",
     deck: "Our concierge team will arrange comfortable transport, coordinate snorkel gear rentals, and advise on optimal tide and turtle-spotting windows.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Polhena%20snorkeling%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Polhena%20snorkeling%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -3488,7 +3488,7 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/rSpiZSeZGJArgFe37",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Secret%20Beach%20Mirissa.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Secret%20Beach%20Mirissa.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -3751,9 +3751,9 @@ export const SECRET_BEACH_MIRISSA_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Secret Beach Outing?",
     deck: "Our concierge team will arrange comfortable tuk-tuk transport, coordinate cafe seating reservations, and ensure your morning towels are packed.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Beach%20Mirissa%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Secret%20Beach%20Mirissa%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -3833,7 +3833,7 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
       mapsHref: "https://www.google.com/maps/search/?api=1&query=Parrot+Rock+Mirissa+Sri+Lanka",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Parrot%20Rock%20Mirissa.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Parrot%20Rock%20Mirissa.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -4080,9 +4080,9 @@ export const PARROT_ROCK_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Parrot Rock Outing?",
     deck: "Our concierge team will arrange comfortable transport, check optimal low-tide crossing times, and ensure your morning towels or camera gear are packed.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Parrot%20Rock%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Parrot%20Rock%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };
@@ -4160,7 +4160,7 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
       mapsHref: "https://maps.app.goo.gl/p6qbtF3DszuEL2jPA",
       mapsLabel: "Google Maps Pin",
       hostHref:
-        "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Mirissa%20Coastal%20Promontory.",
+        "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20arrange%20transport%20to%20Mirissa%20Coastal%20Promontory.",
       hostLabel: "WhatsApp Host",
     },
   },
@@ -4490,9 +4490,9 @@ export const MIRISSA_COASTAL_PROMONTORY_DETAIL: DestinationDetail = {
     title: "Would You Like Us to Prepare Your Promontory Outing?",
     deck: "Our concierge team will arrange comfortable transport timed perfectly for dawn or sunset lighting, and ensure your morning towels or camera gear are ready.",
     primaryHref:
-      "https://wa.me/94779206951?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Mirissa%20Coastal%20Promontory%20outing.",
+      "https://wa.me/94716300100?text=Hello%20Noonna%20Concierge,%20please%20help%20plan%20our%20Mirissa%20Coastal%20Promontory%20outing.",
     primaryLabel: "Plan Outing with Host",
-    secondaryHref: "https://wa.me/94779206951",
+    secondaryHref: "https://wa.me/94716300100",
     secondaryLabel: "WhatsApp Concierge",
   },
 };

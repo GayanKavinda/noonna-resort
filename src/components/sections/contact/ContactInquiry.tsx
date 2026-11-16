@@ -464,13 +464,15 @@ export function ContactInquiry() {
               </div>
 
               <div className="space-y-2.5">
-                <div className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 border border-[#D9EAF3]">
+                <a
+                  href={`https://wa.me/${HOTEL_INFO.tempWhatsapp}?text=${encodeURIComponent("Hello Noonna Beach Hotel, I would like to make an inquiry.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"
+                >
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="w-7 h-7 rounded-full bg-white border border-[#D9EAF3] flex items-center justify-center text-[#2f6b8f] shrink-0">
-                      <MessageCircle
-                        className="w-3.5 h-3.5"
-                        aria-hidden="true"
-                      />
+                    <div className="w-7 h-7 rounded-full bg-white border border-[#D9EAF3] flex items-center justify-center text-[#2f6b8f] group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors shrink-0">
+                      <MessageCircle className="w-3.5 h-3.5" aria-hidden="true" />
                     </div>
                     <div className="truncate">
                       <p
@@ -483,21 +485,22 @@ export function ContactInquiry() {
                         style={{ fontSize: "12px", lineHeight: "16px" }}
                         className="font-body-sm font-medium text-[#173F56] truncate"
                       >
-                        Pending confirmation
+                        {HOTEL_INFO.tempPhoneDisplay}
                       </p>
                     </div>
                   </div>
-                  <span
-                    style={{ fontSize: "10px" }}
-                    className="text-[#475569] font-body-sm shrink-0"
-                  >
-                    Unavailable
-                  </span>
-                </div>
+                  <ArrowUpRight
+                    className="w-3.5 h-3.5 text-[#475569] group-hover:text-[#2f6b8f] transition-colors shrink-0"
+                    aria-hidden="true"
+                  />
+                </a>
 
-                <div className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 border border-[#D9EAF3]">
+                <a
+                  href={`tel:${HOTEL_INFO.tempPhone}`}
+                  className="cursor-pointer flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"
+                >
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="w-7 h-7 rounded-full bg-white border border-[#D9EAF3] flex items-center justify-center text-[#2f6b8f] shrink-0">
+                    <div className="w-7 h-7 rounded-full bg-white border border-[#D9EAF3] flex items-center justify-center text-[#2f6b8f] group-hover:bg-[#2f6b8f] group-hover:text-white transition-colors shrink-0">
                       <Mail className="w-3.5 h-3.5" aria-hidden="true" />
                     </div>
                     <div className="truncate">
@@ -505,23 +508,21 @@ export function ContactInquiry() {
                         style={{ fontSize: "9.5px", lineHeight: "13px" }}
                         className="font-label-sm uppercase tracking-wider text-[#475569] font-semibold"
                       >
-                        Email Desk
+                        Call Concierge
                       </p>
                       <p
                         style={{ fontSize: "12px", lineHeight: "16px" }}
                         className="font-body-sm font-medium text-[#173F56] truncate"
                       >
-                        Pending confirmation
+                        {HOTEL_INFO.tempPhoneDisplay}
                       </p>
                     </div>
                   </div>
-                  <span
-                    style={{ fontSize: "10px" }}
-                    className="text-[#475569] font-body-sm shrink-0"
-                  >
-                    Unavailable
-                  </span>
-                </div>
+                  <ArrowUpRight
+                    className="w-3.5 h-3.5 text-[#475569] group-hover:text-[#2f6b8f] transition-colors shrink-0"
+                    aria-hidden="true"
+                  />
+                </a>
 
                 <a
                   className="cursor-pointer flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"

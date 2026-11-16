@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Clock, MapPin, MessageCircle, Navigation, Phone, Star, UtensilsCrossed, X } from "lucide-react";
 import type { DiningVenue } from "@/data/diningData";
+import { HOTEL_INFO } from "@/lib/constants";
 import { NEUTRAL_IMAGE_PLACEHOLDER } from "@/lib/imageFallback";
 
 interface Props {
@@ -38,9 +39,9 @@ export function DiningModal({ venue, onClose }: Props) {
   const gallery = venue.thumbs.slice(0, 3);
 
   const whatsappMsg = encodeURIComponent(
-    `Hello Noonna Concierge, I am staying at the hotel and would like to arrange dining / reservations for ${m.title}. Could you please assist?`
+    `Hello Noonna Concierge, I am staying at the hotel and would like to ask about ${m.title}. Could you please assist?`
   );
-  const whatsappUrl = `https://wa.me/94779206951?text=${whatsappMsg}`;
+  const whatsappUrl = `https://wa.me/${HOTEL_INFO.tempWhatsapp}?text=${whatsappMsg}`;
   const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     `${m.title} ${m.address}`
   )}`;
@@ -202,7 +203,7 @@ export function DiningModal({ venue, onClose }: Props) {
                 <span className="text-xs font-bold text-amber-800">Assistance</span>
               </div>
               <p className="text-xs text-slate-700 leading-relaxed font-light">
-                Our concierge desk can arrange personalized tuk-tuks, confirm daily fresh catch arrivals, or reserve sunset veranda seats.
+                Our concierge desk can help with directions, transport arrangements, and local dining information via WhatsApp.
               </p>
             </div>
           </div>

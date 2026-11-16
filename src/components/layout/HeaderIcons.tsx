@@ -47,15 +47,15 @@ export const HeaderIcons: React.FC<HeaderIconsProps> = ({ className = "" }) => {
         </svg>
       </a>
 
-      {/* WhatsApp: Rendered when valid phone number is confirmed */}
+      {/* WhatsApp Concierge */}
       {HOTEL_INFO.socials.whatsapp && (
         <a
           href={HOTEL_INFO.socials.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Official WhatsApp Concierge: Direct Booking & Guest Inquiries"
-          title="WhatsApp Concierge"
-          className="w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
+          aria-label={`WhatsApp Concierge: ${HOTEL_INFO.tempPhoneDisplay}`}
+          title={`WhatsApp Concierge (${HOTEL_INFO.tempPhoneDisplay})`}
+          className="cursor-pointer w-8 h-8 rounded-full border border-[#2f6b8f]/30 flex items-center justify-center text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f] transition-all duration-200 shadow-2xs"
         >
           <svg
             className="w-4 h-4 fill-current"
