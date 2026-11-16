@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -44,6 +46,11 @@ export function ContactHero() {
               <Link
                 href="#inquiry-form"
                 className="cursor-pointer inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-surface-container-low text-secondary font-medium text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", "#inquiry-form");
+                }}
               >
                 <span className="font-body-md">Direct Inquiry</span>
                 <ChevronDown className="w-[18px] h-[18px] shrink-0" aria-hidden="true" />
@@ -51,6 +58,11 @@ export function ContactHero() {
               <Link
                 href="#property-location"
                 className="cursor-pointer inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-200 text-[#173F56] font-medium text-sm hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f] transition-all text-center"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("property-location")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", "#property-location");
+                }}
               >
                 <MapPin
                   className="w-[18px] h-[18px] text-[#2f6b8f] shrink-0"

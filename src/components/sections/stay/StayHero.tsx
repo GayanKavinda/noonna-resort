@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { STAY_DATA } from "@/data/stayData";
@@ -86,6 +88,11 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
               <a
                 href="#accommodation-blueprint"
                 className="cursor-pointer inline-flex h-12 w-full items-center justify-center gap-1.5 rounded-xl border border-[#D9EAF3] bg-white px-5 text-[14px] font-medium text-[#173F56] transition-colors hover:bg-[#EBF5FB]/60 sm:w-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("accommodation-blueprint")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", "#accommodation-blueprint");
+                }}
               >
                 <span>Explore Room Details</span>
                 <ArrowDown className="h-[18px] w-[18px] text-[#2f6b8f]" />

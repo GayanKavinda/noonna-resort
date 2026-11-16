@@ -1,3 +1,5 @@
+"use client";
+
 import { Umbrella, Landmark, Utensils, Waves, ArrowRight, Compass } from "lucide-react";
 import Link from "next/link";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
@@ -37,6 +39,11 @@ export function ExperiencesHero() {
           <a
             className="cursor-pointer inline-flex items-center justify-center rounded-full bg-primary-container px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-on-primary-container shadow-[0_4px_24px_-4px_rgba(23,63,86,0.12)] transition-all duration-200 hover:bg-primary"
             href="#nearby-beaches"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("nearby-beaches")?.scrollIntoView({ behavior: "smooth" });
+              window.history.replaceState(null, "", "#nearby-beaches");
+            }}
           >
             Explore Nearby Places
           </a>
@@ -99,7 +106,15 @@ export function ExperiencesHero() {
               <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Golden Hour Shores</span>
             </div>
             <div className="pt-2 border-t border-white/15">
-              <a href="#nearby-beaches" className="cursor-pointer inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+              <a
+                href="#nearby-beaches"
+                className="cursor-pointer inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("nearby-beaches")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", "#nearby-beaches");
+                }}
+              >
                 <span>Explore Beaches</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </a>

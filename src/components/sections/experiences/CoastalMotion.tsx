@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight, ExternalLink, Play } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 
@@ -103,7 +105,15 @@ export default function CoastalMotion() {
             </div>
           </div>
           <div className="mt-4 border-t border-surface-container pt-4">
-            <a className="cursor-pointer inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary transition-all hover:gap-3" href="#arrival-map">
+            <a
+              className="cursor-pointer inline-flex items-center gap-2 font-label-md text-label-md font-semibold text-primary transition-all hover:gap-3"
+              href="#arrival-map"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById("arrival-map")?.scrollIntoView({ behavior: "smooth" });
+                window.history.replaceState(null, "", "#arrival-map");
+              }}
+            >
               <span>View Full Arrival &amp; Route Guide</span>
               <ArrowRight size={16} />
             </a>

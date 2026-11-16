@@ -62,6 +62,11 @@ export const HomeHero: React.FC = () => {
               <Link
                 href="#the-stay"
                 className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-7 text-[14px] font-medium text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#25566f]/90 sm:w-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("the-stay")?.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, "", "#the-stay");
+                }}
               >
                 <span>Explore the Stay</span>
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
