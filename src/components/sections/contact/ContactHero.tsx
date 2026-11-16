@@ -36,21 +36,21 @@ export function ContactHero() {
                 href={HOTEL_INFO.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm transition-all shadow-[0_4px_24px_-4px_rgba(23,63,86,0.15)] hover:shadow-md hover:-translate-y-0.5 text-center"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm transition-all shadow-[0_4px_24px_-4px_rgba(23,63,86,0.15)] hover:shadow-md hover:-translate-y-0.5 text-center"
               >
                 <span className="font-body-md">Book Your Stay</span>
                 <ArrowRight className="w-[18px] h-[18px] shrink-0" aria-hidden="true" />
               </a>
               <Link
                 href="#inquiry-form"
-                className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-surface-container-low text-secondary font-medium text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-surface-container-low text-secondary font-medium text-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center"
               >
                 <span className="font-body-md">Direct Inquiry</span>
                 <ChevronDown className="w-[18px] h-[18px] shrink-0" aria-hidden="true" />
               </Link>
               <Link
                 href="#property-location"
-                className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-200 text-[#173F56] font-medium text-sm hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f] transition-all text-center"
+                className="cursor-pointer inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-lg bg-white border border-slate-200 text-[#173F56] font-medium text-sm hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f] transition-all text-center"
               >
                 <MapPin
                   className="w-[18px] h-[18px] text-[#2f6b8f] shrink-0"

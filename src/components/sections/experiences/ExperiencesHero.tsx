@@ -35,13 +35,13 @@ export function ExperiencesHero() {
         </p>
         <div className="flex flex-col items-stretch justify-center gap-3 pt-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
           <a
-            className="inline-flex items-center justify-center rounded-full bg-primary-container px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-on-primary-container shadow-[0_4px_24px_-4px_rgba(23,63,86,0.12)] transition-all duration-200 hover:bg-primary"
+            className="cursor-pointer inline-flex items-center justify-center rounded-full bg-primary-container px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-on-primary-container shadow-[0_4px_24px_-4px_rgba(23,63,86,0.12)] transition-all duration-200 hover:bg-primary"
             href="#nearby-beaches"
           >
             Explore Nearby Places
           </a>
           <a
-            className="inline-flex items-center justify-center rounded-full bg-surface-container-low px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-primary transition-all duration-200 hover:bg-secondary-container/40"
+            className="cursor-pointer inline-flex items-center justify-center rounded-full bg-surface-container-low px-8 py-3.5 font-label-lg text-label-lg tracking-wide text-primary transition-all duration-200 hover:bg-secondary-container/40"
             href="https://www.booking.com/hotel/lk/noonna-beach.html"
             rel="noopener noreferrer"
             target="_blank"
@@ -99,7 +99,7 @@ export function ExperiencesHero() {
               <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Golden Hour Shores</span>
             </div>
             <div className="pt-2 border-t border-white/15">
-              <a href="#nearby-beaches" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+              <a href="#nearby-beaches" className="cursor-pointer inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
                 <span>Explore Beaches</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </a>
@@ -141,7 +141,7 @@ export function ExperiencesHero() {
               <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Cultural Trails</span>
             </div>
             <div className="pt-2 border-t border-white/15">
-              <Link href="/experiences/southern-heritage-coastal-expeditions" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+              <Link href="/experiences/southern-heritage-coastal-expeditions" className="cursor-pointer inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
                 <span>Explore Heritage</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </Link>
@@ -183,7 +183,7 @@ export function ExperiencesHero() {
               <span className="px-2.5 py-1 rounded-lg bg-white/10 backdrop-blur-md text-white/90 text-xs font-light border border-white/10">Cafés &amp; Sunset Dining</span>
             </div>
             <div className="pt-2 border-t border-white/15">
-              <Link href="/experiences/dining" className="inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
+              <Link href="/experiences/dining" className="cursor-pointer inline-flex items-center gap-2 text-white font-label-sm text-label-sm font-semibold hover:text-secondary-fixed transition-colors group/link">
                 <span>Explore Dining</span>
                 <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </Link>

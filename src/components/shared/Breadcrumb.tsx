@@ -61,7 +61,7 @@ export function Breadcrumb({ items, className = "" }: BreadcrumbProps) {
                     : "hover:text-[#2f6b8f] transition-colors text-slate-600"
                 }
               >
-                {isHomeRoot && <HomeIcon className="w-3.5 h-3.5 stroke-current" />}
+                {isHomeRoot && <HomeIcon className="cursor-pointer w-3.5 h-3.5 stroke-current" />}
                 <span>{item.label}</span>
               </Link>
             )}

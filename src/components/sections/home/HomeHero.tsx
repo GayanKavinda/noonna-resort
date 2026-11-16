@@ -51,7 +51,7 @@ export const HomeHero: React.FC = () => {
                 href={HOTEL_INFO.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-7 text-[14px] font-medium text-white shadow-[0_8px_24px_-4px_rgba(23,63,86,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto"
+                className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-7 text-[14px] font-medium text-white shadow-[0_8px_24px_-4px_rgba(23,63,86,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto"
               >
                 <span>Book Your Stay</span>
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,7 +61,7 @@ export const HomeHero: React.FC = () => {
 
               <Link
                 href="#the-stay"
-                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-7 text-[14px] font-medium text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#25566f]/90 sm:w-auto"
+                className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-7 text-[14px] font-medium text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#25566f]/90 sm:w-auto"
               >
                 <span>Explore the Stay</span>
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

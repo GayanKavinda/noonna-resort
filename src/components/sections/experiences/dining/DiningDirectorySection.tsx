@@ -75,7 +75,7 @@ export function DiningDirectorySection() {
                         : "border border-slate-200 bg-white text-slate-600 hover:border-[#2f6b8f] hover:text-[#2f6b8f]"
                     }`}
                   >
-                    <Icon className="h-3.5 w-3.5 shrink-0 sm:h-3 sm:w-3" aria-hidden="true" />
+                    <Icon className="cursor-pointer h-3.5 w-3.5 shrink-0 sm:h-3 sm:w-3" aria-hidden="true" />
                     <span className="whitespace-nowrap">{label}</span>
                   </button>
                 );

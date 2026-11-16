@@ -114,7 +114,6 @@ export function GalleryPageContent() {
             data-alt={FEATURED_IMAGE.dataAlt}
             src={FEATURED_IMAGE.src}
             fill
-            unoptimized
             priority
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             sizes="(max-width: 1280px) 100vw, 1152px"
@@ -166,7 +165,7 @@ export function GalleryPageContent() {
             })}
           </div>
 
-          <div className="flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-2 lg:pt-0">
+          <div className="cursor-pointer flex items-center justify-between lg:justify-end gap-4 shrink-0 pt-2 lg:pt-0">
             <span className="text-xs text-slate-500 font-medium tracking-wide flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#2f6b8f]" />
               Showing <strong className="text-slate-800 font-semibold">{showingCount}</strong> of {activeFilterTotal} Moments
@@ -177,7 +176,7 @@ export function GalleryPageContent() {
                 aria-label="Editorial Grid View"
                 aria-pressed={viewMode === "grid"}
                 onClick={() => setViewMode("grid")}
-                className={`p-1.5 rounded-lg flex items-center justify-center transition-colors ${
+                className={`cursor-pointer p-1.5 rounded-lg flex items-center justify-center transition-colors ${
                   viewMode === "grid"
                     ? "bg-white text-[#2f6b8f] shadow-xs"
                     : "text-slate-500 hover:text-slate-800"
@@ -185,13 +184,13 @@ export function GalleryPageContent() {
                 title="Editorial Grid"
                 type="button"
               >
-                <Grid2X2 className="w-[18px] h-[18px]" strokeWidth={1.8} />
+                <Grid2X2 className="cursor-pointer w-[18px] h-[18px]" strokeWidth={1.8} />
               </button>
               <button
                 aria-label="Masonry View"
                 aria-pressed={viewMode === "masonry"}
                 onClick={() => setViewMode("masonry")}
-                className={`p-1.5 rounded-lg flex items-center justify-center transition-colors ${
+                className={`cursor-pointer p-1.5 rounded-lg flex items-center justify-center transition-colors ${
                   viewMode === "masonry"
                     ? "bg-white text-[#2f6b8f] shadow-xs"
                     : "text-slate-500 hover:text-slate-800"
@@ -199,7 +198,7 @@ export function GalleryPageContent() {
                 title="Mosaic Masonry"
                 type="button"
               >
-                <LayoutDashboard className="w-[18px] h-[18px]" strokeWidth={1.8} />
+                <LayoutDashboard className="cursor-pointer w-[18px] h-[18px]" strokeWidth={1.8} />
               </button>
             </div>
           </div>
@@ -246,7 +245,6 @@ export function GalleryPageContent() {
                     alt={item.alt}
                     src={item.src}
                     fill
-                    unoptimized
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
@@ -290,7 +288,6 @@ export function GalleryPageContent() {
                       alt={item.alt}
                       src={item.src}
                       fill
-                      unoptimized
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       sizes="(max-width: 768px) 50vw, 25vw"
                     />
@@ -387,7 +384,7 @@ export function GalleryPageContent() {
               aria-label="Close Lightbox"
               onClick={closeLightbox}
               type="button"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9EAF3] bg-white text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40"
+              className="cursor-pointer flex h-11 w-11 items-center justify-center rounded-full border border-[#D9EAF3] bg-white text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40"
             >
               <X className="h-5 w-5" strokeWidth={1.5} />
             </button>
@@ -406,7 +403,7 @@ export function GalleryPageContent() {
                 prevImage();
               }}
               type="button"
-              className="absolute left-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:left-6"
+              className="cursor-pointer absolute left-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:left-6"
             >
               <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
             </button>
@@ -439,7 +436,7 @@ export function GalleryPageContent() {
                 nextImage();
               }}
               type="button"
-              className="absolute right-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:right-6"
+              className="cursor-pointer absolute right-1.5 top-1/2 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-sm transition-colors hover:bg-[#F1F9FD] hover:text-[#173F56] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 sm:right-6"
             >
               <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
             </button>

@@ -40,13 +40,13 @@ export function ScrollToTop() {
       aria-hidden={!visible}
       tabIndex={visible ? 0 : -1}
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-[100] flex h-11 w-11 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-[0_8px_24px_-8px_rgba(23,63,86,0.18)] backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#2f6b8f] hover:bg-[#2f6b8f] hover:text-white hover:shadow-[0_12px_28px_-10px_rgba(57,127,168,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 focus-visible:ring-offset-2 ${
+      className={`cursor-pointer fixed bottom-6 right-6 z-[100] flex h-11 w-11 items-center justify-center rounded-full border border-[#D9EAF3] bg-white/95 text-[#2f6b8f] shadow-[0_8px_24px_-8px_rgba(23,63,86,0.18)] backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-[#2f6b8f] hover:bg-[#2f6b8f] hover:text-white hover:shadow-[0_12px_28px_-10px_rgba(57,127,168,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2f6b8f]/40 focus-visible:ring-offset-2 ${
         visible
           ? "pointer-events-auto translate-y-0 opacity-100"
           : "pointer-events-none translate-y-2 opacity-0"
       }`}
     >
-      <ArrowUp className="h-[18px] w-[18px]" strokeWidth={2} aria-hidden="true" />
+      <ArrowUp className="cursor-pointer h-[18px] w-[18px]" strokeWidth={2} aria-hidden="true" />
     </button>,
     document.body
   );

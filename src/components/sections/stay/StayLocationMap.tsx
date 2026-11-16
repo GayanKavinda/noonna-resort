@@ -75,7 +75,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
             <div className="flex items-center gap-4">
               <Link
                 href="/experiences"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56] focus:outline-none focus:ring-1 focus:ring-[#2f6b8f]"
+                className="cursor-pointer inline-flex items-center gap-2 text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56] focus:outline-none focus:ring-1 focus:ring-[#2f6b8f]"
               >
                 <span>Explore Coastal Experiences</span>
                 <ArrowRight className="h-[18px] w-[18px]" />
@@ -103,7 +103,7 @@ export const StayLocationMap: React.FC<StayLocationMapProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Open Noonna Beach Hotel in Google Maps"
-                      className="relative z-10 flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md transition-colors hover:bg-white"
+                      className="cursor-pointer relative z-10 flex items-center gap-2 rounded-full border border-[#D9EAF3] bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md transition-colors hover:bg-white"
                     >
                       <MapPin className="h-5 w-5 text-[#2f6b8f]" />
                       <span className="text-xs font-semibold tracking-wide text-[#173F56]">

@@ -54,14 +54,14 @@ export function GastronomyBanner() {
             </div>
             <div className="flex flex-wrap items-center gap-2.5 pt-1.5">
               <Link
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#2f6b8f] hover:border-[#2f6b8f] transition-colors text-xs font-medium shadow-sm"
+                className="cursor-pointer inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-white border border-slate-200 text-[#173F56] hover:text-[#2f6b8f] hover:border-[#2f6b8f] transition-colors text-xs font-medium shadow-sm"
                 href="/experiences/dining"
               >
                 <UtensilsCrossed className="w-4 h-4 text-[#2f6b8f]" />
                 <span>View Dining Directory</span>
               </Link>
               <a
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#2f6b8f] text-white hover:bg-[#25566f] transition-colors text-xs font-medium shadow-sm"
+                className="cursor-pointer inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#2f6b8f] text-white hover:bg-[#25566f] transition-colors text-xs font-medium shadow-sm"
                 href="https://wa.me/?text=Hello%20Concierge,%20could%20you%20share%20your%20favorite%20local%20curry%20and%20cafe%20recommendations%20near%20Noonna?"
                 target="_blank"
                 rel="noopener noreferrer"

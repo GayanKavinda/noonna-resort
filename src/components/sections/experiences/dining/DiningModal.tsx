@@ -137,7 +137,7 @@ export function DiningModal({ venue, onClose }: Props) {
                       fill
                       sizes="180px"
                       unoptimized={thumbFailed}
-                      className="w-full h-full object-cover group-hover:scale-105 duration-200"
+                      className="cursor-pointer w-full h-full object-cover group-hover:scale-105 duration-200"
                       onError={() => setThumbErrors((prev) => (prev[t.src] ? prev : { ...prev, [t.src]: true }))}
                     />
                     {t.label ? (
@@ -230,7 +230,7 @@ export function DiningModal({ venue, onClose }: Props) {
 
           <div className="flex flex-col items-stretch gap-3 border-t border-slate-100 pt-4 sm:flex-row sm:items-center sm:justify-between">
             <a
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#2f6b8f] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-[#2f6b8f] sm:flex-1"
+              className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-lg bg-[#2f6b8f] px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white shadow-sm transition-colors hover:bg-[#2f6b8f] sm:flex-1"
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -239,14 +239,14 @@ export function DiningModal({ venue, onClose }: Props) {
             </a>
             {callMeta ? (
               <a
-                className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold uppercase tracking-wider text-slate-700 transition-colors hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f] sm:w-auto"
+                className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 px-4 py-3 text-xs font-semibold uppercase tracking-wider text-slate-700 transition-colors hover:border-[#2f6b8f]/40 hover:text-[#2f6b8f] sm:w-auto"
                 href={callMeta.href}
               >
                 <Phone className="h-4 w-4" aria-hidden="true" /> {callMeta.text}
               </a>
             ) : null}
             <a
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-slate-100 px-5 py-3 text-xs font-semibold uppercase tracking-wider text-slate-700 transition-colors hover:bg-slate-200 sm:w-auto"
+              className="cursor-pointer flex w-full items-center justify-center gap-2 rounded-lg bg-slate-100 px-5 py-3 text-xs font-semibold uppercase tracking-wider text-slate-700 transition-colors hover:bg-slate-200 sm:w-auto"
               href={directionsUrl}
               target="_blank"
               rel="noopener noreferrer"

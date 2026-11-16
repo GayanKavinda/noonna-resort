@@ -140,7 +140,7 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
             href={content.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm rounded-lg transition-colors duration-200 shadow-sm hover:shadow group gap-2 font-sans"
+            className="cursor-pointer w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm rounded-lg transition-colors duration-200 shadow-sm hover:shadow group gap-2 font-sans"
           >
             <span>{content.buttonText}</span>
             <ArrowUpRight className="w-[18px] h-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
@@ -152,7 +152,7 @@ export const PreFooterCta: React.FC<PreFooterCtaProps> = ({
           href={content.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-1.5 text-xs text-slate-600 font-normal bg-slate-50 border border-slate-200/80 px-3 py-1 rounded-full hover:bg-slate-100 transition-colors duration-150 font-sans"
+          className="cursor-pointer inline-flex items-center justify-center gap-1.5 text-xs text-slate-600 font-normal bg-slate-50 border border-slate-200/80 px-3 py-1 rounded-full hover:bg-slate-100 transition-colors duration-150 font-sans"
         >
           <ArrowUpRight className="hidden" aria-hidden="true" />
           <svg className="w-[15px] h-[15px] text-[#2f6b8f]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 6h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>

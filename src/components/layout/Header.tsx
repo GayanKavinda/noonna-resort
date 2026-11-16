@@ -94,7 +94,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0 flex-1 lg:flex-initial" data-purpose="brand-lockup">
           <Link
             href="/"
-            className="block shrink-0 focus:outline-none focus:ring-2 focus:ring-[#2f6b8f] focus:ring-offset-2 rounded"
+            className="cursor-pointer block shrink-0 focus:outline-none focus:ring-2 focus:ring-[#2f6b8f] focus:ring-offset-2 rounded"
             aria-label="Noonna Beach Hotel Home"
           >
             <Image
@@ -103,13 +103,13 @@ export const Header: React.FC = () => {
               width={48}
               height={48}
               priority
-              className={`h-10 sm:h-12 w-auto object-contain transition-[filter] duration-300 ${transparent ? "brightness-0 invert" : ""}`}
+              className={`cursor-pointer h-10 sm:h-12 w-auto object-contain transition-[filter] duration-300 ${transparent ? "brightness-0 invert" : ""}`}
             />
           </Link>
           <div className="flex flex-col justify-center min-w-0">
             <Link
               href="/"
-              className={`font-heading font-semibold text-[20px] sm:text-[23px] tracking-tight leading-tight hover:opacity-95 transition-colors truncate ${
+              className={`cursor-pointer font-heading font-semibold text-[20px] sm:text-[23px] tracking-tight leading-tight hover:opacity-95 transition-colors truncate ${
                 transparent ? "text-white" : "text-[#2f6b8f]"
               }`}
             >
@@ -128,7 +128,7 @@ export const Header: React.FC = () => {
         {/* Center Navigation Links */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden lg:flex items-center gap-8 lg:gap-10"
+          className="cursor-pointer hidden lg:flex items-center gap-8 lg:gap-10"
           data-purpose="primary-nav"
           ref={dropdownRef}
         >
@@ -142,7 +142,7 @@ export const Header: React.FC = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`font-sans text-sm transition-colors py-1 ${
+                  className={`cursor-pointer font-sans text-sm transition-colors py-1 ${
                     transparent
                       ? isActive
                         ? "font-semibold text-white"
@@ -160,7 +160,7 @@ export const Header: React.FC = () => {
             return (
               <div
                 key={item.href}
-                className="relative"
+                className="cursor-pointer relative"
                 onMouseEnter={() => setOpenDropdown(item.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
@@ -169,7 +169,7 @@ export const Header: React.FC = () => {
                   onClick={() => setOpenDropdown(open ? null : item.label)}
                   aria-expanded={open}
                   aria-haspopup="menu"
-                  className={`font-sans text-sm transition-colors py-1 inline-flex items-center gap-1 ${
+                  className={`cursor-pointer font-sans text-sm transition-colors py-1 inline-flex items-center gap-1 ${
                     transparent
                       ? isActive
                         ? "font-semibold text-white"
@@ -190,7 +190,7 @@ export const Header: React.FC = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={reduceMotion ? { opacity: 1 } : { opacity: 0, y: 4 }}
                       transition={{ duration: 0.16, ease: [0.22, 1, 0.36, 1] }}
-                      className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-56"
+                      className="cursor-pointer absolute left-1/2 -translate-x-1/2 top-full pt-3 w-56"
                     >
                       <div className="rounded-xl border border-[#D9EAF3] bg-white/98 backdrop-blur-sm shadow-[0_12px_32px_-8px_rgba(23,63,86,0.18)] p-2">
                         {item.children?.map((child) => {
@@ -205,7 +205,7 @@ export const Header: React.FC = () => {
                               href={child.href}
                               role="menuitem"
                               onClick={() => setOpenDropdown(null)}
-                              className={`block px-3 py-2.5 rounded-lg text-sm font-sans transition-colors ${
+                              className={`cursor-pointer block px-3 py-2.5 rounded-lg text-sm font-sans transition-colors ${
                                 childActive
                                   ? "bg-[#EAF5FA] text-[#2f6b8f] font-semibold"
                                   : "text-[#334155] hover:bg-[#F4FAFC] hover:text-[#2f6b8f]"
@@ -225,7 +225,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Right Side: Social Media Icons + Primary CTA Button */}
-        <div className="flex items-center gap-2 sm:gap-4 lg:gap-6 shrink-0" data-purpose="header-actions">
+        <div className="cursor-pointer flex items-center gap-2 sm:gap-4 lg:gap-6 shrink-0" data-purpose="header-actions">
           <div className="hidden lg:flex items-center gap-2.5" data-purpose="social-links">
             {[
               {
@@ -260,13 +260,13 @@ export const Header: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label={item.label}
                 title={item.title}
-                className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors duration-200 shadow-xs motion-reduce:transition-none ${
+                className={`cursor-pointer w-8 h-8 rounded-full border flex items-center justify-center transition-colors duration-200 shadow-xs motion-reduce:transition-none ${
                   transparent
                     ? "border-white/40 text-white hover:text-[#173F56] hover:bg-white"
                     : "border-[#2f6b8f]/40 text-[#2f6b8f] hover:text-white hover:bg-[#2f6b8f]"
                 }`}
               >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="cursor-pointer w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                   <path d={item.path} />
                 </svg>
               </a>
@@ -277,7 +277,7 @@ export const Header: React.FC = () => {
             href={HOTEL_INFO.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#2f6b8f] hover:bg-[#245670] text-white text-[11px] sm:text-xs md:text-sm font-medium px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg shadow-sm transition-colors duration-200 hover:shadow-md motion-reduce:transition-none group"
+            className="cursor-pointer inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#2f6b8f] hover:bg-[#245670] text-white text-[11px] sm:text-xs md:text-sm font-medium px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-lg shadow-sm transition-colors duration-200 hover:shadow-md motion-reduce:transition-none group"
             data-purpose="cta-booking-button"
           >
             <span className="font-sans tracking-wide whitespace-nowrap">Book Your Stay</span>
@@ -294,7 +294,7 @@ export const Header: React.FC = () => {
 
           <button
             type="button"
-            className={`lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg transition-colors motion-reduce:transition-none ${
+            className={`cursor-pointer lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg transition-colors motion-reduce:transition-none ${
               transparent ? "text-white hover:bg-white/10" : "text-[#173F56] hover:bg-gray-100"
             }`}
             onClick={() => setMobileMenuOpen((open) => !open)}
@@ -302,7 +302,7 @@ export const Header: React.FC = () => {
             aria-controls="mobile-primary-navigation"
             aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           >
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <svg className="cursor-pointer w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -335,7 +335,7 @@ export const Header: React.FC = () => {
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`font-sans text-base py-2.5 min-h-11 flex items-center ${
+                      className={`cursor-pointer font-sans text-base py-2.5 min-h-11 flex items-center ${
                         isActive
                           ? "font-semibold text-[#2f6b8f]"
                           : "font-medium text-slate-800 hover:text-[#2f6b8f]"
@@ -348,13 +348,13 @@ export const Header: React.FC = () => {
                 }
 
                 return (
-                  <div key={item.href} className="py-1">
+                  <div key={item.href} className="cursor-pointer py-1">
                     <button
                       type="button"
                       onClick={() => setMobileExpanded(expanded ? null : item.label)}
                       aria-expanded={expanded}
                       aria-controls={submenuId}
-                      className={`w-full flex items-center justify-between font-sans text-base py-2.5 min-h-11 ${
+                      className={`cursor-pointer w-full flex items-center justify-between font-sans text-base py-2.5 min-h-11 ${
                         isActive
                           ? "font-semibold text-[#2f6b8f]"
                           : "font-medium text-slate-800 hover:text-[#2f6b8f]"
@@ -371,7 +371,7 @@ export const Header: React.FC = () => {
                           animate={{ opacity: 1, height: "auto" }}
                           exit={reduceMotion ? { opacity: 1 } : { opacity: 0, height: 0 }}
                           transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-                          className="overflow-hidden"
+                          className="cursor-pointer overflow-hidden"
                         >
                           <div className="ml-3 mt-1 pl-3 border-l border-[#D9EAF3] flex flex-col">
                             {item.children?.map((child) => {
@@ -384,7 +384,7 @@ export const Header: React.FC = () => {
                                 <Link
                                   key={child.href}
                                   href={child.href}
-                                  className={`font-sans text-[15px] py-2.5 min-h-11 flex items-center ${
+                                  className={`cursor-pointer font-sans text-[15px] py-2.5 min-h-11 flex items-center ${
                                     childActive
                                       ? "font-semibold text-[#2f6b8f]"
                                       : "font-medium text-slate-700 hover:text-[#2f6b8f]"

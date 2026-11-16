@@ -272,7 +272,7 @@ export function ContactArrival() {
               </span>
             </div>
             <Link
-              className="inline-flex items-center gap-1.5 font-label-md text-xs sm:text-sm text-[#2f6b8f] hover:text-[#173F56] font-semibold shrink-0 transition-colors group py-1"
+              className="cursor-pointer inline-flex items-center gap-1.5 font-label-md text-xs sm:text-sm text-[#2f6b8f] hover:text-[#173F56] font-semibold shrink-0 transition-colors group py-1"
               href="/experiences"
             >
               <span className="font-body-md">Explore Coastal Excursions</span>

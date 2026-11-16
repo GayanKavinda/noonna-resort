@@ -65,7 +65,7 @@ export function NearbyBeachesSection() {
               <Umbrella className="text-primary" size={18} />
               <span>Surf &amp; Sunset Sanctuary</span>
             </div>
-            <Link className="flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="/experiences/midigama-beach">
+            <Link className="cursor-pointer flex items-center gap-1.5 font-label-sm text-label-sm text-primary font-semibold hover:gap-2.5 transition-all" href="/experiences/midigama-beach">
               <span>Explore Tides</span>
               <ArrowRight size={18} />
             </Link>
@@ -120,7 +120,7 @@ export function NearbyBeachesSection() {
                 <div className="pt-2 flex flex-wrap items-center justify-between gap-2 font-label-sm text-label-sm text-primary font-semibold">
                   <span>{c.footer}</span>
                   {c.href ? (
-                    <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                    <Link href={c.href} className="cursor-pointer flex items-center gap-1 hover:gap-1.5 transition-all">
                       <span>{c.cta ?? "Explore"}</span>
                       <ArrowUpRight size={16} />
                     </Link>
@@ -160,7 +160,7 @@ export function NearbyBeachesSection() {
             <div className="pt-4 border-t border-surface-container mt-3 flex items-center justify-between font-label-sm text-label-sm text-primary font-semibold">
               <span>{c.footer}</span>
               {c.href ? (
-                <Link href={c.href} className="flex items-center gap-1 hover:gap-1.5 transition-all">
+                <Link href={c.href} className="cursor-pointer flex items-center gap-1 hover:gap-1.5 transition-all">
                   <span>{c.cta ?? "Explore"}</span>
                   <ArrowUpRight size={16} />
                 </Link>

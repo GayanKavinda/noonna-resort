@@ -100,7 +100,7 @@ export function ContactLocation() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontSize: "11.5px", lineHeight: "16px" }}
-                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-[#173F56] hover:bg-[#2f6b8f] text-white font-medium shadow-2xs transition-colors text-center"
+                  className="cursor-pointer inline-flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-[#173F56] hover:bg-[#2f6b8f] text-white font-medium shadow-2xs transition-colors text-center"
                 >
                   <Navigation className="w-3 h-3 shrink-0" aria-hidden="true" />
                   <span>Get Directions</span>
@@ -111,7 +111,7 @@ export function ContactLocation() {
                   type="button"
                   onClick={handleCopy}
                   style={{ fontSize: "11.5px", lineHeight: "16px" }}
-                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-[#F1F9FD] hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] text-[#173F56] font-medium transition-colors text-center"
+                  className="cursor-pointer inline-flex items-center justify-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-[#F1F9FD] hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] text-[#173F56] font-medium transition-colors text-center"
                 >
                   {copied ? (
                     <Check
@@ -173,7 +173,7 @@ export function ContactLocation() {
                 </span>
                 <Link
                   href="/experiences"
-                  className="text-[#2f6b8f] hover:text-[#173F56] font-semibold transition-colors inline-flex py-1"
+                  className="cursor-pointer text-[#2f6b8f] hover:text-[#173F56] font-semibold transition-colors inline-flex py-1"
                 >
                   Experiences →
                 </Link>
@@ -198,7 +198,7 @@ export function ContactLocation() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontSize: "11px", lineHeight: "14px" }}
-                  className="absolute top-3 right-3 sm:top-3.5 sm:right-3.5 z-10 inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-2 sm:py-1.5 rounded-lg bg-white/95 backdrop-blur-md hover:bg-white font-semibold text-[#173F56] hover:text-[#2f6b8f] shadow-md border border-[#D9EAF3] transition-all"
+                  className="cursor-pointer absolute top-3 right-3 sm:top-3.5 sm:right-3.5 z-10 inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-2 sm:py-1.5 rounded-lg bg-white/95 backdrop-blur-md hover:bg-white font-semibold text-[#173F56] hover:text-[#2f6b8f] shadow-md border border-[#D9EAF3] transition-all"
                 >
                   <span>Open in Maps</span>
                   <ExternalLink

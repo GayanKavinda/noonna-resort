@@ -68,7 +68,7 @@ export function NearbyBeachesCarousel() {
             </div>
             <button
               aria-label="Previous beaches"
-              className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#2f6b8f] hover:text-[#2f6b8f] transition-all duration-200 shadow-sm bg-white"
+              className="cursor-pointer w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#2f6b8f] hover:text-[#2f6b8f] transition-all duration-200 shadow-sm bg-white"
               onClick={() => scrollBy(-1)}
               type="button"
             >
@@ -76,7 +76,7 @@ export function NearbyBeachesCarousel() {
             </button>
             <button
               aria-label="Next beaches"
-              className="w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#2f6b8f] hover:text-[#2f6b8f] transition-all duration-200 shadow-sm bg-white"
+              className="cursor-pointer w-10 h-10 sm:w-9 sm:h-9 rounded-full border border-slate-200 flex items-center justify-center text-[#173F56] hover:border-[#2f6b8f] hover:text-[#2f6b8f] transition-all duration-200 shadow-sm bg-white"
               onClick={() => scrollBy(1)}
               type="button"
             >
@@ -137,7 +137,7 @@ export function NearbyBeachesCarousel() {
                     <FooterIcon icon={card.footerIcon} /> <span className="truncate">{card.footerLabel}</span>
                   </span>
                   <a
-                    className="text-[#2f6b8f] hover:text-[#2c6687] transition-colors flex items-center gap-1 font-semibold shrink-0"
+                    className="cursor-pointer text-[#2f6b8f] hover:text-[#2c6687] transition-colors flex items-center gap-1 font-semibold shrink-0"
                     href={card.mapHref}
                     target="_blank"
                     rel="noopener noreferrer"

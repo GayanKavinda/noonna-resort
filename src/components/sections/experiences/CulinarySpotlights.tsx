@@ -144,7 +144,7 @@ export default function CulinarySpotlights() {
             </p>
           </div>
           <Link
-            className="inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-8 py-3.5 font-label-md text-label-md font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#2D6A8E] sm:w-auto"
+            className="cursor-pointer inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-8 py-3.5 font-label-md text-label-md font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#2D6A8E] sm:w-auto"
             href="/experiences/dining"
           >
             <UtensilsCrossed size={18} />

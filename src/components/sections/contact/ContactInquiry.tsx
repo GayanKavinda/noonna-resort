@@ -108,13 +108,13 @@ function CompactSelect<T extends string>({
         aria-describedby={ariaDescribedBy}
         onClick={() => setOpen((prev) => !prev)}
         style={{ fontSize: "12px", lineHeight: "16px" }}
-        className={`w-full min-h-10 flex items-center justify-between gap-2 bg-[#F1F9FD] border rounded-xl px-3.5 py-2.5 text-left font-medium text-[#173F56] focus:outline-none focus:ring-2 focus:border-transparent transition-all ${
+        className={`cursor-pointer w-full min-h-10 flex items-center justify-between gap-2 bg-[#F1F9FD] border rounded-xl px-3.5 py-2.5 text-left font-medium text-[#173F56] focus:outline-none focus:ring-2 focus:border-transparent transition-all ${
           hasError
             ? "border-[#ba1a1a] focus:ring-[#ba1a1a]"
             : "border-[#D9EAF3] focus:ring-[#2f6b8f]"
         }`}
       >
-        <span className="truncate">{value}</span>
+        <span className="cursor-pointer truncate">{value}</span>
         <ChevronDown
           className={`w-3.5 h-3.5 text-[#2f6b8f] shrink-0 transition-transform duration-200 ${
             open ? "rotate-180" : ""
@@ -434,7 +434,7 @@ export function ContactInquiry() {
                   type="submit"
                   disabled={isSubmitting}
                   style={{ fontSize: "11.5px", lineHeight: "16px" }}
-                  className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 bg-[#173F56] hover:bg-[#2f6b8f] text-white px-4 sm:px-3.5 py-2.5 sm:py-1.5 rounded-lg font-medium tracking-wide shadow-sm transition-colors disabled:opacity-70"
+                  className="cursor-pointer inline-flex w-full sm:w-auto items-center justify-center gap-1.5 bg-[#173F56] hover:bg-[#2f6b8f] text-white px-4 sm:px-3.5 py-2.5 sm:py-1.5 rounded-lg font-medium tracking-wide shadow-sm transition-colors disabled:opacity-70"
                 >
                   <span>Send Message</span>
                   <Send className="w-3 h-3" aria-hidden="true" />
@@ -524,7 +524,7 @@ export function ContactInquiry() {
                 </div>
 
                 <a
-                  className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"
+                  className="cursor-pointer flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-[#F1F9FD]/80 hover:bg-[#D9EAF3]/60 border border-[#D9EAF3] transition-all group"
                   href={HOTEL_INFO.socials.instagram}
                   target="_blank"
                   rel="noopener noreferrer"

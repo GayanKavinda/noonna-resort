@@ -19,7 +19,7 @@ export function DestinationGallerySection({ gallery }: { gallery: DestinationGal
             </h2>
           </div>
           <Link
-            className="text-xs font-semibold text-[#2f6b8f] hover:text-[#173F56] transition-colors inline-flex items-center gap-1.5 self-start sm:self-auto tracking-wide py-1"
+            className="cursor-pointer text-xs font-semibold text-[#2f6b8f] hover:text-[#173F56] transition-colors inline-flex items-center gap-1.5 self-start sm:self-auto tracking-wide py-1"
             href={gallery.allHref}
           >
             <span>All Coastal Outings</span>
@@ -32,7 +32,7 @@ export function DestinationGallerySection({ gallery }: { gallery: DestinationGal
             return (
               <div
                 key={item.title}
-                className={`md:col-span-12 ${item.span} bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-between hover:border-[#2f6b8f] relative ${
+                className={`cursor-pointer md:col-span-12 ${item.span} bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group flex flex-col justify-between hover:border-[#2f6b8f] relative ${
                   isLarge ? "min-h-[300px] sm:min-h-[380px] lg:min-h-[420px]" : "min-h-[280px] sm:min-h-[360px]"
                 }`}
               >

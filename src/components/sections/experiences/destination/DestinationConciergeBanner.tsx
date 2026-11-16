@@ -17,7 +17,7 @@ export function DestinationConciergeBanner({ concierge }: { concierge: Destinati
           </p>
           <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
             <a
-              className="min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-sm font-medium rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all text-center"
+              className="cursor-pointer min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-sm font-medium rounded-xl flex items-center justify-center gap-2 shadow-sm transition-all text-center"
               href={concierge.primaryHref}
               target="_blank"
               rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function DestinationConciergeBanner({ concierge }: { concierge: Destinati
               <span>{concierge.primaryLabel}</span>
             </a>
             <a
-              className="min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f]/10 hover:bg-[#2f6b8f]/20 text-[#2f6b8f] text-sm font-medium rounded-xl flex items-center justify-center gap-2 border border-[#2f6b8f]/20 transition-all text-center"
+              className="cursor-pointer min-h-11 h-auto py-3 sm:py-0 sm:h-11 px-5 sm:px-6 bg-[#2f6b8f]/10 hover:bg-[#2f6b8f]/20 text-[#2f6b8f] text-sm font-medium rounded-xl flex items-center justify-center gap-2 border border-[#2f6b8f]/20 transition-all text-center"
               href={concierge.secondaryHref}
               target="_blank"
               rel="noopener noreferrer"

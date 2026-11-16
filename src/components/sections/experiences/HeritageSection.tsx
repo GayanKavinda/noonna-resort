@@ -220,7 +220,7 @@ export default function HeritageSection() {
         <div className="mt-10 mb-6 flex flex-col items-center justify-center gap-4 text-center sm:mt-12 sm:flex-row">
           <Link
             href="/experiences/southern-heritage-coastal-expeditions"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#2f6b8f] px-6 py-3.5 font-label-md text-label-md font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#25566f] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] sm:w-auto sm:px-8"
+            className="cursor-pointer inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#2f6b8f] px-6 py-3.5 font-label-md text-label-md font-semibold tracking-wide text-white shadow-sm transition-all duration-200 hover:bg-[#25566f] hover:shadow-[0_12px_32px_-6px_rgba(23,63,86,0.12)] sm:w-auto sm:px-8"
           >
             <Compass className="text-[18px]" size={18} />
             <span>Explore Southern Heritage &amp; Coastal Expeditions</span>

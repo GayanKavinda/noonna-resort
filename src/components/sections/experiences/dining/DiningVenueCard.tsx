@@ -123,7 +123,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                       fill
                       sizes="120px"
                       unoptimized={isErrored(t.src)}
-                      className="h-full w-full object-cover duration-200 group-hover/img:scale-110"
+                      className="cursor-pointer h-full w-full object-cover duration-200 group-hover/img:scale-110"
                       onError={() => setImgErrors((prev) => (prev[t.src] ? prev : { ...prev, [t.src]: true }))}
                     />
                     <span className="absolute inset-0 flex items-end bg-slate-900/30 p-1 text-[8px] font-medium text-white">
@@ -166,7 +166,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                         {m.href ? (
                           <a
                             href={m.href}
-                            className="font-medium text-slate-600 hover:text-[#2f6b8f]"
+                            className="cursor-pointer font-medium text-slate-600 hover:text-[#2f6b8f]"
                             onClick={(e) => e.stopPropagation()}
                           >
                             {m.text}
@@ -239,7 +239,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
         </span>
       </div>
 
-      <div className={`grid ${galleryCols} border-y border-slate-100 bg-slate-50`}>
+      <div className={`cursor-pointer grid ${galleryCols} border-y border-slate-100 bg-slate-50`}>
         {venue.thumbs.map((t, i) => {
           const idx = i + 1;
           const active = activeIndex === idx;
@@ -262,7 +262,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                 fill
                 sizes="120px"
                 unoptimized={isErrored(t.src)}
-                className="h-full w-full object-cover duration-200 group-hover/img:scale-110"
+                className="cursor-pointer h-full w-full object-cover duration-200 group-hover/img:scale-110"
                 onError={() => setImgErrors((prev) => (prev[t.src] ? prev : { ...prev, [t.src]: true }))}
               />
               <span className="absolute inset-0 flex items-end bg-slate-900/30 p-1 text-[8px] font-medium text-white">
@@ -327,7 +327,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                   {m.href ? (
                     <a
                       href={m.href}
-                      className="font-medium text-slate-600 hover:text-[#2f6b8f]"
+                      className="cursor-pointer font-medium text-slate-600 hover:text-[#2f6b8f]"
                       onClick={(e) => e.stopPropagation()}
                     >
                       {m.text}
@@ -366,7 +366,7 @@ export function DiningVenueCard({ venue, onOpenModal }: Props) {
                 </a>
               ))}
           </div>
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="cursor-pointer flex flex-wrap items-center gap-2">
             {venue.actions
               .filter((a) => a.icon === "table_restaurant" || a.icon === "chat")
               .map((a) => (

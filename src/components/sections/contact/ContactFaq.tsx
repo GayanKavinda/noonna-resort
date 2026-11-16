@@ -86,7 +86,7 @@ export function ContactFaq() {
                     {item.question}
                   </span>
                   <span
-                    className={`w-8 h-8 rounded-full border border-[#D9EAF3] flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                    className={`cursor-pointer w-8 h-8 rounded-full border border-[#D9EAF3] flex items-center justify-center shrink-0 transition-transform duration-200 ${
                       isOpen
                         ? "bg-[#2f6b8f] text-white rotate-180 border-[#2f6b8f]"
                         : "text-[#2f6b8f] bg-[#F1F9FD]"
@@ -128,7 +128,7 @@ export function ContactFaq() {
               href="https://www.booking.com/hotel/lk/noonna-beach.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 font-body text-sm font-medium text-[#2f6b8f] hover:text-[#173F56] transition-colors"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 font-body text-sm font-medium text-[#2f6b8f] hover:text-[#173F56] transition-colors"
             >
               <span>Inquire directly with our Concierge Desk</span>
               <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />

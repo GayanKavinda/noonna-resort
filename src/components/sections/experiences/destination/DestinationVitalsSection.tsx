@@ -149,7 +149,7 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
               </div>
               <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
                 <a
-                  className="min-h-10 sm:h-9 px-3 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-all text-center"
+                  className="cursor-pointer min-h-10 sm:h-9 px-3 bg-[#2f6b8f] hover:bg-[#2D6A8E] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 shadow-sm transition-all text-center"
                   href={vitals.intel.mapsHref}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -158,7 +158,7 @@ export function DestinationVitalsSection({ vitals }: { vitals: DestinationVitals
                   <span>{vitals.intel.mapsLabel}</span>
                 </a>
                 <a
-                  className="min-h-10 sm:h-9 px-3 bg-white/10 hover:bg-white hover:text-[#173F56] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 border border-white/20 transition-all text-center"
+                  className="cursor-pointer min-h-10 sm:h-9 px-3 bg-white/10 hover:bg-white hover:text-[#173F56] text-white text-[11px] font-medium rounded-lg flex items-center justify-center gap-1.5 border border-white/20 transition-all text-center"
                   href={vitals.intel.hostHref}
                   target="_blank"
                   rel="noopener noreferrer"

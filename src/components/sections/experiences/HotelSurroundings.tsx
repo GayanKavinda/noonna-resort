@@ -60,7 +60,7 @@ export default function HotelSurroundings() {
               </span>
             </div>
             <a
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#2f6b8f] hover:bg-[#25566f] text-white text-xs font-medium tracking-wide shadow-sm transition-all duration-200"
+              className="cursor-pointer inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#2f6b8f] hover:bg-[#25566f] text-white text-xs font-medium tracking-wide shadow-sm transition-all duration-200"
               href="https://www.booking.com/hotel/lk/noonna-beach.html"
               rel="noopener noreferrer"
               target="_blank"
@@ -232,7 +232,7 @@ export default function HotelSurroundings() {
               Southern Coast Experiences • Handcrafted Daily Itineraries
             </div>
             <Link
-              className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f6b8f] text-white font-label-sm text-label-sm font-medium hover:bg-[#2D6A8E] transition-colors shadow-sm"
+              className="cursor-pointer hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f6b8f] text-white font-label-sm text-label-sm font-medium hover:bg-[#2D6A8E] transition-colors shadow-sm"
               href="/contact#inquiry-form"
             >
               <span>Reserve with Concierge</span>

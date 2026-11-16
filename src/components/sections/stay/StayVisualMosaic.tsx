@@ -28,7 +28,7 @@ export const StayVisualMosaic: React.FC<StayVisualMosaicProps> = ({
           </div>
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56] focus:outline-none focus:ring-1 focus:ring-[#2f6b8f]"
+            className="cursor-pointer inline-flex items-center gap-2 text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56] focus:outline-none focus:ring-1 focus:ring-[#2f6b8f]"
           >
             <span>View Full Gallery</span>
             <ArrowRight className="h-[18px] w-[18px]" />
@@ -39,7 +39,7 @@ export const StayVisualMosaic: React.FC<StayVisualMosaicProps> = ({
           {STAY_DATA.mosaicImages.map((img, index) => (
             <StaggerItem
               key={index}
-              className={`group relative overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-slate-100 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] ${img.span} max-md:h-[260px] sm:max-md:h-[320px]`}
+              className={`cursor-pointer group relative overflow-hidden rounded-3xl border border-[#D9EAF3]/70 bg-slate-100 shadow-[0_4px_24px_-4px_rgba(23,63,86,0.06)] ${img.span} max-md:h-[260px] sm:max-md:h-[320px]`}
             >
               <Image
                 src={img.src}

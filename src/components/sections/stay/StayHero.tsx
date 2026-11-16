@@ -77,7 +77,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
                 href={STAY_DATA.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-6 text-[14px] font-medium text-white shadow-[0_8px_24px_-4px_rgba(23,63,86,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto sm:px-7"
+                className="cursor-pointer inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#2f6b8f] px-6 text-[14px] font-medium text-white shadow-[0_8px_24px_-4px_rgba(23,63,86,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2e698c] sm:w-auto sm:px-7"
               >
                 <span>Check Availability on Booking.com</span>
                 <ArrowUpRight className="h-[18px] w-[18px]" />
@@ -85,7 +85,7 @@ export const StayHero: React.FC<StayHeroProps> = ({ className = "" }) => {
 
               <a
                 href="#accommodation-blueprint"
-                className="inline-flex h-12 w-full items-center justify-center gap-1.5 rounded-xl border border-[#D9EAF3] bg-white px-5 text-[14px] font-medium text-[#173F56] transition-colors hover:bg-[#EBF5FB]/60 sm:w-auto"
+                className="cursor-pointer inline-flex h-12 w-full items-center justify-center gap-1.5 rounded-xl border border-[#D9EAF3] bg-white px-5 text-[14px] font-medium text-[#173F56] transition-colors hover:bg-[#EBF5FB]/60 sm:w-auto"
               >
                 <span>Explore Room Details</span>
                 <ArrowDown className="h-[18px] w-[18px] text-[#2f6b8f]" />

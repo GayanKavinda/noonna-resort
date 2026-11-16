@@ -92,7 +92,7 @@ function SlideCard({ slide }: { slide: DestinationDiscoverSlide }) {
         <div className="pt-2.5 sm:pt-3 border-t border-white/20 flex items-end justify-between gap-2">
           <span className="text-[10px] sm:text-[11px] text-tertiary-fixed-dim/95 line-clamp-2 min-w-0 leading-snug">{slide.footerLeft}</span>
           <Link
-            className="text-[11px] sm:text-xs text-tertiary-fixed font-semibold hover:text-white inline-flex items-center justify-end gap-1 transition-colors shrink-0 text-right leading-snug"
+            className="cursor-pointer text-[11px] sm:text-xs text-tertiary-fixed font-semibold hover:text-white inline-flex items-center justify-end gap-1 transition-colors shrink-0 text-right leading-snug"
             href={slide.href}
           >
             {slide.linkLabel}
@@ -272,7 +272,7 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
               <button
                 key={f.id}
                 aria-pressed={active}
-                className={`discover-filter-chip px-3 sm:px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs md:text-[13px] font-medium tracking-wide shrink-0 transition-colors flex items-center gap-1.5 max-w-full ${
+                className={`cursor-pointer discover-filter-chip px-3 sm:px-3.5 py-1.5 rounded-full text-[11px] sm:text-xs md:text-[13px] font-medium tracking-wide shrink-0 transition-colors flex items-center gap-1.5 max-w-full ${
                   active
                     ? "bg-[#2f6b8f] text-white shadow-sm"
                     : "bg-white border border-[#D9EAF3] hover:border-[#2f6b8f] hover:text-[#2f6b8f] text-[#40484e]"
@@ -281,7 +281,7 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
                 type="button"
               >
                 {f.icon === "all" ? (
-                  <List className="discover-filter-chip-icon w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+                  <List className="cursor-pointer discover-filter-chip-icon w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                 ) : f.icon === "beaches" ? (
                   <Waves
                     className={`discover-filter-chip-icon w-3.5 h-3.5 shrink-0 ${active ? "text-white" : "text-[#2f6b8f]"}`}
@@ -341,14 +341,14 @@ export function DestinationDiscoverCarousel({ discover }: { discover: Destinatio
               <button
                 key={slide.id}
                 aria-label={`Go to destination ${i + 1}`}
-                className={`h-1 rounded-full transition-all ${
+                className={`cursor-pointer h-1 rounded-full transition-all ${
                   i === activeIndex ? "w-8 bg-[#2f6b8f]" : "w-2 bg-[#D9EAF3] hover:bg-[#2f6b8f]/50"
                 }`}
                 onClick={() => scrollToIndex(i)}
                 type="button"
               />
             ))}
-            <span className="text-[11px] font-medium text-[#173F56] ml-1 sm:ml-2 leading-snug">
+            <span className="cursor-pointer text-[11px] font-medium text-[#173F56] ml-1 sm:ml-2 leading-snug">
               {total > 0 ? `${activeIndex + 1} of ${total}` : "0 of 0"} destination{total === 1 ? "" : "s"}
               {activeFilter === "all" ? " — swipe or use arrows to view all" : ` in ${filters.find((f) => f.id === activeFilter)?.label ?? "filter"}`}
             </span>

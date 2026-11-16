@@ -128,9 +128,9 @@ function Actions({ actions }: { actions: HeritageChapterData["actions"] }) {
           rel="noopener noreferrer"
         >
           {a.icon === "map" ? (
-            <MapPin className={`w-4 h-4 shrink-0 ${a.variant === "outline" ? "text-[#2f6b8f]" : ""}`} />
+            <MapPin className={`cursor-pointer w-4 h-4 shrink-0 ${a.variant === "outline" ? "text-[#2f6b8f]" : ""}`} />
           ) : (
-            <MessageCircle className="w-4 h-4 shrink-0" />
+            <MessageCircle className="cursor-pointer w-4 h-4 shrink-0" />
           )}
           <span>{a.label}</span>
         </a>

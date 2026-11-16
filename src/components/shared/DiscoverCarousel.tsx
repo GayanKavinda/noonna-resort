@@ -139,7 +139,7 @@ export const DiscoverCarousel: React.FC<DiscoverCarouselProps> = ({
                 {slide.href && (
                   <Link
                     href={slide.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-medium text-[#2f6b8f] hover:text-[#173F56] transition-colors mt-auto"
+                    className="cursor-pointer inline-flex items-center gap-1.5 text-xs font-medium text-[#2f6b8f] hover:text-[#173F56] transition-colors mt-auto"
                   >
                     <span>Explore detail</span>
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
