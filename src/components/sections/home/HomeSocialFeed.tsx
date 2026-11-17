@@ -18,29 +18,25 @@ export const HomeSocialFeed: React.FC = () => {
             <p className="mt-2 font-sans text-[15px] font-light text-slate-600">
               Little moments and coastal views, shared with you.
             </p>
+            <p className="mt-3 inline-flex items-center rounded-full border border-[#D9EAF3] bg-[#F1F9FD] px-3 py-1 font-sans text-xs font-medium text-[#2f6b8f]">
+              We&apos;re updating this section — new moments will appear here soon.
+            </p>
           </div>
-          <a
-            className="inline-flex items-center gap-2 font-sans text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56]"
-            href={HOTEL_INFO.socials.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
+          <span
+            className="inline-flex items-center gap-2 font-sans text-sm font-medium text-slate-400 cursor-not-allowed select-none"
+            aria-disabled="true"
           >
-            <span>Follow @noonnabeach</span>
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
+            <span>Instagram updates coming soon</span>
+          </span>
         </Reveal>
 
         {/* 4 Square Photo Grid */}
-        <Stagger className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+        <Stagger className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 opacity-70 pointer-events-none" aria-label="Instagram gallery preview, updates coming soon">
           {/* Item 1 */}
           <StaggerItem>
-            <a
-              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block"
-              href={HOTEL_INFO.socials.instagram}
-              rel="noopener noreferrer"
-              target="_blank"
+            <div
+              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block cursor-default"
+              aria-disabled="true"
             >
               <Image
                 src="/images/home/life-at-noonna-beach/hero-beach.jpg"
@@ -61,16 +57,14 @@ export const HomeSocialFeed: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-            </a>
+            </div>
           </StaggerItem>
 
           {/* Item 2 */}
           <StaggerItem>
-            <a
-              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block"
-              href={HOTEL_INFO.socials.instagram}
-              rel="noopener noreferrer"
-              target="_blank"
+            <div
+              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block cursor-default"
+              aria-disabled="true"
             >
               <Image
                 src="/images/home/life-at-noonna-beach/property-exterior.jpg"
@@ -91,16 +85,14 @@ export const HomeSocialFeed: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-            </a>
+            </div>
           </StaggerItem>
 
           {/* Item 3 */}
           <StaggerItem>
-            <a
-              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block"
-              href={HOTEL_INFO.socials.instagram}
-              rel="noopener noreferrer"
-              target="_blank"
+            <div
+              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block cursor-default"
+              aria-disabled="true"
             >
               <Image
                 src="/images/home/life-at-noonna-beach/property-grounds.jpg"
@@ -121,16 +113,14 @@ export const HomeSocialFeed: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-            </a>
+            </div>
           </StaggerItem>
 
           {/* Item 4 */}
           <StaggerItem>
-            <a
-              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block"
-              href={HOTEL_INFO.socials.instagram}
-              rel="noopener noreferrer"
-              target="_blank"
+            <div
+              className="group relative rounded-2xl overflow-hidden aspect-square shadow-sm bg-white border border-[#D9EAF3]/60 block cursor-default"
+              aria-disabled="true"
             >
               <Image
                 src="/images/stay/entire-resort-rental-for-a-private-stay/deluxe-ocean-suite.jpg"
@@ -151,7 +141,7 @@ export const HomeSocialFeed: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-            </a>
+            </div>
           </StaggerItem>
         </Stagger>
       </div>

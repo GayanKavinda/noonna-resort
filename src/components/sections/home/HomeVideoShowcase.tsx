@@ -35,17 +35,12 @@ export const HomeVideoShowcase: React.FC = () => {
               See More of Noonna Beach
             </h2>
           </div>
-          <a
-            className="inline-flex items-center gap-2 font-sans text-sm font-medium text-[#2f6b8f] transition-colors hover:text-[#173F56]"
-            href={HOTEL_INFO.socials.youtube}
-            rel="noopener noreferrer"
-            target="_blank"
+          <span
+            className="inline-flex items-center gap-2 font-sans text-sm font-medium text-slate-400 cursor-not-allowed select-none"
+            aria-disabled="true"
           >
-            <span>Watch on YouTube</span>
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </a>
+            <span>More videos coming soon</span>
+          </span>
         </Reveal>
 
         {/* 2-Column Showcase */}
@@ -133,20 +128,19 @@ export const HomeVideoShowcase: React.FC = () => {
               <p className="mb-6 font-sans text-sm font-light leading-relaxed text-slate-600">
                 Experience the gentle daylight awakening across the southern coast palms and the early sea mist settling over the warm waters.
               </p>
-              <div className="group relative h-36 cursor-pointer overflow-hidden rounded-2xl border border-[#D9EAF3]/60">
+              <div className="group relative h-36 overflow-hidden rounded-2xl border border-[#D9EAF3]/60 opacity-80 pointer-events-none select-none" aria-disabled="true">
                 <Image
                     src="/images/home/see-more-of-noonna-beach/property-exterior.jpg"
                   alt="Morning Tides & Ceylon Tea Video Still"
                   fill
                   sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-[#001e2e]/20">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/95 text-[#2f6b8f]">
-                    <svg className="ml-0.5 h-5 w-5 fill-current" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
+                <div className="absolute inset-0 bg-[#001e2e]/20" />
+                <div className="absolute inset-x-3 bottom-3 flex items-center justify-center rounded-xl border border-white/70 bg-white/90 px-3 py-2 text-center backdrop-blur-sm">
+                  <span className="font-sans text-xs font-medium text-[#173F56]">
+                    This video is being prepared and will be available soon.
+                  </span>
                 </div>
               </div>
             </div>

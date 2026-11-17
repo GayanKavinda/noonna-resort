@@ -160,11 +160,12 @@ function CompactSelect<T extends string>({
 }
 
 export function ContactInquiry() {
-  const [submitNotice, setSubmitNotice] = useState<string | null>(null);
+  const [submitNotice, setSubmitNotice] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const {
     register,
     control,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<InquiryFormValues>({
     resolver: zodResolver(inquirySchema),
@@ -179,10 +180,32 @@ export function ContactInquiry() {
     },
   });
 
-  const onSubmit = async () => {
-    setSubmitNotice(
-      "Online message delivery is not configured yet. Please book via Booking.com or use a verified contact channel when available."
-    );
+  const onSubmit = async (data: InquiryFormValues) => {
+    setSubmitNotice(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const payload = (await res.json().catch(() => ({}))) as { error?: string };
+      if (!res.ok) {
+        throw new Error(payload.error || "Unable to send your message right now.");
+      }
+      setSubmitNotice({
+        type: "success",
+        text: "Thank you — your inquiry has been sent. Our team will respond shortly via your preferred contact method.",
+      });
+      reset();
+    } catch (err) {
+      setSubmitNotice({
+        type: "error",
+        text:
+          err instanceof Error
+            ? err.message
+            : "We couldn't send your message. Please try again or contact us directly on WhatsApp.",
+      });
+    }
   };
 
   const instagramHandle = HOTEL_INFO.socials.instagram.replace(
@@ -423,9 +446,13 @@ export function ContactInquiry() {
                 <div
                   role="status"
                   style={{ fontSize: "11.5px", lineHeight: "16px" }}
-                  className="rounded-xl border border-[#D9EAF3] bg-[#F1F9FD] px-3.5 py-2.5 font-body-sm text-[#173F56]"
+                  className={`rounded-xl border px-3.5 py-2.5 font-body-sm ${
+                    submitNotice.type === "success"
+                      ? "border-green-200 bg-green-50 text-green-800"
+                      : "border-[#D9EAF3] bg-[#F1F9FD] text-[#173F56]"
+                  }`}
                 >
-                  {submitNotice}
+                  {submitNotice.text}
                 </div>
               )}
 
