@@ -36,10 +36,13 @@ export function GalleryPageContent() {
     return GALLERY_GRID_IMAGES.filter((img) => img.gridCategory && matches.includes(img.gridCategory));
   }, [activeFilter]);
 
-  const visibleGrid = useMemo(() => filteredGrid.slice(0, Math.min(loadedCount, filteredGrid.length)), [filteredGrid, loadedCount]);
+  const visibleGrid = useMemo(
+    () => filteredGrid.slice(0, Math.min(loadedCount, filteredGrid.length)),
+    [filteredGrid, loadedCount]
+  );
 
-  const showingCount = activeFilter === "all" ? Math.min(loadedCount, filteredGrid.length) : filteredGrid.length;
-  const activeFilterTotal = GALLERY_FILTERS.find((f) => f.id === activeFilter)?.count ?? GALLERY_TOTAL_COUNT;
+  const showingCount = visibleGrid.length;
+  const activeFilterTotal = filteredGrid.length;
 
   const openLightbox = (id: number) => {
     const idx = ALL_GALLERY_IMAGES.findIndex((img) => img.id === id);
@@ -319,9 +322,9 @@ export function GalleryPageContent() {
           <div className="flex flex-col sm:flex-row items-center gap-3.5 mt-2">
             <button
               type="button"
-              onClick={() => setLoadedCount((c) => Math.min(c + 9, GALLERY_GRID_IMAGES.length))}
+              onClick={() => setLoadedCount((c) => Math.min(c + 9, filteredGrid.length))}
               className="px-8 py-3 rounded-full bg-[#2f6b8f] hover:bg-[#25566f] text-white font-medium text-sm transition-all shadow-sm hover:shadow flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled={activeFilter !== "all" || showingCount >= activeFilterTotal}
+              disabled={showingCount >= activeFilterTotal}
             >
               <span>Load More Moments</span>
               <span className="text-xs px-2 py-0.5 rounded-full bg-[#25566f]/90 font-semibold">{remaining} remaining</span>
@@ -329,7 +332,7 @@ export function GalleryPageContent() {
             </button>
             <button
               type="button"
-              onClick={() => setLoadedCount(GALLERY_GRID_IMAGES.length)}
+              onClick={() => setLoadedCount(filteredGrid.length)}
               className="px-6 py-3 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-medium text-sm transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={showingCount >= activeFilterTotal}
             >
